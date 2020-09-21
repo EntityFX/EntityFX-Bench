@@ -1,4 +1,5 @@
 ﻿using EntityFX.NetBenchamarks.Core;
+using EntityFX.NetBenchamarks.Core.Dhrystone;
 using EntityFX.NetBenchamarks.Core.Generic;
 using EntityFX.NetBenchamarks.Core.Whetstone;
 using System;
@@ -20,6 +21,7 @@ namespace SimpleNetBenchmark
 
             var benchMarks = new IBenchamrk[]
             {
+                new DhrystoneBenchmark(),
                 new WhetstoneBenchmark(),
                 new ArithemticsBenchmark(),
                 new ParallelArithemticsBenchmark(),
@@ -52,11 +54,11 @@ namespace SimpleNetBenchmark
             {
                 var r = bench.Bench();
                 total += r.Elapsed;
-                Console.WriteLine($"{r.BenchmarkName}: {r.Elapsed} ms");
+                Console.WriteLine($"{r.BenchmarkName}: {r.Elapsed} ms, Result: {r.Result}");
                 result.Add(r);
             }
 
-          
+
             Console.WriteLine($"Total: {total} ms");
 
             Console.WriteLine();
