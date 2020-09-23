@@ -15,6 +15,12 @@ namespace EntityFX.NetBenchamarks.Core
             if (UseConsole) Console.WriteLine(format, args);
         }
 
+        public void WriteLine()
+        {
+            writer.WriteLine();
+            if (UseConsole) Console.WriteLine();
+        }
+
         public void Write(string format, params object[] args)
         {
             writer.Write(format, args);

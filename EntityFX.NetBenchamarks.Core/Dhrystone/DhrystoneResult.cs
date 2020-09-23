@@ -9,6 +9,7 @@
         public double Dhrystones { get; set; }
 
         public double TimeUsed { get; set; }
+
     }
 
 }

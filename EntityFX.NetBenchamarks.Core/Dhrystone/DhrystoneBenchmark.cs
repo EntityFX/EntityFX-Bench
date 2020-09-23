@@ -5,11 +5,11 @@ namespace EntityFX.NetBenchamarks.Core.Dhrystone
 {
     public class DhrystoneBenchmark : BenchmarkBase, IBenchamrk
     {
-        private readonly Dhrystone2 dhrystone;
+        private readonly Dhrystone2 dhrystone = new Dhrystone2();
 
         public DhrystoneBenchmark()
         {
-            dhrystone = new Dhrystone2();
+            
         }
 
         public override BenchResult Bench()

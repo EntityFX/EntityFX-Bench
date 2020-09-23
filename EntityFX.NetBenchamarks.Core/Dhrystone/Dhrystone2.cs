@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -26,16 +27,29 @@ namespace EntityFX.NetBenchamarks.Core.Dhrystone
             public string StringComp;
         }
 
-        Writer output = new Writer();
+        private static CheckRecord Check;
 
-        public Dhrystone2()
+        public class CheckRecord
         {
-            Record PtrGlb = null;
-            Record PtrGlbNext = null;
-            for (int i = 0; i < 50; i++)
-            {
-                Array2Glob[i] = new int[51];
-            }
+            public int IntLoc1;
+            public int IntLoc2;
+            public int IntLoc3;
+            public string String1Loc;
+            public string String2Loc;
+            public int EnumLoc;
+        }
+
+        static Writer output = new Writer();
+
+        static Dhrystone2()
+        {
+
+        }
+
+        private static bool IsOptimized(Assembly asm)
+        {
+            var att = asm.GetCustomAttribute<DebuggableAttribute>();
+            return att == null || att.IsJITOptimizerDisabled == false;
         }
 
         public DhrystoneResult Bench(int loops = LOOPS)
@@ -46,8 +60,139 @@ namespace EntityFX.NetBenchamarks.Core.Dhrystone
             output.WriteLine("Dhrystone Benchmark, Version 2.1 (Language: C#)");
             output.WriteLine("");
 
-            output.WriteLine("Register option selected\n");
+            output.WriteLine("Optimization {0}", IsOptimized(GetType().Assembly) ? "Optimised" : "Non-optimised");
             var result = Proc0(loops);
+
+            output.WriteLine("");
+            output.WriteLine("Final values (* implementation-dependent):\n");
+            output.WriteLine("");
+            output.Write("Int_Glob:      ");
+
+            if (IntGlob == 5) output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.Write("{0}  ", IntGlob);
+
+            output.Write("Bool_Glob:     ");
+            if (BoolGlob) output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.WriteLine("{0}", BoolGlob);
+
+            output.Write("Ch_1_Glob:     ");
+            if (Char1Glob == 'A') output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.Write("{0}  ", Char1Glob);
+
+            output.Write("Ch_2_Glob:     ");
+            if (Char2Glob == 'B') output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.WriteLine("{0}", Char2Glob);
+
+            output.Write("Arr_1_Glob[8]: ");
+            if (Array1Glob[8] == 7) output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.Write("{0}  ", Array1Glob[8]);
+
+            output.Write("Arr_2_Glob8/7: ");
+            if (Array2Glob[8][7] == LOOPS + 10)
+                output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.WriteLine("{0}", Array2Glob[8][7]);
+
+            output.Write("Ptr_Glob->            ");
+            output.WriteLine("  Ptr_Comp:       *    {0}", PtrGlb.PtrComp != null);
+
+            output.Write("  Discr:       ");
+            if (PtrGlb.Discr == 0) output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.Write("{0}  ", PtrGlb.Discr);
+
+            output.Write("Enum_Comp:     ");
+            if (PtrGlb.EnumComp == 2)
+                output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.WriteLine("{0}", PtrGlb.EnumComp);
+
+            output.Write("  Int_Comp:    ");
+            if (PtrGlb.IntComp == 17) output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.Write("{0} ", PtrGlb.IntComp);
+
+            output.Write("Str_Comp:      ");
+            if (PtrGlb.StringComp ==
+                                 "DHRYSTONE PROGRAM, SOME STRING")
+            output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.WriteLine("{0}", PtrGlb.StringComp);
+
+            output.Write("Next_Ptr_Glob->       ");
+            output.Write("  Ptr_Comp:       *    {0}", PtrGlbNext.PtrComp != null);
+            output.WriteLine(" same as above");
+
+            output.Write("  Discr:       ");
+            if (PtrGlbNext.Discr == 0)
+                output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.Write("{0}  ", PtrGlbNext.Discr);
+
+            output.Write("Enum_Comp:     ");
+            if (PtrGlbNext.EnumComp == 1)
+                output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.WriteLine("{0}", PtrGlbNext.EnumComp);
+
+            output.Write("  Int_Comp:    ");
+            if (PtrGlbNext.IntComp == 18)
+                output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.Write("{0} ", PtrGlbNext.IntComp);
+
+            output.Write("Str_Comp:      ");
+            if (PtrGlbNext.StringComp ==
+                                 "DHRYSTONE PROGRAM, SOME STRING")
+               output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.WriteLine("{0}", PtrGlbNext.StringComp);
+
+            output.Write("Int_1_Loc:     ");
+            if (Check.IntLoc1 == 5)
+                output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.Write("{0}  ", Check.IntLoc1);
+
+            output.Write("Int_2_Loc:     ");
+            if (Check.IntLoc2 == 13)
+                output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.WriteLine("{0}", Check.IntLoc2);
+
+            output.Write("Int_3_Loc:     ");
+            if (Check.IntLoc3 == 7)
+                output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.Write("{0}  ", Check.IntLoc3);
+
+            output.Write("Enum_Loc:      ");
+            if (Check.EnumLoc == 1)
+                output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.WriteLine("{0}  ", Check.EnumLoc);
+
+
+            output.Write("Str_1_Loc:                             ");
+            if (Check.String1Loc == "DHRYSTONE PROGRAM, 1'ST STRING")
+                output.Write("O.K.  ");
+
+            else output.Write("WRONG ");
+            output.WriteLine("{0}", Check.String1Loc);
+
+            output.Write("Str_2_Loc:                             ");
+            if (Check.String2Loc == "DHRYSTONE PROGRAM, 2'ND STRING")
+                output.Write("O.K.  ");
+            else output.Write("WRONG ");
+            output.WriteLine("{0}", Check.String2Loc);
+
+
+            output.WriteLine();
 
             output.WriteLine("Nanoseconds one Dhrystone run: {0}", 1000000000 / result.Dhrystones);
             output.WriteLine("Dhrystones per Second:         {0}", result.Dhrystones);
@@ -58,25 +203,27 @@ namespace EntityFX.NetBenchamarks.Core.Dhrystone
 
         private const int LOOPS = 20000000;
 
-        private int IntGlob = 0;
-        private bool BoolGlob = false;
-        private char Char1Glob = '\0';
-        private char Char2Glob = '\0';
-        private int[] Array1Glob = new int[51];
-        private int[][] Array2Glob = new int[51][];
+        private static int IntGlob = 0;
+        private static bool BoolGlob = false;
+        private static char Char1Glob = '\0';
+        private static char Char2Glob = '\0';
+        private static int[] Array1Glob = new int[51];
+        private static int[][] Array2Glob = new int[51][];
 
-        Record PtrGlbNext;
-        Record PtrGlb;
+        private static Record PtrGlbNext;
+        private static Record PtrGlb;
 
-        double clock() { return DateTime.Now.Ticks / 1000.0; }
-
-        DhrystoneResult Proc0(int loops)
+        static void StructAssign(Record destination, Record source)
         {
-            for (var i = 0; i < loops; ++i)
-                /* nothing*/
-                ;
+            destination.IntComp = source.IntComp;
+            destination.PtrComp = source.PtrComp;
+            destination.StringComp = source.StringComp;
+            destination.EnumComp = source.EnumComp;
+            destination.Discr = source.Discr;
+        }
 
-
+        static DhrystoneResult Proc0(int loops)
+        {
             PtrGlbNext = new Record();
             PtrGlb = new Record();
             PtrGlb.PtrComp = PtrGlbNext;
@@ -85,7 +232,25 @@ namespace EntityFX.NetBenchamarks.Core.Dhrystone
             PtrGlb.IntComp = 40;
             PtrGlb.StringComp = "DHRYSTONE PROGRAM, SOME STRING";
             var String1Loc = "DHRYSTONE PROGRAM, 1'ST STRING";
+            var String2Loc = "DHRYSTONE PROGRAM, 2'ND STRING";
+
+
+            IntGlob = 0;
+            BoolGlob = false;
+            Char1Glob = '\0';
+            Char2Glob = '\0';
+            Array1Glob = new int[51];
+            Array2Glob = new int[51][];
+            for (int i = 0; i < 50; i++)
+            {
+                Array2Glob[i] = new int[51];
+            }
             Array2Glob[8][7] = 10;
+
+            int EnumLoc = 0;
+            int IntLoc1 = 0;
+            int IntLoc2 = 0;
+            int IntLoc3 = 0;
 
             var sw = new Stopwatch();
             sw.Start();
@@ -94,32 +259,23 @@ namespace EntityFX.NetBenchamarks.Core.Dhrystone
             {
                 Proc5();
                 Proc4();
-                var IntLoc1 = 2;
-                var IntLoc2 = 3;
-                int IntLoc3 = 0;
-                var String2Loc = "DHRYSTONE PROGRAM, 2'ND STRING";
-                int EnumLoc = Ident_2;
+                IntLoc1 = 2;
+                IntLoc2 = 3;
+                IntLoc3 = 0;
+                String2Loc = "DHRYSTONE PROGRAM, 2'ND STRING";
+                EnumLoc = Ident_2;
                 BoolGlob = !Func2(String1Loc, String2Loc);
                 while (IntLoc1 < IntLoc2)
                 {
                     IntLoc3 = 5 * IntLoc1 - IntLoc2;
                     IntLoc3 = Proc7(IntLoc1, IntLoc2);
-                    IntLoc1 = IntLoc1 + 1;
+                    IntLoc1 += 1;
 
 
                 }
                 Proc8(ref Array1Glob, ref Array2Glob, IntLoc1, IntLoc3);
                 PtrGlb = Proc1(PtrGlb);
                 var CharIndex = 'A';
-                //while (CharIndex <= Char2Glob)
-                //{
-                //    if (EnumLoc == Func1(CharIndex, 'C'))
-                //    {
-                //        EnumLoc = Proc6(DhrystoneEnum.Ident_1);
-                //    }
-                //    CharIndex = String.fromCharCode(CharIndex.charCodeAt(0) + 1);
-
-                //}
 
                 for (CharIndex = 'A'; CharIndex <= Char2Glob; ++CharIndex)
                 {
@@ -130,9 +286,9 @@ namespace EntityFX.NetBenchamarks.Core.Dhrystone
                 }
 
 
-                IntLoc3 = IntLoc2 * IntLoc1;
-                IntLoc2 = IntLoc3 / IntLoc1;
-                IntLoc2 = 7 * (IntLoc3 - IntLoc2) - IntLoc1;
+                IntLoc2 = IntLoc2 * IntLoc1;
+                IntLoc1 = IntLoc2 / IntLoc3;
+                IntLoc2 = 7 * (IntLoc2 - IntLoc3) - IntLoc1;
                 IntLoc1 = Proc2(IntLoc1);
             }
 
@@ -147,6 +303,17 @@ namespace EntityFX.NetBenchamarks.Core.Dhrystone
                 loopsPerBenchtime = (loops / benchtime);
             }
             var dhrystones = 1000 * loopsPerBenchtime;
+
+            Check = new CheckRecord()
+            {
+                EnumLoc = EnumLoc,
+                IntLoc1 = IntLoc1,
+                IntLoc2 = IntLoc2,
+                IntLoc3 = IntLoc3,
+                String1Loc = String1Loc,
+                String2Loc = String2Loc
+            };
+
             return new DhrystoneResult()
             {
                 Dhrystones = dhrystones,
@@ -156,44 +323,30 @@ namespace EntityFX.NetBenchamarks.Core.Dhrystone
             };
         }
 
-        Record Proc1(Record PtrParIn)
+        static Record Proc1(Record PtrValPar)
         {
-            Record NextRecord = new Record()
-            {
-                Discr = PtrGlb.Discr,
-                EnumComp = PtrGlb.EnumComp,
-                StringComp = PtrGlb.StringComp,
-                IntComp = PtrGlb.IntComp,
-                PtrComp = PtrGlb.PtrComp
-            };
-            PtrParIn.PtrComp = NextRecord;
-            PtrParIn.IntComp = 5;
-            NextRecord.IntComp = PtrParIn.IntComp;
-            NextRecord.PtrComp = PtrParIn.PtrComp;
+            Record NextRecord = PtrGlb.PtrComp;
+            StructAssign(PtrGlb.PtrComp, PtrGlb);
+            PtrValPar.IntComp = 5;
+            NextRecord.IntComp = PtrValPar.IntComp;
+            NextRecord.PtrComp = PtrValPar.PtrComp;
             NextRecord.PtrComp = Proc3(NextRecord.PtrComp);
             if (NextRecord.Discr == Ident_1)
             {
                 NextRecord.IntComp = 6;
-                NextRecord.EnumComp = Proc6(PtrParIn.EnumComp);
+                NextRecord.EnumComp = Proc6(PtrValPar.EnumComp);
                 NextRecord.PtrComp = PtrGlb.PtrComp;
                 NextRecord.IntComp = Proc7(NextRecord.IntComp, 10);
             }
             else
             {
-                PtrParIn = new Record()
-                {
-                    Discr = NextRecord.Discr,
-                    EnumComp = NextRecord.EnumComp,
-                    StringComp = NextRecord.StringComp,
-                    IntComp = NextRecord.IntComp,
-                    PtrComp = NextRecord.PtrComp
-                };
+                StructAssign(PtrValPar, PtrValPar.PtrComp);
             }
-            NextRecord.PtrComp = null;
-            return PtrParIn;
+
+            return PtrValPar;
         }
 
-        int Proc2(int IntParIO)
+        static int Proc2(int IntParIO)
         {
             var IntLoc = IntParIO + 10;
             int EnumLoc = Ident_2;
@@ -211,7 +364,7 @@ namespace EntityFX.NetBenchamarks.Core.Dhrystone
             return IntParIO;
         }
 
-        Record Proc3(Record PtrParOut)
+        static Record Proc3(Record PtrParOut)
         {
             if (PtrGlb != null)
             {
@@ -225,20 +378,20 @@ namespace EntityFX.NetBenchamarks.Core.Dhrystone
             return PtrParOut;
         }
 
-        void Proc4()
+        static void Proc4()
         {
             var BoolLoc = Char1Glob == 'A';
-            BoolLoc = BoolLoc || BoolGlob;
+            BoolGlob = BoolLoc || BoolGlob;
             Char2Glob = 'B';
         }
 
-        void Proc5()
+        static void Proc5()
         {
             Char1Glob = 'A';
             BoolGlob = false;
         }
 
-        int Proc6(int EnumParIn)
+        static int Proc6(int EnumParIn)
         {
             int EnumParOut = EnumParIn;
             if (!Func3(EnumParIn))
@@ -246,49 +399,39 @@ namespace EntityFX.NetBenchamarks.Core.Dhrystone
                 EnumParOut = Ident_4;
             }
 
-            if (EnumParIn == Ident_1)
+
+            switch (EnumParIn)
             {
-                EnumParOut = Ident_1;
-            }
-            else if (EnumParIn == Ident_2)
-            {
-                if (IntGlob > 100)
-                {
+                case Ident_1:
                     EnumParOut = Ident_1;
-
-
-                }
-                else
-                {
-                    EnumParOut = Ident_4;
-
-
-
-                }
+                    break;
+                case Ident_2:
+                    if (IntGlob > 100)
+                        EnumParOut = Ident_1;
+                    else
+                        EnumParOut = Ident_4;
+                    break;
+                case Ident_3:
+                    EnumParOut = Ident_2;
+                    break;
+                case Ident_4:
+                    break;
+                case Ident_5:
+                    EnumParOut = Ident_3;
+                    break;
             }
-            else if (EnumParIn == Ident_3)
-            {
-                EnumParOut = Ident_2;
-            }
-            else if (EnumParIn == Ident_4)
-            {
-                EnumParOut = 0;
-            }
-            else if (EnumParIn == Ident_5)
-            {
-                EnumParOut = Ident_3;
-            }
+
             return EnumParOut;
         }
 
-        int Proc7(int IntParI1, int IntParI2)
+        static int Proc7(int IntParI1, int IntParI2)
         {
             var IntLoc = IntParI1 + 2;
             var IntParOut = IntParI2 + IntLoc;
             return IntParOut;
         }
 
-        void Proc8(ref int[] Array1Par, ref int[][] Array2Par, int IntParI1, int IntParI2)
+        static void Proc8(ref int[] Array1Par, ref int[][] Array2Par, int IntParI1, int IntParI2)
         {
             var IntLoc = IntParI1 + 5;
             Array1Par[IntLoc] = IntParI2;
@@ -304,24 +447,17 @@ namespace EntityFX.NetBenchamarks.Core.Dhrystone
             IntGlob = 5;
         }
 
-        int Func1(char CharPar1, char CharPar2)
+        static int Func1(char CharPar1, char CharPar2)
         {
             var CharLoc1 = CharPar1;
             var CharLoc2 = CharLoc1;
-            if (CharLoc2 != CharPar2)
-            {
-                return Ident_1;
-            }
-            else
-            {
-                return Ident_2;
-            }
+            return CharLoc2 != CharPar2 ? Ident_1 : Ident_2;
         }
 
-        bool Func2(string StrParI1, string StrParI2)
+        static bool Func2(string StrParI1, string StrParI2)
         {
             var IntLoc = 1;
-            char CharLoc = ' ';
+            char CharLoc = '\0';
             while (IntLoc <= 1)
             {
                 if (Func1(StrParI1[IntLoc], StrParI2[IntLoc + 1]) == Ident_1)
@@ -352,11 +488,10 @@ namespace EntityFX.NetBenchamarks.Core.Dhrystone
             }
         }
 
-        bool Func3(int EnumParIn)
+        static bool Func3(int EnumParIn)
         {
             var EnumLoc = EnumParIn;
-            if (EnumLoc == Ident_3) return true;
-            return false;
+            return EnumLoc == Ident_3;
         }
     }
 }
