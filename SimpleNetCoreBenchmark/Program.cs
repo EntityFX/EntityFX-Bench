@@ -15,6 +15,8 @@ namespace SimpleNetBenchmark
 {
     class MainClass
     {
+        private static Writer writer = new Writer();
+
         public static void Main(string[] args)
         {
             var useCrypto = args.Length > 0 && args[0] == "0" ? false : true;
@@ -45,26 +47,43 @@ namespace SimpleNetBenchmark
             TimeSpan total = TimeSpan.Zero;
             List<BenchResult> result = new List<BenchResult>();
 
+
+            writer.WriteHeader("Warmup");
             foreach (var bench in benchMarks)
             {
                 bench.Warmup();
+                writer.Write(".");
             }
 
+            writer.WriteLine();
+            writer.WriteHeader("Bench");
+            int i = 1;
             foreach (var bench in benchMarks)
             {
+                writer.WriteHeader($"[{i}] {bench.Name}");
                 var r = bench.Bench();
                 total += r.Elapsed;
-                Console.WriteLine($"{r.BenchmarkName}: {r.Elapsed} ms, Result: {r.Result}");
+
+                WriteResult(r);
                 result.Add(r);
+                i++;
             }
 
 
-            Console.WriteLine($"Total: {total} ms");
+            writer.WriteLine($"Total: {total} ms");
 
-            Console.WriteLine();
-            Console.Write($"{Environment.OSVersion};{Environment.Version};{Environment.ProcessorCount};{Environment.WorkingSet}");
-            result.ForEach(r => Console.Write($";{r.Elapsed.TotalMilliseconds}"));
-            Console.WriteLine($";{total}");
+            writer.WriteLine();
+            writer.WriteTitle($"{Environment.OSVersion};{Environment.Version};{Environment.ProcessorCount};{Environment.WorkingSet}");
+            result.ForEach(r => writer.WriteValue($";{r.Elapsed.TotalMilliseconds}"));
+            writer.WriteLine($";{total}");
+        }
+
+        private static void WriteResult(BenchResult benchResult)
+        {
+            writer.WriteTitle("{0,-25}", benchResult.BenchmarkName);
+            writer.WriteValue("{0,25} ms", benchResult.Elapsed);
+            writer.WriteValue("{0,15} pts", string.Format("{0:F2}", benchResult.Result));
+            writer.WriteLine();
         }
     }
 }

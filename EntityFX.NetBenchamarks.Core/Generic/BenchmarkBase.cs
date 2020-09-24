@@ -9,6 +9,8 @@ namespace EntityFX.NetBenchamarks.Core.Generic
 
         public static double DebugAspectRatio = 0.1;
 
+        public string Name => GetType().Name;
+
         public abstract BenchResult Bench();
         public virtual void Warmup(double aspect = 0.05)
         {

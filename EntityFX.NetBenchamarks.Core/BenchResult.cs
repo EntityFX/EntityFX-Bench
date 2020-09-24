@@ -10,6 +10,8 @@ namespace EntityFX.NetBenchamarks.Core
 
         public object Result { get; set; }
 
+        public decimal Points { get; set; }
+
         public string Output { get; set; }
 
         public string BenchmarkName { get; set; }

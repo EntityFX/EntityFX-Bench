@@ -1,4 +1,5 @@
 ﻿using EntityFX.NetBenchamarks.Core.Generic;
+using System;
 using System.Diagnostics;
 
 namespace EntityFX.NetBenchamarks.Core.Dhrystone
@@ -20,6 +21,7 @@ namespace EntityFX.NetBenchamarks.Core.Dhrystone
             var result = BuildResult(sw);
             result.Output = dhrystoneResult.Output;
             result.Result = dhrystoneResult.VaxMips;
+            result.Points = Convert.ToDecimal(dhrystoneResult.VaxMips);
             return result;
         }
 
