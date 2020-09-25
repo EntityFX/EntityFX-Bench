@@ -2,19 +2,16 @@
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
-    public class ArithemticsBenchmark : ArithmeticsBase, IBenchamrk
+    public class ArithemticsBenchmark : ArithmeticsBase<double>, IBenchamrk
     {
-        public override BenchResult Bench()
+        public override double BenchImplementation()
         {
-            var sw = new Stopwatch();
-            sw.Start();
             R = 0;
-            double li = 0;
-            for (long i = 0; i < Iterrations; li = i, i++)
+            for (long i = 0; i < Iterrations; i++)
             {
                 R += DoArithmetics(i);
             }
-            return BuildResult(sw);
+            return R;
         }
     }
 }

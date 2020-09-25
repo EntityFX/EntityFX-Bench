@@ -24,7 +24,9 @@ namespace EntityFX.NetBenchmark
             var benchMarks = new IBenchamrk[]
             {
                 new DhrystoneBenchmark(),
+                new ParallelDhrystoneBenchmark(),
                 new WhetstoneBenchmark(),
+                new ParallelWhetstoneBenchmark(),
                 new ArithemticsBenchmark(),
                 new ParallelArithemticsBenchmark(),
                 new MathBenchmark(),
@@ -45,6 +47,8 @@ namespace EntityFX.NetBenchmark
             }
 
             TimeSpan total = TimeSpan.Zero;
+            decimal totalPoints = 0;
+
             List<BenchResult> result = new List<BenchResult>();
 
 
@@ -63,26 +67,30 @@ namespace EntityFX.NetBenchmark
                 writer.WriteHeader($"[{i}] {bench.Name}");
                 var r = bench.Bench();
                 total += r.Elapsed;
-
+                totalPoints += r.Points;
                 WriteResult(r);
                 result.Add(r);
                 i++;
             }
 
-
-            writer.WriteLine($"Total: {total} ms");
+            writer.WriteLine();
+            writer.WriteTitle("{0,-30}", $"Total:");
+            writer.WriteValue("{0,15} ms", string.Format("{0:F2}", total.TotalMilliseconds));
+            writer.WriteValue("{0,15} pts", string.Format("{0:F2}", totalPoints));
+            writer.WriteLine();
 
             writer.WriteLine();
             writer.WriteTitle($"{Environment.OSVersion};{Environment.Version};{Environment.ProcessorCount};{Environment.WorkingSet}");
-            result.ForEach(r => writer.WriteValue($";{r.Elapsed.TotalMilliseconds}"));
-            writer.WriteLine($";{total}");
+            result.ForEach(r => writer.WriteValue(string.Format(";{0:F2}", r.Points)));
+            writer.WriteTitle($";{total}");
         }
 
         private static void WriteResult(BenchResult benchResult)
         {
-            writer.WriteTitle("{0,-25}", benchResult.BenchmarkName);
-            writer.WriteValue("{0,25} ms", benchResult.Elapsed);
-            writer.WriteValue("{0,15} pts", string.Format("{0:F2}", benchResult.Result));
+            writer.WriteTitle("{0,-30}", benchResult.BenchmarkName);
+            writer.WriteValue("{0,15} ms", string.Format("{0:F2}", benchResult.Elapsed.TotalMilliseconds));
+            writer.WriteValue("{0,15} pts", string.Format("{0:F2}", benchResult.Points));
+            writer.WriteValue("{0,15} {1}", string.Format("{0:F2}", benchResult.Result), benchResult.Units);
             writer.WriteLine();
         }
     }

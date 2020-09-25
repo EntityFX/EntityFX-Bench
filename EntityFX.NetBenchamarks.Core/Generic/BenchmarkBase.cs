@@ -1,17 +1,31 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
-    public abstract class BenchmarkBase : IBenchamrk
+    public abstract class BenchmarkBase<TResult> : IBenchamrk
     {
         protected long Iterrations;
 
         public static double DebugAspectRatio = 0.1;
 
+        public static double Ratio = 1.0;
+
         public string Name => GetType().Name;
 
-        public abstract BenchResult Bench();
+        public virtual BenchResult Bench()
+        {
+            var sw = new Stopwatch();
+            sw.Start();
+            var res = BenchImplementation();
+            return PopulateResult(BuildResult(sw, Ratio), res);
+        }
+
+        public abstract TResult BenchImplementation();
+
+
         public virtual void Warmup(double aspect = 0.05)
         {
 #if DEBUG
@@ -23,9 +37,57 @@ namespace EntityFX.NetBenchmark.Core.Generic
             Iterrations = tmp;
         }
 
-        protected BenchResult BuildResult(Stopwatch sw)
+
+        protected BenchResult[] BenchInParallel<TBench, TBenchResult>(
+            Func<TBench> buildFunc, Func<TBench, TBenchResult> benchFunc, 
+            Action<TBenchResult, BenchResult> setBenchResultFunc)
         {
-            return new BenchResult() { BenchmarkName = GetType().Name, Elapsed = sw.Elapsed };
+            var benchs = Enumerable.Range(0, Environment.ProcessorCount)
+                .Select(i => buildFunc()).ToArray();
+
+            var results = new BenchResult[Environment.ProcessorCount];
+
+            var sw = new Stopwatch();
+            sw.Start();
+
+            var tasks = Enumerable.Range(0, Environment.ProcessorCount)
+                .Select(i => Task.Run(() => {
+                    var swi = new Stopwatch();
+                    sw.Start();
+                    var result = benchFunc(benchs[i]);
+                    results[i] = BuildResult(sw, Ratio);
+                    setBenchResultFunc(result, results[i]);
+
+                })).ToArray();
+
+            Task.WaitAll(tasks);
+            return results;
+        }
+
+        public virtual BenchResult PopulateResult(BenchResult benchResult, TResult dhrystoneResult)
+        {
+            return benchResult;
+        }
+
+        protected BenchResult BuildResult(Stopwatch sw, double pointsRation = 1.0)
+        {
+            return new BenchResult() { 
+                BenchmarkName = GetType().Name, Elapsed = sw.Elapsed,
+                Points = Convert.ToDecimal(Iterrations / sw.Elapsed.TotalMilliseconds * pointsRation) };
+        }
+
+        protected BenchResult BuildParallelResult(Stopwatch sw, BenchResult[] results)
+        {
+            var result = BuildResult(sw, Ratio);
+            result.Points = results.Sum(r => r.Points);
+            return result;
+        }
+
+        protected BenchResult BuildParallelResult(BenchResult rootResult, BenchResult[] results)
+        {
+            rootResult.Points = results.Sum(r => r.Points);
+            return rootResult;
         }
     }
 }
+

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EntityFX.NetBenchmark.Core.Dhrystone
 {
-    class Dhrystone2
+    public class Dhrystone2
     {
 
         const int Ident_1 = 0;
@@ -39,11 +39,11 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
             public int EnumLoc;
         }
 
-        static Writer output = new Writer();
+        Writer output = new Writer();
 
-        static Dhrystone2()
+        public Dhrystone2(bool printToConsole = true)
         {
-
+            output.UseConsole = printToConsole;
         }
 
         private static bool IsOptimized(Assembly asm)
@@ -203,15 +203,15 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
 
         private const int LOOPS = 20000000;
 
-        private static int IntGlob = 0;
-        private static bool BoolGlob = false;
-        private static char Char1Glob = '\0';
-        private static char Char2Glob = '\0';
-        private static int[] Array1Glob = new int[50];
-        private static int[][] Array2Glob = new int[50][];
+        private int IntGlob = 0;
+        private bool BoolGlob = false;
+        private char Char1Glob = '\0';
+        private char Char2Glob = '\0';
+        private int[] Array1Glob = new int[50];
+        private int[][] Array2Glob = new int[50][];
 
-        private static Record PtrGlbNext;
-        private static Record PtrGlb;
+        private Record PtrGlbNext;
+        private Record PtrGlb;
 
         static void StructAssign(Record destination, Record source)
         {
@@ -222,7 +222,7 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
             destination.Discr = source.Discr;
         }
 
-        static DhrystoneResult Proc0(int loops)
+        DhrystoneResult Proc0(int loops)
         {
             PtrGlbNext = new Record();
             PtrGlb = new Record();
@@ -323,7 +323,7 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
             };
         }
 
-        static Record Proc1(Record PtrValPar)
+        Record Proc1(Record PtrValPar)
         {
             Record NextRecord = PtrGlb.PtrComp;
             StructAssign(PtrGlb.PtrComp, PtrGlb);
@@ -346,7 +346,7 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
             return PtrValPar;
         }
 
-        static int Proc2(int IntParIO)
+        int Proc2(int IntParIO)
         {
             var IntLoc = IntParIO + 10;
             int EnumLoc = Ident_2;
@@ -364,7 +364,7 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
             return IntParIO;
         }
 
-        static Record Proc3(Record PtrParOut)
+        Record Proc3(Record PtrParOut)
         {
             if (PtrGlb != null)
             {
@@ -378,20 +378,20 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
             return PtrParOut;
         }
 
-        static void Proc4()
+        void Proc4()
         {
             var BoolLoc = Char1Glob == 'A';
             BoolGlob = BoolLoc || BoolGlob;
             Char2Glob = 'B';
         }
 
-        static void Proc5()
+        void Proc5()
         {
             Char1Glob = 'A';
             BoolGlob = false;
         }
 
-        static int Proc6(int EnumParIn)
+        int Proc6(int EnumParIn)
         {
             int EnumParOut = EnumParIn;
             if (!Func3(EnumParIn))
@@ -431,7 +431,7 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
             return IntParOut;
         }
 
-        static void Proc8(ref int[] Array1Par, ref int[][] Array2Par, int IntParI1, int IntParI2)
+        void Proc8(ref int[] Array1Par, ref int[][] Array2Par, int IntParI1, int IntParI2)
         {
             var IntLoc = IntParI1 + 5;
             Array1Par[IntLoc] = IntParI2;

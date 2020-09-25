@@ -1,22 +1,23 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
-    public class ParallelArithemticsBenchmark : ArithmeticsBase, IBenchamrk
+    public class ParallelArithemticsBenchmark : ArithmeticsBase<BenchResult[]>, IBenchamrk
     {
-        public override BenchResult Bench()
+        public override BenchResult[] BenchImplementation()
         {
-            var sw = new Stopwatch();
-            sw.Start();
-            R = 0;
-            double li = 0;
-            Parallel.For(0, Iterrations, i =>
+            return BenchInParallel(() => 0, a =>
             {
-                li = i;
-                R += DoArithmetics(i);
-            });
-            return BuildResult(sw);
+                double R2 = 0;
+                for (long i = 0; i < Iterrations; i++)
+                {
+                    R2 += DoArithmetics(i);
+                }
+                return R2;
+            }, (a, r) => { });
         }
     }
 }

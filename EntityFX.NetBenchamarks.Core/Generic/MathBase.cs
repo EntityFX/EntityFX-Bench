@@ -3,13 +3,12 @@ using System.Runtime.CompilerServices;
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
-    public abstract class MathBase : BenchmarkBase
+    public abstract class MathBase<TResult> : BenchmarkBase<TResult>
     {
-        protected double R;
-
         public MathBase()
         {
             Iterrations = 200000000;
+            Ratio = 0.1;
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

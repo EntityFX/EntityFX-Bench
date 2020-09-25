@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
-    public abstract class HashBase : BenchmarkBase
+    public abstract class HashBase<TResult> : BenchmarkBase<TResult>
     {
         protected double R;
 

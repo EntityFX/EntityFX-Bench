@@ -2,17 +2,16 @@
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
-    public class HashBenchmark : HashBase, IBenchamrk
+    public class HashBenchmark : HashBase<byte[]>, IBenchamrk
     {
-        public override BenchResult Bench()
+        public override byte[] BenchImplementation()
         {
-            var sw = new Stopwatch();
-            sw.Start();
-            for (int i = 0; i < Iterrations; i ++)
+            byte[] result = new byte[] { };
+            for (int i = 0; i < Iterrations; i++)
             {
-                byte[] result = DoHash(i, ref artayOfBytes);
+                result = DoHash(i, ref artayOfBytes);
             }
-            return BuildResult(sw);
+            return result;
         }
     }
 }

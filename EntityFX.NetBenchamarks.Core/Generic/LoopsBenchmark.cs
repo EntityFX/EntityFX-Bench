@@ -2,17 +2,15 @@
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
-    public class LoopsBenchmark : BenchmarkBase, IBenchamrk
+    public class LoopsBenchmark : BenchmarkBase<long>, IBenchamrk
     {
         public LoopsBenchmark()
         {
             Iterrations = 5000000000;
         }
 
-        public override BenchResult Bench()
+        public override long BenchImplementation()
         {
-            var sw = new Stopwatch();
-            sw.Start();
             long i = 0;
             for (i = 0; i < Iterrations; ++i)
             {
@@ -23,7 +21,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
             {
                 ++i;
             }
-            return BuildResult(sw);
+            return i;
         }
     }
 }

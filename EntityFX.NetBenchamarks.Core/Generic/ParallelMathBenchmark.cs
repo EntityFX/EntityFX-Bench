@@ -3,21 +3,20 @@ using System.Threading.Tasks;
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
-    public class ParallelMathBenchmark : MathBase, IBenchamrk
+    public class ParallelMathBenchmark : MathBase<BenchResult[]>, IBenchamrk
     {
-        public override BenchResult Bench()
+        public override BenchResult[] BenchImplementation()
         {
-            var sw = new Stopwatch();
-            sw.Start();
-            R = 0;
-
-            double li = 0;
-            Parallel.For(0, Iterrations, i =>
+            return BenchInParallel(() => 0, a =>
             {
-                li = i;
-                R += DoMath(i, li);
-            });
-            return BuildResult(sw);
+                double R = 0;
+                double li = 0;
+                for (long i = 0; i < Iterrations; i++)
+                {
+                    R += DoMath(i, li);
+                }
+                return R;
+            }, (a, r) => { });
         }
     }
 }

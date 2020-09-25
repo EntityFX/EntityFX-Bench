@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
-    public class CallBenchmark : BenchmarkBase, IBenchamrk
+    public class CallBenchmark : BenchmarkBase<long>, IBenchamrk
     {
         public CallBenchmark()
         {
@@ -16,17 +16,15 @@ namespace EntityFX.NetBenchmark.Core.Generic
             return i + 1;
         }
 
-        public override BenchResult Bench()
+        public override long BenchImplementation()
         {
-            var sw = new Stopwatch();
-            sw.Start();
             long i = 0;
             long a = 0;
             for (i = 0; i < Iterrations; ++i)
             {
                 a = DoCall(i);
             }
-            return BuildResult(sw);
+            return a;
         }
     }
 }

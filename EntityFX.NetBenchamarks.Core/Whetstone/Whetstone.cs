@@ -20,6 +20,11 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
 
         Writer output = new Writer();
 
+        public Whetstone(bool printToConsole = true)
+        {
+            output.UseConsole = printToConsole;
+        }
+
         public WhetstoneResult Bench(bool getinput = true)
         {
             int count = 10, calibrate = 1;

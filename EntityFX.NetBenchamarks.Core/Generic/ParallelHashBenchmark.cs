@@ -3,18 +3,19 @@ using System.Threading.Tasks;
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
-    public class ParallelHashBenchmark : HashBase, IBenchamrk
+    public class ParallelHashBenchmark : HashBase<BenchResult[]>, IBenchamrk
     {
-        public override BenchResult Bench()
+        public override BenchResult[] BenchImplementation()
         {
-            var sw = new Stopwatch();
-            sw.Start();
-
-            Parallel.For(0, Iterrations, i =>
+            return BenchInParallel(() => 0, a =>
             {
-                byte[] result = DoHash(i, ref artayOfBytes);
-            });
-            return BuildResult(sw);
+                byte[] hash = new byte[] { };
+                for (long i = 0; i < Iterrations; i++)
+                {
+                    hash = DoHash(i, ref artayOfBytes);
+                }
+                return hash;
+            }, (a, r) => { });
         }
     }
 }

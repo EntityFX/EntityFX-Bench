@@ -2,18 +2,17 @@
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
-    public class IfElseBenchmark : BenchmarkBase, IBenchamrk
+    public class IfElseBenchmark : BenchmarkBase<long>, IBenchamrk
     {
         public IfElseBenchmark()
         {
             Iterrations = 5000000000;
         }
 
-        public override BenchResult Bench()
+        public override long BenchImplementation()
         {
-            var sw = new Stopwatch();
-            sw.Start();
-            for (long i = 0, c = -1, d = 0; i < Iterrations; i++, c--)
+            int d = 0;
+            for (long i = 0, c = -1; i < Iterrations; i++, c--)
             {
                 c = c == -4 ? -1 : c;
                 if (i == -1)
@@ -30,7 +29,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
                 }
                 d = d + 1;
             }
-            return BuildResult(sw);
+            return d;
         }
     }
 }

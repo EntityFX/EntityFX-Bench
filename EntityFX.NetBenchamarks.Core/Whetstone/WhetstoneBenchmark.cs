@@ -2,11 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace EntityFX.NetBenchmark.Core.Whetstone
 {
-    public class WhetstoneBenchmark : BenchmarkBase, IBenchamrk
+    public class WhetstoneBenchmark : BenchmarkBase<WhetstoneResult>, IBenchamrk
     {
         private readonly WhetstoneDouble whetstone = new WhetstoneDouble();
 
@@ -15,15 +17,17 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
 
         }
 
-        public override BenchResult Bench()
+        public override WhetstoneResult BenchImplementation()
         {
-            var sw = new Stopwatch();
-            sw.Start();
-            var whetstoneResult = whetstone.Bench();
-            var result = BuildResult(sw);
-            result.Output = whetstoneResult.Output;
-            result.Result = whetstoneResult.MWIPS;
-            return result;
+            return whetstone.Bench();
+        }
+
+        public override BenchResult PopulateResult(BenchResult benchResult, WhetstoneResult dhrystoneResult)
+        {
+            benchResult.Result = dhrystoneResult.MWIPS;
+            benchResult.Points = Convert.ToDecimal(dhrystoneResult.MWIPS);
+            benchResult.Units = "DMIPS";
+            return benchResult;
         }
 
         public override void Warmup(double aspect = 0.05)

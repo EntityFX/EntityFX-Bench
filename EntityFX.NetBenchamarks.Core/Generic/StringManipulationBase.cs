@@ -2,7 +2,7 @@
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
-    public abstract class StringManipulationBase : BenchmarkBase
+    public abstract class StringManipulationBase<TResult> : BenchmarkBase<TResult>
     {
         protected double R;
 

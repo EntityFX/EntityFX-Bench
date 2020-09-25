@@ -3,19 +3,20 @@ using System.Threading.Tasks;
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
-    public class ParallelStringManipulation : StringManipulationBase, IBenchamrk
+    public class ParallelStringManipulation : StringManipulationBase<BenchResult[]>
     {
-        public override BenchResult Bench()
+        public override BenchResult[] BenchImplementation()
         {
-            var sw = new Stopwatch();
-            sw.Start();
-            var str = "the quick brown fox jumps over the lazy dog";
-            string str1;
-            Parallel.For(0, Iterrations, i =>
+            return BenchInParallel(() => 0, a =>
             {
-                str1 = DoStringManipilation(str);
-            });
-            return BuildResult(sw);
+                var str = "the quick brown fox jumps over the lazy dog";
+                string str1 = string.Empty;
+                for (long i = 0; i < Iterrations; i++)
+                {
+                    str1 = DoStringManipilation(str);
+                }
+                return str1;
+            }, (a, r) => { });
         }
     }
 }
