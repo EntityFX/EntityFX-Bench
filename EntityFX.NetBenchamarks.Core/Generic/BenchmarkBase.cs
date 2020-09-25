@@ -11,7 +11,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
 
         public static double DebugAspectRatio = 0.1;
 
-        public static double Ratio = 1.0;
+        public double Ratio = 1.0;
 
         public string Name => GetType().Name;
 
@@ -20,7 +20,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
             var sw = new Stopwatch();
             sw.Start();
             var res = BenchImplementation();
-            return PopulateResult(BuildResult(sw, Ratio), res);
+            return PopulateResult(BuildResult(sw), res);
         }
 
         public abstract TResult BenchImplementation();
@@ -55,7 +55,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
                     var swi = new Stopwatch();
                     sw.Start();
                     var result = benchFunc(benchs[i]);
-                    results[i] = BuildResult(sw, Ratio);
+                    results[i] = BuildResult(sw);
                     setBenchResultFunc(result, results[i]);
 
                 })).ToArray();
@@ -66,19 +66,23 @@ namespace EntityFX.NetBenchmark.Core.Generic
 
         public virtual BenchResult PopulateResult(BenchResult benchResult, TResult dhrystoneResult)
         {
+            if (dhrystoneResult is BenchResult[] results)
+            {
+                return BuildParallelResult(benchResult, results);
+            }
             return benchResult;
         }
 
-        protected BenchResult BuildResult(Stopwatch sw, double pointsRation = 1.0)
+        protected BenchResult BuildResult(Stopwatch sw)
         {
             return new BenchResult() { 
                 BenchmarkName = GetType().Name, Elapsed = sw.Elapsed,
-                Points = Convert.ToDecimal(Iterrations / sw.Elapsed.TotalMilliseconds * pointsRation) };
+                Points = Convert.ToDecimal(Iterrations / sw.Elapsed.TotalMilliseconds * Ratio) };
         }
 
         protected BenchResult BuildParallelResult(Stopwatch sw, BenchResult[] results)
         {
-            var result = BuildResult(sw, Ratio);
+            var result = BuildResult(sw);
             result.Points = results.Sum(r => r.Points);
             return result;
         }

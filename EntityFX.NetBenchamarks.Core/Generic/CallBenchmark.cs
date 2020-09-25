@@ -8,6 +8,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
         public CallBenchmark()
         {
             Iterrations = 5000000000;
+            Ratio = 0.01;
         }
 
         [MethodImpl(MethodImplOptions.NoInlining)]

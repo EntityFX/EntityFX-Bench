@@ -15,7 +15,10 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
         public override BenchResult[] BenchImplementation()
         {
             return BenchInParallel(() => new Whetstone(false), a =>
-            a.Bench(), (a, r) => r.Points = Convert.ToDecimal(a.MWIPS));
+            a.Bench(), (a, r) => { 
+                r.Points = Convert.ToDecimal(a.MWIPS);
+                r.Result = r.Points;
+            });
         }
 
         public override BenchResult PopulateResult(BenchResult benchResult, BenchResult[] dhrystoneResult)
