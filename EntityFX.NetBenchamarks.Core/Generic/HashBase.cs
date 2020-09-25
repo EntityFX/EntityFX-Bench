@@ -17,6 +17,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
         public HashBase()
         {
             Iterrations = 2000000;
+            Ratio = 10;
             artayOfBytes = strs.Select(str => Encoding.ASCII.GetBytes(str)).ToArray();
         }
 

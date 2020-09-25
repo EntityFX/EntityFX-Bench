@@ -10,14 +10,15 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
     {
         public ParallelDhrystoneBenchmark()
         {
+            Ratio = 4;
         }
 
         public override BenchResult[] BenchImplementation()
         {
             return BenchInParallel(() => new Dhrystone2(false), a =>
             a.Bench(), (a, r) => {
-                r.Points = Convert.ToDecimal(a.VaxMips);
-                r.Result = r.Points;
+                r.Points = Convert.ToDecimal(a.VaxMips * Ratio);
+                r.Result = Convert.ToDecimal(a.VaxMips);
             });
         }
 

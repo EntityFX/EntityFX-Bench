@@ -8,7 +8,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
         public MathBase()
         {
             Iterrations = 200000000;
-            Ratio = 0.1;
+            Ratio = 0.5;
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

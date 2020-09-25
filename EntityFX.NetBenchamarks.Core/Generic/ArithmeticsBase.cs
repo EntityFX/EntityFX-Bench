@@ -10,7 +10,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
         public ArithmeticsBase()
         {
             Iterrations = 300000000;
-            Ratio = 0.01;
+            Ratio = 0.04;
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

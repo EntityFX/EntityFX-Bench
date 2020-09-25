@@ -12,6 +12,7 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
 
         public DhrystoneBenchmark()
         {
+            Ratio = 4;
         }
 
         public override DhrystoneResult BenchImplementation()
@@ -22,7 +23,7 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
         public override BenchResult PopulateResult(BenchResult benchResult, DhrystoneResult dhrystoneResult)
         {
             benchResult.Result = dhrystoneResult.VaxMips;
-            benchResult.Points = Convert.ToDecimal(dhrystoneResult.VaxMips);
+            benchResult.Points = Convert.ToDecimal(dhrystoneResult.VaxMips * Ratio);
             benchResult.Units = "DMIPS";
             return benchResult;
         }

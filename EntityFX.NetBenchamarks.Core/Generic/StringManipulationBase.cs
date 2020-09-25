@@ -9,7 +9,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
         public StringManipulationBase()
         {
             Iterrations = 5000000;
-            Ratio = 2;
+            Ratio = 10;
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
