@@ -1,4 +1,4 @@
-﻿namespace EntityFX.NetBenchamarks.Core.Whetstone
+﻿namespace EntityFX.NetBenchmark.Core.Whetstone
 {
     public class WhetstoneResult
     {

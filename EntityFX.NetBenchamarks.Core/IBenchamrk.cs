@@ -1,4 +1,4 @@
-﻿namespace EntityFX.NetBenchamarks.Core
+﻿namespace EntityFX.NetBenchmark.Core
 {
     public interface IBenchamrk
     {

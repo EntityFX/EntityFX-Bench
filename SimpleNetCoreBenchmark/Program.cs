@@ -1,7 +1,7 @@
-﻿using EntityFX.NetBenchamarks.Core;
-using EntityFX.NetBenchamarks.Core.Dhrystone;
-using EntityFX.NetBenchamarks.Core.Generic;
-using EntityFX.NetBenchamarks.Core.Whetstone;
+﻿using EntityFX.NetBenchmark.Core;
+using EntityFX.NetBenchmark.Core.Dhrystone;
+using EntityFX.NetBenchmark.Core.Generic;
+using EntityFX.NetBenchmark.Core.Whetstone;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -11,7 +11,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleNetBenchmark
+namespace EntityFX.NetBenchmark
 {
     class MainClass
     {
@@ -19,7 +19,7 @@ namespace SimpleNetBenchmark
 
         public static void Main(string[] args)
         {
-            var useCrypto = args.Length > 0 && args[0] == "0" ? false : true;
+            var useCrypto = !(args.Length > 0 && args[0] == "0");
 
             var benchMarks = new IBenchamrk[]
             {

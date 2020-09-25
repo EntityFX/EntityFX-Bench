@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace EntityFX.NetBenchamarks.Core.Generic
+namespace EntityFX.NetBenchmark.Core.Generic
 {
     public abstract class HashBase : BenchmarkBase
     {

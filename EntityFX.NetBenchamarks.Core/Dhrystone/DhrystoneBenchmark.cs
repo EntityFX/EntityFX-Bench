@@ -1,8 +1,7 @@
-﻿using EntityFX.NetBenchamarks.Core.Generic;
-using System;
+﻿using EntityFX.NetBenchmark.Core.Generic;
 using System.Diagnostics;
 
-namespace EntityFX.NetBenchamarks.Core.Dhrystone
+namespace EntityFX.NetBenchmark.Core.Dhrystone
 {
     public class DhrystoneBenchmark : BenchmarkBase, IBenchamrk
     {

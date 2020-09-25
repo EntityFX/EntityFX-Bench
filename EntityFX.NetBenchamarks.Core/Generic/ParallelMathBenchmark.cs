@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Threading.Tasks;
 
-namespace EntityFX.NetBenchamarks.Core.Generic
+namespace EntityFX.NetBenchmark.Core.Generic
 {
     public class ParallelMathBenchmark : MathBase, IBenchamrk
     {

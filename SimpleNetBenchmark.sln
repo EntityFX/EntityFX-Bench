@@ -4,7 +4,7 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFX.NetBenchmark", "SimpleNetCoreBenchmark\EntityFX.NetBenchmark.csproj", "{0D90EDBC-03FB-4C4C-99B7-985A520DB837}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFX.NetBenchamarks.Core", "EntityFX.NetBenchamarks.Core\EntityFX.NetBenchamarks.Core.csproj", "{6DBEB233-7E30-4C75-A95D-D69373C073B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFX.NetBenchmark.Core", "EntityFX.NetBenchamarks.Core\EntityFX.NetBenchmark.Core.csproj", "{6DBEB233-7E30-4C75-A95D-D69373C073B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

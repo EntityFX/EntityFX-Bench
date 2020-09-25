@@ -1,4 +1,4 @@
-﻿namespace EntityFX.NetBenchamarks.Core.Dhrystone
+﻿namespace EntityFX.NetBenchmark.Core.Dhrystone
 {
     public class Record_Type
     {

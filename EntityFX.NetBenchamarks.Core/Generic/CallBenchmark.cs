@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Runtime.CompilerServices;
 
-namespace EntityFX.NetBenchamarks.Core.Generic
+namespace EntityFX.NetBenchmark.Core.Generic
 {
     public class CallBenchmark : BenchmarkBase, IBenchamrk
     {

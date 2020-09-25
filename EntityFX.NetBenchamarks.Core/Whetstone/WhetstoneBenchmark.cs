@@ -1,18 +1,18 @@
-﻿using EntityFX.NetBenchamarks.Core.Generic;
+﻿using EntityFX.NetBenchmark.Core.Generic;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 
-namespace EntityFX.NetBenchamarks.Core.Whetstone
+namespace EntityFX.NetBenchmark.Core.Whetstone
 {
     public class WhetstoneBenchmark : BenchmarkBase, IBenchamrk
     {
-        private readonly Whetstone whetstone;
+        private readonly WhetstoneDouble whetstone = new WhetstoneDouble();
 
         public WhetstoneBenchmark()
         {
-            whetstone = new Whetstone();
+
         }
 
         public override BenchResult Bench()

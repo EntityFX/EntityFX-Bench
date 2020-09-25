@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EntityFX.NetBenchamarks.Core.Dhrystone
+namespace EntityFX.NetBenchmark.Core.Dhrystone
 {
     class Dhrystone2
     {
@@ -207,8 +207,8 @@ namespace EntityFX.NetBenchamarks.Core.Dhrystone
         private static bool BoolGlob = false;
         private static char Char1Glob = '\0';
         private static char Char2Glob = '\0';
-        private static int[] Array1Glob = new int[51];
-        private static int[][] Array2Glob = new int[51][];
+        private static int[] Array1Glob = new int[50];
+        private static int[][] Array2Glob = new int[50][];
 
         private static Record PtrGlbNext;
         private static Record PtrGlb;
@@ -239,11 +239,11 @@ namespace EntityFX.NetBenchamarks.Core.Dhrystone
             BoolGlob = false;
             Char1Glob = '\0';
             Char2Glob = '\0';
-            Array1Glob = new int[51];
-            Array2Glob = new int[51][];
-            for (int i = 0; i < 50; i++)
+            Array1Glob = new int[50];
+            Array2Glob = new int[50][];
+            for (int i = 0; i < Array2Glob.Length; i++)
             {
-                Array2Glob[i] = new int[51];
+                Array2Glob[i] = new int[Array2Glob.Length];
             }
             Array2Glob[8][7] = 10;
 

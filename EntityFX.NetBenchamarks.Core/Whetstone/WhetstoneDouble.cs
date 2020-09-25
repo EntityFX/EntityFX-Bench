@@ -7,16 +7,16 @@ using System.Text;
 namespace EntityFX.NetBenchmark.Core.Whetstone
 {
 
-    public class Whetstone
+    public class WhetstoneDouble
     {
         double[] loop_time = new double[9];
-        float[] loop_mops = new float[9];
-        float[] loop_mflops = new float[9];
+        double[] loop_mops = new double[9];
+        double[] loop_mflops = new double[9];
         double TimeUsed;
         double mwips;
         string[] headings = new string[9];
-        float Check;
-        float[] results = new float[9];
+        double Check;
+        double[] results = new double[9];
 
         Writer output = new Writer();
 
@@ -60,7 +60,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
             while (count > 0);
 
             if (TimeUsed > 0)
-                xtra = (long)((float)(duration * xtra) / TimeUsed);
+                xtra = (long)((double)(duration * xtra) / TimeUsed);
             if (xtra < 1) xtra = 1;
 
             calibrate = 0;
@@ -81,7 +81,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
 
             output.Write("MWIPS            ");
             if (TimeUsed > 0)
-                mwips = (float)(xtra) * (float)(x100) / (10 * (float)TimeUsed);
+                mwips = (double)(xtra) * (double)(x100) / (10 * (double)TimeUsed);
             else
                 mwips = 0;
 
@@ -101,16 +101,16 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
         void Whetstones(long xtra, long x100, int calibrate)
         {
             long n1, n2, n3, n4, n5, n6, n7, n8, i, ix, n1mult;
-            float x, y, z;
+            double x, y, z;
             long j, k, l;
-            float[] e1 = new float[4];
+            double[] e1 = new double[4];
             double timea;
             double timeb;
 
-            float t = 0.49999975f;
-            float t0 = t;
-            float t1 = 0.50000025f;
-            float t2 = 2;
+            double t = 0.49999975f;
+            double t0 = t;
+            double t1 = 0.50000025f;
+            double t2 = 2;
 
             Check = 0;
 
@@ -149,7 +149,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
             t = t0;
 
             timeb = (sw.Elapsed.TotalSeconds - timea) / n1mult;
-            Pout("N1 floating point", (float)(n1 * 16) * (float)(xtra),
+            Pout("N1 doubleing point", (double)(n1 * 16) * (double)(xtra),
                              1, e1[3], timeb, calibrate, 1);
 
             /* Section 2, Array as parameter */
@@ -167,7 +167,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
                 t = t0;
             }
             timeb = sw.Elapsed.TotalSeconds - timea;
-            Pout("N2 floating point", (float)(n2 * 96) * (float)(xtra),
+            Pout("N2 doubleing point", (double)(n2 * 96) * (double)(xtra),
                                  1, e1[3], timeb, calibrate, 2);
 
             /* Section 3, Conditional jumps */
@@ -188,8 +188,8 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
                 }
             }
             timeb = sw.Elapsed.TotalSeconds - timea;
-            Pout("N3 if then else  ", (float)(n3 * 3) * (float)(xtra),
-                            2, (float)(j), timeb, calibrate, 3);
+            Pout("N3 if then else  ", (double)(n3 * 3) * (double)(xtra),
+                            2, (double)(j), timeb, calibrate, 3);
 
             /* Section 4, Integer arithmetic */
             j = 1;
@@ -211,7 +211,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
             }
             timeb = sw.Elapsed.TotalSeconds - timea;
             x = e1[0] + e1[1];
-            Pout("N4 fixed point   ", (float)(n4 * 15) * (float)(xtra),
+            Pout("N4 fixed point   ", (double)(n4 * 15) * (double)(xtra),
                                      2, x, timeb, calibrate, 4);
 
             /* Section 5, Trig functions */
@@ -223,15 +223,15 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
                 {
                     for (i = 1; i < n5; i++)
                     {
-                        x = (float)(t * Math.Atan(t2 * Math.Sin(x) * Math.Cos(x) / (Math.Cos(x + y) + Math.Cos(x - y) - 1.0)));
-                        y = (float)(t * Math.Atan(t2 * Math.Sin(y) * Math.Cos(y) / (Math.Cos(x + y) + Math.Cos(x - y) - 1.0)));
+                        x = (double)(t * Math.Atan(t2 * Math.Sin(x) * Math.Cos(x) / (Math.Cos(x + y) + Math.Cos(x - y) - 1.0)));
+                        y = (double)(t * Math.Atan(t2 * Math.Sin(y) * Math.Cos(y) / (Math.Cos(x + y) + Math.Cos(x - y) - 1.0)));
                     }
                     t = 1 - t;
                 }
                 t = t0;
             }
             timeb = sw.Elapsed.TotalSeconds - timea;
-            Pout("N5 sin,cos etc.  ", (float)(n5 * 26) * (float)(xtra),
+            Pout("N5 sin,cos etc.  ", (double)(n5 * 26) * (double)(xtra),
                                      2, y, timeb, calibrate, 5);
 
             /* Section 6, Procedure calls */
@@ -249,7 +249,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
                 }
             }
             timeb = sw.Elapsed.TotalSeconds - timea;
-            Pout("N6 floating point", (float)(n6 * 6) * (float)(xtra),
+            Pout("N6 doubleing point", (double)(n6 * 6) * (double)(xtra),
                                     1, z, timeb, calibrate, 6);
 
             /* Section 7, Array refrences */
@@ -270,7 +270,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
                 }
             }
             timeb = sw.Elapsed.TotalSeconds - timea;
-            Pout("N7 assignments   ", (float)(n7 * 3) * (float)(xtra),
+            Pout("N7 assignments   ", (double)(n7 * 3) * (double)(xtra),
                                 2, e1[2], timeb, calibrate, 7);
 
             /* Section 8, Standard functions */
@@ -281,17 +281,17 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
                 {
                     for (i = 0; i < n8; i++)
                     {
-                        x = (float)Math.Sqrt(Math.Exp(Math.Log(x) / t1));
+                        x = (double)Math.Sqrt(Math.Exp(Math.Log(x) / t1));
                     }
                 }
             }
             timeb = sw.Elapsed.TotalSeconds - timea;
-            Pout("N8 exp,sqrt etc. ", (float)(n8 * 4) * (float)(xtra),
+            Pout("N8 exp,sqrt etc. ", (double)(n8 * 4) * (double)(xtra),
                                     2, x, timeb, calibrate, 8);
 
         }
 
-        static void Pa(float[] e, float t, float t2)
+        static void Pa(double[] e, double t, double t2)
         {
             long j;
             for (j = 0; j < 6; j++)
@@ -305,7 +305,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
             return;
         }
 
-        static void Po(float[] e1, long j, long k, long l)
+        static void Po(double[] e1, long j, long k, long l)
         {
             e1[j] = e1[k];
             e1[k] = e1[l];
@@ -313,7 +313,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
             return;
         }
 
-        static void P3(ref float x, ref float y, ref float z, float t, float t1, float t2)
+        static void P3(ref double x, ref double y, ref double z, double t, double t1, double t2)
         {
             x = y;
             y = z;
@@ -323,10 +323,10 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
             return;
         }
 
-        void Pout(string title, float ops, int type, float checknum,
+        void Pout(string title, double ops, int type, double checknum,
               double time, int calibrate, int section)
         {
-            float mops, mflops;
+            double mops, mflops;
 
             Check = Check + checknum;
             loop_time[section] = time;
@@ -345,7 +345,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
                 {
                     if (time > 0)
                     {
-                        mflops = ops / (1000000 * (float)time);
+                        mflops = ops / (1000000 * (double)time);
                     }
                     else
                     {
@@ -360,7 +360,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
                 {
                     if (time > 0)
                     {
-                        mops = ops / (1000000 * (float)time);
+                        mops = ops / (1000000 * (double)time);
                     }
                     else
                     {

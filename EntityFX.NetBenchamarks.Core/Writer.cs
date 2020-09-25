@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace EntityFX.NetBenchamarks.Core
+namespace EntityFX.NetBenchmark.Core
 {
     public class Writer 
     {

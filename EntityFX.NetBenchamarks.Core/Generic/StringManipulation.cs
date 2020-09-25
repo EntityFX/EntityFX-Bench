@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace EntityFX.NetBenchamarks.Core.Generic
+namespace EntityFX.NetBenchmark.Core.Generic
 {
     public class StringManipulation : StringManipulationBase, IBenchamrk
     {

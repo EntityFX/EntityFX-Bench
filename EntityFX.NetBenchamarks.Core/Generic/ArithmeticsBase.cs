@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace EntityFX.NetBenchamarks.Core.Generic
+namespace EntityFX.NetBenchmark.Core.Generic
 {
 
     public abstract class ArithmeticsBase : BenchmarkBase
