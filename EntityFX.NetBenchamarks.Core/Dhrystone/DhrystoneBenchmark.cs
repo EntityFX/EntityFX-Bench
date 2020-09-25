@@ -1,4 +1,5 @@
 ﻿using EntityFX.NetBenchmark.Core.Generic;
+using System;
 using System.Diagnostics;
 
 namespace EntityFX.NetBenchmark.Core.Dhrystone
