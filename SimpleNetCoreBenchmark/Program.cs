@@ -1,6 +1,7 @@
 ﻿using EntityFX.NetBenchmark.Core;
 using EntityFX.NetBenchmark.Core.Dhrystone;
 using EntityFX.NetBenchmark.Core.Generic;
+using EntityFX.NetBenchmark.Core.Scimark2;
 using EntityFX.NetBenchmark.Core.Whetstone;
 using System;
 using System.Collections.Generic;
