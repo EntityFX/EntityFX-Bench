@@ -6,7 +6,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
     {
         public IfElseBenchmark()
         {
-            Iterrations = 5000000000;
+            Iterrations = 2000000000;
             Ratio = 0.01;
         }
 

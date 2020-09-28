@@ -11,7 +11,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
             {
                 var str = "the quick brown fox jumps over the lazy dog";
                 string str1 = string.Empty;
-                for (long i = 0; i < Iterrations; i++)
+                for (int i = 0; i < Iterrations; i++)
                 {
                     str1 = DoStringManipilation(str);
                 }

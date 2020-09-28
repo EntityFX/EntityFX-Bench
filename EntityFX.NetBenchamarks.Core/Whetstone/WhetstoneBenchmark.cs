@@ -27,6 +27,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
             benchResult.Result = dhrystoneResult.MWIPS;
             benchResult.Points = Convert.ToDecimal(dhrystoneResult.MWIPS);
             benchResult.Units = "MWIPS";
+            benchResult.Output = dhrystoneResult.Output;
             return benchResult;
         }
 

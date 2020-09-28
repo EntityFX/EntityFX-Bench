@@ -3,10 +3,16 @@
 namespace EntityFX.NetBenchmark.Core.Scimark2
 {
 
-
     public class Scimark2
     {
-        public void Bench(double min_time = Constants.RESOLUTION_DEFAULT, bool isLarge = false)
+        Writer output = new Writer();
+
+        public Scimark2(bool printToConsole = true)
+        {
+            output.UseConsole = printToConsole;
+        }
+
+        public Scimark2Result Bench(double min_time = Constants.RESOLUTION_DEFAULT, bool isLarge = false)
         {
             // default to the (small) cache-contained version
 
@@ -17,9 +23,6 @@ namespace EntityFX.NetBenchmark.Core.Scimark2
             int LU_size = Constants.LU_SIZE;
 
             // look for runtime options
-
-
-
 
             int current_arg = 0;
             if (isLarge)
@@ -32,9 +35,6 @@ namespace EntityFX.NetBenchmark.Core.Scimark2
 
                 current_arg++;
             }
-
-
-
 
 
             // run the benchmark
@@ -55,28 +55,37 @@ namespace EntityFX.NetBenchmark.Core.Scimark2
 
             // print out results
 
-            Console.WriteLine();
-            Console.WriteLine("SciMark 2.0a");
-            Console.WriteLine();
-            Console.WriteLine("Composite Score: " + res[0]);
-            Console.WriteLine("FFT (" + FFT_size + "): ");
+            output.WriteLine();
+            output.WriteLine("SciMark 2.0a");
+            output.WriteLine();
+            output.WriteLine("Composite Score: {0}", res[0]);
+            output.Write("FFT ({0}): ", FFT_size);
             if (res[1] == 0.0)
-                Console.WriteLine(" ERROR, INVALID NUMERICAL RESULT!");
+                output.WriteLine(" ERROR, INVALID NUMERICAL RESULT!");
 
             else
-                Console.WriteLine(res[1]);
+                output.WriteLine("{0}", res[1]);
 
-            Console.WriteLine("SOR (" + SOR_size + "x" + SOR_size + "): " + "  " + res[2]);
-            Console.WriteLine("Monte Carlo : " + res[3]);
-            Console.WriteLine("Sparse matmult (N=" + Sparse_size_M + ", nz=" + Sparse_size_nz + "): " + res[4]);
-            Console.WriteLine("LU (" + LU_size + "x" + LU_size + "): ");
+            output.WriteLine("SOR ({0}x{1}):   {2}", SOR_size, SOR_size, res[2]);
+            output.WriteLine("Monte Carlo : {0}", res[3]);
+            output.WriteLine("Sparse matmult (N={0}, nz={1}): {2}", Sparse_size_M, Sparse_size_nz, res[4]);
+            output.Write("LU ({0}x{1}): ", LU_size, LU_size);
             if (res[5] == 0.0)
-                Console.WriteLine(" ERROR, INVALID NUMERICAL RESULT!");
+                output.WriteLine(" ERROR, INVALID NUMERICAL RESULT!");
 
             else
-                Console.WriteLine(res[5]);
+                output.WriteLine("{0}", res[5]);
 
-
+            return new Scimark2Result()
+            {
+                CompositeScore = res[0],
+                FFT = res[1],
+                SOR = res[2],
+                MonteCarlo = res[3],
+                SparseMathmult = res[4],
+                LU = res[5],
+                Output = output.Output
+            };
         }
 
     }

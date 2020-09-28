@@ -10,7 +10,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
             return BenchInParallel(() => 0, a =>
             {
                 byte[] hash = new byte[] { };
-                for (long i = 0; i < Iterrations; i++)
+                for (int i = 0; i < Iterrations; i++)
                 {
                     hash = DoHash(i, ref artayOfBytes);
                 }

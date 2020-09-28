@@ -25,6 +25,7 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
             benchResult.Result = dhrystoneResult.VaxMips;
             benchResult.Points = Convert.ToDecimal(dhrystoneResult.VaxMips * Ratio);
             benchResult.Units = "DMIPS";
+            benchResult.Output = dhrystoneResult.Output;
             return benchResult;
         }
 

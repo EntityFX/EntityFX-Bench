@@ -4,8 +4,6 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public abstract class StringManipulationBase<TResult> : BenchmarkBase<TResult>
     {
-        protected double R;
-
         public StringManipulationBase()
         {
             Iterrations = 5000000;

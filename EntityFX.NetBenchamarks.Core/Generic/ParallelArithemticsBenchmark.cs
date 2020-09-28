@@ -11,8 +11,8 @@ namespace EntityFX.NetBenchmark.Core.Generic
         {
             return BenchInParallel(() => 0, a =>
             {
-                double R2 = 0;
-                for (long i = 0; i < Iterrations; i++)
+                float R2 = 0;
+                for (int i = 0; i < Iterrations; i++)
                 {
                     R2 += DoArithmetics(i);
                 }

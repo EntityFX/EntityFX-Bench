@@ -11,7 +11,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
             {
                 double R = 0;
                 double li = 0;
-                for (long i = 0; i < Iterrations; i++)
+                for (int i = 0; i < Iterrations; i++)
                 {
                     R += DoMath(i, li);
                 }

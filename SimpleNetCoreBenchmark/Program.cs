@@ -16,7 +16,7 @@ namespace EntityFX.NetBenchmark
 {
     class MainClass
     {
-        private static Writer writer = new Writer();
+        private static Writer writer = new Writer("Output.log");
 
         public static void Main(string[] args)
         {
@@ -24,6 +24,8 @@ namespace EntityFX.NetBenchmark
 
             var benchMarks = new IBenchamrk[]
             {
+                new Scimark2Benchmark(),
+                new ParallelScimark2Benchmark(),
                 new DhrystoneBenchmark(),
                 new ParallelDhrystoneBenchmark(),
                 new WhetstoneBenchmark(),

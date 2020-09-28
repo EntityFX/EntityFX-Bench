@@ -12,7 +12,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        protected static double DoMath(long i, double li)
+        protected static double DoMath(int i, double li)
         {
             double rev = 1.0 / (i + 1.0);
             return Math.Abs(i) * Math.Acos(rev) * Math.Asin(rev) * Math.Atan(rev) +

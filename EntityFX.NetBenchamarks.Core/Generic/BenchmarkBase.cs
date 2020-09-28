@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -7,7 +8,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public abstract class BenchmarkBase<TResult> : IBenchamrk
     {
-        protected long Iterrations;
+        protected int Iterrations;
 
         public static double DebugAspectRatio = 0.1;
 
@@ -20,7 +21,12 @@ namespace EntityFX.NetBenchmark.Core.Generic
             var sw = new Stopwatch();
             sw.Start();
             var res = BenchImplementation();
-            return PopulateResult(BuildResult(sw), res);
+            var result = PopulateResult(BuildResult(sw), res);
+            if (result.Output != null)
+            {
+                File.WriteAllText($"{GetType().Name}.log", result.Output);
+            }
+            return result;
         }
 
         public abstract TResult BenchImplementation();
@@ -29,10 +35,10 @@ namespace EntityFX.NetBenchmark.Core.Generic
         public virtual void Warmup(double aspect = 0.05)
         {
 #if DEBUG
-            Iterrations = Convert.ToInt64(Iterrations * DebugAspectRatio);
+            Iterrations = Convert.ToInt32(Iterrations * DebugAspectRatio);
 #endif
             var tmp = Iterrations;
-            Iterrations = Convert.ToInt64( Iterrations * 0.05);
+            Iterrations = Convert.ToInt32( Iterrations * 0.05);
             Bench();
             Iterrations = tmp;
         }

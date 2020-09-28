@@ -18,6 +18,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
             a.Bench(), (a, r) => { 
                 r.Points = Convert.ToDecimal(a.MWIPS);
                 r.Result = r.Points;
+                r.Output = a.Output;
             });
         }
 
@@ -26,6 +27,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
             var result = BuildParallelResult(benchResult, dhrystoneResult);
             result.Result = dhrystoneResult.Sum(r => Convert.ToDecimal(r.Result));
             result.Units = "MWIPS";
+            result.Output = string.Concat(dhrystoneResult.Select(s => s.Output));
             return result;
         }
 

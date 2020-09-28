@@ -198,6 +198,8 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
             output.WriteLine("Dhrystones per Second:         {0}", result.Dhrystones);
             output.WriteLine("VAX  MIPS rating =             {0}", result.VaxMips);
             output.WriteLine("");
+
+            result.Output = output.Output;
             return result;
         }
 
