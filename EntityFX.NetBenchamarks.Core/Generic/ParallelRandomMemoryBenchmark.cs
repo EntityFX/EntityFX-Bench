@@ -17,9 +17,9 @@ namespace EntityFX.NetBenchmark.Core.Generic
         public override BenchResult PopulateResult(BenchResult benchResult, BenchResult[] dhrystoneResult)
         {
             var result = BuildParallelResult(benchResult, dhrystoneResult);
-            var sum = dhrystoneResult.Sum(r => Convert.ToDecimal(r.Result));
-            result.Result = sum;
-            result.Points = Convert.ToDecimal(result.Result * Ratio);
+            var sum = dhrystoneResult.Sum(r => Convert.ToDouble(r.Result));
+            result.Result = Convert.ToDecimal(sum);
+            result.Points = Convert.ToDecimal(sum * Ratio);
             result.Units = "MB/s";
             result.Output = string.Concat(dhrystoneResult.Select(s => s.Output));
             return result;
