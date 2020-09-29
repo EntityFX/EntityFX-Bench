@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/SimpleNetCoreBenchmark/bin/Debug/netcoreapp3.1/EntityFX.NetBenchmark.dll",
+            "program": "${workspaceFolder}/EntityFX.NetBenchmark/bin/Debug/netcoreapp3.1/EntityFX.NetBenchmark.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,

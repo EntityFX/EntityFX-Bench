@@ -21,9 +21,10 @@ namespace EntityFX.NetBenchmark
         public static void Main(string[] args)
         {
             var useCrypto = !(args.Length > 0 && args[0] == "0");
-            //b.Bench();
             var benchMarks = new IBenchamrk[] 
             {
+                new MemoryBenchmark(),
+                new ParallelMemoryBenchmark(),
                 new RandomMemoryBenchmark(),
                 new ParallelRandomMemoryBenchmark(),
                 new Scimark2Benchmark(),

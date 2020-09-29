@@ -4,14 +4,8 @@ using System.Diagnostics;
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
-    public class RandomMemoryBenchmarkResult
-    {
-        public double Average { get; set; }
 
-        public string Output { get; set; }
-    }
-
-    public abstract class RandomMemoryBenchmarkBase<TResult>: BenchmarkBase<TResult>
+    public abstract class RandomMemoryBenchmarkBase<TResult> : BenchmarkBase<TResult>
     {
         private Random random;
 
@@ -34,26 +28,26 @@ namespace EntityFX.NetBenchmark.Core.Generic
             UseConsole = true;
         }
 
-        public RandomMemoryBenchmarkResult BenchRandomMemory() 
+        public MemoryBenchmarkResult BenchRandomMemory()
         {
-            var int4k = MeasureArrayRandomRead(1000);
+            var int4k = MeasureArrayRandomRead(1024);
             output.WriteLine($"Random int 4k: {int4k.Item1.ToString("F2")} MB/s");
             var int512k = MeasureArrayRandomRead(131072);
             output.WriteLine($"Random int 512k: {int512k.Item1.ToString("F2")} MB/s");
             var int8m = MeasureArrayRandomRead(2097152);
             output.WriteLine($"Random int 8M: {int8m.Item1.ToString("F2")} MB/s");
 
-            var long4k = MeasureArrayRandomLongRead(1000);
+            var long4k = MeasureArrayRandomLongRead(512);
             output.WriteLine($"Random long 4k: {long4k.Item1.ToString("F2")} MB/s");
-            var long512k = MeasureArrayRandomLongRead(131072);
+            var long512k = MeasureArrayRandomLongRead(65536);
             output.WriteLine($"Random long 512k: {long512k.Item1.ToString("F2")} MB/s");
-            var long8m = MeasureArrayRandomLongRead(2097152);
+            var long8m = MeasureArrayRandomLongRead(1048576);
             output.WriteLine($"Random long 8M: {long8m.Item1.ToString("F2")} MB/s");
 
             var avg = (new double[] { int4k.Item1, int512k.Item1, int8m.Item1, long4k.Item1, long512k.Item1, long8m.Item1 }).Average();
             output.WriteLine($"Average: {avg.ToString("F2")} MB/s");
 
-            return new RandomMemoryBenchmarkResult() 
+            return new MemoryBenchmarkResult()
             {
                 Average = avg,
                 Output = output.Output
@@ -64,10 +58,11 @@ namespace EntityFX.NetBenchmark.Core.Generic
         {
             int I = 0;
             var sw = new Stopwatch();
-            var array = Enumerable.Range(0, size).Select( r => random.Next(int.MinValue, int.MaxValue)).ToArray();
+            var array = Enumerable.Range(0, size).Select(r => random.Next(int.MinValue, int.MaxValue)).ToArray();
             var end = array.Length - 1;
-            var indexes = Enumerable.Range(0, end).Select( r => random.Next(0, end)).ToArray();
-            var iterInternal = Iterrations / (size / 1000);
+            var indexes = Enumerable.Range(0, end).Select(r => random.Next(0, end)).ToArray();
+            var k1 = (size / 1024) == 0 ? 1 : (size / 1024) ;
+            var iterInternal = Iterrations / k1;         
             for (int idx = 0; idx < end; idx++)
             {
                 I = array[idx];
@@ -75,13 +70,13 @@ namespace EntityFX.NetBenchmark.Core.Generic
             sw.Start();
             for (int i = 0; i < iterInternal; i++)
             {
-                foreach(var idx in indexes)
+                foreach (var idx in indexes)
                 {
                     I = array[idx];
                 }
             }
             sw.Stop();
-            
+
             return new Tuple<double, int>((long)iterInternal * array.Length * 4 / sw.Elapsed.TotalSeconds / 1024 / 1024, I);
         }
 
@@ -89,10 +84,11 @@ namespace EntityFX.NetBenchmark.Core.Generic
         {
             long L = 0;
             var sw = new Stopwatch();
-            var array = Enumerable.Range(0, size).Select( r => (long)random.Next(int.MinValue, int.MaxValue)).ToArray();
+            var array = Enumerable.Range(0, size).Select(r => (long)random.Next(int.MinValue, int.MaxValue)).ToArray();
             var end = array.Length - 1;
-            var indexes = Enumerable.Range(0, end).Select( r => random.Next(0, end)).ToArray();
-            var iterInternal = Iterrations / (size / 1000);
+            var indexes = Enumerable.Range(0, end).Select(r => random.Next(0, end)).ToArray();
+            var k1 = (size / 1024) == 0 ? 1 : (size / 1024) ;
+            var iterInternal = Iterrations / k1;         
             for (int idx = 0; idx < end; idx++)
             {
                 L = array[idx];
@@ -100,13 +96,13 @@ namespace EntityFX.NetBenchmark.Core.Generic
             sw.Start();
             for (int i = 0; i < iterInternal; i++)
             {
-                foreach(var idx in indexes)
+                foreach (var idx in indexes)
                 {
                     L = array[idx];
                 }
             }
             sw.Stop();
-            
+
             return new Tuple<double, long>((long)iterInternal * array.Length * 8 / sw.Elapsed.TotalSeconds / 1024 / 1024, L);
         }
     }
