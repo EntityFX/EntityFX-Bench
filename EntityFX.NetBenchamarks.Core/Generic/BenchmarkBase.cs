@@ -18,6 +18,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
 
         public virtual BenchResult Bench()
         {
+            BeforeBench();
             var sw = new Stopwatch();
             sw.Start();
             var res = BenchImplementation();
@@ -26,11 +27,21 @@ namespace EntityFX.NetBenchmark.Core.Generic
             {
                 File.WriteAllText($"{GetType().Name}.log", result.Output);
             }
+            AfterBench(result);
             return result;
         }
 
         public abstract TResult BenchImplementation();
 
+        protected virtual void BeforeBench()  
+        {
+
+        }
+
+        protected virtual void AfterBench(BenchResult result)  
+        {
+
+        }
 
         public virtual void Warmup(double aspect = 0.05)
         {
