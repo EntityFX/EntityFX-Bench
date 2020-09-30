@@ -1,0 +1,20 @@
+Warmup
+.....................
+Bench
+[1] MemoryBenchmark
+MemoryBenchmark                       2590,36 ms       12328,88 pts       12328,88 MB/s
+[2] ParallelMemoryBenchmark
+ParallelMemoryBenchmark               9018,87 ms       40118,95 pts       40118,95 MB/s
+[3] RandomMemoryBenchmark
+RandomMemoryBenchmark                 8460,27 ms        9979,31 pts        4989,66 MB/s
+[4] ParallelRandomMemoryBenchmark
+ParallelRandomMemoryBenchmark         5416,62 ms       65225,97 pts       32612,99 MB/s
+[5] Scimark2Benchmark
+Scimark2Benchmark                    15288,94 ms        5847,06 pts         584,71 CompositeScore
+[6] ParallelScimark2Benchmark
+ParallelScimark2Benchmark            15856,93 ms       27823,24 pts        2782,32 CompositeScore
+[7] DhrystoneBenchmark
+DhrystoneBenchmark                    8977,96 ms        5172,45 pts        1293,11 DMIPS
+[8] ParallelDhrystoneBenchmark
+ParallelDhrystoneBenchmark           17489,77 ms       20883,32 pts        5220,83 DMIPS
+[9] WhetstoneBenchmark
