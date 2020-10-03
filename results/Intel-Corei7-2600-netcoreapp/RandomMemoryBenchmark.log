@@ -1,0 +1,14 @@
+Random int 4k: 2491,87 MB/s
+Random int 512k: 2166,46 MB/s
+Random int 8M: 468,02 MB/s
+Random long 4k: 2442,30 MB/s
+Random long 512k: 1701,53 MB/s
+Random long 8M: 993,13 MB/s
+Average: 1710,55 MB/s
+Random int 4k: 2522,03 MB/s
+Random int 512k: 2206,21 MB/s
+Random int 8M: 544,21 MB/s
+Random long 4k: 5031,12 MB/s
+Random long 512k: 4488,93 MB/s
+Random long 8M: 1184,74 MB/s
+Average: 2662,87 MB/s
