@@ -1,0 +1,93 @@
+EntityFX JavaScript Benchmark
+Wait until completed...
+
+Warmup
+...........
+[1] MemoryBenchmark
+int 4k: 1443.55 MB/s
+int 512k: 1407.57 MB/s
+int 8M: 1474.88 MB/s
+int 32M: 1464.37 MB/s
+long 4k: 1487.53 MB/s
+long 512k: 1543.87 MB/s
+long 8M: 1641.72 MB/s
+long 32M: 1547.98 MB/s
+Average: 1501.43 MB/s
+MemoryBenchmark                    19981.00 ms      1501.43 pts      1501.43 MB/s
+[2] RandomMemoryBenchmark
+Random int 4k: 96.16 MB/s
+Random int 512k: 96.67 MB/s
+Random int 8M: 97.48 MB/s
+Random long 4k: 97.35 MB/s
+Random long 512k: 95.62 MB/s
+Random long 8M: 95.95 MB/s
+Average: 96.54 MB/s
+RandomMemoryBenchmark             222904.00 ms       193.08 pts        96.54 MB/s
+[3] Scimark2Benchmark
+
+SciMark 2.0a
+Composite Score:           241.29
+FFT             Mflops:    153.11    (N=1024)
+SOR             Mflops:    520.80    (100 x 100)
+Monte Carlo     Mflops:     26.47
+Sparse matmult  Mflops:    131.18    (N=1000, nz=5000)
+LU              Mflops:    374.89    (100x100): 
+Scimark2Benchmark                  30151.00 ms      2412.89 pts       241.29 CompositeScore
+[4] DhrystoneBenchmark
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: JavaScript)
+
+Optimization Non-optimised
+
+Final values (* implementation-dependent):
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  
+Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1516
+Dhrystones per Second:         659674
+VAX  MIPS rating =             375
+
+DhrystoneBenchmark                 30325.00 ms      1501.82 pts       375.45 DMIPS
+[5] WhetstoneBenchmark
+     Whetstone Benchmark JavaScript Version, Mon, 12 Oct 2020 17:12:23 GMT
+                                                       1 Pass
+  Test                  Result       MFLOPS     MOPS  millisecs
+  N1 floating point  -1.123976375    506.44             0.0379
+  N2 floating point  -1.131176093    306.71             0.4382
+  N3 if then else     1.000000000             122.69    0.8436
+  N4 fixed point     12.000000000             532.81    0.5912
+  N5 sin,cos etc.     0.499029351              26.62    3.1260
+  N6 floating point   0.999999879     21.09            25.5800
+  N7 assignments      3.000000000             359.53    0.5140
+  N8 exp,sqrt etc.    0.835383055              14.77    2.5180
+  MWIPS                              297.19            33.6489
+WhetstoneBenchmark                 28239.00 ms       297.19 pts       297.19 MWIPS
+[6] ArithemticsBenchmark
+ArithemticsBenchmark               25808.00 ms       348.73 pts
+[7] MathBenchmark
+MathBenchmark                     279006.00 ms       358.42 pts
+[8] CallBenchmark
+CallBenchmark                       6422.00 ms      3114.29 pts
+[9] IfElseBenchmark
+IfElseBenchmark                    26382.00 ms       758.09 pts
+[10] StringManipulation
+StringManipulation                 39776.00 ms      1257.04 pts
+[11] HashBenchmark
+HashBenchmark                     155194.00 ms       128.87 pts
+
+Total:                            864188.00 ms     11871.85 pts
+Win32;Chrome 85;0;0;1501.43;193.08;2412.89;1501.82;297.19;348.73;358.42;3114.29;758.09;1257.04;128.87;864188                        
