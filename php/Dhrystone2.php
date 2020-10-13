@@ -2,6 +2,9 @@
 
 namespace EntityFX\NetBenchmark\Core\Dhrystone
 {
+	require_once("Writer.php");
+	use EntityFX\NetBenchmark\Core\Writer;
+
 	class Record
 	{
 		/**
@@ -22,7 +25,7 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
         const Ident_4 = 3;
 		const Ident_5 = 4;
 
-		public const LOOPS = 20000000;
+		public const LOOPS = 500000; //20000000;
 		
 		/**
 		 * @type CheckRecord
@@ -30,17 +33,20 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
 		private static $Check;
 
         private $IntGlob = 0;
-        private $BoolGlob = FALSE;
+        private $BoolGlob = false;
         private $Char1Glob = '\0';
         private $Char2Glob = '\0';
         private $Array1Glob = [];
         private $Array2Glob = [[]];
 
         private $PtrGlbNext;
-        private $PtrGlb;
+		private $PtrGlb;
+		
+		private $output;
 
-		public function __construct(bool $printToConsole) {
-
+		public function __construct($printToConsole) {
+			$this->output = new Writer();
+			$this->output->UseConsole = $printToConsole;
 		}
 
 		static function structAssign(Record $destination, Record $source)
@@ -54,8 +60,151 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
 
         public function bench(int $loops)
         {
+			$this->output->WriteLine("##########################################");
+
+            $this->output->WriteNewLine();
+            $this->output->WriteLine("Dhrystone Benchmark, Version 2.1 (Language: PHP)");
+            $this->output->WriteNewLine();
+
+            $this->output->WriteLine("Optimization %d", false);
 			$result = $this->proc0($loops);
-			var_dump($result);
+
+			$this->output->WriteNewLine();
+            $this->output->WriteLine("Final values (* implementation-dependent):\n");
+            $this->output->WriteNewLine();
+            $this->output->Write("Int_Glob:      ");
+
+            if ($this->IntGlob == 5) $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+			$this->output->WriteLine("%d  ", $this->IntGlob);
+			
+            $this->output->Write("Bool_Glob:     ");
+            if ($this->BoolGlob) $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+            $this->output->WriteLine("%s", $this->BoolGlob);
+
+            $this->output->Write("Ch_1_Glob:     ");
+            if ($this->Char1Glob == 'A') $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+            $this->output->WriteLine("%s  ", $this->Char1Glob);
+
+            $this->output->Write("Ch_2_Glob:     ");
+            if ($this->Char2Glob == 'B') $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+            $this->output->WriteLine("%s", $this->Char2Glob);
+
+            $this->output->Write("Arr_1_Glob[8]: ");
+            if ($this->Array1Glob[8] == 7) $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+			$this->output->Write("%d  ", $this->Array1Glob[8]);
+			
+            $this->output->Write("Arr_2_Glob8/7: ");
+            if ($this->Array2Glob[8][7] == self::LOOPS + 10)
+                $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+            $this->output->WriteLine("%d", $this->Array2Glob[8][7]);
+
+            $this->output->Write("Ptr_Glob->            ");
+            $this->output->WriteLine("  Ptr_Comp:       *    %d", $this->PtrGlb->PtrComp != null);
+
+            $this->output->Write("  Discr:       ");
+            if ($this->PtrGlb->Discr == 0) $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+            $this->output->Write("%d  ", $this->PtrGlb->Discr);
+
+            $this->output->Write("Enum_Comp:     ");
+            if ($this->PtrGlb->EnumComp == 2)
+                $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+            $this->output->WriteLine("%d", $this->PtrGlb->EnumComp);
+
+            $this->output->Write("  Int_Comp:    ");
+            if ($this->PtrGlb->IntComp == 17) $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+            $this->output->Write("%d ", $this->PtrGlb->IntComp);
+
+            $this->output->Write("Str_Comp:      ");
+            if ($this->PtrGlb->StringComp ==
+                                 "DHRYSTONE PROGRAM, SOME STRING")
+            $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+            $this->output->WriteLine("%s", $this->PtrGlb->StringComp);
+
+            $this->output->Write("Next_Ptr_Glob->       ");
+            $this->output->Write("  Ptr_Comp:       *    %d", $this->PtrGlbNext->PtrComp != null);
+            $this->output->WriteLine(" same as above");
+
+            $this->output->Write("  Discr:       ");
+            if ($this->PtrGlbNext->Discr == 0)
+                $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+            $this->output->Write("%d  ", $this->PtrGlbNext->Discr);
+
+            $this->output->Write("Enum_Comp:     ");
+            if ($this->PtrGlbNext->EnumComp == 1)
+                $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+            $this->output->WriteLine("%d", $this->PtrGlbNext->EnumComp);
+
+            $this->output->Write("  Int_Comp:    ");
+            if ($this->PtrGlbNext->IntComp == 18)
+                $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+            $this->output->Write("%d ", $this->PtrGlbNext->IntComp);
+
+            $this->output->Write("Str_Comp:      ");
+            if ($this->PtrGlbNext->StringComp ==
+                                 "DHRYSTONE PROGRAM, SOME STRING")
+               $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+			$this->output->WriteLine("%s", $this->PtrGlbNext->StringComp);
+			
+            $this->output->Write("Int_1_Loc:     ");
+            if (self::$Check["IntLoc1"] == 5)
+                $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+            $this->output->Write("%d  ", self::$Check["IntLoc1"]);
+
+            $this->output->Write("Int_2_Loc:     ");
+            if (self::$Check["IntLoc2"] == 13)
+                $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+            $this->output->WriteLine("%d", self::$Check["IntLoc2"]);
+
+            $this->output->Write("Int_3_Loc:     ");
+            if (self::$Check["IntLoc3"] == 7)
+                $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+            $this->output->WriteLine("%d  ", self::$Check["IntLoc3"]);
+
+            $this->output->Write("Enum_Loc:      ");
+            if (self::$Check["EnumLoc"] == 1)
+                $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+            $this->output->WriteLine("%d  ", self::$Check["EnumLoc"]);
+
+
+            $this->output->Write("Str_1_Loc:                             ");
+            if (self::$Check["String1Loc"] == "DHRYSTONE PROGRAM, 1'ST STRING")
+                $this->output->WriteValue("O.K.  ");
+
+            else $this->output->Write("WRONG ");
+            $this->output->WriteLine("%s", self::$Check["String1Loc"]);
+
+            $this->output->Write("Str_2_Loc:                             ");
+            if (self::$Check["String2Loc"] == "DHRYSTONE PROGRAM, 2'ND STRING")
+                $this->output->WriteValue("O.K.  ");
+            else $this->output->Write("WRONG ");
+            $this->output->WriteLine("%s", self::$Check["String2Loc"]);
+
+
+            $this->output->WriteNewLine();
+
+            $this->output->WriteLine("Nanoseconds one Dhrystone run: %.2f", 1000000000 / $result["Dhrystones"]);
+            $this->output->WriteLine("Dhrystones per Second:         %d", $result["Dhrystones"]);
+            $this->output->WriteLine("VAX  MIPS rating =             %.2f", $result["VaxMips"]);
+            $this->output->WriteNewLine();
+
 		}
 
         function proc0(int $loops)
@@ -121,7 +270,7 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
 
 
                 $IntLoc2 = $IntLoc2 * $IntLoc1;
-                $IntLoc1 = $IntLoc2 / $IntLoc3;
+                $IntLoc1 = (int)($IntLoc2 / $IntLoc3);
                 $IntLoc2 = 7 * ($IntLoc2 - $IntLoc3) - $IntLoc1;
 				$IntLoc1 = $this->proc2($IntLoc1);
             }
@@ -138,14 +287,16 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
             }
             $dhrystones = 1000 * $loopsPerBenchtime;
 
-            $Check = [
+            self::$Check = [
                 "EnumLoc" => $EnumLoc,
                 "IntLoc1" => $IntLoc1,
                 "IntLoc2" => $IntLoc2,
                 "IntLoc3" => $IntLoc3,
                 "String1Loc" => $String1Loc,
                 "String2Loc" => $String2Loc
-            ];
+			];
+			
+			$output = "";
 
             return [
                 "Dhrystones" => $dhrystones,
@@ -263,7 +414,7 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
             return $IntParOut;
         }
 
-        function proc8(array $Array1Par,array $Array2Par, $IntParI1, $IntParI2)
+        function proc8(array &$Array1Par, array &$Array2Par, $IntParI1, $IntParI2)
         {
             $IntLoc = $IntParI1 + 5;
             $Array1Par[$IntLoc] = $IntParI2;
@@ -276,7 +427,7 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
             }
             $Array2Par[$IntLoc][$IntLoc - 1] = $Array2Par[$IntLoc][$IntLoc - 1] + 1;
             $Array2Par[$IntLoc + 20][$IntLoc] = $Array1Par[$IntLoc];
-            $IntGlob = 5;
+            $this->IntGlob = 5;
         }
 
 		static function func1($CharPar1, $CharPar2)
@@ -328,5 +479,6 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
 	}
 
 	$d = new Dhrystone2(true);
-	$d->bench(500000 /*Dhrystone2::LOOPS*/);
+	$d->bench(Dhrystone2::LOOPS);
+
 }
