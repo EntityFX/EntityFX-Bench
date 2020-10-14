@@ -478,7 +478,4 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
         }
 	}
 
-	$d = new Dhrystone2(true);
-	$d->bench(Dhrystone2::LOOPS);
-
 }

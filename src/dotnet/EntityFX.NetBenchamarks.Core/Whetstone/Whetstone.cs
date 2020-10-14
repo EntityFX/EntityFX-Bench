@@ -344,7 +344,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
             }
             if (calibrate == 0)
             {
-                Write("{0,-18}{1,24}    ", headings[section], results[section].ToString("F17"));
+                Write("{0,-18} {1,24}    ", headings[section], results[section].ToString("F17"));
 
                 if (type == 1)
                 {

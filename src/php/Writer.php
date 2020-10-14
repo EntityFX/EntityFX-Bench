@@ -48,7 +48,7 @@ namespace EntityFX\NetBenchmark\Core
 			$this->WriteColor("\033[1;30m", $format, $args);
 		}
 	
-		public function WriteColor($color, $format, $args)
+		public function WriteColor($color, $format, array $args)
 		{
 			if ($this->UseConsole)
 			{
