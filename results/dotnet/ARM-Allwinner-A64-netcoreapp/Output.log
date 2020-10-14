@@ -1,0 +1,47 @@
+Warmup
+....................
+Bench
+[1] MemoryBenchmark
+MemoryBenchmark                      34577,34 ms         701,25 pts         701,25 MB/s
+[2] ParallelMemoryBenchmark
+ParallelMemoryBenchmark              48509,86 ms        2092,21 pts        2092,21 MB/s
+[3] RandomMemoryBenchmark
+RandomMemoryBenchmark               275036,55 ms         351,96 pts         175,98 MB/s
+[4] ParallelRandomMemoryBenchmark
+ParallelRandomMemoryBenchmark        45314,54 ms        2983,75 pts        1491,87 MB/s
+[5] Scimark2Benchmark
+Scimark2Benchmark                    16355,84 ms         462,51 pts          46,25 CompositeScore
+[6] ParallelScimark2Benchmark
+ParallelScimark2Benchmark            19937,38 ms        1883,59 pts         188,36 CompositeScore
+[7] DhrystoneBenchmark
+DhrystoneBenchmark                   25418,96 ms        1803,07 pts         450,77 DMIPS
+[8] ParallelDhrystoneBenchmark
+ParallelDhrystoneBenchmark           29899,53 ms        6697,78 pts        1674,45 DMIPS
+[9] WhetstoneBenchmark
+WhetstoneBenchmark                  159831,96 ms         388,74 pts         388,74 MWIPS
+[10] ParallelWhetstoneBenchmark
+ParallelWhetstoneBenchmark          112251,31 ms        2376,01 pts        2376,01 MWIPS
+[11] ArithemticsBenchmark
+ArithemticsBenchmark                 30330,80 ms         296,73 pts                
+[12] ParallelArithemticsBenchmark
+ParallelArithemticsBenchmark         25526,19 ms        1416,41 pts                
+[13] MathBenchmark
+MathBenchmark                       179557,70 ms         556,92 pts                
+[14] ParallelMathBenchmark
+ParallelMathBenchmark               188644,69 ms        2124,36 pts                
+[15] CallBenchmark
+CallBenchmark                        28114,16 ms         711,39 pts                
+[16] IfElseBenchmark
+IfElseBenchmark                      42242,13 ms         473,46 pts                
+[17] StringManipulation
+StringManipulation                   59039,41 ms         846,89 pts                
+[18] ParallelStringManipulation
+ParallelStringManipulation          153776,64 ms        1309,55 pts                
+[19] HashBenchmark
+HashBenchmark                        35452,87 ms         564,13 pts                
+[20] ParallelHashBenchmark
+ParallelHashBenchmark                58908,20 ms        1363,53 pts                
+
+Total:                             1568726,06 ms       29404,24 pts
+
+Unix 4.14.44.64;3.1.1;4;686247936;701,25;2092,21;351,96;2983,75;462,51;1883,59;1803,07;6697,78;388,74;2376,01;296,73;1416,41;556,92;2124,36;711,39;473,46;846,89;1309,55;564,13;1363,53;00:26:08.7260569

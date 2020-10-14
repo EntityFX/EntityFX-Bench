@@ -1,0 +1,43 @@
+Warmup
+..................
+Bench
+[1] MemoryBenchmark
+MemoryBenchmark                      14378,23 ms        2891,87 pts        2891,87 MB/s
+[2] ParallelMemoryBenchmark
+ParallelMemoryBenchmark              34734,08 ms       20658,81 pts       20658,81 MB/s
+[3] RandomMemoryBenchmark
+RandomMemoryBenchmark                23697,03 ms        2620,34 pts        1310,17 MB/s
+[4] ParallelRandomMemoryBenchmark
+ParallelRandomMemoryBenchmark        20464,59 ms       27765,76 pts       13882,88 MB/s
+[5] Scimark2Benchmark
+Scimark2Benchmark                    15571,57 ms        1691,94 pts         169,19 CompositeScore
+[6] ParallelScimark2Benchmark
+ParallelScimark2Benchmark            14917,69 ms       12876,85 pts        1287,69 CompositeScore
+[7] DhrystoneBenchmark
+DhrystoneBenchmark                    9067,72 ms        5058,62 pts        1264,66 DMIPS
+[8] ParallelDhrystoneBenchmark
+ParallelDhrystoneBenchmark            8280,56 ms       48628,34 pts       12157,09 DMIPS
+[9] WhetstoneBenchmark
+WhetstoneBenchmark                  299168,76 ms         407,61 pts         407,61 MWIPS
+[10] ParallelWhetstoneBenchmark
+ParallelWhetstoneBenchmark          102809,25 ms        9430,39 pts        9430,39 MWIPS
+[11] ArithemticsBenchmark
+ArithemticsBenchmark                  2229,58 ms        4036,59 pts                
+[12] ParallelArithemticsBenchmark
+ParallelArithemticsBenchmark          2032,53 ms       35469,08 pts                
+[13] MathBenchmark
+MathBenchmark                       116862,37 ms         855,71 pts                
+[14] ParallelMathBenchmark
+ParallelMathBenchmark               113187,95 ms        7110,93 pts                
+[15] CallBenchmark
+CallBenchmark                         1308,04 ms       15289,98 pts                
+[16] IfElseBenchmark
+IfElseBenchmark                       4542,73 ms        4402,63 pts                
+[17] StringManipulation
+StringManipulation                   26936,32 ms        1856,23 pts                
+[18] ParallelStringManipulation
+ParallelStringManipulation          173410,01 ms        2311,31 pts                
+
+Total:                              983599,02 ms      203362,99 pts
+
+Unix 5.4.0.1;3.1.1;8;2077966336;2891,87;20658,81;2620,34;27765,76;1691,94;12876,85;5058,62;48628,34;407,61;9430,39;4036,59;35469,08;855,71;7110,93;15289,98;4402,63;1856,23;2311,31;00:16:23.5990174
