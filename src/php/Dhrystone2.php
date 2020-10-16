@@ -2,7 +2,6 @@
 
 namespace EntityFX\NetBenchmark\Core\Dhrystone
 {
-	require_once("Writer.php");
 	use EntityFX\NetBenchmark\Core\Writer;
 
 	class Record

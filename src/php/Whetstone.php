@@ -1,7 +1,6 @@
 <?php
 
 namespace EntityFX\NetBenchmark\Core\Whetstone {
-	require_once("Writer.php");
     use EntityFX\NetBenchmark\Core\Writer;
     
     class Whetstone {

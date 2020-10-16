@@ -39,7 +39,7 @@ namespace EntityFX\NetBenchmark\Core
 	
 		public function WriteHeader($format, ...$args)
 		{
-			$this->WriteColor("cyan", $format, $args);
+			$this->WriteColor("\033[1;36m", $format, $args);
 			$this->WriteNewLine();
 		}
 	
@@ -55,7 +55,7 @@ namespace EntityFX\NetBenchmark\Core
 				//var tmpColor = Console.ForegroundColor;
 				//Console.ForegroundColor = color;
 				//Console.Write(format, args);
-				vprintf($color.$format, $args);
+				vprintf($color.$format."\033[0m", $args);
 				//Console.ForegroundColor = tmpColor;
 	
 			}
@@ -72,7 +72,7 @@ namespace EntityFX\NetBenchmark\Core
 	
 		public function WriteTitle($format, ...$args)
 		{
-			$this->WriteColor("white", $format, $args);
+			$this->WriteColor("\033[1;37m", $format, $args);
 		}
 	}
 }
