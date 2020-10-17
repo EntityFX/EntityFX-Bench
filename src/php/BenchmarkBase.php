@@ -15,7 +15,7 @@ namespace EntityFX\NetBenchmark\Core\Generic {
     
         public $Name = "";
 
-        private $output;
+        protected $output;
 
         public function __construct($writer, $printToConsole) {
             $this->printToConsole = ($printToConsole === null) ? true : $printToConsole;

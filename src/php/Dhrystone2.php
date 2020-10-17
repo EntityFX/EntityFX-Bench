@@ -57,8 +57,9 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
             $destination->Discr = $source->Discr;
 		}
 
-        public function bench(int $loops)
+        public function bench($loops = null)
         {
+            $loops = $loops == null ? self::LOOPS : $loops;
 			$this->output->WriteLine("##########################################");
 
             $this->output->WriteNewLine();
@@ -98,7 +99,7 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
 			$this->output->Write("%d  ", $this->Array1Glob[8]);
 			
             $this->output->Write("Arr_2_Glob8/7: ");
-            if ($this->Array2Glob[8][7] == self::LOOPS + 10)
+            if ($this->Array2Glob[8][7] == $loops + 10)
                 $this->output->WriteValue("O.K.  ");
             else $this->output->Write("WRONG ");
             $this->output->WriteLine("%d", $this->Array2Glob[8][7]);
@@ -204,9 +205,10 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
             $this->output->WriteLine("VAX  MIPS rating =             %.2f", $result["VaxMips"]);
             $this->output->WriteNewLine();
 
+            return $result;
 		}
 
-        function proc0(int $loops)
+        function proc0($loops)
         {
             $this->PtrGlbNext = new Record();
             $this->PtrGlb = new Record();

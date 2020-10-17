@@ -12,6 +12,12 @@ require_once("CallBenchmark.php");
 require_once("IfElseBenchmark.php");
 require_once("StringManipulationBase.php");
 require_once("StringManipulation.php");
+require_once("MemoryBenchmarkBase.php");
+require_once("MemoryBenchmark.php");
+require_once("RandomMemoryBenchmarkBase.php");
+require_once("RandomMemoryBenchmark.php");
+require_once("Dhrystone2.php");
+require_once("DhrystoneBenchmark.php");
 
 use EntityFX\NetBenchmark\Core\Writer;
 use EntityFX\NetBenchmark\Core\Generic\ArithmeticsBenchmark;
@@ -19,6 +25,9 @@ use EntityFX\NetBenchmark\Core\Generic\MathBenchmark;
 use EntityFX\NetBenchmark\Core\Generic\CallBenchmark;
 use EntityFX\NetBenchmark\Core\Generic\IfElseBenchmark;
 use EntityFX\NetBenchmark\Core\Generic\StringManipulation;
+use EntityFX\NetBenchmark\Core\Generic\MemoryBenchmark;
+use EntityFX\NetBenchmark\Core\Generic\RandomMemoryBenchmark;
+use EntityFX\NetBenchmark\Core\Dhrystone\DhrystoneBenchmark;
 
 function writeResult($writer, $benchResult)
 {
@@ -33,6 +42,9 @@ function writeResult($writer, $benchResult)
 $writer = new Writer();
 
 $benchmarks = [
+    new MemoryBenchmark($writer, true),
+    new RandomMemoryBenchmark($writer, true),
+    new DhrystoneBenchmark($writer, true),
     new ArithmeticsBenchmark($writer, true),
     new MathBenchmark($writer, true),
     new CallBenchmark($writer, true),
