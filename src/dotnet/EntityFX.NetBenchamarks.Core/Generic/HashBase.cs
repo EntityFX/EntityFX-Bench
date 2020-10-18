@@ -10,7 +10,9 @@ namespace EntityFX.NetBenchmark.Core.Generic
         protected double R;
 
         protected string[] strs = new string[] {
-            "the quick brown fox jumps over the lazy dog", "Some red wine", "Candels & Ropes" };
+            "the quick brown fox jumps over the lazy dog", 
+            "Some red wine", 
+            "Candels & Ropes" };
 
         protected byte[][] artayOfBytes;
 

@@ -18,6 +18,12 @@ require_once("RandomMemoryBenchmarkBase.php");
 require_once("RandomMemoryBenchmark.php");
 require_once("Dhrystone2.php");
 require_once("DhrystoneBenchmark.php");
+require_once("Whetstone.php");
+require_once("WhetstoneBenchmark.php");
+require_once("HashBase.php");
+require_once("HashBenchmark.php");
+require_once("Scimark2/Constants.php");
+require_once("Scimark2/FFT.php");
 
 use EntityFX\NetBenchmark\Core\Writer;
 use EntityFX\NetBenchmark\Core\Generic\ArithmeticsBenchmark;
@@ -27,14 +33,18 @@ use EntityFX\NetBenchmark\Core\Generic\IfElseBenchmark;
 use EntityFX\NetBenchmark\Core\Generic\StringManipulation;
 use EntityFX\NetBenchmark\Core\Generic\MemoryBenchmark;
 use EntityFX\NetBenchmark\Core\Generic\RandomMemoryBenchmark;
+use EntityFX\NetBenchmark\Core\Generic\HashBenchmark;
 use EntityFX\NetBenchmark\Core\Dhrystone\DhrystoneBenchmark;
+use EntityFX\NetBenchmark\Core\Whetstone\WhetstoneBenchmark;
 
 function writeResult($writer, $benchResult)
 {
     $writer->WriteTitle("%-30s", $benchResult["BenchmarkName"]);
-    $writer->WriteValue("%.2f ms", $benchResult["Elapsed"]);
-    $writer->WriteValue("%15.2f pts", $benchResult["Points"]);
-    $writer->WriteValue("%15.2f %s", $benchResult["Result"], $benchResult["Units"]);
+    $writer->WriteValue("%13.2f ms", $benchResult["Elapsed"]);
+    $writer->WriteValue("%13.2f pts", $benchResult["Points"]);
+    if ($benchResult["Result"] != "") {
+        $writer->WriteValue("%13.2f %s", $benchResult["Result"], $benchResult["Units"]);
+    }
     $writer->WriteNewLine();
 }
 
@@ -42,9 +52,11 @@ function writeResult($writer, $benchResult)
 $writer = new Writer();
 
 $benchmarks = [
+    new HashBenchmark($writer, true),
     new MemoryBenchmark($writer, true),
     new RandomMemoryBenchmark($writer, true),
     new DhrystoneBenchmark($writer, true),
+    new WhetstoneBenchmark($writer, true),
     new ArithmeticsBenchmark($writer, true),
     new MathBenchmark($writer, true),
     new CallBenchmark($writer, true),

@@ -380,7 +380,4 @@ namespace EntityFX\NetBenchmark\Core\Whetstone {
             $this->output->Write($text, ...$args);
         }
     }
-
-    $w = new Whetstone(true);
-    $w->bench(false);
 }
