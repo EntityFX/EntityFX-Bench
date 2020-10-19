@@ -22,8 +22,7 @@ require_once("Whetstone.php");
 require_once("WhetstoneBenchmark.php");
 require_once("HashBase.php");
 require_once("HashBenchmark.php");
-require_once("Scimark2/Constants.php");
-require_once("Scimark2/FFT.php");
+require_once("Scimark2/Scimark2.php");
 
 use EntityFX\NetBenchmark\Core\Writer;
 use EntityFX\NetBenchmark\Core\Generic\ArithmeticsBenchmark;
@@ -36,6 +35,7 @@ use EntityFX\NetBenchmark\Core\Generic\RandomMemoryBenchmark;
 use EntityFX\NetBenchmark\Core\Generic\HashBenchmark;
 use EntityFX\NetBenchmark\Core\Dhrystone\DhrystoneBenchmark;
 use EntityFX\NetBenchmark\Core\Whetstone\WhetstoneBenchmark;
+use EntityFX\NetBenchmark\Core\Scimark2\Scimark2;
 
 function writeResult($writer, $benchResult)
 {
@@ -50,6 +50,9 @@ function writeResult($writer, $benchResult)
 
 
 $writer = new Writer();
+
+$s = new Scimark2(true);
+$s->Bench();
 
 $benchmarks = [
     new HashBenchmark($writer, true),
