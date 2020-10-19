@@ -177,6 +177,7 @@ namespace EntityFX\NetBenchmark\Core\Scimark2 {
 
 
             $EPS = 1.0e-12;
+
             if (self::normabs($b, self::matvec($A, $x)) / $N > $EPS)
                 return 0.0;
 
@@ -197,7 +198,7 @@ namespace EntityFX\NetBenchmark\Core\Scimark2 {
             return $y;
         }
 
-        private static function CopyVector(array $B, array $A) {
+        private static function CopyVector(array &$B, array $A) {
             $N = count($A);
 
             for ($i = 0; $i < $N; $i++)
@@ -210,7 +211,7 @@ namespace EntityFX\NetBenchmark\Core\Scimark2 {
             $sum = 0.0;
 
             for ($i = 0; $i < $N; $i++)
-                $sum += abd($x[$i] - $y[$i]);
+                $sum += abs($x[$i] - $y[$i]);
 
             return $sum;
         }
@@ -223,8 +224,8 @@ namespace EntityFX\NetBenchmark\Core\Scimark2 {
 
             for ($i = 0; $i < $M; $i++)
             {
-                $Bi = $B[$i];
-                $Ai = $A[$i];
+                $Bi = &$B[$i];
+                $Ai = &$A[$i];
                 for ($j = 0; $j < $remainder; $j++)
                     $Bi[$j] = $Ai[$j];
                 for ($j = $remainder; $j < $N; $j += 4)

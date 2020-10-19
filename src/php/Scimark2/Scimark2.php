@@ -17,8 +17,8 @@ namespace EntityFX\NetBenchmark\Core\Scimark2 {
 
         public function __construct($printToConsole = true)
         {
-            $output = new Writer();
-            $output->UseConsole = $printToConsole;
+            $this->output = new Writer();
+            $this->output->UseConsole = $printToConsole;
         }
 
         public function Bench($min_time = Constants::RESOLUTION_DEFAULT, $isLarge = false) {
@@ -59,29 +59,30 @@ namespace EntityFX\NetBenchmark\Core\Scimark2 {
 
             $res[0] = ($res[1] + $res[2] + $res[3] + $res[4] + $res[5]) / 5;
 
-
             // print out results
 
-            $output->WriteNewLine();
-            $output->WriteLine("SciMark 2.0a");
-            $output->WriteLine();
-            $output->WriteLine("Composite Score: %2f", $res[0]);
-            $output->Write("FFT ({%d}): ", $FFT_size);
+            $this->output->WriteNewLine();
+            $this->output->WriteLine("SciMark 2.0a");
+            $this->output->WriteNewLine();
+            $this->output->write("Composite Score:%17.2f", $res[0]);
+			$this->output->WriteNewLine();
+            $this->output->Write("FFT             Mflops:%10.2f    (N=%d)", $res[1], $FFT_size);
             if ($res[1] == 0.0)
-                $output->WriteLine(" ERROR, INVALID NUMERICAL RESULT!");
+                $this->output->Write(" ERROR, INVALID NUMERICAL RESULT!");
 
-            else
-                $output->WriteLine("%2f", res[1]);
+            $this->output->WriteNewLine();
 
-            $output->WriteLine("SOR (%dx%d):   %2f", $SOR_size, $SOR_size, $res[2]);
-            $output->WriteLine("Monte Carlo : %2f", $res[3]);
-            $output->WriteLine("Sparse matmult (N=%d, nz=%d): %2f", $Sparse_size_M, $Sparse_size_nz, $res[4]);
-            $output->Write("LU (%dx%d): ", $LU_size, $LU_size);
+            $this->output->Write("SOR             Mflops:%10.2f    (%d x %d)", $res[2], $SOR_size, $SOR_size);
+			$this->output->WriteNewLine();
+            $this->output->Write("Monte Carlo     Mflops:%10.2f", $res[3]);
+			$this->output->WriteNewLine();
+            $this->output->Write("Sparse matmult  Mflops:%10.2f    (N=%d, nz=%d)", $res[4], $Sparse_size_M, $Sparse_size_nz);
+			$this->output->WriteNewLine();
+            $this->output->Write("LU              Mflops:%10.2f    (%dx%d): ", $res[5], $LU_size, $LU_size);
             if ($res[5] == 0.0)
-                $output->WriteLine(" ERROR, INVALID NUMERICAL RESULT!");
+                $this->output->Write(" ERROR, INVALID NUMERICAL RESULT!");
 
-            else
-                $output->WriteLine("%2f", $res[5]);
+            $this->output->WriteNewLine();
 
             return [
                 "CompositeScore" => $res[0],

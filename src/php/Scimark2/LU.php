@@ -47,8 +47,8 @@ namespace EntityFX\NetBenchmark\Core\Scimark2 {
 
             for ($i = 0; $i < $M; $i++)
             {
-                $Bi = $B[i];
-                $Ai = $A[i];
+                $Bi = $B[$i];
+                $Ai = $A[$i];
                 for ($j = 0; $j < $remainder; $j++)
                     $Bi[$j] = $Ai[$j];
                 for ($j = $remainder; $j < $N; $j += 4)
@@ -85,18 +85,18 @@ namespace EntityFX\NetBenchmark\Core\Scimark2 {
                     factorization.
         */
         public function LU(array $A) {
-            $M = A.Length;
-            $N = A[0].Length;
+            $M = count($A);
+            $N = count($A[0]);
 
             //if ( LU_ == null || LU_.length != M || LU_[0].length != N)
-            $LU_= [];
+            $this->LU_= [];
 
-            self::insert_copy($LU_, $A);
+            self::insert_copy($this->LU_, $A);
 
             //if (pivot_.length != M)
             $this->pivot_= [];
 
-            self::factor($LU_, $this->pivot_);
+            self::factor($this->LU_, $this->pivot_);
         }
 
         /**
@@ -187,8 +187,8 @@ namespace EntityFX\NetBenchmark\Core\Scimark2 {
 
                     for ($ii = $j + 1; $ii < $M; $ii++)
                     {
-                        $Aii = $A[$ii];
-                        $Aj = $AA[$j];
+                        $Aii = &$A[$ii];
+                        $Aj = $A[$j];
                         $AiiJ = $Aii[$j];
                         for ($jj = $j + 1; $jj < $N; $jj++)
                             $Aii[$jj] -= $AiiJ * $Aj[$jj];
