@@ -10,7 +10,7 @@ namespace EntityFX\NetBenchmark\Core\Generic {
         {
             parent::__construct($writer, $printToConsole);
             $this->Iterrations = 500000;
-            $this->Ratio = 2;
+            $this->Ratio = 80;
         }
 
         public function Warmup($aspect = 0.05) {

@@ -12,7 +12,7 @@ namespace EntityFX\NetBenchmark\Core\Whetstone {
         public function __construct($writer, $printToConsole)
         {
             parent::__construct($writer, $printToConsole);
-            $this->Ratio = 1;
+            $this->Ratio = 20;
             $this->dhrystone = new Whetstone($printToConsole);
         }
 

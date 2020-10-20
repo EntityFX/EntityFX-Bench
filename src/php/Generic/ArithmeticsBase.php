@@ -11,7 +11,7 @@ namespace EntityFX\NetBenchmark\Core\Generic {
         {
             parent::__construct($writer, $printToConsole);
             $this->Iterrations = 300000000;
-            $this->Ratio = 0.03;
+            $this->Ratio = 2;
         }
 
         public static function DoArithmetics($i)

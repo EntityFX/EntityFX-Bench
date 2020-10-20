@@ -12,7 +12,7 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone {
         public function __construct($writer, $printToConsole)
         {
             parent::__construct($writer, $printToConsole);
-            $this->Ratio = 4;
+            $this->Ratio = 50;
             $this->dhrystone = new Dhrystone2($printToConsole);
         }
 

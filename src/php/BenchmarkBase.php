@@ -103,8 +103,8 @@ if (defined("DEBUG")) {
                 "BenchmarkName" => $this->Name, 
                 "Elapsed" => $elapsed * 1000,
                 "Points" => $this->Iterrations / ($elapsed * 1000) * $this->Ratio,
-                "Result" => "",
-                "Units" => "",
+                "Result" => $this->Iterrations / ($elapsed * 1000),
+                "Units" => "Iter/s",
                 "Output" => ""
             ];
         }

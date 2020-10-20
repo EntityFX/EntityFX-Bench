@@ -12,7 +12,7 @@ namespace EntityFX\NetBenchmark\Core\Scimark2 {
         public function __construct($writer, $printToConsole)
         {
             parent::__construct($writer, $printToConsole);
-            $this->Ratio = 10;
+            $this->Ratio = 300;
             $this->dhrystone = new Scimark2($printToConsole);
         }
 

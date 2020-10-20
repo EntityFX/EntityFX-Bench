@@ -16,7 +16,7 @@ namespace EntityFX\NetBenchmark\Core\Generic {
 
             parent::__construct($writer, $printToConsole);
             $this->Iterrations = 2000000;
-            $this->Ratio = 10;
+            $this->Ratio = 5;
         }
 
         public static function DoHash($i) {
