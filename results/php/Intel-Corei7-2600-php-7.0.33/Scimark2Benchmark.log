@@ -1,0 +1,9 @@
+
+SciMark 2.0a
+
+Composite Score:            19.51
+FFT             Mflops:      8.70    (N=1024)
+SOR             Mflops:     29.90    (100 x 100)
+Monte Carlo     Mflops:     12.88
+Sparse matmult  Mflops:     15.05    (N=1000, nz=5000)
+LU              Mflops:     31.01    (100x100)
