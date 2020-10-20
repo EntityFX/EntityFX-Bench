@@ -91,7 +91,7 @@ namespace EntityFX\NetBenchmark\Core\Scimark2 {
                 "MonteCarlo" => $res[3],
                 "SparseMathmult" => $res[4],
                 "LU" => $res[5],
-                "Output" => ""
+                "Output" => $this->output->Output
             ];
         }
     }

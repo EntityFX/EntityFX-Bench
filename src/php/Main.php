@@ -1,7 +1,8 @@
 <?php
 
 define("DEBUG", false);
-define("DEBUG_ASPECT_RATIO", 0.1);
+define("ASPECT_RATIO", 0.2);
+define("DEBUG_ASPECT_RATIO", 0.05);
 
 require_once("Writer.php");
 require_once("BenchmarkBase.php");
@@ -27,6 +28,7 @@ require_once("Scimark2/Scimark2.php");
 require_once("Scimark2/Scimark2Benchmark.php");
 
 use EntityFX\NetBenchmark\Core\Writer;
+use EntityFX\NetBenchmark\Core\Generic\BenchmarkBase;
 use EntityFX\NetBenchmark\Core\Generic\ArithmeticsBenchmark;
 use EntityFX\NetBenchmark\Core\Generic\MathBenchmark;
 use EntityFX\NetBenchmark\Core\Generic\CallBenchmark;
@@ -51,7 +53,7 @@ function writeResult($writer, $benchResult)
 }
 
 
-$writer = new Writer();
+$writer = new Writer("Output.log");
 
 $benchmarks = [
     new MemoryBenchmark($writer, true),
@@ -78,6 +80,7 @@ $writer->WriteHeader("Bench");
 
 $total = 0;
 $totalPoints = 0;
+$points = [];
 $i = 1;
 $result = [];
 
@@ -86,9 +89,27 @@ foreach ($benchmarks as $key => $bench) {
     $r = $bench->Bench();
     $total += $r["Elapsed"];
     $totalPoints += $r["Points"];
+    $points[] = sprintf("%.2f", $r["Points"]);
     writeResult($writer, $r);
 
     $result[] = $r;
     $i++;
 }
 
+$writer->WriteNewLine();
+$writer->WriteTitle("%-30s", "Total:");
+$writer->WriteValue("%13.2f ms", $total);
+$writer->WriteValue("%13.2f pts", $totalPoints);
+$writer->WriteNewLine();
+
+$os = php_uname('s') . " " . php_uname('r');
+$cores = BenchmarkBase::getCores();
+$version = "PHP " . phpversion();
+$mem = memory_get_usage();
+
+$pointsString = implode(";", $points);
+
+$writer->WriteNewLine();
+$writer->WriteTitle("$os;$version;$cores;$mem;");
+$writer->WriteValue($pointsString);
+$writer->WriteLine(";%.2f", $total);

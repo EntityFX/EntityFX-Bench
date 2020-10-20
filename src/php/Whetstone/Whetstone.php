@@ -89,7 +89,7 @@ namespace EntityFX\NetBenchmark\Core\Whetstone {
                 $this->WriteLine("Wrong answer  ");
 
             return [
-                "Output" => $this->output,
+                "Output" => $this->output->Output,
                 "MWIPS" => $this->mwips,
                 "TimeUsed" => $this->TimeUsed
             ];

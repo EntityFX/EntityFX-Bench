@@ -7,10 +7,8 @@ namespace EntityFX\NetBenchmark\Core
 		private $writer = "";
 	
         public $UseConsole = true;
-        
-        private $UseFile = true;
 	
-        public $FilePath = ""; 
+        public $FilePath = null; 
         
         public $Output;
 	
@@ -19,7 +17,6 @@ namespace EntityFX\NetBenchmark\Core
 			if ($filePath != null)
 			{
 				$this->FilePath = $filePath;
-				$this->UseFile = true;
 			}
 		}
 	
@@ -31,10 +28,13 @@ namespace EntityFX\NetBenchmark\Core
 	
 		public function WriteNewLine()
 		{
-			if ($this->UseConsole) printf("\n");
-			if ($this->UseFile)
-			{
+			if ($this->UseConsole) {
+				if ($this->FilePath) {
+					file_put_contents($this->FilePath, "\n", FILE_APPEND);
+				}
+				printf("\n");
 			}
+			$this->Output .= "\n";
 		}
 	
 		public function WriteHeader($format, ...$args)
@@ -50,19 +50,19 @@ namespace EntityFX\NetBenchmark\Core
 	
 		public function WriteColor($color, $format, array $args)
 		{
+			$formatted = vsprintf($format, $args);
 			if ($this->UseConsole)
 			{
 				//var tmpColor = Console.ForegroundColor;
 				//Console.ForegroundColor = color;
 				//Console.Write(format, args);
-				vprintf($color.$format."\033[0m", $args);
+				echo($color.$formatted."\033[0m");
 				//Console.ForegroundColor = tmpColor;
-	
+				if ($this->FilePath) {
+					file_put_contents($this->FilePath, $formatted, FILE_APPEND);
+				}
 			}
-			if ($this->UseFile)
-			{
-	
-			}
+			$this->Output .= $formatted;
 		}
 	
 		public function WriteValue($format, ...$args)

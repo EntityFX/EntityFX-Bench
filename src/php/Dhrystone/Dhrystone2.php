@@ -205,6 +205,8 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
             $this->output->WriteLine("VAX  MIPS rating =             %.2f", $result["VaxMips"]);
             $this->output->WriteNewLine();
 
+            $result["Output"] = $this->output->Output;
+
             return $result;
 		}
 
@@ -296,12 +298,10 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
                 "String1Loc" => $String1Loc,
                 "String2Loc" => $String2Loc
 			];
-			
-			$output = "";
 
             return [
                 "Dhrystones" => $dhrystones,
-                "Output" => $output,
+                "Output" => "",
                 "TimeUsed" => $benchtime,
                 "VaxMips" => $dhrystones / 1757
 			];
