@@ -330,7 +330,7 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
             return $PtrValPar;
         }
 
-        private function proc2(int $IntParIO)
+        private function proc2($IntParIO)
         {
             $IntLoc = $IntParIO + 10;
             $EnumLoc = self::Ident_2;
@@ -375,7 +375,7 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
             $this->BoolGlob = false;
         }
 
-        function proc6(int $EnumParIn)
+        function proc6($EnumParIn)
         {
             $EnumParOut = $EnumParIn;
             if (!self::func3($EnumParIn))
@@ -438,7 +438,7 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
             return $CharLoc2 != $CharPar2 ? self::Ident_1 : self::Ident_2;
         }
 
-        static function func2(string $StrParI1, string $StrParI2)
+        static function func2($StrParI1, $StrParI2)
         {
             $IntLoc = 1;
             $CharLoc = '\0';
@@ -472,7 +472,7 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
             }
         }
 		
-		static function Func3(bool $EnumParIn)
+		static function Func3($EnumParIn)
         {
             $EnumLoc = $EnumParIn;
             return $EnumLoc == self::Ident_3;
