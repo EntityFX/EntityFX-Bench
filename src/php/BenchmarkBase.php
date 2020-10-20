@@ -3,13 +3,17 @@
 namespace EntityFX\NetBenchmark\Core\Generic {
 
     use EntityFX\NetBenchmark\Core\Writer;
+
+if (!defined("DEBUG_ASPECT_RATIO")) {
+    define("DEBUG_ASPECT_RATIO", 0.1);
+}
     
     abstract class BenchmarkBase {
         protected $Iterrations = 0;
 
         protected $printToConsole = true;
 
-        public static $DebugAspectRatio = 0.1;
+        public static $DebugAspectRatio = DEBUG_ASPECT_RATIO;
     
         public $Ratio = 1.0;
     

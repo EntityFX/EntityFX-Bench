@@ -78,7 +78,7 @@ namespace EntityFX\NetBenchmark\Core\Scimark2 {
 			$this->output->WriteNewLine();
             $this->output->Write("Sparse matmult  Mflops:%10.2f    (N=%d, nz=%d)", $res[4], $Sparse_size_M, $Sparse_size_nz);
 			$this->output->WriteNewLine();
-            $this->output->Write("LU              Mflops:%10.2f    (%dx%d): ", $res[5], $LU_size, $LU_size);
+            $this->output->Write("LU              Mflops:%10.2f    (%dx%d)", $res[5], $LU_size, $LU_size);
             if ($res[5] == 0.0)
                 $this->output->Write(" ERROR, INVALID NUMERICAL RESULT!");
 
