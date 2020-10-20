@@ -1,0 +1,90 @@
+Warmup
+...........
+Bench
+[1] MemoryBenchmark
+int 4k: 40.94 MB/s
+int 512k: 38.61 MB/s
+int 8M: 30.43 MB/s
+int 32M: 30.43 MB/s
+long 4k: 43.58 MB/s
+long 512k: 39.27 MB/s
+long 8M: 31.31 MB/s
+long 32M: 31.33 MB/s
+Average: 35.74 MB/s
+MemoryBenchmark                   179961.83 ms        35.74 pts        35.74 MB/s
+[2] RandomMemoryBenchmark
+Random int 4k: 30.30 MB/s
+Random int 512k: 25.57 MB/s
+Random int 8M: 16.50 MB/s
+Random long 4k: 30.70 MB/s
+Random long 512k: 25.84 MB/s
+Random long 8M: 17.41 MB/s
+Average: 24.39 MB/s
+RandomMemoryBenchmark             196467.77 ms        48.77 pts        24.39 MB/s
+[3] Scimark2Benchmark
+Scimark2Benchmark                  26875.60 ms        46.15 pts         4.61 CompositeScore
+[4] DhrystoneBenchmark
+DhrystoneBenchmark                  8609.28 ms       132.23 pts        33.06 DMIPS
+[5] WhetstoneBenchmark
+WhetstoneBenchmark                116479.10 ms        39.94 pts        39.94 MWIPS
+[6] ArithmeticsBenchmark
+ArithmeticsBenchmark               80617.97 ms        22.33 pts
+[7] MathBenchmark
+MathBenchmark                     125742.55 ms       159.06 pts
+[8] CallBenchmark
+CallBenchmark                     212287.26 ms        18.84 pts
+[9] IfElseBenchmark
+IfElseBenchmark                   161630.73 ms        24.75 pts
+[10] StringManipulation
+StringManipulation                  6938.19 ms      1441.30 pts
+[11] HashBenchmark
+HashBenchmark                       1929.15 ms      2073.46 pts
+
+Total:                           1117539.43 ms      4042.56 pts
+
+Linux 5.4.0-1.4-e8c2;PHP 7.0.33;8;743552;35.74;48.77;46.15;132.23;39.94;22.33;159.06;18.84;24.75;1441.30;2073.46;1117539.43
+Warmup
+...........
+Bench
+[1] MemoryBenchmark
+int 4k: 40.84 MB/s
+int 512k: 38.60 MB/s
+int 8M: 30.42 MB/s
+int 32M: 30.42 MB/s
+long 4k: 43.35 MB/s
+long 512k: 39.26 MB/s
+long 8M: 31.30 MB/s
+long 32M: 31.31 MB/s
+Average: 35.69 MB/s
+MemoryBenchmark                   180111.58 ms      1784.31 pts        35.69 MB/s
+[2] RandomMemoryBenchmark
+Random int 4k: 30.23 MB/s
+Random int 512k: 25.55 MB/s
+Random int 8M: 16.46 MB/s
+Random long 4k: 30.70 MB/s
+Random long 512k: 25.83 MB/s
+Random long 8M: 17.42 MB/s
+Average: 24.36 MB/s
+RandomMemoryBenchmark             196646.29 ms      1949.15 pts        24.36 MB/s
+[3] Scimark2Benchmark
+Scimark2Benchmark                  26808.98 ms      1384.30 pts         4.61 CompositeScore
+[4] DhrystoneBenchmark
+DhrystoneBenchmark                  8591.05 ms      1656.42 pts        33.13 DMIPS
+[5] WhetstoneBenchmark
+WhetstoneBenchmark                116296.02 ms       797.98 pts        39.90 MWIPS
+[6] ArithmeticsBenchmark
+ArithmeticsBenchmark               80646.34 ms      1487.98 pts       743.99 Iter/s
+[7] MathBenchmark
+MathBenchmark                     122415.86 ms      1143.64 pts       326.76 Iter/s
+[8] CallBenchmark
+CallBenchmark                     207648.56 ms       963.17 pts      1926.33 Iter/s
+[9] IfElseBenchmark
+IfElseBenchmark                   185672.34 ms      1077.17 pts      2154.33 Iter/s
+[10] StringManipulation
+StringManipulation                  6836.38 ms      3656.91 pts       146.28 Iter/s
+[11] HashBenchmark
+HashBenchmark                       1924.62 ms      1039.17 pts       207.83 Iter/s
+
+Total:                           1133598.00 ms     16940.20 pts
+
+Linux 5.4.0-1.4-e8c2;PHP 7.0.33;8;743712;1784.31;1949.15;1384.30;1656.42;797.98;1487.98;1143.64;963.17;1077.17;3656.91;1039.17;1133598.00
