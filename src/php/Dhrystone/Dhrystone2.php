@@ -24,7 +24,7 @@ namespace EntityFX\NetBenchmark\Core\Dhrystone
         const Ident_4 = 3;
 		const Ident_5 = 4;
 
-		public const LOOPS = 500000; //20000000;
+		const LOOPS = 500000; //20000000;
 		
 		/**
 		 * @type CheckRecord
