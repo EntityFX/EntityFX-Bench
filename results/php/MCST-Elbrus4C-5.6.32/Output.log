@@ -1,0 +1,104 @@
+Warmup
+...........
+Bench
+[1] MemoryBenchmark
+int 4k: 11.75 MB/s
+int 512k: 9.60 MB/s
+int 8M: 9.64 MB/s
+int 32M: 9.60 MB/s
+long 4k: 12.31 MB/s
+long 512k: 9.80 MB/s
+long 8M: 9.64 MB/s
+long 32M: 9.82 MB/s
+Average: 10.27 MB/s
+MemoryBenchmark                   636033.03 ms       513.60 pts        10.27 MB/s
+[2] RandomMemoryBenchmark
+Random int 4k: 8.89 MB/s
+Random int 512k: 5.94 MB/s
+Random int 8M: 5.69 MB/s
+Random long 4k: 8.99 MB/s
+Random long 512k: 6.06 MB/s
+Random long 8M: 5.73 MB/s
+Average: 6.88 MB/s
+RandomMemoryBenchmark             693330.64 ms       550.68 pts         6.88 MB/s
+[3] Scimark2Benchmark
+
+SciMark 2.0a
+
+Composite Score:             1.40
+FFT             Mflops:      0.80    (N=1024)
+SOR             Mflops:      2.20    (100 x 100)
+Monte Carlo     Mflops:      1.17
+Sparse matmult  Mflops:      1.11    (N=1000, nz=5000)
+LU              Mflops:      1.72    (100x100)
+Scimark2Benchmark                  28918.07 ms       419.38 pts         1.40 CompositeScore
+[4] DhrystoneBenchmark
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: PHP)
+
+Optimization 0
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  
+Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  
+Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  500010
+Ptr_Glob->              Ptr_Comp:       *    1
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    1 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  
+Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 73644.21
+Dhrystones per Second:         13578
+VAX  MIPS rating =             7.73
+
+DhrystoneBenchmark                 36826.90 ms       386.42 pts         7.73 DMIPS
+[5] WhetstoneBenchmark
+Double Precision PHP Whetstone Benchmark
+                 PHP version: 5.6.32
+No run time input data
+
+Calibrate
+          0 Seconds          1   Passes (x 100)
+          5 Seconds          5   Passes (x 100)
+Use 99  passes (x 100)
+          Double Precision PHP Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 floating point      -1.12398255667391900        2.699               0.704
+N2 floating point      -1.12398255667391900        2.326               5.720
+N3 if then else         1.00000000000000000                   2.847    3.599
+N4 fixed point         12.00000000000000000                   5.857    5.324
+N5 sin,cos etc.         0.49902937281518261                   2.083    3.953
+N6 floating point       0.99999987890802811        1.571              33.981
+N7 assignments          3.00000000000000000                   0.442   41.432
+N8 exp,sqrt etc.        0.75100163018458665                   1.108    3.323
+MWIPS                                             10.098              98.037
+WhetstoneBenchmark                110759.58 ms       201.96 pts        10.10 MWIPS
+[6] ArithmeticsBenchmark
+ArithmeticsBenchmark              226613.94 ms       529.53 pts       264.77 Iter/s
+[7] MathBenchmark
+MathBenchmark                     540145.37 ms       259.19 pts        74.05 Iter/s
+[8] CallBenchmark
+CallBenchmark                     816452.49 ms       244.96 pts       489.92 Iter/s
+[9] IfElseBenchmark
+IfElseBenchmark                   671056.15 ms       298.04 pts       596.08 Iter/s
+[10] StringManipulation
+StringManipulation                 26907.15 ms       929.12 pts        37.16 Iter/s
+[11] HashBenchmark
+HashBenchmark                       5111.79 ms       391.25 pts        78.25 Iter/s
+
+Total:                           3792155.12 ms      4724.14 pts
+
+Linux 3.14.79-13.84-e2s;PHP 5.6.32;16;933544;513.60;550.68;419.38;386.42;201.96;529.53;259.19;244.96;298.04;929.12;391.25;3792155.12

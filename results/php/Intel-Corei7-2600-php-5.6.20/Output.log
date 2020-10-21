@@ -1,0 +1,117 @@
+Warmup
+Warmup
+...........
+Bench
+[1] MemoryBenchmark
+int 4k: 81.14 MB/s
+int 512k: 76.14 MB/s
+int 8M: 74.89 MB/s
+int 32M: 74.55 MB/s
+long 4k: 82.18 MB/s
+long 512k: 76.87 MB/s
+long 8M: 76.28 MB/s
+long 32M: 76.33 MB/s
+Average: 77.30 MB/s
+MemoryBenchmark                    43111.62 ms      3864.79 pts        77.30 MB/s
+[2] RandomMemoryBenchmark
+Random int 4k: 43.42 MB/s
+Random int 512k: 14.79 MB/s
+Random int 8M: 11.88 MB/s
+Random long 4k: 44.16 MB/s
+Warmup
+...........
+Bench
+[1] MemoryBenchmark
+int 4k: 77.90 MB/s
+int 512k: 76.56 MB/s
+int 8M: 75.59 MB/s
+int 32M: 75.71 MB/s
+long 4k: 86.58 MB/s
+long 512k: 79.06 MB/s
+long 8M: 76.38 MB/s
+long 32M: 70.66 MB/s
+Average: 77.31 MB/s
+MemoryBenchmark                    43397.25 ms      3865.25 pts        77.31 MB/s
+[2] RandomMemoryBenchmark
+Random int 4k: 43.76 MB/s
+Random int 512k: 16.08 MB/s
+Random int 8M: 11.92 MB/s
+Random long 4k: 46.08 MB/s
+Random long 512k: 19.50 MB/s
+Random long 8M: 12.92 MB/s
+Average: 25.04 MB/s
+RandomMemoryBenchmark             122557.35 ms      2003.32 pts        25.04 MB/s
+[3] Scimark2Benchmark
+Scimark2Benchmark                  30022.94 ms      4273.04 pts        14.24 CompositeScore
+[4] DhrystoneBenchmark
+Warmup
+...........
+Bench
+[1] MemoryBenchmark
+int 4k: 78.82 MB/s
+int 512k: 76.45 MB/s
+int 8M: 75.79 MB/s
+int 32M: 73.84 MB/s
+long 4k: 78.69 MB/s
+long 512k: 78.88 MB/s
+long 8M: 77.88 MB/s
+long 32M: 78.11 MB/s
+Average: 77.31 MB/s
+MemoryBenchmark                    42838.04 ms      3865.32 pts        77.31 MB/s
+[2] RandomMemoryBenchmark
+Random int 4k: 42.97 MB/s
+Random int 512k: 15.88 MB/s
+Random int 8M: 12.18 MB/s
+Random long 4k: 44.99 MB/s
+Random long 512k: 18.92 MB/s
+Random long 8M: 12.12 MB/s
+Average: 24.51 MB/s
+RandomMemoryBenchmark             125026.32 ms      1960.83 pts        24.51 MB/s
+[3] Scimark2Benchmark
+Scimark2Benchmark                  29802.01 ms      4350.69 pts        14.50 CompositeScore
+[4] DhrystoneBenchmark
+Warmup
+...........
+Bench
+[1] MemoryBenchmark
+int 4k: 78.71 MB/s
+int 512k: 75.79 MB/s
+int 8M: 75.93 MB/s
+int 32M: 75.17 MB/s
+long 4k: 68.94 MB/s
+long 512k: 69.91 MB/s
+long 8M: 68.90 MB/s
+long 32M: 68.86 MB/s
+Average: 72.78 MB/s
+MemoryBenchmark                    45293.30 ms      3638.78 pts        72.78 MB/s
+[2] RandomMemoryBenchmark
+Random int 4k: 44.08 MB/s
+Random int 512k: 15.84 MB/s
+Random int 8M: 11.98 MB/s
+Random long 4k: 43.20 MB/s
+Random long 512k: 18.80 MB/s
+Random long 8M: 12.24 MB/s
+Average: 24.36 MB/s
+RandomMemoryBenchmark             125645.80 ms      1948.41 pts        24.36 MB/s
+[3] Scimark2Benchmark
+Scimark2Benchmark                  31030.36 ms      4090.71 pts        13.64 CompositeScore
+[4] DhrystoneBenchmark
+DhrystoneBenchmark                  3832.66 ms      3732.72 pts        74.65 DMIPS
+[5] WhetstoneBenchmark
+WhetstoneBenchmark                108385.53 ms      2189.20 pts       109.46 MWIPS
+[6] ArithmeticsBenchmark
+ArithmeticsBenchmark               28024.10 ms      4282.03 pts      2141.01 Iter/s
+[7] MathBenchmark
+MathBenchmark                      53900.75 ms      2597.37 pts       742.10 Iter/s
+[8] CallBenchmark
+CallBenchmark                      66817.62 ms      2993.22 pts      5986.44 Iter/s
+[9] IfElseBenchmark
+IfElseBenchmark                    66959.03 ms      2986.90 pts      5973.80 Iter/s
+[10] StringManipulation
+StringManipulation                  4476.08 ms      5585.25 pts       223.41 Iter/s
+[11] HashBenchmark
+HashBenchmark                        706.01 ms      2832.82 pts       566.56 Iter/s
+
+Total:                            535071.24 ms     36877.40 pts
+
+Windows NT 10.0;PHP 5.6.20;0;889192;3638.78;1948.41;4090.71;3732.72;2189.20;4282.03;2597.37;2993.22;2986.90;5585.25;2832.82;535071.24
