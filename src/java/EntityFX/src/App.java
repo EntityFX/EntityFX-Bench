@@ -1,7 +1,9 @@
 import java.io.IOException;
 
 import EntityFX.Core.Writer;
+import EntityFX.Core.Dhrystone.Dhrystone2;
 import EntityFX.Core.Generic.*;
+import EntityFX.Core.Whetstone.Whetstone;
 
 public class App {
     public static void main(String[] args) throws Exception {
