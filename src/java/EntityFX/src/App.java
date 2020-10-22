@@ -5,7 +5,7 @@ import EntityFX.Core.Generic.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        var writer = new Writer("Output.log");
+        Writer writer = new Writer("Output.log");
 
         BenchmarkInterface[] benchmarks = new BenchmarkInterface[] { 
             new MemoryBenchmark(writer, true),
@@ -29,13 +29,13 @@ public class App {
 
         long total = 0;
         double totalPoints = 0;
-        var points = new String[benchmarks.length];
+        String[] points = new String[benchmarks.length];
         int i = 1;
-        var result = new BenchResult[benchmarks.length];
+        BenchResult[] result = new BenchResult[benchmarks.length];
 
         for (BenchmarkInterface benchmark : benchmarks) {
             writer.writeHeader("[%d] %s", i, benchmark.getName());
-            var r = benchmark.bench();
+            BenchResult r = benchmark.bench();
             total += r.Elapsed;
             totalPoints += r.Points;
             points[i-1] = String.format("%.2f", r.Points);

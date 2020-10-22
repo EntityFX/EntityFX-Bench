@@ -25,25 +25,25 @@ public abstract class MemoryBenchmarkBase<TResult> extends BenchmarkBase<TResult
 
     public MemoryBenchmarkResult BenchRandomMemory() throws IOException
     {
-        var int4k = MeasureArrayRandomRead(1024);
+        SimpleEntry<Double, int[]> int4k = MeasureArrayRandomRead(1024);
         output.writeLine("int 4k: %.2f MB/s", int4k.getKey());
-        var int512k = MeasureArrayRandomRead(131072);
+        SimpleEntry<Double, int[]> int512k = MeasureArrayRandomRead(131072);
         output.writeLine("int 512k: %.2f MB/s", int512k.getKey());
-        var int8m = MeasureArrayRandomRead(2097152);
+        SimpleEntry<Double, int[]> int8m = MeasureArrayRandomRead(2097152);
         output.writeLine("int 8M: %.2f MB/s", int8m.getKey());
-        var int32m = MeasureArrayRandomRead(32 * 1024 * 1024 / Integer.BYTES);
+        SimpleEntry<Double, int[]> int32m = MeasureArrayRandomRead(32 * 1024 * 1024 / Integer.BYTES);
         output.writeLine("int 32M: %.2f MB/s", int32m.getKey());
 
-        var long4k = MeasureArrayRandomLongRead(1024);
+        SimpleEntry<Double, long[]> long4k = MeasureArrayRandomLongRead(1024);
         output.writeLine("long 4k: %.2f MB/s", long4k.getKey());
-        var long512k = MeasureArrayRandomLongRead(131072);
+        SimpleEntry<Double, long[]> long512k = MeasureArrayRandomLongRead(131072);
         output.writeLine("long 512k: %.2f MB/s", long512k.getKey());
-        var long8m = MeasureArrayRandomLongRead(2097152);
+        SimpleEntry<Double, long[]> long8m = MeasureArrayRandomLongRead(2097152);
         output.writeLine("long 8M: %.2f MB/s", long8m.getKey());
-        var long32m = MeasureArrayRandomLongRead(32 * 1024 * 1024 / Long.BYTES);
+        SimpleEntry<Double, long[]> long32m = MeasureArrayRandomLongRead(32 * 1024 * 1024 / Long.BYTES);
         output.writeLine("long 32M: %.2f MB/s", long32m.getKey());
         
-        var avg = Arrays.stream(new double[] { 
+        double avg = Arrays.stream(new double[] { 
             int4k.getKey(), int512k.getKey(), int8m.getKey(), int32m.getKey(),
             long4k.getKey(), long512k.getKey(), long8m.getKey(), long32m.getKey(),
         }).average().orElse(-1);
@@ -62,10 +62,10 @@ public abstract class MemoryBenchmarkBase<TResult> extends BenchmarkBase<TResult
         int[] I = new int[blockSize];
 
         int[] array = randomIntArray(size, Integer.MAX_VALUE);
-        var end = array.length - 1;
-        var k0 = (size / 1024);
-        var k1 = k0 == 0 ? 1 : k0;
-        var iterInternal = Iterrations / k1;
+        int end = array.length - 1;
+        int k0 = (size / 1024);
+        int k1 = k0 == 0 ? 1 : k0;
+        int iterInternal = Iterrations / k1;
         iterInternal = iterInternal == 0 ? 1 : iterInternal;
         for (int idx = 0; idx < end; idx += blockSize) {
             // System.Buffer.BlockCopy(array, idx, I, 0, blockSizeBytes);
@@ -86,7 +86,7 @@ public abstract class MemoryBenchmarkBase<TResult> extends BenchmarkBase<TResult
             I[0xE] = array[idx + 0xE];
             I[0xF] = array[idx + 0xF];
         }
-        var start = System.currentTimeMillis();
+        long start = System.currentTimeMillis();
         for (int i = 0; i < iterInternal; i++) {
             for (int idx = 0; idx < end; idx += blockSize) {
                 // System.Buffer.BlockCopy(array, idx, I, 0, blockSizeBytes);
@@ -108,7 +108,7 @@ public abstract class MemoryBenchmarkBase<TResult> extends BenchmarkBase<TResult
                 I[0xF] = array[idx + 0xF];
             }
         }
-        var elapsed = System.currentTimeMillis() - start;
+        long elapsed = System.currentTimeMillis() - start;
 
         return new SimpleEntry<Double, int[]>((double) (iterInternal * array.length * 4.0 / (elapsed / 1000.0) / 1024 / 1024), I);
     }
@@ -119,10 +119,10 @@ public abstract class MemoryBenchmarkBase<TResult> extends BenchmarkBase<TResult
 
         long[] array = this.randomLongArray(size);
 
-        var end = array.length - 1;
-        var k0 = (size / 1024);
-        var k1 = k0 == 0 ? 1 : k0;
-        var iterInternal = Iterrations / k1;
+        int end = array.length - 1;
+        int k0 = (size / 1024);
+        int k1 = k0 == 0 ? 1 : k0;
+        int iterInternal = Iterrations / k1;
         iterInternal = iterInternal == 0 ? 1 : iterInternal;
         for (int idx = 0; idx < end; idx += blockSize) {
             // System.Buffer.BlockCopy(array, idx, I, 0, blockSizeBytes);
@@ -135,7 +135,7 @@ public abstract class MemoryBenchmarkBase<TResult> extends BenchmarkBase<TResult
             I[6] = array[idx + 6];
             I[7] = array[idx + 7];
         }
-        var start = System.currentTimeMillis();
+        long start = System.currentTimeMillis();
         for (int i = 0; i < iterInternal; i++) {
             for (int idx = 0; idx < end; idx += blockSize) {
                 // System.Buffer.BlockCopy(array, idx, I, 0, blockSizeBytes);
@@ -149,7 +149,7 @@ public abstract class MemoryBenchmarkBase<TResult> extends BenchmarkBase<TResult
                 I[7] = array[idx + 7];
             }
         }
-        var elapsed = System.currentTimeMillis() - start;
+        long elapsed = System.currentTimeMillis() - start;
 
         return new SimpleEntry<Double, long[]>((double) (iterInternal * array.length * 8.0 / (elapsed / 1000.0) / 1024 / 1024), I);
     }

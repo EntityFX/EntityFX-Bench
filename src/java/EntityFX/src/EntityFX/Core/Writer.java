@@ -52,7 +52,7 @@ public class Writer {
 
     public void writeColor(final String color, String format, Object... args) throws IOException
     {
-        var formatted = String.format(format, args);
+        String formatted = String.format(format, args);
         if (this.UseConsole)
         {
             System.out.print(color + formatted + "\033[0m");

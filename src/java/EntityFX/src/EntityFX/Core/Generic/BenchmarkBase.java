@@ -38,7 +38,7 @@ public abstract class BenchmarkBase<TResult> implements BenchmarkInterface {
         this.beforeBench();
         final long start = System.currentTimeMillis();
         final TResult res = this.benchImplementation();
-        final var result = this.populateResult(this.buildResult(start), res);
+        final BenchResult result = this.populateResult(this.buildResult(start), res);
         if (result.Output != null) {
             final FileWriter fileWriter = new FileWriter(Name + ".log");
             final PrintWriter printWriter = new PrintWriter(fileWriter);
@@ -50,7 +50,7 @@ public abstract class BenchmarkBase<TResult> implements BenchmarkInterface {
     }
 
     public void warmup(final Double aspect) throws IOException {
-        final var tmp = Iterrations;
+        final int tmp = Iterrations;
         Iterrations = (int) Math.round(Iterrations * aspect);
         this.UseConsole(false);
         this.bench();
@@ -83,7 +83,7 @@ public abstract class BenchmarkBase<TResult> implements BenchmarkInterface {
 
     protected BenchResult buildResult(final long start) {
         final long elapsed = System.currentTimeMillis() - start;
-        final var tElapsed = elapsed == 0 ? 1 : elapsed;
+        final long tElapsed = elapsed == 0 ? 1 : elapsed;
         return new BenchResult() {
             {
                 BenchmarkName = Name;
@@ -105,8 +105,8 @@ public abstract class BenchmarkBase<TResult> implements BenchmarkInterface {
     }
 
     protected int[] randomIntArray(int size, int max) {
-        var random = ThreadLocalRandom.current();
-        var ar = new int[size];
+        ThreadLocalRandom random = ThreadLocalRandom.current();
+        int[]  ar = new int[size];
         for (int i = 0; i < size; i++) {
             ar[i] = random.nextInt(max);
         }
@@ -114,8 +114,8 @@ public abstract class BenchmarkBase<TResult> implements BenchmarkInterface {
     }
 
     protected long[] randomLongArray(int size) {
-        var random = ThreadLocalRandom.current();
-        var ar = new long[size];
+        ThreadLocalRandom random = ThreadLocalRandom.current();
+        long[]  ar = new long[size];
         for (int i = 0; i < size; i++) {
             ar[i] = random.nextLong();
         }

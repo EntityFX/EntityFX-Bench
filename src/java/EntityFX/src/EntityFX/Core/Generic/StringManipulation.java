@@ -13,7 +13,7 @@ public class StringManipulation extends StringManipulationBase<String> {
 
     @Override
     public String benchImplementation() {
-        var str = "the quick brown fox jumps over the lazy dog";
+        String str = "the quick brown fox jumps over the lazy dog";
         String str1 = "";
         for (int i = 0; i < Iterrations; i++)
         {
