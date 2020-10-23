@@ -92,9 +92,14 @@ namespace EntityFX.NetBenchmark.Core.Generic
 
         protected BenchResult BuildResult(Stopwatch sw)
         {
+            double tElapsed = sw.Elapsed.TotalMilliseconds;
+            double elapsedSeconds = sw.Elapsed.TotalSeconds;
             return new BenchResult() { 
                 BenchmarkName = GetType().Name, Elapsed = sw.Elapsed,
-                Points = Convert.ToDecimal(Iterrations / sw.Elapsed.TotalMilliseconds * Ratio) };
+                Points = Convert.ToDecimal(Iterrations / sw.Elapsed.TotalMilliseconds * Ratio) ,
+                Result = (double)Iterrations / elapsedSeconds,
+                Units = "Iter/s"
+            };
         }
 
         protected BenchResult BuildParallelResult(Stopwatch sw, BenchResult[] results)

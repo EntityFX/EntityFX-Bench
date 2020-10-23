@@ -3,6 +3,8 @@ import java.io.IOException;
 import EntityFX.Core.Writer;
 import EntityFX.Core.Dhrystone.Dhrystone2;
 import EntityFX.Core.Generic.*;
+import EntityFX.Core.Scimark2.Constants;
+import EntityFX.Core.Scimark2.Scimark2;
 import EntityFX.Core.Whetstone.Whetstone;
 
 public class App {

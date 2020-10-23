@@ -84,12 +84,13 @@ public abstract class BenchmarkBase<TResult> implements BenchmarkInterface {
     protected BenchResult buildResult(final long start) {
         final long elapsed = System.currentTimeMillis() - start;
         final long tElapsed = elapsed == 0 ? 1 : elapsed;
+        double elapsedSeconds = tElapsed / 1000.0;
         return new BenchResult() {
             {
                 BenchmarkName = Name;
                 Elapsed = tElapsed;
                 Points = Iterrations / tElapsed * Ratio;
-                Result = (double) (Iterrations / tElapsed);
+                Result = (double) Iterrations / elapsedSeconds;
                 Units = "Iter/s";
             }
         };
