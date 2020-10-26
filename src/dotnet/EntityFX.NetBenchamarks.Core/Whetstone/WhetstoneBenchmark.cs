@@ -25,7 +25,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
         public override BenchResult PopulateResult(BenchResult benchResult, WhetstoneResult dhrystoneResult)
         {
             benchResult.Result = dhrystoneResult.MWIPS;
-            benchResult.Points = Convert.ToDecimal(dhrystoneResult.MWIPS);
+            benchResult.Points = dhrystoneResult.MWIPS * Ratio;
             benchResult.Units = "MWIPS";
             benchResult.Output = dhrystoneResult.Output;
             return benchResult;

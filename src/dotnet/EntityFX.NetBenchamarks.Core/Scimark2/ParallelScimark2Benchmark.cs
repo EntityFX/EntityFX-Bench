@@ -9,14 +9,15 @@ namespace EntityFX.NetBenchmark.Core.Scimark2
         public ParallelScimark2Benchmark()
         {
             Ratio = 10;
+            IsParallel = true;
         }
 
         public override BenchResult[] BenchImplementation()
         {
             return BenchInParallel(() => new Scimark2(false), a =>
             a.Bench(), (a, r) => {
-                r.Points = Convert.ToDecimal(a.CompositeScore * Ratio);
-                r.Result = Convert.ToDecimal(a.CompositeScore);
+                r.Points = a.CompositeScore * Ratio;
+                r.Result = a.CompositeScore;
                 r.Output = a.Output;
             });
         }
@@ -24,7 +25,7 @@ namespace EntityFX.NetBenchmark.Core.Scimark2
         public override BenchResult PopulateResult(BenchResult benchResult, BenchResult[] scimark2Result)
         {
             var result = BuildParallelResult(benchResult, scimark2Result);
-            result.Result = scimark2Result.Sum(r => Convert.ToDecimal(r.Result));
+            result.Result = scimark2Result.Sum(r => r.Result);
             result.Units = "CompositeScore";
             result.Output = string.Concat(scimark2Result.Select(s => s.Output));
             return result;

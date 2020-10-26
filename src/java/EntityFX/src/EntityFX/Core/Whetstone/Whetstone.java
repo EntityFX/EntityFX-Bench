@@ -39,7 +39,7 @@ public class Whetstone {
         long x100 = 100L;
         int duration = 100;
         String[] general = new String[8];
-        this.writeLine("{0} Precision C# Whetstone Benchmark\n", "Double");
+        this.writeLine("{0} Precision Java Whetstone Benchmark\n", "Double");
         if (!getinput)
             this.writeLine("No run time input data\n");
         else

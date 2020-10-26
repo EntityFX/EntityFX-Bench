@@ -11,14 +11,15 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
         public ParallelDhrystoneBenchmark()
         {
             Ratio = 4;
+            IsParallel = true;
         }
 
         public override BenchResult[] BenchImplementation()
         {
             return BenchInParallel(() => new Dhrystone2(false), a =>
             a.Bench(), (a, r) => {
-                r.Points = Convert.ToDecimal(a.VaxMips * Ratio);
-                r.Result = Convert.ToDecimal(a.VaxMips);
+                r.Points = a.VaxMips * Ratio;
+                r.Result = a.VaxMips;
                 r.Output = a.Output;
             });
         }
@@ -26,7 +27,7 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
         public override BenchResult PopulateResult(BenchResult benchResult, BenchResult[] dhrystoneResult)
         {
             var result = BuildParallelResult(benchResult, dhrystoneResult);
-            result.Result = dhrystoneResult.Sum(r => Convert.ToDecimal(r.Result));
+            result.Result = dhrystoneResult.Sum(r => r.Result);
             result.Units = "DMIPS";
             result.Output = string.Concat(dhrystoneResult.Select(s => s.Output));
             return result;

@@ -18,17 +18,6 @@ public class Dhrystone2 {
 
     static final int Ident_5 = 4;
 
-    public class DhrystoneResult {
-        public String Output;
-
-        public double VaxMips;
-
-        public double Dhrystones;
-
-        public double TimeUsed;
-
-    }
-
     class Record {
 
         public Record PtrComp;
@@ -70,7 +59,7 @@ public class Dhrystone2 {
         loops = loops <= 0 ? LOOPS : loops;
         this.output.writeLine("##########################################");
         this.output.writeLine("");
-        this.output.writeLine("Dhrystone Benchmark, Version 2.1 (Language: C#)");
+        this.output.writeLine("Dhrystone Benchmark, Version 2.1 (Language: Java)");
         this.output.writeLine("");
         this.output.writeLine("Optimization %s", "Optimised");
 
@@ -252,7 +241,7 @@ public class Dhrystone2 {
         return result;
     }
 
-    private static final int LOOPS = 20000000;
+    static final int LOOPS = 20000000;
 
     private int IntGlob = 0;
 
@@ -341,22 +330,22 @@ public class Dhrystone2 {
         }
 
         long dhrystones = (1000 * loopsPerBenchtime);
-        Check = new CheckRecord()
-        {{
-            EnumLoc = EnumLoc;
-            IntLoc1 = IntLoc1;
-            IntLoc2 = IntLoc2;
-            IntLoc3 = IntLoc3;
-            String1Loc = String1Loc;
-            String2Loc = String2Loc;
-        }};
-        return new DhrystoneResult()
-        {{
-            Dhrystones = dhrystones;
-            Output = output.Output;
-            TimeUsed = benchtime;
-            VaxMips = dhrystones / 1757;
-        }};
+        Check = new CheckRecord();
+        Check.EnumLoc = EnumLoc;
+        Check.IntLoc1 = IntLoc1;
+        Check.IntLoc2 = IntLoc2;
+        Check.IntLoc3 = IntLoc3;
+        Check.String1Loc = String1Loc;
+        Check.String2Loc = String2Loc;
+
+        return new DhrystoneResult() {
+            {
+                Dhrystones = dhrystones;
+                Output = output.Output;
+                TimeUsed = benchtime;
+                VaxMips = dhrystones / 1757;
+            }
+        };
     }
 
     final Record Proc1(Record PtrValPar) {

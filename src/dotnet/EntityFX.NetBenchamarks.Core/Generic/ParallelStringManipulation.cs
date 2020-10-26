@@ -5,6 +5,11 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public class ParallelStringManipulation : StringManipulationBase<BenchResult[]>
     {
+        public ParallelStringManipulation()
+        {
+            IsParallel = true;
+        }
+
         public override BenchResult[] BenchImplementation()
         {
             return BenchInParallel(() => 0, a =>

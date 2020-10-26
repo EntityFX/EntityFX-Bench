@@ -6,16 +6,20 @@ using System.Threading.Tasks;
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
-    public abstract class BenchmarkBase<TResult> : IBenchamrk
-    {
+    public abstract class BenchmarkBase     {
         protected int Iterrations;
 
-        public static double DebugAspectRatio = 0.1;
+        public static double IterrationsRatio = 1.0;
 
         public double Ratio = 1.0;
 
-        public string Name => GetType().Name;
+        public bool IsParallel { get; protected set; }
 
+        public string Name => GetType().Name;
+    }
+
+    public abstract class BenchmarkBase<TResult> : BenchmarkBase, IBenchamrk
+    {
         public virtual BenchResult Bench()
         {
             BeforeBench();
@@ -23,15 +27,20 @@ namespace EntityFX.NetBenchmark.Core.Generic
             sw.Start();
             var res = BenchImplementation();
             var result = PopulateResult(BuildResult(sw), res);
-            if (result.Output != null)
-            {
-                File.WriteAllText($"{GetType().Name}.log", result.Output);
-            }
+            DoOutput(result);
             AfterBench(result);
             return result;
         }
 
-        public abstract TResult BenchImplementation();
+        protected void DoOutput(BenchResult result)        
+        {
+            if (result.Output == null) {
+                return;
+            }
+            File.WriteAllText($"{GetType().Name}.log", result.Output);
+        }
+
+    public abstract TResult BenchImplementation();
 
         protected virtual void BeforeBench()  
         {
@@ -45,17 +54,15 @@ namespace EntityFX.NetBenchmark.Core.Generic
 
         public virtual void Warmup(double aspect = 0.05)
         {
-#if DEBUG
-            Iterrations = Convert.ToInt32(Iterrations * DebugAspectRatio);
-#endif
-            var tmp = Iterrations;
-            Iterrations = Convert.ToInt32( Iterrations * 0.05);
+            Iterrations = (int)Math.Round(Iterrations * IterrationsRatio);
+            var tmp = Iterrations ;
+            Iterrations = (int)Math.Round(Iterrations * aspect);
             Bench();
             Iterrations = tmp;
         }
 
 
-        protected BenchResult[] BenchInParallel<TBench, TBenchResult>(
+        protected virtual BenchResult[] BenchInParallel<TBench, TBenchResult>(
             Func<TBench> buildFunc, Func<TBench, TBenchResult> benchFunc, 
             Action<TBenchResult, BenchResult> setBenchResultFunc)
         {
@@ -96,9 +103,12 @@ namespace EntityFX.NetBenchmark.Core.Generic
             double elapsedSeconds = sw.Elapsed.TotalSeconds;
             return new BenchResult() { 
                 BenchmarkName = GetType().Name, Elapsed = sw.Elapsed,
-                Points = Convert.ToDecimal(Iterrations / sw.Elapsed.TotalMilliseconds * Ratio) ,
+                Points = Iterrations / sw.Elapsed.TotalMilliseconds * Ratio ,
                 Result = (double)Iterrations / elapsedSeconds,
-                Units = "Iter/s"
+                Units = "Iter/s",
+                IsParallel = IsParallel,
+                Iterrations = Iterrations,
+                Ratio = Ratio
             };
         }
 
@@ -106,12 +116,16 @@ namespace EntityFX.NetBenchmark.Core.Generic
         {
             var result = BuildResult(sw);
             result.Points = results.Sum(r => r.Points);
+            result.IsParallel = IsParallel;
             return result;
         }
 
         protected BenchResult BuildParallelResult(BenchResult rootResult, BenchResult[] results)
         {
             rootResult.Points = results.Sum(r => r.Points);
+            rootResult.IsParallel = IsParallel;
+            rootResult.Iterrations = Iterrations;
+            rootResult.Ratio = Ratio;
             return rootResult;
         }
     }

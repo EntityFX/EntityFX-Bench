@@ -1,31 +1,33 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
+using System.Linq;
 using System.Runtime.CompilerServices;
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
-    public class CallBenchmark : BenchmarkBase<int>, IBenchamrk
+
+    public class CallBenchmark : CallBenchmarkBase<float>, IBenchamrk
     {
-        public CallBenchmark()
+
+        public override float BenchImplementation()
         {
-            Iterrations = 2000000000;
-            Ratio = 0.01;
+            return 0.0f;
         }
 
-        [MethodImpl(MethodImplOptions.NoInlining)]
-        private static int DoCall(int i)
+        public override BenchResult Bench()
         {
-            return i + 1;
-        }
+            BeforeBench();
+            var sw = new Stopwatch();
+            sw.Start();
 
-        public override int BenchImplementation()
-        {
-            int i = 0;
-            int a = 0;
-            for (i = 0; i < Iterrations; ++i)
-            {
-                a = DoCall(i);
-            }
-            return a;
+            var callTime = DoCallBench();
+
+
+            var result = PopulateResult(BuildResult(sw), callTime);
+            result.Elapsed = TimeSpan.FromMilliseconds(callTime);
+            DoOutput(result);
+            AfterBench(result);
+            return result;
         }
     }
 }

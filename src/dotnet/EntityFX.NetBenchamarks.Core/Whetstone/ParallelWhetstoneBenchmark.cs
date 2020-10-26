@@ -10,13 +10,14 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
     {
         public ParallelWhetstoneBenchmark()
         {
+            IsParallel = true;
         }
 
         public override BenchResult[] BenchImplementation()
         {
             return BenchInParallel(() => new Whetstone(false), a =>
             a.Bench(), (a, r) => { 
-                r.Points = Convert.ToDecimal(a.MWIPS);
+                r.Points = a.MWIPS;
                 r.Result = r.Points;
                 r.Output = a.Output;
             });
@@ -25,7 +26,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
         public override BenchResult PopulateResult(BenchResult benchResult, BenchResult[] dhrystoneResult)
         {
             var result = BuildParallelResult(benchResult, dhrystoneResult);
-            result.Result = dhrystoneResult.Sum(r => Convert.ToDecimal(r.Result));
+            result.Result = dhrystoneResult.Sum(r => r.Result);
             result.Units = "MWIPS";
             result.Output = string.Concat(dhrystoneResult.Select(s => s.Output));
             return result;

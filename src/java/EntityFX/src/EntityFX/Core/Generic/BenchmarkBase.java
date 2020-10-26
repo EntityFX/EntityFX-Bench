@@ -9,22 +9,11 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import EntityFX.Core.Writer;
 
-public abstract class BenchmarkBase<TResult> implements BenchmarkInterface {
-
-    protected int Iterrations;
-
-    protected boolean printToConsole = true;
-
-    public static double AspectRatio = 0.1;
-
-    public double Ratio = 1.0;
-
-    protected String Name = "";
-
-    protected Writer output;
+public abstract class BenchmarkBase<TResult> extends BenchmarkBaseBase implements BenchmarkInterface {
 
     public BenchmarkBase(Writer writer, boolean printToConsole) throws FileNotFoundException {
         super();
+
         this.Name = this.getClass().getSimpleName();
         this.printToConsole = printToConsole;
         this.output = writer == null ? new Writer(null) : writer;
@@ -34,22 +23,28 @@ public abstract class BenchmarkBase<TResult> implements BenchmarkInterface {
         return this.Name;
     }
 
-    public BenchResult bench() throws IOException {
+    public BenchResult bench() throws Exception {
         this.beforeBench();
         final long start = System.currentTimeMillis();
         final TResult res = this.benchImplementation();
         final BenchResult result = this.populateResult(this.buildResult(start), res);
-        if (result.Output != null) {
-            final FileWriter fileWriter = new FileWriter(Name + ".log");
-            final PrintWriter printWriter = new PrintWriter(fileWriter);
-            printWriter.print(result.Output);
-            printWriter.close();
-        }
+        doOutput(result);
         this.afterBench(result);
         return result;
     }
 
-    public void warmup(final Double aspect) throws IOException {
+    protected void doOutput(BenchResult result) throws IOException {
+        if (result.Output == null) {
+            return;
+        }
+        final FileWriter fileWriter = new FileWriter(Name + ".log");
+        final PrintWriter printWriter = new PrintWriter(fileWriter);
+        printWriter.print(result.Output);
+        printWriter.close();
+    }
+
+    public void warmup(final Double aspect) throws Exception {
+        Iterrations *= IterrationsRatio;
         final int tmp = Iterrations;
         Iterrations = (int) Math.round(Iterrations * aspect);
         this.UseConsole(false);
@@ -66,7 +61,7 @@ public abstract class BenchmarkBase<TResult> implements BenchmarkInterface {
 
     }
 
-    public abstract TResult benchImplementation() throws IOException;
+    public abstract TResult benchImplementation() throws IOException, Exception;
 
     public void UseConsole(final boolean printToConsole) {
         this.printToConsole = printToConsole;
@@ -85,13 +80,17 @@ public abstract class BenchmarkBase<TResult> implements BenchmarkInterface {
         final long elapsed = System.currentTimeMillis() - start;
         final long tElapsed = elapsed == 0 ? 1 : elapsed;
         double elapsedSeconds = tElapsed / 1000.0;
+        long iterrations = Iterrations;
+        double ratio = Ratio;
         return new BenchResult() {
             {
                 BenchmarkName = Name;
                 Elapsed = tElapsed;
-                Points = Iterrations / tElapsed * Ratio;
-                Result = (double) Iterrations / elapsedSeconds;
+                Points = iterrations / tElapsed * ratio;
+                Result = (double) iterrations / elapsedSeconds;
                 Units = "Iter/s";
+                Iterrations = iterrations;
+                Ratio = ratio;
             }
         };
     }

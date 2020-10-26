@@ -13,8 +13,8 @@ namespace EntityFX.NetBenchmark.Core.Generic
 
         public override BenchResult PopulateResult(BenchResult benchResult, MemoryBenchmarkResult result)
         {
-            benchResult.Points = Convert.ToDecimal(result.Average * Ratio);
-            benchResult.Result = Convert.ToDecimal(result.Average);
+            benchResult.Points = result.Average * Ratio;
+            benchResult.Result = result.Average;
             benchResult.Units = "MB/s";
             benchResult.Output = result.Output;
             return benchResult;

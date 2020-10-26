@@ -4,6 +4,8 @@
     {
         string Name { get; }
 
+        bool IsParallel { get; }
+
         BenchResult Bench();
 
         void Warmup(double aspect = 0.05);

@@ -7,6 +7,11 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public class ParallelArithemticsBenchmark : ArithmeticsBase<BenchResult[]>, IBenchamrk
     {
+        public ParallelArithemticsBenchmark()
+        {
+            IsParallel = true;
+        }
+
         public override BenchResult[] BenchImplementation()
         {
             return BenchInParallel(() => 0, a =>

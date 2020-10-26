@@ -56,7 +56,7 @@ public class Scimark2 {
         if (res[5] == .0)
             output.writeLine(" ERROR, INVALID NUMERICAL RESULT!") /* error */;
         else
-            output.writeLine("%d", res[5]) /* error */;
+            output.writeLine("%.2f", res[5]) /* error */;
         return Scimark2Result._new1(res[0], res[1], res[2], res[3], res[4], res[5], output.Output);
     }
 }

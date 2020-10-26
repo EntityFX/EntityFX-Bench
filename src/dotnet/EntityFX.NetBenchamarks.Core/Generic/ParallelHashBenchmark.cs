@@ -5,6 +5,11 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public class ParallelHashBenchmark : HashBase<BenchResult[]>, IBenchamrk
     {
+        public ParallelHashBenchmark()
+        {
+            IsParallel = true;
+        }
+
         public override BenchResult[] BenchImplementation()
         {
             return BenchInParallel(() => 0, a =>

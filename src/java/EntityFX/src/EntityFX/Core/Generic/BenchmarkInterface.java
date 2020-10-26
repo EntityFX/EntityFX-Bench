@@ -6,7 +6,8 @@ public interface BenchmarkInterface
 {
     String getName();
 
-    BenchResult bench() throws IOException;
+    BenchResult bench() throws IOException, Exception;
 
-    void warmup(Double aspect) throws IOException;
+    void warmup(Double aspect) throws IOException, Exception;
+    
 }

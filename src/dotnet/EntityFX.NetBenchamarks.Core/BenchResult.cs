@@ -8,14 +8,20 @@ namespace EntityFX.NetBenchmark.Core
     {
         public TimeSpan Elapsed { get; set; }
 
-        public object Result { get; set; }
+        public double Result { get; set; }
 
         public string Units { get; set; }
 
-        public decimal Points { get; set; }
+        public double Points { get; set; }
+
+        public double Ratio { get; set; }
 
         public string Output { get; set; }
 
         public string BenchmarkName { get; set; }
+
+        public bool IsParallel { get; set; }
+
+        public long Iterrations { get; set; }
     }
 }

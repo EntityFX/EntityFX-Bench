@@ -5,6 +5,11 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public class ParallelMathBenchmark : MathBase<BenchResult[]>, IBenchamrk
     {
+        public ParallelMathBenchmark()
+        {
+            IsParallel = true;
+        }
+
         public override BenchResult[] BenchImplementation()
         {
             return BenchInParallel(() => 0, a =>
@@ -19,4 +24,5 @@ namespace EntityFX.NetBenchmark.Core.Generic
             }, (a, r) => { });
         }
     }
+
 }

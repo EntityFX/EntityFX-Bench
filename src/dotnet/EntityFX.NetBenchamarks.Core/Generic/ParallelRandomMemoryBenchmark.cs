@@ -5,6 +5,11 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public class ParallelRandomMemoryBenchmark : RandomMemoryBenchmarkBase<BenchResult[]>, IBenchamrk
     {
+        public ParallelRandomMemoryBenchmark(bool printToConsole = true) : base(printToConsole)
+        {
+            IsParallel = true;
+        }
+
         public override BenchResult[] BenchImplementation()
         {
             UseConsole = false;
@@ -18,11 +23,13 @@ namespace EntityFX.NetBenchmark.Core.Generic
         {
             var result = BuildParallelResult(benchResult, dhrystoneResult);
             var sum = dhrystoneResult.Sum(r => Convert.ToDouble(r.Result));
-            result.Result = Convert.ToDecimal(sum);
-            result.Points = Convert.ToDecimal(sum * Ratio);
+            result.Result = sum;
+            result.Points = sum * Ratio;
             result.Units = "MB/s";
             result.Output = string.Concat(dhrystoneResult.Select(s => s.Output));
             return result;
         }
     }
+
+    
 }

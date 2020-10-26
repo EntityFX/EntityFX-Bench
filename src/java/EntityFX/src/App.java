@@ -1,24 +1,33 @@
 import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Locale;
 
 import EntityFX.Core.Writer;
-import EntityFX.Core.Dhrystone.Dhrystone2;
+import EntityFX.Core.Dhrystone.*;
 import EntityFX.Core.Generic.*;
-import EntityFX.Core.Scimark2.Constants;
-import EntityFX.Core.Scimark2.Scimark2;
-import EntityFX.Core.Whetstone.Whetstone;
+import EntityFX.Core.Scimark2.*;
+import EntityFX.Core.Whetstone.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        Locale.setDefault(new Locale("en", "US"));
+
+        BenchmarkBaseBase.IterrationsRatio = args.length > 0 ? Float.parseFloat(args[0]): 1.0;
+
         Writer writer = new Writer("Output.log");
 
         BenchmarkInterface[] benchmarks = new BenchmarkInterface[] { 
-            new MemoryBenchmark(writer, true),
-            new RandomMemoryBenchmark(writer, true),
             new ArithemticsBenchmark(writer, true),
             new MathBenchmark(writer, true),
             new CallBenchmark(writer, true),
             new IfElseBenchmark(writer, true),
-            new StringManipulation(writer, true)
+            new StringManipulation(writer, true),
+            new MemoryBenchmark(writer, true),
+            new RandomMemoryBenchmark(writer, true),
+            new Scimark2Benchmark(writer, true),
+            new DhrystoneBenchmark(writer, true),
+            new WhetstoneBenchmark(writer, true),
         };
 
         writer.writeHeader("Warmup");
@@ -54,15 +63,47 @@ public class App {
         writer.writeValue("%15d ms", total);
         writer.writeValue("%13.2f pts", totalPoints);
         writer.writeLine();
+
+        String osVersion = System.getProperty("os.name") + " " + System.getProperty("os.version")+ " " + System.getProperty("os.arch");
+        String environmentVersion = "Java Version " + Runtime.version().toString();
+        int threadsCount = Runtime.getRuntime().availableProcessors();
+        long workingSet = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
+
+        writer.writeLine();
+        writer.writeHeader("Single-thread results");
+        writer.writeTitle("%s;%s;%d;%d", osVersion, environmentVersion, threadsCount, workingSet);
+        Arrays.stream(result).filter(r -> !r.IsParallel).forEach(r -> {
+            try {
+                writer.writeValue(";%.2f", r.Points);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+        writer.writeTitle(";%.2f;%d", totalPoints, total);
+
+
+
+        writer.writeLine();
+        writer.writeHeader("Single-thread  Units results");
+        writer.writeTitle("%s;%s;%d;%d", osVersion, environmentVersion, threadsCount, workingSet);
+        Arrays.stream(result).filter(r -> !r.IsParallel).forEach(r -> {
+            try {
+                writer.writeValue(";%.2f", r.Result);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+        writer.writeTitle(";%.2f;%d", totalPoints, total);
+        writer.writeLine();
     }
 
     private static void writeResult(Writer writer, BenchResult benchResult) throws IOException {
         writer.writeTitle("%-30s", benchResult.BenchmarkName);
         writer.writeValue("%15d ms", benchResult.Elapsed);
         writer.writeValue("%13.2f pts", benchResult.Points);
-        if (benchResult.Result != null) {
-            writer.writeValue("%13.2f %s", benchResult.Result, benchResult.Units);
-        }
+        writer.writeValue("%15.2f %s", benchResult.Result, benchResult.Units);
+        writer.writeLine();
+        writer.writeValue("Iterrations: %15d, Ratio: %15f", benchResult.Iterrations, benchResult.Ratio);
         writer.writeLine();
     }
 }

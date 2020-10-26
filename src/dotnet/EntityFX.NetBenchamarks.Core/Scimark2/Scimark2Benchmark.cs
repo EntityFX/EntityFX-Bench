@@ -23,7 +23,7 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
         public override BenchResult PopulateResult(BenchResult benchResult, Scimark2.Scimark2Result dhrystoneResult)
         {
             benchResult.Result = dhrystoneResult.CompositeScore;
-            benchResult.Points = Convert.ToDecimal(dhrystoneResult.CompositeScore * Ratio);
+            benchResult.Points = dhrystoneResult.CompositeScore * Ratio;
             benchResult.Units = "CompositeScore";
             benchResult.Output = dhrystoneResult.Output;
             return benchResult;
