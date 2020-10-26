@@ -63,7 +63,7 @@ public class Dhrystone2 {
         this.output.writeLine("");
         this.output.writeLine("Optimization %s", "Optimised");
 
-        var result = this.Proc0(loops);
+        DhrystoneResult result = this.Proc0(loops);
         this.output.writeLine("");
         this.output.writeLine("Final values (* implementation-dependent):\n");
         this.output.writeLine("");
@@ -275,8 +275,8 @@ public class Dhrystone2 {
         this.PtrGlb.EnumComp = Ident_3;
         this.PtrGlb.IntComp = 40;
         this.PtrGlb.StringComp = "DHRYSTONE PROGRAM, SOME STRING";
-        var String1Loc = "DHRYSTONE PROGRAM, 1\'ST STRING";
-        var String2Loc = "DHRYSTONE PROGRAM, 2\'ND STRING";
+        String String1Loc = "DHRYSTONE PROGRAM, 1\'ST STRING";
+        String String2Loc = "DHRYSTONE PROGRAM, 2\'ND STRING";
         this.IntGlob = 0;
         this.BoolGlob = false;
         this.Char1Glob = '\\';
@@ -290,7 +290,7 @@ public class Dhrystone2 {
         int IntLoc2 = 0;
         int IntLoc3 = 0;
         final long start = System.currentTimeMillis();
-        for (var i = 0; (i < loops); i++) {
+        for (int i = 0; (i < loops); i++) {
             this.Proc5();
             this.Proc4();
             IntLoc1 = 2;
@@ -307,7 +307,7 @@ public class Dhrystone2 {
 
             this.Proc8(this.Array1Glob, this.Array2Glob, IntLoc1, IntLoc3);
             this.PtrGlb = this.Proc1(this.PtrGlb);
-            var CharIndex = 'A';
+            Character CharIndex = 'A';
             for (CharIndex = 'A'; (CharIndex <= this.Char2Glob); CharIndex++) {
                 if ((EnumLoc == Dhrystone2.Func1(CharIndex, 'C'))) {
                     EnumLoc = this.Proc6(Ident_1);
@@ -368,7 +368,7 @@ public class Dhrystone2 {
     }
 
     final int Proc2(int IntParIO) {
-        var IntLoc = (IntParIO + 10);
+        int IntLoc = (IntParIO + 10);
         int EnumLoc = Ident_2;
         while (true) {
             if ((this.Char1Glob == 'A')) {
@@ -398,7 +398,7 @@ public class Dhrystone2 {
     }
 
     final void Proc4() {
-        var BoolLoc = (this.Char1Glob == 'A');
+        boolean BoolLoc = (this.Char1Glob == 'A');
         this.BoolGlob = (BoolLoc || this.BoolGlob);
         this.Char2Glob = 'B';
     }
@@ -439,18 +439,18 @@ public class Dhrystone2 {
     }
 
     static int Proc7(int IntParI1, int IntParI2) {
-        var IntLoc = (IntParI1 + 2);
-        var IntParOut = (IntParI2 + IntLoc);
+        int IntLoc = (IntParI1 + 2);
+        int IntParOut = (IntParI2 + IntLoc);
         return IntParOut;
     }
 
     final void Proc8(int[] Array1Par, int[][] Array2Par, int IntParI1, int IntParI2) {
-        var IntLoc = (IntParI1 + 5);
+        int IntLoc = (IntParI1 + 5);
         Array1Par[IntLoc] = IntParI2;
         Array1Par[(IntLoc + 1)] = Array1Par[IntLoc];
         Array1Par[(IntLoc + 30)] = IntLoc;
         // for IntIndex in range(IntLoc, IntLoc+2):
-        for (var IntIndex = IntLoc; (IntIndex < (IntLoc + 2)); IntIndex++) {
+        for (int IntIndex = IntLoc; (IntIndex < (IntLoc + 2)); IntIndex++) {
             Array2Par[IntLoc][IntIndex] = IntLoc;
         }
 
@@ -492,7 +492,7 @@ public class Dhrystone2 {
     }
 
     static boolean Func3(int EnumParIn) {
-        var EnumLoc = EnumParIn;
+        int EnumLoc = EnumParIn;
         return (EnumLoc == Ident_3);
     }
 

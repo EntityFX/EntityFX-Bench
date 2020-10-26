@@ -65,7 +65,7 @@ public class App {
         writer.writeLine();
 
         String osVersion = System.getProperty("os.name") + " " + System.getProperty("os.version")+ " " + System.getProperty("os.arch");
-        String environmentVersion = "Java Version " + Runtime.version().toString();
+        String environmentVersion = "Java Version " + System.getProperty("java.version");
         int threadsCount = Runtime.getRuntime().availableProcessors();
         long workingSet = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
 
