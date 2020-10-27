@@ -43,7 +43,7 @@ public class ParallelScimark2Benchmark extends BenchmarkBase<BenchResult[]> {
     /* error value type 'BenchResult' of method PopulateResult */
     @Override
     public BenchResult populateResult(BenchResult benchResult, BenchResult[] scimark2Result) {
-        var result = buildParallelResult(benchResult, scimark2Result) /* error */;
+        BenchResult result = buildParallelResult(benchResult, scimark2Result) /* error */;
         result.Result = Arrays.stream(scimark2Result).mapToDouble(r -> r.Result).sum();
         result.Units = "CompositeScore";
         result.Output = String.join("", Arrays.toString(Arrays.stream(scimark2Result).map(r -> r.Output).toArray()));

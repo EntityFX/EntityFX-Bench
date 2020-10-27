@@ -113,7 +113,8 @@ public abstract class BenchmarkBase<TResult> extends BenchmarkBaseBase implement
     }
 
     public BenchResult populateResult(final BenchResult benchResult, final TResult dhrystoneResult) {
-        if (dhrystoneResult instanceof BenchResult[] results) {
+        if (dhrystoneResult instanceof BenchResult[]) {
+            BenchResult[] results = (BenchResult[]) dhrystoneResult;
             return buildParallelResult(benchResult, results);
         }
         return benchResult;

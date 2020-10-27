@@ -41,7 +41,7 @@ public class ParallelWhetstoneBenchmark extends BenchmarkBase<BenchResult[]> {
 
     @Override
     public BenchResult populateResult(BenchResult benchResult, BenchResult[] whetstonBenchResults) {
-        var result = buildParallelResult(benchResult, whetstonBenchResults);
+        BenchResult result = buildParallelResult(benchResult, whetstonBenchResults);
         result.Result = Arrays.stream(whetstonBenchResults).mapToDouble(r -> r.Result).sum();
         result.Units = "MWIPS";
         result.Output = String.join("", Arrays.toString(Arrays.stream(whetstonBenchResults).map(r -> r.Output).toArray()));

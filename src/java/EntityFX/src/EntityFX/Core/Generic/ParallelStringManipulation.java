@@ -16,7 +16,7 @@ public class ParallelStringManipulation extends StringManipulationBase<BenchResu
     public BenchResult[] benchImplementation() throws InterruptedException, ExecutionException {
         return this.benchInParallel(() -> 0, a ->
         {
-            var str = "the quick brown fox jumps over the lazy dog";
+            String str = "the quick brown fox jumps over the lazy dog";
             String str1 = "";
             for (int i = 0; i < Iterrations; i++)
             {
