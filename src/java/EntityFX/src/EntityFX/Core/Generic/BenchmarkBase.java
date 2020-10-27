@@ -150,6 +150,7 @@ public abstract class BenchmarkBase<TResult> extends BenchmarkBaseBase implement
         rootResult.Points = Arrays.stream(results).mapToDouble(r -> r.Points).sum();
         rootResult.IsParallel = isParallel;
         rootResult.Iterrations = Iterrations;
+        rootResult.Result = Arrays.stream(results).mapToDouble(r -> r.Result).sum();
         rootResult.Ratio = Ratio;
         return rootResult;
     }

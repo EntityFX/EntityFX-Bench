@@ -18,6 +18,9 @@ public class App {
         Writer writer = new Writer("Output.log");
 
         BenchmarkInterface[] benchmarks = new BenchmarkInterface[] { 
+            new CallBenchmark(writer, true),
+            new ParallelCallBenchmark(writer, true),
+/*
             new ArithemticsBenchmark(writer, true),
             new ParallelArithemticsBenchmark(writer, true),
 
@@ -25,6 +28,7 @@ public class App {
             new ParallelMathBenchmark(writer, true),
 
             new CallBenchmark(writer, true),
+            new ParallelCallBenchmark(writer, true),
 
             new IfElseBenchmark(writer, true),
             new ParallelIfElseBenchmark(writer, true),
@@ -45,7 +49,7 @@ public class App {
             new ParallelDhrystoneBenchmark(writer, true),
             
             new WhetstoneBenchmark(writer, true),
-            new ParallelWhetstoneBenchmark(writer, true)
+            new ParallelWhetstoneBenchmark(writer, true)*/
         };
 
         writer.writeHeader("Warmup");
