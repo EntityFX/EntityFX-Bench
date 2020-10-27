@@ -42,7 +42,7 @@ public class ParallelDhrystoneBenchmark extends BenchmarkBase<BenchResult[]> {
 
     @Override
     public BenchResult populateResult(BenchResult benchResult, BenchResult[] dhrystonBenchResults) {
-        var result = buildParallelResult(benchResult, dhrystonBenchResults);
+        BenchResult result = buildParallelResult(benchResult, dhrystonBenchResults);
         result.Result = Arrays.stream(dhrystonBenchResults).mapToDouble(r -> r.Result).sum();
         result.Units = "DMIPS";
         result.Output = String.join("", Arrays.toString(Arrays.stream(dhrystonBenchResults).map(r -> r.Output).toArray()));
