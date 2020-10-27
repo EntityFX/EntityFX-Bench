@@ -71,15 +71,12 @@ namespace EntityFX.NetBenchmark.Core.Generic
 
             var results = new BenchResult[Environment.ProcessorCount];
 
-            var sw = new Stopwatch();
-            sw.Start();
-
             var tasks = Enumerable.Range(0, Environment.ProcessorCount)
                 .Select(i => Task.Run(() => {
                     var swi = new Stopwatch();
-                    sw.Start();
+                    swi.Start();
                     var result = benchFunc(benchs[i]);
-                    results[i] = BuildResult(sw);
+                    results[i] = BuildResult(swi);
                     setBenchResultFunc(result, results[i]);
 
                 })).ToArray();

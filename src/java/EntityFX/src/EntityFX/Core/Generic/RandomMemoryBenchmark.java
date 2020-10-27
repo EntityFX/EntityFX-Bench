@@ -14,7 +14,7 @@ public class RandomMemoryBenchmark extends RandomMemoryBenchmarkBase<MemoryBench
 
     @Override
     public MemoryBenchmarkResult benchImplementation() throws IOException {
-        return BenchRandomMemory();
+        return benchRandomMemory();
     }
 
     @Override

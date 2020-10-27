@@ -23,19 +23,19 @@ public abstract class RandomMemoryBenchmarkBase<TResult> extends BenchmarkBase<T
         Ratio = 2;
     }
 
-    public MemoryBenchmarkResult BenchRandomMemory() throws IOException {
-        SimpleEntry<Double, Integer>  int4k = MeasureArrayRandomRead(1024);
+    public MemoryBenchmarkResult benchRandomMemory() throws IOException {
+        SimpleEntry<Double, Integer>  int4k = measureArrayRandomRead(1024);
         output.writeLine("Random int 4k: %.2f MB/s", int4k.getKey());
-        SimpleEntry<Double, Integer>  int512k = MeasureArrayRandomRead(131072);
+        SimpleEntry<Double, Integer>  int512k = measureArrayRandomRead(131072);
         output.writeLine("Random int 512k: %.2f MB/s", int512k.getKey());
-        SimpleEntry<Double, Integer>  int8m = MeasureArrayRandomRead(2097152);
+        SimpleEntry<Double, Integer>  int8m = measureArrayRandomRead(2097152);
         output.writeLine("Random int 8M: %.2f MB/s", int8m.getKey());
 
-        SimpleEntry<Double, Long>  long4k = MeasureArrayRandomLongRead(1024);
+        SimpleEntry<Double, Long>  long4k = measureArrayRandomLongRead(1024);
         output.writeLine("Random long 4k: %.2f MB/s", long4k.getKey());
-        SimpleEntry<Double, Long> long512k = MeasureArrayRandomLongRead(131072);
+        SimpleEntry<Double, Long> long512k = measureArrayRandomLongRead(131072);
         output.writeLine("Random long 512k: %.2f MB/s", long512k.getKey());
-        SimpleEntry<Double, Long> long8m = MeasureArrayRandomLongRead(2097152);
+        SimpleEntry<Double, Long> long8m = measureArrayRandomLongRead(2097152);
         output.writeLine("Random long 8M: %.2f MB/s", long8m.getKey());
 
         double avg = Arrays.stream(new double[] { int4k.getKey(), int512k.getKey(), int8m.getKey(), 
@@ -51,7 +51,7 @@ public abstract class RandomMemoryBenchmarkBase<TResult> extends BenchmarkBase<T
         };
     }
 
-    protected SimpleEntry<Double, Integer> MeasureArrayRandomRead(int size) {
+    protected SimpleEntry<Double, Integer> measureArrayRandomRead(int size) {
         int I = 0;
         int[] array = randomIntArray(size, Integer.MAX_VALUE);
 
@@ -74,7 +74,7 @@ public abstract class RandomMemoryBenchmarkBase<TResult> extends BenchmarkBase<T
                 (double) iterInternal * array.length * 4 / (elapsed / 1000.0) / 1024 / 1024, I);
     }
 
-    protected SimpleEntry<Double, Long> MeasureArrayRandomLongRead(int size) {
+    protected SimpleEntry<Double, Long> measureArrayRandomLongRead(int size) {
         long L = 0;
         long[] array = randomLongArray(size);
 

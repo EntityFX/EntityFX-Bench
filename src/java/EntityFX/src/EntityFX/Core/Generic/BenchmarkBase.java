@@ -4,14 +4,18 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.stream.IntStream;
 
 import EntityFX.Core.Writer;
 
 public abstract class BenchmarkBase<TResult> extends BenchmarkBaseBase implements BenchmarkInterface {
 
-    public BenchmarkBase(Writer writer, boolean printToConsole) throws FileNotFoundException {
+    public BenchmarkBase(final Writer writer, final boolean printToConsole) throws FileNotFoundException {
         super();
 
         this.Name = this.getClass().getSimpleName();
@@ -33,7 +37,47 @@ public abstract class BenchmarkBase<TResult> extends BenchmarkBaseBase implement
         return result;
     }
 
-    protected void doOutput(BenchResult result) throws IOException {
+    protected <TBench, TBenchResult> BenchResult[] benchInParallel(final Supplier<TBench> buildFunc,
+            final Function<TBench, TBenchResult> benchFunc,
+            final BiConsumer<TBenchResult, BenchResult> setBenchResultFunc)
+            throws InterruptedException, ExecutionException {
+        UseConsole(false);
+        final int threadNum = Runtime.getRuntime().availableProcessors();
+        final List<TBench> benchs = new ArrayList<TBench>();
+        for (int i = 0; i < threadNum; i++) {
+            benchs.add(buildFunc.get());
+        }
+
+        final BenchResult[] results = new BenchResult[threadNum];
+
+        final ExecutorService executor = Executors.newFixedThreadPool(threadNum);
+        final List<FutureTask<BenchResult>> taskList = new ArrayList<FutureTask<BenchResult>>();
+
+        int[] threads = IntStream.range(0, threadNum).toArray();
+        for (int j : threads) {
+            final FutureTask<BenchResult> futureTask = new FutureTask<BenchResult>(() -> {
+                final TBench bench = benchs.get(j);
+                final long start = System.currentTimeMillis();
+                final TBenchResult result = benchFunc.apply(bench);
+                final BenchResult benchResult = buildResult(start);
+                setBenchResultFunc.accept(result, benchResult);
+                return benchResult;
+            });
+            taskList.add(futureTask);
+            executor.execute(futureTask);
+        }
+
+        for (int j : threads) {
+            final FutureTask<BenchResult> futureTask = taskList.get(j);
+            results[j] = futureTask.get();
+        }
+
+        executor.shutdown();
+        UseConsole(true);
+        return results;
+    }
+
+    protected void doOutput(final BenchResult result) throws IOException {
         if (result.Output == null) {
             return;
         }
@@ -69,19 +113,18 @@ public abstract class BenchmarkBase<TResult> extends BenchmarkBaseBase implement
     }
 
     public BenchResult populateResult(final BenchResult benchResult, final TResult dhrystoneResult) {
-        // if (dhrystoneResult is BenchResult[] results)
-        // {
-        // return BuildParallelResult(benchResult, results);
-        // }
+        if (dhrystoneResult instanceof BenchResult[] results) {
+            return buildParallelResult(benchResult, results);
+        }
         return benchResult;
     }
 
     protected BenchResult buildResult(final long start) {
         final long elapsed = System.currentTimeMillis() - start;
         final long tElapsed = elapsed == 0 ? 1 : elapsed;
-        double elapsedSeconds = tElapsed / 1000.0;
-        long iterrations = Iterrations;
-        double ratio = Ratio;
+        final double elapsedSeconds = tElapsed / 1000.0;
+        final long iterrations = Iterrations;
+        final double ratio = Ratio;
         return new BenchResult() {
             {
                 BenchmarkName = Name;
@@ -95,8 +138,23 @@ public abstract class BenchmarkBase<TResult> extends BenchmarkBaseBase implement
         };
     }
 
-    protected int[] range(int start, int stop) {
-        int[] result = new int[stop - start];
+    protected BenchResult buildParallelResult(final long start, final BenchResult[] results) {
+        final BenchResult result = buildResult(start);
+        result.Points = Arrays.stream(results).mapToDouble(r -> r.Points).sum();
+        result.IsParallel = isParallel;
+        return result;
+    }
+
+    protected BenchResult buildParallelResult(final BenchResult rootResult, final BenchResult[] results) {
+        rootResult.Points = Arrays.stream(results).mapToDouble(r -> r.Points).sum();
+        rootResult.IsParallel = isParallel;
+        rootResult.Iterrations = Iterrations;
+        rootResult.Ratio = Ratio;
+        return rootResult;
+    }
+
+    protected int[] range(final int start, final int stop) {
+        final int[] result = new int[stop - start];
 
         for (int i = 0; i < stop - start; i++)
             result[i] = start + i;
@@ -104,18 +162,18 @@ public abstract class BenchmarkBase<TResult> extends BenchmarkBaseBase implement
         return result;
     }
 
-    protected int[] randomIntArray(int size, int max) {
-        ThreadLocalRandom random = ThreadLocalRandom.current();
-        int[]  ar = new int[size];
+    protected int[] randomIntArray(final int size, final int max) {
+        final ThreadLocalRandom random = ThreadLocalRandom.current();
+        final int[] ar = new int[size];
         for (int i = 0; i < size; i++) {
             ar[i] = random.nextInt(max);
         }
         return ar;
     }
 
-    protected long[] randomLongArray(int size) {
-        ThreadLocalRandom random = ThreadLocalRandom.current();
-        long[]  ar = new long[size];
+    protected long[] randomLongArray(final int size) {
+        final ThreadLocalRandom random = ThreadLocalRandom.current();
+        final long[] ar = new long[size];
         for (int i = 0; i < size; i++) {
             ar[i] = random.nextLong();
         }

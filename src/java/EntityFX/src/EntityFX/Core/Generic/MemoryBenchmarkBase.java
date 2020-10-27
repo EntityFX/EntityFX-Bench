@@ -23,24 +23,24 @@ public abstract class MemoryBenchmarkBase<TResult> extends BenchmarkBase<TResult
         Ratio = 1;
     }
 
-    public MemoryBenchmarkResult BenchRandomMemory() throws IOException
+    public MemoryBenchmarkResult benchRandomMemory() throws IOException
     {
-        SimpleEntry<Double, int[]> int4k = MeasureArrayRandomRead(1024);
+        SimpleEntry<Double, int[]> int4k = measureArrayRandomRead(1024);
         output.writeLine("int 4k: %.2f MB/s", int4k.getKey());
-        SimpleEntry<Double, int[]> int512k = MeasureArrayRandomRead(131072);
+        SimpleEntry<Double, int[]> int512k = measureArrayRandomRead(131072);
         output.writeLine("int 512k: %.2f MB/s", int512k.getKey());
-        SimpleEntry<Double, int[]> int8m = MeasureArrayRandomRead(2097152);
+        SimpleEntry<Double, int[]> int8m = measureArrayRandomRead(2097152);
         output.writeLine("int 8M: %.2f MB/s", int8m.getKey());
-        SimpleEntry<Double, int[]> int32m = MeasureArrayRandomRead(32 * 1024 * 1024 / Integer.BYTES);
+        SimpleEntry<Double, int[]> int32m = measureArrayRandomRead(32 * 1024 * 1024 / Integer.BYTES);
         output.writeLine("int 32M: %.2f MB/s", int32m.getKey());
 
-        SimpleEntry<Double, long[]> long4k = MeasureArrayRandomLongRead(1024);
+        SimpleEntry<Double, long[]> long4k = measureArrayRandomLongRead(1024);
         output.writeLine("long 4k: %.2f MB/s", long4k.getKey());
-        SimpleEntry<Double, long[]> long512k = MeasureArrayRandomLongRead(131072);
+        SimpleEntry<Double, long[]> long512k = measureArrayRandomLongRead(131072);
         output.writeLine("long 512k: %.2f MB/s", long512k.getKey());
-        SimpleEntry<Double, long[]> long8m = MeasureArrayRandomLongRead(2097152);
+        SimpleEntry<Double, long[]> long8m = measureArrayRandomLongRead(2097152);
         output.writeLine("long 8M: %.2f MB/s", long8m.getKey());
-        SimpleEntry<Double, long[]> long32m = MeasureArrayRandomLongRead(32 * 1024 * 1024 / Long.BYTES);
+        SimpleEntry<Double, long[]> long32m = measureArrayRandomLongRead(32 * 1024 * 1024 / Long.BYTES);
         output.writeLine("long 32M: %.2f MB/s", long32m.getKey());
         
         double avg = Arrays.stream(new double[] { 
@@ -57,7 +57,7 @@ public abstract class MemoryBenchmarkBase<TResult> extends BenchmarkBase<TResult
         }};
     }
 
-    protected SimpleEntry<Double, int[]> MeasureArrayRandomRead(int size) {
+    protected SimpleEntry<Double, int[]> measureArrayRandomRead(int size) {
         int blockSize = 16;
         int[] I = new int[blockSize];
 
@@ -113,7 +113,7 @@ public abstract class MemoryBenchmarkBase<TResult> extends BenchmarkBase<TResult
         return new SimpleEntry<Double, int[]>((double) (iterInternal * array.length * 4.0 / (elapsed / 1000.0) / 1024 / 1024), I);
     }
 
-    protected SimpleEntry<Double, long[]> MeasureArrayRandomLongRead(int size) {
+    protected SimpleEntry<Double, long[]> measureArrayRandomLongRead(int size) {
         int blockSize = 8;
         long[] I = new long[blockSize];
 

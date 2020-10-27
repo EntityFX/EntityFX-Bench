@@ -8,6 +8,8 @@ public abstract class BenchmarkBaseBase {
 
     protected boolean printToConsole = true;
 
+    protected boolean isParallel = false;
+
     public static double IterrationsRatio = 1;
 
     protected double Ratio = 1.0;

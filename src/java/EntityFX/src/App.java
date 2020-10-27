@@ -19,15 +19,33 @@ public class App {
 
         BenchmarkInterface[] benchmarks = new BenchmarkInterface[] { 
             new ArithemticsBenchmark(writer, true),
+            new ParallelArithemticsBenchmark(writer, true),
+
             new MathBenchmark(writer, true),
+            new ParallelMathBenchmark(writer, true),
+
             new CallBenchmark(writer, true),
+
             new IfElseBenchmark(writer, true),
+            new ParallelIfElseBenchmark(writer, true),
+
             new StringManipulation(writer, true),
+            new ParallelStringManipulation(writer, true),
+
             new MemoryBenchmark(writer, true),
+            new ParallelMemoryBenchmark(writer, true),
+
             new RandomMemoryBenchmark(writer, true),
+            new ParallelRandomMemoryBenchmark(writer, true),
+
             new Scimark2Benchmark(writer, true),
+            new ParallelScimark2Benchmark(writer, true),
+
             new DhrystoneBenchmark(writer, true),
+            new ParallelDhrystoneBenchmark(writer, true),
+            
             new WhetstoneBenchmark(writer, true),
+            new ParallelWhetstoneBenchmark(writer, true),
         };
 
         writer.writeHeader("Warmup");

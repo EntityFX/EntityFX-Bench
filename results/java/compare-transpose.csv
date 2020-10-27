@@ -1,0 +1,17 @@
+CPU,Elbrus 8C   ,AMD A6-3650 
+OS,Linux 4.19.0-1.4-e8c e2k     ,Linux 5.4.0-51-generic amd64 
+Runtime,Java Version 1.8.0_152                ,Java Version 14.0.1+7-Ubuntu-1ubuntu1 
+CPU threads,"8,00","4,00"
+Memory used,"34 526 336,00","325 816 848,00"
+ArithemticsBenchmark,"19 063 353,88","69 508 804,45"
+MathBenchmark,"1 882 423,81","3 091 429,01"
+CallBenchmark,"20 806 025,42","237 191 650,85"
+IfElseBenchmark,"117 952 347,25","361 598 264,33"
+StringManipulation,"54 569,66","703 037,12"
+MemoryBenchmark,"1 753,51","6 373,25"
+RandomMemoryBenchmark,"2 437,84","9 229,25"
+Scimark2Benchmark [CompositeScore],"310,99","948,98"
+DhrystoneBenchmark [DMIPS],"3 623,00","6 387,00"
+WhetstoneBenchmark [MWIPS],"473,90","905,59"
+Total Time [ms],"28 145,45","77 423,73"
+Total Points,"389 422,00","156 243,00"
