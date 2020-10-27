@@ -45,7 +45,7 @@ public class App {
             new ParallelDhrystoneBenchmark(writer, true),
             
             new WhetstoneBenchmark(writer, true),
-            new ParallelWhetstoneBenchmark(writer, true),
+            new ParallelWhetstoneBenchmark(writer, true)
         };
 
         writer.writeHeader("Warmup");
@@ -87,10 +87,46 @@ public class App {
         int threadsCount = Runtime.getRuntime().availableProcessors();
         long workingSet = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
 
+        String headerCommon = "Operating System,Runtime,Threads Count,Memory Used";
+        String headerTotals = ",Total Points,Total Time (ms)";
+
         writer.writeLine();
         writer.writeHeader("Single-thread results");
-        writer.writeTitle("%s;%s;%d;%d", osVersion, environmentVersion, threadsCount, workingSet);
+        writer.writeTitle(headerCommon);
         Arrays.stream(result).filter(r -> !r.IsParallel).forEach(r -> {
+            try {
+                writer.writeTitle(",%s", r.BenchmarkName);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+        writer.writeTitle(headerTotals);
+        writer.writeLine();
+        writer.writeTitle("%s,%s,%d,%d", osVersion, environmentVersion, threadsCount, workingSet);
+        Arrays.stream(result).filter(r -> !r.IsParallel).forEach(r -> {
+            try {
+                writer.writeValue(",%.2f", r.Points);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+        writer.writeTitle(",%.2f,%d", totalPoints, total);
+        writer.writeLine();
+
+
+        writer.writeHeader("All results");
+        writer.writeTitle(headerCommon);
+        Arrays.stream(result).forEach(r -> {
+            try {
+                writer.writeTitle(",%s", r.BenchmarkName);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+        writer.writeTitle(headerTotals);
+        writer.writeLine();
+        writer.writeTitle("%s,%s,%d,%d", osVersion, environmentVersion, threadsCount, workingSet);
+        Arrays.stream(result).forEach(r -> {
             try {
                 writer.writeValue(";%.2f", r.Points);
             } catch (IOException e) {
@@ -98,13 +134,43 @@ public class App {
             }
         });
         writer.writeTitle(";%.2f;%d", totalPoints, total);
-
-
-
         writer.writeLine();
+
         writer.writeHeader("Single-thread  Units results");
-        writer.writeTitle("%s;%s;%d;%d", osVersion, environmentVersion, threadsCount, workingSet);
+        writer.writeTitle(headerCommon);
         Arrays.stream(result).filter(r -> !r.IsParallel).forEach(r -> {
+            try {
+                writer.writeTitle(",%s (%s)", r.BenchmarkName, r.Units);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+        writer.writeTitle(headerTotals);
+        writer.writeLine();
+        writer.writeTitle("%s,%s,%d,%d", osVersion, environmentVersion, threadsCount, workingSet);
+        Arrays.stream(result).filter(r -> !r.IsParallel).forEach(r -> {
+            try {
+                writer.writeValue(";%.2f", r.Result);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+        writer.writeTitle(";%.2f;%d", totalPoints, total);
+        writer.writeLine();
+
+        writer.writeHeader("All  Units results");
+        writer.writeTitle(headerCommon);
+        Arrays.stream(result).forEach(r -> {
+            try {
+                writer.writeTitle(",%s (%s)", r.BenchmarkName, r.Units);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+        writer.writeTitle(headerTotals);
+        writer.writeLine();
+        writer.writeTitle("%s,%s,%d,%d", osVersion, environmentVersion, threadsCount, workingSet);
+        Arrays.stream(result).forEach(r -> {
             try {
                 writer.writeValue(";%.2f", r.Result);
             } catch (IOException e) {
