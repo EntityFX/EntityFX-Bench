@@ -1,0 +1,865 @@
+[null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 464.04
+Dhrystones per Second:         2155000.00
+VAX  MIPS rating =             1226.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 450.65
+Dhrystones per Second:         2219000.00
+VAX  MIPS rating =             1262.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 503.52
+Dhrystones per Second:         1986000.00
+VAX  MIPS rating =             1130.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 497.76
+Dhrystones per Second:         2009000.00
+VAX  MIPS rating =             1143.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 503.02
+Dhrystones per Second:         1988000.00
+VAX  MIPS rating =             1131.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 583.09
+Dhrystones per Second:         1715000.00
+VAX  MIPS rating =             976.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 572.41
+Dhrystones per Second:         1747000.00
+VAX  MIPS rating =             994.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 298.06
+Dhrystones per Second:         3355000.00
+VAX  MIPS rating =             1909.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 448.83
+Dhrystones per Second:         2228000.00
+VAX  MIPS rating =             1268.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 418.76
+Dhrystones per Second:         2388000.00
+VAX  MIPS rating =             1359.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 311.82
+Dhrystones per Second:         3207000.00
+VAX  MIPS rating =             1825.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 402.58
+Dhrystones per Second:         2484000.00
+VAX  MIPS rating =             1413.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 400.00
+Dhrystones per Second:         2500000.00
+VAX  MIPS rating =             1422.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 342.23
+Dhrystones per Second:         2922000.00
+VAX  MIPS rating =             1663.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 502.77
+Dhrystones per Second:         1989000.00
+VAX  MIPS rating =             1132.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 390.93
+Dhrystones per Second:         2558000.00
+VAX  MIPS rating =             1455.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 480.31
+Dhrystones per Second:         2082000.00
+VAX  MIPS rating =             1184.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 215.24
+Dhrystones per Second:         4646000.00
+VAX  MIPS rating =             2644.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 201.21
+Dhrystones per Second:         4970000.00
+VAX  MIPS rating =             2828.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 593.82
+Dhrystones per Second:         1684000.00
+VAX  MIPS rating =             958.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 563.70
+Dhrystones per Second:         1774000.00
+VAX  MIPS rating =             1009.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 482.63
+Dhrystones per Second:         2072000.00
+VAX  MIPS rating =             1179.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 353.11
+Dhrystones per Second:         2832000.00
+VAX  MIPS rating =             1611.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 242.95
+Dhrystones per Second:         4116000.00
+VAX  MIPS rating =             2342.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 332.67
+Dhrystones per Second:         3006000.00
+VAX  MIPS rating =             1710.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 445.04
+Dhrystones per Second:         2247000.00
+VAX  MIPS rating =             1278.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 309.79
+Dhrystones per Second:         3228000.00
+VAX  MIPS rating =             1837.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 519.48
+Dhrystones per Second:         1925000.00
+VAX  MIPS rating =             1095.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 522.19
+Dhrystones per Second:         1915000.00
+VAX  MIPS rating =             1089.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 607.16
+Dhrystones per Second:         1647000.00
+VAX  MIPS rating =             937.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 257.27
+Dhrystones per Second:         3887000.00
+VAX  MIPS rating =             2212.00
+
+, null##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Java)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    true
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    true same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 197.43
+Dhrystones per Second:         5065000.00
+VAX  MIPS rating =             2882.00
+
+]
