@@ -18,9 +18,6 @@ public class App {
         Writer writer = new Writer("Output.log");
 
         BenchmarkInterface[] benchmarks = new BenchmarkInterface[] { 
-            new CallBenchmark(writer, true),
-            new ParallelCallBenchmark(writer, true),
-
             new ArithemticsBenchmark(writer, true),
             new ParallelArithemticsBenchmark(writer, true),
 
