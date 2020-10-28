@@ -1,0 +1,12 @@
+nullWarmup
+....Elapsed No Call: 775
+Elapsed Call: 813
+.....int 4k: 1436.12 MB/s
+int 512k: 3250.00 MB/s
+int 8M: 2086.96 MB/s
+int 32M: 2181.82 MB/s
+long 4k: 4069.01 MB/s
+long 512k: 5000.00 MB/s
+long 8M: 4923.08 MB/s
+long 32M: 5052.63 MB/s
+Average: 3499.95 MB/s
