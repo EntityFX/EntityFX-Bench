@@ -2,101 +2,111 @@ Warmup
 ......................
 Bench
 [1] ArithemticsBenchmark
-ArithemticsBenchmark                    13188 ms       682.41 pts    22747952.68 Iter/s
+ArithemticsBenchmark                     1520 ms      5921.04 pts   197368421.05 Iter/s
 Iterrations:       300000000, Ratio:        0.030000
 [2] ParallelArithemticsBenchmark
-ParallelArithemticsBenchmark             3128 ms     23206.23 pts   773544802.58 Iter/s
+ParallelArithemticsBenchmark             3001 ms     24424.11 pts   814140203.88 Iter/s
 Iterrations:       300000000, Ratio:        0.030000
 [3] MathBenchmark
-MathBenchmark                           92648 ms      1079.00 pts     2158708.23 Iter/s
+Warmup
+......................
+Bench
+[1] ArithemticsBenchmark
+ArithemticsBenchmark                     1524 ms      5905.50 pts   196850393.70 Iter/s
+Iterrations:       300000000, Ratio:        0.030000
+[2] ParallelArithemticsBenchmark
+ParallelArithemticsBenchmark             3559 ms     20243.16 pts   674773421.70 Iter/s
+Iterrations:       300000000, Ratio:        0.030000
+[3] MathBenchmark
+MathBenchmark                          137426 ms       727.50 pts     1455328.69 Iter/s
 Iterrations:       200000000, Ratio:        0.500000
 [4] ParallelMathBenchmark
-ParallelMathBenchmark                   92193 ms      8721.50 pts    17447712.41 Iter/s
+ParallelMathBenchmark                  228715 ms      3536.50 pts     7077023.78 Iter/s
 Iterrations:       200000000, Ratio:        0.500000
 [5] CallBenchmark
 Elapsed No Call: 0
-Elapsed Call: 15709
-CallBenchmark                           15709 ms      1273.07 pts   127307447.49 Iter/s
+Elapsed Call: 6202
+CallBenchmark                            6202 ms      3224.24 pts   322424633.24 Iter/s
 Iterrations:      2000000000, Ratio:        0.010000
 [6] ParallelCallBenchmark
-ParallelCallBenchmark                   16000 ms     10160.10 pts  1016013686.90 Iter/s
+ParallelCallBenchmark                    6682 ms     24332.55 pts  2433257789.51 Iter/s
 Iterrations:      2000000000, Ratio:        0.010000
 [7] IfElseBenchmark
-IfElseBenchmark                         14219 ms      1406.56 pts   140656867.57 Iter/s
+IfElseBenchmark                          3109 ms      6432.93 pts   643293663.56 Iter/s
 Iterrations:      2000000000, Ratio:        0.010000
 [8] ParallelIfElseBenchmark
-ParallelIfElseBenchmark                 19396 ms     10136.12 pts  1013614477.99 Iter/s
+ParallelIfElseBenchmark                  4522 ms     35980.22 pts  3598024309.45 Iter/s
 Iterrations:      2000000000, Ratio:        0.010000
 [9] StringManipulation
-StringManipulation                      81291 ms       610.00 pts       61507.42 Iter/s
+StringManipulation                       9440 ms      5290.00 pts      529661.02 Iter/s
 Iterrations:         5000000, Ratio:       10.000000
 [10] ParallelStringManipulation
-ParallelStringManipulation              89064 ms      4480.00 pts      449582.46 Iter/s
+ParallelStringManipulation              20616 ms     19450.00 pts     1947501.85 Iter/s
 Iterrations:         5000000, Ratio:       10.000000
 [11] MemoryBenchmark
-int 4k: 3105.13 MB/s
-int 512k: 2353.01 MB/s
-int 8M: 1562.85 MB/s
-int 32M: 392.44 MB/s
-long 4k: 6037.48 MB/s
-long 512k: 2233.28 MB/s
-long 8M: 1578.65 MB/s
-long 32M: 500.26 MB/s
-Average: 2220.39 MB/s
-MemoryBenchmark                         20991 ms      2220.39 pts        2220.39 MB/s
+int 4k: 13851.95 MB/s
+int 512k: 13285.71 MB/s
+int 8M: 12049.38 MB/s
+int 32M: 11090.91 MB/s
+long 4k: 28102.52 MB/s
+long 512k: 25697.37 MB/s
+long 8M: 16973.91 MB/s
+long 32M: 15869.92 MB/s
+Average: 17115.21 MB/s
+MemoryBenchmark                          1458 ms     17115.21 pts       17115.21 MB/s
 Iterrations:          500000, Ratio:        1.000000
 [12] ParallelMemoryBenchmark
-ParallelMemoryBenchmark                 41119 ms     15515.92 pts       15515.92 MB/s
+ParallelMemoryBenchmark                  5931 ms     51255.15 pts       51255.15 MB/s
 Iterrations:          500000, Ratio:        1.000000
 [13] RandomMemoryBenchmark
-Random int 4k: 2977.32 MB/s
-Random int 512k: 1808.33 MB/s
-Random int 8M: 1349.93 MB/s
-Random long 4k: 6132.26 MB/s
-Random long 512k: 3547.68 MB/s
-Random long 8M: 2663.03 MB/s
-Average: 3079.76 MB/s
-RandomMemoryBenchmark                    6679 ms      6159.52 pts        3079.76 MB/s
+Random int 4k: 14153.08 MB/s
+Random int 512k: 13562.50 MB/s
+Random int 8M: 11759.04 MB/s
+Random long 4k: 28306.16 MB/s
+Random long 512k: 26937.93 MB/s
+Random long 8M: 23804.88 MB/s
+Average: 19753.93 MB/s
+RandomMemoryBenchmark                     930 ms     39507.86 pts       19753.93 MB/s
 Iterrations:          500000, Ratio:        2.000000
 [14] ParallelRandomMemoryBenchmark
-ParallelRandomMemoryBenchmark           14172 ms     41662.13 pts       20831.07 MB/s
+ParallelRandomMemoryBenchmark            2908 ms    127801.93 pts       63900.97 MB/s
 Iterrations:          500000, Ratio:        2.000000
 [15] Scimark2Benchmark
-Scimark2Benchmark                       26926 ms      3767.92 pts         376.79 CompositeScore
+Scimark2Benchmark                       27825 ms     23075.97 pts        2307.60 CompositeScore
 Iterrations:               0, Ratio:       10.000000
 [16] ParallelScimark2Benchmark
-ParallelScimark2Benchmark               26752 ms     30156.69 pts        3015.67 CompositeScore
+ParallelScimark2Benchmark               30984 ms    110698.43 pts       11069.84 CompositeScore
 Iterrations:               0, Ratio:       10.000000
 [17] DhrystoneBenchmark
-DhrystoneBenchmark                       2747 ms     16636.00 pts        4159.00 DMIPS
+DhrystoneBenchmark                        506 ms     90340.00 pts       22585.00 DMIPS
 Iterrations:               0, Ratio:        4.000000
 [18] ParallelDhrystoneBenchmark
-ParallelDhrystoneBenchmark               2996 ms    127368.00 pts       31842.00 DMIPS
+ParallelDhrystoneBenchmark               1284 ms    300240.00 pts       75060.00 DMIPS
 Iterrations:               0, Ratio:        4.000000
 [19] WhetstoneBenchmark
-WhetstoneBenchmark                      28408 ms       571.39 pts         571.39 MWIPS
+WhetstoneBenchmark                      32768 ms      1292.11 pts        1292.11 MWIPS
 Iterrations:               0, Ratio:        1.000000
 [20] ParallelWhetstoneBenchmark
-ParallelWhetstoneBenchmark              28236 ms      4567.49 pts        4567.49 MWIPS
+ParallelWhetstoneBenchmark              32886 ms      8374.89 pts        8374.89 MWIPS
 Iterrations:               0, Ratio:        1.000000
 [21] HashBenchmark
-HashBenchmark                            8733 ms      2290.00 pts      229016.37 Iter/s
+HashBenchmark                            1846 ms     10830.00 pts     1083423.62 Iter/s
 Iterrations:         2000000, Ratio:       10.000000
 [22] ParallelHashBenchmark
-ParallelHashBenchmark                   32423 ms      4930.00 pts      496725.05 Iter/s
+ParallelHashBenchmark                    7175 ms     22370.00 pts     2242235.43 Iter/s
 Iterrations:         2000000, Ratio:       10.000000
 
-Total:                                 677018 ms    317600.45 pts
+Total:                                 568296 ms    928024.16 pts
 
 Single-thread results
 Operating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark,MathBenchmark,CallBenchmark,IfElseBenchmark,StringManipulation,MemoryBenchmark,RandomMemoryBenchmark,ParallelRandomMemoryBenchmark,Scimark2Benchmark,DhrystoneBenchmark,WhetstoneBenchmark,HashBenchmark,Total Points,Total Time (ms)
-Linux 5.4.0-1.4-e8c2 e2k,Java Version 1.8.0_152,8,159422720,682.41,1079.00,1273.07,1406.56,610.00,2220.39,6159.52,41662.13,3767.92,16636.00,571.39,2290.00,317600.45,677018
+Linux 4.15.0-109-generic amd64,Java Version 1.8.0_201,8,336222472,5905.50,727.50,3224.24,6432.93,5290.00,17115.21,39507.86,127801.93,23075.97,90340.00,1292.11,10830.00,928024.16,568296
 All results
 Operating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark,ParallelArithemticsBenchmark,MathBenchmark,ParallelMathBenchmark,CallBenchmark,ParallelCallBenchmark,IfElseBenchmark,ParallelIfElseBenchmark,StringManipulation,ParallelStringManipulation,MemoryBenchmark,ParallelMemoryBenchmark,RandomMemoryBenchmark,ParallelRandomMemoryBenchmark,Scimark2Benchmark,ParallelScimark2Benchmark,DhrystoneBenchmark,ParallelDhrystoneBenchmark,WhetstoneBenchmark,ParallelWhetstoneBenchmark,HashBenchmark,ParallelHashBenchmark,Total Points,Total Time (ms)
-Linux 5.4.0-1.4-e8c2 e2k,Java Version 1.8.0_152,8,159422720,682.41,23206.23,1079.00,8721.50,1273.07,10160.10,1406.56,10136.12,610.00,4480.00,2220.39,15515.92,6159.52,41662.13,3767.92,30156.69,16636.00,127368.00,571.39,4567.49,2290.00,4930.00,317600.45,677018
+Linux 4.15.0-109-generic amd64,Java Version 1.8.0_201,8,336222472,5905.50,20243.16,727.50,3536.50,3224.24,24332.55,6432.93,35980.22,5290.00,19450.00,17115.21,51255.15,39507.86,127801.93,23075.97,110698.43,90340.00,300240.00,1292.11,8374.89,10830.00,22370.00,928024.16,568296
 Single-thread  Units results
 Operating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark (Iter/s),MathBenchmark (Iter/s),CallBenchmark (Iter/s),IfElseBenchmark (Iter/s),StringManipulation (Iter/s),MemoryBenchmark (MB/s),RandomMemoryBenchmark (MB/s),ParallelRandomMemoryBenchmark (MB/s),Scimark2Benchmark (CompositeScore),DhrystoneBenchmark (DMIPS),WhetstoneBenchmark (MWIPS),HashBenchmark (Iter/s),Total Points,Total Time (ms)
-Linux 5.4.0-1.4-e8c2 e2k,Java Version 1.8.0_152,8,159422720,22747952.68,2158708.23,127307447.49,140656867.57,61507.42,2220.39,3079.76,20831.07,376.79,4159.00,571.39,229016.37,317600.45,677018
+Linux 4.15.0-109-generic amd64,Java Version 1.8.0_201,8,336222472,196850393.70,1455328.69,322424633.24,643293663.56,529661.02,17115.21,19753.93,63900.97,2307.60,22585.00,1292.11,1083423.62,928024.16,568296
 All  Units results
 Operating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark (Iter/s),ParallelArithemticsBenchmark (Iter/s),MathBenchmark (Iter/s),ParallelMathBenchmark (Iter/s),CallBenchmark (Iter/s),ParallelCallBenchmark (Iter/s),IfElseBenchmark (Iter/s),ParallelIfElseBenchmark (Iter/s),StringManipulation (Iter/s),ParallelStringManipulation (Iter/s),MemoryBenchmark (MB/s),ParallelMemoryBenchmark (MB/s),RandomMemoryBenchmark (MB/s),ParallelRandomMemoryBenchmark (MB/s),Scimark2Benchmark (CompositeScore),ParallelScimark2Benchmark (CompositeScore),DhrystoneBenchmark (DMIPS),ParallelDhrystoneBenchmark (DMIPS),WhetstoneBenchmark (MWIPS),ParallelWhetstoneBenchmark (MWIPS),HashBenchmark (Iter/s),ParallelHashBenchmark (Iter/s),Total Points,Total Time (ms)
-Linux 5.4.0-1.4-e8c2 e2k,Java Version 1.8.0_152,8,159422720,22747952.68,773544802.58,2158708.23,17447712.41,127307447.49,1016013686.90,140656867.57,1013614477.99,61507.42,449582.46,2220.39,15515.92,3079.76,20831.07,376.79,3015.67,4159.00,31842.00,571.39,4567.49,229016.37,496725.05,317600.45,677018
+Linux 4.15.0-109-generic amd64,Java Version 1.8.0_201,8,336222472,196850393.70,674773421.70,1455328.69,7077023.78,322424633.24,2433257789.51,643293663.56,3598024309.45,529661.02,1947501.85,17115.21,51255.15,19753.93,63900.97,2307.60,11069.84,22585.00,75060.00,1292.11,8374.89,1083423.62,2242235.43,928024.16,568296
