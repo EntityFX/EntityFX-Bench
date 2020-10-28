@@ -154,7 +154,7 @@ public class App {
         writer.writeTitle("%s,%s,%d,%d", osVersion, environmentVersion, threadsCount, workingSet);
         Arrays.stream(result).filter(r -> !r.IsParallel).forEach(r -> {
             try {
-                writer.writeValue(";%.2f", r.Result);
+                writer.writeValue(",%.2f", r.Result);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -176,12 +176,12 @@ public class App {
         writer.writeTitle("%s,%s,%d,%d", osVersion, environmentVersion, threadsCount, workingSet);
         Arrays.stream(result).forEach(r -> {
             try {
-                writer.writeValue(";%.2f", r.Result);
+                writer.writeValue(",%.2f", r.Result);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         });
-        writer.writeTitle(";%.2f;%d", totalPoints, total);
+        writer.writeTitle(",%.2f,%d", totalPoints, total);
         writer.writeLine();
     }
 
