@@ -7,7 +7,6 @@ import EntityFX.Core.Writer;
 public class MathBenchmark extends MathBase<Double> {
     public MathBenchmark(Writer writer, boolean printToConsole) throws FileNotFoundException {
         super(writer, printToConsole);
-        // TODO Auto-generated constructor stub
     }
 
     @Override

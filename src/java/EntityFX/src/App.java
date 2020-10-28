@@ -1,5 +1,5 @@
 import java.io.IOException;
-import java.lang.reflect.Array;
+
 import java.util.Arrays;
 import java.util.Locale;
 
@@ -20,7 +20,7 @@ public class App {
         BenchmarkInterface[] benchmarks = new BenchmarkInterface[] { 
             new CallBenchmark(writer, true),
             new ParallelCallBenchmark(writer, true),
-/*
+
             new ArithemticsBenchmark(writer, true),
             new ParallelArithemticsBenchmark(writer, true),
 
@@ -49,7 +49,10 @@ public class App {
             new ParallelDhrystoneBenchmark(writer, true),
             
             new WhetstoneBenchmark(writer, true),
-            new ParallelWhetstoneBenchmark(writer, true)*/
+            new ParallelWhetstoneBenchmark(writer, true),
+
+            new HashBenchmark(writer, true),
+            new ParallelHashBenchmark(writer, true),
         };
 
         writer.writeHeader("Warmup");
