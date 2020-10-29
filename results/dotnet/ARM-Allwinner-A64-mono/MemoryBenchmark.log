@@ -1,18 +1,18 @@
-int 4k: 307.47 MB/s
+int 4k: 307.46 MB/s
 int 512k: 304.76 MB/s
-int 8M: 298.79 MB/s
-int 32M: 298.79 MB/s
-long 4k: 603.63 MB/s
-long 512k: 593.48 MB/s
-long 8M: 576.99 MB/s
-long 32M: 298.79 MB/s
-Average: 447.52 MB/s
-int 4k: 296.33 MB/s
-int 512k: 304.70 MB/s
-int 8M: 299.09 MB/s
-int 32M: 299.09 MB/s
-long 4k: 603.76 MB/s
-long 512k: 593.73 MB/s
-long 8M: 578.90 MB/s
-long 32M: 299.09 MB/s
-Average: 446.08 MB/s
+int 8M: 298.94 MB/s
+int 32M: 298.94 MB/s
+long 4k: 603.47 MB/s
+long 512k: 594.25 MB/s
+long 8M: 577.16 MB/s
+long 32M: 298.94 MB/s
+Average: 447.67 MB/s
+int 4k: 298.63 MB/s
+int 512k: 304.74 MB/s
+int 8M: 299.06 MB/s
+int 32M: 299.06 MB/s
+long 4k: 603.64 MB/s
+long 512k: 594.28 MB/s
+long 8M: 578.08 MB/s
+long 32M: 299.06 MB/s
+Average: 446.40 MB/s
