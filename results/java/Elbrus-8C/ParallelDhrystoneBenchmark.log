@@ -21,9 +21,9 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 174.98
-Dhrystones per Second:         5715000.00
-VAX  MIPS rating =             3252.00
+Nanoseconds one Dhrystone run: 168.66
+Dhrystones per Second:         5929000.00
+VAX  MIPS rating =             3374.00
 
 , null##########################################
 
@@ -48,9 +48,9 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 175.22
-Dhrystones per Second:         5707000.00
-VAX  MIPS rating =             3248.00
+Nanoseconds one Dhrystone run: 163.91
+Dhrystones per Second:         6101000.00
+VAX  MIPS rating =             3472.00
 
 , null##########################################
 
@@ -75,9 +75,9 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 175.62
-Dhrystones per Second:         5694000.00
-VAX  MIPS rating =             3240.00
+Nanoseconds one Dhrystone run: 167.70
+Dhrystones per Second:         5963000.00
+VAX  MIPS rating =             3393.00
 
 , null##########################################
 
@@ -102,9 +102,9 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 178.51
-Dhrystones per Second:         5602000.00
-VAX  MIPS rating =             3188.00
+Nanoseconds one Dhrystone run: 166.11
+Dhrystones per Second:         6020000.00
+VAX  MIPS rating =             3426.00
 
 , null##########################################
 
@@ -129,9 +129,9 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 185.46
-Dhrystones per Second:         5392000.00
-VAX  MIPS rating =             3068.00
+Nanoseconds one Dhrystone run: 167.06
+Dhrystones per Second:         5986000.00
+VAX  MIPS rating =             3406.00
 
 , null##########################################
 
@@ -156,9 +156,9 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 175.90
-Dhrystones per Second:         5685000.00
-VAX  MIPS rating =             3235.00
+Nanoseconds one Dhrystone run: 180.21
+Dhrystones per Second:         5549000.00
+VAX  MIPS rating =             3158.00
 
 , null##########################################
 
@@ -183,9 +183,9 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 182.48
-Dhrystones per Second:         5480000.00
-VAX  MIPS rating =             3118.00
+Nanoseconds one Dhrystone run: 164.31
+Dhrystones per Second:         6086000.00
+VAX  MIPS rating =             3463.00
 
 , null##########################################
 
@@ -210,8 +210,8 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 177.43
-Dhrystones per Second:         5636000.00
-VAX  MIPS rating =             3207.00
+Nanoseconds one Dhrystone run: 159.46
+Dhrystones per Second:         6271000.00
+VAX  MIPS rating =             3569.00
 
 ]
