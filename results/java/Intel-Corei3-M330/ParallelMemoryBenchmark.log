@@ -1,0 +1,701 @@
+[nullWarmup
+....Elapsed No Call: 653
+Elapsed Call: 673
+.Elapsed No Call: 672
+Elapsed Call: 657
+Elapsed No Call: 672
+Elapsed Call: 673
+Elapsed No Call: 672
+Elapsed Call: 673
+Elapsed No Call: 672
+Elapsed Call: 673
+.....int 4k: 1808.45 MB/s
+int 512k: 2074.47 MB/s
+int 8M: 2042.55 MB/s
+int 32M: 3000.00 MB/s
+long 4k: 3150.20 MB/s
+long 512k: 4148.94 MB/s
+long 8M: 4085.11 MB/s
+long 32M: 4085.11 MB/s
+Average: 3049.35 MB/s
+.int 4k: 3051.76 MB/s
+int 4k: 2077.79 MB/s
+int 4k: 2077.79 MB/s
+int 512k: 3145.16 MB/s
+int 512k: 2074.47 MB/s
+int 512k: 1547.62 MB/s
+int 8M: 2400.00 MB/s
+int 8M: 1411.76 MB/s
+int 8M: 872.73 MB/s
+int 8M: 611.46 MB/s
+int 32M: 2042.55 MB/s
+int 32M: 1523.81 MB/s
+int 32M: 2042.55 MB/s
+int 32M: 1548.39 MB/s
+long 4k: 3150.20 MB/s
+long 4k: 4245.92 MB/s
+long 4k: 4155.59 MB/s
+long 4k: 4155.59 MB/s
+long 512k: 2074.47 MB/s
+long 512k: 2500.00 MB/s
+long 512k: 1710.53 MB/s
+long 512k: 1710.53 MB/s
+long 8M: 2109.89 MB/s
+long 8M: 1263.16 MB/s
+long 8M: 1230.77 MB/s
+long 8M: 817.02 MB/s
+long 32M: 2064.52 MB/s
+Average: 2504.82 MB/s
+long 32M: 2042.55 MB/s
+Average: 2398.02 MB/s
+long 32M: 1536.00 MB/s
+Average: 1900.78 MB/s
+long 32M: 1745.45 MB/s
+Average: 1838.50 MB/s
+.Random int 4k: 1575.10 MB/s
+Random int 512k: 886.36 MB/s
+Random int 8M: 251.31 MB/s
+Random long 4k: 2077.79 MB/s
+Random long 512k: 1250.00 MB/s
+Random long 8M: 361.58 MB/s
+Average: 1067.02 MB/s
+.Random int 4k: 1050.07 MB/s
+Random int 4k: 1050.07 MB/s
+Random int 4k: 1050.07 MB/s
+Random int 512k: 480.30 MB/s
+Random int 512k: 480.30 MB/s
+Random int 512k: 445.21 MB/s
+Random int 512k: 445.21 MB/s
+Random int 8M: 100.63 MB/s
+Random int 8M: 100.63 MB/s
+Random int 8M: 100.73 MB/s
+Random int 8M: 100.73 MB/s
+Random long 4k: 1395.09 MB/s
+Random long 4k: 1395.09 MB/s
+Random long 4k: 1385.20 MB/s
+Random long 4k: 1385.20 MB/s
+Random long 512k: 276.99 MB/s
+Random long 512k: 271.21 MB/s
+Random long 512k: 277.38 MB/s
+Random long 512k: 271.21 MB/s
+Random long 8M: 160.27 MB/s
+Average: 577.22 MB/s
+Random long 8M: 160.54 MB/s
+Average: 576.30 MB/s
+Random long 8M: 159.07 MB/s
+Average: 569.61 MB/s
+Random long 8M: 160.40 MB/s
+Average: 568.80 MB/s
+...........
+Bench
+[1] ArithemticsBenchmark
+ArithemticsBenchmark                    47408 ms       189.84 pts     6328045.90 Iter/s
+Iterrations:       300000000, Ratio:        0.030000
+[2] ParallelArithemticsBenchmark
+ParallelArithemticsBenchmark            18261 ms      1972.95 pts    65766953.16 Iter/s
+Iterrations:       300000000, Ratio:        0.030000
+[3] MathBenchmark
+MathBenchmark                          339716 ms       294.00 pts      588727.05 Iter/s
+Iterrations:       200000000, Ratio:        0.500000
+[4] ParallelMathBenchmark
+ParallelMathBenchmark                  742958 ms       538.50 pts     1078083.44 Iter/s
+Iterrations:       200000000, Ratio:        0.500000
+[5] CallBenchmark
+Elapsed No Call: 15585
+Elapsed Call: 13245
+CallBenchmark                            2340 ms       693.72 pts    69372181.76 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[6] ParallelCallBenchmark
+Elapsed No Call: 18951
+Elapsed Call: 19544
+Elapsed No Call: 18980
+Elapsed Call: 19567
+Elapsed No Call: 18955
+Elapsed Call: 19606
+Elapsed No Call: 19063
+Elapsed Call: 19608
+ParallelCallBenchmark                   38671 ms      2074.21 pts   207423728.25 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[7] IfElseBenchmark
+IfElseBenchmark                         25171 ms       794.56 pts    79456517.42 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[8] ParallelIfElseBenchmark
+ParallelIfElseBenchmark                 68830 ms      1164.62 pts   116464424.42 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[9] StringManipulation
+StringManipulation                      61582 ms       810.00 pts       81192.56 Iter/s
+Iterrations:         5000000, Ratio:       10.000000
+[10] ParallelStringManipulation
+ParallelStringManipulation             126743 ms      1560.00 pts      157932.73 Iter/s
+Iterrations:         5000000, Ratio:       10.000000
+[11] MemoryBenchmark
+int 4k: 3785.13 MB/s
+int 512k: 3677.97 MB/s
+int 8M: 3200.00 MB/s
+int 32M: 3377.16 MB/s
+long 4k: 4542.15 MB/s
+long 512k: 3909.91 MB/s
+long 8M: 3374.24 MB/s
+long 32M: 3288.96 MB/s
+Average: 3644.44 MB/s
+MemoryBenchmark                          7266 ms      3644.44 pts        3644.44 MB/s
+Iterrations:          500000, Ratio:        1.000000
+[12] ParallelMemoryBenchmark
+int 4k: 1733.03 MB/s
+int 4k: 1733.03 MB/s
+int 4k: 1686.64 MB/s
+int 4k: 1686.64 MB/s
+int 512k: 1734.46 MB/s
+int 512k: 1711.66 MB/s
+int 512k: 1711.66 MB/s
+int 8M: 1666.95 MB/s
+int 8M: 1644.48 MB/s
+int 8M: 1602.63 MB/s
+int 8M: 1583.13 MB/s
+int 32M: 1644.48 MB/s
+int 32M: 1666.95 MB/s
+int 32M: 1623.96 MB/s
+int 32M: 1645.87 MB/s
+long 4k: 2292.40 MB/s
+long 4k: 2312.76 MB/s
+long 4k: 2291.06 MB/s
+long 4k: 2291.06 MB/s
+long 512k: 1852.06 MB/s
+long 512k: 1798.34 MB/s
+long 512k: 1773.04 MB/s
+long 512k: 1773.84 MB/s
+long 8M: 1676.26 MB/s
+long 8M: 1699.61 MB/s
+long 8M: 1665.53 MB/s
+long 8M: 1611.89 MB/s
+long 32M: 1687.12 MB/s
+Average: 1780.30 MB/s
+, nullWarmup
+....Elapsed No Call: 653
+Elapsed Call: 673
+.Elapsed No Call: 672
+Elapsed Call: 657
+Elapsed No Call: 672
+Elapsed Call: 673
+Elapsed No Call: 672
+Elapsed Call: 673
+Elapsed No Call: 672
+Elapsed Call: 673
+.....int 4k: 1808.45 MB/s
+int 512k: 2074.47 MB/s
+int 8M: 2042.55 MB/s
+int 32M: 3000.00 MB/s
+long 4k: 3150.20 MB/s
+long 512k: 4148.94 MB/s
+long 8M: 4085.11 MB/s
+long 32M: 4085.11 MB/s
+Average: 3049.35 MB/s
+.int 4k: 3051.76 MB/s
+int 4k: 2077.79 MB/s
+int 4k: 2077.79 MB/s
+int 512k: 3145.16 MB/s
+int 512k: 2074.47 MB/s
+int 512k: 1547.62 MB/s
+int 8M: 2400.00 MB/s
+int 8M: 1411.76 MB/s
+int 8M: 872.73 MB/s
+int 8M: 611.46 MB/s
+int 32M: 2042.55 MB/s
+int 32M: 1523.81 MB/s
+int 32M: 2042.55 MB/s
+int 32M: 1548.39 MB/s
+long 4k: 3150.20 MB/s
+long 4k: 4245.92 MB/s
+long 4k: 4155.59 MB/s
+long 4k: 4155.59 MB/s
+long 512k: 2074.47 MB/s
+long 512k: 2500.00 MB/s
+long 512k: 1710.53 MB/s
+long 512k: 1710.53 MB/s
+long 8M: 2109.89 MB/s
+long 8M: 1263.16 MB/s
+long 8M: 1230.77 MB/s
+long 8M: 817.02 MB/s
+long 32M: 2064.52 MB/s
+Average: 2504.82 MB/s
+long 32M: 2042.55 MB/s
+Average: 2398.02 MB/s
+long 32M: 1536.00 MB/s
+Average: 1900.78 MB/s
+long 32M: 1745.45 MB/s
+Average: 1838.50 MB/s
+.Random int 4k: 1575.10 MB/s
+Random int 512k: 886.36 MB/s
+Random int 8M: 251.31 MB/s
+Random long 4k: 2077.79 MB/s
+Random long 512k: 1250.00 MB/s
+Random long 8M: 361.58 MB/s
+Average: 1067.02 MB/s
+.Random int 4k: 1050.07 MB/s
+Random int 4k: 1050.07 MB/s
+Random int 4k: 1050.07 MB/s
+Random int 512k: 480.30 MB/s
+Random int 512k: 480.30 MB/s
+Random int 512k: 445.21 MB/s
+Random int 512k: 445.21 MB/s
+Random int 8M: 100.63 MB/s
+Random int 8M: 100.63 MB/s
+Random int 8M: 100.73 MB/s
+Random int 8M: 100.73 MB/s
+Random long 4k: 1395.09 MB/s
+Random long 4k: 1395.09 MB/s
+Random long 4k: 1385.20 MB/s
+Random long 4k: 1385.20 MB/s
+Random long 512k: 276.99 MB/s
+Random long 512k: 271.21 MB/s
+Random long 512k: 277.38 MB/s
+Random long 512k: 271.21 MB/s
+Random long 8M: 160.27 MB/s
+Average: 577.22 MB/s
+Random long 8M: 160.54 MB/s
+Average: 576.30 MB/s
+Random long 8M: 159.07 MB/s
+Average: 569.61 MB/s
+Random long 8M: 160.40 MB/s
+Average: 568.80 MB/s
+...........
+Bench
+[1] ArithemticsBenchmark
+ArithemticsBenchmark                    47408 ms       189.84 pts     6328045.90 Iter/s
+Iterrations:       300000000, Ratio:        0.030000
+[2] ParallelArithemticsBenchmark
+ParallelArithemticsBenchmark            18261 ms      1972.95 pts    65766953.16 Iter/s
+Iterrations:       300000000, Ratio:        0.030000
+[3] MathBenchmark
+MathBenchmark                          339716 ms       294.00 pts      588727.05 Iter/s
+Iterrations:       200000000, Ratio:        0.500000
+[4] ParallelMathBenchmark
+ParallelMathBenchmark                  742958 ms       538.50 pts     1078083.44 Iter/s
+Iterrations:       200000000, Ratio:        0.500000
+[5] CallBenchmark
+Elapsed No Call: 15585
+Elapsed Call: 13245
+CallBenchmark                            2340 ms       693.72 pts    69372181.76 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[6] ParallelCallBenchmark
+Elapsed No Call: 18951
+Elapsed Call: 19544
+Elapsed No Call: 18980
+Elapsed Call: 19567
+Elapsed No Call: 18955
+Elapsed Call: 19606
+Elapsed No Call: 19063
+Elapsed Call: 19608
+ParallelCallBenchmark                   38671 ms      2074.21 pts   207423728.25 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[7] IfElseBenchmark
+IfElseBenchmark                         25171 ms       794.56 pts    79456517.42 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[8] ParallelIfElseBenchmark
+ParallelIfElseBenchmark                 68830 ms      1164.62 pts   116464424.42 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[9] StringManipulation
+StringManipulation                      61582 ms       810.00 pts       81192.56 Iter/s
+Iterrations:         5000000, Ratio:       10.000000
+[10] ParallelStringManipulation
+ParallelStringManipulation             126743 ms      1560.00 pts      157932.73 Iter/s
+Iterrations:         5000000, Ratio:       10.000000
+[11] MemoryBenchmark
+int 4k: 3785.13 MB/s
+int 512k: 3677.97 MB/s
+int 8M: 3200.00 MB/s
+int 32M: 3377.16 MB/s
+long 4k: 4542.15 MB/s
+long 512k: 3909.91 MB/s
+long 8M: 3374.24 MB/s
+long 32M: 3288.96 MB/s
+Average: 3644.44 MB/s
+MemoryBenchmark                          7266 ms      3644.44 pts        3644.44 MB/s
+Iterrations:          500000, Ratio:        1.000000
+[12] ParallelMemoryBenchmark
+int 4k: 1733.03 MB/s
+int 4k: 1733.03 MB/s
+int 4k: 1686.64 MB/s
+int 4k: 1686.64 MB/s
+int 512k: 1734.46 MB/s
+int 512k: 1711.66 MB/s
+int 512k: 1711.66 MB/s
+int 8M: 1666.95 MB/s
+int 8M: 1644.48 MB/s
+int 8M: 1602.63 MB/s
+int 8M: 1583.13 MB/s
+int 32M: 1644.48 MB/s
+int 32M: 1666.95 MB/s
+int 32M: 1623.96 MB/s
+int 32M: 1645.87 MB/s
+long 4k: 2292.40 MB/s
+long 4k: 2312.76 MB/s
+long 4k: 2291.06 MB/s
+long 4k: 2291.06 MB/s
+long 512k: 1852.06 MB/s
+long 512k: 1798.34 MB/s
+long 512k: 1773.04 MB/s
+long 512k: 1773.84 MB/s
+long 8M: 1676.26 MB/s
+long 8M: 1699.61 MB/s
+long 8M: 1665.53 MB/s
+long 8M: 1611.89 MB/s
+long 32M: 1687.12 MB/s
+Average: 1780.30 MB/s
+long 32M: 1676.26 MB/s
+Average: 1760.02 MB/s
+long 32M: 1676.26 MB/s
+Average: 1763.58 MB/s
+long 32M: 1687.12 MB/s
+Average: 1767.92 MB/s
+, nullWarmup
+....Elapsed No Call: 653
+Elapsed Call: 673
+.Elapsed No Call: 672
+Elapsed Call: 657
+Elapsed No Call: 672
+Elapsed Call: 673
+Elapsed No Call: 672
+Elapsed Call: 673
+Elapsed No Call: 672
+Elapsed Call: 673
+.....int 4k: 1808.45 MB/s
+int 512k: 2074.47 MB/s
+int 8M: 2042.55 MB/s
+int 32M: 3000.00 MB/s
+long 4k: 3150.20 MB/s
+long 512k: 4148.94 MB/s
+long 8M: 4085.11 MB/s
+long 32M: 4085.11 MB/s
+Average: 3049.35 MB/s
+.int 4k: 3051.76 MB/s
+int 4k: 2077.79 MB/s
+int 4k: 2077.79 MB/s
+int 512k: 3145.16 MB/s
+int 512k: 2074.47 MB/s
+int 512k: 1547.62 MB/s
+int 8M: 2400.00 MB/s
+int 8M: 1411.76 MB/s
+int 8M: 872.73 MB/s
+int 8M: 611.46 MB/s
+int 32M: 2042.55 MB/s
+int 32M: 1523.81 MB/s
+int 32M: 2042.55 MB/s
+int 32M: 1548.39 MB/s
+long 4k: 3150.20 MB/s
+long 4k: 4245.92 MB/s
+long 4k: 4155.59 MB/s
+long 4k: 4155.59 MB/s
+long 512k: 2074.47 MB/s
+long 512k: 2500.00 MB/s
+long 512k: 1710.53 MB/s
+long 512k: 1710.53 MB/s
+long 8M: 2109.89 MB/s
+long 8M: 1263.16 MB/s
+long 8M: 1230.77 MB/s
+long 8M: 817.02 MB/s
+long 32M: 2064.52 MB/s
+Average: 2504.82 MB/s
+long 32M: 2042.55 MB/s
+Average: 2398.02 MB/s
+long 32M: 1536.00 MB/s
+Average: 1900.78 MB/s
+long 32M: 1745.45 MB/s
+Average: 1838.50 MB/s
+.Random int 4k: 1575.10 MB/s
+Random int 512k: 886.36 MB/s
+Random int 8M: 251.31 MB/s
+Random long 4k: 2077.79 MB/s
+Random long 512k: 1250.00 MB/s
+Random long 8M: 361.58 MB/s
+Average: 1067.02 MB/s
+.Random int 4k: 1050.07 MB/s
+Random int 4k: 1050.07 MB/s
+Random int 4k: 1050.07 MB/s
+Random int 512k: 480.30 MB/s
+Random int 512k: 480.30 MB/s
+Random int 512k: 445.21 MB/s
+Random int 512k: 445.21 MB/s
+Random int 8M: 100.63 MB/s
+Random int 8M: 100.63 MB/s
+Random int 8M: 100.73 MB/s
+Random int 8M: 100.73 MB/s
+Random long 4k: 1395.09 MB/s
+Random long 4k: 1395.09 MB/s
+Random long 4k: 1385.20 MB/s
+Random long 4k: 1385.20 MB/s
+Random long 512k: 276.99 MB/s
+Random long 512k: 271.21 MB/s
+Random long 512k: 277.38 MB/s
+Random long 512k: 271.21 MB/s
+Random long 8M: 160.27 MB/s
+Average: 577.22 MB/s
+Random long 8M: 160.54 MB/s
+Average: 576.30 MB/s
+Random long 8M: 159.07 MB/s
+Average: 569.61 MB/s
+Random long 8M: 160.40 MB/s
+Average: 568.80 MB/s
+...........
+Bench
+[1] ArithemticsBenchmark
+ArithemticsBenchmark                    47408 ms       189.84 pts     6328045.90 Iter/s
+Iterrations:       300000000, Ratio:        0.030000
+[2] ParallelArithemticsBenchmark
+ParallelArithemticsBenchmark            18261 ms      1972.95 pts    65766953.16 Iter/s
+Iterrations:       300000000, Ratio:        0.030000
+[3] MathBenchmark
+MathBenchmark                          339716 ms       294.00 pts      588727.05 Iter/s
+Iterrations:       200000000, Ratio:        0.500000
+[4] ParallelMathBenchmark
+ParallelMathBenchmark                  742958 ms       538.50 pts     1078083.44 Iter/s
+Iterrations:       200000000, Ratio:        0.500000
+[5] CallBenchmark
+Elapsed No Call: 15585
+Elapsed Call: 13245
+CallBenchmark                            2340 ms       693.72 pts    69372181.76 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[6] ParallelCallBenchmark
+Elapsed No Call: 18951
+Elapsed Call: 19544
+Elapsed No Call: 18980
+Elapsed Call: 19567
+Elapsed No Call: 18955
+Elapsed Call: 19606
+Elapsed No Call: 19063
+Elapsed Call: 19608
+ParallelCallBenchmark                   38671 ms      2074.21 pts   207423728.25 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[7] IfElseBenchmark
+IfElseBenchmark                         25171 ms       794.56 pts    79456517.42 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[8] ParallelIfElseBenchmark
+ParallelIfElseBenchmark                 68830 ms      1164.62 pts   116464424.42 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[9] StringManipulation
+StringManipulation                      61582 ms       810.00 pts       81192.56 Iter/s
+Iterrations:         5000000, Ratio:       10.000000
+[10] ParallelStringManipulation
+ParallelStringManipulation             126743 ms      1560.00 pts      157932.73 Iter/s
+Iterrations:         5000000, Ratio:       10.000000
+[11] MemoryBenchmark
+int 4k: 3785.13 MB/s
+int 512k: 3677.97 MB/s
+int 8M: 3200.00 MB/s
+int 32M: 3377.16 MB/s
+long 4k: 4542.15 MB/s
+long 512k: 3909.91 MB/s
+long 8M: 3374.24 MB/s
+long 32M: 3288.96 MB/s
+Average: 3644.44 MB/s
+MemoryBenchmark                          7266 ms      3644.44 pts        3644.44 MB/s
+Iterrations:          500000, Ratio:        1.000000
+[12] ParallelMemoryBenchmark
+int 4k: 1733.03 MB/s
+int 4k: 1733.03 MB/s
+int 4k: 1686.64 MB/s
+int 4k: 1686.64 MB/s
+int 512k: 1734.46 MB/s
+int 512k: 1711.66 MB/s
+int 512k: 1711.66 MB/s
+int 8M: 1666.95 MB/s
+int 8M: 1644.48 MB/s
+int 8M: 1602.63 MB/s
+int 8M: 1583.13 MB/s
+int 32M: 1644.48 MB/s
+int 32M: 1666.95 MB/s
+int 32M: 1623.96 MB/s
+int 32M: 1645.87 MB/s
+long 4k: 2292.40 MB/s
+long 4k: 2312.76 MB/s
+long 4k: 2291.06 MB/s
+long 4k: 2291.06 MB/s
+long 512k: 1852.06 MB/s
+long 512k: 1798.34 MB/s
+long 512k: 1773.04 MB/s
+long 512k: 1773.84 MB/s
+long 8M: 1676.26 MB/s
+long 8M: 1699.61 MB/s
+long 8M: 1665.53 MB/s
+long 8M: 1611.89 MB/s
+long 32M: 1687.12 MB/s
+Average: 1780.30 MB/s
+long 32M: 1676.26 MB/s
+Average: 1760.02 MB/s
+long 32M: 1676.26 MB/s
+Average: 1763.58 MB/s
+, nullWarmup
+....Elapsed No Call: 653
+Elapsed Call: 673
+.Elapsed No Call: 672
+Elapsed Call: 657
+Elapsed No Call: 672
+Elapsed Call: 673
+Elapsed No Call: 672
+Elapsed Call: 673
+Elapsed No Call: 672
+Elapsed Call: 673
+.....int 4k: 1808.45 MB/s
+int 512k: 2074.47 MB/s
+int 8M: 2042.55 MB/s
+int 32M: 3000.00 MB/s
+long 4k: 3150.20 MB/s
+long 512k: 4148.94 MB/s
+long 8M: 4085.11 MB/s
+long 32M: 4085.11 MB/s
+Average: 3049.35 MB/s
+.int 4k: 3051.76 MB/s
+int 4k: 2077.79 MB/s
+int 4k: 2077.79 MB/s
+int 512k: 3145.16 MB/s
+int 512k: 2074.47 MB/s
+int 512k: 1547.62 MB/s
+int 8M: 2400.00 MB/s
+int 8M: 1411.76 MB/s
+int 8M: 872.73 MB/s
+int 8M: 611.46 MB/s
+int 32M: 2042.55 MB/s
+int 32M: 1523.81 MB/s
+int 32M: 2042.55 MB/s
+int 32M: 1548.39 MB/s
+long 4k: 3150.20 MB/s
+long 4k: 4245.92 MB/s
+long 4k: 4155.59 MB/s
+long 4k: 4155.59 MB/s
+long 512k: 2074.47 MB/s
+long 512k: 2500.00 MB/s
+long 512k: 1710.53 MB/s
+long 512k: 1710.53 MB/s
+long 8M: 2109.89 MB/s
+long 8M: 1263.16 MB/s
+long 8M: 1230.77 MB/s
+long 8M: 817.02 MB/s
+long 32M: 2064.52 MB/s
+Average: 2504.82 MB/s
+long 32M: 2042.55 MB/s
+Average: 2398.02 MB/s
+long 32M: 1536.00 MB/s
+Average: 1900.78 MB/s
+long 32M: 1745.45 MB/s
+Average: 1838.50 MB/s
+.Random int 4k: 1575.10 MB/s
+Random int 512k: 886.36 MB/s
+Random int 8M: 251.31 MB/s
+Random long 4k: 2077.79 MB/s
+Random long 512k: 1250.00 MB/s
+Random long 8M: 361.58 MB/s
+Average: 1067.02 MB/s
+.Random int 4k: 1050.07 MB/s
+Random int 4k: 1050.07 MB/s
+Random int 4k: 1050.07 MB/s
+Random int 512k: 480.30 MB/s
+Random int 512k: 480.30 MB/s
+Random int 512k: 445.21 MB/s
+Random int 512k: 445.21 MB/s
+Random int 8M: 100.63 MB/s
+Random int 8M: 100.63 MB/s
+Random int 8M: 100.73 MB/s
+Random int 8M: 100.73 MB/s
+Random long 4k: 1395.09 MB/s
+Random long 4k: 1395.09 MB/s
+Random long 4k: 1385.20 MB/s
+Random long 4k: 1385.20 MB/s
+Random long 512k: 276.99 MB/s
+Random long 512k: 271.21 MB/s
+Random long 512k: 277.38 MB/s
+Random long 512k: 271.21 MB/s
+Random long 8M: 160.27 MB/s
+Average: 577.22 MB/s
+Random long 8M: 160.54 MB/s
+Average: 576.30 MB/s
+Random long 8M: 159.07 MB/s
+Average: 569.61 MB/s
+Random long 8M: 160.40 MB/s
+Average: 568.80 MB/s
+...........
+Bench
+[1] ArithemticsBenchmark
+ArithemticsBenchmark                    47408 ms       189.84 pts     6328045.90 Iter/s
+Iterrations:       300000000, Ratio:        0.030000
+[2] ParallelArithemticsBenchmark
+ParallelArithemticsBenchmark            18261 ms      1972.95 pts    65766953.16 Iter/s
+Iterrations:       300000000, Ratio:        0.030000
+[3] MathBenchmark
+MathBenchmark                          339716 ms       294.00 pts      588727.05 Iter/s
+Iterrations:       200000000, Ratio:        0.500000
+[4] ParallelMathBenchmark
+ParallelMathBenchmark                  742958 ms       538.50 pts     1078083.44 Iter/s
+Iterrations:       200000000, Ratio:        0.500000
+[5] CallBenchmark
+Elapsed No Call: 15585
+Elapsed Call: 13245
+CallBenchmark                            2340 ms       693.72 pts    69372181.76 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[6] ParallelCallBenchmark
+Elapsed No Call: 18951
+Elapsed Call: 19544
+Elapsed No Call: 18980
+Elapsed Call: 19567
+Elapsed No Call: 18955
+Elapsed Call: 19606
+Elapsed No Call: 19063
+Elapsed Call: 19608
+ParallelCallBenchmark                   38671 ms      2074.21 pts   207423728.25 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[7] IfElseBenchmark
+IfElseBenchmark                         25171 ms       794.56 pts    79456517.42 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[8] ParallelIfElseBenchmark
+ParallelIfElseBenchmark                 68830 ms      1164.62 pts   116464424.42 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[9] StringManipulation
+StringManipulation                      61582 ms       810.00 pts       81192.56 Iter/s
+Iterrations:         5000000, Ratio:       10.000000
+[10] ParallelStringManipulation
+ParallelStringManipulation             126743 ms      1560.00 pts      157932.73 Iter/s
+Iterrations:         5000000, Ratio:       10.000000
+[11] MemoryBenchmark
+int 4k: 3785.13 MB/s
+int 512k: 3677.97 MB/s
+int 8M: 3200.00 MB/s
+int 32M: 3377.16 MB/s
+long 4k: 4542.15 MB/s
+long 512k: 3909.91 MB/s
+long 8M: 3374.24 MB/s
+long 32M: 3288.96 MB/s
+Average: 3644.44 MB/s
+MemoryBenchmark                          7266 ms      3644.44 pts        3644.44 MB/s
+Iterrations:          500000, Ratio:        1.000000
+[12] ParallelMemoryBenchmark
+int 4k: 1733.03 MB/s
+int 4k: 1733.03 MB/s
+int 4k: 1686.64 MB/s
+int 4k: 1686.64 MB/s
+int 512k: 1734.46 MB/s
+int 512k: 1711.66 MB/s
+int 512k: 1711.66 MB/s
+int 8M: 1666.95 MB/s
+int 8M: 1644.48 MB/s
+int 8M: 1602.63 MB/s
+int 8M: 1583.13 MB/s
+int 32M: 1644.48 MB/s
+int 32M: 1666.95 MB/s
+int 32M: 1623.96 MB/s
+int 32M: 1645.87 MB/s
+long 4k: 2292.40 MB/s
+long 4k: 2312.76 MB/s
+long 4k: 2291.06 MB/s
+long 4k: 2291.06 MB/s
+long 512k: 1852.06 MB/s
+long 512k: 1798.34 MB/s
+long 512k: 1773.04 MB/s
+long 512k: 1773.84 MB/s
+long 8M: 1676.26 MB/s
+long 8M: 1699.61 MB/s
+long 8M: 1665.53 MB/s
+long 8M: 1611.89 MB/s
+long 32M: 1687.12 MB/s
+Average: 1780.30 MB/s
+long 32M: 1676.26 MB/s
+Average: 1760.02 MB/s
+]
