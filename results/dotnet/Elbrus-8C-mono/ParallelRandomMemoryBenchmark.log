@@ -1,840 +1,824 @@
-Random int 4k: 330.01 MB/s
-Random int 4k: 329.99 MB/s
-Random int 4k: 329.88 MB/s
-Random int 4k: 329.81 MB/s
-Random int 4k: 329.56 MB/s
-Random int 4k: 329.37 MB/s
-Random int 4k: 313.02 MB/s
-Random int 4k: 290.79 MB/s
-Random int 512k: 292.04 MB/s
-Random int 512k: 293.09 MB/s
-Random int 512k: 258.74 MB/s
-Random int 512k: 254.57 MB/s
-Random int 512k: 244.48 MB/s
-Random int 512k: 249.41 MB/s
-Random int 512k: 237.30 MB/s
-Random int 512k: 217.11 MB/s
-Random int 8M: 193.02 MB/s
-Random int 8M: 193.06 MB/s
-Random int 8M: 192.98 MB/s
-Random int 8M: 191.22 MB/s
-Random int 8M: 193.00 MB/s
-Random int 8M: 186.55 MB/s
-Random long 4k: 659.36 MB/s
-Random int 8M: 192.80 MB/s
-Random long 4k: 659.69 MB/s
-Random long 4k: 659.09 MB/s
-Random long 4k: 659.57 MB/s
-Random long 4k: 659.94 MB/s
-Random int 8M: 187.51 MB/s
-Random long 4k: 631.32 MB/s
-Random long 4k: 658.32 MB/s
-Random long 4k: 659.61 MB/s
-Random long 512k: 613.53 MB/s
-Random long 512k: 613.34 MB/s
-Random long 512k: 599.15 MB/s
-Random long 512k: 533.10 MB/s
-Random long 512k: 516.22 MB/s
-Random long 512k: 515.57 MB/s
-Random long 512k: 503.91 MB/s
-Random long 512k: 491.38 MB/s
-Random long 8M: 438.80 MB/s
-Average: 415.50 MB/s
-Random long 8M: 399.01 MB/s
-Average: 408.17 MB/s
-Random long 8M: 393.61 MB/s
-Average: 399.93 MB/s
-Random long 8M: 391.43 MB/s
-Average: 410.96 MB/s
-Random long 8M: 397.37 MB/s
-Average: 386.14 MB/s
-Random long 8M: 397.41 MB/s
-Average: 382.11 MB/s
-Random long 8M: 401.67 MB/s
-Average: 385.76 MB/s
-Random long 8M: 385.22 MB/s
-Average: 377.59 MB/s
-Random int 4k: 330.00 MB/s
-Random int 4k: 327.44 MB/s
-Random int 4k: 326.94 MB/s
-Random int 4k: 325.94 MB/s
-Random int 4k: 321.52 MB/s
-Random int 4k: 319.36 MB/s
-Random int 4k: 318.17 MB/s
-Random int 4k: 306.65 MB/s
-Random int 512k: 291.02 MB/s
-Random int 512k: 294.24 MB/s
-Random int 512k: 289.29 MB/s
-Random int 512k: 289.99 MB/s
-Random int 512k: 288.50 MB/s
-Random int 512k: 294.74 MB/s
-Random int 512k: 281.20 MB/s
-Random int 512k: 272.70 MB/s
-Random int 8M: 191.72 MB/s
-Random int 8M: 191.67 MB/s
+Random int 4k: 3m int 4k: 329.24 MB/s
+Random int 4k: 329.21 MB/s
+Random int 4k: 326.49 MB/s
+Random int 4k: 329.80 MB/s
+Random int 4k: 329.41 MB/s
+Random int 4k: 281.79 MB/s
+Random int 512k: 289.17 MB/s
+Random int 512k: 253.70 MB/s
+Random int 512k: 252.95 MB/s
+Random int 512k: 249.49 MB/s
+Random int 512k: 250.55 MB/s
+Random int 512k: 246.05 MB/s
+Random int 512k: 210.57 MB/s
+Random int 512k: 224.14 MB/s
+Random int 8M: 193.01 MB/s
+Random int 8M: 187.03 MB/s
+Random int 8M: 192.99 MB/s
+Random int 8M: 175.85 MB/s
 Random int 8M: 191.99 MB/s
-Random int 8M: 190.38 MB/s
-Random int 8M: 187.01 MB/s
-Random int 8M: 190.94 MB/s
-Random int 8M: 183.08 MB/s
-Random int 8M: 186.41 MB/s
-Random long 4k: 656.44 MB/s
-Random long 4k: 657.36 MB/s
-Random long 4k: 655.81 MB/s
-Random long 4k: 654.07 MB/s
-Random long 4k: 659.85 MB/s
-Random long 4k: 633.92 MB/s
-Random long 4k: 654.30 MB/s
-Random long 4k: 619.78 MB/s
-Random long 512k: 613.49 MB/s
-Random long 512k: 589.12 MB/s
-Random long 512k: 611.90 MB/s
-Random long 512k: 607.64 MB/s
-Random long 512k: 568.32 MB/s
-Random long 512k: 592.29 MB/s
-Random long 512k: 603.62 MB/s
-Random long 512k: 583.54 MB/s
-Random long 8M: 387.26 MB/s
-Average: 411.14 MB/s
-Random long 8M: 385.60 MB/s
-Average: 406.75 MB/s
-Random long 8M: 385.45 MB/s
-Average: 404.97 MB/s
-Random long 8M: 381.19 MB/s
-Average: 402.21 MB/s
-Random int 4k: 330.01 MB/s
-Random int 4k: 329.99 MB/s
-Random int 4k: 329.88 MB/s
-Random int 4k: 329.81 MB/s
-Random int 4k: 329.56 MB/s
-Random int 4k: 329.37 MB/s
-Random int 4k: 313.02 MB/s
-Random int 4k: 290.79 MB/s
-Random int 512k: 292.04 MB/s
-Random int 512k: 293.09 MB/s
-Random int 512k: 258.74 MB/s
-Random int 512k: 254.57 MB/s
-Random int 512k: 244.48 MB/s
-Random int 512k: 249.41 MB/s
-Random int 512k: 237.30 MB/s
-Random int 512k: 217.11 MB/s
-Random int 8M: 193.02 MB/s
-Random int 8M: 193.06 MB/s
-Random int 8M: 192.98 MB/s
-Random int 8M: 191.22 MB/s
-Random int 8M: 193.00 MB/s
-Random int 8M: 186.55 MB/s
-Random long 4k: 659.36 MB/s
-Random int 8M: 192.80 MB/s
-Random long 4k: 659.69 MB/s
-Random long 4k: 659.09 MB/s
-Random long 4k: 659.57 MB/s
-Random long 4k: 659.94 MB/s
-Random int 8M: 187.51 MB/s
-Random long 4k: 631.32 MB/s
-Random long 4k: 658.32 MB/s
-Random long 4k: 659.61 MB/s
-Random long 512k: 613.53 MB/s
-Random long 512k: 613.34 MB/s
-Random long 512k: 599.15 MB/s
-Random long 512k: 533.10 MB/s
-Random long 512k: 516.22 MB/s
-Random long 512k: 515.57 MB/s
-Random long 512k: 503.91 MB/s
-Random long 512k: 491.38 MB/s
-Random long 8M: 438.80 MB/s
-Average: 415.50 MB/s
-Random long 8M: 399.01 MB/s
-Average: 408.17 MB/s
-Random long 8M: 393.61 MB/s
-Average: 399.93 MB/s
-Random long 8M: 391.43 MB/s
-Average: 410.96 MB/s
-Random long 8M: 397.37 MB/s
-Average: 386.14 MB/s
-Random long 8M: 397.41 MB/s
-Average: 382.11 MB/s
-Random long 8M: 401.67 MB/s
-Average: 385.76 MB/s
-Random long 8M: 385.22 MB/s
-Average: 377.59 MB/s
-Random int 4k: 330.00 MB/s
-Random int 4k: 327.44 MB/s
-Random int 4k: 326.94 MB/s
-Random int 4k: 325.94 MB/s
-Random int 4k: 321.52 MB/s
-Random int 4k: 319.36 MB/s
-Random int 4k: 318.17 MB/s
-Random int 4k: 306.65 MB/s
-Random int 512k: 291.02 MB/s
-Random int 512k: 294.24 MB/s
-Random int 512k: 289.29 MB/s
-Random int 512k: 289.99 MB/s
-Random int 512k: 288.50 MB/s
-Random int 512k: 294.74 MB/s
-Random int 512k: 281.20 MB/s
-Random int 512k: 272.70 MB/s
-Random int 8M: 191.72 MB/s
-Random int 8M: 191.67 MB/s
-Random int 8M: 191.99 MB/s
-Random int 8M: 190.38 MB/s
-Random int 8M: 187.01 MB/s
-Random int 8M: 190.94 MB/s
-Random int 8M: 183.08 MB/s
-Random int 8M: 186.41 MB/s
-Random long 4k: 656.44 MB/s
-Random long 4k: 657.36 MB/s
-Random long 4k: 655.81 MB/s
-Random long 4k: 654.07 MB/s
-Random long 4k: 659.85 MB/s
-Random long 4k: 633.92 MB/s
-Random long 4k: 654.30 MB/s
-Random long 4k: 619.78 MB/s
-Random long 512k: 613.49 MB/s
-Random long 512k: 589.12 MB/s
-Random long 512k: 611.90 MB/s
-Random long 512k: 607.64 MB/s
-Random long 512k: 568.32 MB/s
-Random long 512k: 592.29 MB/s
-Random long 512k: 603.62 MB/s
-Random long 512k: 583.54 MB/s
-Random long 8M: 387.26 MB/s
-Average: 411.14 MB/s
-Random long 8M: 385.60 MB/s
-Average: 406.75 MB/s
-Random long 8M: 385.45 MB/s
-Average: 404.97 MB/s
-Random long 8M: 381.19 MB/s
-Average: 402.21 MB/s
-Random long 8M: 373.17 MB/s
-Average: 405.15 MB/s
-Random long 8M: 382.40 MB/s
-Average: 404.55 MB/s
-Random int 4k: 330.01 MB/s
-Random int 4k: 329.99 MB/s
-Random int 4k: 329.88 MB/s
-Random int 4k: 329.81 MB/s
-Random int 4k: 329.56 MB/s
-Random int 4k: 329.37 MB/s
-Random int 4k: 313.02 MB/s
-Random int 4k: 290.79 MB/s
-Random int 512k: 292.04 MB/s
-Random int 512k: 293.09 MB/s
-Random int 512k: 258.74 MB/s
-Random int 512k: 254.57 MB/s
-Random int 512k: 244.48 MB/s
-Random int 512k: 249.41 MB/s
-Random int 512k: 237.30 MB/s
-Random int 512k: 217.11 MB/s
-Random int 8M: 193.02 MB/s
-Random int 8M: 193.06 MB/s
-Random int 8M: 192.98 MB/s
-Random int 8M: 191.22 MB/s
-Random int 8M: 193.00 MB/s
-Random int 8M: 186.55 MB/s
-Random long 4k: 659.36 MB/s
-Random int 8M: 192.80 MB/s
-Random long 4k: 659.69 MB/s
-Random long 4k: 659.09 MB/s
-Random long 4k: 659.57 MB/s
-Random long 4k: 659.94 MB/s
-Random int 8M: 187.51 MB/s
-Random long 4k: 631.32 MB/s
-Random long 4k: 658.32 MB/s
-Random long 4k: 659.61 MB/s
-Random long 512k: 613.53 MB/s
-Random long 512k: 613.34 MB/s
-Random long 512k: 599.15 MB/s
-Random long 512k: 533.10 MB/s
-Random long 512k: 516.22 MB/s
-Random long 512k: 515.57 MB/s
-Random long 512k: 503.91 MB/s
-Random long 512k: 491.38 MB/s
-Random long 8M: 438.80 MB/s
-Average: 415.50 MB/s
-Random long 8M: 399.01 MB/s
-Average: 408.17 MB/s
-Random long 8M: 393.61 MB/s
-Average: 399.93 MB/s
-Random long 8M: 391.43 MB/s
-Average: 410.96 MB/s
-Random long 8M: 397.37 MB/s
-Average: 386.14 MB/s
-Random long 8M: 397.41 MB/s
-Average: 382.11 MB/s
-Random long 8M: 401.67 MB/s
-Average: 385.76 MB/s
-Random long 8M: 385.22 MB/s
-Average: 377.59 MB/s
-Random int 4k: 330.00 MB/s
-Random int 4k: 327.44 MB/s
-Random int 4k: 326.94 MB/s
-Random int 4k: 325.94 MB/s
-Random int 4k: 321.52 MB/s
-Random int 4k: 319.36 MB/s
-Random int 4k: 318.17 MB/s
-Random int 4k: 306.65 MB/s
-Random int 512k: 291.02 MB/s
-Random int 512k: 294.24 MB/s
-Random int 512k: 289.29 MB/s
-Random int 512k: 289.99 MB/s
-Random int 512k: 288.50 MB/s
-Random int 512k: 294.74 MB/s
-Random int 512k: 281.20 MB/s
-Random int 512k: 272.70 MB/s
-Random int 8M: 191.72 MB/s
-Random int 8M: 191.67 MB/s
-Random int 8M: 191.99 MB/s
-Random int 8M: 190.38 MB/s
-Random int 8M: 187.01 MB/s
-Random int 8M: 190.94 MB/s
-Random int 8M: 183.08 MB/s
-Random int 8M: 186.41 MB/s
-Random long 4k: 656.44 MB/s
-Random long 4k: 657.36 MB/s
-Random long 4k: 655.81 MB/s
-Random long 4k: 654.07 MB/s
-Random long 4k: 659.85 MB/s
-Random long 4k: 633.92 MB/s
-Random long 4k: 654.30 MB/s
-Random long 4k: 619.78 MB/s
-Random long 512k: 613.49 MB/s
-Random long 512k: 589.12 MB/s
-Random long 512k: 611.90 MB/s
-Random long 512k: 607.64 MB/s
-Random long 512k: 568.32 MB/s
-Random long 512k: 592.29 MB/s
-Random long 512k: 603.62 MB/s
-Random long 512k: 583.54 MB/s
-Random long 8M: 387.26 MB/s
-Average: 411.14 MB/s
-Random long 8M: 385.60 MB/s
-Average: 406.75 MB/s
-Random long 8M: 385.45 MB/s
-Average: 404.97 MB/s
-Random int 4k: 330.01 MB/s
-Random int 4k: 329.99 MB/s
-Random int 4k: 329.88 MB/s
-Random int 4k: 329.81 MB/s
-Random int 4k: 329.56 MB/s
-Random int 4k: 329.37 MB/s
-Random int 4k: 313.02 MB/s
-Random int 4k: 290.79 MB/s
-Random int 512k: 292.04 MB/s
-Random int 512k: 293.09 MB/s
-Random int 512k: 258.74 MB/s
-Random int 512k: 254.57 MB/s
-Random int 512k: 244.48 MB/s
-Random int 512k: 249.41 MB/s
-Random int 512k: 237.30 MB/s
-Random int 512k: 217.11 MB/s
-Random int 8M: 193.02 MB/s
-Random int 8M: 193.06 MB/s
-Random int 8M: 192.98 MB/s
-Random int 8M: 191.22 MB/s
-Random int 8M: 193.00 MB/s
-Random int 8M: 186.55 MB/s
-Random long 4k: 659.36 MB/s
-Random int 8M: 192.80 MB/s
-Random long 4k: 659.69 MB/s
-Random long 4k: 659.09 MB/s
-Random long 4k: 659.57 MB/s
-Random long 4k: 659.94 MB/s
-Random int 8M: 187.51 MB/s
-Random long 4k: 631.32 MB/s
-Random long 4k: 658.32 MB/s
-Random long 4k: 659.61 MB/s
-Random long 512k: 613.53 MB/s
-Random long 512k: 613.34 MB/s
-Random long 512k: 599.15 MB/s
-Random long 512k: 533.10 MB/s
-Random long 512k: 516.22 MB/s
-Random long 512k: 515.57 MB/s
-Random long 512k: 503.91 MB/s
-Random long 512k: 491.38 MB/s
-Random long 8M: 438.80 MB/s
-Average: 415.50 MB/s
-Random long 8M: 399.01 MB/s
-Average: 408.17 MB/s
-Random long 8M: 393.61 MB/s
-Average: 399.93 MB/s
-Random long 8M: 391.43 MB/s
-Average: 410.96 MB/s
-Random long 8M: 397.37 MB/s
-Average: 386.14 MB/s
-Random long 8M: 397.41 MB/s
-Average: 382.11 MB/s
-Random long 8M: 401.67 MB/s
-Average: 385.76 MB/s
-Random long 8M: 385.22 MB/s
-Average: 377.59 MB/s
-Random int 4k: 330.00 MB/s
-Random int 4k: 327.44 MB/s
-Random int 4k: 326.94 MB/s
-Random int 4k: 325.94 MB/s
-Random int 4k: 321.52 MB/s
-Random int 4k: 319.36 MB/s
-Random int 4k: 318.17 MB/s
-Random int 4k: 306.65 MB/s
-Random int 512k: 291.02 MB/s
-Random int 512k: 294.24 MB/s
-Random int 512k: 289.29 MB/s
-Random int 512k: 289.99 MB/s
-Random int 512k: 288.50 MB/s
-Random int 512k: 294.74 MB/s
-Random int 512k: 281.20 MB/s
-Random int 512k: 272.70 MB/s
-Random int 8M: 191.72 MB/s
-Random int 8M: 191.67 MB/s
-Random int 8M: 191.99 MB/s
-Random int 8M: 190.38 MB/s
-Random int 8M: 187.01 MB/s
-Random int 8M: 190.94 MB/s
-Random int 8M: 183.08 MB/s
-Random int 8M: 186.41 MB/s
-Random long 4k: 656.44 MB/s
-Random long 4k: 657.36 MB/s
-Random long 4k: 655.81 MB/s
-Random long 4k: 654.07 MB/s
-Random long 4k: 659.85 MB/s
-Random long 4k: 633.92 MB/s
-Random long 4k: 654.30 MB/s
-Random long 4k: 619.78 MB/s
-Random long 512k: 613.49 MB/s
-Random long 512k: 589.12 MB/s
-Random long 512k: 611.90 MB/s
-Random long 512k: 607.64 MB/s
-Random long 512k: 568.32 MB/s
-Random long 512k: 592.29 MB/s
-Random long 512k: 603.62 MB/s
-Random long 512k: 583.54 MB/s
-Random long 8M: 387.26 MB/s
-Average: 411.14 MB/s
-Random long 8M: 385.60 MB/s
-Average: 406.75 MB/s
-Random int 4k: 330.01 MB/s
-Random int 4k: 329.99 MB/s
-Random int 4k: 329.88 MB/s
-Random int 4k: 329.81 MB/s
-Random int 4k: 329.56 MB/s
-Random int 4k: 329.37 MB/s
-Random int 4k: 313.02 MB/s
-Random int 4k: 290.79 MB/s
-Random int 512k: 292.04 MB/s
-Random int 512k: 293.09 MB/s
-Random int 512k: 258.74 MB/s
-Random int 512k: 254.57 MB/s
-Random int 512k: 244.48 MB/s
-Random int 512k: 249.41 MB/s
-Random int 512k: 237.30 MB/s
-Random int 512k: 217.11 MB/s
-Random int 8M: 193.02 MB/s
-Random int 8M: 193.06 MB/s
-Random int 8M: 192.98 MB/s
-Random int 8M: 191.22 MB/s
-Random int 8M: 193.00 MB/s
-Random int 8M: 186.55 MB/s
-Random long 4k: 659.36 MB/s
-Random int 8M: 192.80 MB/s
-Random long 4k: 659.69 MB/s
-Random long 4k: 659.09 MB/s
-Random long 4k: 659.57 MB/s
-Random long 4k: 659.94 MB/s
-Random int 8M: 187.51 MB/s
-Random long 4k: 631.32 MB/s
-Random long 4k: 658.32 MB/s
-Random long 4k: 659.61 MB/s
-Random long 512k: 613.53 MB/s
-Random long 512k: 613.34 MB/s
-Random long 512k: 599.15 MB/s
-Random long 512k: 533.10 MB/s
-Random long 512k: 516.22 MB/s
-Random long 512k: 515.57 MB/s
-Random long 512k: 503.91 MB/s
-Random long 512k: 491.38 MB/s
-Random long 8M: 438.80 MB/s
-Average: 415.50 MB/s
-Random long 8M: 399.01 MB/s
-Average: 408.17 MB/s
-Random long 8M: 393.61 MB/s
-Average: 399.93 MB/s
-Random long 8M: 391.43 MB/s
-Average: 410.96 MB/s
-Random long 8M: 397.37 MB/s
-Average: 386.14 MB/s
-Random long 8M: 397.41 MB/s
-Average: 382.11 MB/s
-Random long 8M: 401.67 MB/s
-Average: 385.76 MB/s
-Random long 8M: 385.22 MB/s
-Average: 377.59 MB/s
-Random int 4k: 330.00 MB/s
-Random int 4k: 327.44 MB/s
-Random int 4k: 326.94 MB/s
-Random int 4k: 325.94 MB/s
-Random int 4k: 321.52 MB/s
-Random int 4k: 319.36 MB/s
-Random int 4k: 318.17 MB/s
-Random int 4k: 306.65 MB/s
-Random int 512k: 291.02 MB/s
-Random int 512k: 294.24 MB/s
-Random int 512k: 289.29 MB/s
-Random int 512k: 289.99 MB/s
-Random int 512k: 288.50 MB/s
-Random int 512k: 294.74 MB/s
-Random int 512k: 281.20 MB/s
-Random int 512k: 272.70 MB/s
-Random int 8M: 191.72 MB/s
-Random int 8M: 191.67 MB/s
-Random int 8M: 191.99 MB/s
-Random int 8M: 190.38 MB/s
-Random int 8M: 187.01 MB/s
-Random int 8M: 190.94 MB/s
-Random int 8M: 183.08 MB/s
-Random int 8M: 186.41 MB/s
-Random long 4k: 656.44 MB/s
-Random long 4k: 657.36 MB/s
-Random long 4k: 655.81 MB/s
-Random long 4k: 654.07 MB/s
-Random long 4k: 659.85 MB/s
-Random long 4k: 633.92 MB/s
-Random long 4k: 654.30 MB/s
-Random long 4k: 619.78 MB/s
-Random long 512k: 613.49 MB/s
-Random long 512k: 589.12 MB/s
-Random long 512k: 611.90 MB/s
-Random long 512k: 607.64 MB/s
-Random long 512k: 568.32 MB/s
-Random long 512k: 592.29 MB/s
-Random long 512k: 603.62 MB/s
-Random long 512k: 583.54 MB/s
-Random long 8M: 387.26 MB/s
-Average: 411.14 MB/s
-Random long 8M: 385.60 MB/s
-Average: 406.75 MB/s
-Random long 8M: 385.45 MB/s
-Average: 404.97 MB/s
-Random long 8M: 381.19 MB/s
-Average: 402.21 MB/s
-Random long 8M: 373.17 MB/s
-Average: 405.15 MB/s
-Random long 8M: 382.40 MB/s
-Average: 404.55 MB/s
-Random long 8M: 378.41 MB/s
-Average: 402.06 MB/s
+Random int 8M: 182.49 MB/s
+Random long 4k: 659.03 MB/s
+Random int 8M: 186.65 MB/s
+Random long 4k: 659.05 MB/s
+Random int 8M: 192.87 MB/s
+Random long 4k: 659.48 MB/s
+Random long 4k: 658.83 MB/s
+Random long 4k: 657.77 MB/s
+Random long 4k: 658.55 MB/s
+Random long 4k: 632.45 MB/s
+Random long 4k: 660.10 MB/s
+Random long 512k: 610.76 MB/s
+Random long 512k: 608.41 MB/s
+Random long 512k: 597.77 MB/s
+Random long 512k: 510.69 MB/s
+Random long 512k: 520.15 MB/s
+Random long 512k: 525.24 MB/s
+Random long 512k: 506.11 MB/s
+Random long 512k: 494.33 MB/s
+Random long 8M: 426.02 MB/s
+Average: 411.92 MB/s
+Random long 8M: 414.37 MB/s
+Average: 414.65 MB/s
+Random long 8M: 381.08 MB/s
+Average: 402.37 MB/s
+Random long 8M: 387.98 MB/s
+Average: 384.89 MB/s
+Random long 8M: 387.75 MB/s
+Average: 382.91 MB/s
+Random long 8M: 400.90 MB/s
+Average: 372.01 MB/s
+Random long 8M: 408.81 MB/s
+Average: 388.59 MB/s
+Random long 8M: 370.64 MB/s
+Average: 386.21 MB/s
+Random int 4k: 329.94 MB/s
+Random int 4k: 327.56 MB/s
+Random int 4k: 327.67 MB/s
+Random int 4k: 327.15 MB/s
+Random int 4k: 324.87 MB/s
+Random int 4k: 317.79 MB/s
+Random int 4k: 312.84 MB/s
+Random int 4k: 305.58 MB/s
+Random int 512k: 293.61 MB/s
+Random int 512k: 292.87 MB/s
+Random int 512k: 287.40 MB/s
+Random int 512k: 277.75 MB/s
+Random int 512k: 295.31 MB/s
+Random int 512k: 276.63 MB/s
+Random int 512k: 282.51 MB/s
+Random int 512k: 286.17 MB/s
+Random int 8M: 189.31 MB/s
+Random int 8M: 182.58 MB/s
+Random int 8M: 189.78 MB/s
+Random int 8M: 187.54 MB/s
+Random int 8M: 184.86 MB/s
+Random int 8M: 184.59 MB/s
+Random int 8M: 184.28 MB/s
+Random int 8M: 175.28 MB/s
+Random long 4k: 652.75 MB/s
+Random long 4k: 659.76 MB/s
+Random long 4k: 626.29 MB/s
+Random long 4k: 629.51 MB/s
+Random long 4k: 644.35 MB/s
+Random long 4k: 631.76 MB/s
+Random long 4k: 611.39 MB/s
+Random long 4k: 659.77 MB/s
+Random long 512k: 617.07 MB/s
+Random long 512k: 587.55 MB/s
+Random long 512k: 601.28 MB/s
+Random long 512k: 611.31 MB/s
+Random long 512k: 586.11 MB/s
+Random long 512k: 600.37 MB/s
+Random long 512k: 602.80 MB/s
+Random long 512k: 571.57 MB/s
 Random long 8M: 381.34 MB/s
-Average: 397.71 MB/s
-Random int 4k: 330.01 MB/s
-Random int 4k: 329.99 MB/s
-Random int 4k: 329.88 MB/s
-Random int 4k: 329.81 MB/s
-Random int 4k: 329.56 MB/s
-Random int 4k: 329.37 MB/s
-Random int 4k: 313.02 MB/s
-Random int 4k: 290.79 MB/s
-Random int 512k: 292.04 MB/s
-Random int 512k: 293.09 MB/s
-Random int 512k: 258.74 MB/s
-Random int 512k: 254.57 MB/s
-Random int 512k: 244.48 MB/s
-Random int 512k: 249.41 MB/s
-Random int 512k: 237.30 MB/s
-Random int 512k: 217.11 MB/s
-Random int 8M: 193.02 MB/s
-Random int 8M: 193.06 MB/s
-Random int 8M: 192.98 MB/s
-Random int 8M: 191.22 MB/s
-Random int 8M: 193.00 MB/s
-Random int 8M: 186.55 MB/s
-Random long 4k: 659.36 MB/s
-Random int 8M: 192.80 MB/s
-Random long 4k: 659.69 MB/s
-Random long 4k: 659.09 MB/s
-Random long 4k: 659.57 MB/s
-Random long 4k: 659.94 MB/s
-Random int 8M: 187.51 MB/s
-Random long 4k: 631.32 MB/s
-Random long 4k: 658.32 MB/s
-Random long 4k: 659.61 MB/s
-Random long 512k: 613.53 MB/s
-Random long 512k: 613.34 MB/s
-Random long 512k: 599.15 MB/s
-Random long 512k: 533.10 MB/s
-Random long 512k: 516.22 MB/s
-Random long 512k: 515.57 MB/s
-Random long 512k: 503.91 MB/s
-Random long 512k: 491.38 MB/s
-Random long 8M: 438.80 MB/s
-Average: 415.50 MB/s
-Random long 8M: 399.01 MB/s
-Average: 408.17 MB/s
-Random long 8M: 393.61 MB/s
-Average: 399.93 MB/s
-Random long 8M: 391.43 MB/s
-Average: 410.96 MB/s
-Random long 8M: 397.37 MB/s
-Average: 386.14 MB/s
-Random long 8M: 397.41 MB/s
-Average: 382.11 MB/s
-Random long 8M: 401.67 MB/s
-Average: 385.76 MB/s
-Random long 8M: 385.22 MB/s
-Average: 377.59 MB/s
-Random int 4k: 330.00 MB/s
-Random int 4k: 327.44 MB/s
-Random int 4k: 326.94 MB/s
-Random int 4k: 325.94 MB/s
-Random int 4k: 321.52 MB/s
-Random int 4k: 319.36 MB/s
-Random int 4k: 318.17 MB/s
-Random int 4k: 306.65 MB/s
-Random int 512k: 291.02 MB/s
-Random int 512k: 294.24 MB/s
-Random int 512k: 289.29 MB/s
-Random int 512k: 289.99 MB/s
-Random int 512k: 288.50 MB/s
-Random int 512k: 294.74 MB/s
-Random int 512k: 281.20 MB/s
-Random int 512k: 272.70 MB/s
-Random int 8M: 191.72 MB/s
-Random int 8M: 191.67 MB/s
+Average: 408.04 MB/s
+Random long 8M: 388.76 MB/s
+Average: 403.35 MB/s
+Random long 8M: 379.83 MB/s
+Average: 404.91 MB/s
+Random long 8M: 385.99 MB/s
+Average: 405.70 MB/s
+Random int 4k: 3m int 4k: 329.24 MB/s
+Random int 4k: 329.21 MB/s
+Random int 4k: 326.49 MB/s
+Random int 4k: 329.80 MB/s
+Random int 4k: 329.41 MB/s
+Random int 4k: 281.79 MB/s
+Random int 512k: 289.17 MB/s
+Random int 512k: 253.70 MB/s
+Random int 512k: 252.95 MB/s
+Random int 512k: 249.49 MB/s
+Random int 512k: 250.55 MB/s
+Random int 512k: 246.05 MB/s
+Random int 512k: 210.57 MB/s
+Random int 512k: 224.14 MB/s
+Random int 8M: 193.01 MB/s
+Random int 8M: 187.03 MB/s
+Random int 8M: 192.99 MB/s
+Random int 8M: 175.85 MB/s
 Random int 8M: 191.99 MB/s
-Random int 8M: 190.38 MB/s
-Random int 8M: 187.01 MB/s
-Random int 8M: 190.94 MB/s
-Random int 8M: 183.08 MB/s
-Random int 8M: 186.41 MB/s
-Random long 4k: 656.44 MB/s
-Random long 4k: 657.36 MB/s
-Random long 4k: 655.81 MB/s
-Random long 4k: 654.07 MB/s
-Random long 4k: 659.85 MB/s
-Random long 4k: 633.92 MB/s
-Random long 4k: 654.30 MB/s
-Random long 4k: 619.78 MB/s
-Random long 512k: 613.49 MB/s
-Random long 512k: 589.12 MB/s
-Random long 512k: 611.90 MB/s
-Random long 512k: 607.64 MB/s
-Random long 512k: 568.32 MB/s
-Random long 512k: 592.29 MB/s
-Random long 512k: 603.62 MB/s
-Random long 512k: 583.54 MB/s
-Random long 8M: 387.26 MB/s
-Average: 411.14 MB/s
-Random long 8M: 385.60 MB/s
-Average: 406.75 MB/s
-Random long 8M: 385.45 MB/s
-Average: 404.97 MB/s
-Random long 8M: 381.19 MB/s
-Average: 402.21 MB/s
-Random long 8M: 373.17 MB/s
-Average: 405.15 MB/s
-Random int 4k: 330.01 MB/s
-Random int 4k: 329.99 MB/s
-Random int 4k: 329.88 MB/s
-Random int 4k: 329.81 MB/s
-Random int 4k: 329.56 MB/s
-Random int 4k: 329.37 MB/s
-Random int 4k: 313.02 MB/s
-Random int 4k: 290.79 MB/s
-Random int 512k: 292.04 MB/s
-Random int 512k: 293.09 MB/s
-Random int 512k: 258.74 MB/s
-Random int 512k: 254.57 MB/s
-Random int 512k: 244.48 MB/s
-Random int 512k: 249.41 MB/s
-Random int 512k: 237.30 MB/s
-Random int 512k: 217.11 MB/s
-Random int 8M: 193.02 MB/s
-Random int 8M: 193.06 MB/s
-Random int 8M: 192.98 MB/s
-Random int 8M: 191.22 MB/s
-Random int 8M: 193.00 MB/s
-Random int 8M: 186.55 MB/s
-Random long 4k: 659.36 MB/s
-Random int 8M: 192.80 MB/s
-Random long 4k: 659.69 MB/s
-Random long 4k: 659.09 MB/s
-Random long 4k: 659.57 MB/s
-Random long 4k: 659.94 MB/s
-Random int 8M: 187.51 MB/s
-Random long 4k: 631.32 MB/s
-Random long 4k: 658.32 MB/s
-Random long 4k: 659.61 MB/s
-Random long 512k: 613.53 MB/s
-Random long 512k: 613.34 MB/s
-Random long 512k: 599.15 MB/s
-Random long 512k: 533.10 MB/s
-Random long 512k: 516.22 MB/s
-Random long 512k: 515.57 MB/s
-Random long 512k: 503.91 MB/s
-Random long 512k: 491.38 MB/s
-Random long 8M: 438.80 MB/s
-Average: 415.50 MB/s
-Random long 8M: 399.01 MB/s
-Average: 408.17 MB/s
-Random long 8M: 393.61 MB/s
-Average: 399.93 MB/s
-Random long 8M: 391.43 MB/s
-Average: 410.96 MB/s
-Random long 8M: 397.37 MB/s
-Average: 386.14 MB/s
-Random long 8M: 397.41 MB/s
-Average: 382.11 MB/s
-Random long 8M: 401.67 MB/s
-Average: 385.76 MB/s
-Random long 8M: 385.22 MB/s
-Average: 377.59 MB/s
-Random int 4k: 330.00 MB/s
-Random int 4k: 327.44 MB/s
-Random int 4k: 326.94 MB/s
-Random int 4k: 325.94 MB/s
-Random int 4k: 321.52 MB/s
-Random int 4k: 319.36 MB/s
-Random int 4k: 318.17 MB/s
-Random int 4k: 306.65 MB/s
-Random int 512k: 291.02 MB/s
-Random int 512k: 294.24 MB/s
-Random int 512k: 289.29 MB/s
-Random int 512k: 289.99 MB/s
-Random int 512k: 288.50 MB/s
-Random int 512k: 294.74 MB/s
-Random int 512k: 281.20 MB/s
-Random int 512k: 272.70 MB/s
-Random int 8M: 191.72 MB/s
-Random int 8M: 191.67 MB/s
+Random int 8M: 182.49 MB/s
+Random long 4k: 659.03 MB/s
+Random int 8M: 186.65 MB/s
+Random long 4k: 659.05 MB/s
+Random int 8M: 192.87 MB/s
+Random long 4k: 659.48 MB/s
+Random long 4k: 658.83 MB/s
+Random long 4k: 657.77 MB/s
+Random long 4k: 658.55 MB/s
+Random long 4k: 632.45 MB/s
+Random long 4k: 660.10 MB/s
+Random long 512k: 610.76 MB/s
+Random long 512k: 608.41 MB/s
+Random long 512k: 597.77 MB/s
+Random long 512k: 510.69 MB/s
+Random long 512k: 520.15 MB/s
+Random long 512k: 525.24 MB/s
+Random long 512k: 506.11 MB/s
+Random long 512k: 494.33 MB/s
+Random long 8M: 426.02 MB/s
+Average: 411.92 MB/s
+Random long 8M: 414.37 MB/s
+Average: 414.65 MB/s
+Random long 8M: 381.08 MB/s
+Average: 402.37 MB/s
+Random long 8M: 387.98 MB/s
+Average: 384.89 MB/s
+Random long 8M: 387.75 MB/s
+Average: 382.91 MB/s
+Random long 8M: 400.90 MB/s
+Average: 372.01 MB/s
+Random long 8M: 408.81 MB/s
+Average: 388.59 MB/s
+Random long 8M: 370.64 MB/s
+Average: 386.21 MB/s
+Random int 4k: 329.94 MB/s
+Random int 4k: 327.56 MB/s
+Random int 4k: 327.67 MB/s
+Random int 4k: 327.15 MB/s
+Random int 4k: 324.87 MB/s
+Random int 4k: 317.79 MB/s
+Random int 4k: 312.84 MB/s
+Random int 4k: 305.58 MB/s
+Random int 512k: 293.61 MB/s
+Random int 512k: 292.87 MB/s
+Random int 512k: 287.40 MB/s
+Random int 512k: 277.75 MB/s
+Random int 512k: 295.31 MB/s
+Random int 512k: 276.63 MB/s
+Random int 512k: 282.51 MB/s
+Random int 512k: 286.17 MB/s
+Random int 8M: 189.31 MB/s
+Random int 8M: 182.58 MB/s
+Random int 8M: 189.78 MB/s
+Random int 8M: 187.54 MB/s
+Random int 8M: 184.86 MB/s
+Random int 8M: 184.59 MB/s
+Random int 8M: 184.28 MB/s
+Random int 8M: 175.28 MB/s
+Random long 4k: 652.75 MB/s
+Random long 4k: 659.76 MB/s
+Random long 4k: 626.29 MB/s
+Random long 4k: 629.51 MB/s
+Random long 4k: 644.35 MB/s
+Random long 4k: 631.76 MB/s
+Random long 4k: 611.39 MB/s
+Random long 4k: 659.77 MB/s
+Random long 512k: 617.07 MB/s
+Random long 512k: 587.55 MB/s
+Random long 512k: 601.28 MB/s
+Random long 512k: 611.31 MB/s
+Random long 512k: 586.11 MB/s
+Random long 512k: 600.37 MB/s
+Random long 512k: 602.80 MB/s
+Random long 512k: 571.57 MB/s
+Random long 8M: 381.34 MB/s
+Average: 408.04 MB/s
+Random long 8M: 388.76 MB/s
+Average: 403.35 MB/s
+Random int 4k: 3m int 4k: 329.24 MB/s
+Random int 4k: 329.21 MB/s
+Random int 4k: 326.49 MB/s
+Random int 4k: 329.80 MB/s
+Random int 4k: 329.41 MB/s
+Random int 4k: 281.79 MB/s
+Random int 512k: 289.17 MB/s
+Random int 512k: 253.70 MB/s
+Random int 512k: 252.95 MB/s
+Random int 512k: 249.49 MB/s
+Random int 512k: 250.55 MB/s
+Random int 512k: 246.05 MB/s
+Random int 512k: 210.57 MB/s
+Random int 512k: 224.14 MB/s
+Random int 8M: 193.01 MB/s
+Random int 8M: 187.03 MB/s
+Random int 8M: 192.99 MB/s
+Random int 8M: 175.85 MB/s
 Random int 8M: 191.99 MB/s
-Random int 8M: 190.38 MB/s
-Random int 8M: 187.01 MB/s
-Random int 8M: 190.94 MB/s
-Random int 8M: 183.08 MB/s
-Random int 8M: 186.41 MB/s
-Random long 4k: 656.44 MB/s
-Random long 4k: 657.36 MB/s
-Random long 4k: 655.81 MB/s
-Random long 4k: 654.07 MB/s
-Random long 4k: 659.85 MB/s
-Random long 4k: 633.92 MB/s
-Random long 4k: 654.30 MB/s
-Random long 4k: 619.78 MB/s
-Random long 512k: 613.49 MB/s
-Random long 512k: 589.12 MB/s
-Random long 512k: 611.90 MB/s
-Random long 512k: 607.64 MB/s
-Random long 512k: 568.32 MB/s
-Random long 512k: 592.29 MB/s
-Random long 512k: 603.62 MB/s
-Random long 512k: 583.54 MB/s
-Random long 8M: 387.26 MB/s
-Average: 411.14 MB/s
-Random long 8M: 385.60 MB/s
-Average: 406.75 MB/s
-Random long 8M: 385.45 MB/s
-Average: 404.97 MB/s
-Random long 8M: 381.19 MB/s
-Average: 402.21 MB/s
-Random long 8M: 373.17 MB/s
-Average: 405.15 MB/s
-Random long 8M: 382.40 MB/s
-Average: 404.55 MB/s
-Random long 8M: 378.41 MB/s
-Average: 402.06 MB/s
-Random int 4k: 330.01 MB/s
-Random int 4k: 329.99 MB/s
-Random int 4k: 329.88 MB/s
-Random int 4k: 329.81 MB/s
-Random int 4k: 329.56 MB/s
-Random int 4k: 329.37 MB/s
-Random int 4k: 313.02 MB/s
-Random int 4k: 290.79 MB/s
-Random int 512k: 292.04 MB/s
-Random int 512k: 293.09 MB/s
-Random int 512k: 258.74 MB/s
-Random int 512k: 254.57 MB/s
-Random int 512k: 244.48 MB/s
-Random int 512k: 249.41 MB/s
-Random int 512k: 237.30 MB/s
-Random int 512k: 217.11 MB/s
-Random int 8M: 193.02 MB/s
-Random int 8M: 193.06 MB/s
-Random int 8M: 192.98 MB/s
-Random int 8M: 191.22 MB/s
-Random int 8M: 193.00 MB/s
-Random int 8M: 186.55 MB/s
-Random long 4k: 659.36 MB/s
-Random int 8M: 192.80 MB/s
-Random long 4k: 659.69 MB/s
-Random long 4k: 659.09 MB/s
-Random long 4k: 659.57 MB/s
-Random long 4k: 659.94 MB/s
-Random int 8M: 187.51 MB/s
-Random long 4k: 631.32 MB/s
-Random long 4k: 658.32 MB/s
-Random long 4k: 659.61 MB/s
-Random long 512k: 613.53 MB/s
-Random long 512k: 613.34 MB/s
-Random long 512k: 599.15 MB/s
-Random long 512k: 533.10 MB/s
-Random long 512k: 516.22 MB/s
-Random long 512k: 515.57 MB/s
-Random long 512k: 503.91 MB/s
-Random long 512k: 491.38 MB/s
-Random long 8M: 438.80 MB/s
-Average: 415.50 MB/s
-Random long 8M: 399.01 MB/s
-Average: 408.17 MB/s
-Random long 8M: 393.61 MB/s
-Average: 399.93 MB/s
-Random long 8M: 391.43 MB/s
-Average: 410.96 MB/s
-Random long 8M: 397.37 MB/s
-Average: 386.14 MB/s
-Random long 8M: 397.41 MB/s
-Average: 382.11 MB/s
-Random long 8M: 401.67 MB/s
-Average: 385.76 MB/s
-Random long 8M: 385.22 MB/s
-Average: 377.59 MB/s
-Random int 4k: 330.00 MB/s
-Random int 4k: 327.44 MB/s
-Random int 4k: 326.94 MB/s
-Random int 4k: 325.94 MB/s
-Random int 4k: 321.52 MB/s
-Random int 4k: 319.36 MB/s
-Random int 4k: 318.17 MB/s
-Random int 4k: 306.65 MB/s
-Random int 512k: 291.02 MB/s
-Random int 512k: 294.24 MB/s
-Random int 512k: 289.29 MB/s
-Random int 512k: 289.99 MB/s
-Random int 512k: 288.50 MB/s
-Random int 512k: 294.74 MB/s
-Random int 512k: 281.20 MB/s
-Random int 512k: 272.70 MB/s
-Random int 8M: 191.72 MB/s
-Random int 8M: 191.67 MB/s
+Random int 8M: 182.49 MB/s
+Random long 4k: 659.03 MB/s
+Random int 8M: 186.65 MB/s
+Random long 4k: 659.05 MB/s
+Random int 8M: 192.87 MB/s
+Random long 4k: 659.48 MB/s
+Random long 4k: 658.83 MB/s
+Random long 4k: 657.77 MB/s
+Random long 4k: 658.55 MB/s
+Random long 4k: 632.45 MB/s
+Random long 4k: 660.10 MB/s
+Random long 512k: 610.76 MB/s
+Random long 512k: 608.41 MB/s
+Random long 512k: 597.77 MB/s
+Random long 512k: 510.69 MB/s
+Random long 512k: 520.15 MB/s
+Random long 512k: 525.24 MB/s
+Random long 512k: 506.11 MB/s
+Random long 512k: 494.33 MB/s
+Random long 8M: 426.02 MB/s
+Average: 411.92 MB/s
+Random long 8M: 414.37 MB/s
+Average: 414.65 MB/s
+Random long 8M: 381.08 MB/s
+Average: 402.37 MB/s
+Random long 8M: 387.98 MB/s
+Average: 384.89 MB/s
+Random long 8M: 387.75 MB/s
+Average: 382.91 MB/s
+Random long 8M: 400.90 MB/s
+Average: 372.01 MB/s
+Random long 8M: 408.81 MB/s
+Average: 388.59 MB/s
+Random long 8M: 370.64 MB/s
+Average: 386.21 MB/s
+Random int 4k: 329.94 MB/s
+Random int 4k: 327.56 MB/s
+Random int 4k: 327.67 MB/s
+Random int 4k: 327.15 MB/s
+Random int 4k: 324.87 MB/s
+Random int 4k: 317.79 MB/s
+Random int 4k: 312.84 MB/s
+Random int 4k: 305.58 MB/s
+Random int 512k: 293.61 MB/s
+Random int 512k: 292.87 MB/s
+Random int 512k: 287.40 MB/s
+Random int 512k: 277.75 MB/s
+Random int 512k: 295.31 MB/s
+Random int 512k: 276.63 MB/s
+Random int 512k: 282.51 MB/s
+Random int 512k: 286.17 MB/s
+Random int 8M: 189.31 MB/s
+Random int 8M: 182.58 MB/s
+Random int 8M: 189.78 MB/s
+Random int 8M: 187.54 MB/s
+Random int 8M: 184.86 MB/s
+Random int 8M: 184.59 MB/s
+Random int 8M: 184.28 MB/s
+Random int 8M: 175.28 MB/s
+Random long 4k: 652.75 MB/s
+Random long 4k: 659.76 MB/s
+Random long 4k: 626.29 MB/s
+Random long 4k: 629.51 MB/s
+Random long 4k: 644.35 MB/s
+Random long 4k: 631.76 MB/s
+Random long 4k: 611.39 MB/s
+Random long 4k: 659.77 MB/s
+Random long 512k: 617.07 MB/s
+Random long 512k: 587.55 MB/s
+Random long 512k: 601.28 MB/s
+Random long 512k: 611.31 MB/s
+Random long 512k: 586.11 MB/s
+Random long 512k: 600.37 MB/s
+Random long 512k: 602.80 MB/s
+Random long 512k: 571.57 MB/s
+Random long 8M: 381.34 MB/s
+Average: 408.04 MB/s
+Random long 8M: 388.76 MB/s
+Average: 403.35 MB/s
+Random long 8M: 379.83 MB/s
+Average: 404.91 MB/s
+Random long 8M: 385.99 MB/s
+Average: 405.70 MB/s
+Random long 8M: 387.75 MB/s
+Average: 400.53 MB/s
+Random long 8M: 387.18 MB/s
+Average: 406.22 MB/s
+Random long 8M: 373.90 MB/s
+Average: 396.33 MB/s
+Random int 4k: 3m int 4k: 329.24 MB/s
+Random int 4k: 329.21 MB/s
+Random int 4k: 326.49 MB/s
+Random int 4k: 329.80 MB/s
+Random int 4k: 329.41 MB/s
+Random int 4k: 281.79 MB/s
+Random int 512k: 289.17 MB/s
+Random int 512k: 253.70 MB/s
+Random int 512k: 252.95 MB/s
+Random int 512k: 249.49 MB/s
+Random int 512k: 250.55 MB/s
+Random int 512k: 246.05 MB/s
+Random int 512k: 210.57 MB/s
+Random int 512k: 224.14 MB/s
+Random int 8M: 193.01 MB/s
+Random int 8M: 187.03 MB/s
+Random int 8M: 192.99 MB/s
+Random int 8M: 175.85 MB/s
 Random int 8M: 191.99 MB/s
-Random int 8M: 190.38 MB/s
-Random int 8M: 187.01 MB/s
-Random int 8M: 190.94 MB/s
-Random int 8M: 183.08 MB/s
-Random int 8M: 186.41 MB/s
-Random long 4k: 656.44 MB/s
-Random long 4k: 657.36 MB/s
-Random long 4k: 655.81 MB/s
-Random long 4k: 654.07 MB/s
-Random long 4k: 659.85 MB/s
-Random long 4k: 633.92 MB/s
-Random long 4k: 654.30 MB/s
-Random long 4k: 619.78 MB/s
-Random long 512k: 613.49 MB/s
-Random long 512k: 589.12 MB/s
-Random long 512k: 611.90 MB/s
-Random long 512k: 607.64 MB/s
-Random long 512k: 568.32 MB/s
-Random long 512k: 592.29 MB/s
-Random long 512k: 603.62 MB/s
-Random long 512k: 583.54 MB/s
-Random long 8M: 387.26 MB/s
-Average: 411.14 MB/s
+Random int 8M: 182.49 MB/s
+Random long 4k: 659.03 MB/s
+Random int 8M: 186.65 MB/s
+Random long 4k: 659.05 MB/s
+Random int 8M: 192.87 MB/s
+Random long 4k: 659.48 MB/s
+Random long 4k: 658.83 MB/s
+Random long 4k: 657.77 MB/s
+Random long 4k: 658.55 MB/s
+Random long 4k: 632.45 MB/s
+Random long 4k: 660.10 MB/s
+Random long 512k: 610.76 MB/s
+Random long 512k: 608.41 MB/s
+Random long 512k: 597.77 MB/s
+Random long 512k: 510.69 MB/s
+Random long 512k: 520.15 MB/s
+Random long 512k: 525.24 MB/s
+Random long 512k: 506.11 MB/s
+Random long 512k: 494.33 MB/s
+Random long 8M: 426.02 MB/s
+Average: 411.92 MB/s
+Random long 8M: 414.37 MB/s
+Average: 414.65 MB/s
+Random long 8M: 381.08 MB/s
+Average: 402.37 MB/s
+Random long 8M: 387.98 MB/s
+Average: 384.89 MB/s
+Random long 8M: 387.75 MB/s
+Average: 382.91 MB/s
+Random long 8M: 400.90 MB/s
+Average: 372.01 MB/s
+Random long 8M: 408.81 MB/s
+Average: 388.59 MB/s
+Random long 8M: 370.64 MB/s
+Average: 386.21 MB/s
+Random int 4k: 329.94 MB/s
+Random int 4k: 327.56 MB/s
+Random int 4k: 327.67 MB/s
+Random int 4k: 327.15 MB/s
+Random int 4k: 324.87 MB/s
+Random int 4k: 317.79 MB/s
+Random int 4k: 312.84 MB/s
+Random int 4k: 305.58 MB/s
+Random int 512k: 293.61 MB/s
+Random int 512k: 292.87 MB/s
+Random int 512k: 287.40 MB/s
+Random int 512k: 277.75 MB/s
+Random int 512k: 295.31 MB/s
+Random int 512k: 276.63 MB/s
+Random int 512k: 282.51 MB/s
+Random int 512k: 286.17 MB/s
+Random int 8M: 189.31 MB/s
+Random int 8M: 182.58 MB/s
+Random int 8M: 189.78 MB/s
+Random int 8M: 187.54 MB/s
+Random int 8M: 184.86 MB/s
+Random int 8M: 184.59 MB/s
+Random int 8M: 184.28 MB/s
+Random int 8M: 175.28 MB/s
+Random long 4k: 652.75 MB/s
+Random long 4k: 659.76 MB/s
+Random long 4k: 626.29 MB/s
+Random long 4k: 629.51 MB/s
+Random long 4k: 644.35 MB/s
+Random long 4k: 631.76 MB/s
+Random long 4k: 611.39 MB/s
+Random long 4k: 659.77 MB/s
+Random long 512k: 617.07 MB/s
+Random long 512k: 587.55 MB/s
+Random long 512k: 601.28 MB/s
+Random long 512k: 611.31 MB/s
+Random long 512k: 586.11 MB/s
+Random long 512k: 600.37 MB/s
+Random long 512k: 602.80 MB/s
+Random long 512k: 571.57 MB/s
+Random long 8M: 381.34 MB/s
+Average: 408.04 MB/s
+Random long 8M: 388.76 MB/s
+Average: 403.35 MB/s
+Random long 8M: 379.83 MB/s
+Average: 404.91 MB/s
+Random long 8M: 385.99 MB/s
+Average: 405.70 MB/s
+Random long 8M: 387.75 MB/s
+Average: 400.53 MB/s
+Random int 4k: 3m int 4k: 329.24 MB/s
+Random int 4k: 329.21 MB/s
+Random int 4k: 326.49 MB/s
+Random int 4k: 329.80 MB/s
+Random int 4k: 329.41 MB/s
+Random int 4k: 281.79 MB/s
+Random int 512k: 289.17 MB/s
+Random int 512k: 253.70 MB/s
+Random int 512k: 252.95 MB/s
+Random int 512k: 249.49 MB/s
+Random int 512k: 250.55 MB/s
+Random int 512k: 246.05 MB/s
+Random int 512k: 210.57 MB/s
+Random int 512k: 224.14 MB/s
+Random int 8M: 193.01 MB/s
+Random int 8M: 187.03 MB/s
+Random int 8M: 192.99 MB/s
+Random int 8M: 175.85 MB/s
+Random int 8M: 191.99 MB/s
+Random int 8M: 182.49 MB/s
+Random long 4k: 659.03 MB/s
+Random int 8M: 186.65 MB/s
+Random long 4k: 659.05 MB/s
+Random int 8M: 192.87 MB/s
+Random long 4k: 659.48 MB/s
+Random long 4k: 658.83 MB/s
+Random long 4k: 657.77 MB/s
+Random long 4k: 658.55 MB/s
+Random long 4k: 632.45 MB/s
+Random long 4k: 660.10 MB/s
+Random long 512k: 610.76 MB/s
+Random long 512k: 608.41 MB/s
+Random long 512k: 597.77 MB/s
+Random long 512k: 510.69 MB/s
+Random long 512k: 520.15 MB/s
+Random long 512k: 525.24 MB/s
+Random long 512k: 506.11 MB/s
+Random long 512k: 494.33 MB/s
+Random long 8M: 426.02 MB/s
+Average: 411.92 MB/s
+Random long 8M: 414.37 MB/s
+Average: 414.65 MB/s
+Random long 8M: 381.08 MB/s
+Average: 402.37 MB/s
+Random long 8M: 387.98 MB/s
+Average: 384.89 MB/s
+Random long 8M: 387.75 MB/s
+Average: 382.91 MB/s
+Random long 8M: 400.90 MB/s
+Average: 372.01 MB/s
+Random long 8M: 408.81 MB/s
+Average: 388.59 MB/s
+Random long 8M: 370.64 MB/s
+Average: 386.21 MB/s
+Random int 4k: 329.94 MB/s
+Random int 4k: 327.56 MB/s
+Random int 4k: 327.67 MB/s
+Random int 4k: 327.15 MB/s
+Random int 4k: 324.87 MB/s
+Random int 4k: 317.79 MB/s
+Random int 4k: 312.84 MB/s
+Random int 4k: 305.58 MB/s
+Random int 512k: 293.61 MB/s
+Random int 512k: 292.87 MB/s
+Random int 512k: 287.40 MB/s
+Random int 512k: 277.75 MB/s
+Random int 512k: 295.31 MB/s
+Random int 512k: 276.63 MB/s
+Random int 512k: 282.51 MB/s
+Random int 512k: 286.17 MB/s
+Random int 8M: 189.31 MB/s
+Random int 8M: 182.58 MB/s
+Random int 8M: 189.78 MB/s
+Random int 8M: 187.54 MB/s
+Random int 8M: 184.86 MB/s
+Random int 8M: 184.59 MB/s
+Random int 8M: 184.28 MB/s
+Random int 8M: 175.28 MB/s
+Random long 4k: 652.75 MB/s
+Random long 4k: 659.76 MB/s
+Random long 4k: 626.29 MB/s
+Random long 4k: 629.51 MB/s
+Random long 4k: 644.35 MB/s
+Random long 4k: 631.76 MB/s
+Random long 4k: 611.39 MB/s
+Random long 4k: 659.77 MB/s
+Random long 512k: 617.07 MB/s
+Random long 512k: 587.55 MB/s
+Random long 512k: 601.28 MB/s
+Random long 512k: 611.31 MB/s
+Random long 512k: 586.11 MB/s
+Random long 512k: 600.37 MB/s
+Random long 512k: 602.80 MB/s
+Random long 512k: 571.57 MB/s
+Random long 8M: 381.34 MB/s
+Average: 408.04 MB/s
+Random int 4k: 3m int 4k: 329.24 MB/s
+Random int 4k: 329.21 MB/s
+Random int 4k: 326.49 MB/s
+Random int 4k: 329.80 MB/s
+Random int 4k: 329.41 MB/s
+Random int 4k: 281.79 MB/s
+Random int 512k: 289.17 MB/s
+Random int 512k: 253.70 MB/s
+Random int 512k: 252.95 MB/s
+Random int 512k: 249.49 MB/s
+Random int 512k: 250.55 MB/s
+Random int 512k: 246.05 MB/s
+Random int 512k: 210.57 MB/s
+Random int 512k: 224.14 MB/s
+Random int 8M: 193.01 MB/s
+Random int 8M: 187.03 MB/s
+Random int 8M: 192.99 MB/s
+Random int 8M: 175.85 MB/s
+Random int 8M: 191.99 MB/s
+Random int 8M: 182.49 MB/s
+Random long 4k: 659.03 MB/s
+Random int 8M: 186.65 MB/s
+Random long 4k: 659.05 MB/s
+Random int 8M: 192.87 MB/s
+Random long 4k: 659.48 MB/s
+Random long 4k: 658.83 MB/s
+Random long 4k: 657.77 MB/s
+Random long 4k: 658.55 MB/s
+Random long 4k: 632.45 MB/s
+Random long 4k: 660.10 MB/s
+Random long 512k: 610.76 MB/s
+Random long 512k: 608.41 MB/s
+Random long 512k: 597.77 MB/s
+Random long 512k: 510.69 MB/s
+Random long 512k: 520.15 MB/s
+Random long 512k: 525.24 MB/s
+Random long 512k: 506.11 MB/s
+Random long 512k: 494.33 MB/s
+Random long 8M: 426.02 MB/s
+Average: 411.92 MB/s
+Random long 8M: 414.37 MB/s
+Average: 414.65 MB/s
+Random long 8M: 381.08 MB/s
+Average: 402.37 MB/s
+Random long 8M: 387.98 MB/s
+Average: 384.89 MB/s
+Random long 8M: 387.75 MB/s
+Average: 382.91 MB/s
+Random long 8M: 400.90 MB/s
+Average: 372.01 MB/s
+Random long 8M: 408.81 MB/s
+Average: 388.59 MB/s
+Random long 8M: 370.64 MB/s
+Average: 386.21 MB/s
+Random int 4k: 329.94 MB/s
+Random int 4k: 327.56 MB/s
+Random int 4k: 327.67 MB/s
+Random int 4k: 327.15 MB/s
+Random int 4k: 324.87 MB/s
+Random int 4k: 317.79 MB/s
+Random int 4k: 312.84 MB/s
+Random int 4k: 305.58 MB/s
+Random int 512k: 293.61 MB/s
+Random int 512k: 292.87 MB/s
+Random int 512k: 287.40 MB/s
+Random int 512k: 277.75 MB/s
+Random int 512k: 295.31 MB/s
+Random int 512k: 276.63 MB/s
+Random int 512k: 282.51 MB/s
+Random int 512k: 286.17 MB/s
+Random int 8M: 189.31 MB/s
+Random int 8M: 182.58 MB/s
+Random int 8M: 189.78 MB/s
+Random int 8M: 187.54 MB/s
+Random int 8M: 184.86 MB/s
+Random int 8M: 184.59 MB/s
+Random int 8M: 184.28 MB/s
+Random int 8M: 175.28 MB/s
+Random long 4k: 652.75 MB/s
+Random long 4k: 659.76 MB/s
+Random long 4k: 626.29 MB/s
+Random long 4k: 629.51 MB/s
+Random long 4k: 644.35 MB/s
+Random long 4k: 631.76 MB/s
+Random long 4k: 611.39 MB/s
+Random long 4k: 659.77 MB/s
+Random long 512k: 617.07 MB/s
+Random long 512k: 587.55 MB/s
+Random long 512k: 601.28 MB/s
+Random long 512k: 611.31 MB/s
+Random long 512k: 586.11 MB/s
+Random long 512k: 600.37 MB/s
+Random long 512k: 602.80 MB/s
+Random long 512k: 571.57 MB/s
+Random long 8M: 381.34 MB/s
+Average: 408.04 MB/s
+Random long 8M: 388.76 MB/s
+Average: 403.35 MB/s
+Random long 8M: 379.83 MB/s
+Average: 404.91 MB/s
+Random long 8M: 385.99 MB/s
+Average: 405.70 MB/s
+Random long 8M: 387.75 MB/s
+Average: 400.53 MB/s
+Random long 8M: 387.18 MB/s
+Average: 406.22 MB/s
+Random int 4k: 3m int 4k: 329.24 MB/s
+Random int 4k: 329.21 MB/s
+Random int 4k: 326.49 MB/s
+Random int 4k: 329.80 MB/s
+Random int 4k: 329.41 MB/s
+Random int 4k: 281.79 MB/s
+Random int 512k: 289.17 MB/s
+Random int 512k: 253.70 MB/s
+Random int 512k: 252.95 MB/s
+Random int 512k: 249.49 MB/s
+Random int 512k: 250.55 MB/s
+Random int 512k: 246.05 MB/s
+Random int 512k: 210.57 MB/s
+Random int 512k: 224.14 MB/s
+Random int 8M: 193.01 MB/s
+Random int 8M: 187.03 MB/s
+Random int 8M: 192.99 MB/s
+Random int 8M: 175.85 MB/s
+Random int 8M: 191.99 MB/s
+Random int 8M: 182.49 MB/s
+Random long 4k: 659.03 MB/s
+Random int 8M: 186.65 MB/s
+Random long 4k: 659.05 MB/s
+Random int 8M: 192.87 MB/s
+Random long 4k: 659.48 MB/s
+Random long 4k: 658.83 MB/s
+Random long 4k: 657.77 MB/s
+Random long 4k: 658.55 MB/s
+Random long 4k: 632.45 MB/s
+Random long 4k: 660.10 MB/s
+Random long 512k: 610.76 MB/s
+Random long 512k: 608.41 MB/s
+Random long 512k: 597.77 MB/s
+Random long 512k: 510.69 MB/s
+Random long 512k: 520.15 MB/s
+Random long 512k: 525.24 MB/s
+Random long 512k: 506.11 MB/s
+Random long 512k: 494.33 MB/s
+Random long 8M: 426.02 MB/s
+Average: 411.92 MB/s
+Random long 8M: 414.37 MB/s
+Average: 414.65 MB/s
+Random long 8M: 381.08 MB/s
+Average: 402.37 MB/s
+Random long 8M: 387.98 MB/s
+Average: 384.89 MB/s
+Random long 8M: 387.75 MB/s
+Average: 382.91 MB/s
+Random long 8M: 400.90 MB/s
+Average: 372.01 MB/s
+Random long 8M: 408.81 MB/s
+Average: 388.59 MB/s
+Random long 8M: 370.64 MB/s
+Average: 386.21 MB/s
+Random int 4k: 329.94 MB/s
+Random int 4k: 327.56 MB/s
+Random int 4k: 327.67 MB/s
+Random int 4k: 327.15 MB/s
+Random int 4k: 324.87 MB/s
+Random int 4k: 317.79 MB/s
+Random int 4k: 312.84 MB/s
+Random int 4k: 305.58 MB/s
+Random int 512k: 293.61 MB/s
+Random int 512k: 292.87 MB/s
+Random int 512k: 287.40 MB/s
+Random int 512k: 277.75 MB/s
+Random int 512k: 295.31 MB/s
+Random int 512k: 276.63 MB/s
+Random int 512k: 282.51 MB/s
+Random int 512k: 286.17 MB/s
+Random int 8M: 189.31 MB/s
+Random int 8M: 182.58 MB/s
+Random int 8M: 189.78 MB/s
+Random int 8M: 187.54 MB/s
+Random int 8M: 184.86 MB/s
+Random int 8M: 184.59 MB/s
+Random int 8M: 184.28 MB/s
+Random int 8M: 175.28 MB/s
+Random long 4k: 652.75 MB/s
+Random long 4k: 659.76 MB/s
+Random long 4k: 626.29 MB/s
+Random long 4k: 629.51 MB/s
+Random long 4k: 644.35 MB/s
+Random long 4k: 631.76 MB/s
+Random long 4k: 611.39 MB/s
+Random long 4k: 659.77 MB/s
+Random long 512k: 617.07 MB/s
+Random long 512k: 587.55 MB/s
+Random long 512k: 601.28 MB/s
+Random long 512k: 611.31 MB/s
+Random long 512k: 586.11 MB/s
+Random long 512k: 600.37 MB/s
+Random long 512k: 602.80 MB/s
+Random long 512k: 571.57 MB/s
+Random long 8M: 381.34 MB/s
+Average: 408.04 MB/s
+Random long 8M: 388.76 MB/s
+Average: 403.35 MB/s
+Random long 8M: 379.83 MB/s
+Average: 404.91 MB/s
+Random long 8M: 385.99 MB/s
+Average: 405.70 MB/s
+Random long 8M: 387.75 MB/s
+Average: 400.53 MB/s
+Random long 8M: 387.18 MB/s
+Average: 406.22 MB/s
+Random long 8M: 373.90 MB/s
+Average: 396.33 MB/s
+Random long 8M: 374.34 MB/s
+Average: 391.03 MB/s
+Random int 4k: 3m int 4k: 329.24 MB/s
+Random int 4k: 329.21 MB/s
+Random int 4k: 326.49 MB/s
+Random int 4k: 329.80 MB/s
+Random int 4k: 329.41 MB/s
+Random int 4k: 281.79 MB/s
+Random int 512k: 289.17 MB/s
+Random int 512k: 253.70 MB/s
+Random int 512k: 252.95 MB/s
+Random int 512k: 249.49 MB/s
+Random int 512k: 250.55 MB/s
+Random int 512k: 246.05 MB/s
+Random int 512k: 210.57 MB/s
+Random int 512k: 224.14 MB/s
+Random int 8M: 193.01 MB/s
+Random int 8M: 187.03 MB/s
+Random int 8M: 192.99 MB/s
+Random int 8M: 175.85 MB/s
+Random int 8M: 191.99 MB/s
+Random int 8M: 182.49 MB/s
+Random long 4k: 659.03 MB/s
+Random int 8M: 186.65 MB/s
+Random long 4k: 659.05 MB/s
+Random int 8M: 192.87 MB/s
+Random long 4k: 659.48 MB/s
+Random long 4k: 658.83 MB/s
+Random long 4k: 657.77 MB/s
+Random long 4k: 658.55 MB/s
+Random long 4k: 632.45 MB/s
+Random long 4k: 660.10 MB/s
+Random long 512k: 610.76 MB/s
+Random long 512k: 608.41 MB/s
+Random long 512k: 597.77 MB/s
+Random long 512k: 510.69 MB/s
+Random long 512k: 520.15 MB/s
+Random long 512k: 525.24 MB/s
+Random long 512k: 506.11 MB/s
+Random long 512k: 494.33 MB/s
+Random long 8M: 426.02 MB/s
+Average: 411.92 MB/s
+Random long 8M: 414.37 MB/s
+Average: 414.65 MB/s
+Random long 8M: 381.08 MB/s
+Average: 402.37 MB/s
+Random long 8M: 387.98 MB/s
+Average: 384.89 MB/s
+Random long 8M: 387.75 MB/s
+Average: 382.91 MB/s
+Random long 8M: 400.90 MB/s
+Average: 372.01 MB/s
+Random long 8M: 408.81 MB/s
+Average: 388.59 MB/s
+Random long 8M: 370.64 MB/s
+Average: 386.21 MB/s
+Random int 4k: 329.94 MB/s
+Random int 4k: 327.56 MB/s
+Random int 4k: 327.67 MB/s
+Random int 4k: 327.15 MB/s
+Random int 4k: 324.87 MB/s
+Random int 4k: 317.79 MB/s
+Random int 4k: 312.84 MB/s
+Random int 4k: 305.58 MB/s
+Random int 512k: 293.61 MB/s
+Random int 512k: 292.87 MB/s
+Random int 512k: 287.40 MB/s
+Random int 512k: 277.75 MB/s
+Random int 512k: 295.31 MB/s
+Random int 512k: 276.63 MB/s
+Random int 512k: 282.51 MB/s
+Random int 512k: 286.17 MB/s
+Random int 8M: 189.31 MB/s
+Random int 8M: 182.58 MB/s
+Random int 8M: 189.78 MB/s
+Random int 8M: 187.54 MB/s
+Random int 8M: 184.86 MB/s
+Random int 8M: 184.59 MB/s
+Random int 8M: 184.28 MB/s
+Random int 8M: 175.28 MB/s
+Random long 4k: 652.75 MB/s
+Random long 4k: 659.76 MB/s
+Random long 4k: 626.29 MB/s
+Random long 4k: 629.51 MB/s
+Random long 4k: 644.35 MB/s
+Random long 4k: 631.76 MB/s
+Random long 4k: 611.39 MB/s
+Random long 4k: 659.77 MB/s
+Random long 512k: 617.07 MB/s
+Random long 512k: 587.55 MB/s
+Random long 512k: 601.28 MB/s
+Random long 512k: 611.31 MB/s
+Random long 512k: 586.11 MB/s
+Random long 512k: 600.37 MB/s
+Random long 512k: 602.80 MB/s
+Random long 512k: 571.57 MB/s
+Random long 8M: 381.34 MB/s
+Average: 408.04 MB/s
+Random long 8M: 388.76 MB/s
+Average: 403.35 MB/s
+Random long 8M: 379.83 MB/s
+Average: 404.91 MB/s
