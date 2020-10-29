@@ -1,37 +1,37 @@
 [null
 SciMark 2.0a
 
-Composite Score: 150.63
-FFT (1024): 89.72
-SOR (100x100):   234.88
-Monte Carlo : 93.86
-Sparse matmult (N=1000, nz=5000): 99.93
-LU (100x100): 234.75
+Composite Score: 148.56
+FFT (1024): 86.31
+SOR (100x100):   230.17
+Monte Carlo : 93.83
+Sparse matmult (N=1000, nz=5000): 100.15
+LU (100x100): 232.36
 , null
 SciMark 2.0a
 
-Composite Score: 151.67
-FFT (1024): 89.72
-SOR (100x100):   234.88
+Composite Score: 148.90
+FFT (1024): 86.35
+SOR (100x100):   229.95
 Monte Carlo : 93.86
-Sparse matmult (N=1000, nz=5000): 99.99
-LU (100x100): 239.87
+Sparse matmult (N=1000, nz=5000): 100.05
+LU (100x100): 234.27
 , null
 SciMark 2.0a
 
-Composite Score: 151.36
-FFT (1024): 89.72
-SOR (100x100):   234.88
-Monte Carlo : 93.86
-Sparse matmult (N=1000, nz=5000): 99.96
-LU (100x100): 238.36
+Composite Score: 148.67
+FFT (1024): 86.25
+SOR (100x100):   230.17
+Monte Carlo : 93.83
+Sparse matmult (N=1000, nz=5000): 99.87
+LU (100x100): 233.23
 , null
 SciMark 2.0a
 
-Composite Score: 150.35
-FFT (1024): 89.54
-SOR (100x100):   234.54
-Monte Carlo : 93.76
-Sparse matmult (N=1000, nz=5000): 99.78
-LU (100x100): 234.11
+Composite Score: 148.49
+FFT (1024): 86.31
+SOR (100x100):   229.95
+Monte Carlo : 93.83
+Sparse matmult (N=1000, nz=5000): 99.87
+LU (100x100): 232.52
 ]
