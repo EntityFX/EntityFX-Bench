@@ -21,9 +21,9 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 11904,7619047619
-Dhrystones per Second:         84000
-VAX  MIPS rating =             47,808764940239
+Nanoseconds one Dhrystone run: 11764.7058823529
+Dhrystones per Second:         85000
+VAX  MIPS rating =             48.3779169038133
 
 ##########################################
 
@@ -48,9 +48,9 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 11904,7619047619
-Dhrystones per Second:         84000
-VAX  MIPS rating =             47,808764940239
+Nanoseconds one Dhrystone run: 11764.7058823529
+Dhrystones per Second:         85000
+VAX  MIPS rating =             48.3779169038133
 
 ##########################################
 
@@ -75,9 +75,9 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 11904,7619047619
-Dhrystones per Second:         84000
-VAX  MIPS rating =             47,808764940239
+Nanoseconds one Dhrystone run: 11764.7058823529
+Dhrystones per Second:         85000
+VAX  MIPS rating =             48.3779169038133
 
 ##########################################
 
@@ -102,7 +102,7 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 11904,7619047619
+Nanoseconds one Dhrystone run: 11904.7619047619
 Dhrystones per Second:         84000
-VAX  MIPS rating =             47,808764940239
+VAX  MIPS rating =             47.808764940239
 

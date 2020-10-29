@@ -21,9 +21,9 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 775.1937984496124
-Dhrystones per Second:         1290000
-VAX  MIPS rating =             734.2060330108139
+Nanoseconds one Dhrystone run: 784.3137254901961
+Dhrystones per Second:         1275000
+VAX  MIPS rating =             725.6687535571998
 
 ##########################################
 
@@ -48,9 +48,9 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 780.64012490242
-Dhrystones per Second:         1281000
-VAX  MIPS rating =             729.0836653386455
+Nanoseconds one Dhrystone run: 794.2811755361398
+Dhrystones per Second:         1259000
+VAX  MIPS rating =             716.5623221400114
 
 ##########################################
 
@@ -75,9 +75,9 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 773.3952049497293
-Dhrystones per Second:         1293000
-VAX  MIPS rating =             735.9134889015368
+Nanoseconds one Dhrystone run: 786.7820613690008
+Dhrystones per Second:         1271000
+VAX  MIPS rating =             723.3921457029027
 
 ##########################################
 
@@ -102,7 +102,7 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 772.7975270479135
-Dhrystones per Second:         1294000
-VAX  MIPS rating =             736.482640865111
+Nanoseconds one Dhrystone run: 791.1392405063291
+Dhrystones per Second:         1264000
+VAX  MIPS rating =             719.4080819578827
 

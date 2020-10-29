@@ -21,7 +21,7 @@ Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 817.661488143908
-Dhrystones per Second:         1223000
-VAX  MIPS rating =             696.072851451338
+Nanoseconds one Dhrystone run: 805.8017727639
+Dhrystones per Second:         1241000
+VAX  MIPS rating =             706.317586795674
 
