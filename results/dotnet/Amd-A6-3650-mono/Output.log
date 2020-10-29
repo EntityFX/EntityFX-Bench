@@ -1,80 +1,86 @@
 Warmup
-......................
+........................
 Bench
 [1] ArithemticsBenchmark
-ArithemticsBenchmark                 50746.72 ms         177.35 pts     5911714.04 Iter/s
+ArithemticsBenchmark                 50948.00 ms         176.65 pts     5888357.82 Iter/s
 Iterrations:       300000000, Ratio:            0.03
 [2] ParallelArithemticsBenchmark
-ParallelArithemticsBenchmark          8012.23 ms        4613.90 pts    37442822.47 Iter/s
+ParallelArithemticsBenchmark         10410.87 ms        3642.54 pts    28816081.49 Iter/s
 Iterrations:       300000000, Ratio:            0.03
 [3] MathBenchmark
-MathBenchmark                        55728.54 ms        1794.41 pts     3588825.96 Iter/s
+MathBenchmark                        56524.96 ms        1769.13 pts     3538260.34 Iter/s
 Iterrations:       200000000, Ratio:             0.5
 [4] ParallelMathBenchmark
-ParallelMathBenchmark                59966.59 ms        6708.96 pts     3335191.41 Iter/s
+ParallelMathBenchmark                66744.77 ms        6027.38 pts     2996490.12 Iter/s
 Iterrations:       200000000, Ratio:             0.5
 [5] CallBenchmark
-CallBenchmark                         4787.00 ms         338.34 pts    33834276.53 Iter/s
+CallBenchmark                         4981.00 ms         339.16 pts    33915665.08 Iter/s
 Iterrations:      2000000000, Ratio:            0.01
 [6] ParallelCallBenchmark
-ParallelCallBenchmark                72034.20 ms        1124.58 pts    27764596.11 Iter/s
+ParallelCallBenchmark                83967.46 ms         976.52 pts    23818753.43 Iter/s
 Iterrations:      2000000000, Ratio:            0.01
 [7] IfElseBenchmark
-IfElseBenchmark                      12688.71 ms        1576.20 pts   157620455.68 Iter/s
+IfElseBenchmark                      10739.68 ms        1862.25 pts   186225454.37 Iter/s
 Iterrations:      2000000000, Ratio:            0.01
 [8] ParallelIfElseBenchmark
-ParallelIfElseBenchmark              11189.44 ms        7313.50 pts   178740253.53 Iter/s
+ParallelIfElseBenchmark              14766.85 ms        5685.27 pts   135438638.48 Iter/s
 Iterrations:      2000000000, Ratio:            0.01
 [9] StringManipulation
-StringManipulation                   44249.14 ms        1129.97 pts      112996.57 Iter/s
+StringManipulation                   44879.94 ms        1114.08 pts      111408.38 Iter/s
 Iterrations:         5000000, Ratio:              10
 [10] ParallelStringManipulation
-ParallelStringManipulation           61661.18 ms        3271.88 pts       81088.31 Iter/s
+ParallelStringManipulation           80267.35 ms        2520.09 pts       62291.84 Iter/s
 Iterrations:         5000000, Ratio:              10
 [11] MemoryBenchmark
-MemoryBenchmark                       7685.95 ms        3485.74 pts        3485.74 MB/s
+MemoryBenchmark                       7585.49 ms        3525.38 pts        3525.38 MB/s
 Iterrations:          500000, Ratio:               1
 [12] ParallelMemoryBenchmark
-ParallelMemoryBenchmark              19715.08 ms       12095.25 pts       12095.25 MB/s
+ParallelMemoryBenchmark              15639.69 ms       11335.19 pts       11335.19 MB/s
 Iterrations:          500000, Ratio:               1
 [13] RandomMemoryBenchmark
-RandomMemoryBenchmark                32801.76 ms        2228.48 pts        1114.24 MB/s
+RandomMemoryBenchmark                34179.20 ms        2146.53 pts        1073.26 MB/s
 Iterrations:          500000, Ratio:               2
 [14] ParallelRandomMemoryBenchmark
-ParallelRandomMemoryBenchmark        13451.34 ms       12587.84 pts        6293.92 MB/s
+ParallelRandomMemoryBenchmark        13940.13 ms       10443.97 pts        5221.98 MB/s
 Iterrations:          500000, Ratio:               2
 [15] Scimark2Benchmark
-Scimark2Benchmark                    13201.93 ms        1960.17 pts         196.02 CompositeScore
+Scimark2Benchmark                    14958.14 ms        2032.85 pts         203.29 CompositeScore
 Iterrations:               0, Ratio:              10
 [16] ParallelScimark2Benchmark
-ParallelScimark2Benchmark            15418.76 ms        6930.47 pts         693.05 CompositeScore
+ParallelScimark2Benchmark            15289.49 ms        5410.18 pts         541.02 CompositeScore
 Iterrations:               0, Ratio:              10
 [17] DhrystoneBenchmark
-DhrystoneBenchmark                   43023.15 ms        1058.62 pts         264.66 DMIPS
+DhrystoneBenchmark                   46297.67 ms         983.49 pts         245.87 DMIPS
 Iterrations:               0, Ratio:               4
 [18] ParallelDhrystoneBenchmark
-ParallelDhrystoneBenchmark           56619.03 ms        3296.53 pts         824.13 DMIPS
+ParallelDhrystoneBenchmark           71594.65 ms        2581.67 pts         645.42 DMIPS
 Iterrations:               0, Ratio:               4
 [19] WhetstoneBenchmark
-WhetstoneBenchmark                  107581.95 ms        1537.76 pts        1537.76 MWIPS
+WhetstoneBenchmark                  111268.27 ms        1544.08 pts        1544.08 MWIPS
 Iterrations:               0, Ratio:               1
 [20] ParallelWhetstoneBenchmark
-ParallelWhetstoneBenchmark          108428.61 ms        5366.66 pts        5366.66 MWIPS
+ParallelWhetstoneBenchmark          125139.11 ms        5204.05 pts        5204.05 MWIPS
 Iterrations:               0, Ratio:               1
-[21] HashBenchmark
-HashBenchmark                        14331.03 ms        1395.57 pts      139557.36 Iter/s
+[21] LinpackBenchmark
+LinpackBenchmark                     16292.98 ms        3560.89 pts         356.09 MFLOPS
+Iterrations:               0, Ratio:              10
+[22] ParallelLinpackBenchmark
+ParallelLinpackBenchmark             24506.53 ms         971.15 pts         971.15 MFLOPS
+Iterrations:               0, Ratio:              10
+[23] HashBenchmark
+HashBenchmark                        17471.32 ms        1144.73 pts      114473.36 Iter/s
 Iterrations:         2000000, Ratio:              10
-[22] ParallelHashBenchmark
-ParallelHashBenchmark                28335.28 ms        2830.73 pts       70583.41 Iter/s
+[24] ParallelHashBenchmark
+ParallelHashBenchmark                45946.60 ms        1747.25 pts       43528.80 Iter/s
 Iterrations:         2000000, Ratio:              10
 
-Total:                              841657.61 ms       82822.93 pts
+Total:                              984340.15 ms       76744.49 pts
 
 Single-thread results
-Unix 5.4.0.51;4.0.30319.42000;4;0;177.35;1794.41;338.34;1576.20;1129.97;3485.74;2228.48;1960.17;1058.62;1537.76;1395.57;82822.9304635218;841657.6139
+Unix 5.4.0.51;4.0.30319.42000;4;0;176.65;1769.13;339.16;1862.25;1114.08;3525.38;2146.53;2032.85;983.49;1544.08;3560.89;1144.73;76744.4854047981;984340.1488
 All results
-Unix 5.4.0.51;4.0.30319.42000;4;0;177.35;4613.90;1794.41;6708.96;338.34;1124.58;1576.20;7313.50;1129.97;3271.88;3485.74;12095.25;2228.48;12587.84;1960.17;6930.47;1058.62;3296.53;1537.76;5366.66;1395.57;2830.73;82822.9304635218;841657.6139
+Unix 5.4.0.51;4.0.30319.42000;4;0;176.65;3642.54;1769.13;6027.38;339.16;976.52;1862.25;5685.27;1114.08;2520.09;3525.38;11335.19;2146.53;10443.97;2032.85;5410.18;983.49;2581.67;1544.08;5204.05;3560.89;971.15;1144.73;1747.25;76744.4854047981;984340.1488
 Single-thread  Units results
-Unix 5.4.0.51;4.0.30319.42000;4;0;5911714.04;3588825.96;33834276.53;157620455.68;112996.57;3485.74;1114.24;196.02;264.66;1537.76;139557.36;82822.9304635218;841657.6139
+Unix 5.4.0.51;4.0.30319.42000;4;0;5888357.82;3538260.34;33915665.08;186225454.37;111408.38;3525.38;1073.26;203.29;245.87;1544.08;356.09;114473.36;76744.4854047981;984340.1488
 Units results
-Unix 5.4.0.51;4.0.30319.42000;4;0;5911714.04;37442822.47;3588825.96;3335191.41;33834276.53;27764596.11;157620455.68;178740253.53;112996.57;81088.31;3485.74;12095.25;1114.24;6293.92;196.02;693.05;264.66;824.13;1537.76;5366.66;139557.36;70583.41;82822.9304635218;841657.6139
+Unix 5.4.0.51;4.0.30319.42000;4;0;5888357.82;28816081.49;3538260.34;2996490.12;33915665.08;23818753.43;186225454.37;135438638.48;111408.38;62291.84;3525.38;11335.19;1073.26;5221.98;203.29;541.02;245.87;645.42;1544.08;5204.05;356.09;971.15;114473.36;43528.80;76744.4854047981;984340.1488
