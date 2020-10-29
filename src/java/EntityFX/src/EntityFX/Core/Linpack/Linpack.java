@@ -78,7 +78,7 @@ public class Linpack {
     return (System.currentTimeMillis() - second_orig) / 1000;
   }
 
-  public void run_benchmark(int array_size) throws IOException {
+  public LinpackResult run_benchmark(int array_size) throws IOException {
     output.writeLine("Running Linpack " + array_size + "x" + array_size + " in Java");
     double mflops_result = 0.0;
     double residn_result = 0.0;
@@ -139,12 +139,21 @@ public class Linpack {
     output.writeLine("Norma is " + norma);
     output.writeLine("Residual is " + resid);
     output.writeLine("Normalised residual is " + residn_result);
-    output.writeLine("Machine epsilon is " + eps_result);
+    output.writeLine("Machine result.Eepsilon is " + eps_result);
     output.writeLine("x[0]-1 is " + (x[0] - 1));
     output.writeLine("x[n-1]-1 is " + (x[n - 1] - 1));
     output.writeLine("Time is " + time_result);
     output.writeLine("MFLOPS: " + mflops_result);
 
+    LinpackResult result = new LinpackResult();
+    result.Norma = norma;
+    result.Residual = resid;
+    result.NormalisedResidual = residn_result;
+    result.Epsilon = eps_result;
+    result.Time = time_result;
+    result.MFLOPS = mflops_result;
+    
+    return result;
   }
 
   final double matgen(double a[][], int lda, int n, double b[]) {

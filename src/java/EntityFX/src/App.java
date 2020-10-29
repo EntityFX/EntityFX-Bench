@@ -6,6 +6,8 @@ import java.util.Locale;
 import EntityFX.Core.Writer;
 import EntityFX.Core.Dhrystone.*;
 import EntityFX.Core.Generic.*;
+import EntityFX.Core.Linpack.LinpackBenchmark;
+import EntityFX.Core.Linpack.ParallelLinpackBenchmark;
 import EntityFX.Core.Scimark2.*;
 import EntityFX.Core.Whetstone.*;
 
@@ -48,8 +50,11 @@ public class App {
             new WhetstoneBenchmark(writer, true),
             new ParallelWhetstoneBenchmark(writer, true),
 
+            new LinpackBenchmark(writer, true),
+            new ParallelLinpackBenchmark(writer, true),
+
             new HashBenchmark(writer, true),
-            new ParallelHashBenchmark(writer, true),
+            new ParallelHashBenchmark(writer, true)
         };
 
         writer.writeHeader("Warmup");
