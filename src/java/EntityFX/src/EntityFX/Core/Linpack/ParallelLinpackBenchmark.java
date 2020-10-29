@@ -13,7 +13,7 @@ public class ParallelLinpackBenchmark extends BenchmarkBase<BenchResult[]> {
 
     public ParallelLinpackBenchmark(Writer writer, boolean printToConsole) throws FileNotFoundException {
         super(writer, printToConsole);
-        Ratio = 5;
+        Ratio = 10;
         isParallel = true;
     }
 

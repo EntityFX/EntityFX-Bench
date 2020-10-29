@@ -1,6 +1,7 @@
 ﻿using EntityFX.NetBenchmark.Core;
 using EntityFX.NetBenchmark.Core.Dhrystone;
 using EntityFX.NetBenchmark.Core.Generic;
+using EntityFX.NetBenchmark.Core.Linpack;
 using EntityFX.NetBenchmark.Core.Scimark2;
 using EntityFX.NetBenchmark.Core.Whetstone;
 using System;
@@ -64,6 +65,9 @@ namespace EntityFX.NetBenchmark
 
                 new WhetstoneBenchmark(),
                 new ParallelWhetstoneBenchmark(),
+
+                new LinpackBenchmark(),
+                new ParallelLinpackBenchmark(),
             };
 
             GCSettings.LatencyMode = GCLatencyMode.LowLatency;

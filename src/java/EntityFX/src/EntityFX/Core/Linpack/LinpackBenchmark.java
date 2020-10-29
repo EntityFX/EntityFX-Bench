@@ -14,7 +14,7 @@ public class LinpackBenchmark extends BenchmarkBase<LinpackResult> {
     public LinpackBenchmark(final Writer writer, final boolean printToConsole) throws FileNotFoundException {
         super(writer, printToConsole);
         linpack = new Linpack(printToConsole);
-        Ratio = 5;
+        Ratio = 10;
     }
 
     @Override
