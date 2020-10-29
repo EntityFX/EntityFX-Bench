@@ -1,102 +1,108 @@
 Warmup
-......................
+........................
 Bench
 [1] ArithemticsBenchmark
-ArithemticsBenchmark                     8113 ms      1109.31 pts    36977690.13 Iter/s
+ArithemticsBenchmark                     7109 ms      1266.00 pts    42200028.13 Iter/s
 Iterrations:       300000000, Ratio:        0.030000
 [2] ParallelArithemticsBenchmark
-ParallelArithemticsBenchmark             7204 ms      5033.34 pts   167780353.47 Iter/s
+ParallelArithemticsBenchmark             6375 ms      5678.43 pts   189283299.83 Iter/s
 Iterrations:       300000000, Ratio:        0.030000
 [3] MathBenchmark
-MathBenchmark                          605794 ms       165.00 pts      330145.23 Iter/s
+MathBenchmark                          536139 ms       186.50 pts      373037.59 Iter/s
 Iterrations:       200000000, Ratio:        0.500000
 [4] ParallelMathBenchmark
-ParallelMathBenchmark                  642242 ms       622.50 pts     1247099.21 Iter/s
+ParallelMathBenchmark                  635135 ms       629.00 pts     1260210.88 Iter/s
 Iterrations:       200000000, Ratio:        0.500000
 [5] CallBenchmark
 Elapsed No Call: 0
-Elapsed Call: 16825
-CallBenchmark                           16825 ms      1188.56 pts   118856599.51 Iter/s
+Elapsed Call: 14999
+CallBenchmark                           14999 ms      1332.00 pts   133200133.20 Iter/s
 Iterrations:      2000000000, Ratio:        0.010000
 [6] ParallelCallBenchmark
-ParallelCallBenchmark                   17373 ms      4605.36 pts   460537678.50 Iter/s
+ParallelCallBenchmark                   17109 ms      4676.97 pts   467699579.83 Iter/s
 Iterrations:      2000000000, Ratio:        0.010000
 [7] IfElseBenchmark
-IfElseBenchmark                         12011 ms      1665.14 pts   166514028.81 Iter/s
+IfElseBenchmark                         10593 ms      1888.03 pts   188803927.12 Iter/s
 Iterrations:      2000000000, Ratio:        0.010000
 [8] ParallelIfElseBenchmark
-ParallelIfElseBenchmark                 12358 ms      6489.16 pts   648918263.37 Iter/s
+ParallelIfElseBenchmark                 12203 ms      6564.24 pts   656425350.78 Iter/s
 Iterrations:      2000000000, Ratio:        0.010000
 [9] StringManipulation
-StringManipulation                      56801 ms       880.00 pts       88026.62 Iter/s
+StringManipulation                      49962 ms      1000.00 pts      100076.06 Iter/s
 Iterrations:         5000000, Ratio:       10.000000
 [10] ParallelStringManipulation
-ParallelStringManipulation              62572 ms      3190.00 pts      320266.93 Iter/s
+ParallelStringManipulation              57060 ms      3490.00 pts      351422.04 Iter/s
 Iterrations:         5000000, Ratio:       10.000000
 [11] MemoryBenchmark
-int 4k: 2184.70 MB/s
-int 512k: 2408.14 MB/s
-int 8M: 2012.37 MB/s
-int 32M: 2016.53 MB/s
-long 4k: 4568.71 MB/s
-long 512k: 3191.18 MB/s
-long 8M: 2764.87 MB/s
-long 32M: 2835.15 MB/s
-Average: 2747.71 MB/s
-MemoryBenchmark                          9101 ms      2747.71 pts        2747.71 MB/s
+int 4k: 2778.27 MB/s
+int 512k: 2778.09 MB/s
+int 8M: 2315.54 MB/s
+int 32M: 2312.80 MB/s
+long 4k: 5208.33 MB/s
+long 512k: 4030.96 MB/s
+long 8M: 3123.20 MB/s
+long 32M: 3123.20 MB/s
+Average: 3208.80 MB/s
+MemoryBenchmark                          7860 ms      3208.80 pts        3208.80 MB/s
 Iterrations:          500000, Ratio:        1.000000
 [12] ParallelMemoryBenchmark
-ParallelMemoryBenchmark                 17907 ms      8056.44 pts        8056.44 MB/s
+ParallelMemoryBenchmark                 16547 ms      8063.84 pts        8063.84 MB/s
 Iterrations:          500000, Ratio:        1.000000
 [13] RandomMemoryBenchmark
-Random int 4k: 3110.07 MB/s
-Random int 512k: 2697.51 MB/s
-Random int 8M: 2275.06 MB/s
-Random long 4k: 6210.25 MB/s
-Random long 512k: 5455.31 MB/s
-Random long 8M: 4560.75 MB/s
-Average: 4051.49 MB/s
-RandomMemoryBenchmark                    4736 ms      8102.98 pts        4051.49 MB/s
+Random int 4k: 3293.63 MB/s
+Random int 512k: 3124.80 MB/s
+Random int 8M: 2499.36 MB/s
+Random long 4k: 7141.22 MB/s
+Random long 512k: 6103.13 MB/s
+Random long 8M: 4998.72 MB/s
+Average: 4526.81 MB/s
+RandomMemoryBenchmark                    4281 ms      9053.62 pts        4526.81 MB/s
 Iterrations:          500000, Ratio:        2.000000
 [14] ParallelRandomMemoryBenchmark
-ParallelRandomMemoryBenchmark            6833 ms     25958.43 pts       12979.21 MB/s
+ParallelRandomMemoryBenchmark            7047 ms     28645.85 pts       14322.92 MB/s
 Iterrations:          500000, Ratio:        2.000000
 [15] Scimark2Benchmark
-Scimark2Benchmark                       29586 ms      4022.69 pts         402.27 CompositeScore
+Scimark2Benchmark                       29792 ms      4583.53 pts         458.35 CompositeScore
 Iterrations:               0, Ratio:       10.000000
 [16] ParallelScimark2Benchmark
-ParallelScimark2Benchmark               30373 ms     15499.15 pts        1549.91 CompositeScore
+ParallelScimark2Benchmark               29452 ms     16009.59 pts        1600.96 CompositeScore
 Iterrations:               0, Ratio:       10.000000
 [17] DhrystoneBenchmark
-DhrystoneBenchmark                       3522 ms     14316.00 pts        3579.00 DMIPS
+DhrystoneBenchmark                       3078 ms     16100.00 pts        4025.00 DMIPS
 Iterrations:               0, Ratio:        4.000000
 [18] ParallelDhrystoneBenchmark
-ParallelDhrystoneBenchmark               3103 ms     67072.00 pts       16768.00 DMIPS
+ParallelDhrystoneBenchmark               3781 ms     55224.00 pts       13806.00 DMIPS
 Iterrations:               0, Ratio:        4.000000
 [19] WhetstoneBenchmark
-WhetstoneBenchmark                      32625 ms       351.51 pts         351.51 MWIPS
+WhetstoneBenchmark                      31124 ms       415.90 pts         415.90 MWIPS
 Iterrations:               0, Ratio:        1.000000
 [20] ParallelWhetstoneBenchmark
-ParallelWhetstoneBenchmark              32380 ms      1414.09 pts        1414.09 MWIPS
+ParallelWhetstoneBenchmark              31484 ms      1453.14 pts        1453.14 MWIPS
 Iterrations:               0, Ratio:        1.000000
-[21] HashBenchmark
-HashBenchmark                            9027 ms      2210.00 pts      221557.55 Iter/s
+[21] LinpackBenchmark
+LinpackBenchmark                        12203 ms      4626.13 pts         462.61 MFLOPS
+Iterrations:               0, Ratio:       10.000000
+[22] ParallelLinpackBenchmark
+ParallelLinpackBenchmark                41195 ms      5352.55 pts         535.26 MFLOPS
+Iterrations:               0, Ratio:       10.000000
+[23] HashBenchmark
+HashBenchmark                            8188 ms      2440.00 pts      244259.89 Iter/s
 Iterrations:         2000000, Ratio:       10.000000
-[22] ParallelHashBenchmark
-ParallelHashBenchmark                   15922 ms      5010.00 pts      503430.45 Iter/s
+[24] ParallelHashBenchmark
+ParallelHashBenchmark                   16374 ms      4880.00 pts      489755.80 Iter/s
 Iterrations:         2000000, Ratio:       10.000000
 
-Total:                                1636408 ms    179709.38 pts
+Total:                                1589090 ms    186768.12 pts
 
 Single-thread results
-Operating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark,MathBenchmark,CallBenchmark,IfElseBenchmark,StringManipulation,MemoryBenchmark,RandomMemoryBenchmark,ParallelRandomMemoryBenchmark,Scimark2Benchmark,DhrystoneBenchmark,WhetstoneBenchmark,HashBenchmark,Total Points,Total Time (ms)
-Windows 10 10.0 amd64,Java Version 1.8.0_272,4,266168272,1109.31,165.00,1188.56,1665.14,880.00,2747.71,8102.98,25958.43,4022.69,14316.00,351.51,2210.00,179709.38,1636408
+Operating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark,MathBenchmark,CallBenchmark,IfElseBenchmark,StringManipulation,MemoryBenchmark,RandomMemoryBenchmark,ParallelRandomMemoryBenchmark,Scimark2Benchmark,DhrystoneBenchmark,WhetstoneBenchmark,LinpackBenchmark,HashBenchmark,Total Points,Total Time (ms)
+Windows 10 10.0 amd64,Java Version 1.8.0_272,4,249701200,1266.00,186.50,1332.00,1888.03,1000.00,3208.80,9053.62,28645.85,4583.53,16100.00,415.90,4626.13,2440.00,186768.12,1589090
 All results
-Operating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark,ParallelArithemticsBenchmark,MathBenchmark,ParallelMathBenchmark,CallBenchmark,ParallelCallBenchmark,IfElseBenchmark,ParallelIfElseBenchmark,StringManipulation,ParallelStringManipulation,MemoryBenchmark,ParallelMemoryBenchmark,RandomMemoryBenchmark,ParallelRandomMemoryBenchmark,Scimark2Benchmark,ParallelScimark2Benchmark,DhrystoneBenchmark,ParallelDhrystoneBenchmark,WhetstoneBenchmark,ParallelWhetstoneBenchmark,HashBenchmark,ParallelHashBenchmark,Total Points,Total Time (ms)
-Windows 10 10.0 amd64,Java Version 1.8.0_272,4,266168272,1109.31,5033.34,165.00,622.50,1188.56,4605.36,1665.14,6489.16,880.00,3190.00,2747.71,8056.44,8102.98,25958.43,4022.69,15499.15,14316.00,67072.00,351.51,1414.09,2210.00,5010.00,179709.38,1636408
+Operating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark,ParallelArithemticsBenchmark,MathBenchmark,ParallelMathBenchmark,CallBenchmark,ParallelCallBenchmark,IfElseBenchmark,ParallelIfElseBenchmark,StringManipulation,ParallelStringManipulation,MemoryBenchmark,ParallelMemoryBenchmark,RandomMemoryBenchmark,ParallelRandomMemoryBenchmark,Scimark2Benchmark,ParallelScimark2Benchmark,DhrystoneBenchmark,ParallelDhrystoneBenchmark,WhetstoneBenchmark,ParallelWhetstoneBenchmark,LinpackBenchmark,ParallelLinpackBenchmark,HashBenchmark,ParallelHashBenchmark,Total Points,Total Time (ms)
+Windows 10 10.0 amd64,Java Version 1.8.0_272,4,249701200;1266.00;5678.43;186.50;629.00;1332.00;4676.97;1888.03;6564.24;1000.00;3490.00;3208.80;8063.84;9053.62;28645.85;4583.53;16009.59;16100.00;55224.00;415.90;1453.14;4626.13;5352.55;2440.00;4880.00;186768.12;1589090
 Single-thread  Units results
-Operating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark (Iter/s),MathBenchmark (Iter/s),CallBenchmark (Iter/s),IfElseBenchmark (Iter/s),StringManipulation (Iter/s),MemoryBenchmark (MB/s),RandomMemoryBenchmark (MB/s),ParallelRandomMemoryBenchmark (MB/s),Scimark2Benchmark (CompositeScore),DhrystoneBenchmark (DMIPS),WhetstoneBenchmark (MWIPS),HashBenchmark (Iter/s),Total Points,Total Time (ms)
-Windows 10 10.0 amd64,Java Version 1.8.0_272,4,266168272,36977690.13,330145.23,118856599.51,166514028.81,88026.62,2747.71,4051.49,12979.21,402.27,3579.00,351.51,221557.55,179709.38,1636408
+Operating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark (Iter/s),MathBenchmark (Iter/s),CallBenchmark (Iter/s),IfElseBenchmark (Iter/s),StringManipulation (Iter/s),MemoryBenchmark (MB/s),RandomMemoryBenchmark (MB/s),ParallelRandomMemoryBenchmark (MB/s),Scimark2Benchmark (CompositeScore),DhrystoneBenchmark (DMIPS),WhetstoneBenchmark (MWIPS),LinpackBenchmark (MFLOPS),HashBenchmark (Iter/s),Total Points,Total Time (ms)
+Windows 10 10.0 amd64,Java Version 1.8.0_272,4,249701200,42200028.13,373037.59,133200133.20,188803927.12,100076.06,3208.80,4526.81,14322.92,458.35,4025.00,415.90,462.61,244259.89;186768.12;1589090
 All  Units results
-Operating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark (Iter/s),ParallelArithemticsBenchmark (Iter/s),MathBenchmark (Iter/s),ParallelMathBenchmark (Iter/s),CallBenchmark (Iter/s),ParallelCallBenchmark (Iter/s),IfElseBenchmark (Iter/s),ParallelIfElseBenchmark (Iter/s),StringManipulation (Iter/s),ParallelStringManipulation (Iter/s),MemoryBenchmark (MB/s),ParallelMemoryBenchmark (MB/s),RandomMemoryBenchmark (MB/s),ParallelRandomMemoryBenchmark (MB/s),Scimark2Benchmark (CompositeScore),ParallelScimark2Benchmark (CompositeScore),DhrystoneBenchmark (DMIPS),ParallelDhrystoneBenchmark (DMIPS),WhetstoneBenchmark (MWIPS),ParallelWhetstoneBenchmark (MWIPS),HashBenchmark (Iter/s),ParallelHashBenchmark (Iter/s),Total Points,Total Time (ms)
-Windows 10 10.0 amd64,Java Version 1.8.0_272,4,266168272,36977690.13,167780353.47,330145.23,1247099.21,118856599.51,460537678.50,166514028.81,648918263.37,88026.62,320266.93,2747.71,8056.44,4051.49,12979.21,402.27,1549.91,3579.00,16768.00,351.51,1414.09,221557.55,503430.45,179709.38,1636408
+Operating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark (Iter/s),ParallelArithemticsBenchmark (Iter/s),MathBenchmark (Iter/s),ParallelMathBenchmark (Iter/s),CallBenchmark (Iter/s),ParallelCallBenchmark (Iter/s),IfElseBenchmark (Iter/s),ParallelIfElseBenchmark (Iter/s),StringManipulation (Iter/s),ParallelStringManipulation (Iter/s),MemoryBenchmark (MB/s),ParallelMemoryBenchmark (MB/s),RandomMemoryBenchmark (MB/s),ParallelRandomMemoryBenchmark (MB/s),Scimark2Benchmark (CompositeScore),ParallelScimark2Benchmark (CompositeScore),DhrystoneBenchmark (DMIPS),ParallelDhrystoneBenchmark (DMIPS),WhetstoneBenchmark (MWIPS),ParallelWhetstoneBenchmark (MWIPS),LinpackBenchmark (MFLOPS),ParallelLinpackBenchmark (MFLOPS),HashBenchmark (Iter/s),ParallelHashBenchmark (Iter/s),Total Points,Total Time (ms)
+Windows 10 10.0 amd64,Java Version 1.8.0_272,4,249701200,42200028.13,189283299.83,373037.59,1260210.88,133200133.20,467699579.83,188803927.12,656425350.78,100076.06,351422.04,3208.80,8063.84,4526.81,14322.92,458.35,1600.96,4025.00,13806.00,415.90,1453.14,462.61,535.26,244259.89,489755.80,186768.12,1589090
