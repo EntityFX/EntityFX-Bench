@@ -1,9 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/home/entityfx/.dotnet/store/|arch|/|tfm|",
-      "/home/entityfx/.nuget/packages",
-      "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+      "C:\\Users\\SolopiyA\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\SolopiyA\\.nuget\\packages"
     ]
   }
 }
