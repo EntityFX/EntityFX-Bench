@@ -68,16 +68,32 @@ function Bench(benchMarks, output) {
 		results.push(r);
 	}
 	
-	output.writeLine();
-	output.writeTitle("%-30s".$("Total:"));
-	output.writeValue("%15d ms".$(total));
-	output.writeValue("%13.2f pts".$(totalPoints));
-	output.writeLine();
+	var headerCommon = "Operating System,Runtime,Threads Count,Memory Used,";
+	var headerTotals = ",Total Points,Total Time (ms)";
 
-	var resultsCsv = results.map(function(value) { return "%.2f".$(value.Points); }).join(',');
+	var namesCsv = results.map(function(value) { return value.BenchmarkName; }).join(',');
 
+	output.writeLine();
+	output.writeHeader("Single-thread results");
+	output.writeTitle(headerCommon);
+	output.writeTitle(namesCsv);
+	output.writeTitle(headerTotals);
+	output.writeLine();
 	output.writeTitle("%s,%s,%d,%d,".$(navigator.platform, navigator.os, 0, 0));
-	output.writeValue(resultsCsv);
+	var pointsCsv = results.map(function(value) { return "%.2f".$(value.Points); }).join(',');
+	output.writeValue(pointsCsv);
+	output.writeTitle(",%.2f,%d".$(totalPoints, total));
+	output.writeLine();
+
+	output.writeLine();
+	output.writeHeader("Single-thread Units results");
+	output.writeTitle(headerCommon);
+	output.writeTitle(namesCsv);
+	output.writeTitle(headerTotals);
+	output.writeLine();
+	output.writeTitle("%s,%s,%d,%d,".$(navigator.platform, navigator.os, 0, 0));
+	var pointsCsv = results.map(function(value) { return "%.2f".$(value.Result); }).join(',');
+	output.writeValue(pointsCsv);
 	output.writeTitle(",%.2f,%d".$(totalPoints, total));
 	output.writeLine();
 }
