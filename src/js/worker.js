@@ -28,11 +28,11 @@ importScripts("crypto-js/sha256.js");
 
 function writeResult(benchResult, output) {
 	output.writeTitle("%-30s".$(benchResult.BenchmarkName));
-	output.writeValue("%13.2f ms".$(benchResult.Elapsed));
+	output.writeValue("%15d ms".$(benchResult.Elapsed));
 	output.writeValue("%13.2f pts".$(benchResult.Points));
-	if (benchResult.Result != "") {
-		output.writeValue("%13.2f %s".$(benchResult.Result, benchResult.Units));
-	}
+	output.writeValue("%15.2f %s".$(benchResult.Result, benchResult.Units));
+	output.writeLine();
+	output.writeValue("Iterrations: %15d, Ratio: %15.3f".$(benchResult.Iterrations, benchResult.Ratio));
 	output.writeLine();
 }
 
@@ -70,15 +70,15 @@ function Bench(benchMarks, output) {
 	
 	output.writeLine();
 	output.writeTitle("%-30s".$("Total:"));
-	output.writeValue("%13.2f ms".$(total));
+	output.writeValue("%15d ms".$(total));
 	output.writeValue("%13.2f pts".$(totalPoints));
 	output.writeLine();
 
-	var resultsCsv = results.map(function(value) { return "%.2f".$(value.Points); }).join(';');
+	var resultsCsv = results.map(function(value) { return "%.2f".$(value.Points); }).join(',');
 
-	output.writeTitle("%s;%s;%d;%d;".$(navigator.platform, navigator.os, 0, 0));
+	output.writeTitle("%s,%s,%d,%d,".$(navigator.platform, navigator.os, 0, 0));
 	output.writeValue(resultsCsv);
-	output.writeTitle(";%-30s".$(total));
+	output.writeTitle(",%.2f,%d".$(totalPoints, total));
 	output.writeLine();
 }
 

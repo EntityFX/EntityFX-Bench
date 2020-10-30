@@ -46,8 +46,10 @@ var BenchmarkBase = /** @class */ (function () {
 			BenchmarkName : this.constructor.name, 
 			Elapsed : elapsed,
 			Points : this.Iterrations / elapsed * this.Ratio,
-			Result : "",
-			Units : ""
+			Result : this.Iterrations / elapsed,
+			Units : "Iters/s",
+			Iterrations : this.Iterrations,
+            Ratio : this.Ratio
 		};
 	};
 	
