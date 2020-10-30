@@ -117,7 +117,10 @@ var Writer = /** @class */ (function () {
 		this.writeColor("#5a6374", str);
     };
 	
-	Writer.prototype.writeLine = function() {
+	Writer.prototype.writeLine = function(str) {
+    if (str != null) {
+      this.write(str);
+    }
 		this.writeLineLog();
 		if (this.useConsole) {
 			writeDocument(document.createElement("br"));
@@ -180,9 +183,9 @@ var WorkerWriter = /** @class */ (function () {
 		postMessage({ msgType: "output", writeType : "write", message: str});
     };
 	
-	WorkerWriter.prototype.writeLine = function() {
+	WorkerWriter.prototype.writeLine = function(str) {
 		if (!this.useConsole) return;
-		postMessage({ msgType: "output", writeType : "writeLine"});
+		postMessage({ msgType: "output", writeType : "writeLine", message: str});
 	};
 	
 	WorkerWriter.prototype.writeHeader = function (str) {

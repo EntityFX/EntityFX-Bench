@@ -20,6 +20,8 @@ importScripts("stringManipulationBase.js");
 importScripts("stringManipulation.js");
 importScripts("hashBase.js");
 importScripts("hashBenchmark.js");
+importScripts("linpack.js");
+importScripts("linpackBenchmark.js");
 importScripts("crypto-js/core.js");
 importScripts("crypto-js/sha1.js");
 importScripts("crypto-js/sha256.js");
@@ -83,16 +85,17 @@ function Bench(benchMarks, output) {
 var output = new WorkerWriter();
 
 var benchMarks = [
-	new MemoryBenchmark(output),
-	new RandomMemoryBenchmark(output),
-	new Scimark2Benchmark(output),
-	new DhrystoneBenchmark(output),
-	new WhetstoneBenchmark(output),
 	new ArithemticsBenchmark(output),
 	new MathBenchmark(output),
 	new CallBenchmark(output),
 	new IfElseBenchmark(output),
 	new StringManipulation(output),
+	new MemoryBenchmark(output),
+	new RandomMemoryBenchmark(output),
+	new Scimark2Benchmark(output),
+	new DhrystoneBenchmark(output),
+	new WhetstoneBenchmark(output),
+	new LinpackBenchmark(output),	
 	new HashBenchmark(output)
 ];
 
