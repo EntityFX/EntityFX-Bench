@@ -121,32 +121,48 @@ namespace EntityFX.NetBenchmark
             writer.WriteValue("{0,15} pts", string.Format("{0:F2}", totalPoints));
             writer.WriteLine();
 
+            var headerCommon = "Operating System,Runtime,Threads Count,Memory Used";
+            var headerTotals = ",Total Points,Total Time (ms)";
+
             writer.WriteLine();
             writer.WriteHeader("Single-thread results");
-            writer.WriteTitle($"{Environment.OSVersion};{Environment.Version};{Environment.ProcessorCount};{Environment.WorkingSet}");
-            result.Where(r => !r.IsParallel).ToList().ForEach(r => writer.WriteValue(string.Format(";{0:F2}", r.Points)));
-            writer.WriteTitle($";{totalPoints};{total.TotalMilliseconds}");
+            writer.WriteTitle(headerCommon);
+            result.Where(r => !r.IsParallel).ToList().ForEach(r => writer.WriteTitle($",{r.BenchmarkName}"));
+            writer.WriteTitle(headerTotals);
+            writer.WriteLine();
+            writer.WriteTitle($"{Environment.OSVersion},{Environment.Version},{Environment.ProcessorCount},{Environment.WorkingSet}");
+            result.Where(r => !r.IsParallel).ToList().ForEach(r => writer.WriteValue(string.Format(",{0:F2}", r.Points)));
+            writer.WriteTitle($",{string.Format("{0:F2}", totalPoints)},{string.Format("{0:F2}", total.TotalMilliseconds)}");
 
             writer.WriteLine();
             writer.WriteHeader("All results");
-            writer.WriteTitle($"{Environment.OSVersion};{Environment.Version};{Environment.ProcessorCount};{Environment.WorkingSet}");
-            result.ForEach(r => writer.WriteValue(string.Format(";{0:F2}", r.Points)));
-            writer.WriteTitle($";{totalPoints};{total.TotalMilliseconds}");
+            writer.WriteTitle(headerCommon);
+            result.ToList().ForEach(r => writer.WriteTitle($",{r.BenchmarkName}"));
+            writer.WriteTitle(headerTotals);
+            writer.WriteLine();
+            writer.WriteTitle($"{Environment.OSVersion};{Environment.Version};{Environment.ProcessorCount},{Environment.WorkingSet}");
+            result.ForEach(r => writer.WriteValue(string.Format(",{0:F2}", r.Points)));
+            writer.WriteTitle($",{string.Format("{0:F2}", totalPoints)},{string.Format("{0:F2}", total.TotalMilliseconds)}");
 
             writer.WriteLine();
             writer.WriteHeader("Single-thread  Units results");
-            writer.WriteTitle($"{Environment.OSVersion};{Environment.Version};{Environment.ProcessorCount};{Environment.WorkingSet}");
-            result.Where(r => !r.IsParallel).ToList().ForEach(r => writer.WriteValue(string.Format(";{0:F2}", r.Result)));
-            writer.WriteTitle($";{totalPoints};{total.TotalMilliseconds}");
+            writer.WriteTitle(headerCommon);
+            result.Where(r => !r.IsParallel).ToList().ForEach(r => writer.WriteTitle($",{r.BenchmarkName}"));
+            writer.WriteTitle(headerTotals);
+            writer.WriteLine();
+            writer.WriteTitle($"{Environment.OSVersion},{Environment.Version};{Environment.ProcessorCount},{Environment.WorkingSet}");
+            result.Where(r => !r.IsParallel).ToList().ForEach(r => writer.WriteValue(string.Format(",{0:F2}", r.Result)));
+            writer.WriteTitle($",{string.Format("{0:F2}", totalPoints)},{string.Format("{0:F2}", total.TotalMilliseconds)}");
 
             writer.WriteLine();
             writer.WriteHeader("Units results");
-            writer.WriteTitle($"{Environment.OSVersion};{Environment.Version};{Environment.ProcessorCount};{Environment.WorkingSet}");
-            result.ForEach(r => writer.WriteValue(string.Format(";{0:F2}", r.Result)));
-            writer.WriteTitle($";{totalPoints};{total.TotalMilliseconds}");
-
-
-
+            writer.WriteTitle(headerCommon);
+            result.ToList().ForEach(r => writer.WriteTitle($",{r.BenchmarkName}"));
+            writer.WriteTitle(headerTotals);
+            writer.WriteLine();
+            writer.WriteTitle($"{Environment.OSVersion},{Environment.Version},{Environment.ProcessorCount},{Environment.WorkingSet}");
+            result.ForEach(r => writer.WriteValue(string.Format(",{0:F2}", r.Result)));
+            writer.WriteTitle($",{string.Format("{0:F2}", totalPoints)},{string.Format("{0:F2}", total.TotalMilliseconds)}");
         }
 
         private static void WriteResult(BenchResult benchResult)
