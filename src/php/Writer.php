@@ -5,6 +5,8 @@ namespace EntityFX\NetBenchmark\Core
 	class Writer
 	{
 		private $writer = "";
+
+		private $useColor = true;
 	
         public $UseConsole = true;
 	
@@ -17,6 +19,10 @@ namespace EntityFX\NetBenchmark\Core
 			if ($filePath != null)
 			{
 				$this->FilePath = $filePath;
+			}
+
+			if (substr(PHP_OS, 0, 3) === 'WIN') {
+				$this->useColor = false;
 			}
 		}
 	
@@ -53,10 +59,12 @@ namespace EntityFX\NetBenchmark\Core
 			$formatted = vsprintf($format, $args);
 			if ($this->UseConsole)
 			{
-				//var tmpColor = Console.ForegroundColor;
-				//Console.ForegroundColor = color;
-				//Console.Write(format, args);
-				echo($color.$formatted."\033[0m");
+				if ($this->useColor) {
+					echo($color.$formatted."\033[0m");
+				} else {
+					echo($formatted);
+				}
+
 				//Console.ForegroundColor = tmpColor;
 				if ($this->FilePath) {
 					file_put_contents($this->FilePath, $formatted, FILE_APPEND);

@@ -93,7 +93,7 @@ if (defined("DEBUG")) {
         }
 
         public static function getCores() {
-            return (int) ((PHP_OS_FAMILY == 'Windows')?(getenv("NUMBER_OF_PROCESSORS")+0):substr_count(file_get_contents("/proc/cpuinfo"),"processor"));
+            return (int) ((substr(PHP_OS, 0, 3) === 'WIN')?(getenv("NUMBER_OF_PROCESSORS")+0):substr_count(file_get_contents("/proc/cpuinfo"),"processor"));
         }
         
         
@@ -105,6 +105,8 @@ if (defined("DEBUG")) {
                 "Points" => $this->Iterrations / ($elapsed * 1000) * $this->Ratio,
                 "Result" => $this->Iterrations / ($elapsed * 1000),
                 "Units" => "Iter/s",
+                "Iterrations" => $this->Iterrations,
+                "Ratio" => $this->Ratio,
                 "Output" => ""
             ];
         }

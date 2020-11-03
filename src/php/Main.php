@@ -46,9 +46,9 @@ function writeResult($writer, $benchResult)
     $writer->WriteTitle("%-30s", $benchResult["BenchmarkName"]);
     $writer->WriteValue("%13.2f ms", $benchResult["Elapsed"]);
     $writer->WriteValue("%13.2f pts", $benchResult["Points"]);
-    if ($benchResult["Result"] != "") {
-        $writer->WriteValue("%13.2f %s", $benchResult["Result"], $benchResult["Units"]);
-    }
+    $writer->WriteValue("%15.2f %s", $benchResult["Result"], $benchResult["Units"]);
+    $writer->WriteNewLine();
+    $writer->WriteValue("Iterrations: %15d, Ratio: %15f", $benchResult["Iterrations"], $benchResult["Ratio"]);
     $writer->WriteNewLine();
 }
 
@@ -56,17 +56,17 @@ function writeResult($writer, $benchResult)
 $writer = new Writer("Output.log");
 
 $benchmarks = [
+    new ArithmeticsBenchmark($writer, true),
+    /*new MathBenchmark($writer, true),
+    new CallBenchmark($writer, true),
+    new IfElseBenchmark($writer, true),
+    new StringManipulation($writer, true),
     new MemoryBenchmark($writer, true),
     new RandomMemoryBenchmark($writer, true),
     new Scimark2Benchmark($writer, true),
     new DhrystoneBenchmark($writer, true),
     new WhetstoneBenchmark($writer, true),
-    new ArithmeticsBenchmark($writer, true),
-    new MathBenchmark($writer, true),
-    new CallBenchmark($writer, true),
-    new IfElseBenchmark($writer, true),
-    new StringManipulation($writer, true),
-    new HashBenchmark($writer, true)
+    new HashBenchmark($writer, true)*/
 ];
 
 $writer->WriteHeader("Warmup");
@@ -83,6 +83,7 @@ $totalPoints = 0;
 $points = [];
 $i = 1;
 $result = [];
+$names = [];
 
 foreach ($benchmarks as $key => $bench) {
     $writer->WriteHeader("[$i] {$bench->Name}");
@@ -90,6 +91,7 @@ foreach ($benchmarks as $key => $bench) {
     $total += $r["Elapsed"];
     $totalPoints += $r["Points"];
     $points[] = sprintf("%.2f", $r["Points"]);
+    $names[] = $bench->Name;
     writeResult($writer, $r);
 
     $result[] = $r;
@@ -107,9 +109,18 @@ $cores = BenchmarkBase::getCores();
 $version = "PHP " . phpversion();
 $mem = memory_get_usage();
 
-$pointsString = implode(";", $points);
+$headerCommon = "Operating System,Runtime,Threads Count,Memory Used,";
+$headerTotals = ",Total Points,Total Time (ms)";
+
+$pointsString = implode(",", $points);
+$headerNames = implode(",", $names);
 
 $writer->WriteNewLine();
-$writer->WriteTitle("$os;$version;$cores;$mem;");
+$writer->WriteHeader("Single-thread results");
+$writer->WriteTitle($headerCommon);
+$writer->WriteTitle($headerNames);
+$writer->WriteTitle($headerTotals);
+$writer->WriteNewLine();
+$writer->WriteTitle("$os,$version,$cores,$mem,");
 $writer->WriteValue($pointsString);
-$writer->WriteLine(";%.2f", $total);
+$writer->WriteLine(",%.2f,%d", $totalPoints,$total);
