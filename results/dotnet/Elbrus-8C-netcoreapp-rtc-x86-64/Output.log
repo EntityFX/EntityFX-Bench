@@ -1,74 +1,80 @@
 Warmup
-....................
+......................
 Bench
 [1] ArithemticsBenchmark
-ArithemticsBenchmark                  2662.19 ms        3380.64 pts   112696326.86 Iter/s
+ArithemticsBenchmark                  2677.05 ms        3361.90 pts   112107200.19 Iter/s
 Iterrations:       300000000, Ratio:            0.03
 [2] ParallelArithemticsBenchmark
-ParallelArithemticsBenchmark          2650.18 ms       28713.13 pts   113202463.74 Iter/s
+ParallelArithemticsBenchmark          2558.24 ms       29947.45 pts   117270015.03 Iter/s
 Iterrations:       300000000, Ratio:            0.03
 [3] MathBenchmark
-MathBenchmark                       128709.09 ms         776.95 pts     1553893.08 Iter/s
+MathBenchmark                       137120.36 ms         729.29 pts     1458574.64 Iter/s
 Iterrations:       200000000, Ratio:             0.5
 [4] ParallelMathBenchmark
-ParallelMathBenchmark               130539.95 ms        6147.65 pts     1532098.05 Iter/s
+ParallelMathBenchmark               142092.52 ms        5682.72 pts     1407533.63 Iter/s
 Iterrations:       200000000, Ratio:             0.5
 [5] CallBenchmark
-CallBenchmark                         8725.00 ms         436.94 pts    43696053.88 Iter/s
+CallBenchmark                         8700.00 ms         436.92 pts    43691655.57 Iter/s
 Iterrations:      2000000000, Ratio:            0.01
 [6] ParallelCallBenchmark
-ParallelCallBenchmark                47514.17 ms        3419.12 pts    42092705.62 Iter/s
+ParallelCallBenchmark                47845.41 ms        3410.08 pts    41801299.25 Iter/s
 Iterrations:      2000000000, Ratio:            0.01
 [7] IfElseBenchmark
-IfElseBenchmark                       5419.34 ms        3690.48 pts   369050175.38 Iter/s
+IfElseBenchmark                       5419.38 ms        3690.45 pts   369052810.83 Iter/s
 Iterrations:      2000000000, Ratio:            0.01
 [8] ParallelIfElseBenchmark
-ParallelIfElseBenchmark               5762.20 ms       28884.07 pts   347090135.14 Iter/s
+ParallelIfElseBenchmark               5686.48 ms       28850.57 pts   351711959.72 Iter/s
 Iterrations:      2000000000, Ratio:            0.01
 [9] StringManipulation
-StringManipulation                   28995.32 ms        1724.42 pts      172447.94 Iter/s
+StringManipulation                   25761.73 ms        1940.86 pts      194087.45 Iter/s
 Iterrations:         5000000, Ratio:              10
 [10] ParallelStringManipulation
-ParallelStringManipulation          182266.18 ms        2213.89 pts       27432.41 Iter/s
+ParallelStringManipulation          185444.97 ms        2202.70 pts       26962.18 Iter/s
 Iterrations:         5000000, Ratio:              10
 [11] MemoryBenchmark
-MemoryBenchmark                      16720.81 ms        2437.13 pts        2437.13 MB/s
+MemoryBenchmark                      17868.81 ms        2440.99 pts        2440.99 MB/s
 Iterrations:          500000, Ratio:               1
 [12] ParallelMemoryBenchmark
-ParallelMemoryBenchmark              36910.95 ms       17304.00 pts       17304.00 MB/s
+ParallelMemoryBenchmark              34115.10 ms       16783.15 pts       16783.15 MB/s
 Iterrations:          500000, Ratio:               1
 [13] RandomMemoryBenchmark
-RandomMemoryBenchmark                39959.76 ms        2115.22 pts        1057.61 MB/s
+RandomMemoryBenchmark                39168.42 ms        2096.42 pts        1048.21 MB/s
 Iterrations:          500000, Ratio:               2
 [14] ParallelRandomMemoryBenchmark
-ParallelRandomMemoryBenchmark        22506.04 ms       24097.82 pts       12048.91 MB/s
+ParallelRandomMemoryBenchmark        22703.82 ms       23599.82 pts       11799.91 MB/s
 Iterrations:          500000, Ratio:               2
 [15] Scimark2Benchmark
-Scimark2Benchmark                    16211.75 ms        1781.42 pts         178.14 CompositeScore
+Scimark2Benchmark                    16483.91 ms        1647.20 pts         164.72 CompositeScore
 Iterrations:               0, Ratio:              10
 [16] ParallelScimark2Benchmark
-ParallelScimark2Benchmark            16661.77 ms       11605.25 pts        1160.53 CompositeScore
+ParallelScimark2Benchmark            15884.90 ms       11776.73 pts        1177.67 CompositeScore
 Iterrations:               0, Ratio:              10
 [17] DhrystoneBenchmark
-DhrystoneBenchmark                    8960.29 ms        5138.30 pts        1284.58 DMIPS
+DhrystoneBenchmark                    8768.90 ms        5238.47 pts        1309.62 DMIPS
 Iterrations:               0, Ratio:               4
 [18] ParallelDhrystoneBenchmark
-ParallelDhrystoneBenchmark            8736.86 ms       44211.72 pts       11052.93 DMIPS
+ParallelDhrystoneBenchmark            8761.23 ms       42688.67 pts       10672.17 DMIPS
 Iterrations:               0, Ratio:               4
 [19] WhetstoneBenchmark
-WhetstoneBenchmark                  323637.95 ms         324.22 pts         324.22 MWIPS
+WhetstoneBenchmark                  318522.05 ms         326.68 pts         326.68 MWIPS
 Iterrations:               0, Ratio:               1
 [20] ParallelWhetstoneBenchmark
-ParallelWhetstoneBenchmark          110638.91 ms        7799.84 pts        7799.84 MWIPS
+ParallelWhetstoneBenchmark          109985.34 ms        7813.58 pts        7813.58 MWIPS
 Iterrations:               0, Ratio:               1
+[21] LinpackBenchmark
+LinpackBenchmark                     41845.15 ms        1335.33 pts         133.53 MFLOPS
+Iterrations:               0, Ratio:              10
+[22] ParallelLinpackBenchmark
+ParallelLinpackBenchmark             61976.04 ms         746.43 pts         746.43 MFLOPS
+Iterrations:               0, Ratio:              10
 
-Total:                             1144188.71 ms      196202.22 pts
+Total:                             1259389.79 ms      196746.42 pts
 
 Single-thread results
-Unix 4.19.0.1,3.1.4,8,2008264704,3380.64,776.95,436.94,3690.48,1724.42,2437.13,2115.22,1781.42,5138.30,324.22,196202.21990592856,1144188.7114
+Unix 4.19.0.1;3.1.4;8;2360766464;3361.90;729.29;436.92;3690.45;1940.86;2440.99;2096.42;1647.20;5238.47;326.68;1335.33;196746.420059512;1259389.7886
 All results
-Unix 4.19.0.1,3.1.4,8,2009952256,3380.64,28713.13,776.95,6147.65,436.94,3419.12,3690.48,28884.07,1724.42,2213.89,2437.13,17304.00,2115.22,24097.82,1781.42,11605.25,5138.30,44211.72,324.22,7799.84,196202.21990592856,1144188.7114
+Unix 4.19.0.1;3.1.4;8;2361892864;3361.90;29947.45;729.29;5682.72;436.92;3410.08;3690.45;28850.57;1940.86;2202.70;2440.99;16783.15;2096.42;23599.82;1647.20;11776.73;5238.47;42688.67;326.68;7813.58;1335.33;746.43;196746.420059512;1259389.7886
 Single-thread  Units results
-Unix 4.19.0.1,3.1.4,8,2010738688,112696326.86,1553893.08,43696053.88,369050175.38,172447.94,2437.13,1057.61,178.14,1284.58,324.22,196202.21990592856,1144188.7114
+Unix 4.19.0.1;3.1.4;8;2362138624;112107200.19;1458574.64;43691655.57;369052810.83;194087.45;2440.99;1048.21;164.72;1309.62;326.68;133.53;196746.420059512;1259389.7886
 Units results
-Unix 4.19.0.1,3.1.4,8,2011250688,112696326.86,113202463.74,1553893.08,1532098.05,43696053.88,42092705.62,369050175.38,347090135.14,172447.94,27432.41,2437.13,17304.00,1057.61,12048.91,178.14,1160.53,1284.58,11052.93,324.22,7799.84,196202.21990592856,1144188.7114
+Unix 4.19.0.1;3.1.4;8;2362408960;112107200.19;117270015.03;1458574.64;1407533.63;43691655.57;41801299.25;369052810.83;351711959.72;194087.45;26962.18;2440.99;16783.15;1048.21;11799.91;164.72;1177.67;1309.62;10672.17;326.68;7813.58;133.53;746.43;196746.420059512;1259389.7886
