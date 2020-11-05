@@ -24,7 +24,7 @@ class BenchmarkBase(Benchamrk):
     
     @property
     def name(self) -> str:
-        return type(self)
+        return self.__class__.__name__
 
     def bench(self):
         self._beforeBench()

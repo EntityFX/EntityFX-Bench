@@ -67,6 +67,11 @@ function Bench(benchMarks, output) {
 
 		results.push(r);
 	}
+
+	output.writeLine();
+	output.writeTitle("%-30s".$("Total:"));
+	output.writeValue("%15d ms".$(total));
+	output.writeValue("%13.2f pts".$(totalPoints));
 	
 	var headerCommon = "Operating System,Runtime,Threads Count,Memory Used,";
 	var headerTotals = ",Total Points,Total Time (ms)";

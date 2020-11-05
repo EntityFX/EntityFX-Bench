@@ -42,11 +42,12 @@ var BenchmarkBase = /** @class */ (function () {
 	
 	BenchmarkBase.prototype.BuildResult = function(elapsed)
 	{
+		var elapsedSeconds = elapsed / 1000;
 		return { 
 			BenchmarkName : this.constructor.name, 
 			Elapsed : elapsed,
 			Points : this.Iterrations / elapsed * this.Ratio,
-			Result : this.Iterrations / elapsed,
+			Result : this.Iterrations / elapsedSeconds,
 			Units : "Iters/s",
 			Iterrations : this.Iterrations,
             Ratio : this.Ratio
