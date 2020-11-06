@@ -1,7 +1,7 @@
 <?php
 
 define("DEBUG", false);
-define("ASPECT_RATIO", 0.2);
+define("ASPECT_RATIO", 0.1);
 define("DEBUG_ASPECT_RATIO", 0.05);
 
 require_once("Writer.php");
@@ -27,6 +27,7 @@ require_once("Whetstone/WhetstoneBenchmark.php");
 require_once("Scimark2/Scimark2.php");
 require_once("Scimark2/Scimark2Benchmark.php");
 require_once("Linpack/Linpack.php");
+require_once("Linpack/LinpackBenchmark.php");
 
 use EntityFX\NetBenchmark\Core\Writer;
 use EntityFX\NetBenchmark\Core\Generic\BenchmarkBase;
@@ -41,7 +42,7 @@ use EntityFX\NetBenchmark\Core\Generic\HashBenchmark;
 use EntityFX\NetBenchmark\Core\Dhrystone\DhrystoneBenchmark;
 use EntityFX\NetBenchmark\Core\Whetstone\WhetstoneBenchmark;
 use EntityFX\NetBenchmark\Core\Scimark2\Scimark2Benchmark;
-use EntityFX\NetBenchmark\Core\Linpack\Linpack;
+use EntityFX\NetBenchmark\Core\Linpack\LinpackBenchmark;
 
 function writeResult($writer, $benchResult)
 {
@@ -68,6 +69,7 @@ $benchmarks = [
     new Scimark2Benchmark($writer, true),
     new DhrystoneBenchmark($writer, true),
     new WhetstoneBenchmark($writer, true),
+    new LinpackBenchmark($writer, true),
     new HashBenchmark($writer, true)
 ];
 

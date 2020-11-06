@@ -9,7 +9,7 @@ namespace EntityFX\NetBenchmark\Core\Generic {
         {
             parent::__construct($writer, $printToConsole);
             $this->Iterrations = 5000000;
-            $this->Ratio = 25;
+            $this->Ratio = 10;
         }
 
         public static function DoStringManipilation($str)

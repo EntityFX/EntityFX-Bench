@@ -106,7 +106,8 @@ namespace EntityFX\NetBenchmark\Core\Linpack {
             "NormalisedResidual" => $residn_result,
             "Epsilon" => $eps_result,
             "Time" => $time_result,
-            "MFLOPS" => $mflops_result
+            "MFLOPS" => $mflops_result,
+            "Output" => $this->output->Output
           ];
         }
       

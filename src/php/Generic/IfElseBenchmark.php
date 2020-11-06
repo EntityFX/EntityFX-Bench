@@ -10,7 +10,7 @@ namespace EntityFX\NetBenchmark\Core\Generic {
         {
             parent::__construct($writer, $printToConsole);
             $this->Iterrations = 2000000000;
-            $this->Ratio = 0.5;
+            $this->Ratio = 0.01;
         }
 
 
