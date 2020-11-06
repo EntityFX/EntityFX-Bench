@@ -26,6 +26,7 @@ require_once("Whetstone/Whetstone.php");
 require_once("Whetstone/WhetstoneBenchmark.php");
 require_once("Scimark2/Scimark2.php");
 require_once("Scimark2/Scimark2Benchmark.php");
+require_once("Linpack/Linpack.php");
 
 use EntityFX\NetBenchmark\Core\Writer;
 use EntityFX\NetBenchmark\Core\Generic\BenchmarkBase;
@@ -40,6 +41,7 @@ use EntityFX\NetBenchmark\Core\Generic\HashBenchmark;
 use EntityFX\NetBenchmark\Core\Dhrystone\DhrystoneBenchmark;
 use EntityFX\NetBenchmark\Core\Whetstone\WhetstoneBenchmark;
 use EntityFX\NetBenchmark\Core\Scimark2\Scimark2Benchmark;
+use EntityFX\NetBenchmark\Core\Linpack\Linpack;
 
 function writeResult($writer, $benchResult)
 {
@@ -57,7 +59,7 @@ $writer = new Writer("Output.log");
 
 $benchmarks = [
     new ArithmeticsBenchmark($writer, true),
-    /*new MathBenchmark($writer, true),
+    new MathBenchmark($writer, true),
     new CallBenchmark($writer, true),
     new IfElseBenchmark($writer, true),
     new StringManipulation($writer, true),
@@ -66,7 +68,7 @@ $benchmarks = [
     new Scimark2Benchmark($writer, true),
     new DhrystoneBenchmark($writer, true),
     new WhetstoneBenchmark($writer, true),
-    new HashBenchmark($writer, true)*/
+    new HashBenchmark($writer, true)
 ];
 
 $writer->WriteHeader("Warmup");

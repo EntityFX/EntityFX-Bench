@@ -1,43 +1,43 @@
 EntityFX JavaScript BenchmarkWait until completed...Warmup............
-[1] ArithemticsBenchmarkArithemticsBenchmark                    44746 ms       201.14 pts        6704.51 Iters/s
+[1] ArithemticsBenchmarkArithemticsBenchmark                    48749 ms       184.62 pts     6153972.39 Iters/s
 Iterrations:       300000000, Ratio:           0.030
-[2] MathBenchmarkMathBenchmark                          571560 ms       174.96 pts         349.92 Iters/s
+[2] MathBenchmarkMathBenchmark                          584245 ms       171.16 pts      342322.14 Iters/s
 Iterrations:       200000000, Ratio:           0.500
-[3] CallBenchmarkCallBenchmark                           21779 ms       918.32 pts       91831.58 Iters/s
+[3] CallBenchmarkCallBenchmark                           21899 ms       913.28 pts    91328371.16 Iters/s
 Iterrations:      2000000000, Ratio:           0.010
-[4] IfElseBenchmarkIfElseBenchmark                         39153 ms       510.82 pts       51081.65 Iters/s
+[4] IfElseBenchmarkIfElseBenchmark                         38690 ms       516.93 pts    51692943.91 Iters/s
 Iterrations:      2000000000, Ratio:           0.010
-[5] StringManipulationStringManipulation                      91624 ms       545.71 pts          54.57 Iters/s
+[5] StringManipulationStringManipulation                      94139 ms       531.13 pts       53112.95 Iters/s
 Iterrations:         5000000, Ratio:          10.000
-[6] MemoryBenchmarkint 4k: 435.58 MB/s
-int 512k: 400.04 MB/s
-int 8M: 379.99 MB/s
-int 32M: 379.43 MB/s
-long 4k: 438.22 MB/s
-long 512k: 443.91 MB/s
-long 8M: 387.61 MB/s
-long 32M: 392.16 MB/s
-Average: 407.12 MB/s
-MemoryBenchmark                         73339 ms       407.12 pts         407.12 MB/s
+[6] MemoryBenchmarkint 4k: 436.65 MB/s
+int 512k: 400.16 MB/s
+int 8M: 373.12 MB/s
+int 32M: 367.92 MB/s
+long 4k: 435.77 MB/s
+long 512k: 429.99 MB/s
+long 8M: 388.61 MB/s
+long 32M: 392.60 MB/s
+Average: 403.10 MB/s
+MemoryBenchmark                         74118 ms       403.10 pts         403.10 MB/s
 Iterrations:          500000, Ratio:           1.000
-[7] RandomMemoryBenchmarkRandom int 4k: 41.94 MB/s
-Random int 512k: 40.76 MB/s
-Random int 8M: 40.75 MB/s
-Random long 4k: 42.29 MB/s
-Random long 512k: 41.30 MB/s
-Random long 8M: 40.91 MB/s
-Average: 41.32 MB/s
-RandomMemoryBenchmark                  521262 ms        82.65 pts          41.32 MB/s
+[7] RandomMemoryBenchmarkRandom int 4k: 42.04 MB/s
+Random int 512k: 40.80 MB/s
+Random int 8M: 40.91 MB/s
+Random long 4k: 42.56 MB/s
+Random long 512k: 41.15 MB/s
+Random long 8M: 40.76 MB/s
+Average: 41.37 MB/s
+RandomMemoryBenchmark                  521024 ms        82.74 pts          41.37 MB/s
 Iterrations:          500000, Ratio:           2.000
 [8] Scimark2Benchmark
 SciMark 2.0a
-Composite Score:            52.47
-FFT             Mflops:     48.54    (N=1024)
-SOR             Mflops:    103.91    (100 x 100)
-Monte Carlo     Mflops:     16.07
-Sparse matmult  Mflops:     31.88    (N=1000, nz=5000)
-LU              Mflops:     61.97    (100x100): 
-Scimark2Benchmark                       24876 ms       524.73 pts          52.47 CompositeScore
+Composite Score:            52.60
+FFT             Mflops:     48.56    (N=1024)
+SOR             Mflops:    104.41    (100 x 100)
+Monte Carlo     Mflops:     16.08
+Sparse matmult  Mflops:     32.16    (N=1000, nz=5000)
+LU              Mflops:     61.77    (100x100): 
+Scimark2Benchmark                       24730 ms       525.95 pts          52.60 CompositeScore
 Iterrations:               1, Ratio:          10.000
 [9] DhrystoneBenchmark##########################################
 
@@ -62,25 +62,25 @@ Enum_Loc:      O.K.  1  
 Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
 Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
 
-Nanoseconds one Dhrystone run: 3898
-Dhrystones per Second:         256518
-VAX  MIPS rating =             145
+Nanoseconds one Dhrystone run: 3993
+Dhrystones per Second:         250460
+VAX  MIPS rating =             142
 
-DhrystoneBenchmark                      77984 ms       583.99 pts         146.00 DMIPS
+DhrystoneBenchmark                      79866 ms       570.20 pts         142.55 DMIPS
 Iterrations:               1, Ratio:           4.000
-[10] WhetstoneBenchmark     Whetstone Benchmark JavaScript Version, Fri, 30 Oct 2020 13:24:31 GMT
+[10] WhetstoneBenchmark     Whetstone Benchmark JavaScript Version, Thu, 05 Nov 2020 19:58:43 GMT
                                                        1 Pass
   Test                  Result       MFLOPS     MOPS  millisecs
-  N1 floating point  -1.123981360    191.92             0.1000
-  N2 floating point  -1.131201437    143.65             0.9356
-  N3 if then else     1.000000000              34.73    2.9800
-  N4 fixed point     12.000000000             135.31    2.3280
-  N5 sin,cos etc.     0.499029351              13.35    6.2340
-  N6 floating point   0.999999879     11.05            48.8200
-  N7 assignments      3.000000000              65.12    2.8380
-  N8 exp,sqrt etc.    0.835383055               7.66    4.8540
-  MWIPS                              144.74            69.0896
-WhetstoneBenchmark                      25432 ms       144.74 pts         144.74 MWIPS
+  N1 floating point  -1.123981360    192.00             0.1000
+  N2 floating point  -1.131201437    143.90             0.9340
+  N3 if then else     1.000000000              34.00    3.0440
+  N4 fixed point     12.000000000             134.50    2.3420
+  N5 sin,cos etc.     0.499029351              13.15    6.3260
+  N6 floating point   0.999999879     10.57            51.0200
+  N7 assignments      3.000000000              70.70    2.6140
+  N8 exp,sqrt etc.    0.835383055               7.68    4.8440
+  MWIPS                              140.40            71.2240
+WhetstoneBenchmark                      25599 ms       140.40 pts         140.40 MWIPS
 Iterrations:               1, Ratio:           1.000
 [11] LinpackBenchmarkRunning Linpack 2000x2000 in JavaScript
 Norma is 0.49999936918999666
@@ -89,15 +89,16 @@ Normalised residual is 20.25
 Machine result.Eepsilon is 2.220446049250313e-16
 x[0]-1 is 4.440892098500626e-13
 x[n-1]-1 is -3.997469022465339e-12
-Time is 116.35
-MFLOPS: 45.907
-LinpackBenchmark                       122882 ms       459.07 pts          45.91 MFLOPS
+Time is 115.5
+MFLOPS: 46.247
+LinpackBenchmark                       121926 ms       462.47 pts          46.25 MFLOPS
 Iterrations:               1, Ratio:          10.000
-[12] HashBenchmarkHashBenchmark                          320863 ms        62.33 pts           6.23 Iters/s
+[12] HashBenchmarkHashBenchmark                          320858 ms        62.33 pts        6233.29 Iters/s
 Iterrations:         2000000, Ratio:          10.000
 
+Total:                                1955843 ms      4564.32 pts
 Single-thread resultsOperating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark,MathBenchmark,CallBenchmark,IfElseBenchmark,StringManipulation,MemoryBenchmark,RandomMemoryBenchmark,Scimark2Benchmark,DhrystoneBenchmark,WhetstoneBenchmark,LinpackBenchmark,HashBenchmark,Total Points,Total Time (ms)
-Linux armv7l,Chrome 80,0,0,201.14,174.96,918.32,510.82,545.71,407.12,82.65,524.73,583.99,144.74,459.07,62.33,4615.57,1935500
+Linux armv7l,Chrome 80,0,0,184.62,171.16,913.28,516.93,531.13,403.10,82.74,525.95,570.20,140.40,462.47,62.33,4564.32,1955843
 
 Single-thread Units resultsOperating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark,MathBenchmark,CallBenchmark,IfElseBenchmark,StringManipulation,MemoryBenchmark,RandomMemoryBenchmark,Scimark2Benchmark,DhrystoneBenchmark,WhetstoneBenchmark,LinpackBenchmark,HashBenchmark,Total Points,Total Time (ms)
-Linux armv7l,Chrome 80,0,0,6704.51,349.92,91831.58,51081.65,54.57,407.12,41.32,52.47,146.00,144.74,45.91,6.23,4615.57,1935500
+Linux armv7l,Chrome 80,0,0,6153972.39,342322.14,91328371.16,51692943.91,53112.95,403.10,41.37,52.60,142.55,140.40,46.25,6233.29,4564.32,1955843

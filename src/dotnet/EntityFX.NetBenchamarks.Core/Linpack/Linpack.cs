@@ -83,7 +83,7 @@ namespace EntityFX.NetBenchmark.Core.Linpack
             //time = second();
             info = dgefa(ref a, lda, n, ref ipvt);
             dgesl(ref a, lda, n, ref ipvt, ref b, 0);
-            total = sw.ElapsedMilliseconds / 1000;
+            total = sw.ElapsedMilliseconds / 1000.0;
 
             for (i = 0; i < n; i++)
             {
