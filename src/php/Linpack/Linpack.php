@@ -53,7 +53,6 @@ namespace EntityFX\NetBenchmark\Core\Linpack {
           $norma = $this->matgen($a, $lda, $n, $b);
 
 
-
           $time = $this->second();
           $info = $this->dgefa($a, $lda, $n, $ipvt);
           $this->dgesl($a, $lda, $n, $ipvt, $b, 0);
