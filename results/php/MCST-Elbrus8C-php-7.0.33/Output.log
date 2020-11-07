@@ -1,45 +1,65 @@
 Warmup
-...........
+Warmup
+.....Warmup
+.....Warmup
+.....Warmup
+............
 Bench
-[1] MemoryBenchmark
-int 4k: 34.92 MB/s
-int 512k: 32.07 MB/s
-int 8M: 27.06 MB/s
-int 32M: 27.06 MB/s
+[1] ArithmeticsBenchmark
+ArithmeticsBenchmark               48537.60 ms        18.54 pts      618077.56 Iter/s
+Iterrations:        30000000, Ratio:        0.030000
+[2] MathBenchmark
+MathBenchmark                      69050.42 ms       144.82 pts      289643.41 Iter/s
+Iterrations:        20000000, Ratio:        0.500000
+[3] CallBenchmark
+CallBenchmark                     120587.69 ms        16.59 pts     1658544.04 Iter/s
+Iterrations:       200000000, Ratio:        0.010000
+[4] IfElseBenchmark
+IfElseBenchmark                   110115.06 ms        18.16 pts     1816282.02 Iter/s
+Iterrations:       200000000, Ratio:        0.010000
+[5] StringManipulation
+StringManipulation                  3370.91 ms      1483.28 pts      148327.72 Iter/s
+Iterrations:          500000, Ratio:       10.000000
+[6] MemoryBenchmark
+int 4k: 35.04 MB/s
+int 512k: 32.00 MB/s
+int 8M: 27.09 MB/s
+int 32M: 27.10 MB/s
 long 4k: 37.41 MB/s
-long 512k: 32.69 MB/s
-long 8M: 27.64 MB/s
-long 32M: 27.63 MB/s
-Average: 30.81 MB/s
-MemoryBenchmark                   207961.00 ms      1540.43 pts        30.81 MB/s
-[2] RandomMemoryBenchmark
-Random int 4k: 25.23 MB/s
-Random int 512k: 20.94 MB/s
-Random int 8M: 14.51 MB/s
-Random long 4k: 25.77 MB/s
-Random long 512k: 21.61 MB/s
-Random long 8M: 15.41 MB/s
-Average: 20.58 MB/s
-RandomMemoryBenchmark             230096.39 ms      1646.47 pts        20.58 MB/s
-[3] Scimark2Benchmark
-Scimark2Benchmark                  26910.80 ms      1176.80 pts         3.92 CompositeScore
-[4] DhrystoneBenchmark
-DhrystoneBenchmark                 10010.63 ms      1421.55 pts        28.43 DMIPS
-[5] WhetstoneBenchmark
-WhetstoneBenchmark                117855.24 ms       677.91 pts        33.90 MWIPS
-[6] ArithmeticsBenchmark
-ArithmeticsBenchmark               97182.74 ms      1234.79 pts       617.39 Iter/s
-[7] MathBenchmark
-MathBenchmark                     141546.91 ms       989.07 pts       282.59 Iter/s
-[8] CallBenchmark
-CallBenchmark                     241598.43 ms       827.82 pts      1655.64 Iter/s
-[9] IfElseBenchmark
-IfElseBenchmark                   220181.26 ms       908.34 pts      1816.69 Iter/s
-[10] StringManipulation
-StringManipulation                  6816.67 ms      3667.48 pts       146.70 Iter/s
-[11] HashBenchmark
-HashBenchmark                       2220.02 ms       900.89 pts       180.18 Iter/s
+long 512k: 32.67 MB/s
+long 8M: 27.67 MB/s
+long 32M: 27.68 MB/s
+Average: 30.83 MB/s
+MemoryBenchmark                   110354.91 ms        30.83 pts          30.83 MB/s
+Iterrations:           50000, Ratio:        1.000000
+[7] RandomMemoryBenchmark
+Random int 4k: 25.38 MB/s
+Random int 512k: 20.90 MB/s
+Random int 8M: 14.93 MB/s
+Random long 4k: 25.75 MB/s
+Random long 512k: 21.59 MB/s
+Random long 8M: 15.61 MB/s
+Average: 20.69 MB/s
+RandomMemoryBenchmark             117073.46 ms        41.39 pts          20.69 MB/s
+Iterrations:           50000, Ratio:        2.000000
+[8] Scimark2Benchmark
+Scimark2Benchmark                  26936.57 ms      1175.73 pts           3.92 CompositeScore
+Iterrations:               1, Ratio:      300.000000
+[9] DhrystoneBenchmark
+DhrystoneBenchmark                  9660.67 ms      1473.04 pts          29.46 DMIPS
+Iterrations:               1, Ratio:       50.000000
+[10] WhetstoneBenchmark
+WhetstoneBenchmark                118125.09 ms       678.21 pts          33.91 MWIPS
+Iterrations:               1, Ratio:       20.000000
+[11] LinpackBenchmark
+LinpackBenchmark                 1687596.75 ms        32.63 pts           3.26 MFLOPS
+Iterrations:               1, Ratio:       10.000000
+[12] HashBenchmark
+HashBenchmark                       1104.09 ms      1811.44 pts      181144.31 Iter/s
+Iterrations:          200000, Ratio:       10.000000
 
-Total:                           1302380.08 ms     14991.55 pts
+Total:                           2422513.23 ms      6924.67 pts
 
-Linux 4.19.0-1.4-e8c,PHP 7.0.33,8,744080,1540.43,1646.47,1176.80,1421.55,677.91,1234.79,989.07,827.82,908.34,3667.48,900.89,1302380.08
+Single-thread results
+Operating System,Runtime,Threads Count,Memory Used,ArithmeticsBenchmark,MathBenchmark,CallBenchmark,IfElseBenchmark,StringManipulation,MemoryBenchmark,RandomMemoryBenchmark,Scimark2Benchmark,DhrystoneBenchmark,WhetstoneBenchmark,LinpackBenchmark,HashBenchmark,Total Points,Total Time (ms)
+Linux 4.19.0-1.4-e8c,PHP 7.0.33,8,809776,18.54,144.82,16.59,18.16,1483.28,30.83,41.39,1175.73,1473.04,678.21,32.63,1811.44,6924.67,2422513
