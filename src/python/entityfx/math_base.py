@@ -5,8 +5,8 @@ import math
 
 class MathBase(BenchmarkBase):
     
-    def __init__(self) -> None:
-        super().__init__()
+    def __init__(self, writer : Writer=None, print_to_console : bool=True) -> None:
+        super().__init__(writer, print_to_console)
         self._iterrations = 200000000
         self.ratio = .5
     

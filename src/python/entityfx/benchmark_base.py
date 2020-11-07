@@ -8,7 +8,12 @@ class BenchmarkBase(Benchamrk):
     def __init__(self, writer : Writer=None, print_to_console : bool=True) -> None:
         self._iterrations = 0
         self._print_to_console = print_to_console
-        self._output = writer is None if Writer() else writer
+
+        if Writer is None : 
+            self._output = Writer() 
+        else :
+            self._output = writer
+
         self.ratio = 1.0
         self.__isparallel = False
     
@@ -21,6 +26,10 @@ class BenchmarkBase(Benchamrk):
     def is_parallel(self, value) -> bool:
         self.__isparallel = value
         return self.__isparallel
+
+    def _use_console(self, value : bool) -> bool:
+        self._print_to_console = value
+        self._output.use_console = value
     
     @property
     def name(self) -> str:

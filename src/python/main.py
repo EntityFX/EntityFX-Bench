@@ -1,11 +1,16 @@
 from entityfx import benchmark, benchmark_base, writer
 from entityfx.arithemtics_benchmark import ArithemticsBenchmark
 from entityfx.math_benchmark import MathBenchmark
+from entityfx.call_benchmark import CallBenchmark
+from entityfx.if_else_benchmark import IfElseBenchmark
+from entityfx.string_manipulation import StringManipulation
+from entityfx.memory_benchmark import MemoryBenchmark
+
 from entityfx.writer import Writer
 
 import time
 
-writer = Writer(None)
+writer = Writer("Output.log")
 
 benchmark_base.BenchmarkBase.ITERRATIONS_RATIO = 0.01
 
@@ -19,13 +24,13 @@ def write_result(bench_result) -> None:
     writer.write_line()
 
 
-bench_marks = [
-    ArithemticsBenchmark(), 
-    MathBenchmark(), 
-    # CallBenchmark(), 
-    # IfElseBenchmark(), 
-    # StringManipulation(),  
-    # MemoryBenchmark(), 
+bench_marks = [ 
+    ArithemticsBenchmark(writer), 
+    MathBenchmark(writer), 
+    CallBenchmark(writer), 
+    IfElseBenchmark(writer), 
+    StringManipulation(writer),  
+    MemoryBenchmark(writer), 
     # RandomMemoryBenchmark(), 
     # Scimark2Benchmark(), 
     # DhrystoneBenchmark(), 

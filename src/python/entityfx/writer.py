@@ -23,7 +23,7 @@ class Writer(object):
         if (file_path is not None): 
             self.__file_path = file_path
             self.__use_file = True
-            self.__stream = open(file_path, mode="a")
+            self.__stream = open(file_path, "a+", 1)
 
         self.__is_color = True
         if os.name == "nt":
@@ -49,7 +49,7 @@ class Writer(object):
         formatted = format.format(*args)
         if (self.use_console): 
             to_print = f'{color}{formatted}\033[0m' if self.__is_color else formatted
-            print(to_print, end='')
+            print(to_print, end='', flush=True)
             if (self.__use_file): 
                 self.__stream.write(formatted)
 
