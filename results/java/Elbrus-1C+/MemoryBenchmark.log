@@ -1,0 +1,83 @@
+nullWarmup
+....Elapsed No Call: 2221
+Elapsed Call: 2143
+.Elapsed No Call: 288
+Elapsed Call: 2069
+.....int 4k: 340.27 MB/s
+int 512k: 326.09 MB/s
+int 8M: 218.68 MB/s
+int 32M: 221.71 MB/s
+long 4k: 824.10 MB/s
+long 512k: 485.07 MB/s
+long 8M: 247.42 MB/s
+long 32M: 237.92 MB/s
+Average: 362.66 MB/s
+.int 4k: 1302.08 MB/s
+int 512k: 965.35 MB/s
+int 8M: 180.79 MB/s
+int 32M: 222.74 MB/s
+long 4k: 1502.40 MB/s
+long 512k: 1455.22 MB/s
+long 8M: 257.37 MB/s
+long 32M: 240.30 MB/s
+Average: 765.78 MB/s
+.Random int 4k: 498.25 MB/s
+Random int 512k: 282.61 MB/s
+Random int 8M: 190.48 MB/s
+Random long 4k: 887.78 MB/s
+Random long 512k: 1065.57 MB/s
+Random long 8M: 399.17 MB/s
+Average: 553.98 MB/s
+.Random int 4k: 367.13 MB/s
+Random int 512k: 482.67 MB/s
+Random int 8M: 201.68 MB/s
+Random long 4k: 2325.15 MB/s
+Random long 512k: 1174.70 MB/s
+Random long 8M: 398.34 MB/s
+Average: 824.95 MB/s
+...........
+Bench
+[1] ArithemticsBenchmark
+ArithemticsBenchmark                    35683 ms       252.21 pts     8407364.85 Iter/s
+Iterrations:       300000000, Ratio:        0.030000
+[2] ParallelArithemticsBenchmark
+ParallelArithemticsBenchmark             8392 ms      1073.07 pts    35769643.50 Iter/s
+Iterrations:       300000000, Ratio:        0.030000
+[3] MathBenchmark
+MathBenchmark                          238859 ms       418.50 pts      837314.06 Iter/s
+Iterrations:       200000000, Ratio:        0.500000
+[4] ParallelMathBenchmark
+ParallelMathBenchmark                  225190 ms       444.00 pts      888158.63 Iter/s
+Iterrations:       200000000, Ratio:        0.500000
+[5] CallBenchmark
+Elapsed No Call: 0
+Elapsed Call: 41228
+CallBenchmark                           41228 ms       485.03 pts    48503662.03 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[6] ParallelCallBenchmark
+Elapsed No Call: 0
+Elapsed Call: 42084
+ParallelCallBenchmark                   42094 ms       475.22 pts    47522870.38 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[7] IfElseBenchmark
+IfElseBenchmark                         38032 ms       525.87 pts    52587294.91 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[8] ParallelIfElseBenchmark
+ParallelIfElseBenchmark                 41721 ms       479.38 pts    47938638.54 Iter/s
+Iterrations:      2000000000, Ratio:        0.010000
+[9] StringManipulation
+StringManipulation                     215366 ms       230.00 pts       23216.29 Iter/s
+Iterrations:         5000000, Ratio:       10.000000
+[10] ParallelStringManipulation
+ParallelStringManipulation             209180 ms       230.00 pts       23903.43 Iter/s
+Iterrations:         5000000, Ratio:       10.000000
+[11] MemoryBenchmark
+int 4k: 1215.39 MB/s
+int 512k: 907.53 MB/s
+int 8M: 221.19 MB/s
+int 32M: 218.20 MB/s
+long 4k: 2281.69 MB/s
+long 512k: 1493.69 MB/s
+long 8M: 248.98 MB/s
+long 32M: 249.41 MB/s
+Average: 854.51 MB/s
