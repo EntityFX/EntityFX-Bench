@@ -53,7 +53,7 @@ java -jar EntityFXBench.jar
 
 Web:
 
-[http://laseroid.azurewebsites.net/js-bench/]
+http://laseroid.azurewebsites.net/js-bench/
 
 NodeJS: TODO
 
