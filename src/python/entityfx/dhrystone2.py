@@ -1,6 +1,4 @@
-
-import math as m
-import time
+import time, math
 from entityfx.writer import Writer
 
 LOOPS = 2000000
@@ -269,7 +267,7 @@ class Dhrystone2:
                 char_index_ord += 1
 
             int_loc2 = (int_loc2 * int_loc1)
-            int_loc1 = (m.floor(int_loc2 / int_loc3))
+            int_loc1 = (math.floor(int_loc2 / int_loc3))
             int_loc2 = ((7 * ((int_loc2 - int_loc3))) - int_loc1)
             int_loc1 = self.__proc2(int_loc1)
             i += 1
@@ -279,7 +277,7 @@ class Dhrystone2:
         if (benchtime == .0): 
             loops_per_benchtime = .0
         else: 
-            loops_per_benchtime = ((m.floor((loops) / benchtime)))
+            loops_per_benchtime = ((math.floor((loops) / benchtime)))
         dhrystones = (1000) * loops_per_benchtime
 
         Dhrystone2.CHECK = {

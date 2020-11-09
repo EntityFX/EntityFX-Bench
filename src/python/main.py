@@ -9,12 +9,14 @@ from entityfx.random_memory_benchmark import RandomMemoryBenchmark
 from entityfx.dhrystone_benchmark import DhrystoneBenchmark
 from entityfx.whetstone_benchmark import WhetstoneBenchmark
 
-import platform
-platform.architecture()
+from entityfx.linpack import Linpack
 
 from entityfx.writer import Writer
 
 import time
+
+# l = Linpack(True)
+# l.bench(2000)
 
 
 writer = Writer("Output.log")
