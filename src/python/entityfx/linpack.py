@@ -28,7 +28,7 @@ class Linpack:
         residn_result = .0
         time_result = .0
         eps_result = .0
-        a = [0] * array_size
+        a = [None] * array_size
         ai = 0
         while ai < len(a): 
             a[ai] = [0] * array_size
