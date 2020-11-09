@@ -98,3 +98,8 @@ Iterrations:               1, Ratio:        4.000000
 WhetstoneBenchmark                110908.80 ms        12.48 pts          12.48 MWIPS
 Iterrations:               1, Ratio:        1.000000
 [11] LinpackBenchmark
+LinpackBenchmark                    3357.87 ms        10.88 pts           1.08 MFLOPS
+Iterrations:               1, Ratio:       10.000000
+[12] HashBenchmark
+HashBenchmark                       3358.34 ms       595.76 pts       59558.08 Iter/s
+Iterrations:          200000, Ratio:       10.000000

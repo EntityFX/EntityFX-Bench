@@ -38,6 +38,7 @@ class Writer(object):
             self.write_color("\033[1;30m", format, *args)
         if (self.use_console): 
             print('')
+            self.__output += '\n'
             if (self.__use_file): 
                 self.__stream.write('\n')
        
@@ -47,6 +48,7 @@ class Writer(object):
        
     def write_color(self, color : str, format : str, *args : object) -> None:
         formatted = format.format(*args)
+        self.__output += formatted
         if (self.use_console): 
             to_print = f'{color}{formatted}\033[0m' if self.__is_color else formatted
             print(to_print, end='', flush=True)

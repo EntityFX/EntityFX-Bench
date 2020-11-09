@@ -5,10 +5,17 @@ from entityfx.call_benchmark import CallBenchmark
 from entityfx.if_else_benchmark import IfElseBenchmark
 from entityfx.string_manipulation import StringManipulation
 from entityfx.memory_benchmark import MemoryBenchmark
+from entityfx.random_memory_benchmark import RandomMemoryBenchmark
+from entityfx.dhrystone_benchmark import DhrystoneBenchmark
+from entityfx.whetstone_benchmark import WhetstoneBenchmark
+
+import platform
+platform.architecture()
 
 from entityfx.writer import Writer
 
 import time
+
 
 writer = Writer("Output.log")
 
@@ -25,16 +32,17 @@ def write_result(bench_result) -> None:
 
 
 bench_marks = [ 
+    MemoryBenchmark(writer), 
+    RandomMemoryBenchmark(writer), 
     ArithemticsBenchmark(writer), 
     MathBenchmark(writer), 
     CallBenchmark(writer), 
     IfElseBenchmark(writer), 
     StringManipulation(writer),  
-    MemoryBenchmark(writer), 
-    # RandomMemoryBenchmark(), 
+
     # Scimark2Benchmark(), 
-    # DhrystoneBenchmark(), 
-    # WhetstoneBenchmark(), 
+    DhrystoneBenchmark(writer),
+    WhetstoneBenchmark(writer), 
     # LinpackBenchmark(), 
     ]
 

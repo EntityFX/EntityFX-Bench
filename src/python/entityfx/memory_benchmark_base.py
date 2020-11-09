@@ -51,7 +51,7 @@ class MemoryBenchmarkBase(BenchmarkBase):
         block_size = 16
         i = [0] * block_size
 
-        array0_ = list(range(0, size))
+        array0_ = list(map(lambda x: random.randint(-2147483647, 2147483647), range(0, size)))
         end = len(array0_) - 1
         k0 = math.floor(size / 1024)
         k1 = 1 if k0 == 0 else k0
@@ -111,7 +111,7 @@ class MemoryBenchmarkBase(BenchmarkBase):
         block_size = 8
         l_ = [0] * block_size
 
-        array0_ = list(range(0, size))
+        array0_ = list(map(lambda x: random.randint(-2147483647, 2147483647), range(0, size)))
         end = len(array0_) - 1
         k0 = math.floor(size / 1024)
         k1 = 1 if k0 == 0 else k0
