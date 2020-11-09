@@ -16,7 +16,7 @@ from entityfx.writer import Writer
 import time
 
 l = Linpack(True)
-l.bench(1500)
+l.bench(1000)
 
 
 writer = Writer("Output.log")
