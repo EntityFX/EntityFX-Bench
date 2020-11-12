@@ -8,8 +8,8 @@ class WhetstoneBenchmark(BenchmarkBase):
     
     def __init__(self, writer: Writer, print_to_console : bool=True) -> None:
         super().__init__(writer, print_to_console)
-        self.__whetstone = Whetstone()
-        Ratio = 1
+        self.__whetstone = Whetstone(True)
+        self.ratio = 1
     
     def benchImplementation(self):
         return self.__whetstone.bench()

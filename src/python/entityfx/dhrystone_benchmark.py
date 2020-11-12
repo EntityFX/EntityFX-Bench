@@ -9,7 +9,7 @@ class DhrystoneBenchmark(BenchmarkBase):
     def __init__(self, writer: Writer, print_to_console : bool=True) -> None:
         super().__init__(writer, print_to_console)
         self.__dhrystone = Dhrystone2()
-        Ratio = (4)
+        self.ratio = 4
     
     def benchImplementation(self):
         return self.__dhrystone.bench()

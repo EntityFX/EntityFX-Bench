@@ -5,7 +5,8 @@ import time
 
 class Whetstone:
     
-    def __init__(self) -> None:
+    def __init__(self, print_to_console : bool=True) -> None:
+        self.__output = Writer()
         self.__loop_time = [0] * 9
         self.__loop_mops = [0] * 9
         self.__loop_mflops = [0] * 9
@@ -14,7 +15,7 @@ class Whetstone:
         self.__headings = [""] * 9
         self.__check = 0
         self.__results = [0] * 9
-        self.__output = Writer()
+        self.__output.use_console = print_to_console
     
     def bench(self, getinput : bool=True):
         count = 10

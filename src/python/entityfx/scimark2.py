@@ -642,7 +642,7 @@ class Scimark2:
 
     def __init__(self, print_to_console: bool = True) -> None:
         self.__output = Writer(None)
-        self.__output.UseConsole = (print_to_console)
+        self.__output.use_console = print_to_console
 
     def bench(self, min_time: float = Constants.RESOLUTION_DEFAULT, is_large: bool = False):
         fft_size = Constants.FFT_SIZE

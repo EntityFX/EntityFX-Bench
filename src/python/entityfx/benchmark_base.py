@@ -3,14 +3,17 @@ import time
 import math
 from entityfx.benchmark import Benchamrk
 from entityfx.writer import Writer
-
+import threading
+from concurrent.futures.thread import ThreadPoolExecutor
+from concurrent.futures import ALL_COMPLETED, thread, wait
+from multiprocessing import Pool
+import multiprocessing
 
 class BenchmarkBase(Benchamrk):
 
     def __init__(self, writer: Writer = None, print_to_console: bool = True) -> None:
         self._iterrations = 0
         self._print_to_console = print_to_console
-
         if Writer is None:
             self._output = Writer()
         else:
@@ -48,7 +51,7 @@ class BenchmarkBase(Benchamrk):
         return result
 
     def _doOutput(self, result: dict) -> None:
-        if (result['Output'] is None):
+        if (result['Output'] is None or result['Output'] == ""):
             return
         f = open(f"{self.name}.log", "a")
         f.write(result['Output'])
@@ -72,10 +75,39 @@ class BenchmarkBase(Benchamrk):
         self.bench()
         self._iterrations = tmp
 
-    # def _benchInParallel(self, build_func : Func, bench_func :  ERROR(type=Func), set_bench_result_func : Action) -> list:
-    #     pass
+    @staticmethod
+    def _parallelContextFunc(x):
+        ctx = BenchmarkBase._parallelContext[x["idx"]]
+        s = ctx["self"]
+        start = time.time()
+        r = ctx["benchFunc"](x["buildData"])
+        result = s._buildResult(start)
+        ctx["setBenchResultFunc"](r, result)
+        return result
+
+
+    def bench_in_parallel(self, buildFunc, benchFunc, setBenchResultFunc):
+        cpu_count = multiprocessing.cpu_count()
+        BenchmarkBase._parallelContext = [{
+            "benchFunc" : benchFunc,
+            "setBenchResultFunc" : setBenchResultFunc,
+            "self" : self
+        }] * cpu_count
+
+        benchs = list(map(lambda idx: {
+            "idx" : idx,
+            "buildData" : buildFunc()
+        }, range(0, cpu_count)))
+ 
+        p = Pool(cpu_count)
+        results = p.map(BenchmarkBase._parallelContextFunc, benchs)
+        p.close()
+
+        return results
 
     def populateResult(self, bench_result: dict, dhrystone_result) -> dict:
+        if type(dhrystone_result) is list:
+            self._buildParallelResult(bench_result, dhrystone_result)
         return bench_result
 
     def _buildResult(self, start: float) -> dict:
@@ -89,8 +121,14 @@ class BenchmarkBase(Benchamrk):
             "Units": "Iter/s",
             "Iterrations": self._iterrations,
             "Ratio": self.ratio,
+            "IsParallel": self.is_parallel,
             "Output": None
         }
 
-    def _buildParallelResult(self, start, results: list):
-        pass
+    def _buildParallelResult(self, rootResult, results: list):
+        rootResult["Points"] = sum(map(lambda x : x["Points"], results))
+        rootResult["Result"] = sum(map(lambda x : x["Result"], results))
+        rootResult["IsParallel"] = self.is_parallel
+        rootResult["Iterrations"] = self._iterrations
+        rootResult["Ratio"] = self.ratio
+        return rootResult

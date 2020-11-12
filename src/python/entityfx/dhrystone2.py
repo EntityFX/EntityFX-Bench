@@ -57,7 +57,7 @@ class Dhrystone2:
         self.__array2glob = [0] * 50
         self.__ptr_glb_next = None
         self.__ptr_glb = None
-        self.__output.UseConsole = (print_to_console)
+        self.__output.use_console = print_to_console
     
     @staticmethod
     def __isOptimized() -> bool:
