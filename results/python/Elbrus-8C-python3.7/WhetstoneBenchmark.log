@@ -1,0 +1,56 @@
+Double Precision Python Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       1.01 Seconds          1   Passes (x 100)
+       5.05 Seconds          5   Passes (x 100)
+
+Use 99  passes (x 100)
+
+          Double Precision Python Whetstone Benchmark
+
+                  ??
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 doubleing point     -1.12398255667391900        1.622               1.172
+N2 doubleing point     -1.12187079889284425        1.636               8.131
+N3 if then else         1.00000000000000000                   1.534    6.678
+N4 fixed point         12.00000000000000000                   3.111   10.025
+N5 sin,cos etc.         0.49902937281518261                   1.728    4.766
+N6 doubleing point      1.00000000000000000        1.338              39.921
+N7 assignments          3.00000000000000000                   0.755   24.223
+N8 exp,sqrt etc.        0.75100163018458665                   0.811    4.543
+MWIPS                                               9.954             99.459
+
+Double Precision Python Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       1.02 Seconds          1   Passes (x 100)
+       5.07 Seconds          5   Passes (x 100)
+
+Use 98  passes (x 100)
+
+          Double Precision Python Whetstone Benchmark
+
+                  ??
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 doubleing point     -1.12398255667391900        1.628               1.156
+N2 doubleing point     -1.12187079889284425        1.549               8.504
+N3 if then else         1.00000000000000000                   1.574    6.443
+N4 fixed point         12.00000000000000000                   3.138    9.837
+N5 sin,cos etc.         0.49902937281518261                   1.729    4.717
+N6 doubleing point      1.00000000000000000        1.336              39.572
+N7 assignments          3.00000000000000000                   0.755   23.992
+N8 exp,sqrt etc.        0.75100163018458665                   0.813    4.483
+MWIPS                                               9.929             98.703
+
