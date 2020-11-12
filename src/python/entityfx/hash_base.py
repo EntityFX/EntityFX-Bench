@@ -5,8 +5,8 @@ import hashlib
 
 class HashBase(BenchmarkBase):
     
-    def __init__(self, writer: Writer, print_to_console : bool=True) -> None:
-        super().__init__(writer, print_to_console)
+    def __init__(self, writer: Writer, print_to_console : bool=True, is_enabled : bool=True) -> None:
+        super().__init__(writer, print_to_console, is_enabled)
         self._r = 0
         self._strs = ["the quick brown fox jumps over the lazy dog", "Some red wine", "Candels & Ropes"]
         self._array_of_bytes = list(map(lambda x: x.encode(), self._strs))

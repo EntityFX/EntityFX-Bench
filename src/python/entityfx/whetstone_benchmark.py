@@ -6,8 +6,8 @@ from entityfx.writer import Writer
 
 class WhetstoneBenchmark(BenchmarkBase):
     
-    def __init__(self, writer: Writer, print_to_console : bool=True) -> None:
-        super().__init__(writer, print_to_console)
+    def __init__(self, writer: Writer, print_to_console : bool=True, is_enabled : bool=True) -> None:
+        super().__init__(writer, print_to_console, is_enabled)
         self.__whetstone = Whetstone(True)
         self.ratio = 1
     

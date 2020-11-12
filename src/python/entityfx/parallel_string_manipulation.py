@@ -3,8 +3,8 @@ from entityfx.writer import Writer
 
 class ParallelStringManipulation(StringManipulationBase):
 
-    def __init__(self, writer : Writer=None, print_to_console : bool=True) -> None:
-        super().__init__(writer, print_to_console)
+    def __init__(self, writer: Writer, print_to_console : bool=True, is_enabled : bool=True) -> None:
+        super().__init__(writer, print_to_console, is_enabled)
         self.is_parallel = True
     
     def benchImplementation(self) -> list:

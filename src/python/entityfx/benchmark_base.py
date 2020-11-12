@@ -11,7 +11,7 @@ import multiprocessing
 
 class BenchmarkBase(Benchamrk):
 
-    def __init__(self, writer: Writer = None, print_to_console: bool = True) -> None:
+    def __init__(self, writer: Writer = None, print_to_console: bool = True, is_enabled : bool = True) -> None:
         self._iterrations = 0
         self._print_to_console = print_to_console
         if Writer is None:
@@ -21,6 +21,7 @@ class BenchmarkBase(Benchamrk):
 
         self.ratio = 1.0
         self.__isparallel = False
+        self.is_enabled = is_enabled
 
     ITERRATIONS_RATIO = 1.0
 
@@ -42,6 +43,8 @@ class BenchmarkBase(Benchamrk):
         return self.__class__.__name__
 
     def bench(self):
+        if (not self.is_enabled) :
+            return self._buildResult(None)
         self._beforeBench()
         start = time.time()
         res = self.benchImplementation()
@@ -67,6 +70,8 @@ class BenchmarkBase(Benchamrk):
         pass
 
     def warmup(self, aspect: float = .05) -> None:
+        if (not self.is_enabled) :
+            return
         self._iterrations = (math.floor(
             round((self._iterrations) * BenchmarkBase.ITERRATIONS_RATIO, 0)))
         tmp = self._iterrations
@@ -113,13 +118,13 @@ class BenchmarkBase(Benchamrk):
         return bench_result
 
     def _buildResult(self, start: float) -> dict:
-        elapsed_seconds = time.time() - start
+        elapsed_seconds = 0 if start == None else time.time() - start
         elapsed = elapsed_seconds * 1000.0
         return {
             "Name": self.name,
             "Elapsed": elapsed,
-            "Points": self._iterrations / elapsed * self.ratio,
-            "Result": self._iterrations / elapsed_seconds,
+            "Points": 0 if start == None else self._iterrations / elapsed * self.ratio,
+            "Result": 0 if start == None else self._iterrations / elapsed_seconds,
             "Units": "Iter/s",
             "Iterrations": self._iterrations,
             "Ratio": self.ratio,
@@ -128,8 +133,8 @@ class BenchmarkBase(Benchamrk):
         }
 
     def _buildParallelResult(self, rootResult, results: list):
-        rootResult["Points"] = sum(map(lambda x : x["Points"], results))
-        rootResult["Result"] = sum(map(lambda x : x["Result"], results))
+        rootResult["Points"] = 0 if not self.is_enabled else sum(map(lambda x : x["Points"], results))
+        rootResult["Result"] = 0 if not self.is_enabled else sum(map(lambda x : x["Result"], results))
         rootResult["IsParallel"] = self.is_parallel
         rootResult["Iterrations"] = self._iterrations
         rootResult["Ratio"] = self.ratio

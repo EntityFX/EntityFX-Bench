@@ -28,12 +28,19 @@ from entityfx.writer import Writer
 import time
 import platform
 import multiprocessing
+import sys
 
 
 writer = Writer("Output.log")
 
 benchmark_base.BenchmarkBase.ITERRATIONS_RATIO = 0.01
 
+args = sys.argv[1:]
+
+if (len(args) > 0):
+    benchmark_base.BenchmarkBase.ITERRATIONS_RATIO *= float(args[0])
+
+enable_parallel = (((len(args) > 1 and int(args[1]) == 1)) or len(args) < 2)
 
 def write_result(bench_result) -> None:
     writer.write_title("{0:<30}", bench_result["Name"])
@@ -46,43 +53,42 @@ def write_result(bench_result) -> None:
                     bench_result["Iterrations"], bench_result["Ratio"])
     writer.write_line()
 
-
 bench_marks = [
     ArithemticsBenchmark(writer),
-    ParallelArithemticsBenchmark(writer),
+    ParallelArithemticsBenchmark(writer, True, enable_parallel),
 
     MathBenchmark(writer),
-    ParallelMathBenchmark(writer),
+    ParallelMathBenchmark(writer, True, enable_parallel),
 
     CallBenchmark(writer),
-    ParallelCallBenchmark(writer),
+    ParallelCallBenchmark(writer, True, enable_parallel),
 
     IfElseBenchmark(writer),
-    ParallelIfElseBenchmark(writer),
+    ParallelIfElseBenchmark(writer, True, enable_parallel),
 
     StringManipulation(writer),
-    ParallelStringManipulation(writer),
+    ParallelStringManipulation(writer, True, enable_parallel),
 
     MemoryBenchmark(writer),
-    ParallelMemoryBenchmark(writer),
+    ParallelMemoryBenchmark(writer, True, enable_parallel),
 
     RandomMemoryBenchmark(writer),
-    ParallelRandomMemoryBenchmark(writer),
+    ParallelRandomMemoryBenchmark(writer, True, enable_parallel),
 
     Scimark2Benchmark(writer),
-    ParallelScimark2Benchmark(writer),
+    ParallelScimark2Benchmark(writer, True, enable_parallel),
 
     DhrystoneBenchmark(writer),
-    ParallelDhrystoneBenchmark(writer),
+    ParallelDhrystoneBenchmark(writer, True, enable_parallel),
 
     WhetstoneBenchmark(writer),
-    ParallelWhetstoneBenchmark(writer),
+    ParallelWhetstoneBenchmark(writer, True, enable_parallel),
 
     LinpackBenchmark(writer),
-    ParallelLinpackBenchmark(writer),
+    ParallelLinpackBenchmark(writer, True, enable_parallel),
 
     HashBenchmark(writer),
-    ParallelHashBenchmark(writer)
+    ParallelHashBenchmark(writer, True, enable_parallel)
 ]
 
 total = 0
