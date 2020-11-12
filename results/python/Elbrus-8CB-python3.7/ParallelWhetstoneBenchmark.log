@@ -1,0 +1,72 @@
+Double Precision Python Whetstone Benchmark
+With run time input data
+Calibrate       0.85 Seconds          1   Passes (x 100)       4.29 Seconds          5   Passes (x 100)
+Use 116  passes (x 100)
+          Double Precision Python Whetstone Benchmark
+                  ??
+                  
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 doubleing point     -1.12398255667391900        1.864               1.195N2 doubleing point     -1.12187079889284425        1.860               8.380N3 if then else         1.00000000000000000                   1.784    6.729N4 fixed point         12.00000000000000000                   3.545   10.308N5 sin,cos etc.         0.49902937281518261                   2.081    4.637N6 doubleing point      1.00000000000000000        1.570              39.851N7 assignments          3.00000000000000000                   0.884   24.251N8 exp,sqrt etc.        0.75100163018458665                   0.939    4.598MWIPS                                              11.606             99.947
+Double Precision Python Whetstone Benchmark
+With run time input data
+Calibrate       0.85 Seconds          1   Passes (x 100)       4.25 Seconds          5   Passes (x 100)
+Use 117  passes (x 100)
+          Double Precision Python Whetstone Benchmark
+                  ??
+                  
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 doubleing point     -1.12398255667391900        1.903               1.180N2 doubleing point     -1.12187079889284425        1.917               8.204N3 if then else         1.00000000000000000                   1.867    6.485N4 fixed point         12.00000000000000000                   3.636   10.137N5 sin,cos etc.         0.49902937281518261                   2.146    4.536N6 doubleing point      1.00000000000000000        1.549              40.746N7 assignments          3.00000000000000000                   0.871   24.836N8 exp,sqrt etc.        0.75100163018458665                   0.926    4.699MWIPS                                              11.605            100.822
+Double Precision Python Whetstone Benchmark
+With run time input data
+Calibrate       0.85 Seconds          1   Passes (x 100)       4.25 Seconds          5   Passes (x 100)
+Use 117  passes (x 100)
+          Double Precision Python Whetstone Benchmark
+                  ??
+                  
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 doubleing point     -1.12398255667391900        1.908               1.178N2 doubleing point     -1.12187079889284425        1.918               8.200N3 if then else         1.00000000000000000                   1.870    6.477N4 fixed point         12.00000000000000000                   3.632   10.146N5 sin,cos etc.         0.49902937281518261                   2.148    4.532N6 doubleing point      1.00000000000000000        1.590              39.682N7 assignments          3.00000000000000000                   0.880   24.563N8 exp,sqrt etc.        0.75100163018458665                   0.946    4.603MWIPS                                              11.773             99.381
+Double Precision Python Whetstone Benchmark
+With run time input data
+Calibrate       0.87 Seconds          1   Passes (x 100)       4.29 Seconds          5   Passes (x 100)
+Use 116  passes (x 100)
+          Double Precision Python Whetstone Benchmark
+                  ??
+                  
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 doubleing point     -1.12398255667391900        1.894               1.176N2 doubleing point     -1.12187079889284425        1.901               8.201N3 if then else         1.00000000000000000                   1.854    6.476N4 fixed point         12.00000000000000000                   3.604   10.139N5 sin,cos etc.         0.49902937281518261                   2.130    4.532N6 doubleing point      1.00000000000000000        1.587              39.423N7 assignments          3.00000000000000000                   0.873   24.561N8 exp,sqrt etc.        0.75100163018458665                   0.941    4.584MWIPS                                              11.706             99.091
+Double Precision Python Whetstone Benchmark
+With run time input data
+Calibrate       0.85 Seconds          1   Passes (x 100)       4.25 Seconds          5   Passes (x 100)
+Use 117  passes (x 100)
+          Double Precision Python Whetstone Benchmark
+                  ??
+                  
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 doubleing point     -1.12398255667391900        1.908               1.178N2 doubleing point     -1.12187079889284425        1.918               8.200N3 if then else         1.00000000000000000                   1.862    6.502N4 fixed point         12.00000000000000000                   3.634   10.143N5 sin,cos etc.         0.49902937281518261                   2.148    4.532N6 doubleing point      1.00000000000000000        1.589              39.707N7 assignments          3.00000000000000000                   0.878   24.626N8 exp,sqrt etc.        0.75100163018458665                   0.948    4.591MWIPS                                              11.761             99.479
+Double Precision Python Whetstone Benchmark
+With run time input data
+Calibrate       0.85 Seconds          1   Passes (x 100)       4.25 Seconds          5   Passes (x 100)
+Use 117  passes (x 100)
+          Double Precision Python Whetstone Benchmark
+                  ??
+                  
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 doubleing point     -1.12398255667391900        1.908               1.178N2 doubleing point     -1.12187079889284425        1.918               8.198N3 if then else         1.00000000000000000                   1.870    6.477N4 fixed point         12.00000000000000000                   3.633   10.144N5 sin,cos etc.         0.49902937281518261                   2.148    4.532N6 doubleing point      1.00000000000000000        1.599              39.476N7 assignments          3.00000000000000000                   0.878   24.628N8 exp,sqrt etc.        0.75100163018458665                   0.937    4.646MWIPS                                              11.785             99.278
+Double Precision Python Whetstone Benchmark
+With run time input data
+Calibrate       0.85 Seconds          1   Passes (x 100)       4.25 Seconds          5   Passes (x 100)
+Use 117  passes (x 100)
+          Double Precision Python Whetstone Benchmark
+                  ??
+                  
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 doubleing point     -1.12398255667391900        1.907               1.178N2 doubleing point     -1.12187079889284425        1.918               8.198N3 if then else         1.00000000000000000                   1.870    6.477N4 fixed point         12.00000000000000000                   3.632   10.147N5 sin,cos etc.         0.49902937281518261                   2.148    4.533N6 doubleing point      1.00000000000000000        1.590              39.690N7 assignments          3.00000000000000000                   0.878   24.615N8 exp,sqrt etc.        0.75100163018458665                   0.944    4.610MWIPS                                              11.765             99.448
+Double Precision Python Whetstone Benchmark
+With run time input data
+Calibrate       0.85 Seconds          1   Passes (x 100)       4.26 Seconds          5   Passes (x 100)
+Use 117  passes (x 100)
+          Double Precision Python Whetstone Benchmark
+                  ??
+                  
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 doubleing point     -1.12398255667391900        1.908               1.178N2 doubleing point     -1.12187079889284425        1.912               8.226N3 if then else         1.00000000000000000                   1.870    6.476N4 fixed point         12.00000000000000000                   3.633   10.144N5 sin,cos etc.         0.49902937281518261                   2.147    4.534N6 doubleing point      1.00000000000000000        1.598              39.501N7 assignments          3.00000000000000000                   0.881   24.531N8 exp,sqrt etc.        0.75100163018458665                   0.942    4.620MWIPS                                              11.793             99.210
