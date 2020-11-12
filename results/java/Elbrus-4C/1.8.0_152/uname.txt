@@ -1,0 +1,1 @@
+Linux shuriken 5.4.0-1.9-nn-e2s #1 SMP Thu Oct 29 08:43:42 GMT 2020 e2k E2S MONOCUB GNU/Linux
