@@ -87,6 +87,7 @@ class BenchmarkBase(Benchamrk):
 
 
     def bench_in_parallel(self, buildFunc, benchFunc, setBenchResultFunc):
+        self._use_console(False)
         cpu_count = multiprocessing.cpu_count()
         BenchmarkBase._parallelContext = [{
             "benchFunc" : benchFunc,
@@ -102,6 +103,7 @@ class BenchmarkBase(Benchamrk):
         p = Pool(cpu_count)
         results = p.map(BenchmarkBase._parallelContextFunc, benchs)
         p.close()
+        self._use_console(True)
 
         return results
 

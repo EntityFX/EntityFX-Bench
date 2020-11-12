@@ -15,8 +15,8 @@ class WhetstoneBenchmark(BenchmarkBase):
         return self.__whetstone.bench()
     
     def populateResult(self, bench_result, dhrystone_result):
-        bench_result["Points"] = dhrystone_result["MWIPS"]
-        bench_result["Result"] = dhrystone_result["MWIPS"] * self.ratio
+        bench_result["Points"] = dhrystone_result["MWIPS"] * self.ratio
+        bench_result["Result"] = dhrystone_result["MWIPS"]
         bench_result["Units"] = "MWIPS"
         bench_result["Output"] = dhrystone_result["Output"]
         return bench_result

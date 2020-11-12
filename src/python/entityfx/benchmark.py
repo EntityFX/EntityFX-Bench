@@ -9,7 +9,7 @@ class Benchamrk:
     def is_parallel(self) -> bool:
         return None
     
-    def bench(self) -> 'BenchResult':
+    def bench(self):
         return None
     
     def warmup(self, aspect : float=.05) -> None:

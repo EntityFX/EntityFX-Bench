@@ -13,8 +13,8 @@ class LinpackBenchmark(BenchmarkBase):
         return self.__linpack.bench(1000)
     
     def populateResult(self, bench_result, linpack_result):
-        bench_result["Points"] = linpack_result["MFLOPS"]
-        bench_result["Result"] = linpack_result["MFLOPS"] * self.ratio
+        bench_result["Points"] = linpack_result["MFLOPS"] * self.ratio
+        bench_result["Result"] = linpack_result["MFLOPS"]
         bench_result["Units"] = "MFLOPS"
         bench_result["Output"] = linpack_result["Output"]
         return bench_result

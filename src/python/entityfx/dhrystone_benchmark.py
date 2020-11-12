@@ -15,8 +15,8 @@ class DhrystoneBenchmark(BenchmarkBase):
         return self.__dhrystone.bench()
     
     def populateResult(self, bench_result, dhrystone_result):
-        bench_result["Points"] = dhrystone_result["VaxMips"]
-        bench_result["Result"] = dhrystone_result["VaxMips"] * self.ratio
+        bench_result["Points"] = dhrystone_result["VaxMips"] * self.ratio
+        bench_result["Result"] = dhrystone_result["VaxMips"]
         bench_result["Units"] = "DMIPS"
         bench_result["Output"] = dhrystone_result["Output"]
         return bench_result
