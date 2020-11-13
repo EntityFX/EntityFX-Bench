@@ -6,16 +6,16 @@ Calibrate
           0 Seconds          1   Passes (x 100)
           0 Seconds          5   Passes (x 100)
           2 Seconds         25   Passes (x 100)
-Use 1047  passes (x 100)
+Use 1104  passes (x 100)
           Double Precision PHP Whetstone Benchmark
 
 Loop content                  Result              MFLOPS      MOPS   Seconds
-N1 floating point      -1.12398255667391900       24.086               0.835
-N2 floating point      -1.12398255667391900       21.984               6.401
-N3 if then else         1.00000000000000000                  30.312    3.575
-N4 fixed point         12.00000000000000000                  52.229    6.315
-N5 sin,cos etc.         0.49902937281518167                  18.891    4.611
-N6 floating point       0.99999987890802811       13.930              40.543
-N7 assignments          3.00000000000000000                   5.062   38.224
-N8 exp,sqrt etc.        0.75100163018458665                  10.475    3.718
-MWIPS                                            100.460             104.221
+N1 floating point      -1.12398255667391900       27.753               0.764
+N2 floating point      -1.12398255667391900       22.937               6.469
+N3 if then else         1.00000000000000000                  31.549    3.622
+N4 fixed point         12.00000000000000000                  55.719    6.241
+N5 sin,cos etc.         0.49902937281518167                  20.823    4.411
+N6 floating point       0.99999987890802811       15.879              37.503
+N7 assignments          3.00000000000000000                   5.229   39.018
+N8 exp,sqrt etc.        0.75100163018458665                  11.213    3.663
+MWIPS                                            108.565             101.690

@@ -5,5 +5,5 @@ normalised residual is 20.25
 Machine result.Eepsilon is 2.2204460492503E-16
 x[0]-1 is 4.4408920985006E-13
 x[n-1]-1 is -3.9974690224653E-12
-Time is 255.63
-MFLOPS: 20.895
+Time is 245.46
+MFLOPS: 21.76
