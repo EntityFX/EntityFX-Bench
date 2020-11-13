@@ -85,6 +85,7 @@ $writer->WriteHeader("Bench");
 $total = 0;
 $totalPoints = 0;
 $points = [];
+$unitResults = [];
 $i = 1;
 $result = [];
 $names = [];
@@ -95,6 +96,7 @@ foreach ($benchmarks as $key => $bench) {
     $total += $r["Elapsed"];
     $totalPoints += $r["Points"];
     $points[] = sprintf("%.2f", $r["Points"]);
+    $unitResults[] = sprintf("%.2f", $r["Result"]);
     $names[] = $bench->Name;
     writeResult($writer, $r);
 
@@ -117,6 +119,7 @@ $headerCommon = "Operating System,Runtime,Threads Count,Memory Used,";
 $headerTotals = ",Total Points,Total Time (ms)";
 
 $pointsString = implode(",", $points);
+$unitsString = implode(",", $unitResults);
 $headerNames = implode(",", $names);
 
 $writer->WriteNewLine();
@@ -127,4 +130,15 @@ $writer->WriteTitle($headerTotals);
 $writer->WriteNewLine();
 $writer->WriteTitle("$os,$version,$cores,$mem,");
 $writer->WriteValue($pointsString);
+$writer->WriteLine(",%.2f,%d", $totalPoints,$total);
+$writer->WriteNewLine();
+
+$writer->WriteNewLine();
+$writer->WriteHeader("Single-thread Units results");
+$writer->WriteTitle($headerCommon);
+$writer->WriteTitle($headerNames);
+$writer->WriteTitle($headerTotals);
+$writer->WriteNewLine();
+$writer->WriteTitle("$os,$version,$cores,$mem,");
+$writer->WriteValue($unitsString);
 $writer->WriteLine(",%.2f,%d", $totalPoints,$total);
