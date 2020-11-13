@@ -1,0 +1,32 @@
+Cpu,Elbrus 1C+,Elbrus 8C,Elbrus 8CB,Allwinner A64,Qualcomm 625,Amd A6 3650,Inet Core i7 2600
+Frequency,985,1300,1550,1152,2000,2600,3400
+Operating System,Linux-4.19.0-1.11-rt-e1cp-e2k-E1C+-with-glibc2.2,Linux-4.19.0-1.4-e8c-e2k-E8C-with-glibc2.2,Linux-5.4.0-1.4-e8c2-e2k-E8C2-with-glibc2.2,Linux-4.14.44-sunxi64-aarch64-with-glibc2.27,Linux-3.18.31-perf-g040a88f-aarch64-with-libc,Linux-5.4.0-52-generic-x86_64-with-glibc2.29,Windows-10-10.0.17134-SP0
+Runtime,CPython 3.7.4,CPython 3.7.4,CPython 3.7.4,CPython 3.8.0,CPython 3.9.0,CPython 3.8.5,CPython 3.7.3
+Threads Count,1,8,8,4,8,4,8
+Memory Used,0,0,0,0,0,0,0
+ArithemticsBenchmark (Iter/s),32240.63,43002.15,52319.08,68905.01,75419.54,328537.67,328711.26
+ParallelArithemticsBenchmark (Iter/s),35721.74,378181.42,467384.82,0.00,0.00,1291706.26,0.00
+MathBenchmark (Iter/s),45758.99,59518.46,72511.44,84135.84,84403.15,453823.87,474891.67
+ParallelMathBenchmark (Iter/s),49417.03,512584.21,626810.87,0.00,0.00,1747787.56,0.00
+CallBenchmark (Iter/s),133206.88,179525.21,212258.59,275458.16,242565.98,1417542.31,1780424.53
+ParallelCallBenchmark (Iter/s),134548.67,1432586.09,1695905.86,0.00,0.00,5263408.78,0.00
+IfElseBenchmark (Iter/s),280713.83,371679.38,433575.33,493000.45,495522.14,2230048.92,3434936.56
+ParallelIfElseBenchmark (Iter/s),280162.51,2759334.93,3473723.37,0.00,0.00,9048142.37,0.00
+StringManipulation (Iter/s),47342.13,64028.86,72946.17,101628.11,105700.40,460253.00,562132.14
+ParallelStringManipulation (Iter/s),48367.32,508719.93,584786.01,0.00,0.00,1712199.61,0.00
+MemoryBenchmark (MB/s),2.83,3.86,4.45,6.47,5.79,36.71,44.17
+ParallelMemoryBenchmark (MB/s),2.82,30.01,34.63,0.00,0.00,128.13,0.00
+RandomMemoryBenchmark (MB/s),5.01,7.41,8.67,8.06,7.98,35.40,69.97
+ParallelRandomMemoryBenchmark (MB/s),4.98,52.36,59.56,0.00,0.00,121.51,0.00
+Scimark2Benchmark (CompositeScore),0.73,0.98,1.15,1.49,1.36,7.31,8.59
+ParallelScimark2Benchmark (CompositeScore),0.73,7.83,9.17,0.00,0.00,25.54,0.00
+DhrystoneBenchmark (DMIPS),5.12,7.40,8.54,10.24,9.68,47.81,61.47
+ParallelDhrystoneBenchmark (DMIPS),5.12,54.64,68.30,0.00,0.00,171.88,0.00
+WhetstoneBenchmark (MWIPS),7.46,9.93,11.77,14.97,13.92,74.88,87.04
+ParallelWhetstoneBenchmark (MWIPS),7.50,78.96,93.79,0.00,0.00,246.47,0.00
+LinpackBenchmark (MFLOPS),0.64,0.86,1.00,1.15,1.12,5.99,8.50
+ParallelLinpackBenchmark (MFLOPS),0.64,6.82,7.79,0.00,0.00,20.92,0.00
+HashBenchmark (Iter/s),37500.77,52480.43,57130.46,80126.77,81406.36,285121.21,266827.66
+ParallelHashBenchmark (Iter/s),38908.63,422371.97,451388.10,0.00,0.00,896812.92,0.00
+Total Points,1888.09,11477.60,12865.43,1974.30,2022.02,37149.26,9277.00
+Total Time (ms),4850841.24,3714292.47,3237765.65,1248445.80,1307238.21,790019.99,319142.73
