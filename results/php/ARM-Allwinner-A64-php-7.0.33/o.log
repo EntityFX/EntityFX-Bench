@@ -1,0 +1,135 @@
+[1;36mWarmup[0m
+[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m
+[1;36mBench[0m
+[1;36m[1] ArithmeticsBenchmark[0m
+[1;37mArithmeticsBenchmark          [0m[1;32m     66618.79 ms[0m[1;32m        13.51 pts[0m[1;32m      450323.43 Iter/s[0m
+[1;32mIterrations:        30000000, Ratio:        0.030000[0m
+[1;36m[2] MathBenchmark[0m
+[1;37mMathBenchmark                 [0m[1;32m     90318.96 ms[0m[1;32m       110.72 pts[0m[1;32m      221437.45 Iter/s[0m
+[1;32mIterrations:        20000000, Ratio:        0.500000[0m
+[1;36m[3] CallBenchmark[0m
+[1;37mCallBenchmark                 [0m[1;32m    126965.22 ms[0m[1;32m        15.75 pts[0m[1;32m     1575234.52 Iter/s[0m
+[1;32mIterrations:       200000000, Ratio:        0.010000[0m
+[1;36m[4] IfElseBenchmark[0m
+[1;37mIfElseBenchmark               [0m[1;32m    128780.46 ms[0m[1;32m        15.53 pts[0m[1;32m     1553030.63 Iter/s[0m
+[1;32mIterrations:       200000000, Ratio:        0.010000[0m
+[1;36m[5] StringManipulation[0m
+[1;37mStringManipulation            [0m[1;32m      4506.65 ms[0m[1;32m      1109.47 pts[0m[1;32m      110947.27 Iter/s[0m
+[1;32mIterrations:          500000, Ratio:       10.000000[0m
+[1;36m[6] MemoryBenchmark[0m
+[1;30mint 4k: 37.01 MB/s[0m
+[1;30mint 512k: 36.71 MB/s[0m
+[1;30mint 8M: 36.69 MB/s[0m
+[1;30mint 32M: 36.68 MB/s[0m
+[1;30mlong 4k: 38.09 MB/s[0m
+[1;30mlong 512k: 38.00 MB/s[0m
+[1;30mlong 8M: 38.01 MB/s[0m
+[1;30mlong 32M: 37.99 MB/s[0m
+[1;30mAverage: 37.40 MB/s[0m
+[1;37mMemoryBenchmark               [0m[1;32m     91271.81 ms[0m[1;32m        37.40 pts[0m[1;32m          37.40 MB/s[0m
+[1;32mIterrations:           50000, Ratio:        1.000000[0m
+[1;36m[7] RandomMemoryBenchmark[0m
+[1;30mRandom int 4k: 24.40 MB/s[0m
+[1;30mRandom int 512k: 15.55 MB/s[0m
+[1;30mRandom int 8M: 15.12 MB/s[0m
+[1;30mRandom long 4k: 25.07 MB/s[0m
+[1;30mRandom long 512k: 16.06 MB/s[0m
+[1;30mRandom long 8M: 15.19 MB/s[0m
+[1;30mAverage: 18.56 MB/s[0m
+[1;37mRandomMemoryBenchmark         [0m[1;32m    131122.80 ms[0m[1;32m        37.13 pts[0m[1;32m          18.56 MB/s[0m
+[1;32mIterrations:           50000, Ratio:        2.000000[0m
+[1;36m[8] Scimark2Benchmark[0m
+
+[1;30mSciMark 2.0a[0m
+
+[1;30mComposite Score:             3.76[0m
+[1;30mFFT             Mflops:      2.17    (N=1024)[0m
+[1;30mSOR             Mflops:      6.14    (100 x 100)[0m
+[1;30mMonte Carlo     Mflops:      3.03[0m
+[1;30mSparse matmult  Mflops:      3.18    (N=1000, nz=5000)[0m
+[1;30mLU              Mflops:      4.27    (100x100)[0m
+[1;37mScimark2Benchmark             [0m[1;32m     28046.73 ms[0m[1;32m        37.57 pts[0m[1;32m           3.76 CompositeScore[0m
+[1;32mIterrations:               1, Ratio:       10.000000[0m
+[1;36m[9] DhrystoneBenchmark[0m
+[1;30m##########################################[0m
+
+[1;30mDhrystone Benchmark, Version 2.1 (Language: PHP)[0m
+
+[1;30mOptimization 0[0m
+
+[1;30mFinal values (* implementation-dependent):
+[0m
+
+[1;30mInt_Glob:      [0m[1;32mO.K.  [0m[1;30m5  [0m
+[1;30mBool_Glob:     [0m[1;32mO.K.  [0m[1;30m1[0m
+[1;30mCh_1_Glob:     [0m[1;32mO.K.  [0m[1;30mA  [0m
+[1;30mCh_2_Glob:     [0m[1;32mO.K.  [0m[1;30mB[0m
+[1;30mArr_1_Glob[8]: [0m[1;32mO.K.  [0m[1;30m7  [0m[1;30mArr_2_Glob8/7: [0m[1;32mO.K.  [0m[1;30m500010[0m
+[1;30mPtr_Glob->            [0m[1;30m  Ptr_Comp:       *    1[0m
+[1;30m  Discr:       [0m[1;32mO.K.  [0m[1;30m0  [0m[1;30mEnum_Comp:     [0m[1;32mO.K.  [0m[1;30m2[0m
+[1;30m  Int_Comp:    [0m[1;32mO.K.  [0m[1;30m17 [0m[1;30mStr_Comp:      [0m[1;32mO.K.  [0m[1;30mDHRYSTONE PROGRAM, SOME STRING[0m
+[1;30mNext_Ptr_Glob->       [0m[1;30m  Ptr_Comp:       *    1[0m[1;30m same as above[0m
+[1;30m  Discr:       [0m[1;32mO.K.  [0m[1;30m0  [0m[1;30mEnum_Comp:     [0m[1;32mO.K.  [0m[1;30m1[0m
+[1;30m  Int_Comp:    [0m[1;32mO.K.  [0m[1;30m18 [0m[1;30mStr_Comp:      [0m[1;32mO.K.  [0m[1;30mDHRYSTONE PROGRAM, SOME STRING[0m
+[1;30mInt_1_Loc:     [0m[1;32mO.K.  [0m[1;30m5  [0m[1;30mInt_2_Loc:     [0m[1;32mO.K.  [0m[1;30m13[0m
+[1;30mInt_3_Loc:     [0m[1;32mO.K.  [0m[1;30m7  [0m
+[1;30mEnum_Loc:      [0m[1;32mO.K.  [0m[1;30m1  [0m
+[1;30mStr_1_Loc:                             [0m[1;32mO.K.  [0m[1;30mDHRYSTONE PROGRAM, 1'ST STRING[0m
+[1;30mStr_2_Loc:                             [0m[1;32mO.K.  [0m[1;30mDHRYSTONE PROGRAM, 2'ND STRING[0m
+
+[1;30mNanoseconds one Dhrystone run: 26083.27[0m
+[1;30mDhrystones per Second:         38338[0m
+[1;30mVAX  MIPS rating =             21.82[0m
+
+[1;37mDhrystoneBenchmark            [0m[1;32m     13043.11 ms[0m[1;32m        87.28 pts[0m[1;32m          21.82 DMIPS[0m
+[1;32mIterrations:               1, Ratio:        4.000000[0m
+[1;36m[10] WhetstoneBenchmark[0m
+[1;30mDouble Precision PHP Whetstone Benchmark[0m
+[1;30m                 PHP version: 7.0.33-0ubuntu0.16.04.15[0m
+[1;30mNo run time input data
+[0m
+[1;30mCalibrate[0m
+[1;30m          0 Seconds          1   Passes (x 100)[0m
+[1;30m          1 Seconds          5   Passes (x 100)[0m
+[1;30m          8 Seconds         25   Passes (x 100)[0m
+[1;30mUse 298  passes (x 100)[0m
+[1;30m          Double Precision PHP Whetstone Benchmark[0m
+
+[1;30mLoop content                  Result              MFLOPS      MOPS   Seconds[0m
+[1;30mN1 floating point      -1.12398255667391900    [0m[1;30m    6.392               0.895[0m
+[1;30mN2 floating point      -1.12398255667391900    [0m[1;30m    5.919               6.766[0m
+[1;30mN3 if then else         1.00000000000000000    [0m[1;30m               8.033    3.840[0m
+[1;30mN4 fixed point         12.00000000000000000    [0m[1;30m              13.680    6.862[0m
+[1;30mN5 sin,cos etc.         0.49902937281518261    [0m[1;30m               5.341    4.642[0m
+[1;30mN6 floating point       0.99999987890802811    [0m[1;30m    3.807              42.223[0m
+[1;30mN7 assignments          3.00000000000000000    [0m[1;30m               1.811   30.411[0m
+[1;30mN8 exp,sqrt etc.        0.75100163018458665    [0m[1;30m               2.954    3.753[0m
+[1;30mMWIPS            [0m[1;30m                                 29.982              99.392[0m
+[1;37mWhetstoneBenchmark            [0m[1;32m    118678.20 ms[0m[1;32m        29.98 pts[0m[1;32m          29.98 MWIPS[0m
+[1;32mIterrations:               1, Ratio:        1.000000[0m
+[1;36m[11] LinpackBenchmark[0m
+[1;30mRunning Linpack 2000x2000 in PHP[0m
+[1;30mNorma is 0.49999936919[0m
+[1;30mResidual is 4.4959869160976E-12[0m
+[1;30mnormalised residual is 20.25[0m
+[1;30mMachine result.Eepsilon is 2.2204460492503E-16[0m
+[1;30mx[0]-1 is 4.4408920985006E-13[0m
+[1;30mx[n-1]-1 is -3.9974690224653E-12[0m
+[1;30mTime is 1430.95[0m
+[1;30mMFLOPS: 3.733[0m
+[1;37mLinpackBenchmark              [0m[1;32m   1489630.32 ms[0m[1;32m        37.33 pts[0m[1;32m           3.73 MFLOPS[0m
+[1;32mIterrations:               1, Ratio:       10.000000[0m
+[1;36m[12] HashBenchmark[0m
+[1;37mHashBenchmark                 [0m[1;32m      1505.86 ms[0m[1;32m      1328.14 pts[0m[1;32m      132814.13 Iter/s[0m
+[1;32mIterrations:          200000, Ratio:       10.000000[0m
+
+[1;37mTotal:                        [0m[1;32m   2290488.91 ms[0m[1;32m      2859.81 pts[0m
+
+[1;36mSingle-thread results[0m
+[1;37mOperating System,Runtime,Threads Count,Memory Used,[0m[1;37mArithmeticsBenchmark,MathBenchmark,CallBenchmark,IfElseBenchmark,StringManipulation,MemoryBenchmark,RandomMemoryBenchmark,Scimark2Benchmark,DhrystoneBenchmark,WhetstoneBenchmark,LinpackBenchmark,HashBenchmark[0m[1;37m,Total Points,Total Time (ms)[0m
+[1;37mLinux 4.14.44-sunxi64,PHP 7.0.33-0ubuntu0.16.04.15,4,820040,[0m[1;32m13.51,110.72,15.75,15.53,1109.47,37.40,37.13,37.57,87.28,29.98,37.33,1328.14[0m[1;30m,2859.81,2290488[0m
+
+
+[1;36mSingle-thread Units results[0m
+[1;37mOperating System,Runtime,Threads Count,Memory Used,[0m[1;37mArithmeticsBenchmark,MathBenchmark,CallBenchmark,IfElseBenchmark,StringManipulation,MemoryBenchmark,RandomMemoryBenchmark,Scimark2Benchmark,DhrystoneBenchmark,WhetstoneBenchmark,LinpackBenchmark,HashBenchmark[0m[1;37m,Total Points,Total Time (ms)[0m
+[1;37mLinux 4.14.44-sunxi64,PHP 7.0.33-0ubuntu0.16.04.15,4,820040,[0m[1;32m450323.43,221437.45,1575234.52,1553030.63,110947.27,37.40,18.56,3.76,21.82,29.98,3.73,132814.13[0m[1;30m,2859.81,2290488[0m

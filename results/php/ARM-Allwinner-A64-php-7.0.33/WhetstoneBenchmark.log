@@ -11,11 +11,11 @@ Use 298  passes (x 100)
 
 Loop content                  Result              MFLOPS      MOPS   Seconds
 N1 floating point      -1.12398255667391900        6.392               0.895
-N2 floating point      -1.12398255667391900        5.918               6.768
-N3 if then else         1.00000000000000000                   8.107    3.804
-N4 fixed point         12.00000000000000000                  13.682    6.861
-N5 sin,cos etc.         0.49902937281516418                   5.280    4.696
-N6 floating point       0.99999987890802811        3.809              42.200
-N7 assignments          3.00000000000000000                   1.791   30.753
-N8 exp,sqrt etc.        0.75100163018458665                   2.945    3.764
-MWIPS                                             29.877              99.741
+N2 floating point      -1.12398255667391900        5.919               6.766
+N3 if then else         1.00000000000000000                   8.033    3.840
+N4 fixed point         12.00000000000000000                  13.680    6.862
+N5 sin,cos etc.         0.49902937281518261                   5.341    4.642
+N6 floating point       0.99999987890802811        3.807              42.223
+N7 assignments          3.00000000000000000                   1.811   30.411
+N8 exp,sqrt etc.        0.75100163018458665                   2.954    3.753
+MWIPS                                             29.982              99.392
