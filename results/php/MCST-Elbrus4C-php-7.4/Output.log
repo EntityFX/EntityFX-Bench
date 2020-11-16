@@ -59,3 +59,6 @@ Total:                           3494809.83 ms      2363.35 pts
 Single-thread results
 Operating System,Runtime,Threads Count,Memory Used,ArithmeticsBenchmark,MathBenchmark,CallBenchmark,IfElseBenchmark,StringManipulation,MemoryBenchmark,RandomMemoryBenchmark,Scimark2Benchmark,DhrystoneBenchmark,WhetstoneBenchmark,LinpackBenchmark,HashBenchmark,Total Points,Total Time (ms)
 Linux 5.4.0-1.9-nn-e2s,PHP 7.4.7,4,911016,11.52,90.97,11.50,10.41,889.12,19.31,24.27,25.86,76.64,19.98,22.93,1160.83,2363.35,3494809
+
+
+Linux 5.4.0-1.9-nn-e2s,PHP 7.4.7,4,911016,383991.32,  181949.77, 1149620.29, 1041343.04,   88912.44,      19.31,      12.14,       2.59,      19.16,      19.98,       2.29,  116083.42,2363.35,3494809
