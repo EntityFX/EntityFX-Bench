@@ -3,7 +3,13 @@ require "writer"
 require "benchmarkBase"
 require "generic/arithmeticsBase"
 require "generic/arithmeticsBenchmark"
-
+require "generic/mathBase"
+require "generic/mathBenchmark"
+require "generic/callBenchmarkBase"
+require "generic/callBenchmark"
+require "generic/ifElseBenchmark"
+require "generic/stringManipulationBase"
+require "generic/stringManipulation"
 
 function writeResult(writer, benchResult)
     writer:writeTitle("%-30s", benchResult.benchmarkName)
@@ -21,7 +27,11 @@ local writer = Writer("Output.log")
 BenchmarkBase.IterrationsRatio = 0.1;
 
 benchmarks = { 
-    ArithemticsBenchmark(writer, true)
+    ArithemticsBenchmark(writer, true),
+    MathBenchmark(writer, true),
+    CallBenchmark(writer, true),
+    IfElseBenchmark(writer, true),
+    StringManipulation(writer, true)
 }
 
 writer:writeHeader("Warmup")
