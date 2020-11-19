@@ -12,6 +12,7 @@ require "generic/stringManipulationBase"
 require "generic/stringManipulation"
 require "generic/memoryBenchmarkBase"
 require "generic/memoryBenchmark"
+require "dhrystone/dhrystone"
 
 function writeResult(writer, benchResult)
     writer:writeTitle("%-30s", benchResult.benchmarkName)
@@ -24,7 +25,6 @@ function writeResult(writer, benchResult)
 end
 
 local writer = Writer("Output.log")
-
 
 BenchmarkBase.IterrationsRatio = 0.1;
 

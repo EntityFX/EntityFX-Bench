@@ -147,3 +147,13 @@ end
 function arithmetic_mean(x)
    return (sum(x) / #x)
 end
+
+function compareTo(str1, str2)
+   if str1 == str2 then
+      return 0
+   elseif str1 < str2 then
+      return -1
+   else
+      return 1
+   end
+end
