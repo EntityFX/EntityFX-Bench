@@ -33,7 +33,7 @@ benchmarks = {
     MathBenchmark(writer, true),
     CallBenchmark(writer, true),
     IfElseBenchmark(writer, true),
-    StringManipulation(writer, true)б
+    StringManipulation(writer, true),
     MemoryBenchmark(writer, true)
 }
 
