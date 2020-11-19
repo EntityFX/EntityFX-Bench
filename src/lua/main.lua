@@ -10,6 +10,8 @@ require "generic/callBenchmark"
 require "generic/ifElseBenchmark"
 require "generic/stringManipulationBase"
 require "generic/stringManipulation"
+require "generic/memoryBenchmarkBase"
+require "generic/memoryBenchmark"
 
 function writeResult(writer, benchResult)
     writer:writeTitle("%-30s", benchResult.benchmarkName)
@@ -31,7 +33,8 @@ benchmarks = {
     MathBenchmark(writer, true),
     CallBenchmark(writer, true),
     IfElseBenchmark(writer, true),
-    StringManipulation(writer, true)
+    StringManipulation(writer, true)б
+    MemoryBenchmark(writer, true)
 }
 
 writer:writeHeader("Warmup")

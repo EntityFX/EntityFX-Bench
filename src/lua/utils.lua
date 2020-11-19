@@ -121,3 +121,29 @@ function split(str, delim, maxNb)
    end
    return result
 end
+
+function randomIntArray(size, max)
+   math.randomseed( os.time() )
+
+   local ar = {}
+
+   for i = 0, size do
+      ar[i] = math.random(0, max)
+   end
+
+   return ar
+end
+
+-- Returns the sum of a sequence of values
+function sum(x)
+   local s = 0
+   for _, v in ipairs(x) do s = s + v end
+   return s
+end
+ 
+-- Calculates the arithmetic mean of a set of values
+-- x       : an array of values
+-- returns : the arithmetic mean
+function arithmetic_mean(x)
+   return (sum(x) / #x)
+end
