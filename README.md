@@ -13,10 +13,10 @@
 
 ## Benchmarks
 
-* Dhrystone
-* Whetstone
-* Scimark 2
-* Linpack
+* Dhrystone (http://www.roylongbottom.org.uk/#anchorSource)
+* Whetstone (http://www.roylongbottom.org.uk/#anchorSource)
+* Scimark 2 (Original sources: https://math.nist.gov/scimark2/download.html)
+* Linpack (Based on: https://github.com/fommil/netlib-java/blob/master/perf/src/main/java/com/github/fommil/netlib/Linpack.java)
 * Generic:
   * Loops
   * Conditions
