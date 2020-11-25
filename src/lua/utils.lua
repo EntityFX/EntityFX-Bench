@@ -73,53 +73,15 @@ function dumpTable(table, depth)
    end
  end
 
-function string:split(sSeparator, nMax, bRegexp)
-   local aRecord = {}
-
-   if self:len() > 0 then
-      local bPlain = not bRegexp
-      nMax = nMax or -1
-
-      local nField, nStart = 1, 1
-      local nFirst,nLast = self:find(sSeparator, nStart, bPlain)
-      while nFirst and nMax ~= 0 do
-         aRecord[nField] = self:sub(nStart, nFirst-1)
-         nField = nField+1
-         nStart = nLast+1
-         nFirst,nLast = self:find(sSeparator, nStart, bPlain)
-         nMax = nMax-1
-      end
-      aRecord[nField] = self:sub(nStart)
+function split(inputstr, sep)
+   if sep == nil then
+      sep = "%s"
    end
-
-   return aRecord
-end
-
-function split(str, delim, maxNb)
-   -- Eliminate bad cases...
-   if string.find(str, delim) == nil then
-      return { str }
+   local t={}
+   for str in string.gmatch(inputstr, "([^"..sep.."]+)") do
+         table.insert(t, str)
    end
-   if maxNb == nil or maxNb < 1 then
-      maxNb = 0    -- No limit
-   end
-   local result = {}
-   local pat = "(.-)" .. delim .. "()"
-   local nb = 0
-   local lastPos
-   for part, pos in string.gfind(str, pat) do
-      nb = nb + 1
-      result[nb] = part
-      lastPos = pos
-      if nb == maxNb then
-         break
-      end
-   end
-   -- Handle the last field
-   if nb ~= maxNb then
-      result[nb + 1] = string.sub(str, lastPos)
-   end
-   return result
+   return t
 end
 
 function randomIntArray(size, max)
