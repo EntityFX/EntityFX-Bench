@@ -1,0 +1,22 @@
+Double Precision PHP Whetstone Benchmark
+                 PHP version: 8.0.0RC3
+No run time input data
+
+Calibrate
+          0 Seconds          1   Passes (x 100)
+          0 Seconds          5   Passes (x 100)
+          0 Seconds         25   Passes (x 100)
+          3 Seconds        125   Passes (x 100)
+Use 3756  passes (x 100)
+          Double Precision PHP Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 floating point      -1.12398255667391900      136.989               0.526
+N2 floating point      -1.12398255667391900      105.716               4.775
+N3 if then else         1.00000000000000000                 597.641    0.650
+N4 fixed point         12.00000000000000000                1556.485    0.760
+N5 sin,cos etc.         0.49902937281518261                  37.909    8.243
+N6 floating point       0.99999987890802811       44.970              45.052
+N7 assignments          3.00000000000000000                  19.082   36.376
+N8 exp,sqrt etc.        0.75100163018458665                  27.463    5.088
+MWIPS                                            370.156             101.471
