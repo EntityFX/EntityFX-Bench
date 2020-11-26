@@ -15,6 +15,7 @@ require "generic/memoryBenchmark"
 require "dhrystone/dhrystone"
 require "whetstone/whetstone"
 require "linpack/linpack"
+require "scimark2/scimark2"
 
 function writeResult(writer, benchResult)
     writer:writeTitle("%-30s", benchResult.benchmarkName)
@@ -27,11 +28,6 @@ function writeResult(writer, benchResult)
 end
 
 local writer = Writer("Output.log")
-
-local z = { }
-
--- local w = Linpack(writer)
--- w:run_benchmark(2000)
 
 BenchmarkBase.IterrationsRatio = 0.1;
 
