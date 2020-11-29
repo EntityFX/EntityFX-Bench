@@ -4,7 +4,7 @@ DhrystoneBenchmark = class(BenchmarkBase, function(a, writer, printToConsole)
     BenchmarkBase.init(a, writer, printToConsole)
     a.name = "DhrystoneBenchmark"
     a.ratio = 4
-    a.dhrystone = Dhrystone2(false)
+    a.dhrystone = Dhrystone2(printToConsole)
 end)
 
 function DhrystoneBenchmark:benchImplementation()

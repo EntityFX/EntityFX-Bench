@@ -4,7 +4,7 @@ WhetstoneBenchmark = class(BenchmarkBase, function(a, writer, printToConsole)
     BenchmarkBase.init(a, writer, printToConsole)
     a.name = "WhetstoneBenchmark"
     a.ratio = 1
-    a.whetstone = Whetstone()
+    a.whetstone = Whetstone(printToConsole)
 end)
 
 function WhetstoneBenchmark:benchImplementation()

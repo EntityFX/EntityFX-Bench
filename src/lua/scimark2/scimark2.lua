@@ -57,8 +57,8 @@ function Scimark2:bench(isLarge)
     res[5] = self:measure(MIN_TIME, "LU", unpack(params["LU"]))
 
     local sum = res[1] + res[2] + res[3] + res[4] + res[5]
-
-    self.output:writeLine("Composite Score: %.2f", sum / #constants) 
+    local compositeScore = sum / #constants
+    self.output:writeLine("Composite Score: %.2f", compositeScore) 
 
     self.output:write("FFT (%d): ", params["FFT"][1])
 
@@ -80,7 +80,7 @@ function Scimark2:bench(isLarge)
     end
 
     return {
-        CompositeScore = sum,
+        CompositeScore = compositeScore,
         FFT = res[1],
         SOR = res[2],
         MonteCarlo = res[3],
