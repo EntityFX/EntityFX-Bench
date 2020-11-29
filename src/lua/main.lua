@@ -12,9 +12,11 @@ require "generic/stringManipulationBase"
 require "generic/stringManipulation"
 require "generic/memoryBenchmarkBase"
 require "generic/memoryBenchmark"
-require "dhrystone/dhrystone"
-require "whetstone/whetstone"
-require "linpack/linpack"
+require "generic/randomMemoryBenchmarkBase"
+require "generic/randomMemoryBenchmark"
+require "dhrystone/dhrystoneBenchmark"
+require "whetstone/whetstoneBenchmark"
+require "linpack/linpackBenchmark"
 require "scimark2/scimark2"
 
 function writeResult(writer, benchResult)
@@ -31,13 +33,17 @@ local writer = Writer("Output.log")
 
 BenchmarkBase.IterrationsRatio = 0.1;
 
-benchmarks = { 
+benchmarks = {
     ArithemticsBenchmark(writer, true),
     MathBenchmark(writer, true),
     CallBenchmark(writer, true),
     IfElseBenchmark(writer, true),
     StringManipulation(writer, true),
-    MemoryBenchmark(writer, true)
+    MemoryBenchmark(writer, true),
+    RandomMemoryBenchmark(writer, true),
+    DhrystoneBenchmark(writer, true),
+    WhetstoneBenchmark(writer, true),
+    LinpackBenchmark(writer, true)
 }
 
 writer:writeHeader("Warmup")

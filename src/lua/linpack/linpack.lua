@@ -88,6 +88,15 @@ function Linpack:run_benchmark(array_size)
     self.output:writeLine("x[n-1]-1 is " .. (x[n] - 1))
     self.output:writeLine("Time is " .. time_result)
     self.output:writeLine("MFLOPS: " .. mflops_result)
+
+    return {
+      norma = norma,
+      resid = resid,
+      normalisedResidual = residn_result,
+      epsilon = eps_result,
+      time = time_result,
+      mflops = mflops_result
+    }
 end
 
 function Linpack:matgen(a, lda, n, b)

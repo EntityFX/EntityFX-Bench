@@ -23,7 +23,10 @@ function MemoryBenchmarkBase:benchRandomMemory()
     local long32m = self:measureArrayRandomLongRead(32 * 1024 * 1024 / 8)
     self.output:writeLine("long 32M: %.2f MB/s", long32m.mbPerSec)
     
-    local avg = arithmetic_mean({int4k.mbPerSec, int512k.mbPerSec})
+    local avg = arithmetic_mean({
+        int4k.mbPerSec, int512k.mbPerSec, int8m.mbPerSec, 
+        int32m.mbPerSec, long4k.mbPerSec, long512k.mbPerSec,
+        long8m.mbPerSec, long32m.mbPerSec})
 
     self.output:writeLine("Average: %.2f MB/s", avg)
 
