@@ -1,0 +1,25 @@
+Double Precision Lua Whetstone Benchmark
+
+No run time input data
+
+Calibrate
+       1.56 Seconds          1   Passes (x 100)
+       9.16 Seconds          5   Passes (x 100)
+
+Use 54  passes (x 100)
+
+          Double Precision Lua Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900        7.127               0.147
+N2 floating point      -1.12187079889284425        2.876               2.550
+N3 if then else         1.00000000000000000                   1.883    3.000
+N4 fixed point         12.00000000000000000                   4.559    3.770
+N5 sin,cos etc.         0.49902937281518261                   1.020    4.450
+N6 floating point       0.99999987890802811        1.224              24.040
+N7 assignments          3.00000000000000000                   0.366   27.540
+N8 exp,sqrt etc.        0.75100163018458665                   0.072   28.100
+MWIPS                                              5.830             93.597
