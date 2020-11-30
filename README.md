@@ -72,6 +72,14 @@ php -n -t 99999 -d memory_limit=2048M Main.php
 cd src/python/
 python3 main.py
 ```
+
+### Lua
+
+```sh
+cd src/lua/
+lua main.lua
+```
+
 ## Build
 
 TODO
