@@ -1,0 +1,136 @@
+Warmup
+............
+Bench
+[1] ArithemticsBenchmark
+ArithemticsBenchmark                    38062 ms        23.65 pts      788179.58 Iter/s
+Iterrations:        30000000, Ratio:        0.030000
+[2] MathBenchmark
+MathBenchmark                          102811 ms        97.27 pts      194530.15 Iter/s
+Iterrations:        20000000, Ratio:        0.500000
+[3] CallBenchmark
+Elapsed No Call: 33506
+Elapsed Call: 128010
+CallBenchmark                          161517 ms        12.38 pts     1238255.03 Iter/s
+Iterrations:       200000000, Ratio:        0.010000
+[4] IfElseBenchmark
+IfElseBenchmark                         77304 ms        25.87 pts     2587166.22 Iter/s
+Iterrations:       200000000, Ratio:        0.010000
+[5] StringManipulation
+StringManipulation                      19967 ms       250.41 pts       25040.90 Iter/s
+Iterrations:          500000, Ratio:       10.000000
+[6] MemoryBenchmark
+int 4k: 25.19 MB/s
+int 512k: 24.78 MB/s
+int 8M: 23.99 MB/s
+int 32M: 24.14 MB/s
+long 4k: 25.32 MB/s
+long 512k: 24.83 MB/s
+long 8M: 23.25 MB/s
+long 32M: 23.54 MB/s
+Average: 24.38 MB/s
+MemoryBenchmark                        147594 ms        24.38 pts          24.38 MB/s
+Iterrations:           50000, Ratio:        1.000000
+[7] RandomMemoryBenchmark
+Random int 4k: 17.21 MB/s
+Random int 512k: 15.11 MB/s
+Random int 8M: 13.60 MB/s
+Random long 4k: 17.22 MB/s
+Random long 512k: 15.13 MB/s
+Random long 8M: 13.61 MB/s
+Average: 15.31 MB/s
+RandomMemoryBenchmark                  162429 ms        30.63 pts          15.31 MB/s
+Iterrations:           50000, Ratio:        2.000000
+[8] Scimark2Benchmark
+Lua SciMark 2010-12-10 based on SciMark 2.0a. Copyright (C) 2006-2010 Mike Pall.
+
+Composite Score: 4.31
+FFT (1024): 2.65
+SOR (100x100):   6.72
+Monte Carlo : 4.21
+Sparse matmult (N=1000, nz=5000): 3.67
+LU (100x100): 4.32
+Scimark2Benchmark                       27949 ms        43.13 pts           4.31 CompositeScore
+Iterrations:               0, Ratio:       10.000000
+[9] DhrystoneBenchmark
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Lua)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    table: 0x7cb960
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    table: 0x7cb960 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 23413.25
+Dhrystones per Second:         42710.87
+VAX  MIPS rating =             24.31
+
+DhrystoneBenchmark                     468267 ms        97.24 pts          24.31 DMIPS
+Iterrations:               0, Ratio:        4.000000
+[10] WhetstoneBenchmark
+Double Precision Lua Whetstone Benchmark
+
+No run time input data
+
+Calibrate
+       1.93 Seconds          1   Passes (x 100)
+      11.64 Seconds          5   Passes (x 100)
+
+Use 42  passes (x 100)
+
+          Double Precision Lua Whetstone Benchmark
+
+                 
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900        6.080               0.136
+N2 floating point      -1.12187079889284425        2.453               2.354
+N3 if then else         1.00000000000000000                   1.592    2.794
+N4 fixed point         12.00000000000000000                   3.807    3.555
+N5 sin,cos etc.         0.49902937281518261                   0.850    4.207
+N6 floating point       0.99999987890802811        0.917              25.260
+N7 assignments          3.00000000000000000                   0.277   28.629
+N8 exp,sqrt etc.        0.75100163018458665                   0.055   29.150
+MWIPS                                              4.472             96.085
+WhetstoneBenchmark                      33263 ms         4.47 pts           4.47 MWIPS
+Iterrations:               0, Ratio:        1.000000
+[11] LinpackBenchmark
+Running Linpack 1000x1000 in Lua
+Norma is 0.49999933410436
+Residual is 2378.9191848945
+Normalised residual is 62942017508196
+Machine result.Eepsilon is 2.2204460492503e-16
+x[0]-1 is 5.9632719133029
+x[n-1]-1 is -0.53633719414962
+Time is 193.606639
+MFLOPS: 3.4543275095216
+LinpackBenchmark                       197508 ms        34.54 pts           3.45 MFLOPS
+Iterrations:               0, Ratio:       10.000000
+[12] HashBenchmark
+HashBenchmark                          755159 ms         2.65 pts         264.84 Iter/s
+Iterrations:          200000, Ratio:       10.000000
+
+Total:                                2191836 ms       646.62 pts
+
+Single-thread results
+Operating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark,MathBenchmark,CallBenchmark,IfElseBenchmark,StringManipulation,MemoryBenchmark,RandomMemoryBenchmark,Scimark2Benchmark,DhrystoneBenchmark,WhetstoneBenchmark,LinpackBenchmark,HashBenchmark,Total Points,Total Time (ms)
+Linux e2k,Lua 5.1,1,0,23.65,97.27,12.38,25.87,250.41,24.38,30.63,43.13,97.24,4.47,34.54,2.65,646.62,2191836
+
+Single-thread Units results
+Operating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark (Iter/s),MathBenchmark (Iter/s),CallBenchmark (Iter/s),IfElseBenchmark (Iter/s),StringManipulation (Iter/s),MemoryBenchmark (MB/s),RandomMemoryBenchmark (MB/s),Scimark2Benchmark (CompositeScore),DhrystoneBenchmark (DMIPS),WhetstoneBenchmark (MWIPS),LinpackBenchmark (MFLOPS),HashBenchmark (Iter/s),Total Points,Total Time (ms)
+Linux e2k,Lua 5.1,1,0,788179.58,194530.15,1238255.03,2587166.22,25040.90,24.38,15.31,4.31,24.31,4.47,3.45,264.84,646.62,2191836
