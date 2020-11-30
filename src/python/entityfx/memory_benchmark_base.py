@@ -4,7 +4,6 @@ from entityfx.writer import Writer
 import random
 import math
 import time
-from statistics import mean
 
 class MemoryBenchmarkBase(BenchmarkBase):
     
@@ -43,7 +42,7 @@ class MemoryBenchmarkBase(BenchmarkBase):
         long32m = self._measureArrayRandomRead(math.floor(32 * 1024 * 1024 / 4))
         self._output.write_line("long 32m: {0:5.2f} MB/s", long32m[0])
 
-        avg = mean([int4k[0], int512k[0], int8m[0], int32m[0], long4k[0], long512k[0], long8m[0], long32m[0]])
+        avg = (int4k[0] + int512k[0] + int8m[0] + int32m[0] + long4k[0] + long512k[0] + long8m[0] + long32m[0]) / 8
         
         return { "Average" : avg, "Output" : self.__output.output }
     
