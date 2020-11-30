@@ -1,12 +1,12 @@
 var MathBenchmark = /** @class */ (function (_super) {
 	__extends(MathBenchmark, _super);
-	
+
 	function MathBenchmark(writer) {
 		var _this = _super.call(this, writer) || this;
-        return _this;
+		return _this;
 	}
-	
-	MathBenchmark.prototype.BenchImplementation = function() {
+
+	MathBenchmark.prototype.BenchImplementation = function () {
 		_super.prototype.BenchImplementation.call(this);
 		var R = 0;
 		var li = 0;
@@ -15,6 +15,12 @@ var MathBenchmark = /** @class */ (function (_super) {
 		}
 		return R;
 	};
-	
-    return MathBenchmark;
+
+	return MathBenchmark;
 }(MathBase));
+
+if (typeof module !== 'undefined' && module.exports) {
+	module.exports = {
+		MathBenchmark: MathBenchmark
+	};
+}

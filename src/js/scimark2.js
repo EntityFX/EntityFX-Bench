@@ -960,3 +960,9 @@ var Scimark2 = /** @class */ (function () {
 
     return Scimark2;
 }());
+
+if (typeof module !== 'undefined' && module.exports) {
+	module.exports = {
+		Scimark2: Scimark2
+	};
+}

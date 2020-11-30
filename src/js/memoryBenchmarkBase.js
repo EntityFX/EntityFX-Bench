@@ -1,27 +1,27 @@
 var MemoryBenchmarkBase = /** @class */ (function (_super) {
 	__extends(MemoryBenchmarkBase, _super);
-	
+
 	function MemoryBenchmarkBase(writer, printToConsole) {
 		printToConsole = (printToConsole === undefined) ? true : printToConsole;;
 		var _this = _super.call(this, writer, printToConsole) || this;
-        _this.Iterrations = 500000;
+		_this.Iterrations = 500000;
 		_this.Ratio = 1;
-        return _this;
+		return _this;
 	}
-	
-	MemoryBenchmarkBase.prototype.Warmup = function(aspect) {
+
+	MemoryBenchmarkBase.prototype.Warmup = function (aspect) {
 		aspect = aspect || 0.05;
 		this.UseConsole(false);
 		_super.prototype.Warmup.call(this);
 		this.UseConsole(true);
 	};
-	
-	MemoryBenchmarkBase.prototype.BenchRandomMemory = function(aspect) {
+
+	MemoryBenchmarkBase.prototype.BenchRandomMemory = function (aspect) {
 		aspect = aspect || 0.05;
 		var int4k = this.MeasureArraySpeed(1024);
 		this.output.write("int 4k: %.2f MB/s".$(int4k.MbPerSec));
 		this.output.writeLine();
-	 	var int512k = this.MeasureArraySpeed(131072);
+		var int512k = this.MeasureArraySpeed(131072);
 		this.output.write("int 512k: %.2f MB/s".$(int512k.MbPerSec));
 		this.output.writeLine();
 		var int8m = this.MeasureArraySpeed(2097152);
@@ -45,22 +45,22 @@ var MemoryBenchmarkBase = /** @class */ (function (_super) {
 		this.output.writeLine();
 
 		var results = [
-			int4k.MbPerSec, int512k.MbPerSec, int8m.MbPerSec, int32m.MbPerSec ,
+			int4k.MbPerSec, int512k.MbPerSec, int8m.MbPerSec, int32m.MbPerSec,
 			long4k.MbPerSec, long512k.MbPerSec, long8m.MbPerSec, long32m.MbPerSec];
 		var avg = results.sum() / results.length;
 		this.output.write("Average: %.2f MB/s".$(avg));
 		this.output.writeLine();
-		
+
 		return {
-			Average : avg,
-			Output : output.Output
+			Average: avg,
+			Output: this.output.Output
 		};
 	}
-	
-	MemoryBenchmarkBase.prototype.MeasureArraySpeed = function(size) {
+
+	MemoryBenchmarkBase.prototype.MeasureArraySpeed = function (size) {
 		var blockSize = 8;
 		var L = new Array(blockSize);
-		
+
 		var array = new Array(size);
 		for (var i = 0; i < iterInternal; i++) {
 			array[i] = getRandomInt(Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER);
@@ -68,46 +68,43 @@ var MemoryBenchmarkBase = /** @class */ (function (_super) {
 
 		var end = array.length - 1;
 		var k0 = Math.floor(size / 1024);
-		var k1 = k0 == 0 ? 1 : k0 ;
+		var k1 = k0 == 0 ? 1 : k0;
 		var iterInternal = Math.floor(this.Iterrations / k1);
-		for (var idx = 0; idx < end; idx+=blockSize)
-		{
+		for (var idx = 0; idx < end; idx += blockSize) {
 			L[0] = array[idx];
-			L[1] = array[idx+1];
-			L[2] = array[idx+2];
-			L[3] = array[idx+3];
-			L[4] = array[idx+4];
-			L[5] = array[idx+5];
-			L[6] = array[idx+6];
-			L[7] = array[idx+7];
+			L[1] = array[idx + 1];
+			L[2] = array[idx + 2];
+			L[3] = array[idx + 3];
+			L[4] = array[idx + 4];
+			L[5] = array[idx + 5];
+			L[6] = array[idx + 6];
+			L[7] = array[idx + 7];
 		}
 		var start = getTime();
-		for (var i = 0; i < iterInternal; i++)
-		{
-			for (var idx = 0; idx < end; idx+=blockSize)
-			{
+		for (var i = 0; i < iterInternal; i++) {
+			for (var idx = 0; idx < end; idx += blockSize) {
 				L[0] = array[idx];
-				L[1] = array[idx+1];
-				L[2] = array[idx+2];
-				L[3] = array[idx+3];
-				L[4] = array[idx+4];
-				L[5] = array[idx+5];
-				L[6] = array[idx+6];
-				L[7] = array[idx+7];
+				L[1] = array[idx + 1];
+				L[2] = array[idx + 2];
+				L[3] = array[idx + 3];
+				L[4] = array[idx + 4];
+				L[5] = array[idx + 5];
+				L[6] = array[idx + 6];
+				L[7] = array[idx + 7];
 			}
 		}
 		var elapsed = getTime() - start;
 
-		return { 
-			MbPerSec : iterInternal * array.length * 8 / elapsed / 1024 / 1024, 
-			Data : L
+		return {
+			MbPerSec: iterInternal * array.length * 8 / elapsed / 1024 / 1024,
+			Data: L
 		};
 	}
-	
-	MemoryBenchmarkBase.prototype.MeasureArraySpeedLong = function(size) {
+
+	MemoryBenchmarkBase.prototype.MeasureArraySpeedLong = function (size) {
 		var blockSize = 16;
 		var I = new Array(blockSize);
-		
+
 		var array = new Array(size);
 		for (var i = 0; i < iterInternal; i++) {
 			array[i] = getRandomInt(Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER);
@@ -115,57 +112,60 @@ var MemoryBenchmarkBase = /** @class */ (function (_super) {
 
 		var end = array.length - 1;
 		var k0 = Math.floor(size / 1024);
-		var k1 = k0 == 0 ? 1 : k0 ;
+		var k1 = k0 == 0 ? 1 : k0;
 		var iterInternal = Math.floor(this.Iterrations / k1);
-		for (var idx = 0; idx < end; idx+=blockSize)
-		{
+		for (var idx = 0; idx < end; idx += blockSize) {
 			I[0] = array[idx];
-			I[1] = array[idx+1];
-			I[2] = array[idx+2];
-			I[3] = array[idx+3];
-			I[4] = array[idx+4];
-			I[5] = array[idx+5];
-			I[6] = array[idx+6];
-			I[7] = array[idx+7];
-			I[8] = array[idx+8];
-			I[9] = array[idx+9];
-			I[0xA] = array[idx+0xA];
-			I[0xB] = array[idx+0xB];
-			I[0xC] = array[idx+0xC];
-			I[0xD] = array[idx+0xD];
-			I[0xE] = array[idx+0xE];
-			I[0xF] = array[idx+0xF];
+			I[1] = array[idx + 1];
+			I[2] = array[idx + 2];
+			I[3] = array[idx + 3];
+			I[4] = array[idx + 4];
+			I[5] = array[idx + 5];
+			I[6] = array[idx + 6];
+			I[7] = array[idx + 7];
+			I[8] = array[idx + 8];
+			I[9] = array[idx + 9];
+			I[0xA] = array[idx + 0xA];
+			I[0xB] = array[idx + 0xB];
+			I[0xC] = array[idx + 0xC];
+			I[0xD] = array[idx + 0xD];
+			I[0xE] = array[idx + 0xE];
+			I[0xF] = array[idx + 0xF];
 		}
 		var start = getTime();
-		for (var i = 0; i < iterInternal; i++)
-		{
-			for (var idx = 0; idx < end; idx+=blockSize)
-			{
+		for (var i = 0; i < iterInternal; i++) {
+			for (var idx = 0; idx < end; idx += blockSize) {
 				I[0] = array[idx];
-				I[1] = array[idx+1];
-				I[2] = array[idx+2];
-				I[3] = array[idx+3];
-				I[4] = array[idx+4];
-				I[5] = array[idx+5];
-				I[6] = array[idx+6];
-				I[7] = array[idx+7];
-				I[8] = array[idx+8];
-				I[9] = array[idx+9];
-				I[0xA] = array[idx+0xA];
-				I[0xB] = array[idx+0xB];
-				I[0xC] = array[idx+0xC];
-				I[0xD] = array[idx+0xD];
-				I[0xE] = array[idx+0xE];
-				I[0xF] = array[idx+0xF];
+				I[1] = array[idx + 1];
+				I[2] = array[idx + 2];
+				I[3] = array[idx + 3];
+				I[4] = array[idx + 4];
+				I[5] = array[idx + 5];
+				I[6] = array[idx + 6];
+				I[7] = array[idx + 7];
+				I[8] = array[idx + 8];
+				I[9] = array[idx + 9];
+				I[0xA] = array[idx + 0xA];
+				I[0xB] = array[idx + 0xB];
+				I[0xC] = array[idx + 0xC];
+				I[0xD] = array[idx + 0xD];
+				I[0xE] = array[idx + 0xE];
+				I[0xF] = array[idx + 0xF];
 			}
 		}
 		var elapsed = getTime() - start;
 
-		return { 
-			MbPerSec : iterInternal * array.length * 8 / elapsed / 1024 / 1024, 
-			Data : I
+		return {
+			MbPerSec: iterInternal * array.length * 8 / elapsed / 1024 / 1024,
+			Data: I
 		};
 	}
-	
-    return MemoryBenchmarkBase;
+
+	return MemoryBenchmarkBase;
 }(BenchmarkBase));
+
+if (typeof module !== 'undefined' && module.exports) {
+	module.exports = {
+		MemoryBenchmarkBase: MemoryBenchmarkBase
+	};
+}

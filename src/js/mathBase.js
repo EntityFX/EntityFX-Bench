@@ -17,3 +17,9 @@ var MathBase = /** @class */ (function (_super) {
 	
     return MathBase;
 }(BenchmarkBase));
+
+if (typeof module !== 'undefined' && module.exports) {
+	module.exports = {
+		MathBase: MathBase
+	};
+}

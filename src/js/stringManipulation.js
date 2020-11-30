@@ -1,12 +1,12 @@
 var StringManipulation = /** @class */ (function (_super) {
 	__extends(StringManipulation, _super);
-	
+
 	function StringManipulation(writer) {
 		var _this = _super.call(this, writer) || this;
-        return _this;
+		return _this;
 	}
-	
-	StringManipulation.prototype.BenchImplementation = function() {
+
+	StringManipulation.prototype.BenchImplementation = function () {
 		_super.prototype.BenchImplementation.call(this);
 		var str = "the quick brown fox jumps over the lazy dog";
 		var str1 = "";
@@ -15,6 +15,12 @@ var StringManipulation = /** @class */ (function (_super) {
 		}
 		return str1;
 	};
-	
-    return StringManipulation;
+
+	return StringManipulation;
 }(StringManipulationBase));
+
+if (typeof module !== 'undefined' && module.exports) {
+	module.exports = {
+		StringManipulation: StringManipulation
+	};
+}

@@ -491,3 +491,9 @@ var Whetstone = /** @class */ (function () {
 	
     return Whetstone;
 }());
+
+if (typeof module !== 'undefined' && module.exports) {
+	module.exports = {
+		Whetstone: Whetstone
+	};
+}

@@ -16,3 +16,9 @@ var ArithmeticsBase = /** @class */ (function (_super) {
 	
     return ArithmeticsBase;
 }(BenchmarkBase));
+
+if (typeof module !== 'undefined' && module.exports) {
+	module.exports = {
+		ArithmeticsBase: ArithmeticsBase
+	};
+}

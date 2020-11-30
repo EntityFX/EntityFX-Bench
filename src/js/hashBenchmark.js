@@ -1,12 +1,12 @@
 var HashBenchmark = /** @class */ (function (_super) {
 	__extends(HashBenchmark, _super);
-	
+
 	function HashBenchmark(writer) {
 		var _this = _super.call(this, writer) || this;
-        return _this;
+		return _this;
 	}
-	
-	HashBenchmark.prototype.BenchImplementation = function() {
+
+	HashBenchmark.prototype.BenchImplementation = function () {
 		_super.prototype.BenchImplementation.call(this);
 		var result = "";
 		for (var i = 0; i < this.Iterrations; i++) {
@@ -14,6 +14,12 @@ var HashBenchmark = /** @class */ (function (_super) {
 		}
 		return result;
 	};
-	
-    return HashBenchmark;
+
+	return HashBenchmark;
 }(HashBase));
+
+if (typeof module !== 'undefined' && module.exports) {
+	module.exports = {
+		HashBenchmark: HashBenchmark
+	};
+}

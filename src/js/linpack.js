@@ -395,3 +395,9 @@ var Linpack = /** @class */ (function () {
 
     return Linpack;
 }());
+
+if (typeof module !== 'undefined' && module.exports) {
+	module.exports = {
+		Linpack: Linpack
+	};
+}
