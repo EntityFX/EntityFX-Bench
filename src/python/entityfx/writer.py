@@ -50,7 +50,7 @@ class Writer(object):
         formatted = format.format(*args)
         self.__output += formatted
         if (self.use_console): 
-            to_print = f'{color}{formatted}\033[0m' if self.__is_color else formatted
+            to_print = '{color}{formatted}\033[0m'.format(color=color, formatted=formatted) if self.__is_color else formatted
             print(to_print, end='', flush=True)
             if (self.__use_file): 
                 self.__stream.write(formatted)

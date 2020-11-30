@@ -56,7 +56,7 @@ class BenchmarkBase(Benchamrk):
     def _doOutput(self, result: dict) -> None:
         if (result['Output'] is None or result['Output'] == ""):
             return
-        f = open(f"{self.name}.log", "a")
+        f = open("{name}.log".format(name=self.name), "a")
         f.write(result['Output'])
         f.close()
 
