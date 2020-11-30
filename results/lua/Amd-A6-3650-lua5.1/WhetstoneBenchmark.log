@@ -1,0 +1,32 @@
+Double Precision Lua Whetstone Benchmark
+No run time input data
+Calibrate       0.68 Seconds          1   Passes (x 100)       3.46 Seconds          5   Passes (x 100)
+Use 144  passes (x 100)
+          Double Precision Lua Whetstone Benchmark
+                  
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 floating point      -1.12398255667391900       16.457               0.168N2 floating point      -1.12187079889284425        6.742               2.877N3 if then else         1.00000000000000000                   4.577    3.264N4 fixed point         12.00000000000000000                  10.825    4.200N5 sin,cos etc.         0.49902937281518261                   2.438    4.926N6 floating point       0.99999987890802811        3.125              24.913N7 assignments          3.00000000000000000                   0.937   28.473N8 exp,sqrt etc.        0.75100163018458665                   0.186   28.910MWIPS                                             14.768             97.731Double Precision Lua Whetstone Benchmark
+
+No run time input data
+
+Calibrate
+       0.54 Seconds          1   Passes (x 100)
+       3.10 Seconds          5   Passes (x 100)
+
+Use 161  passes (x 100)
+
+          Double Precision Lua Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900       23.878               0.130
+N2 floating point      -1.12187079889284425        9.650               2.246
+N3 if then else         1.00000000000000000                   6.302    2.649
+N4 fixed point         12.00000000000000000                  14.465    3.512
+N5 sin,cos etc.         0.49902937281518261                   3.114    4.309
+N6 floating point       0.99999987890802811        3.128              27.813
+N7 assignments          3.00000000000000000                   0.960   31.039
+N8 exp,sqrt etc.        0.75100163018458665                   0.190   31.513
+MWIPS                                             15.626            103.211
