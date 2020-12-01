@@ -1,0 +1,135 @@
+Warmup
+............
+Bench
+[1] ArithemticsBenchmark
+ArithemticsBenchmark                    61688 ms        14.59 pts      486316.97 Iter/s
+Iterrations:        30000000, Ratio:        0.030000
+[2] MathBenchmark
+MathBenchmark                          165661 ms        60.36 pts      120728.19 Iter/s
+Iterrations:        20000000, Ratio:        0.500000
+[3] CallBenchmark
+Elapsed No Call: 55010
+Elapsed Call: 209096
+CallBenchmark                          264107 ms         7.57 pts      757266.99 Iter/s
+Iterrations:       200000000, Ratio:        0.010000
+[4] IfElseBenchmark
+IfElseBenchmark                        126917 ms        15.76 pts     1575828.19 Iter/s
+Iterrations:       200000000, Ratio:        0.010000
+[5] StringManipulation
+StringManipulation                      32255 ms       155.01 pts       15501.22 Iter/s
+Iterrations:          500000, Ratio:       10.000000
+[6] MemoryBenchmark
+int 4k: 15.91 MB/s
+int 512k: 15.64 MB/s
+int 8M: 15.14 MB/s
+int 32M: 15.45 MB/s
+long 4k: 15.85 MB/s
+long 512k: 15.57 MB/s
+long 8M: 15.41 MB/s
+long 32M: 15.41 MB/s
+Average: 15.55 MB/s
+MemoryBenchmark                        231650 ms        15.55 pts          15.55 MB/s
+Iterrations:           50000, Ratio:        1.000000
+[7] RandomMemoryBenchmark
+Random int 4k: 10.52 MB/s
+Random int 512k: 9.52 MB/s
+Random int 8M: 8.88 MB/s
+Random long 4k: 10.49 MB/s
+Random long 512k: 9.53 MB/s
+Random long 8M: 8.89 MB/s
+Average: 9.64 MB/s
+RandomMemoryBenchmark                  256955 ms        19.28 pts           9.64 MB/s
+Iterrations:           50000, Ratio:        2.000000
+[8] Scimark2Benchmark
+Lua SciMark 2010-12-10 based on SciMark 2.0a. Copyright (C) 2006-2010 Mike Pall.
+
+Composite Score: 2.65
+FFT (1024): 1.64
+SOR (100x100):   4.12
+Monte Carlo : 2.57
+Sparse matmult (N=1000, nz=5000): 2.27
+LU (100x100): 2.67
+Scimark2Benchmark                       30222 ms        26.54 pts           2.65 CompositeScore
+Iterrations:               0, Ratio:       10.000000
+[9] DhrystoneBenchmark
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Lua)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    table: 0x463fd0
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    table: 0x463fd0 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 38156.44
+Dhrystones per Second:         26207.90
+VAX  MIPS rating =             14.92
+
+DhrystoneBenchmark                     763132 ms        59.67 pts          14.92 DMIPS
+Iterrations:               0, Ratio:        4.000000
+[10] WhetstoneBenchmark
+Double Precision Lua Whetstone Benchmark
+
+No run time input data
+
+Calibrate
+       3.11 Seconds          1   Passes (x 100)
+
+Use 32  passes (x 100)
+
+          Double Precision Lua Whetstone Benchmark
+
+                 
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900        3.665               0.169
+N2 floating point      -1.12187079889284425        1.479               2.927
+N3 if then else         1.00000000000000000                   0.959    3.477
+N4 fixed point         12.00000000000000000                   2.297    4.416
+N5 sin,cos etc.         0.49902937281518261                   0.513    5.220
+N6 floating point       0.99999987890802811        0.592              29.357
+N7 assignments          3.00000000000000000                   0.178   33.519
+N8 exp,sqrt etc.        0.75100163018458665                   0.035   34.172
+MWIPS                                              2.843            113.256
+WhetstoneBenchmark                      35096 ms         2.84 pts           2.84 MWIPS
+Iterrations:               0, Ratio:        1.000000
+[11] LinpackBenchmark
+Running Linpack 1000x1000 in Lua
+Norma is 0.49999711569399
+Residual is 1514.9487684852
+Normalised residual is 54347177040289
+Machine result.Eepsilon is 2.2204460492503e-16
+x[0]-1 is 35.813854273981
+x[n-1]-1 is -28.605074955576
+Time is 310.603661
+MFLOPS: 2.1533317749788
+LinpackBenchmark                       316807 ms        21.53 pts           2.15 MFLOPS
+Iterrations:               0, Ratio:       10.000000
+[12] HashBenchmark
+HashBenchmark                         1235050 ms         1.62 pts         161.94 Iter/s
+Iterrations:          200000, Ratio:       10.000000
+
+Total:                                3519545 ms       400.33 pts
+
+Single-thread results
+Operating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark,MathBenchmark,CallBenchmark,IfElseBenchmark,StringManipulation,MemoryBenchmark,RandomMemoryBenchmark,Scimark2Benchmark,DhrystoneBenchmark,WhetstoneBenchmark,LinpackBenchmark,HashBenchmark,Total Points,Total Time (ms)
+Linux e2k,Lua 5.1,1,0,14.59,60.36,7.57,15.76,155.01,15.55,19.28,26.54,59.67,2.84,21.53,1.62,400.33,3519545
+
+Single-thread Units results
+Operating System,Runtime,Threads Count,Memory Used,ArithemticsBenchmark (Iter/s),MathBenchmark (Iter/s),CallBenchmark (Iter/s),IfElseBenchmark (Iter/s),StringManipulation (Iter/s),MemoryBenchmark (MB/s),RandomMemoryBenchmark (MB/s),Scimark2Benchmark (CompositeScore),DhrystoneBenchmark (DMIPS),WhetstoneBenchmark (MWIPS),LinpackBenchmark (MFLOPS),HashBenchmark (Iter/s),Total Points,Total Time (ms)
+Linux e2k,Lua 5.1,1,0,486316.97,120728.19,757266.99,1575828.19,15501.22,15.55,9.64,2.65,14.92,2.84,2.15,161.94,400.33,3519545
