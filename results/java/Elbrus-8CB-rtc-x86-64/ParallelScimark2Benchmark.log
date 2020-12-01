@@ -1,0 +1,73 @@
+[null
+SciMark 2.0a
+
+Composite Score: 377.12
+FFT (1024): 212.40
+SOR (100x100):   452.97
+Monte Carlo : 252.88
+Sparse matmult (N=1000, nz=5000): 190.24
+LU (100x100): 777.08
+, null
+SciMark 2.0a
+
+Composite Score: 377.08
+FFT (1024): 212.50
+SOR (100x100):   451.91
+Monte Carlo : 253.00
+Sparse matmult (N=1000, nz=5000): 190.24
+LU (100x100): 777.75
+, null
+SciMark 2.0a
+
+Composite Score: 376.84
+FFT (1024): 212.40
+SOR (100x100):   451.28
+Monte Carlo : 253.00
+Sparse matmult (N=1000, nz=5000): 190.24
+LU (100x100): 777.30
+, null
+SciMark 2.0a
+
+Composite Score: 377.25
+FFT (1024): 212.50
+SOR (100x100):   452.97
+Monte Carlo : 252.88
+Sparse matmult (N=1000, nz=5000): 190.35
+LU (100x100): 777.52
+, null
+SciMark 2.0a
+
+Composite Score: 372.32
+FFT (1024): 212.40
+SOR (100x100):   452.12
+Monte Carlo : 230.32
+Sparse matmult (N=1000, nz=5000): 190.12
+LU (100x100): 776.64
+, null
+SciMark 2.0a
+
+Composite Score: 376.18
+FFT (1024): 212.50
+SOR (100x100):   451.28
+Monte Carlo : 249.82
+Sparse matmult (N=1000, nz=5000): 190.24
+LU (100x100): 777.08
+, null
+SciMark 2.0a
+
+Composite Score: 377.13
+FFT (1024): 212.50
+SOR (100x100):   452.76
+Monte Carlo : 252.88
+Sparse matmult (N=1000, nz=5000): 190.18
+LU (100x100): 777.30
+, null
+SciMark 2.0a
+
+Composite Score: 369.38
+FFT (1024): 209.24
+SOR (100x100):   452.12
+Monte Carlo : 252.88
+Sparse matmult (N=1000, nz=5000): 190.24
+LU (100x100): 742.43
+]
