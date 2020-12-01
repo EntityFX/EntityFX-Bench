@@ -1,0 +1,181 @@
+[1;36mWarmup[0m
+[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m
+[1;36mBench[0m
+[1;36m[1] ArithemticsBenchmark[0m
+[1;37mArithemticsBenchmark          [0m[1;32m     29605.15 ms[0m[1;32m         3.04 pts[0m[1;32m    101333.73 Iter/s[0m
+[1;32mIterrations: 3000000        , Ratio: 0.03           [0m
+[1;36m[2] ParallelArithemticsBenchmark[0m
+[1;37mParallelArithemticsBenchmark  [0m[1;32m     27001.72 ms[0m[1;32m        27.32 pts[0m[1;32m    910787.63 Iter/s[0m
+[1;32mIterrations: 3000000        , Ratio: 0.03           [0m
+[1;36m[3] MathBenchmark[0m
+[1;37mMathBenchmark                 [0m[1;32m     20799.37 ms[0m[1;32m        48.08 pts[0m[1;32m     96156.75 Iter/s[0m
+[1;32mIterrations: 2000000        , Ratio: 0.5            [0m
+[1;36m[4] ParallelMathBenchmark[0m
+[1;37mParallelMathBenchmark         [0m[1;32m     18793.81 ms[0m[1;32m       430.16 pts[0m[1;32m    860322.40 Iter/s[0m
+[1;32mIterrations: 2000000        , Ratio: 0.5            [0m
+[1;36m[5] CallBenchmark[0m
+[1;37mCallBenchmark                 [0m[1;32m        57.87 ms[0m[1;32m         3.46 pts[0m[1;32m    345604.08 Iter/s[0m
+[1;32mIterrations: 20000000       , Ratio: 0.01           [0m
+[1;36m[6] ParallelCallBenchmark[0m
+[1;37mParallelCallBenchmark         [0m[1;32m     58718.42 ms[0m[1;32m        27.39 pts[0m[1;32m   2739371.71 Iter/s[0m
+[1;32mIterrations: 20000000       , Ratio: 0.01           [0m
+[1;36m[7] IfElseBenchmark[0m
+[1;37mIfElseBenchmark               [0m[1;32m     31438.91 ms[0m[1;32m         6.36 pts[0m[1;32m    636154.37 Iter/s[0m
+[1;32mIterrations: 20000000       , Ratio: 0.01           [0m
+[1;36m[8] ParallelIfElseBenchmark[0m
+[1;37mParallelIfElseBenchmark       [0m[1;32m     31994.70 ms[0m[1;32m        50.61 pts[0m[1;32m   5061314.30 Iter/s[0m
+[1;32mIterrations: 20000000       , Ratio: 0.01           [0m
+[1;36m[9] StringManipulation[0m
+[1;37mStringManipulation            [0m[1;32m       836.17 ms[0m[1;32m       597.96 pts[0m[1;32m     59796.18 Iter/s[0m
+[1;32mIterrations: 50000          , Ratio: 10             [0m
+[1;36m[10] ParallelStringManipulation[0m
+[1;37mParallelStringManipulation    [0m[1;32m      1115.43 ms[0m[1;32m      4265.41 pts[0m[1;32m    426541.32 Iter/s[0m
+[1;32mIterrations: 50000          , Ratio: 10             [0m
+[1;36m[11] MemoryBenchmark[0m
+[1;30mint 4k:  8.97 MB/s[0m
+[1;30mint 512k:  8.82 MB/s[0m
+[1;30mint 8m:  7.63 MB/s[0m
+[1;30mint 32m:  7.63 MB/s[0m
+[1;30mlong 4k:  9.81 MB/s[0m
+[1;30mlong 512k:  8.58 MB/s[0m
+[1;30mlong 8m:  7.42 MB/s[0m
+[1;30mlong 32m:  7.64 MB/s[0m
+[1;37mMemoryBenchmark               [0m[1;32m    216702.70 ms[0m[1;32m         8.31 pts[0m[1;32m         8.31 MB/s[0m
+[1;32mIterrations: 5000           , Ratio: 1              [0m
+[1;36m[12] ParallelMemoryBenchmark[0m
+[1;37mParallelMemoryBenchmark       [0m[1;32m    219670.76 ms[0m[1;32m        63.77 pts[0m[1;32m        63.77 MB/s[0m
+[1;32mIterrations: 5000           , Ratio: 1              [0m
+[1;36m[13] RandomMemoryBenchmark[0m
+[1;30mRandom int 4k: 14.34 MB/s[0m
+[1;30mRandom int 512k: 12.56 MB/s[0m
+[1;30mRandom int 8m:  7.05 MB/s[0m
+[1;30mRandom long 4k: 15.60 MB/s[0m
+[1;30mRandom long 512k: 13.29 MB/s[0m
+[1;30mRandom long 8m:  7.62 MB/s[0m
+[1;37mRandomMemoryBenchmark         [0m[1;32m     75913.67 ms[0m[1;32m        23.49 pts[0m[1;32m        11.74 MB/s[0m
+[1;32mIterrations: 5000           , Ratio: 2              [0m
+[1;36m[14] ParallelRandomMemoryBenchmark[0m
+[1;37mParallelRandomMemoryBenchmark [0m[1;32m     79417.32 ms[0m[1;32m       158.55 pts[0m[1;32m        79.28 MB/s[0m
+[1;32mIterrations: 5000           , Ratio: 2              [0m
+[1;36m[15] Scimark2Benchmark[0m
+
+[1;30mSciMark 2.0a[0m
+
+[1;30mComposite Score: 1.8861633287175934[0m
+[1;30mFFT (1024): [0m[1;30m0.802749333133781[0m
+[1;30mSOR (100x100):   3.214408996478847[0m
+[1;30mMonte Carlo : 2.0097677018272906[0m
+[1;30mSparse matmult (N=1000, nz=5000): 1.5237694575665823[0m
+[1;30mLU (100x100): [0m[1;30m1.8801211545814658[0m
+[1;37mScimark2Benchmark             [0m[1;32m     25637.74 ms[0m[1;32m        18.86 pts[0m[1;32m         1.89 CompositeScore[0m
+[1;32mIterrations: 0              , Ratio: 10             [0m
+[1;36m[16] ParallelScimark2Benchmark[0m
+[1;37mParallelScimark2Benchmark     [0m[1;32m     26478.43 ms[0m[1;32m       144.91 pts[0m[1;32m        14.49 CompositeScore[0m
+[1;32mIterrations: 0              , Ratio: 10             [0m
+[1;36m[17] DhrystoneBenchmark[0m
+[1;30m##########################################[0m
+[1;30m[0m
+[1;30mDhrystone Benchmark, Version 2.1 (Language: Python)[0m
+[1;30m[0m
+[1;30mOptimization Non-optimised[0m
+[1;30m[0m
+[1;30mFinal values (* implementation-dependent):
+[0m
+[1;30m[0m
+[1;30mInt_Glob:      [0m[1;30mO.K.  [0m[1;30m5  [0m[1;30mBool_Glob:     [0m[1;30mO.K.  [0m[1;30mTrue[0m
+[1;30mCh_1_Glob:     [0m[1;30mO.K.  [0m[1;30mA  [0m[1;30mCh_2_Glob:     [0m[1;30mO.K.  [0m[1;30mB[0m
+[1;30mArr_1_Glob[8]: [0m[1;30mO.K.  [0m[1;30m7  [0m[1;30mArr_2_Glob8/7: [0m[1;30mO.K.  [0m[1;30m2000010[0m
+[1;30mPtr_Glob->            [0m[1;30m  Ptr_Comp:       *    True[0m
+[1;30m  Discr:       [0m[1;30mO.K.  [0m[1;30m0  [0m[1;30mEnum_Comp:     [0m[1;30mO.K.  [0m[1;30m2[0m
+[1;30m  Int_Comp:    [0m[1;30mO.K.  [0m[1;30m17 [0m[1;30mStr_Comp:      [0m[1;30mO.K.  [0m[1;30mDHRYSTONE PROGRAM, SOME STRING[0m
+[1;30mNext_Ptr_Glob->       [0m[1;30m  Ptr_Comp:       *    True[0m[1;30m same as above[0m
+[1;30m  Discr:       [0m[1;30mO.K.  [0m[1;30m0  [0m[1;30mEnum_Comp:     [0m[1;30mO.K.  [0m[1;30m1[0m
+[1;30m  Int_Comp:    [0m[1;30mO.K.  [0m[1;30m18 [0m[1;30mStr_Comp:      [0m[1;30mO.K.  [0m[1;30mDHRYSTONE PROGRAM, SOME STRING[0m
+[1;30mInt_1_Loc:     [0m[1;30mO.K.  [0m[1;30m5  [0m[1;30mInt_2_Loc:     [0m[1;30mO.K.  [0m[1;30m13[0m
+[1;30mInt_3_Loc:     [0m[1;30mO.K.  [0m[1;30m7  [0m[1;30mEnum_Loc:      [0m[1;30mO.K.  [0m[1;30m1  [0m
+[1;30mStr_1_Loc:                             [0m[1;30mO.K.  [0m[1;30mDHRYSTONE PROGRAM, 1'ST STRING[0m
+[1;30mStr_2_Loc:                             [0m[1;30mO.K.  [0m[1;30mDHRYSTONE PROGRAM, 2'ND STRING[0m
+
+[1;30mNanoseconds one Dhrystone run: 41666.666666666664[0m
+[1;30mDhrystones per Second:         24000[0m
+[1;30mVAX  MIPS rating =             13.659647125782584[0m
+[1;30m[0m
+[1;37mDhrystoneBenchmark            [0m[1;32m     81854.08 ms[0m[1;32m        54.64 pts[0m[1;32m        13.66 DMIPS[0m
+[1;32mIterrations: 0              , Ratio: 4              [0m
+[1;36m[18] ParallelDhrystoneBenchmark[0m
+[1;37mParallelDhrystoneBenchmark    [0m[1;32m     83243.53 ms[0m[1;32m       437.11 pts[0m[1;32m       109.28 DMIPS[0m
+[1;32mIterrations: 0              , Ratio: 4              [0m
+[1;36m[19] WhetstoneBenchmark[0m
+[1;30mDouble Precision Python Whetstone Benchmark
+[0m
+[1;30mWith run time input data
+[0m
+[1;30mCalibrate[0m
+[1;30m       0.71 Seconds          1   Passes (x 100)[0m
+[1;30m       3.06 Seconds          5   Passes (x 100)[0m
+[1;30m
+Use 163  passes (x 100)[0m
+[1;30m
+          Double Precision Python Whetstone Benchmark[0m
+[1;30m
+                  ??[0m
+[1;30m
+                  [0m
+[1;30m
+Loop content                  Result              MFLOPS      MOPS   Seconds
+[0m
+[1;30mN1 doubleing point     -1.12398255667391900    [0m[1;30m    2.970               1.054[0m
+[1;30mN2 doubleing point     -1.12187079889284425    [0m[1;30m    2.826               7.753[0m
+[1;30mN3 if then else         1.00000000000000000    [0m[1;30m               2.953    5.712[0m
+[1;30mN4 fixed point         12.00000000000000000    [0m[1;30m               4.927   10.422[0m
+[1;30mN5 sin,cos etc.         0.49902937281518261    [0m[1;30m               2.872    4.723[0m
+[1;30mN6 doubleing point      1.00000000000000000    [0m[1;30m    1.890              46.508[0m
+[1;30mN7 assignments          3.00000000000000000    [0m[1;30m               1.657   18.175[0m
+[1;30mN8 exp,sqrt etc.        0.75100163018458665    [0m[1;30m               1.725    3.515[0m
+[1;30mMWIPS            [0m[1;30m                                  16.656             97.861
+[0m
+[1;37mWhetstoneBenchmark            [0m[1;32m    111476.79 ms[0m[1;32m        16.66 pts[0m[1;32m        16.66 MWIPS[0m
+[1;32mIterrations: 0              , Ratio: 1              [0m
+[1;36m[20] ParallelWhetstoneBenchmark[0m
+[1;37mParallelWhetstoneBenchmark    [0m[1;32m    114324.87 ms[0m[1;32m       133.75 pts[0m[1;32m       133.75 MWIPS[0m
+[1;32mIterrations: 0              , Ratio: 1              [0m
+[1;36m[21] LinpackBenchmark[0m
+[1;30mRunning Linpack 1000 x 1000 in Python[0m
+[1;30mNorma is 0.4999992111463065[0m
+[1;30mResidual is 9.985345883478658e-13[0m
+[1;30mNormalised residual is 8.99[0m
+[1;30mMachine result.Eepsilon is 2.220446049250313e-16[0m
+[1;30mx[0]-1 is -1.4055423491754482e-13[0m
+[1;30mx[n-1]-1 is -1.8096635301390052e-13[0m
+[1;30mTime is 437.35[0m
+[1;30mMFLOPS: 1.529[0m
+[1;37mLinpackBenchmark              [0m[1;32m    472386.66 ms[0m[1;32m        15.29 pts[0m[1;32m         1.53 MFLOPS[0m
+[1;32mIterrations: 0              , Ratio: 10             [0m
+[1;36m[22] ParallelLinpackBenchmark[0m
+[1;37mParallelLinpackBenchmark      [0m[1;32m    483699.97 ms[0m[1;32m       120.06 pts[0m[1;32m        12.01 MFLOPS[0m
+[1;32mIterrations: 0              , Ratio: 10             [0m
+[1;36m[23] HashBenchmark[0m
+[1;37mHashBenchmark                 [0m[1;32m       569.03 ms[0m[1;32m       351.47 pts[0m[1;32m     35147.35 Iter/s[0m
+[1;32mIterrations: 20000          , Ratio: 10             [0m
+[1;36m[24] ParallelHashBenchmark[0m
+[1;37mParallelHashBenchmark         [0m[1;32m       854.10 ms[0m[1;32m      2538.22 pts[0m[1;32m    253821.85 Iter/s[0m
+[1;32mIterrations: 20000          , Ratio: 10             [0m
+
+[1;37mTotal:                        [0m[1;32m   2212591.18 ms[0m[1;32m      9544.90 pts[0m
+
+[1;36mSingle-thread results[0m
+[1;37mOperating System,Runtime,Threads Count,Memory Used[0m[1;37m,ArithemticsBenchmark[0m[1;37m,MathBenchmark[0m[1;37m,CallBenchmark[0m[1;37m,IfElseBenchmark[0m[1;37m,StringManipulation[0m[1;37m,MemoryBenchmark[0m[1;37m,RandomMemoryBenchmark[0m[1;37m,Scimark2Benchmark[0m[1;37m,DhrystoneBenchmark[0m[1;37m,WhetstoneBenchmark[0m[1;37m,LinpackBenchmark[0m[1;37m,HashBenchmark[0m[1;37m,Total Points,Total Time (ms)[0m
+[1;37mLinux-5.4.0-1.4-e8c2-x86_64-E8C2-with-glibc2.2.5,CPython 3.5.5,8,0[0m[1;32m,3.04[0m[1;32m,48.08[0m[1;32m,3.46[0m[1;32m,6.36[0m[1;32m,597.96[0m[1;32m,8.31[0m[1;32m,23.49[0m[1;32m,18.86[0m[1;32m,54.64[0m[1;32m,16.66[0m[1;32m,15.29[0m[1;32m,351.47[0m[1;37m,9544.90,2212591.18[0m
+
+[1;36mSingle-thread Units results[0m
+[1;37mOperating System,Runtime,Threads Count,Memory Used[0m[1;37m,ArithemticsBenchmark[0m[1;37m,MathBenchmark[0m[1;37m,CallBenchmark[0m[1;37m,IfElseBenchmark[0m[1;37m,StringManipulation[0m[1;37m,MemoryBenchmark[0m[1;37m,RandomMemoryBenchmark[0m[1;37m,Scimark2Benchmark[0m[1;37m,DhrystoneBenchmark[0m[1;37m,WhetstoneBenchmark[0m[1;37m,LinpackBenchmark[0m[1;37m,HashBenchmark[0m[1;37m,Total Points,Total Time (ms)[0m
+[1;37mLinux-5.4.0-1.4-e8c2-x86_64-E8C2-with-glibc2.2.5,CPython 3.5.5,8,0[0m[1;32m,101333.73[0m[1;32m,96156.75[0m[1;32m,345604.08[0m[1;32m,636154.37[0m[1;32m,59796.18[0m[1;32m,8.31[0m[1;32m,11.74[0m[1;32m,1.89[0m[1;32m,13.66[0m[1;32m,16.66[0m[1;32m,1.53[0m[1;32m,35147.35[0m[1;37m,9544.90,2212591.18[0m
+
+[1;36mAll results[0m
+[1;37mOperating System,Runtime,Threads Count,Memory Used[0m[1;37m,ArithemticsBenchmark[0m[1;37m,ParallelArithemticsBenchmark[0m[1;37m,MathBenchmark[0m[1;37m,ParallelMathBenchmark[0m[1;37m,CallBenchmark[0m[1;37m,ParallelCallBenchmark[0m[1;37m,IfElseBenchmark[0m[1;37m,ParallelIfElseBenchmark[0m[1;37m,StringManipulation[0m[1;37m,ParallelStringManipulation[0m[1;37m,MemoryBenchmark[0m[1;37m,ParallelMemoryBenchmark[0m[1;37m,RandomMemoryBenchmark[0m[1;37m,ParallelRandomMemoryBenchmark[0m[1;37m,Scimark2Benchmark[0m[1;37m,ParallelScimark2Benchmark[0m[1;37m,DhrystoneBenchmark[0m[1;37m,ParallelDhrystoneBenchmark[0m[1;37m,WhetstoneBenchmark[0m[1;37m,ParallelWhetstoneBenchmark[0m[1;37m,LinpackBenchmark[0m[1;37m,ParallelLinpackBenchmark[0m[1;37m,HashBenchmark[0m[1;37m,ParallelHashBenchmark[0m[1;37m,Total Points,Total Time (ms)[0m
+[1;37mLinux-5.4.0-1.4-e8c2-x86_64-E8C2-with-glibc2.2.5,CPython 3.5.5,8,0[0m[1;32m,3.04[0m[1;32m,27.32[0m[1;32m,48.08[0m[1;32m,430.16[0m[1;32m,3.46[0m[1;32m,27.39[0m[1;32m,6.36[0m[1;32m,50.61[0m[1;32m,597.96[0m[1;32m,4265.41[0m[1;32m,8.31[0m[1;32m,63.77[0m[1;32m,23.49[0m[1;32m,158.55[0m[1;32m,18.86[0m[1;32m,144.91[0m[1;32m,54.64[0m[1;32m,437.11[0m[1;32m,16.66[0m[1;32m,133.75[0m[1;32m,15.29[0m[1;32m,120.06[0m[1;32m,351.47[0m[1;32m,2538.22[0m[1;37m,9544.90,2212591.18[0m
+
+[1;36mAll Units results[0m
+[1;37mOperating System,Runtime,Threads Count,Memory Used[0m[1;37m,ArithemticsBenchmark[0m[1;37m,ParallelArithemticsBenchmark[0m[1;37m,MathBenchmark[0m[1;37m,ParallelMathBenchmark[0m[1;37m,CallBenchmark[0m[1;37m,ParallelCallBenchmark[0m[1;37m,IfElseBenchmark[0m[1;37m,ParallelIfElseBenchmark[0m[1;37m,StringManipulation[0m[1;37m,ParallelStringManipulation[0m[1;37m,MemoryBenchmark[0m[1;37m,ParallelMemoryBenchmark[0m[1;37m,RandomMemoryBenchmark[0m[1;37m,ParallelRandomMemoryBenchmark[0m[1;37m,Scimark2Benchmark[0m[1;37m,ParallelScimark2Benchmark[0m[1;37m,DhrystoneBenchmark[0m[1;37m,ParallelDhrystoneBenchmark[0m[1;37m,WhetstoneBenchmark[0m[1;37m,ParallelWhetstoneBenchmark[0m[1;37m,LinpackBenchmark[0m[1;37m,ParallelLinpackBenchmark[0m[1;37m,HashBenchmark[0m[1;37m,ParallelHashBenchmark[0m[1;37m,Total Points,Total Time (ms)[0m
+[1;37mLinux-5.4.0-1.4-e8c2-x86_64-E8C2-with-glibc2.2.5,CPython 3.5.5,8,0[0m[1;32m,101333.73[0m[1;32m,910787.63[0m[1;32m,96156.75[0m[1;32m,860322.40[0m[1;32m,345604.08[0m[1;32m,2739371.71[0m[1;32m,636154.37[0m[1;32m,5061314.30[0m[1;32m,59796.18[0m[1;32m,426541.32[0m[1;32m,8.31[0m[1;32m,63.77[0m[1;32m,11.74[0m[1;32m,79.28[0m[1;32m,1.89[0m[1;32m,14.49[0m[1;32m,13.66[0m[1;32m,109.28[0m[1;32m,16.66[0m[1;32m,133.75[0m[1;32m,1.53[0m[1;32m,12.01[0m[1;32m,35147.35[0m[1;32m,253821.85[0m[1;37m,9544.90,2212591.18[0m
+
