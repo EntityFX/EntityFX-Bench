@@ -4,5 +4,5 @@ Composite Score: 5.15
 FFT (1024): 3.49
 SOR (100x100):   7.92
 Monte Carlo : 4.14
-Sparse matmult (N=1000, nz=5000): 4.81
-LU (100x100): 5.37
+Sparse matmult (N=1000, nz=5000): 4.80
+LU (100x100): 5.39
