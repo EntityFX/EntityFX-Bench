@@ -33,7 +33,7 @@ end
 
 local writer = Writer("Output.log")
 
-BenchmarkBase.IterrationsRatio = 0.1;
+BenchmarkBase.IterrationsRatio = 0.1
 
 benchmarks = {
     ArithemticsBenchmark(writer, true),

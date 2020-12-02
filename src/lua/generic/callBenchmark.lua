@@ -9,10 +9,8 @@ end
 
 function CallBenchmark:bench()
     self:beforeBench()
-    local start = os.clock() * 1000
     local call_time = self:doCallBench()
-    local result = self:populateResult(self:buildResult(start), call_time)
-    result.elapsed = os.clock() * 1000 - start
+    local result = self:populateResult(self:buildResult(os.time() - call_time.callTime), call_time)
     self:doOutput(result)
     self:afterBench(result)
     return result

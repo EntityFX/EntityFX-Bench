@@ -11,7 +11,7 @@ BenchmarkBase.IterrationsRatio = 1;
 
 function BenchmarkBase:bench()
     self:beforeBench()
-    local start = os.clock() * 1000
+    local start = os.time()
     local res = self:benchImplementation()
     local result = self:populateResult(self:buildResult(start), res)
     self:doOutput(result)
@@ -53,11 +53,11 @@ function BenchmarkBase:benchImplementation()
 end
 
 function BenchmarkBase:buildResult(start)
-    local elapsed = (os.clock() * 1000) - start
+    local elapsed = (os.time() - start) * 1000
     local tElapsed = 0
 
     if elapsed == 0 then
-        tElapsed = 1
+        tElapsed = 1000
     else
         tElapsed = elapsed
     end

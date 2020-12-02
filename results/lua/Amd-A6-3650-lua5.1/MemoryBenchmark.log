@@ -1,176 +1,32 @@
 Warmup
-int 4k: 142.17 MB/sint 512k: 137.87 MB/sint 8M: 172.44 MB/sint 32M: 6510416.67 MB/slong 4k: 145.10 MB/slong 512k: 146.75 MB/slong 8M: 172.47 MB/slong 32M: 6510416.67 MB/sAverage: 140.02 MB/sWarmup
-int 4k: 142.17 MB/sint 512k: 137.87 MB/sint 8M: 172.44 MB/sint 32M: 6510416.67 MB/slong 4k: 145.10 MB/slong 512k: 146.75 MB/slong 8M: 172.47 MB/slong 32M: 6510416.67 MB/sAverage: 140.02 MB/s...Elapsed No Call: 353Elapsed Call: 1337...
-Bench
-[1] MemoryBenchmark
-int 4k: 141.69 MB/s
-int 512k: 141.37 MB/s
-int 8M: 143.66 MB/s
-int 32M: 143.67 MB/s
-long 4k: 141.80 MB/s
-long 512k: 140.77 MB/s
-long 8M: 143.38 MB/s
-long 32M: 130.09 MB/s
-Average: 141.53 MB/s
-Warmup
-int 4k: 144.73 MB/sint 512k: 149.30 MB/sint 8M: 176.02 MB/sint 32M: 6510416.67 MB/slong 4k: 139.75 MB/slong 512k: 145.27 MB/slong 8M: 172.54 MB/slong 32M: 6510416.67 MB/sAverage: 147.02 MB/sWarmup
-int 4k: 144.73 MB/sint 512k: 149.30 MB/sint 8M: 176.02 MB/sint 32M: 6510416.67 MB/slong 4k: 139.75 MB/slong 512k: 145.27 MB/slong 8M: 172.54 MB/slong 32M: 6510416.67 MB/sAverage: 147.02 MB/s...Elapsed No Call: 365Elapsed Call: 1548...
-Bench
-[1] MemoryBenchmark
-int 4k: 145.14 MB/s
-int 512k: 145.66 MB/s
-int 8M: 146.73 MB/s
-int 32M: 146.98 MB/s
-long 4k: 140.36 MB/s
-long 512k: 140.95 MB/s
-long 8M: 144.83 MB/s
-long 32M: 143.76 MB/s
-Average: 145.40 MB/s
-Warmup
-..Elapsed No Call: 431Elapsed Call: 1585...int 4k: 147.55 MB/sint 512k: 149.51 MB/sint 8M: 176.17 MB/sint 32M: 9765625.00 MB/slong 4k: 145.40 MB/slong 512k: 147.10 MB/slong 8M: 174.78 MB/slong 32M: 9765625.00 MB/sAverage: 148.53 MB/sWarmup
-..Elapsed No Call: 420Elapsed Call: 1663...int 4k: 145.04 MB/sint 512k: 147.72 MB/sint 8M: 174.67 MB/sint 32M: 6510416.67 MB/slong 4k: 136.66 MB/slong 512k: 144.09 MB/slong 8M: 171.78 MB/slong 32M: 4882812.51 MB/sAverage: 146.38 MB/sWarmup
-..Elapsed No Call: 419Elapsed Call: 1538...int 4k: 144.60 MB/sint 512k: 148.13 MB/sint 8M: 174.30 MB/sint 32M: 6510416.66 MB/slong 4k: 139.23 MB/slong 512k: 141.12 MB/slong 8M: 171.40 MB/slong 32M: 4882812.49 MB/sAverage: 146.37 MB/sWarmup
-..Elapsed No Call: 423Elapsed Call: 1553...int 4k: 147.45 MB/sint 512k: 149.82 MB/sint 8M: 177.46 MB/sint 32M: 6510416.67 MB/slong 4k: 141.20 MB/slong 512k: 143.03 MB/slong 8M: 173.72 MB/slong 32M: 6510416.67 MB/sAverage: 148.63 MB/sWarmup
-..Elapsed No Call: 337Elapsed Call: 1555...int 4k: 146.21 MB/sint 512k: 146.59 MB/sint 8M: 175.48 MB/sint 32M: 6510416.67 MB/slong 4k: 143.96 MB/slong 512k: 143.77 MB/slong 8M: 171.84 MB/slong 32M: 9765625.00 MB/sAverage: 146.40 MB/sWarmup
-..Elapsed No Call: 519Elapsed Call: 1639...int 4k: 127.85 MB/sint 512k: 129.50 MB/sint 8M: 153.02 MB/sint 32M: 6510416.67 MB/slong 4k: 121.99 MB/slong 512k: 122.18 MB/slong 8M: 148.59 MB/slong 32M: 9765625.00 MB/sAverage: 128.68 MB/sWarmup
-..Elapsed No Call: 519Elapsed Call: 1639...int 4k: 127.85 MB/sint 512k: 129.50 MB/sint 8M: 153.02 MB/sint 32M: 6510416.67 MB/slong 4k: 121.99 MB/slong 512k: 122.18 MB/slong 8M: 148.59 MB/slong 32M: 9765625.00 MB/sAverage: 128.68 MB/s.
+..Elapsed No Call: 0Elapsed Call: 2000Call time: 2000...int 4k: 127.78 MB/sint 512k: 129.36 MB/sint 8M: 152.58 MB/sint 32M: 6510416.67 MB/slong 4k: 120.78 MB/slong 512k: 122.56 MB/slong 8M: 145.18 MB/slong 32M: 6510416.67 MB/sAverage: 1627703.95 MB/sWarmup
+..Elapsed No Call: 0Elapsed Call: 2000Call time: 2000...int 4k: 127.78 MB/sint 512k: 129.36 MB/sint 8M: 152.58 MB/sint 32M: 6510416.67 MB/slong 4k: 120.78 MB/slong 512k: 122.56 MB/slong 8M: 145.18 MB/slong 32M: 6510416.67 MB/sAverage: 1627703.95 MB/s.Random int 4k: 86.61 MB/sRandom int 512k: 57.30 MB/sRandom int 8M: 53.21 MB/sRandom long 4k: 82.53 MB/sRandom long 512k: 56.20 MB/sRandom long 8M: 53.51 MB/sAverage: 64.89 MB/s......
 Bench
 [1] ArithemticsBenchmark
-ArithemticsBenchmark                    11753 ms        76.57 pts     2552484.83 Iter/s
+ArithemticsBenchmark                    11000 ms        81.82 pts     2727272.73 Iter/s
 Iterrations:        30000000, Ratio:        0.030000
 [2] MathBenchmark
-MathBenchmark                           31026 ms       322.30 pts      644605.66 Iter/s
+MathBenchmark                           29000 ms       344.83 pts      689655.17 Iter/s
 Iterrations:        20000000, Ratio:        0.500000
 [3] CallBenchmark
-Elapsed No Call: 9942
-Elapsed Call: 31810
-CallBenchmark                           41753 ms        47.90 pts     4790052.94 Iter/s
+Elapsed No Call: 9000
+Elapsed Call: 28000
+Call time: 19000
+CallBenchmark                           19000 ms       105.26 pts    10526315.79 Iter/s
 Iterrations:       200000000, Ratio:        0.010000
 [4] IfElseBenchmark
-IfElseBenchmark                         20536 ms        97.39 pts     9738728.89 Iter/s
+IfElseBenchmark                         19000 ms       105.26 pts    10526315.79 Iter/s
 Iterrations:       200000000, Ratio:        0.010000
 [5] StringManipulation
-StringManipulation                       5037 ms       992.63 pts       99263.27 Iter/s
+StringManipulation                       5000 ms      1000.00 pts      100000.00 Iter/s
 Iterrations:          500000, Ratio:       10.000000
 [6] MemoryBenchmark
-int 4k: 129.63 MB/s
-int 512k: 128.68 MB/s
-int 8M: 130.21 MB/s
-int 32M: 130.65 MB/s
-long 4k: 123.00 MB/s
-long 512k: 121.56 MB/s
-long 8M: 120.12 MB/s
-long 32M: 124.68 MB/s
-Average: 129.15 MB/s
-Warmup
-..Elapsed No Call: 353Elapsed Call: 1550...int 4k: 124.83 MB/sint 512k: 144.36 MB/sint 8M: 173.21 MB/sint 32M: 9765625.00 MB/slong 4k: 132.64 MB/slong 512k: 139.85 MB/slong 8M: 166.93 MB/slong 32M: 6510416.67 MB/sAverage: 134.59 MB/sWarmup
-..Elapsed No Call: 353Elapsed Call: 1550...int 4k: 124.83 MB/sint 512k: 144.36 MB/sint 8M: 173.21 MB/sint 32M: 9765625.00 MB/slong 4k: 132.64 MB/slong 512k: 139.85 MB/slong 8M: 166.93 MB/slong 32M: 6510416.67 MB/sAverage: 134.59 MB/s.
-Bench
-[1] ArithemticsBenchmark
-ArithemticsBenchmark                    10711 ms        84.02 pts     2800633.02 Iter/s
-Iterrations:        30000000, Ratio:        0.030000
-[2] MathBenchmark
-MathBenchmark                           29481 ms       339.20 pts      678395.68 Iter/s
-Iterrations:        20000000, Ratio:        0.500000
-[3] CallBenchmark
-Elapsed No Call: 7025
-Elapsed Call: 26571
-CallBenchmark                           33596 ms        59.53 pts     5952936.38 Iter/s
-Iterrations:       200000000, Ratio:        0.010000
-[4] IfElseBenchmark
-IfElseBenchmark                         17396 ms       114.96 pts    11496367.15 Iter/s
-Iterrations:       200000000, Ratio:        0.010000
-[5] StringManipulation
-StringManipulation                       4736 ms      1055.72 pts      105572.38 Iter/s
-Iterrations:          500000, Ratio:       10.000000
-[6] MemoryBenchmark
-int 4k: 145.48 MB/s
-int 512k: 142.21 MB/s
-int 8M: 144.36 MB/s
-int 32M: 144.24 MB/s
-long 4k: 142.02 MB/s
-long 512k: 131.60 MB/s
-long 8M: 140.60 MB/s
-long 32M: 144.71 MB/s
-Average: 143.85 MB/s
-Warmup
-..Elapsed No Call: 400Elapsed Call: 1562...int 4k: 123.70 MB/sint 512k: 126.96 MB/sint 8M: 150.77 MB/sint 32M: 6510416.67 MB/slong 4k: 119.28 MB/slong 512k: 122.35 MB/slong 8M: 143.67 MB/slong 32M: 6510416.66 MB/sAverage: 125.33 MB/sWarmup
-..Elapsed No Call: 396Elapsed Call: 1555...int 4k: 125.87 MB/sint 512k: 128.19 MB/sint 8M: 155.28 MB/sint 32M: 6510416.67 MB/slong 4k: 122.36 MB/slong 512k: 124.80 MB/slong 8M: 148.37 MB/slong 32M: 9765625.00 MB/sAverage: 127.03 MB/sWarmup
-...Elapsed No Call: 482Elapsed Call: 1585...int 4k: 123.58 MB/sint 512k: 126.55 MB/sint 8M: 153.47 MB/sint 32M: 4882812.50 MB/slong 4k: 121.10 MB/slong 512k: 121.53 MB/slong 8M: 145.03 MB/slong 32M: 4882812.50 MB/sAverage: 125.06 MB/sWarmup
-int 4k: 126.13 MB/sint 512k: 128.88 MB/sint 8M: 152.97 MB/sint 32M: 6510416.67 MB/slong 4k: 119.94 MB/slong 512k: 122.38 MB/slong 8M: 144.57 MB/slong 32M: 4882812.50 MB/sAverage: 1424253.00 MB/sWarmup
-int 4k: 117.49 MB/sint 512k: 122.88 MB/sint 8M: 144.16 MB/sint 32M: 4882812.50 MB/slong 4k: 114.55 MB/slong 512k: 116.71 MB/slong 8M: 137.48 MB/slong 32M: 6510416.67 MB/sAverage: 1424247.81 MB/sWarmup
-int 4k: 117.49 MB/sint 512k: 122.88 MB/sint 8M: 144.16 MB/sint 32M: 4882812.50 MB/slong 4k: 114.55 MB/slong 512k: 116.71 MB/slong 8M: 137.48 MB/slong 32M: 6510416.67 MB/sAverage: 1424247.81 MB/s.Random int 4k: 86.73 MB/sRandom int 512k: 56.32 MB/sRandom int 8M: 54.29 MB/sRandom long 4k: 85.89 MB/sRandom long 512k: 59.63 MB/sRandom long 8M: 54.31 MB/sAverage: 66.20 MB/s.
-Bench
-[1] MemoryBenchmark
-int 4k: 119.96 MB/s
-int 512k: 119.27 MB/s
-int 8M: 119.99 MB/s
-int 32M: 120.99 MB/s
-long 4k: 113.37 MB/s
-long 512k: 114.85 MB/s
-long 8M: 114.45 MB/s
-long 32M: 114.46 MB/s
-Average: 117.17 MB/s
-Warmup
-..Elapsed No Call: 486Elapsed Call: 1569...int 4k: 126.91 MB/sint 512k: 130.36 MB/sint 8M: 152.47 MB/sint 32M: 6510416.67 MB/slong 4k: 120.69 MB/slong 512k: 122.39 MB/slong 8M: 148.16 MB/slong 32M: 6510416.66 MB/sAverage: 1627704.29 MB/sWarmup
-..Elapsed No Call: 496Elapsed Call: 1576...int 4k: 125.49 MB/sint 512k: 129.01 MB/sint 8M: 153.12 MB/sint 32M: 4882812.50 MB/slong 4k: 120.30 MB/slong 512k: 122.68 MB/slong 8M: 144.30 MB/slong 32M: 6510416.67 MB/sAverage: 1424253.01 MB/sWarmup
-..Elapsed No Call: 496Elapsed Call: 1576...int 4k: 125.49 MB/sint 512k: 129.01 MB/sint 8M: 153.12 MB/sint 32M: 4882812.50 MB/slong 4k: 120.30 MB/slong 512k: 122.68 MB/slong 8M: 144.30 MB/slong 32M: 6510416.67 MB/sAverage: 1424253.01 MB/s.Random int 4k: 84.94 MB/sRandom int 512k: 60.08 MB/sRandom int 8M: 55.03 MB/sRandom long 4k: 85.22 MB/sRandom long 512k: 60.55 MB/sRandom long 8M: 54.47 MB/sAverage: 66.72 MB/s.....
-Bench
-[1] ArithemticsBenchmark
-ArithemticsBenchmark                    11528 ms        78.07 pts     2602244.57 Iter/s
-Iterrations:        30000000, Ratio:        0.030000
-[2] MathBenchmark
-MathBenchmark                           27619 ms       362.06 pts      724113.83 Iter/s
-Iterrations:        20000000, Ratio:        0.500000
-[3] CallBenchmark
-Elapsed No Call: 9587
-Elapsed Call: 26721
-CallBenchmark                           36309 ms        55.08 pts     5508247.36 Iter/s
-Iterrations:       200000000, Ratio:        0.010000
-[4] IfElseBenchmark
-IfElseBenchmark                         18518 ms       108.00 pts    10799941.40 Iter/s
-Iterrations:       200000000, Ratio:        0.010000
-[5] StringManipulation
-StringManipulation                       5043 ms       991.44 pts       99144.29 Iter/s
-Iterrations:          500000, Ratio:       10.000000
-[6] MemoryBenchmark
-int 4k: 128.60 MB/s
-int 512k: 126.39 MB/s
-int 8M: 127.48 MB/s
-int 32M: 127.37 MB/s
-long 4k: 122.46 MB/s
-long 512k: 119.80 MB/s
-long 8M: 122.01 MB/s
-long 32M: 119.75 MB/s
-Average: 124.23 MB/s
-Warmup
-..Elapsed No Call: 419Elapsed Call: 1559...int 4k: 146.81 MB/sint 512k: 149.82 MB/sint 8M: 177.94 MB/sint 32M: 6510416.67 MB/slong 4k: 146.00 MB/slong 512k: 146.45 MB/slong 8M: 174.59 MB/slong 32M: 9765625.00 MB/sAverage: 2034622.91 MB/sWarmup
-..Elapsed No Call: 419Elapsed Call: 1559...int 4k: 146.81 MB/sint 512k: 149.82 MB/sint 8M: 177.94 MB/sint 32M: 6510416.67 MB/slong 4k: 146.00 MB/slong 512k: 146.45 MB/slong 8M: 174.59 MB/slong 32M: 9765625.00 MB/sAverage: 2034622.91 MB/s.Random int 4k: 82.40 MB/sRandom int 512k: 60.57 MB/sRandom int 8M: 53.25 MB/sRandom long 4k: 87.90 MB/sRandom long 512k: 61.63 MB/sRandom long 8M: 53.17 MB/sAverage: 66.49 MB/s......
-Bench
-[1] ArithemticsBenchmark
-ArithemticsBenchmark                    10814 ms        83.22 pts     2774119.79 Iter/s
-Iterrations:        30000000, Ratio:        0.030000
-[2] MathBenchmark
-MathBenchmark                           27531 ms       363.22 pts      726436.03 Iter/s
-Iterrations:        20000000, Ratio:        0.500000
-[3] CallBenchmark
-Elapsed No Call: 6748
-Elapsed Call: 31106
-CallBenchmark                           37855 ms        52.83 pts     5283266.56 Iter/s
-Iterrations:       200000000, Ratio:        0.010000
-[4] IfElseBenchmark
-IfElseBenchmark                         16824 ms       118.87 pts    11887255.80 Iter/s
-Iterrations:       200000000, Ratio:        0.010000
-[5] StringManipulation
-StringManipulation                       4808 ms      1039.82 pts      103982.47 Iter/s
-Iterrations:          500000, Ratio:       10.000000
-[6] MemoryBenchmark
-int 4k: 147.02 MB/s
-int 512k: 144.51 MB/s
-int 8M: 148.11 MB/s
-int 32M: 149.07 MB/s
-long 4k: 145.23 MB/s
-long 512k: 142.93 MB/s
-long 8M: 145.01 MB/s
-long 32M: 144.41 MB/s
-Average: 145.79 MB/s
+int 4k: 125.80 MB/s
+int 512k: 128.24 MB/s
+int 8M: 126.69 MB/s
+int 32M: 126.73 MB/s
+long 4k: 119.82 MB/s
+long 512k: 118.70 MB/s
+long 8M: 122.16 MB/s
+long 32M: 120.10 MB/s
+Average: 123.53 MB/s
