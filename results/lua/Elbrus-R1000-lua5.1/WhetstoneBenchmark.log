@@ -22,3 +22,27 @@ N6 floating point       0.99999987890802811        0.702              29.648
 N7 assignments          3.00000000000000000                   0.215   33.086
 N8 exp,sqrt etc.        0.75100163018458366                   0.042   33.771
 MWIPS                                              3.513            109.789
+Double Precision Lua Whetstone Benchmark
+
+No run time input data
+
+Calibrate
+       2.60 Seconds          1   Passes (x 100)
+
+Use 38  passes (x 100)
+
+          Double Precision Lua Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900        5.614               0.132
+N2 floating point      -1.12187079889284425        2.259               2.291
+N3 if then else         1.00000000000000000                   1.431    2.785
+N4 fixed point         12.00000000000000000                   3.366    3.605
+N5 sin,cos etc.         0.49902937281517401                   0.713    4.495
+N6 floating point       0.99999987890802811        0.699              29.734
+N7 assignments          3.00000000000000000                   0.215   33.118
+N8 exp,sqrt etc.        0.75100163018458366                   0.042   33.813
+MWIPS                                              3.503            109.973
