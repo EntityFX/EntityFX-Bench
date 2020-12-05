@@ -1,0 +1,9 @@
+Running Linpack 1000 x 1000 in Python
+Norma is 0.4999992111463065
+Residual is 1.115940673201976e-12
+Normalised residual is 10.05
+Machine result.Eepsilon is 2.220446049250313e-16
+x[0]-1 is -4.440892098500626e-15
+x[n-1]-1 is 6.794564910705958e-14
+Time is 200.51
+MFLOPS: 3.335
