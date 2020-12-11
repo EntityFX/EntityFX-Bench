@@ -1,7 +1,7 @@
 Cpu,Elbrus 1C+,Elbrus 4C,Elbrus  8C,Mediatek MT6589,Qualcomm 625,Intel Atom x5 Z8350,Intel Atom x5 Z8350,Intel Core i3 M330,Intel Core i3 M330,AMD A6 3650,Intel Core i7 2600
 Frequency,1000,750,1300,1200,2000,1440,1440,2133,2133,2600,3400
 Operating System,Linux e2k,Linux e2k,Linux e2k,Linux armv7l,Linux aarch64,Windows 10,Windows 10,Windows 10,Windows 10,Linux x86_64,Windows 10
-Runtime,Firefox 52,Firefox 52,Firefox 52,Chrome 80,Firefox 82,Firefox 52,Chrome 86,Firefox 52,Chrome 86,Chrome 86,Firefox 78
+Runtime,Firefox 52,Firefox 52,Firefox 52,Chrome 80,Firefox 82,Firefox 52,Chrome 86,Firefox 52,Chrome 86,Chrome 86,Firefox 78
 Threads Count,0,0,0,0,0,0,0,0,0,0,0
 Memory Used,0,0,0,0,0,0,0,0,0,0,0
 ArithemticsBenchmark (Iter/s),4866969.50,5183674.88,10373443.98,6153972.39,10266940.45,8792754.77,11390.82,23142791.02,24057738.57,34810860.99,38333759.26
