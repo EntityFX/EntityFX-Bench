@@ -1,32 +1,396 @@
 # Новогодние бенчмарки компьютеров Эльбрус
 
-## Нативные бенчмарки (Язык C.)
+Продолжение статьи [Большое тестирование процессоров различных архитектур](https://habr.com/ru/company/icl_services/blog/501588/). В этот раз я решил измерить производительность конкретных сред/языков программирования (C#, Java, JavaScript, Python, Lua) на компьютерах с процессорами Эльбрус и сравнить их с компьютерами (даже телефонами) на процессорах архитектурой ARM и X86-64.
+
+Языки программирования:
+
+* C#
+* PHP
+* JavaScript (Browser, не NodeJS)
+* Java
+* Python
+* Lua
+
+Список тестов
+
+* Dhrystone (http://www.roylongbottom.org.uk/#anchorSource)
+* Whetstone (http://www.roylongbottom.org.uk/#anchorSource)
+* Scimark 2 (Original sources: https://math.nist.gov/scimark2/download.html)
+* Linpack (Based on: https://github.com/fommil/netlib-java/blob/master/perf/src/main/java/com/github/fommil/netlib/Linpack.java)
+* Generic:
+  * Loops
+  * Conditions
+  * Arithmetics
+  * Math
+  * Array speed
+  * String manipulation
+  * Hash algorithms
+
+Но сперва приведу результаты нативных бенчмарков на языке C, а также результаты других популярных бенчмарков.
+
+<cut />
+
+## Нативные бенчмарки
+
+### Таблица с результатами с прошлой статьи
+
+<spoiler title="Результаты нативных бенчмарков">
 
 ![NativeBenchmarks.png](https://github.com/EntityFX/EntityFX-Bench/blob/master/results/doc/NativeBenchmarks.png?raw=true)
 
-## Бенчмарки языков программирования
+</spoiler>
+
+Тут выходит так: компьютеры на Эльбрусах имеют сопоставимую производительность с Intel Core i7 2600, если бы он работал на частоте 1200 - 1300 МГц (Для Эльбрус-8С), кроме теста MP MFLOPS, которых хорошо распараллеливается компилятором **LCC** и для Эльбрус 8СВ выдаёт 325 ГФлопс, где Core i7 2600 выдавал 
+85 ГФлопс (Это с SSE, без AVX).
+
+### Задержки кеша. Тест TLB от Линуса Торвальдса
+
+TODO
+
+### Тесты памяти STREAM
+
+### Geekbench 4/5 (В режиме RTC: x86 -> e2k трансляция)
+
+TODO
+
+### Crystal Mark 2004 (В режиме RTC: x86 -> e2k трансляция)
+
+| CPU                          | Threads | Frequency | ALU    | FPU    | MEM R (Mb/s) | MEM W (Mb/s) | Anounced |
+|------------------------------|---------|-----------|--------|--------|--------------|--------------|----------|
+| 486 DX4                      | 1       | 75        | 119    | 77     | 9            | 11           | 1993     |
+| P1 (P54C)                    | 1       | 200       | 484    | 420    | 80           | 65           | 1994     |
+| P1 MMX (P55C)                | 1       | 233       | 675    | 686    | 112          | 75           | 1997     |
+| P2                           | 1       | 400       | 1219   | 1260   | 222          | 150          | 1998     |
+| Transmeta Crusoe TM5800      | 1       | 1000      | 2347   | 1689   | 405          | 223          | 2000     |
+| P3 (Coopermine)              | 1       | 1000      | 3440   | 3730   | 355          | 170          | 2000     |
+| P4 (Willamete)               | 1       | 1600      | 3496   | 4110   | 1385         | 662          | 2001     |
+| Celeron (Willamete)          | 1       | 1800      | 3934   | 4594   | 1457         | 657          | 2001     |
+| Athlon XP (Palomino)         | 1       | 1400      | 4450   | 6220   | 430          | 520          | 2001     |
+| P4 (Northwood)               | 1       | 2400      | 5661   | 6747   | 1765         | 754          | 2002     |
+| P4 (Prescott)                | 1       | 2800      | 5908   | 6929   | 3744         | 851          | 2004     |
+| Athlon 64 (Venice)           | 1       | 1800      | 6699   | 7446   | 1778         | 906          | 2005     |
+| Celeron 530 (Conroe-L)       | 1       | 1733      | 7806   | 9117   | 3075         | 1226         | 2006     |
+| P4 (Prescott)                | 2       | 3000      | 9719   | 10233  | 3373         | 1578         | 2004     |
+| Atom D525                    | 4       | 1800      | 10505  | 7605   | 3407         | 1300         | 2010     |
+| Athlon 64 X2 (Brisbane)      | 2       | 2300      | 16713  | 19066  | 3973         | 2728         | 2007     |
+| Core i3-6100                 | 2       | 3700      | 17232  | 10484  | 5553         | 9594         | 2015     |
+| Pentium T3200 (Merom)        | 2       | 2000      | 20702  | 18063  | 4150         | 1598         | 2008     |
+| Atom x5-Z8350                | 4       | 1440      | 21894  | 18018  | 4799         | 2048         | 2016     |
+| Core i3-M330                 | 4       | 2133      | 25595  | 26627  | 6807         | 4257         | 2010     |
+| Core 2 Duo                   | 2       | 3160      | 28105  | 18196  | 6850         | 2845         | 2008     |
+| Atom Z3795                   | 4       | 1600      | 40231  | 34963  | 12060        | 5797         | 2016     |
+| AMD A6-3650                  | 4       | 2600      | 46978  | 35315  | 9711         | 3870         | 2011     |
+| Core 2 Quad                  | 4       | 2833      | 47974  | 31391  | 9710         | 5493         | 2008     |
+| Core i3-4130                 | 4       | 3400      | 54296  | 39163  | 19450        | 9269         | 2013     |
+| AMD Phenom II X4 965 (Agena) | 4       | 3400      | 59098  | 56272  | 11162        | 5973         | 2009     |
+| Core i7-2600                 | 8       | 3400      | 95369  | 71648  | 19547        | 9600         | 2011     |
+| Core i7-9900K                | 16      | 3600      | 270445 | 238256 | 44618        | 17900        | 2018     |
+| Elbrus-8C RTC-x86            | 8       | 1300      | 65817  | 29977  | 49800        | 7945         | 2016     |
+| Elbrus-8CB RTC-x86           | 8       | 1500      | 77481  | 37972  | 62100        | 13940        | 2018     |
+| Elbrus-1C+ RTC-x86           | 1       | 1000      | 6862   | 2735   | 6230         | 1800         | 2015     |
+
+Процессор Эльбрус-8С 1.3 ГГц на уровне AMD Phenom II X4 965 3.4 Ghz 4 ядра. 8СВ на 20% быстрее.
+
+## Бенчмарки сред/языков программирования
+
+А теперь переходим к бенчмаркам языков программирования (C#, Java, JavaScript, Python, Lua).
+
+### Микро бенчмарки
+
+В цикле с большим числов итераций проводим некоторые операции и замеряем время выполнения данного куска кода.
+
+#### Arithmetics
+
+Замеряет скорость арифметики: в цикле выполняет различные математические операции с замером времени выполнения.
+
+Пример кода на Python:
+
+```python
+    @staticmethod
+    def _doArithmetics(i : int) -> float:
+        return math.floor(i / 10) * math.floor(i / 100) * math.floor(i / 100) * math.floor(i / 100) * 1.11) + math.floor(i / 100) * math.floor(i / 1000) * math.floor(i / 1000) * 2.22 - i * math.floor(i / 10000) * 3.33 + i * 5.33
+```
+
+#### Math
+
+Замеряет скорость математических функций (Cos, Sin, Tan, Log, Power, Sqrt):
+
+```python
+    @staticmethod
+    def _doMath(i : int, li : float) -> float:
+        rev = 1.0 / (i + 1.0)
+        return (math.fabs(i) * math.acos(rev) * math.asin(rev) * math.atan(rev) + math.floor(li) + math.exp(rev) * math.cos(i) * math.sin(i) * math.pi) + math.sqrt(i)
+```
+
+#### Loops
+
+Замеряет скорость работы холостых циклов. Кстати, некоторые компиляторы и рантаймы могут оптимизировать этот код.
+
+#### Conditions
+
+Замеряет скорость работы условий.
+
+```python
+        d = 0
+        i = 0; c = -1
+        while i < self._iterrations: 
+            c = ((-1 if c == (-4) else c))
+            if (i == (-1)): 
+                d = 3
+            elif (i == (-2)): 
+                d = 2
+            elif (i == (-3)): 
+                d = 1
+            d = (d + 1)
+            i += 1; c -= 1
+        return d
+```
+
+#### Array speed (Memory, Random Memory)
+
+Замеряет скорость чтения из массива в переменную (последовательно или со случайными индексами)
+
+<spoiler title="Большой кусок кода на Python">
+
+```python
+    def _measureArrayRead(self, size) :
+        block_size = 16
+        i = [0] * block_size
+
+        array0_ = list(map(lambda x: random.randint(-2147483647, 2147483647), range(0, size)))
+        end = len(array0_) - 1
+        k0 = math.floor(size / 1024)
+        k1 = 1 if k0 == 0 else k0
+
+        iter_internal = math.floor(self._iterrations / k1)
+        iter_internal = 1 if iter_internal == 0 else iter_internal
+
+        idx = 0
+        while idx < end: 
+            i[0] = (array0_[idx])
+            i[1] = (array0_[idx + 1])
+            i[2] = (array0_[idx + 2])
+            i[3] = (array0_[idx + 3])
+            i[4] = (array0_[idx + 4])
+            i[5] = (array0_[idx + 5])
+            i[6] = (array0_[idx + 6])
+            i[7] = (array0_[idx + 7])
+            i[8] = (array0_[idx + 8])
+            i[9] = (array0_[idx + 9])
+            i[0xA] = (array0_[idx + 0xA])
+            i[0xB] = (array0_[idx + 0xB])
+            i[0xC] = (array0_[idx + 0xC])
+            i[0xD] = (array0_[idx + 0xD])
+            i[0xE] = (array0_[idx + 0xE])
+            i[0xF] = (array0_[idx + 0xF])
+            idx += block_size
+
+        start = time.time()
+        it = 0
+
+        while it < iter_internal: 
+            idx = 0
+            while idx < end: 
+                i[0] = (array0_[idx])
+                i[1] = (array0_[idx + 1])
+                i[2] = (array0_[idx + 2])
+                i[3] = (array0_[idx + 3])
+                i[4] = (array0_[idx + 4])
+                i[5] = (array0_[idx + 5])
+                i[6] = (array0_[idx + 6])
+                i[7] = (array0_[idx + 7])
+                i[8] = (array0_[idx + 8])
+                i[9] = (array0_[idx + 9])
+                i[0xA] = (array0_[idx + 0xA])
+                i[0xB] = (array0_[idx + 0xB])
+                i[0xC] = (array0_[idx + 0xC])
+                i[0xD] = (array0_[idx + 0xD])
+                i[0xE] = (array0_[idx + 0xE])
+                i[0xF] = (array0_[idx + 0xF])
+                idx += block_size
+            it += 1
+        
+        elapsed = time.time() - start
+        return (iter_internal * len(array0_) * 4 / elapsed / 1024 / 1024, i)
+```
+
+</spoiler>
+
+#### String manipulation
+
+Скорость работы со строковыми функциями (replace, upper, lower)
+
+```python
+    @staticmethod
+    def _doStringManipilation(str0_ : str) -> str:
+        return ("/".join(str0_.split(' ')).replace("/", "_").upper() + "AAA").lower().replace("aaa", ".")
+```
+
+#### Hash algorithms
+
+Алгоритмы SHA1 и SHA256 над байтами строк.
+
+```python
+    @staticmethod
+    def _doHash(i : int, prepared_bytes):
+        hashlib.sha1()
+        sha1_hash = hashlib.sha1(prepared_bytes[i % 3]).digest()
+        sha256_hash = hashlib.sha256(prepared_bytes[(i + 1) % 3]).digest()
+        return sha1_hash + sha256_hash
+```
+
+### Комплексные бенчмарки
+
+Выполнил реализацию популярных бенчмарков Dhrystone, Whetstone, LINPACK, Scimark 2 на всех 5 языках программирования (конечно же использовал существующие исходники, но адаптировал под мои тесты).
+
+#### Dhrystone
+
+> Dhrystone - синтетический тест, который был написан Reinhold P. Weicker в 1984 году.
+> Данный тест не использует операции с плавающей запятой, а версия 2.1 написана так, чтобы исключить возможность сильных оптимизаций при компиляции.
+> Бенчмарк выдаёт результаты в VAX Dhrystones в секунду, где 1 VAX DMIPS = Dhrystones в секунду делить на 1757.
+
+#### Whetstone
+
+> Whetstone - синтетический тест, который был написан Harold Curnow в 1972 году на языке Fortran.
+> Позже был переписан на языке C Roy Longbottom. Данный тест выдаёт результаты в MWIPS,
+> также промежуточные результаты в MOPS (Миллионов операций в секунду) и MFLOPS (Миллионы вещественных операций с плавающей запятой в секунду).
+> Данный тест производит различные подсчёты: производительность целочисленных и операций с плавающей запятой,
+> производительность операций с массивами, с условным оператором, производительность тригонометрических функций и функций возведения в степень, логарифмов и извлечения корня.
+
+#### LINPACK
+
+> LINPACK - тест, который был написан Jack Dongarra на языке Fortran в 70х годах, позже переписан на язык C.
+> Тест считает системы линейных уравнений, делает различные операции над двумерными (матрицами) и одномерными (векторами).
+> Используется реализация Linpack 2000x2000.
+
+#### Scimark 2
+
+> SciMark 2 - набор тестов на языке C измеряющий производительность кода встречающегося в научных и профессиональных приложениях. Содержит в себе 5 вычислительных тестов: FFT (быстрое преобразование Фурье), Gauss-Seidel relaxation (Метод Гаусса — Зейделя для решения СЛАУ), Sparse matrix-multiply (Умножение разреженных матриц), Monte Carlo integration (Интегрирование методом Монте-Карло), и LU factorization (LU-разложение).
+
+Переходим к результатам.
+
+## Результаты
 
 ### Бенчмарки Java
 
+<spoiler title="Результаты нативных бенчмарков">
+
 ![JavaBenchmarks.png](https://github.com/EntityFX/EntityFX-Bench/blob/master/results/doc/JavaBenchmarks.png?raw=true)
+
+</spoiler>
+
+Результаты Java на Эльбрусах в сравнении с Core i7 2600 4 ядра, 8 потоков 3.4 ГГц:
+
+* Эльбрус 1С+ в 8,5   раз медленнее на 1 поток
+* Эльбрус 1С+ в 18,5  раз медленнее на всех потоках
+* Эльбрус 4С  в 10    раз медленнее на 1 поток
+* Эльбрус 4С  в 8     раз медленнее на всех потоках
+* Эльбрус 8С  в 4     раз медленнее на 1 поток
+* Эльбрус 8С  в 1,5   раз медленнее на всех потоках
+* Эльбрус 8СВ в 3,5   раз медленнее на 1 поток
+* Эльбрус 8СВ в 1,5   раз медленнее на всех потоках
+
 
 ### Бенчмарки C# (.Net Framework, .Net Core, Mono)
 
+<spoiler title="Результаты бенчмарков на C#">
+
 ![DotnetBenchmarks.png](https://github.com/EntityFX/EntityFX-Bench/blob/master/results/doc/DotnetBenchmarks.png?raw=true)
+
+</spoiler>
+
+Результаты C# (Mono) на Эльбрусах в сравнении с Core i7 2600 4 ядра, 8 потоков 3.4 ГГц:
+
+* Эльбрус 1С+ в 18   раз медленнее на 1 поток
+* Эльбрус 1С+ в 60   раз медленнее на всех потоках
+* Эльбрус 4С  в 22,5 раз медленнее на 1 поток
+* Эльбрус 4С  в 19   раз медленнее на всех потоках
+* Эльбрус 8С  в 13   раз медленнее на 1 поток
+* Эльбрус 8С  в 5,5  раз медленнее на всех потоках
+* Эльбрус 8СВ в 10   раз медленнее на 1 поток
+* Эльбрус 8СВ в 3,5  раз медленнее на всех потоках
+
+Результаты C# (NetCore) в режиме RTC на Эльбрусах в сравнении с Core i7 2600 4 ядра, 8 потоков 3.4 ГГц:
+
+* Эльбрус 8С  в 3   раз медленнее на 1 поток
+* Эльбрус 8С  в 2  раз медленнее на всех потоках
+* Эльбрус 8СВ в 2   раз медленнее на 1 поток
+* Эльбрус 8СВ в 1,5  раз медленнее на всех потоках
+
+Выходит NetCore на Эльбрусах работает до 4х раз быстрее чем Mono. Будем ждать нативного NetCore для e2k.
 
 ### Бенчмарки JavaScript (Браузерные)
 
+<spoiler title="Результаты бенчмарков на JavaScript">
+
 ![JavaScriptBenchmarks.png](https://github.com/EntityFX/EntityFX-Bench/blob/master/results/doc/JavaScriptBenchmarks.png?raw=true)
+
+</spoiler>
+
+Результаты JavaScript на Эльбрусах в сравнении с Core i7 2600 4 ядра, 8 потоков 3.4 ГГц:
+
+* Эльбрус 1С+ в 16   раз медленнее
+* Эльбрус 4С  в 12,5 раз медленнее
+* Эльбрус 8С  в 6,5  раз медленнее
+* Эльбрус 8СВ в 5    раз медленнее
 
 ### Бенчмарки PHP
 
+<spoiler title="Результаты бенчмарков на PHP">
+
 ![PHPBenchmarks.png](https://github.com/EntityFX/EntityFX-Bench/blob/master/results/doc/PHPBenchmarks.png?raw=true)
+
+</spoiler>
+
+Результаты PHP на Эльбрусах в сравнении с Core i7 2600 3.4 ГГц:
+
+* Эльбрус 2С+ в 16    раз медленнее
+* Эльбрус 1С+ в 8     раз медленнее
+* Эльбрус 4С  в 4,5   раз медленнее
+* Эльбрус 8С  в 3     раза медленнее
+* Эльбрус 8СВ в 2,5   раза медленнее
+* Эльбрус R1000 в 12  раз медленнее
 
 ### Бенчмарки Python
 
+<spoiler title="Результаты бенчмарков на Python">
+
 ![PythonBenchmarks.png](https://github.com/EntityFX/EntityFX-Bench/blob/master/results/doc/PythonBenchmarks.png?raw=true)
+
+</spoiler>
+
+Хоть под Windows не удалось запустить многопоточный Python, приведу относительно Amd A6 3650, который на 40% медленнее Core i7.
+
+Результаты Python на Эльбрусах в сравнении с Core i7 2600 3.4 ГГц:
+
+* Эльбрус 2С+ в 24   раз медленнее на 1 поток
+* Эльбрус 2С+ в 40   раз медленнее на всех потоках
+* Эльбрус 1С+ в 12   раз медленнее на 1 поток
+* Эльбрус 1С+ в 40   раз медленнее на всех потоках
+* Эльбрус 4С  в 15   раз медленнее на 1 поток
+* Эльбрус 4С  в 12   раз медленнее на всех потоках
+* Эльбрус 8С  в 9    раз медленнее на 1 поток
+* Эльбрус 8С  в 4    раза медленнее на всех потоках
+* Эльбрус 8СВ в 7,5  раз медленнее на 1 поток
+* Эльбрус 8СВ в 3    раза медленнее на всех потоках
 
 ### Бенчмарки Lua
 
+<spoiler title="Результаты бенчмарков на Lua">
+
 ![LuaBenchmarks.png](https://github.com/EntityFX/EntityFX-Bench/blob/master/results/doc/LuaBenchmarks.png?raw=true)
 
+</spoiler>
+
+Результаты Lua на Эльбрусах в сравнении с Core i7 2600 3.4 ГГц:
+
+* Эльбрус 2С+ в 16    раз медленнее
+* Эльбрус 1С+ в 6     раз медленнее
+* Эльбрус 4С  в 10    раз медленнее
+* Эльбрус 8С  в 6     раз медленнее
+* Эльбрус 8СВ в 5     раз медленнее
+* Эльбрус R1000 в 9   раз медленнее
+
+## Выводы
+
+TODO
