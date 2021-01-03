@@ -4,16 +4,10 @@ import "../utils"
 
 import ( 
     "strings"
-    "time"
     "reflect"
 ) 
 
-var IterrationsRatio float64 = 1.0;
-
-func makeTimestamp() int64 {
-    t := time.Now()
-    return int64(time.Nanosecond) * t.UnixNano() / int64(time.Millisecond)
-}
+var IterrationsRatio float64 = 1.0
 
 type BenchResult struct	{
     Elapsed int64
@@ -29,16 +23,13 @@ type BenchResult struct	{
 type BenchmarkInterface interface {
     BenchImplementation() interface{}
 
-    SetIterrations(iterrations int64)
     GetIterrations() int64
 
-    SetPrintToConsole(printToConsole bool)
-    GetPrintToConsole() bool
-
-    SetWriter(writer utils.WriterType)
-    GetWriter() utils.WriterType
-
     PopulateResult(benchResult *BenchResult, dhrystoneResult interface{}) *BenchResult
+
+    Bench() *BenchResult
+
+    Warmup(aspect float64)
 
     BeforeBench()
     
@@ -48,9 +39,6 @@ type BenchmarkInterface interface {
 
     DoOutput(result *BenchResult)
 
-    SetRatio(ratio float64)
-
-    SetName(name string)
     GetName() string
 }
 
@@ -61,14 +49,15 @@ type BenchmarkBaseBase struct {
     Ratio float64
     Name string
     output utils.WriterType
+    child BenchmarkInterface
 }
 
-func NewBenchmarkBase(writer utils.WriterType, printToConsole bool) BenchmarkInterface {
-    var benchBase BenchmarkInterface = &BenchmarkBaseBase{}
-    benchBase.SetPrintToConsole(printToConsole)
-    benchBase.SetWriter(writer)
+func NewBenchmarkBase(writer utils.WriterType, printToConsole bool) *BenchmarkBaseBase {
+    var benchBase = &BenchmarkBaseBase{}
+    benchBase.printToConsole = printToConsole
+    benchBase.output = writer
     if (writer == nil) {
-        benchBase.SetWriter(utils.NewWriter(""))
+        benchBase.output  = utils.NewWriter("")
     }
 
     return benchBase
@@ -78,10 +67,6 @@ func (b *BenchmarkBaseBase) BeforeBench() {
 }
 
 func (b *BenchmarkBaseBase) AfterBench(result *BenchResult) {
-}
-
-func (b *BenchmarkBaseBase) BenchImplementation() interface{} {
-    return nil
 }
 
 func  (b *BenchmarkBaseBase) PopulateResult(benchResult *BenchResult, dhrystoneResult interface{}) *BenchResult {
@@ -96,7 +81,7 @@ func  (b *BenchmarkBaseBase) PopulateResult(benchResult *BenchResult, dhrystoneR
 
 
 func (b *BenchmarkBaseBase) BuildResult(start int64) *BenchResult {
-    elapsed := makeTimestamp() - start
+    elapsed := utils.MakeTimestamp() - start
     var tElapsed int64 = 1
     if elapsed == 0 {
         tElapsed = 1
@@ -128,63 +113,46 @@ func (b *BenchmarkBaseBase) DoOutput(result *BenchResult) {
     //printWriter.close();
 }
 
-func Bench(b BenchmarkInterface) *BenchResult {
+func Warmup(b BenchmarkInterface, aspect float64) {
+    b.Warmup(aspect)
+}
 
+func (b *BenchmarkBaseBase) Warmup(aspect float64) {
     var name string
-    if t := reflect.TypeOf(b); t.Kind() == reflect.Ptr {
+    if t := reflect.TypeOf(b.child); t.Kind() == reflect.Ptr {
         name = t.Elem().Name()
     } else {
         name = t.Name()
     }
-    b.SetName(name)
+    b.Name = name
 
+    b.Iterrations = int64(float64(b.Iterrations) * IterrationsRatio)
+    tmp := b.Iterrations
+    b.Iterrations = int64(float64(b.Iterrations) * aspect)
+    b.Bench()
+    b.Iterrations = tmp
+}
+
+func (b *BenchmarkBaseBase) BenchImplementation() interface{} {
+    return nil
+}
+
+func Bench(b BenchmarkInterface) *BenchResult {
+    return b.Bench()
+}
+
+func (b *BenchmarkBaseBase) Bench() *BenchResult {
     b.BeforeBench()
-    start := makeTimestamp()
-    res := b.BenchImplementation()
-    result := b.PopulateResult(b.BuildResult(start), res);
+    start := utils.MakeTimestamp()
+    res := b.child.BenchImplementation()
+    result := b.child.PopulateResult(b.BuildResult(start), res);
     b.DoOutput(result)
     b.AfterBench(result)
     return result
 }
 
-func Warmup(b BenchmarkInterface, aspect float64) {
-    b.SetIterrations(int64(float64(b.GetIterrations()) * IterrationsRatio))
-    tmp := b.GetIterrations()
-    b.SetIterrations(int64(float64(b.GetIterrations()) * aspect))
-    Bench(b)
-    b.SetIterrations(tmp)
-}
-
-func (b *BenchmarkBaseBase) SetIterrations(iterrations int64) {
-    b.Iterrations = iterrations
-}
-
 func (b *BenchmarkBaseBase) GetIterrations() int64 {
     return b.Iterrations
-}
-
-func (b *BenchmarkBaseBase) SetPrintToConsole(printToConsole bool) {
-    b.printToConsole = printToConsole
-}
-
-func (b *BenchmarkBaseBase) GetPrintToConsole() bool {
-    return b.printToConsole
-}
-
-func (b *BenchmarkBaseBase) SetWriter(writer utils.WriterType) {
-    b.output = writer
-}
-
-func (b *BenchmarkBaseBase) GetWriter() utils.WriterType {
-    return b.output
-}
-
-func (b *BenchmarkBaseBase) SetRatio(ratio float64) {
-    b.Ratio = ratio
-}
-
-func (b *BenchmarkBaseBase) SetName(name string) {
-    b.Name = name
 }
 
 func (b *BenchmarkBaseBase) GetName() string {

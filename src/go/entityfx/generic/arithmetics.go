@@ -1,18 +1,24 @@
 package generic
 
-import "../utils"
+import (
+	"../utils"
+)
 
 type ArithmeticsBenchmark struct {
-	BenchmarkInterface
+	*BenchmarkBaseBase
 	R float32
 }
 
 func NewArithmetics(writer utils.WriterType, printToConsole bool) *ArithmeticsBenchmark {
-	var benchBase BenchmarkInterface = NewBenchmarkBase(writer, printToConsole)
-	benchBase.SetIterrations(300000000)
-	benchBase.SetRatio(0.03)
+	var benchBase = NewBenchmarkBase(writer, printToConsole)
+	benchBase.Iterrations = 300000000
+	benchBase.Ratio = 0.03
 
-	return &ArithmeticsBenchmark{benchBase, 0.0}
+	arithmeticsBenchmark := &ArithmeticsBenchmark{benchBase, 0.0}
+
+	benchBase.child = arithmeticsBenchmark
+
+	return arithmeticsBenchmark
 }
 
 func DoArithmetics(i int64) float32 {

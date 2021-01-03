@@ -2,6 +2,7 @@ package main
 
 import "./generic"
 import "./utils"
+import "./linpack"
 import "fmt"
 
 func writeResult(writer utils.WriterType, benchResult *generic.BenchResult) {
@@ -17,9 +18,17 @@ func writeResult(writer utils.WriterType, benchResult *generic.BenchResult) {
 func main() {  
 	var writer utils.WriterType = utils.NewWriter("")
 
+	var r = linpack.RunBenchmark(20, writer)
+	writer.WriteHeader("%v", r)
+
 	var benchmarks = [...]generic.BenchmarkInterface{
 		generic.NewArithmetics(writer, true),
 		generic.NewMathBenchmark(writer, true),
+		generic.NewCallBenchmark(writer, true),
+		generic.NewIfElseBenchmark(writer, true),
+		generic.NewStringManipulation(writer, true),
+		generic.NewMemoryBenchmark(writer, true),
+		generic.NewRandomMemoryBenchmark(writer, true),
 	}
 
 	writer.WriteHeader("Warmup");
@@ -39,7 +48,7 @@ func main() {
 	var result [len(benchmarks)]*generic.BenchResult
 
 	for i, benchmark := range benchmarks {
-		writer.WriteHeader("[%d] %s", i + 1, benchmark.GetName());
+		writer.WriteHeader("[%d] %s", i + 1, benchmark.GetName())
 		result[i] = generic.Bench(benchmark)
 		total += result[i].Elapsed
 		totalPoints += result[i].Points

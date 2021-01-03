@@ -5,15 +5,19 @@ import "../utils"
 import "math"
 
 type MathBenchmark struct {
-	BenchmarkInterface
+	*BenchmarkBaseBase
 }
 
 func NewMathBenchmark(writer utils.WriterType, printToConsole bool) *MathBenchmark {
-	var benchBase BenchmarkInterface = NewBenchmarkBase(writer, printToConsole)
-	benchBase.SetIterrations(200000000)
-	benchBase.SetRatio(0.5)
+	var benchBase = NewBenchmarkBase(writer, printToConsole)
+	benchBase.Iterrations = 200000000
+	benchBase.Ratio = 0.5
 
-	return &MathBenchmark{benchBase}
+	mathBenchmark := &MathBenchmark{benchBase}
+
+	benchBase.child = mathBenchmark
+
+	return mathBenchmark
 }
 
 func DoMath(if64 float64) float64 {
