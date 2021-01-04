@@ -33,7 +33,7 @@ func (b *IfElseBenchmark) BenchImplementation() interface{} {
 			d = 3
 		} else if i == -2 {
 			d = 2
-		} else if i == -3	{
+		} else if i == -3 {
 			d = 1
 		}
 		d += 1

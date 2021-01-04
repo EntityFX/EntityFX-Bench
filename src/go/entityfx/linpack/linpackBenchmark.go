@@ -1,8 +1,8 @@
 package linpack
 
 import (
-	"../utils"
 	g "../generic"
+	"../utils"
 	"reflect"
 )
 
@@ -21,12 +21,11 @@ func NewLinpackBenchmark(writer utils.WriterType, printToConsole bool) *LinpackB
 	return linpackBenchmark
 }
 
-
 func (b *LinpackBenchmark) BenchImplementation() interface{} {
 	return RunBenchmark(2000, b.BenchmarkBaseBase.Output)
 }
 
-func  (b *LinpackBenchmark) PopulateResult(benchResult *g.BenchResult, linpackResult interface{}) *g.BenchResult {
+func (b *LinpackBenchmark) PopulateResult(benchResult *g.BenchResult, linpackResult interface{}) *g.BenchResult {
 	benchResult.Points = linpackResult.(*LinpackResult).MFLOPS * b.Ratio
 	benchResult.Result = linpackResult.(*LinpackResult).MFLOPS
 	benchResult.Units = "MFLOPS"
@@ -35,11 +34,11 @@ func  (b *LinpackBenchmark) PopulateResult(benchResult *g.BenchResult, linpackRe
 }
 
 func (b *LinpackBenchmark) Warmup(aspect float64) {
-    var name string
-    if t := reflect.TypeOf(b.Child); t.Kind() == reflect.Ptr {
-        name = t.Elem().Name()
-    } else {
-        name = t.Name()
-    }
-    b.Name = name
+	var name string
+	if t := reflect.TypeOf(b.Child); t.Kind() == reflect.Ptr {
+		name = t.Elem().Name()
+	} else {
+		name = t.Name()
+	}
+	b.Name = name
 }

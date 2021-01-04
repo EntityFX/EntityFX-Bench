@@ -22,11 +22,11 @@ func NewStringManipulation(writer utils.WriterType, printToConsole bool) *String
 
 func DoStringManipilation(str string) string {
 	return strings.Replace(
-			strings.ToLower(
-				strings.ToUpper(
-					strings.Replace(
-						strings.Join(
-							strings.Split(str, " "), "/"), "/", "_", -1))  + "AAA"), "aaa", ".", -1)
+		strings.ToLower(
+			strings.ToUpper(
+				strings.Replace(
+					strings.Join(
+						strings.Split(str, " "), "/"), "/", "_", -1))+"AAA"), "aaa", ".", -1)
 }
 
 func (b *StringManipulation) BenchImplementation() interface{} {

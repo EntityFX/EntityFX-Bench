@@ -23,10 +23,10 @@ func NewArithmetics(writer utils.WriterType, printToConsole bool) *ArithmeticsBe
 
 func DoArithmetics(i int64) float32 {
 	var if32 = float32(i)
-	r := (if32 / 10.0) * (if32 / 100.0) * (if32 / 100.0) * (if32 / 100.0) * 1.11 + 
-		(if32 / 100) * (if32 / 1000.0) * (if32 / 1000.0) * 2.22 -
-		if32 * (if32 / 10000.0) * 3.33 +
-		if32 * 5.33
+	r := (if32/10.0)*(if32/100.0)*(if32/100.0)*(if32/100.0)*1.11 +
+		(if32/100)*(if32/1000.0)*(if32/1000.0)*2.22 -
+		if32*(if32/10000.0)*3.33 +
+		if32*5.33
 	return r
 }
 

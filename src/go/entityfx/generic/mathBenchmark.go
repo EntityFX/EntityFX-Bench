@@ -22,8 +22,8 @@ func NewMathBenchmark(writer utils.WriterType, printToConsole bool) *MathBenchma
 
 func DoMath(if64 float64) float64 {
 	var rev float64 = 1.0 / (if64 + 1.0)
-	return math.Abs(if64) * math.Acos(rev) * math.Asin(rev) * math.Atan(rev) +
-		math.Floor(if64) + math.Exp(rev) * math.Cos(if64) * math.Sin(if64) * math.Pi + math.Sqrt(if64)
+	return math.Abs(if64)*math.Acos(rev)*math.Asin(rev)*math.Atan(rev) +
+		math.Floor(if64) + math.Exp(rev)*math.Cos(if64)*math.Sin(if64)*math.Pi + math.Sqrt(if64)
 }
 
 func (b *MathBenchmark) BenchImplementation() interface{} {

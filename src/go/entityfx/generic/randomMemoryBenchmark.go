@@ -51,10 +51,16 @@ func (m *RandomMemoryBenchmark) MeasureArrayRandomRead(size int32) (float64, int
 	indexes := utils.RandomIntArray(end, end)
 	k0 := size / 1024
 	var k1 int64 = 0
-	if (k0 == 0) { k1 = 1 } else { k1 = int64(k0) }
+	if k0 == 0 {
+		k1 = 1
+	} else {
+		k1 = int64(k0)
+	}
 
 	iterInternal := m.Iterrations / k1
-	if (iterInternal == 0) { iterInternal = 1 }
+	if iterInternal == 0 {
+		iterInternal = 1
+	}
 	var idx int64 = 0
 	var i int64 = 0
 	for ; idx < int64(end); idx++ {
@@ -79,10 +85,16 @@ func (m *RandomMemoryBenchmark) MeasureArrayRandomLongRead(size int32) (float64,
 	indexes := utils.RandomIntArray(end, end)
 	k0 := size / 1024
 	var k1 int64 = 0
-	if (k0 == 0) { k1 = 1 } else { k1 = int64(k0) }
+	if k0 == 0 {
+		k1 = 1
+	} else {
+		k1 = int64(k0)
+	}
 
 	iterInternal := m.Iterrations / k1
-	if (iterInternal == 0) { iterInternal = 1 }
+	if iterInternal == 0 {
+		iterInternal = 1
+	}
 	var idx int64 = 0
 	var i int64 = 0
 	for ; idx < int64(end); idx++ {
@@ -102,9 +114,9 @@ func (b *RandomMemoryBenchmark) BenchImplementation() interface{} {
 	return b.BenchRandomMemory()
 }
 
-func  (b *RandomMemoryBenchmark) PopulateResult(benchResult *BenchResult, memoryBenchmarkResult interface{}) *BenchResult {
+func (b *RandomMemoryBenchmark) PopulateResult(benchResult *BenchResult, memoryBenchmarkResult interface{}) *BenchResult {
 	benchResult.Points = memoryBenchmarkResult.(float64) * b.Ratio
-	benchResult.Result = memoryBenchmarkResult.(float64) 
+	benchResult.Result = memoryBenchmarkResult.(float64)
 	benchResult.Units = "MB/s"
 	benchResult.Output = ""
 	return benchResult

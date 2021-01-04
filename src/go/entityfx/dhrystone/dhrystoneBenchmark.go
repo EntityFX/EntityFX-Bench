@@ -1,8 +1,8 @@
 package dhrystone
 
 import (
-	"../utils"
 	g "../generic"
+	"../utils"
 	"reflect"
 )
 
@@ -21,12 +21,11 @@ func NewDhrystoneBenchmark(writer utils.WriterType, printToConsole bool) *Dhryst
 	return dhrystoneBenchmark
 }
 
-
 func (b *DhrystoneBenchmark) BenchImplementation() interface{} {
 	return Bench(LOOPS, b.BenchmarkBaseBase.Output)
 }
 
-func  (b *DhrystoneBenchmark) PopulateResult(benchResult *g.BenchResult, dhrystoneResult interface{}) *g.BenchResult {
+func (b *DhrystoneBenchmark) PopulateResult(benchResult *g.BenchResult, dhrystoneResult interface{}) *g.BenchResult {
 	benchResult.Points = dhrystoneResult.(*DhrystoneResult).VaxMips * b.Ratio
 	benchResult.Result = dhrystoneResult.(*DhrystoneResult).VaxMips
 	benchResult.Units = "DMIPS"
@@ -35,11 +34,11 @@ func  (b *DhrystoneBenchmark) PopulateResult(benchResult *g.BenchResult, dhrysto
 }
 
 func (b *DhrystoneBenchmark) Warmup(aspect float64) {
-    var name string
-    if t := reflect.TypeOf(b.Child); t.Kind() == reflect.Ptr {
-        name = t.Elem().Name()
-    } else {
-        name = t.Name()
-    }
-    b.Name = name
+	var name string
+	if t := reflect.TypeOf(b.Child); t.Kind() == reflect.Ptr {
+		name = t.Elem().Name()
+	} else {
+		name = t.Name()
+	}
+	b.Name = name
 }

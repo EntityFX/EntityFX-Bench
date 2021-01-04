@@ -16,7 +16,7 @@ func writeResult(writer utils.WriterType, benchResult *generic.BenchResult) {
 	writer.WriteNewLine()
 }
 
-func main() {  
+func main() {
 	var writer utils.WriterType = utils.NewWriter("")
 
 	var benchmarks = [...]generic.BenchmarkInterface{
@@ -31,7 +31,7 @@ func main() {
 		linpack.NewLinpackBenchmark(writer, true),
 	}
 
-	writer.WriteHeader("Warmup");
+	writer.WriteHeader("Warmup")
 
 	for _, benchmark := range benchmarks {
 		generic.Warmup(benchmark, 0.05)
@@ -39,7 +39,7 @@ func main() {
 	}
 
 	writer.WriteNewLine()
-	writer.WriteHeader("Bench");
+	writer.WriteHeader("Bench")
 
 	var total int64 = 0
 	var totalPoints float64 = 0.0
@@ -48,7 +48,7 @@ func main() {
 	var result [len(benchmarks)]*generic.BenchResult
 
 	for i, benchmark := range benchmarks {
-		writer.WriteHeader("[%d] %s", i + 1, benchmark.GetName())
+		writer.WriteHeader("[%d] %s", i+1, benchmark.GetName())
 		result[i] = generic.Bench(benchmark)
 		total += result[i].Elapsed
 		totalPoints += result[i].Points

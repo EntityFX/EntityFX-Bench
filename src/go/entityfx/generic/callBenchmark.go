@@ -21,7 +21,7 @@ func NewCallBenchmark(writer utils.WriterType, printToConsole bool) *CallBenchma
 func DoCall(i float64, b float64) float64 {
 	var z float64 = i * 0.7
 	var z1 float64 = i * b
-	return  z + z1 + 0.5
+	return z + z1 + 0.5
 }
 
 func (c *CallBenchmark) DoCallBench() (int64, float64) {
@@ -54,7 +54,7 @@ func (c *CallBenchmark) DoCallBench() (int64, float64) {
 
 	var callTime int64 = 0
 
-	if (elapsed2 <= elapsed1) {
+	if elapsed2 <= elapsed1 {
 		callTime = elapsed1 - elapsed2
 	} else {
 		callTime = elapsed2 - elapsed1
@@ -64,12 +64,12 @@ func (c *CallBenchmark) DoCallBench() (int64, float64) {
 }
 
 func (b *CallBenchmark) Bench() *BenchResult {
-    b.BeforeBench()
-    start := utils.MakeTimestamp()
-    elapsed, value := b.DoCallBench()
-	result := b.PopulateResult(b.BuildResult(start), value);
+	b.BeforeBench()
+	start := utils.MakeTimestamp()
+	elapsed, value := b.DoCallBench()
+	result := b.PopulateResult(b.BuildResult(start), value)
 	result.Elapsed = elapsed
-    b.DoOutput(result)
-    b.AfterBench(result)
-    return result
+	b.DoOutput(result)
+	b.AfterBench(result)
+	return result
 }

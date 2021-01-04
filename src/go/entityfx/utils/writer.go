@@ -20,17 +20,17 @@ type WriterType interface {
 
 type Writer struct {
 	useConsole bool
-	filePath string
-	output string
+	filePath   string
+	output     string
 }
 
 func NewWriter(filePath string) WriterType {
-    return &Writer{true, filePath, ""} 
+	return &Writer{true, filePath, ""}
 }
 
 func (w *Writer) WriteColor(color string, format string, a ...interface{}) (n int, err error) {
 	var formatted = fmt.Sprintf(format, a...)
-	if (w.useConsole) {
+	if w.useConsole {
 		n, err = fmt.Print(color + formatted + "\033[0m")
 		return n, err
 	}
