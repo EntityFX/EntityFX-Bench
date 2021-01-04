@@ -16,7 +16,7 @@ func NewArithmetics(writer utils.WriterType, printToConsole bool) *ArithmeticsBe
 
 	arithmeticsBenchmark := &ArithmeticsBenchmark{benchBase, 0.0}
 
-	benchBase.child = arithmeticsBenchmark
+	benchBase.Child = arithmeticsBenchmark
 
 	return arithmeticsBenchmark
 }

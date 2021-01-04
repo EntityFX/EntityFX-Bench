@@ -48,16 +48,16 @@ type BenchmarkBaseBase struct {
     IterrationsRatio float64
     Ratio float64
     Name string
-    output utils.WriterType
-    child BenchmarkInterface
+    Output utils.WriterType
+    Child BenchmarkInterface
 }
 
 func NewBenchmarkBase(writer utils.WriterType, printToConsole bool) *BenchmarkBaseBase {
     var benchBase = &BenchmarkBaseBase{}
     benchBase.printToConsole = printToConsole
-    benchBase.output = writer
+    benchBase.Output = writer
     if (writer == nil) {
-        benchBase.output  = utils.NewWriter("")
+        benchBase.Output  = utils.NewWriter("")
     }
 
     return benchBase
@@ -119,7 +119,7 @@ func Warmup(b BenchmarkInterface, aspect float64) {
 
 func (b *BenchmarkBaseBase) Warmup(aspect float64) {
     var name string
-    if t := reflect.TypeOf(b.child); t.Kind() == reflect.Ptr {
+    if t := reflect.TypeOf(b.Child); t.Kind() == reflect.Ptr {
         name = t.Elem().Name()
     } else {
         name = t.Name()
@@ -144,8 +144,8 @@ func Bench(b BenchmarkInterface) *BenchResult {
 func (b *BenchmarkBaseBase) Bench() *BenchResult {
     b.BeforeBench()
     start := utils.MakeTimestamp()
-    res := b.child.BenchImplementation()
-    result := b.child.PopulateResult(b.BuildResult(start), res);
+    res := b.Child.BenchImplementation()
+    result := b.Child.PopulateResult(b.BuildResult(start), res);
     b.DoOutput(result)
     b.AfterBench(result)
     return result

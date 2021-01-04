@@ -1,10 +1,8 @@
 package linpack
 
-import (
-	"fmt"
+import ( 
 	"../utils"
-)
-//import "math"
+) 
 
 type LinpackResult struct {
 	Norma float64
@@ -73,24 +71,22 @@ func RunBenchmark(array_size int, output utils.WriterType) *LinpackResult {
     normx = 0.0;
     for i = 0; i < n; i++ {
 		if resid > abs(b[i]) {
-
 		} else {
 			resid = abs(b[i])
 		}
 		if normx > abs(x[i]) {
-
 		} else {
-			resid = abs(x[i])
+			normx = abs(x[i])
 		}
     }
 
     eps_result = epslon(1.0)
-	fmt.Printf("%v", ipvt)
+
     residn_result = resid / (float64(n) * norma * normx * eps_result)
     residn_result += 0.005 // for rounding
     residn_result = residn_result * 100
-    residn_result /= 100
-
+	residn_result /= 100
+	
     time_result = total
     time_result += 0.005 // for rounding
     time_result = time_result * 100
@@ -101,12 +97,12 @@ func RunBenchmark(array_size int, output utils.WriterType) *LinpackResult {
     mflops_result = mflops_result * 1000
     mflops_result /= 1000
 
-    output.WriteLine("Norma is %f", norma);
-    output.WriteLine("Residual is %f", resid);
-    output.WriteLine("Normalised residual is %f", residn_result);
-    output.WriteLine("Machine result.Eepsilon is %f", eps_result);
-    output.WriteLine("x[0]-1 is %f", (x[0] - 1))
-    output.WriteLine("x[n-1]-1 is %f", (x[n - 1] - 1))
+    output.WriteLine("Norma is %v", norma);
+    output.WriteLine("Residual is %v", resid);
+    output.WriteLine("Normalised residual is %v", residn_result);
+    output.WriteLine("Machine result.Eepsilon is %v", eps_result);
+    output.WriteLine("x[0]-1 is %v", (x[0] - 1))
+    output.WriteLine("x[n-1]-1 is %v", (x[n - 1] - 1))
     output.WriteLine("Time is %f", time_result)
     output.WriteLine("MFLOPS: %f", mflops_result)
 
@@ -189,7 +185,7 @@ func dgefa(a [][]float64, lda int, n int, ipvt []int) int {
 
     // gaussian elimination with partial pivoting
 
-    info = 0
+
 	nm1 = n - 1
 	
     if (nm1 >= 0) {

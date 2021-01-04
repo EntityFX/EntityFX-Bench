@@ -13,7 +13,7 @@ func NewCallBenchmark(writer utils.WriterType, printToConsole bool) *CallBenchma
 
 	callBenchmark := &CallBenchmark{benchBase}
 
-	benchBase.child = callBenchmark
+	benchBase.Child = callBenchmark
 
 	return callBenchmark
 }
@@ -46,7 +46,7 @@ func (c *CallBenchmark) DoCallBench() (int64, float64) {
 	}
 	elapsed2 = utils.MakeTimestamp() - start
 
-	writer := c.BenchmarkBaseBase.output
+	writer := c.BenchmarkBaseBase.Output
 	writer.Write("Elapsed No Call: %d", elapsed1)
 	writer.WriteNewLine()
 	writer.Write("Elapsed Call: %d", elapsed2)

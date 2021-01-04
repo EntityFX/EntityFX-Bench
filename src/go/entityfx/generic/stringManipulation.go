@@ -15,7 +15,7 @@ func NewStringManipulation(writer utils.WriterType, printToConsole bool) *String
 
 	mathBenchmark := &StringManipulation{benchBase}
 
-	benchBase.child = mathBenchmark
+	benchBase.Child = mathBenchmark
 
 	return mathBenchmark
 }

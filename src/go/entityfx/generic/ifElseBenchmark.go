@@ -15,7 +15,7 @@ func NewIfElseBenchmark(writer utils.WriterType, printToConsole bool) *IfElseBen
 
 	ifElseBenchmark := &IfElseBenchmark{benchBase}
 
-	benchBase.child = ifElseBenchmark
+	benchBase.Child = ifElseBenchmark
 
 	return ifElseBenchmark
 }

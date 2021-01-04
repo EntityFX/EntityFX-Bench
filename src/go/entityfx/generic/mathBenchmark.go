@@ -15,7 +15,7 @@ func NewMathBenchmark(writer utils.WriterType, printToConsole bool) *MathBenchma
 
 	mathBenchmark := &MathBenchmark{benchBase}
 
-	benchBase.child = mathBenchmark
+	benchBase.Child = mathBenchmark
 
 	return mathBenchmark
 }

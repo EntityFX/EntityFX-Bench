@@ -18,9 +18,6 @@ func writeResult(writer utils.WriterType, benchResult *generic.BenchResult) {
 func main() {  
 	var writer utils.WriterType = utils.NewWriter("")
 
-	var r = linpack.RunBenchmark(20, writer)
-	writer.WriteHeader("%v", r)
-
 	var benchmarks = [...]generic.BenchmarkInterface{
 		generic.NewArithmetics(writer, true),
 		generic.NewMathBenchmark(writer, true),
@@ -29,6 +26,7 @@ func main() {
 		generic.NewStringManipulation(writer, true),
 		generic.NewMemoryBenchmark(writer, true),
 		generic.NewRandomMemoryBenchmark(writer, true),
+		linpack.NewLinpackBenchmark(writer, true),
 	}
 
 	writer.WriteHeader("Warmup");

@@ -15,33 +15,33 @@ func NewMemoryBenchmark(writer utils.WriterType, printToConsole bool) *MemoryBen
 
 	arithmeticsBenchmark := &MemoryBenchmark{benchBase}
 
-	benchBase.child = arithmeticsBenchmark
+	benchBase.Child = arithmeticsBenchmark
 
 	return arithmeticsBenchmark
 }
 
 func (m *MemoryBenchmark) BenchRandomMemory() float64 {
 	int4k, _ := m.MeasureArrayRandomRead(1024)
-	m.BenchmarkBaseBase.output.WriteLine("int 4k: %.2f MB/s", int4k)
+	m.BenchmarkBaseBase.Output.WriteLine("int 4k: %.2f MB/s", int4k)
 	int512k, _ := m.MeasureArrayRandomRead(131072)
-	m.BenchmarkBaseBase.output.WriteLine("int 512k: %.2f MB/s", int512k)
+	m.BenchmarkBaseBase.Output.WriteLine("int 512k: %.2f MB/s", int512k)
 	int8m, _ := m.MeasureArrayRandomRead(2097152)
-	m.BenchmarkBaseBase.output.WriteLine("int 8M: %.2f MB/s", int8m)
+	m.BenchmarkBaseBase.Output.WriteLine("int 8M: %.2f MB/s", int8m)
 	int32m, _ := m.MeasureArrayRandomRead(32 * 1024 * 1024 / 4);
-	m.BenchmarkBaseBase.output.WriteLine("int 32M: %.2f MB/s", int32m)
+	m.BenchmarkBaseBase.Output.WriteLine("int 32M: %.2f MB/s", int32m)
 
 	long4k, _ := m.MeasureArrayRandomLongRead(1024)
-	m.BenchmarkBaseBase.output.WriteLine("long 4k: %.2f MB/s", long4k)
+	m.BenchmarkBaseBase.Output.WriteLine("long 4k: %.2f MB/s", long4k)
 	long512k, _ := m.MeasureArrayRandomLongRead(131072)
-	m.BenchmarkBaseBase.output.WriteLine("long 512k: %.2f MB/s", long512k)
+	m.BenchmarkBaseBase.Output.WriteLine("long 512k: %.2f MB/s", long512k)
 	long8m, _ := m.MeasureArrayRandomLongRead(2097152)
-	m.BenchmarkBaseBase.output.WriteLine("long 8M: %.2f MB/s", long8m)
+	m.BenchmarkBaseBase.Output.WriteLine("long 8M: %.2f MB/s", long8m)
 	long32m, _ := m.MeasureArrayRandomLongRead(32 * 1024 * 1024 / 8);
-	m.BenchmarkBaseBase.output.WriteLine("long 32M: %.2f MB/s", long32m)
+	m.BenchmarkBaseBase.Output.WriteLine("long 32M: %.2f MB/s", long32m)
 
 	avg := utils.Average([]float64{int4k, int512k, int8m, int32m, long4k, long512k, long8m, long32m})
 
-	m.BenchmarkBaseBase.output.WriteLine("Average: %.2f MB/s", avg)
+	m.BenchmarkBaseBase.Output.WriteLine("Average: %.2f MB/s", avg)
 
 	return avg
 }
