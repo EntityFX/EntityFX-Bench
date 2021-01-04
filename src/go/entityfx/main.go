@@ -3,6 +3,7 @@ package main
 import "./generic"
 import "./utils"
 import "./linpack"
+import "./dhrystone"
 import "fmt"
 
 func writeResult(writer utils.WriterType, benchResult *generic.BenchResult) {
@@ -26,6 +27,7 @@ func main() {
 		generic.NewStringManipulation(writer, true),
 		generic.NewMemoryBenchmark(writer, true),
 		generic.NewRandomMemoryBenchmark(writer, true),
+		dhrystone.NewDhrystoneBenchmark(writer, true),
 		linpack.NewLinpackBenchmark(writer, true),
 	}
 
