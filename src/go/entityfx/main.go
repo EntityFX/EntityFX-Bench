@@ -4,6 +4,7 @@ import "./generic"
 import "./utils"
 import "./linpack"
 import "./dhrystone"
+import "./whetstone"
 import "fmt"
 
 func writeResult(writer utils.WriterType, benchResult *generic.BenchResult) {
@@ -18,6 +19,9 @@ func writeResult(writer utils.WriterType, benchResult *generic.BenchResult) {
 
 func main() {
 	var writer utils.WriterType = utils.NewWriter("")
+
+	w := whetstone.Bench(false, writer)
+	fmt.Print(w)
 
 	var benchmarks = [...]generic.BenchmarkInterface{
 		generic.NewArithmetics(writer, true),

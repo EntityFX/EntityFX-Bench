@@ -1,6 +1,7 @@
 package utils
 
 import "fmt"
+import "runtime"
 
 type WriterType interface {
 	Write(format string, a ...interface{}) (n int, err error)
@@ -31,7 +32,11 @@ func NewWriter(filePath string) WriterType {
 func (w *Writer) WriteColor(color string, format string, a ...interface{}) (n int, err error) {
 	var formatted = fmt.Sprintf(format, a...)
 	if w.useConsole {
-		n, err = fmt.Print(color + formatted + "\033[0m")
+		if runtime.GOOS == "windows" {
+			n, err = fmt.Print(formatted)
+		} else {
+			n, err = fmt.Print(color + formatted + "\033[0m")
+		}
 		return n, err
 	}
 	w.output += formatted
