@@ -38,17 +38,17 @@ func RunBenchmark(array_size int, output utils.WriterType) *LinpackResult {
 	var time_result float64 = 0.0
 	var eps_result float64 = 0.0
 
-	var a [][]float64 = make([][]float64, array_size)
+	var a [][]float64 = make([][]float64, array_size, array_size)
 	for ar := 0; ar < array_size; ar++ {
-		a[ar] = make([]float64, array_size)
+		a[ar] = make([]float64, array_size, array_size)
 	}
 
-	var b []float64 = make([]float64, array_size)
-	var x []float64 = make([]float64, array_size)
+	var b []float64 = make([]float64, array_size, array_size)
+	var x []float64 = make([]float64, array_size, array_size)
 	var ops, total, norma, normx float64 = 0.0, 0.0, 0.0, 0.0
 	var resid, time float64
 	var n, i, lda = 0, 0, 0
-	var ipvt []int = make([]int, array_size)
+	var ipvt []int = make([]int, array_size, array_size)
 
 	lda = array_size
 	n = array_size

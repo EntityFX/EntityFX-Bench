@@ -278,5 +278,5 @@ func pout(title string, ops float64, typen int32, checknum float64, time float64
 			output.WriteLine("           %9.3f%9.3f", loop_mops[section], loop_time[section])
 		}
 	}
-	return;
+	return
 }

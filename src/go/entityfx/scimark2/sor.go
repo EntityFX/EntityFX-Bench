@@ -11,7 +11,7 @@ func sor_execute(omega float64, G [][]float64, num_iterations int) {
 	M := len(G)
 	N := len(G[0])
 	omega_over_four := omega * .25
-	one_minus_omega := 1.0 - omega
+	var one_minus_omega float64 = 1.0 - omega
 	mm1 := M - 1
 	nm1 := N - 1
 	for p := 0; p < num_iterations; p++ {

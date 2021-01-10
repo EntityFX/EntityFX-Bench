@@ -5,6 +5,7 @@ import "./utils"
 import "./linpack"
 import "./dhrystone"
 import "./whetstone"
+import "./scimark2"
 import "fmt"
 
 func writeResult(writer utils.WriterType, benchResult *generic.BenchResult) {
@@ -19,6 +20,9 @@ func writeResult(writer utils.WriterType, benchResult *generic.BenchResult) {
 
 func main() {
 	var writer utils.WriterType = utils.NewWriter("")
+
+	sc2 := scimark2.Bench(scimark2.RESOLUTION_DEFAULT, false, writer)
+	fmt.Print(sc2)
 
 	w := whetstone.Bench(false, writer)
 	fmt.Print(w)

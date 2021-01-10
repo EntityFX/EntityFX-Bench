@@ -28,6 +28,22 @@ func fft_inverse(data []float64) {
 	}
 }
 
+func fft_test(data []float64) float64 {
+	nd := len(data)
+	copy := make([]float64, nd)
+	for iii := 0; iii < (nd); iii++ {
+		copy[(0) + iii] = data[(0) + iii]
+	}
+	fft_transform(data)
+	fft_inverse(data)
+	diff := .0
+	for i := 0; i < nd; i++ {
+		d := data[i] - copy[i]
+		diff += (d * d)
+	}
+	return math.Sqrt(diff / float64(nd))
+}
+
 func fft_makeRandom(n int) []float64{
 	rand.Seed(time.Now().Unix())
 	nd := 2 * n
@@ -63,8 +79,6 @@ func fft_transform_internal(data []float64, direction int) {
 	
 	dual := 1			
 	for bit := 0 ; bit < logn; bit++ {
-		dual *= 2
-
 		w_real := 1.0
 		w_imag := 0.0
 
@@ -112,24 +126,20 @@ func fft_transform_internal(data []float64, direction int) {
 				data[i + 1] += wd_imag
 			}
 		}
+
+		dual *= 2
 	}
 }
 
 func fft_bitreverse(data []float64) {
 	/* This is the Goldrader bit-reversal algorithm */
-	n := len(data)
+	n := len(data) / 2
 	nm1 := n - 1
 	i := 0
 	j := 0
 	for ; i < nm1; i++ {
-
-		//int ii = 2*i;
 		ii := i << 1
-
-		//int jj = 2*j;
 		jj := j << 1
-
-		//int k = n / 2 ;
 		k := n >> 1
 
 		if i < j {
@@ -142,10 +152,7 @@ func fft_bitreverse(data []float64) {
 		}
 
 		for k <= j {
-			//j = j - k ;
 			j -= k
-
-			//k = k / 2 ; 
 			k >>= 1
 		}
 		j += k
