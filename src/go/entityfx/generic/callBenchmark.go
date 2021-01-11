@@ -6,25 +6,44 @@ type CallBenchmark struct {
 	*BenchmarkBaseBase
 }
 
-func NewCallBenchmark(writer utils.WriterType, printToConsole bool) *CallBenchmark {
+type ParallelCallBenchmark struct {
+	*CallBenchmark
+}
+
+func newCallBenchmarkBase(writer utils.WriterType, printToConsole bool) *BenchmarkBaseBase {
 	var benchBase = NewBenchmarkBase(writer, printToConsole)
 	benchBase.Iterrations = 2000000000
 	benchBase.Ratio = 0.01
 
-	callBenchmark := &CallBenchmark{benchBase}
+	return benchBase
+}
 
+func NewCallBenchmark(writer utils.WriterType, printToConsole bool) *CallBenchmark {
+	var benchBase = newCallBenchmarkBase(writer, printToConsole)
+	callBenchmark := &CallBenchmark{benchBase}
 	benchBase.Child = callBenchmark
 
 	return callBenchmark
 }
 
-func DoCall(i float64, b float64) float64 {
+func NewParallelCallBenchmark(writer utils.WriterType, printToConsole bool) *ParallelCallBenchmark {
+	var benchBase = NewCallBenchmark(writer, printToConsole)
+	callBenchmark := &ParallelCallBenchmark{benchBase}
+	benchBase.IsParallel = true
+	benchBase.Child = callBenchmark
+
+	callBenchmark.CallBenchmark = benchBase
+
+	return callBenchmark
+}
+
+func doCall(i float64, b float64) float64 {
 	var z float64 = i * 0.7
 	var z1 float64 = i * b
 	return z + z1 + 0.5
 }
 
-func (c *CallBenchmark) DoCallBench() (int64, float64) {
+func (c *CallBenchmark) doCallBench() (int64, float64) {
 	start := utils.MakeTimestamp()
 	var elapsed1 int64 = 0
 	var elapsed2 int64 = 0
@@ -42,7 +61,7 @@ func (c *CallBenchmark) DoCallBench() (int64, float64) {
 	i = 0
 	start = utils.MakeTimestamp()
 	for i = 0; i < c.GetIterrations(); i++ {
-		a = DoCall(a, 0.01)
+		a = doCall(a, 0.01)
 	}
 	elapsed2 = utils.MakeTimestamp() - start
 
@@ -66,10 +85,46 @@ func (c *CallBenchmark) DoCallBench() (int64, float64) {
 func (b *CallBenchmark) Bench() *BenchResult {
 	b.BeforeBench()
 	start := utils.MakeTimestamp()
-	elapsed, value := b.DoCallBench()
+	elapsed, value := b.doCallBench()
 	result := b.PopulateResult(b.BuildResult(start), value)
 	result.Elapsed = elapsed
 	b.DoOutput(result)
 	b.AfterBench(result)
 	return result
+}
+
+func (b *ParallelCallBenchmark) Bench() *BenchResult {
+	return b.BenchmarkBaseBase.Bench()
+}
+
+func (b *ParallelCallBenchmark) BenchInParallel(buildFunc func() interface{}) []*BenchResult {
+	count := 4
+	benchs := make([]interface{}, count)
+
+	for i := 0; i < count; i++ {
+		benchs[i] = buildFunc()
+	}
+
+	parallelResults := runParallel(func (i int) interface{}  {
+		start := utils.MakeTimestamp()
+		elapsed, _ := b.CallBenchmark.doCallBench()
+		benchResult := b.BuildResult(start)
+		benchResult.Elapsed = elapsed
+		return benchResult
+	}, 4)
+
+	results := make([]*BenchResult, count)
+
+	for i := 0; i < count; i++ {
+		results[i] = parallelResults[i].(*BenchResult)
+	}
+
+	return results
+}
+
+
+func (b *ParallelCallBenchmark) BenchImplementation() interface{} {
+	return b.BenchInParallel(func () interface{}  {
+		return 0
+	})
 }

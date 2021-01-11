@@ -8,31 +8,48 @@ type RandomMemoryBenchmark struct {
 	*BenchmarkBaseBase
 }
 
-func NewRandomMemoryBenchmark(writer utils.WriterType, printToConsole bool) *RandomMemoryBenchmark {
+type ParallelRandomMemoryBenchmark struct {
+	*RandomMemoryBenchmark
+}
+
+func newRandomMemoryBenchmarkBase(writer utils.WriterType, printToConsole bool) *BenchmarkBaseBase {
 	var benchBase = NewBenchmarkBase(writer, printToConsole)
 	benchBase.Iterrations = 500000
 	benchBase.Ratio = 2
 
-	arithmeticsBenchmark := &RandomMemoryBenchmark{benchBase}
-
-	benchBase.Child = arithmeticsBenchmark
-
-	return arithmeticsBenchmark
+	return benchBase
 }
 
-func (m *RandomMemoryBenchmark) BenchRandomMemory() float64 {
-	int4k, _ := m.MeasureArrayRandomRead(1024)
+func NewRandomMemoryBenchmark(writer utils.WriterType, printToConsole bool) *RandomMemoryBenchmark {
+	var benchBase = newRandomMemoryBenchmarkBase(writer, printToConsole)
+	randomMemoryBenchmark := &RandomMemoryBenchmark{benchBase}
+	benchBase.Child = randomMemoryBenchmark
+
+	return randomMemoryBenchmark
+}
+
+func NewParallelRandomMemoryBenchmark(writer utils.WriterType, printToConsole bool) *ParallelRandomMemoryBenchmark {
+	var benchBase = NewRandomMemoryBenchmark(writer, printToConsole)
+	parallelRandomMemoryBenchmark := &ParallelRandomMemoryBenchmark{benchBase}
+	benchBase.Child = parallelRandomMemoryBenchmark
+	parallelRandomMemoryBenchmark.RandomMemoryBenchmark = benchBase
+
+	return parallelRandomMemoryBenchmark
+}
+
+func (m *RandomMemoryBenchmark) benchRandomMemory() float64 {
+	int4k, _ := m.measureArrayRandomRead(1024)
 	m.BenchmarkBaseBase.Output.WriteLine("int 4k: %.2f MB/s", int4k)
-	int512k, _ := m.MeasureArrayRandomRead(131072)
+	int512k, _ := m.measureArrayRandomRead(131072)
 	m.BenchmarkBaseBase.Output.WriteLine("int 512k: %.2f MB/s", int512k)
-	int8m, _ := m.MeasureArrayRandomRead(2097152)
+	int8m, _ := m.measureArrayRandomRead(2097152)
 	m.BenchmarkBaseBase.Output.WriteLine("int 8M: %.2f MB/s", int8m)
 
-	long4k, _ := m.MeasureArrayRandomLongRead(1024)
+	long4k, _ := m.measureArrayRandomLongRead(1024)
 	m.BenchmarkBaseBase.Output.WriteLine("long 4k: %.2f MB/s", long4k)
-	long512k, _ := m.MeasureArrayRandomLongRead(131072)
+	long512k, _ := m.measureArrayRandomLongRead(131072)
 	m.BenchmarkBaseBase.Output.WriteLine("long 512k: %.2f MB/s", long512k)
-	long8m, _ := m.MeasureArrayRandomLongRead(2097152)
+	long8m, _ := m.measureArrayRandomLongRead(2097152)
 	m.BenchmarkBaseBase.Output.WriteLine("long 8M: %.2f MB/s", long8m)
 
 	avg := utils.Average([]float64{int4k, int512k, int8m, long4k, long512k, long8m})
@@ -42,7 +59,7 @@ func (m *RandomMemoryBenchmark) BenchRandomMemory() float64 {
 	return avg
 }
 
-func (m *RandomMemoryBenchmark) MeasureArrayRandomRead(size int32) (float64, int32) {
+func (m *RandomMemoryBenchmark) measureArrayRandomRead(size int32) (float64, int32) {
 	I := int32(0)
 	const MaxInt = int32(^uint32(0) >> 1)
 	array := utils.RandomIntArray(size, MaxInt)
@@ -76,7 +93,7 @@ func (m *RandomMemoryBenchmark) MeasureArrayRandomRead(size int32) (float64, int
 	return float64(iterInternal) * float64(len(array)) * 4.0 / (float64(elapsed) / 1000.0) / 1024.0 / 1024.0, I
 }
 
-func (m *RandomMemoryBenchmark) MeasureArrayRandomLongRead(size int32) (float64, int64) {
+func (m *RandomMemoryBenchmark) measureArrayRandomLongRead(size int32) (float64, int64) {
 	L := int64(0)
 	const MaxLong = int64(^uint64(0) >> 1)
 	array := utils.RandomLongArray(size, MaxLong)
@@ -111,7 +128,7 @@ func (m *RandomMemoryBenchmark) MeasureArrayRandomLongRead(size int32) (float64,
 }
 
 func (b *RandomMemoryBenchmark) BenchImplementation() interface{} {
-	return b.BenchRandomMemory()
+	return b.benchRandomMemory()
 }
 
 func (b *RandomMemoryBenchmark) PopulateResult(benchResult *BenchResult, memoryBenchmarkResult interface{}) *BenchResult {
@@ -120,4 +137,28 @@ func (b *RandomMemoryBenchmark) PopulateResult(benchResult *BenchResult, memoryB
 	benchResult.Units = "MB/s"
 	benchResult.Output = ""
 	return benchResult
+}
+
+func (b *ParallelRandomMemoryBenchmark) BenchImplementation() interface{} {
+	return b.BenchmarkBaseBase.BenchInParallel(func() interface{} {
+		return 0
+	}, func(interface{}) interface{} {
+		return b.benchRandomMemory()
+	}, func(result interface{}, benchResult *BenchResult) {
+		benchResult.Result = result.(float64)
+	})
+}
+
+func (b *ParallelRandomMemoryBenchmark) PopulateResult(benchResult *BenchResult, results interface{}) *BenchResult {
+	result := b.BuildParallelResult(benchResult, results.([]*BenchResult))
+	resultSum := 0.0
+	for _, r := range results.([]*BenchResult) {
+		resultSum += r.Result
+	}
+
+	result.Points = resultSum * b.Ratio
+	result.Result = resultSum
+	result.Units = "MB/s"
+	result.Output = ""
+	return result
 }

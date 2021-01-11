@@ -5,6 +5,7 @@ import "../utils"
 import (
 	"reflect"
 	"strings"
+	"sync"
 )
 
 var IterrationsRatio float64 = 1.0
@@ -18,6 +19,7 @@ type BenchResult struct {
 	Output        string
 	BenchmarkName string
 	Iterrations   int64
+	IsParallel    bool
 }
 
 type BenchmarkInterface interface {
@@ -48,6 +50,7 @@ type BenchmarkBaseBase struct {
 	IterrationsRatio float64
 	Ratio            float64
 	Name             string
+	IsParallel       bool
 	Output           utils.WriterType
 	Child            BenchmarkInterface
 }
@@ -70,11 +73,10 @@ func (b *BenchmarkBaseBase) AfterBench(result *BenchResult) {
 }
 
 func (b *BenchmarkBaseBase) PopulateResult(benchResult *BenchResult, dhrystoneResult interface{}) *BenchResult {
-	// switch v := dhrystoneResult.(type) {
-	// default:
-
-	// case []BenchResult:
-	// }
+	br, ok := dhrystoneResult.([]*BenchResult)
+	if ok {
+		return b.BuildParallelResult(benchResult, br)
+	}
 
 	return benchResult
 }
@@ -99,7 +101,25 @@ func (b *BenchmarkBaseBase) BuildResult(start int64) *BenchResult {
 		ratio,
 		"",
 		b.Name,
-		iterrations}
+		iterrations,
+		false,
+	}
+}
+
+
+func (b *BenchmarkBaseBase) BuildParallelResult(rootResult *BenchResult, results []*BenchResult) *BenchResult {
+	rootResult.Points = 99.9
+	rootResult.Iterrations = b.GetIterrations()
+	rootResult.Ratio = b.Ratio
+
+    for _, result := range results {
+		rootResult.Points += result.Points
+		rootResult.Result += result.Result
+	}
+	
+	rootResult.IsParallel = b.IsParallel
+
+	return rootResult
 }
 
 func (b *BenchmarkBaseBase) DoOutput(result *BenchResult) {
@@ -157,3 +177,55 @@ func (b *BenchmarkBaseBase) GetIterrations() int64 {
 func (b *BenchmarkBaseBase) GetName() string {
 	return b.Name
 }
+
+func (b *BenchmarkBaseBase) BenchInParallel(buildFunc func() interface{}, benchFunc func(interface{}) interface{}, setBenchResultFunc func(interface{}, *BenchResult)) []*BenchResult {
+	count := 4
+	benchs := make([]interface{}, count)
+
+	for i := 0; i < count; i++ {
+		benchs[i] = buildFunc()
+	}
+
+	parallelResults := runParallel(func (i int) interface{}  {
+		start := utils.MakeTimestamp()
+		result := benchFunc(benchs[i])
+		benchResult := b.BuildResult(start)
+		setBenchResultFunc(result, benchResult)
+		return benchResult
+	}, 4)
+
+	results := make([]*BenchResult, count)
+
+	for i := 0; i < count; i++ {
+		results[i] = parallelResults[i].(*BenchResult)
+	}
+
+	return results
+}
+
+func runParallel(function func(int) interface{}, t int) []interface{} {
+	var out []chan interface{} = make([]chan interface{}, t)
+	var res []interface{} =  make([]interface{}, t)
+    for i := range out {
+        out[i] = make(chan interface{})
+    }
+
+    var waitGroup sync.WaitGroup
+    waitGroup.Add(t)
+	
+	for	i := 0; i < t; i++ {
+		go func(copy func(int) interface{}, c chan interface{}, i int) {
+            defer waitGroup.Done()
+            c <- copy(i)
+        }(function, out[i], i)
+	}
+
+	defer waitGroup.Wait()
+
+	for i := range out {
+        res[i] = <-out[i]
+	}
+	
+	return res
+}
+

@@ -1,12 +1,16 @@
 package main
 
-import "./generic"
-import "./utils"
-import "./linpack"
-import "./dhrystone"
-import "./whetstone"
-import "./scimark2"
-import "fmt"
+import (
+	"fmt"
+
+	"./dhrystone"
+	"./generic"
+	"./linpack"
+
+	"./scimark2"
+	"./utils"
+	"./whetstone"
+)
 
 func writeResult(writer utils.WriterType, benchResult *generic.BenchResult) {
 	writer.WriteTitle("%-30s", benchResult.BenchmarkName)
@@ -21,22 +25,28 @@ func writeResult(writer utils.WriterType, benchResult *generic.BenchResult) {
 func main() {
 	var writer utils.WriterType = utils.NewWriter("")
 
-	sc2 := scimark2.Bench(scimark2.RESOLUTION_DEFAULT, false, writer)
-	fmt.Print(sc2)
-
-	w := whetstone.Bench(false, writer)
-	fmt.Print(w)
-
 	var benchmarks = [...]generic.BenchmarkInterface{
 		generic.NewArithmetics(writer, true),
+		generic.NewParallelArithmetics(writer, true),
 		generic.NewMathBenchmark(writer, true),
+		generic.NewParallelMathBenchmark(writer, true),
 		generic.NewCallBenchmark(writer, true),
+		generic.NewParallelCallBenchmark(writer, true),
 		generic.NewIfElseBenchmark(writer, true),
+		generic.NewParallelIfElseBenchmark(writer, true),
 		generic.NewStringManipulation(writer, true),
+		generic.NewParallelStringManipulation(writer, true),
 		generic.NewMemoryBenchmark(writer, true),
+		generic.NewParallelMemoryBenchmark(writer, true),
 		generic.NewRandomMemoryBenchmark(writer, true),
+		generic.NewParallelRandomMemoryBenchmark(writer, true),
+		scimark2.NewScimark2Benchmark(writer, true),
+		scimark2.NewParallelScimark2Benchmark(writer, true),
 		dhrystone.NewDhrystoneBenchmark(writer, true),
+		dhrystone.NewParallelDhrystoneBenchmark(writer, true),
+		whetstone.NewWhetstoneBenchmark(writer, true),
 		linpack.NewLinpackBenchmark(writer, true),
+		generic.NewHashBenchmark(writer, true),
 	}
 
 	writer.WriteHeader("Warmup")

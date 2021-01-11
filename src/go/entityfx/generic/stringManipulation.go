@@ -8,19 +8,36 @@ type StringManipulation struct {
 	*BenchmarkBaseBase
 }
 
-func NewStringManipulation(writer utils.WriterType, printToConsole bool) *StringManipulation {
+type ParallelStringManipulation struct {
+	*BenchmarkBaseBase
+}
+
+func newStringManipulationBase(writer utils.WriterType, printToConsole bool) *BenchmarkBaseBase {
 	var benchBase = NewBenchmarkBase(writer, printToConsole)
 	benchBase.Iterrations = 5000000
 	benchBase.Ratio = 10
 
-	mathBenchmark := &StringManipulation{benchBase}
-
-	benchBase.Child = mathBenchmark
-
-	return mathBenchmark
+	return benchBase
 }
 
-func DoStringManipilation(str string) string {
+func NewStringManipulation(writer utils.WriterType, printToConsole bool) *StringManipulation {
+	var benchBase = newStringManipulationBase(writer, printToConsole)
+	stringManipulation := &StringManipulation{benchBase}
+	benchBase.Child = stringManipulation
+
+	return stringManipulation
+}
+
+func NewParallelStringManipulation(writer utils.WriterType, printToConsole bool) *ParallelStringManipulation {
+	var benchBase = newStringManipulationBase(writer, printToConsole)
+	stringManipulation := &ParallelStringManipulation{benchBase}
+	benchBase.Child = stringManipulation
+	benchBase.IsParallel = true
+
+	return stringManipulation
+}
+
+func doStringManipilation(str string) string {
 	return strings.Replace(
 		strings.ToLower(
 			strings.ToUpper(
@@ -34,7 +51,23 @@ func (b *StringManipulation) BenchImplementation() interface{} {
 	str1 := ""
 	var i int64
 	for ; i < b.GetIterrations(); i++ {
-		str1 = DoStringManipilation(str)
+		str1 = doStringManipilation(str)
 	}
 	return str1
+}
+
+func (b *ParallelStringManipulation) BenchImplementation() interface{} {
+	return b.BenchmarkBaseBase.BenchInParallel(func () interface{}  {
+		return 0
+	}, func (interface{}) interface{}  {
+		str := "the quick brown fox jumps over the lazy dog"
+		str1 := ""
+		var i int64
+		for ; i < b.GetIterrations(); i++ {
+			str1 = doStringManipilation(str)
+		}
+		return str1
+	}, func (result interface{}, benchResult *BenchResult)  {
+
+	})
 }

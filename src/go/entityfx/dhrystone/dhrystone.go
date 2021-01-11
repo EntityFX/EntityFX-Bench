@@ -1,8 +1,9 @@
 package dhrystone
 
 import (
-	"../utils"
 	"strings"
+
+	"../utils"
 )
 
 const (
@@ -39,15 +40,19 @@ type DhrystoneResult struct {
 	VaxMips    float64
 }
 
-var IntGlob = 0
-var BoolGlob = false
-var Char1Glob byte = '\\'
-var Char2Glob byte = '\\'
-var Array1Glob = [50]int{}
-var Array2Glob = [50][50]int{}
-var PtrGlbNext *Record
-var PtrGlb *Record
-var Check *CheckRecord
+type Dhrystone struct {
+	IntGlob    int
+	BoolGlob   bool
+	Char1Glob  byte
+	Char2Glob  byte
+	Array1Glob [50]int
+	Array2Glob [50][50]int
+	PtrGlbNext *Record
+	PtrGlb     *Record
+	Check      *CheckRecord
+}
+
+//'\\'
 
 func Bench(loops int, output utils.WriterType) *DhrystoneResult {
 	if loops <= 0 {
@@ -59,175 +64,178 @@ func Bench(loops int, output utils.WriterType) *DhrystoneResult {
 	output.WriteLine("")
 	output.WriteLine("Optimization %s", "Optimised")
 
-	result := Proc0(loops)
+	dhrystone := &Dhrystone{0, false, '\\', '\\', [50]int{}, [50][50]int{}, nil, nil, nil}
+
+	result := Proc0(loops, dhrystone)
 	output.WriteLine("")
 	output.WriteLine("Final values (* implementation-dependent):\n")
 	output.WriteLine("")
 	output.Write("Int_Glob:      ")
-	if IntGlob == 5 {
+
+	if dhrystone.IntGlob == 5 {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.Write("%d  ", IntGlob)
+	output.Write("%d  ", dhrystone.IntGlob)
 	output.Write("Bool_Glob:     ")
-	if BoolGlob {
+	if dhrystone.BoolGlob {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.WriteLine("%t", BoolGlob)
+	output.WriteLine("%t", dhrystone.BoolGlob)
 	output.Write("Ch_1_Glob:     ")
-	if Char1Glob == 'A' {
+	if dhrystone.Char1Glob == 'A' {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.Write("%c  ", Char1Glob)
+	output.Write("%c  ", dhrystone.Char1Glob)
 	output.Write("Ch_2_Glob:     ")
-	if Char2Glob == 'B' {
+	if dhrystone.Char2Glob == 'B' {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.WriteLine("%c", Char2Glob)
+	output.WriteLine("%c", dhrystone.Char2Glob)
 	output.Write("Arr_1_Glob[8]: ")
-	if Array1Glob[8] == 7 {
+	if dhrystone.Array1Glob[8] == 7 {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.Write("%d  ", Array1Glob[8])
+	output.Write("%d  ", dhrystone.Array1Glob[8])
 	output.Write("Arr_2_Glob8/7: ")
-	if Array2Glob[8][7] == (LOOPS + 10) {
+	if dhrystone.Array2Glob[8][7] == (LOOPS + 10) {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.WriteLine("%d", Array2Glob[8][7])
+	output.WriteLine("%d", dhrystone.Array2Glob[8][7])
 	output.Write("Ptr_Glob->            ")
-	output.WriteLine("  Ptr_Comp:       *    %p", PtrGlb.PtrComp)
+	output.WriteLine("  Ptr_Comp:       *    %p", dhrystone.PtrGlb.PtrComp)
 	output.Write("  Discr:       ")
-	if PtrGlb.Discr == 0 {
+	if dhrystone.PtrGlb.Discr == 0 {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.Write("%d  ", PtrGlb.Discr)
+	output.Write("%d  ", dhrystone.PtrGlb.Discr)
 	output.Write("Enum_Comp:     ")
-	if PtrGlb.EnumComp == 2 {
+	if dhrystone.PtrGlb.EnumComp == 2 {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.WriteLine("%d", PtrGlb.EnumComp)
+	output.WriteLine("%d", dhrystone.PtrGlb.EnumComp)
 	output.Write("  Int_Comp:    ")
-	if PtrGlb.IntComp == 17 {
+	if dhrystone.PtrGlb.IntComp == 17 {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.Write("%d ", PtrGlb.IntComp)
+	output.Write("%d ", dhrystone.PtrGlb.IntComp)
 	output.Write("Str_Comp:      ")
-	if PtrGlb.StringComp == "DHRYSTONE PROGRAM, SOME STRING" {
+	if dhrystone.PtrGlb.StringComp == "DHRYSTONE PROGRAM, SOME STRING" {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.WriteLine("%s", PtrGlb.StringComp)
+	output.WriteLine("%s", dhrystone.PtrGlb.StringComp)
 	output.Write("Next_Ptr_Glob->       ")
-	output.Write("  Ptr_Comp:       *    %p", PtrGlbNext.PtrComp)
+	output.Write("  Ptr_Comp:       *    %p", dhrystone.PtrGlbNext.PtrComp)
 	output.WriteLine(" same as above")
 	output.Write("  Discr:       ")
-	if PtrGlbNext.Discr == 0 {
+	if dhrystone.PtrGlbNext.Discr == 0 {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.Write("%d  ", PtrGlbNext.Discr)
+	output.Write("%d  ", dhrystone.PtrGlbNext.Discr)
 	output.Write("Enum_Comp:     ")
-	if PtrGlbNext.EnumComp == 1 {
+	if dhrystone.PtrGlbNext.EnumComp == 1 {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.WriteLine("%d", PtrGlbNext.EnumComp)
+	output.WriteLine("%d", dhrystone.PtrGlbNext.EnumComp)
 	output.Write("  Int_Comp:    ")
-	if PtrGlbNext.IntComp == 18 {
+	if dhrystone.PtrGlbNext.IntComp == 18 {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.Write("%d ", PtrGlbNext.IntComp)
+	output.Write("%d ", dhrystone.PtrGlbNext.IntComp)
 	output.Write("Str_Comp:      ")
-	if PtrGlbNext.StringComp == "DHRYSTONE PROGRAM, SOME STRING" {
+	if dhrystone.PtrGlbNext.StringComp == "DHRYSTONE PROGRAM, SOME STRING" {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.WriteLine("%s", PtrGlbNext.StringComp)
+	output.WriteLine("%s", dhrystone.PtrGlbNext.StringComp)
 	output.Write("Int_1_Loc:     ")
-	if Check.IntLoc1 == 5 {
+	if dhrystone.Check.IntLoc1 == 5 {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.Write("%d  ", Check.IntLoc1)
+	output.Write("%d  ", dhrystone.Check.IntLoc1)
 	output.Write("Int_2_Loc:     ")
-	if Check.IntLoc2 == 13 {
+	if dhrystone.Check.IntLoc2 == 13 {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.WriteLine("%d", Check.IntLoc2)
+	output.WriteLine("%d", dhrystone.Check.IntLoc2)
 	output.Write("Int_3_Loc:     ")
-	if Check.IntLoc3 == 7 {
+	if dhrystone.Check.IntLoc3 == 7 {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.Write("%d  ", Check.IntLoc3)
+	output.Write("%d  ", dhrystone.Check.IntLoc3)
 	output.Write("Enum_Loc:      ")
-	if Check.EnumLoc == 1 {
+	if dhrystone.Check.EnumLoc == 1 {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.WriteLine("%d  ", Check.EnumLoc)
+	output.WriteLine("%d  ", dhrystone.Check.EnumLoc)
 	output.Write("Str_1_Loc:                             ")
-	if Check.String1Loc == "DHRYSTONE PROGRAM, 1'ST STRING" {
+	if dhrystone.Check.String1Loc == "DHRYSTONE PROGRAM, 1'ST STRING" {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.WriteLine("%s", Check.String1Loc)
+	output.WriteLine("%s", dhrystone.Check.String1Loc)
 	output.Write("Str_2_Loc:                             ")
-	if Check.String2Loc == "DHRYSTONE PROGRAM, 2'ND STRING" {
+	if dhrystone.Check.String2Loc == "DHRYSTONE PROGRAM, 2'ND STRING" {
 		output.Write("O.K.  ")
 	} else {
 		output.Write("WRONG ")
 	}
 
-	output.WriteLine("%s", Check.String2Loc)
+	output.WriteLine("%s", dhrystone.Check.String2Loc)
 	output.WriteNewLine()
 	output.WriteLine("Nanoseconds one Dhrystone run: %d", (1000000000 / result.Dhrystones))
 	output.WriteLine("Dhrystones per Second:         %d", result.Dhrystones)
@@ -237,23 +245,23 @@ func Bench(loops int, output utils.WriterType) *DhrystoneResult {
 	return result
 }
 
-func Proc0(loops int) *DhrystoneResult {
-	PtrGlbNext = &Record{}
-	PtrGlb = &Record{}
-	PtrGlb.PtrComp = PtrGlbNext
-	PtrGlb.Discr = Ident_1
-	PtrGlb.EnumComp = Ident_3
-	PtrGlb.IntComp = 40
-	PtrGlb.StringComp = "DHRYSTONE PROGRAM, SOME STRING"
+func Proc0(loops int, dhrystone *Dhrystone) *DhrystoneResult {
+	dhrystone.PtrGlbNext = &Record{}
+	dhrystone.PtrGlb = &Record{}
+	dhrystone.PtrGlb.PtrComp = dhrystone.PtrGlbNext
+	dhrystone.PtrGlb.Discr = Ident_1
+	dhrystone.PtrGlb.EnumComp = Ident_3
+	dhrystone.PtrGlb.IntComp = 40
+	dhrystone.PtrGlb.StringComp = "DHRYSTONE PROGRAM, SOME STRING"
 	var String1Loc = "DHRYSTONE PROGRAM, 1'ST STRING"
 	var String2Loc = "DHRYSTONE PROGRAM, 2'ND STRING"
 
-	IntGlob = 0
-	BoolGlob = false
-	Char1Glob = 0
-	Char2Glob = 0
+	dhrystone.IntGlob = 0
+	dhrystone.BoolGlob = false
+	dhrystone.Char1Glob = 0
+	dhrystone.Char2Glob = 0
 
-	Array2Glob[8][7] = 10
+	dhrystone.Array2Glob[8][7] = 10
 
 	EnumLoc := 0
 	IntLoc1 := 0
@@ -263,33 +271,33 @@ func Proc0(loops int) *DhrystoneResult {
 	start := utils.MakeTimestamp()
 
 	for i := 0; i < loops; i++ {
-		Proc5()
-		Proc4()
+		Proc5(dhrystone)
+		Proc4(dhrystone)
 		IntLoc1 = 2
 		IntLoc2 = 3
 		IntLoc3 = 0
 		String2Loc = "DHRYSTONE PROGRAM, 2'ND STRING"
 		EnumLoc = Ident_2
-		BoolGlob = !Func2(String1Loc, String2Loc)
+		dhrystone.BoolGlob = !Func2(String1Loc, String2Loc)
 		for IntLoc1 < IntLoc2 {
 			IntLoc3 = 5*IntLoc1 - IntLoc2
 			IntLoc3 = Proc7(IntLoc1, IntLoc2)
 			IntLoc1 += 1
 		}
-		Proc8(&Array1Glob, &Array2Glob, IntLoc1, IntLoc3)
-		PtrGlb = Proc1(PtrGlb)
+		Proc8(&dhrystone.Array1Glob, &dhrystone.Array2Glob, IntLoc1, IntLoc3, dhrystone)
+		dhrystone.PtrGlb = Proc1(dhrystone.PtrGlb, dhrystone)
 		var CharIndex byte = 'A'
 
-		for CharIndex = 'A'; CharIndex <= Char2Glob; CharIndex++ {
+		for CharIndex = 'A'; CharIndex <= dhrystone.Char2Glob; CharIndex++ {
 			if EnumLoc == Func1(CharIndex, 'C') {
-				EnumLoc = Proc6(Ident_1)
+				EnumLoc = Proc6(Ident_1, dhrystone)
 			}
 		}
 
 		IntLoc2 = IntLoc2 * IntLoc1
 		IntLoc1 = IntLoc2 / IntLoc3
 		IntLoc2 = 7*(IntLoc2-IntLoc3) - IntLoc1
-		IntLoc1 = Proc2(IntLoc1)
+		IntLoc1 = Proc2(IntLoc1, dhrystone)
 	}
 
 	var benchtime = utils.MakeTimestamp() - start
@@ -302,7 +310,7 @@ func Proc0(loops int) *DhrystoneResult {
 
 	var dhrystones = int64(1000) * loopsPerBenchtime
 
-	Check = &CheckRecord{
+	dhrystone.Check = &CheckRecord{
 		EnumLoc,
 		IntLoc1,
 		IntLoc2,
@@ -319,18 +327,18 @@ func Proc0(loops int) *DhrystoneResult {
 	}
 }
 
-func Proc1(PtrValPar *Record) *Record {
-	NextRecord := PtrGlb.PtrComp
-	StructAssign(PtrGlb.PtrComp, PtrGlb)
+func Proc1(PtrValPar *Record, dhrystone *Dhrystone) *Record {
+	NextRecord := dhrystone.PtrGlb.PtrComp
+	StructAssign(dhrystone.PtrGlb.PtrComp, dhrystone.PtrGlb)
 	PtrValPar.IntComp = 5
 	NextRecord.IntComp = PtrValPar.IntComp
 	NextRecord.PtrComp = PtrValPar.PtrComp
-	NextRecord.PtrComp = Proc3(NextRecord.PtrComp)
+	NextRecord.PtrComp = Proc3(NextRecord.PtrComp, dhrystone)
 
 	if NextRecord.Discr == Ident_1 {
 		NextRecord.IntComp = 6
-		NextRecord.EnumComp = Proc6(PtrValPar.EnumComp)
-		NextRecord.PtrComp = PtrGlb.PtrComp
+		NextRecord.EnumComp = Proc6(PtrValPar.EnumComp, dhrystone)
+		NextRecord.PtrComp = dhrystone.PtrGlb.PtrComp
 		NextRecord.IntComp = Proc7(NextRecord.IntComp, 10)
 	} else {
 		StructAssign(PtrValPar, PtrValPar.PtrComp)
@@ -339,13 +347,13 @@ func Proc1(PtrValPar *Record) *Record {
 	return PtrValPar
 }
 
-func Proc2(IntParIO int) int {
+func Proc2(IntParIO int, dhrystone *Dhrystone) int {
 	var IntLoc = IntParIO + 10
 	EnumLoc := Ident_2
 	for true {
-		if Char1Glob == 'A' {
+		if dhrystone.Char1Glob == 'A' {
 			IntLoc = IntLoc - 1
-			IntParIO = IntLoc - IntGlob
+			IntParIO = IntLoc - dhrystone.IntGlob
 			EnumLoc = Ident_1
 		}
 		if EnumLoc == Ident_1 {
@@ -355,13 +363,13 @@ func Proc2(IntParIO int) int {
 	return IntParIO
 }
 
-func Proc3(PtrParOut *Record) *Record {
-	if PtrGlb != nil {
-		PtrParOut = PtrGlb.PtrComp
+func Proc3(PtrParOut *Record, dhrystone *Dhrystone) *Record {
+	if dhrystone.PtrGlb != nil {
+		PtrParOut = dhrystone.PtrGlb.PtrComp
 	} else {
-		IntGlob = 100
+		dhrystone.IntGlob = 100
 	}
-	PtrGlb.IntComp = Proc7(10, IntGlob)
+	dhrystone.PtrGlb.IntComp = Proc7(10, dhrystone.IntGlob)
 	return PtrParOut
 }
 
@@ -373,18 +381,18 @@ func StructAssign(destination *Record, source *Record) {
 	destination.Discr = source.Discr
 }
 
-func Proc4() {
-	BoolLoc := Char1Glob == 'A'
-	BoolGlob = BoolLoc || BoolGlob
-	Char2Glob = 'B'
+func Proc4(dhrystone *Dhrystone) {
+	BoolLoc := dhrystone.Char1Glob == 'A'
+	dhrystone.BoolGlob = BoolLoc || dhrystone.BoolGlob
+	dhrystone.Char2Glob = 'B'
 }
 
-func Proc5() {
-	Char1Glob = 'A'
-	BoolGlob = false
+func Proc5(dhrystone *Dhrystone) {
+	dhrystone.Char1Glob = 'A'
+	dhrystone.BoolGlob = false
 }
 
-func Proc6(EnumParIn int) int {
+func Proc6(EnumParIn int, dhrystone *Dhrystone) int {
 	EnumParOut := EnumParIn
 	if !Func3(EnumParIn) {
 		EnumParOut = Ident_4
@@ -395,7 +403,7 @@ func Proc6(EnumParIn int) int {
 		EnumParOut = Ident_1
 		break
 	case Ident_2:
-		if IntGlob > 100 {
+		if dhrystone.IntGlob > 100 {
 			EnumParOut = Ident_1
 		} else {
 			EnumParOut = Ident_4
@@ -420,7 +428,7 @@ func Proc7(IntParI1 int, IntParI2 int) int {
 	return IntParOut
 }
 
-func Proc8(Array1Par *[50]int, Array2Par *[50][50]int, IntParI1 int, IntParI2 int) {
+func Proc8(Array1Par *[50]int, Array2Par *[50][50]int, IntParI1 int, IntParI2 int, dhrystone *Dhrystone) {
 	IntLoc := IntParI1 + 5
 	Array1Par[IntLoc] = IntParI2
 	Array1Par[(IntLoc + 1)] = Array1Par[IntLoc]
@@ -432,7 +440,7 @@ func Proc8(Array1Par *[50]int, Array2Par *[50][50]int, IntParI1 int, IntParI2 in
 
 	Array2Par[IntLoc][(IntLoc - 1)] = (Array2Par[IntLoc][(IntLoc-1)] + 1)
 	Array2Par[(IntLoc + 20)][IntLoc] = Array1Par[IntLoc]
-	IntGlob = 5
+	dhrystone.IntGlob = 5
 }
 
 func Func1(CharPar1 byte, CharPar2 byte) int {

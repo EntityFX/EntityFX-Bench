@@ -3,7 +3,6 @@ package utils
 import (
 	"math/rand"
 	"time"
-	"sync"
 )
 
 func Average(xs []float64) float64 {
@@ -37,18 +36,4 @@ func RandomLongArray(size int32, max int64) []int64 {
 func MakeTimestamp() int64 {
 	t := time.Now()
 	return int64(time.Nanosecond) * t.UnixNano() / int64(time.Millisecond)
-}
-
-func Parallelize(functions ...func()) {
-    var waitGroup sync.WaitGroup
-    waitGroup.Add(len(functions))
-
-    defer waitGroup.Wait()
-
-    for _, function := range functions {
-        go func(copy func()) {
-            defer waitGroup.Done()
-            copy()
-        }(function)
-    }
 }
