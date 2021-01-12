@@ -33,8 +33,8 @@ func NewScimark2Benchmark(writer utils.WriterType, printToConsole bool) *Scimark
 func NewParallelScimark2Benchmark(writer utils.WriterType, printToConsole bool) *ParallelScimark2Benchmark {
 	var benchBase = NewScimark2Benchmark(writer, printToConsole)
 	scimark2Benchmark := &ParallelScimark2Benchmark{benchBase}
-
 	benchBase.Child = scimark2Benchmark
+	benchBase.IsParallel = true
 	scimark2Benchmark.Scimark2Benchmark = benchBase
 	return scimark2Benchmark
 }

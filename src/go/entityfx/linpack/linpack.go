@@ -22,15 +22,6 @@ func abs(d float64) float64 {
 	}
 }
 
-var second_orig float64 = -1
-
-func second() float64 {
-	if second_orig == -1 {
-		second_orig = float64(utils.MakeTimestamp())
-	}
-	return (float64(utils.MakeTimestamp()) - second_orig) / 1000.0
-}
-
 func RunBenchmark(array_size int, output utils.WriterType) *LinpackResult {
 	output.WriteLine("Running Linpack %dx%d in Go", array_size, array_size)
 	var mflops_result float64 = 0.0
@@ -57,10 +48,10 @@ func RunBenchmark(array_size int, output utils.WriterType) *LinpackResult {
 	ops = ((2.0e0*nf)*nf*nf)/3.0 + 2.0*(nf*nf)
 
 	norma = matgen(a, lda, n, b)
-	time = second()
+	time = float64(utils.MakeTimestamp()) / 1000.0
 	dgefa(a, lda, n, ipvt)
 	dgesl(a, lda, n, ipvt, b, 0)
-	total = second() - time
+	total = float64(utils.MakeTimestamp())/1000.0 - time
 
 	for i = 0; i < n; i++ {
 		x[i] = b[i]
@@ -116,7 +107,7 @@ func RunBenchmark(array_size int, output utils.WriterType) *LinpackResult {
 func matgen(a [][]float64, lda int, n int, b []float64) float64 {
 	var norma float64
 	var i, j = 0, 0
-	var iseed []int = []int{1, 2, 3, 1325}
+	var iseed [4]int = [4]int{1, 2, 3, 1325}
 
 	/* Magic numbers from original Linpack source */
 
@@ -127,7 +118,7 @@ func matgen(a [][]float64, lda int, n int, b []float64) float64 {
 	 */
 	for i = 0; i < n; i++ {
 		for j = 0; j < n; j++ {
-			a[j][i] = lran(iseed) - 0.5
+			a[j][i] = lran(&iseed) - 0.5
 			if a[j][i] > norma {
 				norma = a[j][i]
 			}
@@ -145,7 +136,7 @@ func matgen(a [][]float64, lda int, n int, b []float64) float64 {
 	return norma
 }
 
-func lran(seed []int) float64 {
+func lran(seed *[4]int) float64 {
 	var m1, m2, m3, m4, ipw2 = 0, 0, 0, 0, 0
 	var it1, it2, it3, it4 = 0, 0, 0, 0
 	var r, result float64

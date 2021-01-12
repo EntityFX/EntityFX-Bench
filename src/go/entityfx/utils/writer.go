@@ -1,7 +1,9 @@
 package utils
 
-import "fmt"
-import "runtime"
+import (
+	"fmt"
+	"runtime"
+)
 
 type WriterType interface {
 	Write(format string, a ...interface{}) (n int, err error)
@@ -17,6 +19,8 @@ type WriterType interface {
 	WriteValue(format string, a ...interface{}) (n int, err error)
 
 	WriteTitle(format string, a ...interface{}) (n int, err error)
+
+	UseConsole(value bool)
 }
 
 type Writer struct {
@@ -44,7 +48,14 @@ func (w *Writer) WriteColor(color string, format string, a ...interface{}) (n in
 	return n, err
 }
 
+func (w *Writer) UseConsole(value bool) {
+	w.useConsole = value
+}
+
 func (w *Writer) WriteNewLine() (n int, err error) {
+	if !w.useConsole {
+		return
+	}
 	return fmt.Println()
 }
 

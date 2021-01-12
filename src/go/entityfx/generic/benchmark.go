@@ -1,11 +1,12 @@
 package generic
 
-import "../utils"
-
 import (
 	"reflect"
+	"runtime"
 	"strings"
 	"sync"
+
+	"../utils"
 )
 
 var IterrationsRatio float64 = 1.0
@@ -106,17 +107,16 @@ func (b *BenchmarkBaseBase) BuildResult(start int64) *BenchResult {
 	}
 }
 
-
 func (b *BenchmarkBaseBase) BuildParallelResult(rootResult *BenchResult, results []*BenchResult) *BenchResult {
-	rootResult.Points = 99.9
+	rootResult.Points = 0.01
 	rootResult.Iterrations = b.GetIterrations()
 	rootResult.Ratio = b.Ratio
 
-    for _, result := range results {
+	for _, result := range results {
 		rootResult.Points += result.Points
 		rootResult.Result += result.Result
 	}
-	
+
 	rootResult.IsParallel = b.IsParallel
 
 	return rootResult
@@ -148,7 +148,9 @@ func (b *BenchmarkBaseBase) Warmup(aspect float64) {
 	b.Iterrations = int64(float64(b.Iterrations) * IterrationsRatio)
 	tmp := b.Iterrations
 	b.Iterrations = int64(float64(b.Iterrations) * aspect)
+	b.useConsole(false)
 	b.Bench()
+	b.useConsole(true)
 	b.Iterrations = tmp
 }
 
@@ -178,54 +180,61 @@ func (b *BenchmarkBaseBase) GetName() string {
 	return b.Name
 }
 
+func (b *BenchmarkBaseBase) useConsole(value bool) {
+	b.printToConsole = value
+	b.Output.UseConsole(value)
+}
+
 func (b *BenchmarkBaseBase) BenchInParallel(buildFunc func() interface{}, benchFunc func(interface{}) interface{}, setBenchResultFunc func(interface{}, *BenchResult)) []*BenchResult {
-	count := 4
+	b.useConsole(false)
+	count := runtime.NumCPU()
+	count = 8
 	benchs := make([]interface{}, count)
 
 	for i := 0; i < count; i++ {
 		benchs[i] = buildFunc()
 	}
 
-	parallelResults := runParallel(func (i int) interface{}  {
+	parallelResults := runParallel(func(i int) interface{} {
 		start := utils.MakeTimestamp()
 		result := benchFunc(benchs[i])
 		benchResult := b.BuildResult(start)
 		setBenchResultFunc(result, benchResult)
 		return benchResult
-	}, 4)
+	}, count)
 
 	results := make([]*BenchResult, count)
 
 	for i := 0; i < count; i++ {
 		results[i] = parallelResults[i].(*BenchResult)
 	}
-
+	b.useConsole(true)
 	return results
 }
 
 func runParallel(function func(int) interface{}, t int) []interface{} {
+	//runtime.GOMAXPROCS(t)
 	var out []chan interface{} = make([]chan interface{}, t)
-	var res []interface{} =  make([]interface{}, t)
-    for i := range out {
-        out[i] = make(chan interface{})
-    }
+	var res []interface{} = make([]interface{}, t)
+	for i := range out {
+		out[i] = make(chan interface{})
+	}
 
-    var waitGroup sync.WaitGroup
-    waitGroup.Add(t)
-	
-	for	i := 0; i < t; i++ {
-		go func(copy func(int) interface{}, c chan interface{}, i int) {
-            defer waitGroup.Done()
-            c <- copy(i)
-        }(function, out[i], i)
+	var waitGroup sync.WaitGroup
+
+	for i := 0; i < t; i++ {
+		waitGroup.Add(1)
+		go func(wg *sync.WaitGroup, function func(int) interface{}, c chan interface{}, i int) {
+			defer wg.Done()
+			c <- function(i)
+		}(&waitGroup, function, out[i], i)
 	}
 
 	defer waitGroup.Wait()
 
 	for i := range out {
-        res[i] = <-out[i]
+		res[i] = <-out[i]
 	}
-	
+
 	return res
 }
-

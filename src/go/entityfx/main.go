@@ -6,7 +6,6 @@ import (
 	"./dhrystone"
 	"./generic"
 	"./linpack"
-
 	"./scimark2"
 	"./utils"
 	"./whetstone"
@@ -45,8 +44,11 @@ func main() {
 		dhrystone.NewDhrystoneBenchmark(writer, true),
 		dhrystone.NewParallelDhrystoneBenchmark(writer, true),
 		whetstone.NewWhetstoneBenchmark(writer, true),
+		whetstone.NewParallelWhetstoneBenchmark(writer, true),
 		linpack.NewLinpackBenchmark(writer, true),
+		linpack.NewParallelLinpackBenchmark(writer, true),
 		generic.NewHashBenchmark(writer, true),
+		generic.NewParallelHashBenchmark(writer, true),
 	}
 
 	writer.WriteHeader("Warmup")

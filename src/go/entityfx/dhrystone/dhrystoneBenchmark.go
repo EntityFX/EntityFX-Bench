@@ -34,6 +34,7 @@ func NewParallelDhrystoneBenchmark(writer utils.WriterType, printToConsole bool)
 	var benchBase = NewDhrystoneBenchmark(writer, printToConsole)
 	dhrystoneBenchmark := &ParallelDhrystoneBenchmark{benchBase}
 	benchBase.Child = dhrystoneBenchmark
+	benchBase.IsParallel = true
 	dhrystoneBenchmark.DhrystoneBenchmark = benchBase
 
 	return dhrystoneBenchmark
@@ -69,7 +70,7 @@ func (b *ParallelDhrystoneBenchmark) PopulateResult(benchResult *g.BenchResult, 
 	for _, r := range results.([]*g.BenchResult) {
 		resultSum += r.Result
 	}
-
+	result.Points = resultSum * benchResult.Ratio
 	result.Result = resultSum
 	result.Units = "DMIPS"
 	result.Output = ""
