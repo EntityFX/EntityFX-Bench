@@ -1,16 +1,16 @@
 package scimark2
 
 import (
+	"math"
 	"math/rand"
 	"time"
-	"math"
 )
 
 func fft_num_flops(N int) float64 {
 	Nd := float64(N)
 	logN := float64(fft_log2(N))
 
-	return (5.0 * Nd - 2) * logN + 2 * (Nd + 1)
+	return (5.0*Nd-2)*logN + 2*(Nd+1)
 }
 
 func fft_transform(data []float64) {
@@ -32,7 +32,7 @@ func fft_test(data []float64) float64 {
 	nd := len(data)
 	copy := make([]float64, nd)
 	for iii := 0; iii < (nd); iii++ {
-		copy[(0) + iii] = data[(0) + iii]
+		copy[(0)+iii] = data[(0)+iii]
 	}
 	fft_transform(data)
 	fft_inverse(data)
@@ -44,7 +44,7 @@ func fft_test(data []float64) float64 {
 	return math.Sqrt(diff / float64(nd))
 }
 
-func fft_makeRandom(n int) []float64{
+func fft_makeRandom(n int) []float64 {
 	rand.Seed(time.Now().Unix())
 	nd := 2 * n
 	data := make([]float64, nd)
@@ -55,30 +55,34 @@ func fft_makeRandom(n int) []float64{
 }
 
 func fft_log2(n int) int {
-	log := 0
+	log := uint32(0)
 	for k := 1; k < n; k *= 2 {
 		log++
 	}
 	if n != (1 << log) {
-		return -1//, errors.New("FFT: Data length is not a power of 2!: " + string(n))
+		return -1 //, errors.New("FFT: Data length is not a power of 2!: " + string(n))
 	}
-	return log
+	return int(log)
 }
 
 func fft_transform_internal(data []float64, direction int) {
-	if len(data) == 0 { return }
+	if len(data) == 0 {
+		return
+	}
 	n := len(data) / 2
-	if n == 1 { return }         // Identity operation!
+	if n == 1 {
+		return
+	} // Identity operation!
 	logn := fft_log2(n)
 
 	/* bit reverse the input data for decimation in time algorithm */
-	fft_bitreverse(data);
+	fft_bitreverse(data)
 
 	/* apply fft recursion */
 	/* this loop executed log2(N) times */
-	
-	dual := 1			
-	for bit := 0 ; bit < logn; bit++ {
+
+	dual := 1
+	for bit := 0; bit < logn; bit++ {
 		w_real := 1.0
 		w_imag := 0.0
 
@@ -93,37 +97,37 @@ func fft_transform_internal(data []float64, direction int) {
 			j := 2 * (b + dual)
 
 			wd_real := data[j]
-			wd_imag := data[j + 1]
+			wd_imag := data[j+1]
 
 			data[j] = data[i] - wd_real
-			data[j + 1] = data[i + 1] - wd_imag
+			data[j+1] = data[i+1] - wd_imag
 			data[i] += wd_real
-			data[i + 1] += wd_imag
+			data[i+1] += wd_imag
 		}
 
 		/* a = 1 .. (dual-1) */
 		for a := 1; a < dual; a++ {
 			/* trignometric recurrence for w-> exp(i theta) w */
 			{
-				tmp_real := w_real - s * w_imag - s2 * w_real
-				tmp_imag := w_imag + s * w_real - s2 * w_imag
-				w_real = tmp_real;
-				w_imag = tmp_imag;
+				tmp_real := w_real - s*w_imag - s2*w_real
+				tmp_imag := w_imag + s*w_real - s2*w_imag
+				w_real = tmp_real
+				w_imag = tmp_imag
 			}
 			for b := 0; b < n; b += 2 * dual {
 				i := 2 * (b + a)
 				j := 2 * (b + a + dual)
 
 				z1_real := data[j]
-				z1_imag := data[j + 1]
+				z1_imag := data[j+1]
 
-				wd_real := w_real * z1_real - w_imag * z1_imag
-				wd_imag := w_real * z1_imag + w_imag * z1_real
+				wd_real := w_real*z1_real - w_imag*z1_imag
+				wd_imag := w_real*z1_imag + w_imag*z1_real
 
 				data[j] = data[i] - wd_real
-				data[j + 1] = data[i + 1] - wd_imag
+				data[j+1] = data[i+1] - wd_imag
 				data[i] += wd_real
-				data[i + 1] += wd_imag
+				data[i+1] += wd_imag
 			}
 		}
 
@@ -144,11 +148,11 @@ func fft_bitreverse(data []float64) {
 
 		if i < j {
 			tmp_real := data[ii]
-			tmp_imag := data[ii + 1]
+			tmp_imag := data[ii+1]
 			data[ii] = data[jj]
-			data[ii + 1] = data[jj + 1]
+			data[ii+1] = data[jj+1]
 			data[jj] = tmp_real
-			data[jj + 1] = tmp_imag
+			data[jj+1] = tmp_imag
 		}
 
 		for k <= j {

@@ -188,7 +188,7 @@ func (b *BenchmarkBaseBase) useConsole(value bool) {
 func (b *BenchmarkBaseBase) BenchInParallel(buildFunc func() interface{}, benchFunc func(interface{}) interface{}, setBenchResultFunc func(interface{}, *BenchResult)) []*BenchResult {
 	b.useConsole(false)
 	count := runtime.NumCPU()
-	count = 8
+	//count = 8
 	benchs := make([]interface{}, count)
 
 	for i := 0; i < count; i++ {
