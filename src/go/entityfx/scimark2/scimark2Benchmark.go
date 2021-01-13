@@ -40,18 +40,20 @@ func NewParallelScimark2Benchmark(writer utils.WriterType, printToConsole bool) 
 }
 
 func (b *Scimark2Benchmark) BenchImplementation() interface{} {
-	return Bench(RESOLUTION_DEFAULT, false, b.BenchmarkBaseBase.Output)
+	return Bench(RESOLUTION_DEFAULT, false, utils.NewWriter(""))
 }
 
 func (b *ParallelScimark2Benchmark) BenchImplementation() interface{} {
 	return b.BenchmarkBaseBase.BenchInParallel(func() interface{} {
 		return nil
 	}, func(interface{}) interface{} {
-		return Bench(RESOLUTION_DEFAULT, false, b.BenchmarkBaseBase.Output)
+		w := utils.NewWriter("")
+		w.UseConsole(false)
+		return Bench(RESOLUTION_DEFAULT, false, w)
 	}, func(result interface{}, benchResult *g.BenchResult) {
 		benchResult.Points = result.(*Scimark2Result).compositeScore * b.Ratio
 		benchResult.Result = result.(*Scimark2Result).compositeScore
-		benchResult.Output = ""
+		benchResult.Output = result.(*Scimark2Result).Output
 	})
 }
 
@@ -59,7 +61,7 @@ func (b *Scimark2Benchmark) PopulateResult(benchResult *g.BenchResult, scimark2R
 	benchResult.Points = scimark2Result.(*Scimark2Result).compositeScore * b.Ratio
 	benchResult.Result = scimark2Result.(*Scimark2Result).compositeScore
 	benchResult.Units = "CompositeScore"
-	benchResult.Output = ""
+	benchResult.Output = scimark2Result.(*Scimark2Result).Output
 	return benchResult
 }
 
@@ -76,12 +78,14 @@ func (b *Scimark2Benchmark) Warmup(aspect float64) {
 func (b *ParallelScimark2Benchmark) PopulateResult(benchResult *g.BenchResult, results interface{}) *g.BenchResult {
 	result := b.BuildParallelResult(benchResult, results.([]*g.BenchResult))
 	resultSum := 0.0
+	output := ""
 	for _, r := range results.([]*g.BenchResult) {
 		resultSum += r.Result
+		output += (r.Output + "\n\n")
 	}
 
 	result.Result = resultSum
 	result.Units = "CompositeScore"
-	result.Output = ""
+	result.Output = output
 	return result
 }

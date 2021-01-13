@@ -39,18 +39,20 @@ func NewParallelLinpackBenchmark(writer utils.WriterType, printToConsole bool) *
 }
 
 func (b *LinpackBenchmark) BenchImplementation() interface{} {
-	return RunBenchmark(2000, b.BenchmarkBaseBase.Output)
+	return RunBenchmark(2000, utils.NewWriter(""))
 }
 
 func (b *ParallelLinpackBenchmark) BenchImplementation() interface{} {
 	return b.BenchmarkBaseBase.BenchInParallel(func() interface{} {
 		return nil
 	}, func(interface{}) interface{} {
-		return RunBenchmark(2000, b.BenchmarkBaseBase.Output)
+		w := utils.NewWriter("")
+		w.UseConsole(false)
+		return RunBenchmark(2000, w)
 	}, func(result interface{}, benchResult *g.BenchResult) {
 		benchResult.Points = result.(*LinpackResult).MFLOPS * b.Ratio
 		benchResult.Result = result.(*LinpackResult).MFLOPS
-		benchResult.Output = ""
+		benchResult.Output = result.(*LinpackResult).Output
 	})
 }
 
@@ -58,20 +60,22 @@ func (b *LinpackBenchmark) PopulateResult(benchResult *g.BenchResult, linpackRes
 	benchResult.Points = linpackResult.(*LinpackResult).MFLOPS * b.Ratio
 	benchResult.Result = linpackResult.(*LinpackResult).MFLOPS
 	benchResult.Units = "MFLOPS"
-	benchResult.Output = ""
+	benchResult.Output = linpackResult.(*LinpackResult).Output
 	return benchResult
 }
 
 func (b *ParallelLinpackBenchmark) PopulateResult(benchResult *g.BenchResult, results interface{}) *g.BenchResult {
 	result := b.BuildParallelResult(benchResult, results.([]*g.BenchResult))
 	resultSum := 0.0
+	output := ""
 	for _, r := range results.([]*g.BenchResult) {
 		resultSum += r.Result
+		output += (r.Output + "\n\n")
 	}
 	result.Points = resultSum * benchResult.Ratio
 	result.Result = resultSum
 	result.Units = "MFLOPS"
-	result.Output = ""
+	result.Output = output
 	return result
 }
 

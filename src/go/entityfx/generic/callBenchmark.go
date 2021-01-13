@@ -1,6 +1,10 @@
 package generic
 
-import "../utils"
+import (
+	"runtime"
+
+	"../utils"
+)
 
 type CallBenchmark struct {
 	*BenchmarkBaseBase
@@ -88,7 +92,7 @@ func (b *CallBenchmark) Bench() *BenchResult {
 	elapsed, value := b.doCallBench()
 	result := b.PopulateResult(b.BuildResult(start), value)
 	result.Elapsed = elapsed
-	b.DoOutput(result)
+	b.doOutput(result)
 	b.AfterBench(result)
 	return result
 }
@@ -98,33 +102,23 @@ func (b *ParallelCallBenchmark) Bench() *BenchResult {
 }
 
 func (b *ParallelCallBenchmark) BenchInParallel(buildFunc func() interface{}) []*BenchResult {
-	count := 4
-	benchs := make([]interface{}, count)
+	b.useConsole(false)
+	count := runtime.NumCPU()
 
-	for i := 0; i < count; i++ {
-		benchs[i] = buildFunc()
-	}
-
-	parallelResults := runParallel(func (i int) interface{}  {
+	parallelResults := runParallel(func(i int) *BenchResult {
 		start := utils.MakeTimestamp()
 		elapsed, _ := b.CallBenchmark.doCallBench()
 		benchResult := b.BuildResult(start)
 		benchResult.Elapsed = elapsed
 		return benchResult
-	}, 4)
+	}, count)
 
-	results := make([]*BenchResult, count)
-
-	for i := 0; i < count; i++ {
-		results[i] = parallelResults[i].(*BenchResult)
-	}
-
-	return results
+	b.useConsole(true)
+	return parallelResults
 }
 
-
 func (b *ParallelCallBenchmark) BenchImplementation() interface{} {
-	return b.BenchInParallel(func () interface{}  {
+	return b.BenchInParallel(func() interface{} {
 		return 0
 	})
 }

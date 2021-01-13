@@ -76,7 +76,7 @@ func Bench(getinput bool, output utils.WriterType) *WhetstoneResult {
 	if whetstone.check == 0 {
 		output.WriteLine("Wrong answer  ")
 	}
-	return &WhetstoneResult{whetstone.mwips, whetstone.timeUsed, ""}
+	return &WhetstoneResult{whetstone.mwips, whetstone.timeUsed, output.GetOutput()}
 }
 
 func whetstones(whetstone *Whetstone, xtra int64, x100 int64, calibrate int, output utils.WriterType) {

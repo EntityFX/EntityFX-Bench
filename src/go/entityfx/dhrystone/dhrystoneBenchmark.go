@@ -41,18 +41,20 @@ func NewParallelDhrystoneBenchmark(writer utils.WriterType, printToConsole bool)
 }
 
 func (b *DhrystoneBenchmark) BenchImplementation() interface{} {
-	return Bench(LOOPS, b.BenchmarkBaseBase.Output)
+	return Bench(LOOPS, utils.NewWriter(""))
 }
 
 func (b *ParallelDhrystoneBenchmark) BenchImplementation() interface{} {
 	return b.BenchmarkBaseBase.BenchInParallel(func() interface{} {
 		return nil
 	}, func(interface{}) interface{} {
-		return Bench(LOOPS, b.BenchmarkBaseBase.Output)
+		w := utils.NewWriter("")
+		w.UseConsole(false)
+		return Bench(LOOPS, w)
 	}, func(result interface{}, benchResult *g.BenchResult) {
 		benchResult.Points = result.(*DhrystoneResult).VaxMips * b.Ratio
 		benchResult.Result = result.(*DhrystoneResult).VaxMips
-		benchResult.Output = ""
+		benchResult.Output = result.(*DhrystoneResult).Output
 	})
 }
 
@@ -60,20 +62,22 @@ func (b *DhrystoneBenchmark) PopulateResult(benchResult *g.BenchResult, dhryston
 	benchResult.Points = dhrystoneResult.(*DhrystoneResult).VaxMips * b.Ratio
 	benchResult.Result = dhrystoneResult.(*DhrystoneResult).VaxMips
 	benchResult.Units = "DMIPS"
-	benchResult.Output = ""
+	benchResult.Output = dhrystoneResult.(*DhrystoneResult).Output
 	return benchResult
 }
 
 func (b *ParallelDhrystoneBenchmark) PopulateResult(benchResult *g.BenchResult, results interface{}) *g.BenchResult {
 	result := b.BuildParallelResult(benchResult, results.([]*g.BenchResult))
 	resultSum := 0.0
+	output := ""
 	for _, r := range results.([]*g.BenchResult) {
 		resultSum += r.Result
+		output += (r.Output + "\n\n")
 	}
 	result.Points = resultSum * benchResult.Ratio
 	result.Result = resultSum
 	result.Units = "DMIPS"
-	result.Output = ""
+	result.Output = output
 	return result
 }
 

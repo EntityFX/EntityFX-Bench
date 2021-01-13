@@ -11,7 +11,7 @@ type LinpackResult struct {
 	Epsilon            float64
 	Time               float64
 	MFLOPS             float64
-	output             string
+	Output             string
 }
 
 func abs(d float64) float64 {
@@ -100,7 +100,7 @@ func RunBenchmark(array_size int, output utils.WriterType) *LinpackResult {
 	output.WriteLine("Time is %f", time_result)
 	output.WriteLine("MFLOPS: %f", mflops_result)
 
-	result := LinpackResult{norma, resid, residn_result, eps_result, time_result, mflops_result, ""}
+	result := LinpackResult{norma, resid, residn_result, eps_result, time_result, mflops_result, output.GetOutput()}
 	return &result
 }
 

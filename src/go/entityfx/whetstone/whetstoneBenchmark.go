@@ -40,18 +40,20 @@ func NewParallelWhetstoneBenchmark(writer utils.WriterType, printToConsole bool)
 }
 
 func (b *WhetstoneBenchmark) BenchImplementation() interface{} {
-	return Bench(true, b.BenchmarkBaseBase.Output)
+	return Bench(true, utils.NewWriter(""))
 }
 
 func (b *ParallelWhetstoneBenchmark) BenchImplementation() interface{} {
 	return b.BenchmarkBaseBase.BenchInParallel(func() interface{} {
 		return nil
 	}, func(interface{}) interface{} {
-		return Bench(true, b.BenchmarkBaseBase.Output)
+		w := utils.NewWriter("")
+		w.UseConsole(false)
+		return Bench(true, w)
 	}, func(result interface{}, benchResult *g.BenchResult) {
 		benchResult.Points = result.(*WhetstoneResult).MWIPS * b.Ratio
 		benchResult.Result = result.(*WhetstoneResult).MWIPS
-		benchResult.Output = ""
+		benchResult.Output = result.(*WhetstoneResult).Output
 	})
 }
 
@@ -59,21 +61,22 @@ func (b *WhetstoneBenchmark) PopulateResult(benchResult *g.BenchResult, whetston
 	benchResult.Points = whetstoneResult.(*WhetstoneResult).MWIPS * b.Ratio
 	benchResult.Result = whetstoneResult.(*WhetstoneResult).MWIPS
 	benchResult.Units = "MWIPS"
-	benchResult.Output = ""
+	benchResult.Output = whetstoneResult.(*WhetstoneResult).Output
 	return benchResult
 }
 
 func (b *ParallelWhetstoneBenchmark) PopulateResult(benchResult *g.BenchResult, results interface{}) *g.BenchResult {
 	result := b.BuildParallelResult(benchResult, results.([]*g.BenchResult))
 	resultSum := 0.0
-
+	output := ""
 	for _, r := range results.([]*g.BenchResult) {
 		resultSum += r.Result
+		output += r.Output + "\n\n"
 	}
 	result.Points = resultSum * benchResult.Ratio
 	result.Result = resultSum
 	result.Units = "MWIPS"
-	result.Output = ""
+	result.Output = output
 	return result
 }
 

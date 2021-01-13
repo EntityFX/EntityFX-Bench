@@ -1,6 +1,7 @@
 package generic
 
 import (
+	"os"
 	"reflect"
 	"runtime"
 	"strings"
@@ -40,7 +41,7 @@ type BenchmarkInterface interface {
 
 	BuildResult(start int64) *BenchResult
 
-	DoOutput(result *BenchResult)
+	// DoOutput(result *BenchResult)
 
 	GetName() string
 }
@@ -122,14 +123,13 @@ func (b *BenchmarkBaseBase) BuildParallelResult(rootResult *BenchResult, results
 	return rootResult
 }
 
-func (b *BenchmarkBaseBase) DoOutput(result *BenchResult) {
+func (b *BenchmarkBaseBase) doOutput(result *BenchResult) {
 	if len(strings.TrimSpace(result.Output)) == 0 {
 		return
 	}
-	//final FileWriter fileWriter = new FileWriter(Name + ".log");
-	//final PrintWriter printWriter = new PrintWriter(fileWriter);
-	//printWriter.print(result.Output);
-	//printWriter.close();
+	f, _ := os.Create(b.Name + ".log")
+	f.WriteString(result.Output)
+	f.Close()
 }
 
 func Warmup(b BenchmarkInterface, aspect float64) {
@@ -167,7 +167,7 @@ func (b *BenchmarkBaseBase) Bench() *BenchResult {
 	start := utils.MakeTimestamp()
 	res := b.Child.BenchImplementation()
 	result := b.Child.PopulateResult(b.BuildResult(start), res)
-	b.DoOutput(result)
+	b.doOutput(result)
 	b.AfterBench(result)
 	return result
 }
@@ -185,7 +185,10 @@ func (b *BenchmarkBaseBase) useConsole(value bool) {
 	b.Output.UseConsole(value)
 }
 
-func (b *BenchmarkBaseBase) BenchInParallel(buildFunc func() interface{}, benchFunc func(interface{}) interface{}, setBenchResultFunc func(interface{}, *BenchResult)) []*BenchResult {
+func (b *BenchmarkBaseBase) BenchInParallel(buildFunc func() interface{},
+	benchFunc func(interface{}) interface{},
+	setBenchResultFunc func(interface{}, *BenchResult)) []*BenchResult {
+
 	b.useConsole(false)
 	count := runtime.NumCPU()
 	//count = 8
@@ -195,7 +198,7 @@ func (b *BenchmarkBaseBase) BenchInParallel(buildFunc func() interface{}, benchF
 		benchs[i] = buildFunc()
 	}
 
-	parallelResults := runParallel(func(i int) interface{} {
+	parallelResults := runParallel(func(i int) *BenchResult {
 		start := utils.MakeTimestamp()
 		result := benchFunc(benchs[i])
 		benchResult := b.BuildResult(start)
@@ -203,38 +206,25 @@ func (b *BenchmarkBaseBase) BenchInParallel(buildFunc func() interface{}, benchF
 		return benchResult
 	}, count)
 
-	results := make([]*BenchResult, count)
-
-	for i := 0; i < count; i++ {
-		results[i] = parallelResults[i].(*BenchResult)
-	}
 	b.useConsole(true)
-	return results
+	return parallelResults
 }
 
-func runParallel(function func(int) interface{}, t int) []interface{} {
-	//runtime.GOMAXPROCS(t)
-	var out []chan interface{} = make([]chan interface{}, t)
-	var res []interface{} = make([]interface{}, t)
-	for i := range out {
-		out[i] = make(chan interface{})
-	}
+func runParallel(function func(int) *BenchResult, t int) []*BenchResult {
+	runtime.GOMAXPROCS(t)
+	var res []*BenchResult = make([]*BenchResult, t)
 
 	var waitGroup sync.WaitGroup
 
 	for i := 0; i < t; i++ {
 		waitGroup.Add(1)
-		go func(wg *sync.WaitGroup, function func(int) interface{}, c chan interface{}, i int) {
+		go func(wg *sync.WaitGroup, function func(int) *BenchResult, i int) {
 			defer wg.Done()
-			c <- function(i)
-		}(&waitGroup, function, out[i], i)
+			res[i] = function(i)
+		}(&waitGroup, function, i)
 	}
 
 	defer waitGroup.Wait()
-
-	for i := range out {
-		res[i] = <-out[i]
-	}
 
 	return res
 }

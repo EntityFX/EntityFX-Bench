@@ -241,7 +241,7 @@ func Bench(loops int, output utils.WriterType) *DhrystoneResult {
 	output.WriteLine("Dhrystones per Second:         %d", result.Dhrystones)
 	output.WriteLine("VAX  MIPS rating =             %.2f", result.VaxMips)
 	output.WriteNewLine()
-	result.Output = ""
+	result.Output = output.GetOutput()
 	return result
 }
 
