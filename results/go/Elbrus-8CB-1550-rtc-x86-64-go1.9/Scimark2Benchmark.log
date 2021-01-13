@@ -1,0 +1,9 @@
+
+SciMark 2.0a
+
+Composite Score: 321.76
+FFT (1024): 244.22
+SOR (100x100):   323.64
+Monte Carlo : 8.56
+Sparse matmult (N=1000, nz=5000): 265.97
+LU (100x100): 766.40
