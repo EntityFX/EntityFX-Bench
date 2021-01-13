@@ -1,0 +1,116 @@
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Go)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    0xc42035c060
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    0xc42035c060 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 114
+Dhrystones per Second:         8768000
+VAX  MIPS rating =             4990.32
+
+
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Go)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    0xc420078240
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    0xc420078240 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 122
+Dhrystones per Second:         8190000
+VAX  MIPS rating =             4661.35
+
+
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Go)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    0xc420348060
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    0xc420348060 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 122
+Dhrystones per Second:         8133000
+VAX  MIPS rating =             4628.91
+
+
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: Go)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  true
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    0xc42037c0f0
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    0xc42037c0f0 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 102
+Dhrystones per Second:         9789000
+VAX  MIPS rating =             5571.43
+
+
+
