@@ -9,8 +9,6 @@ namespace EntityFX.NetBenchmark.Core.Generic
     {
         private Random random;
 
-        protected bool UseConsole { get { return writer.UseConsole; } set { writer.UseConsole = value; } }
-
 #if PocketPC
         private Dictionary<string, int> intMemTests = new Dictionary<string, int>
             {
@@ -33,12 +31,9 @@ namespace EntityFX.NetBenchmark.Core.Generic
             };
 #endif
 
-        private IWriter localWriter;
-
         public MemoryBenchmarkBase(bool printToConsole, IWriter writer)
             :base(writer)
         {
-            localWriter = new Writer(null);
             Iterrations = 500000;
             Ratio = 1;
             random = new Random((int)DateTime.Now.Ticks);
@@ -54,6 +49,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
 
         public MemoryBenchmarkResult BenchRandomMemory()
         {
+            var localWriter = new Writer(null);
             double[] results = new double[intMemTests.Count + longMemTests.Count];
 
             int idx = 0;
@@ -78,7 +74,6 @@ namespace EntityFX.NetBenchmark.Core.Generic
             var avg = results.Average();
             localWriter.WriteLine(string.Format("Average: {0} MB/s", avg.ToString("F2")));
 
-            writer.Write(localWriter.Output);
             return new MemoryBenchmarkResult()
             {
                 Average = avg,

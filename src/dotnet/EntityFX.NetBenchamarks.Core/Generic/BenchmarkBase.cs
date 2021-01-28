@@ -20,6 +20,8 @@ namespace EntityFX.NetBenchmark.Core.Generic
 
         public bool IsParallel { get; protected set; }
 
+        protected bool UseConsole { get { return writer.UseConsole; } set { writer.UseConsole = value; } }
+
         public string Name { 
             get { 
                 return GetType().Name;
@@ -50,6 +52,10 @@ namespace EntityFX.NetBenchmark.Core.Generic
         {
             if (result.Output == null) {
                 return;
+            }
+            if (writer.UseConsole)
+            {
+                writer.Write(result.Output);
             }
 #if NETSTANDARD2_0 || NET45
             File.WriteAllText(string.Format("{0}.log",GetType().Name) , result.Output);
