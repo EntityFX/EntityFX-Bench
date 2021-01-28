@@ -20,6 +20,10 @@ namespace EntityFX.NetBenchmark.Core.Linpack
 
         public override LinpackResult BenchImplementation()
         {
+            int size = 2000;
+#if PocketPC
+            size = 500;
+#endif
             return linpack.Bench(2000);
         }
 
