@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 
-#if NETSTANDARD2_0
+#if NETSTANDARD2_0 || NET45
 using System.Threading.Tasks;
 #endif
 
@@ -11,6 +11,8 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public abstract class BenchmarkBase     {
         protected int Iterrations;
+
+        protected IWriter writer;
 
         public static double IterrationsRatio = 1.0;
 
@@ -27,6 +29,11 @@ namespace EntityFX.NetBenchmark.Core.Generic
 
     public abstract class BenchmarkBase<TResult> : BenchmarkBase, IBenchamrk
     {
+        public BenchmarkBase(IWriter writer)
+        {
+            this.writer = writer;
+        }
+        
         public virtual BenchResult Bench()
         {
             BeforeBench();
@@ -44,7 +51,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
             if (result.Output == null) {
                 return;
             }
-#if NETSTANDARD2_0
+#if NETSTANDARD2_0 || NET45
             File.WriteAllText(string.Format("{0}.log",GetType().Name) , result.Output);
 #endif
         }
@@ -66,16 +73,20 @@ namespace EntityFX.NetBenchmark.Core.Generic
             Iterrations = (int)Math.Round(Iterrations * IterrationsRatio);
             var tmp = Iterrations ;
             Iterrations = (int)Math.Round(Iterrations * aspect);
+            writer.UseConsole = false;
             Bench();
+            writer.UseConsole = true;
             Iterrations = tmp;
         }
 
 
-#if NETSTANDARD2_0
+#if NETSTANDARD2_0 || NET45
+
         protected virtual BenchResult[] BenchInParallel<TBench, TBenchResult>(
             Func<TBench> buildFunc, Func<TBench, TBenchResult> benchFunc, 
             Action<TBenchResult, BenchResult> setBenchResultFunc)
         {
+            writer.UseConsole = false;
             var benchs = Enumerable.Range(0, Environment.ProcessorCount)
                 .Select(i => buildFunc()).ToArray();
 
@@ -92,6 +103,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
                 })).ToArray();
 
             Task.WaitAll(tasks);
+            writer.UseConsole = true;
             return results;
         }
 #endif

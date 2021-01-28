@@ -4,6 +4,9 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public class MathBenchmark : MathBase<double>, IBenchamrk
     {
+        public MathBenchmark(IWriter writer) : base(writer)
+        {
+        }
 
         public override double BenchImplementation()
         {

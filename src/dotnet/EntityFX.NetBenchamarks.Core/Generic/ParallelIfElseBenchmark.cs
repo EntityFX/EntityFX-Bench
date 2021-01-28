@@ -2,7 +2,8 @@
 {
     public class ParallelIfElseBenchmark : BenchmarkBase<BenchResult[]>, IBenchamrk
     {
-        public ParallelIfElseBenchmark()
+        public ParallelIfElseBenchmark(IWriter writer)
+            :base(writer)
         {
             Iterrations = 2000000000;
             Ratio = 0.01;

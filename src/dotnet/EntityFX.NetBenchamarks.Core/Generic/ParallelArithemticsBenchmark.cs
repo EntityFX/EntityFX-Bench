@@ -7,7 +7,8 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public class ParallelArithemticsBenchmark : ArithmeticsBase<BenchResult[]>, IBenchamrk
     {
-        public ParallelArithemticsBenchmark()
+        public ParallelArithemticsBenchmark(IWriter writer)
+            :base(writer)
         {
             IsParallel = true;
         }

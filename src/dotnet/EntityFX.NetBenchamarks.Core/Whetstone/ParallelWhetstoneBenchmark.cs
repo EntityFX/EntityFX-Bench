@@ -8,15 +8,16 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
 {
     public class ParallelWhetstoneBenchmark : BenchmarkBase<BenchResult[]>, IBenchamrk
     {
-        public ParallelWhetstoneBenchmark()
+        public ParallelWhetstoneBenchmark(IWriter writer)
+            :base(writer)
         {
             IsParallel = true;
         }
 
         public override BenchResult[] BenchImplementation()
         {
-            return BenchInParallel(() => new Whetstone(false), a =>
-            a.Bench(), (a, r) => { 
+            return BenchInParallel(() => new Whetstone(false, writer), a =>
+            a.Bench(true), (a, r) => { 
                 r.Points = a.MWIPS;
                 r.Result = r.Points;
                 r.Output = a.Output;

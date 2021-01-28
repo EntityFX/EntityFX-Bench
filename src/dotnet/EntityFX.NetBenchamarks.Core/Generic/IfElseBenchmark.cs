@@ -4,7 +4,8 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public class IfElseBenchmark : BenchmarkBase<long>, IBenchamrk
     {
-        public IfElseBenchmark()
+        public IfElseBenchmark(IWriter writer)
+            :base(writer)
         {
             Iterrations = 2000000000;
             Ratio = 0.01;

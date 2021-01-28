@@ -8,6 +8,9 @@ namespace EntityFX.NetBenchmark.Core.Generic
 
     public class CallBenchmark : CallBenchmarkBase<float>, IBenchamrk
     {
+        public CallBenchmark(IWriter writer) : base(writer)
+        {
+        }
 
         public override float BenchImplementation()
         {

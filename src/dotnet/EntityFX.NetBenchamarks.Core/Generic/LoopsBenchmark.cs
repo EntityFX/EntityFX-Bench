@@ -6,7 +6,8 @@ namespace EntityFX.NetBenchmark.Core.Generic
     {
         private int r;
 
-        public LoopsBenchmark()
+        public LoopsBenchmark(IWriter writer)
+            :base(writer)
         {
             Iterrations = 2000000000;
         }

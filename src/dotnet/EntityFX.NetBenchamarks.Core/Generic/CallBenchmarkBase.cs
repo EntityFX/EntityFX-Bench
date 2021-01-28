@@ -5,7 +5,8 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public abstract class CallBenchmarkBase<TResult> : BenchmarkBase<TResult>, IBenchamrk
     {
-        public CallBenchmarkBase()
+        public CallBenchmarkBase(IWriter writer)
+            :base(writer)
         {
             Iterrations = 2000000000;
             Ratio = 0.01;

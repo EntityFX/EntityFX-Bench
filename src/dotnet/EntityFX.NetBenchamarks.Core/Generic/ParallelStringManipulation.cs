@@ -5,7 +5,8 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public class ParallelStringManipulation : StringManipulationBase<BenchResult[]>
     {
-        public ParallelStringManipulation()
+        public ParallelStringManipulation(IWriter writer)
+            :base(writer)
         {
             IsParallel = true;
         }

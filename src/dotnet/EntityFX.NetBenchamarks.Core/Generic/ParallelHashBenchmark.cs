@@ -5,7 +5,8 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public class ParallelHashBenchmark : HashBase<BenchResult[]>, IBenchamrk
     {
-        public ParallelHashBenchmark()
+        public ParallelHashBenchmark(IWriter writer)
+            :base(writer)
         {
             IsParallel = true;
         }

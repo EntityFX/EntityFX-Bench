@@ -16,19 +16,20 @@ namespace EntityFX.NetBenchmark.Core.Generic
 
         protected byte[][] artayOfBytes;
 
-        public HashBase()
+        public HashBase(IWriter writer)
+            :base(writer)
         {
             Iterrations = 2000000;
             Ratio = 10;
             artayOfBytes = strs.Select(str => Encoding.ASCII.GetBytes(str)).ToArray();
         }
 
-#if NETSTANDARD2_0
+#if NETSTANDARD2_0 || NET45
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
 #endif
         protected static byte[] DoHash(long i, ref byte[][] preparedBytes)
         {
-#if NETSTANDARD2_0
+#if NETSTANDARD2_0 || NET45
             using (var sha = new SHA1Managed())
             using (var sha256 = new SHA256Managed())
             {

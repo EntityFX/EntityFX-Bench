@@ -13,5 +13,9 @@ namespace EntityFX.NetBenchmark.Core.Generic
             }
             return result;
         }
+
+        public HashBenchmark(IWriter writer) : base(writer)
+        {
+        }
     }
 }

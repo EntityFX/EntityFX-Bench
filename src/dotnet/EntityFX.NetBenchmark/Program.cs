@@ -36,7 +36,7 @@ namespace EntityFX.NetBenchmark
 
             var benchMarks = new IBenchamrk[] 
             {
-                new ArithemticsBenchmark(),
+             /*   new ArithemticsBenchmark(),
                 new ParallelArithemticsBenchmark(),
 
                 new MathBenchmark(),
@@ -49,25 +49,25 @@ namespace EntityFX.NetBenchmark
                 new ParallelIfElseBenchmark(),
 
                 new StringManipulation(),
-                new ParallelStringManipulation(),
+                new ParallelStringManipulation(),*/
 
-                new MemoryBenchmark(),
-                new ParallelMemoryBenchmark(),
+                new MemoryBenchmark(true, writer),
+                new ParallelMemoryBenchmark(true, writer),
+/*
+                new RandomMemoryBenchmark(true, writer),
+                new ParallelRandomMemoryBenchmark(true, writer),
 
-                new RandomMemoryBenchmark(),
-                new ParallelRandomMemoryBenchmark(),
+                new Scimark2Benchmark(writer),
+                new ParallelScimark2Benchmark(writer),
 
-                new Scimark2Benchmark(),
-                new ParallelScimark2Benchmark(),
+                new DhrystoneBenchmark(writer),
+                new ParallelDhrystoneBenchmark(writer),
 
-                new DhrystoneBenchmark(),
-                new ParallelDhrystoneBenchmark(),
+                new WhetstoneBenchmark(writer),
+                new ParallelWhetstoneBenchmark(writer),
 
-                new WhetstoneBenchmark(),
-                new ParallelWhetstoneBenchmark(),
-
-                new LinpackBenchmark(),
-                new ParallelLinpackBenchmark(),
+                new LinpackBenchmark(writer),
+                new ParallelLinpackBenchmark(writer),*/
             };
 
             GCSettings.LatencyMode = GCLatencyMode.LowLatency;
@@ -76,7 +76,7 @@ namespace EntityFX.NetBenchmark
             if (useCrypto)
             {
                 benchMarks = benchMarks.Concat(new IBenchamrk[]
-                { new HashBenchmark(), new ParallelHashBenchmark() }).ToArray();
+                { new HashBenchmark(writer), new ParallelHashBenchmark(writer) }).ToArray();
             }
 
             TimeSpan singleThreadTotal = TimeSpan.Zero;
@@ -92,7 +92,7 @@ namespace EntityFX.NetBenchmark
             writer.WriteHeader("Warmup");
             foreach (var bench in benchMarks)
             {
-                bench.Warmup();
+                bench.Warmup(0.05);
                 writer.Write(".");
             }
 

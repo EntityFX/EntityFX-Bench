@@ -9,15 +9,17 @@ namespace EntityFX.NetBenchmark.Core.Linpack
 {
     public class ParallelLinpackBenchmark : BenchmarkBase<BenchResult[]>, IBenchamrk
     {
-        public ParallelLinpackBenchmark()
+        public ParallelLinpackBenchmark(IWriter writer)
+            :base(writer)
         {
+
             IsParallel = true;
             Ratio = 10;
         }
 
         public override BenchResult[] BenchImplementation()
         {
-            return BenchInParallel(() => new Linpack(false), a =>
+            return BenchInParallel(() => new Linpack(false, writer), a =>
             a.Bench(2000), (a, r) => {
                 r.Points = a.MFLOPS;
                 r.Result = r.Points;

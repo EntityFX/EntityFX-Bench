@@ -6,7 +6,8 @@ namespace EntityFX.NetBenchmark.Core.Scimark2
 {
     public class ParallelScimark2Benchmark : BenchmarkBase<BenchResult[]>, IBenchamrk
     {
-        public ParallelScimark2Benchmark()
+        public ParallelScimark2Benchmark(IWriter writer)
+            :base(writer)
         {
             Ratio = 10;
             IsParallel = true;
@@ -14,8 +15,8 @@ namespace EntityFX.NetBenchmark.Core.Scimark2
 
         public override BenchResult[] BenchImplementation()
         {
-            return BenchInParallel(() => new Scimark2(false), a =>
-            a.Bench(), (a, r) => {
+            return BenchInParallel(() => new Scimark2(false, writer), a =>
+            a.Bench(Constants.RESOLUTION_DEFAULT, false), (a, r) => {
                 r.Points = a.CompositeScore * Ratio;
                 r.Result = a.CompositeScore;
                 r.Output = a.Output;

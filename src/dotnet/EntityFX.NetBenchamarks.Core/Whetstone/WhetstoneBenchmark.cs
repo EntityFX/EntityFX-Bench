@@ -12,6 +12,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
         private readonly WhetstoneDouble whetstone;
 
         public WhetstoneBenchmark(IWriter writer)
+            :base(writer)
         {
             whetstone = new WhetstoneDouble(writer);
         }

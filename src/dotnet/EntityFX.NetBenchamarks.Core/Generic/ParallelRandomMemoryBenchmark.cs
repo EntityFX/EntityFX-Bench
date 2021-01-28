@@ -5,14 +5,13 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public class ParallelRandomMemoryBenchmark : RandomMemoryBenchmarkBase<BenchResult[]>, IBenchamrk
     {
-        public ParallelRandomMemoryBenchmark(bool printToConsole = true) : base(printToConsole)
+        public ParallelRandomMemoryBenchmark(bool printToConsole, IWriter writer) : base(printToConsole, writer)
         {
             IsParallel = true;
         }
 
         public override BenchResult[] BenchImplementation()
         {
-            UseConsole = false;
             return BenchInParallel(() => 0, a =>
             {
                 return BenchRandomMemory();

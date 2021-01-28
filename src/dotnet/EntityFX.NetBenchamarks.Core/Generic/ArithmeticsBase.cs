@@ -8,13 +8,14 @@ namespace EntityFX.NetBenchmark.Core.Generic
     {
         protected double R;
 
-        public ArithmeticsBase()
+        public ArithmeticsBase(IWriter writer)
+            :base(writer)
         {
             Iterrations = 300000000;
             Ratio = 0.03;
         }
 
-#if NETSTANDARD2_0
+#if NETSTANDARD2_0 || NET45
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
 #endif
         protected static float DoArithmetics(int i)
@@ -22,7 +23,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
             return (i / 10) * (i / 100) * (i / 100) * (i / 100) * 1.11f + (i / 100) * (i / 1000) * (i / 1000) * 2.22f - i * (i / 10000) * 3.33f + i * 5.33f;
         }
 
-#if NETSTANDARD2_0
+#if NETSTANDARD2_0 || NET45
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
 #endif
         protected static double DoArithmetics(long i)

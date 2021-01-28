@@ -4,6 +4,10 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public class StringManipulation : StringManipulationBase<string>, IBenchamrk
     {
+        public StringManipulation(IWriter writer) : base(writer)
+        {
+        }
+
         public override string BenchImplementation()
         {
             var str = "the quick brown fox jumps over the lazy dog";

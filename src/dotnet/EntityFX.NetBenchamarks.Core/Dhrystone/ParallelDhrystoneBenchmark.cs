@@ -8,16 +8,20 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
 {
     public class ParallelDhrystoneBenchmark : BenchmarkBase<BenchResult[]>, IBenchamrk
     {
-        public ParallelDhrystoneBenchmark()
+        private readonly IWriter _writer;
+
+        public ParallelDhrystoneBenchmark(IWriter writer) : 
+            base(writer)
         {
+            _writer = writer;
             Ratio = 4;
             IsParallel = true;
         }
 
         public override BenchResult[] BenchImplementation()
         {
-            return BenchInParallel(() => new Dhrystone2(false), a =>
-            a.Bench(), (a, r) => {
+            return BenchInParallel(() => new Dhrystone2(false, _writer), a =>
+            a.Bench(Dhrystone2.LOOPS), (a, r) => {
                 r.Points = a.VaxMips * Ratio;
                 r.Result = a.VaxMips;
                 r.Output = a.Output;

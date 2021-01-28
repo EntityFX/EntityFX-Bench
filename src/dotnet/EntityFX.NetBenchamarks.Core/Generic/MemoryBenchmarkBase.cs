@@ -9,9 +9,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
     {
         private Random random;
 
-        private IWriter output;
-
-        protected bool UseConsole { get { return output.UseConsole; } set { output.UseConsole = value; } }
+        protected bool UseConsole { get { return writer.UseConsole; } set { writer.UseConsole = value; } }
 
 #if PocketPC
         private Dictionary<string, int> intMemTests = new Dictionary<string, int>
@@ -36,8 +34,9 @@ namespace EntityFX.NetBenchmark.Core.Generic
 #endif
 
         public MemoryBenchmarkBase(bool printToConsole, IWriter writer)
+            :base(writer)
         {
-            output = writer;
+            writer = writer;
             Iterrations = 500000;
             Ratio = 1;
             random = new Random((int)DateTime.Now.Ticks);
@@ -60,7 +59,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
             {
                 var res = MeasureArrayRandomRead(item.Value);
                 results[idx] = res.Item1;
-                output.WriteLine(string.Format("int {0}: {1} MB/s", item.Key, res.Item1.ToString("F2")));
+                writer.WriteLine(string.Format("int {0}: {1} MB/s", item.Key, res.Item1.ToString("F2")));
 
                 idx++;
             }
@@ -69,18 +68,18 @@ namespace EntityFX.NetBenchmark.Core.Generic
             {
                 var res = MeasureArrayRandomLongRead(item.Value);
                 results[idx] = res.Item1;
-                output.WriteLine(string.Format("long {0}: {1} MB/s", item.Key, res.Item1.ToString("F2")));
+                writer.WriteLine(string.Format("long {0}: {1} MB/s", item.Key, res.Item1.ToString("F2")));
 
                 idx++;
             }
 
             var avg = results.Average();
-            output.WriteLine(string.Format("Average: {0} MB/s", avg.ToString("F2")));
+            writer.WriteLine(string.Format("Average: {0} MB/s", avg.ToString("F2")));
 
             return new MemoryBenchmarkResult()
             {
                 Average = avg,
-                Output = output.Output
+                Output = writer.Output
             };
         }
 

@@ -5,12 +5,13 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public abstract class MathBase<TResult> : BenchmarkBase<TResult>
     {
-        public MathBase()
+        public MathBase(IWriter writer)
+            :base(writer)
         {
             Iterrations = 200000000;
             Ratio = 0.5;
         }
-#if NETSTANDARD2_0
+#if NETSTANDARD2_0 || NET45
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
 #endif
         protected static double DoMath(int i, double li)
