@@ -40,9 +40,9 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
 
         private IWriter output;
 
-        public Dhrystone2(bool printToConsole, IWriter writer)
+        public Dhrystone2(bool printToConsole)
         {
-            output = writer;
+            output = new Writer(null);
             output.UseConsole = printToConsole;
         }
 

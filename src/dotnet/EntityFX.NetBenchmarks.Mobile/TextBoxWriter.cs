@@ -10,10 +10,12 @@ namespace EntityFX.NetBenchmarks.Mobile
     class TextBoxWriter : IWriter
     {
         private TextBox _tb;
+        private IWriter _writer;
 
-        public TextBoxWriter(TextBox tb)
+        public TextBoxWriter(TextBox tb, string filePath)
         {
             _tb = tb;
+            _writer = new Writer(filePath);
         }
 
         #region IWriter Members
@@ -30,8 +32,8 @@ namespace EntityFX.NetBenchmarks.Mobile
 
         public bool UseConsole
         {
-            get;
-            set;
+            get { return _writer.UseConsole; }
+            set { _writer.UseConsole = value; }
         }
 
         public bool UseFile
@@ -42,6 +44,7 @@ namespace EntityFX.NetBenchmarks.Mobile
 
         public void Write(ConsoleColor color, string format, params object[] args)
         {
+            _writer.Write(color, format, args);
             if (!UseConsole)
             {
                 return;
@@ -62,6 +65,7 @@ namespace EntityFX.NetBenchmarks.Mobile
 
         public void WriteLine()
         {
+            _writer.WriteLine();
             if (!UseConsole)
             {
                 return;

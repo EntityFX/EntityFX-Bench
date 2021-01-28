@@ -23,7 +23,7 @@ namespace EntityFX.NetBenchmarks.Mobile
         public Form1()
         {
             InitializeComponent();
-            writer = new TextBoxWriter(textBox1);
+            writer = new TextBoxWriter(textBox1, "Output.log");
             BenchmarkBase.IterrationsRatio = BenchmarkBase.IterrationsRatio * 0.01;
 #if DEBUG
             BenchmarkBase.IterrationsRatio = BenchmarkBase.IterrationsRatio * 0.002;
@@ -46,18 +46,18 @@ namespace EntityFX.NetBenchmarks.Mobile
         {
             var benchMarks = new IBenchamrk[] 
             {
-                new ArithemticsBenchmark(),
-                new MathBenchmark(),
-                new CallBenchmark(),
-                new IfElseBenchmark(),
-                new StringManipulation(),
+                new ArithemticsBenchmark(writer),
+                new MathBenchmark(writer),
+                new CallBenchmark(writer),
+                new IfElseBenchmark(writer),
+                new StringManipulation(writer),
                 new MemoryBenchmark(true, writer),
                 new RandomMemoryBenchmark(true, writer),
                 new Scimark2Benchmark(writer),
                 new DhrystoneBenchmark(writer),
                 new WhetstoneBenchmark(writer),
                 new LinpackBenchmark(writer),
-                new HashBenchmark(),
+                new HashBenchmark(writer),
             };
 
             TimeSpan singleThreadTotal = TimeSpan.Zero;
@@ -77,7 +77,7 @@ namespace EntityFX.NetBenchmarks.Mobile
                 writer.Write(".");
             }
 
-                        writer.WriteLine();
+            writer.WriteLine();
             writer.WriteHeader("Bench");
             int i = 1;
             foreach (var bench in benchMarks)

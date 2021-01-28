@@ -53,6 +53,11 @@ namespace EntityFX.NetBenchmark.Core.Generic
             }
 #if NETSTANDARD2_0 || NET45
             File.WriteAllText(string.Format("{0}.log",GetType().Name) , result.Output);
+#else
+            using (var sw = new StreamWriter(string.Format("{0}.log", GetType().Name)))
+            {
+                sw.Write(result.Output);
+            }
 #endif
         }
 

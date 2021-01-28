@@ -11,9 +11,9 @@ namespace EntityFX.NetBenchmark.Core.Linpack
 
         private IWriter output;
 
-        public Linpack(bool printToConsole, IWriter writer)
+        public Linpack(bool printToConsole)
         {
-            output = writer;
+            output = new Writer(null);
             this.output.UseConsole = printToConsole;
         }
 
@@ -30,7 +30,7 @@ namespace EntityFX.NetBenchmark.Core.Linpack
                 {
                 }
             }
-            Linpack l = new Linpack(true, new Writer(null));
+            Linpack l = new Linpack(true);
             l.Bench(array_size);
         }
 

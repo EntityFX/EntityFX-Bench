@@ -13,7 +13,7 @@ namespace EntityFX.NetBenchmark.Core.Scimark2
         public Scimark2Benchmark(IWriter writer)
             :base(writer)
         {
-            scimark2 = new Scimark2(true, writer);
+            scimark2 = new Scimark2(true);
             Ratio = 10;
         }
 

@@ -14,7 +14,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
         public WhetstoneBenchmark(IWriter writer)
             :base(writer)
         {
-            whetstone = new WhetstoneDouble(writer);
+            whetstone = new WhetstoneDouble();
         }
 
         public override WhetstoneResult BenchImplementation()

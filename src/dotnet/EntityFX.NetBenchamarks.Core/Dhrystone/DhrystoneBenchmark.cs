@@ -12,7 +12,7 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
         public DhrystoneBenchmark(IWriter writer)
             :base(writer)
         {
-            dhrystone = new Dhrystone2(true, writer);
+            dhrystone = new Dhrystone2(true);
             Ratio = 4;
         }
 

@@ -14,7 +14,7 @@ namespace EntityFX.NetBenchmark.Core.Linpack
         public LinpackBenchmark(IWriter writer)
             :base(writer)
         {
-            linpack = new Linpack(true, writer);
+            linpack = new Linpack(true);
             Ratio = 10;
         }
 

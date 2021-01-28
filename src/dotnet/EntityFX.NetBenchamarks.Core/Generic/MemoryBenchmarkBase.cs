@@ -33,10 +33,12 @@ namespace EntityFX.NetBenchmark.Core.Generic
             };
 #endif
 
+        private IWriter localWriter;
+
         public MemoryBenchmarkBase(bool printToConsole, IWriter writer)
             :base(writer)
         {
-            writer = writer;
+            localWriter = new Writer(null);
             Iterrations = 500000;
             Ratio = 1;
             random = new Random((int)DateTime.Now.Ticks);
@@ -59,7 +61,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
             {
                 var res = MeasureArrayRandomRead(item.Value);
                 results[idx] = res.Item1;
-                writer.WriteLine(string.Format("int {0}: {1} MB/s", item.Key, res.Item1.ToString("F2")));
+                localWriter.WriteLine(string.Format("int {0}: {1} MB/s", item.Key, res.Item1.ToString("F2")));
 
                 idx++;
             }
@@ -68,18 +70,19 @@ namespace EntityFX.NetBenchmark.Core.Generic
             {
                 var res = MeasureArrayRandomLongRead(item.Value);
                 results[idx] = res.Item1;
-                writer.WriteLine(string.Format("long {0}: {1} MB/s", item.Key, res.Item1.ToString("F2")));
+                localWriter.WriteLine(string.Format("long {0}: {1} MB/s", item.Key, res.Item1.ToString("F2")));
 
                 idx++;
             }
 
             var avg = results.Average();
-            writer.WriteLine(string.Format("Average: {0} MB/s", avg.ToString("F2")));
+            localWriter.WriteLine(string.Format("Average: {0} MB/s", avg.ToString("F2")));
 
+            writer.Write(localWriter.Output);
             return new MemoryBenchmarkResult()
             {
                 Average = avg,
-                Output = writer.Output
+                Output = localWriter.Output
             };
         }
 

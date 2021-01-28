@@ -20,9 +20,9 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
 
         IWriter output;
 
-        public Whetstone(bool printToConsole, IWriter writer)
+        public Whetstone(bool printToConsole)
         {
-            output = writer;
+            output = new Writer(null);
             output.UseConsole = printToConsole;
         }
 
