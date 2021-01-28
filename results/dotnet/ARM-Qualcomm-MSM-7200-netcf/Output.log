@@ -1,0 +1,82 @@
+Warmup
+.....int 1k: 63,99 MB/s
+int 16k: 37,65 MB/s
+int 64k: 31,50 MB/s
+int 512K: 0,00 MB/s
+long 1k: 104,11 MB/s
+long 16k: 41,39 MB/s
+long 64k: 48,71 MB/s
+long 512K: 39,88 MB/s
+Average: 45,90 MB/s
+.Random int 1k: 23,62 MB/s
+Random int 32k: 15,40 MB/s
+Random int 256k: 7,12 MB/s
+Random long 1k: 32,88 MB/s
+Random long 32k: 27,23 MB/s
+Random long 256k: 11,11 MB/s
+Average: 19,56 MB/s
+......
+Bench
+[1] ArithemticsBenchmark
+ArithemticsBenchmark                 77798,26 ms           1,16 pts       38561,33 Iter/s
+Iterrations:         3000000, Ratio:            0,03
+[2] MathBenchmark
+MathBenchmark                       376527,45 ms           2,66 pts        5311,70 Iter/s
+Iterrations:         2000000, Ratio:             0,5
+[3] CallBenchmark
+CallBenchmark                        84301,00 ms           1,30 pts      130125,01 Iter/s
+Iterrations:        20000000, Ratio:            0,01
+[4] IfElseBenchmark
+IfElseBenchmark                      12800,37 ms          15,62 pts     1562467,46 Iter/s
+Iterrations:        20000000, Ratio:            0,01
+[5] StringManipulation
+StringManipulation                   32705,03 ms          15,29 pts        1528,82 Iter/s
+Iterrations:           50000, Ratio:              10
+[6] MemoryBenchmark
+int 1k: 63,99 MB/s
+int 16k: 37,65 MB/s
+int 64k: 31,50 MB/s
+int 512K: 0,00 MB/s
+long 1k: 104,11 MB/s
+long 16k: 41,39 MB/s
+long 64k: 48,71 MB/s
+long 512K: 39,88 MB/s
+Average: 45,90 MB/s
+int 1k: 61,11 MB/s
+int 16k: 35,06 MB/s
+int 64k: 32,78 MB/s
+int 512K: 35,67 MB/s
+long 1k: 113,27 MB/s
+long 16k: 51,76 MB/s
+long 64k: 45,62 MB/s
+long 512K: 42,26 MB/s
+Average: 52,19 MB/s
+MemoryBenchmark                      15767,76 ms          52,19 pts          52,19 MB/s
+Iterrations:            5000, Ratio:               1
+[7] RandomMemoryBenchmark
+Random int 1k: 23,62 MB/s
+Random int 32k: 15,40 MB/s
+Random int 256k: 7,12 MB/s
+Random long 1k: 32,88 MB/s
+Random long 32k: 27,23 MB/s
+Random long 256k: 11,11 MB/s
+Average: 19,56 MB/s
+Random int 1k: 31,75 MB/s
+Random int 32k: 15,13 MB/s
+Random int 256k: 7,14 MB/s
+Random long 1k: 57,01 MB/s
+Random long 32k: 24,76 MB/s
+Random long 256k: 11,01 MB/s
+Average: 24,47 MB/s
+RandomMemoryBenchmark                13470,95 ms          48,93 pts          24,47 MB/s
+Iterrations:            5000, Ratio:               2
+[8] Scimark2Benchmark
+Scimark2Benchmark                    15532,04 ms           4,77 pts           0,48 CompositeScore
+Iterrations:               0, Ratio:              10
+[9] DhrystoneBenchmark
+DhrystoneBenchmark                  661817,86 ms          68,30 pts          17,07 DMIPS
+Iterrations:               0, Ratio:               4
+[10] WhetstoneBenchmark
+WhetstoneBenchmark                  106167,39 ms           4,42 pts           4,42 MWIPS
+Iterrations:               0, Ratio:               1
+[11] LinpackBenchmark
