@@ -39,7 +39,8 @@ namespace EntityFX.NetBenchmark.Core.Generic
             elapsed1 = sw.ElapsedMilliseconds;
             a = 0.0f;
             i = 0;
-            sw.Restart();
+            sw.Stop();
+            sw.Start();
             for (i = 0; i < Iterrations; ++i)
             {
                 a = DoCall(a, 0.01f);

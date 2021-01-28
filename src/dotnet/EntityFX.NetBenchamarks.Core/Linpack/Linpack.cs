@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace EntityFX.NetBenchmark.Core.Linpack
 {
     class Linpack
     {
 
-        private Writer output;
+        private IWriter output;
 
-        public Linpack(bool printToConsole)
+        public Linpack(bool printToConsole, IWriter writer)
         {
-            output = new Writer(null);
+            output = writer;
             this.output.UseConsole = printToConsole;
         }
 
@@ -31,7 +30,7 @@ namespace EntityFX.NetBenchmark.Core.Linpack
                 {
                 }
             }
-            Linpack l = new Linpack(true);
+            Linpack l = new Linpack(true, new Writer(null));
             l.Bench(array_size);
         }
 

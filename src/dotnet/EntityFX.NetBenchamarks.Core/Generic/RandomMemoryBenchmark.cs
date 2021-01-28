@@ -1,11 +1,15 @@
 using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
 using System;
 namespace EntityFX.NetBenchmark.Core.Generic
 {
 
     public class RandomMemoryBenchmark: RandomMemoryBenchmarkBase<MemoryBenchmarkResult>
     {
+        public RandomMemoryBenchmark(bool printToConsole, IWriter writer)
+            : base(printToConsole, writer)
+        {
+        }
+
         public override MemoryBenchmarkResult BenchImplementation() 
         {
             return BenchRandomMemory();

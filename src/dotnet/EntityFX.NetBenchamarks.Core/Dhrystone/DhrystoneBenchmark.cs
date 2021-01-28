@@ -2,22 +2,22 @@
 using System;
 using System.Diagnostics;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace EntityFX.NetBenchmark.Core.Dhrystone
 {
     public class DhrystoneBenchmark : BenchmarkBase<DhrystoneResult>, IBenchamrk
     {
-        private readonly Dhrystone2 dhrystone = new Dhrystone2();
+        private readonly Dhrystone2 dhrystone;
 
-        public DhrystoneBenchmark()
+        public DhrystoneBenchmark(IWriter writer)
         {
+            dhrystone = new Dhrystone2(true, writer);
             Ratio = 4;
         }
 
         public override DhrystoneResult BenchImplementation()
         {
-            return dhrystone.Bench();
+            return dhrystone.Bench(Dhrystone2.LOOPS);
         }
 
         public override BenchResult PopulateResult(BenchResult benchResult, DhrystoneResult dhrystoneResult)
@@ -30,7 +30,7 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
         }
 
 
-        public override void Warmup(double aspect = 0.05)
+        public override void Warmup(double aspect)
         {
 
         }

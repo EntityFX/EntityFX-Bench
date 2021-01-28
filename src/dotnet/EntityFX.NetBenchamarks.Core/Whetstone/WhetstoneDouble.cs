@@ -18,9 +18,14 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
         double Check;
         double[] results = new double[9];
 
-        Writer output = new Writer();
+        IWriter output;
 
-        public WhetstoneResult Bench(bool getinput = true)
+        public WhetstoneDouble(IWriter writer)
+        {
+            output = writer;
+        }
+
+        public WhetstoneResult Bench(bool getinput)
         {
             int count = 10, calibrate = 1;
             long xtra = 1;

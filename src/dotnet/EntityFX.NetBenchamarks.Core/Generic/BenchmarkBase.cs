@@ -2,7 +2,10 @@
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+
+#if NETSTANDARD2_0
 using System.Threading.Tasks;
+#endif
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
@@ -15,7 +18,11 @@ namespace EntityFX.NetBenchmark.Core.Generic
 
         public bool IsParallel { get; protected set; }
 
-        public string Name => GetType().Name;
+        public string Name { 
+            get { 
+                return GetType().Name;
+            } 
+        }
     }
 
     public abstract class BenchmarkBase<TResult> : BenchmarkBase, IBenchamrk
@@ -37,7 +44,9 @@ namespace EntityFX.NetBenchmark.Core.Generic
             if (result.Output == null) {
                 return;
             }
-            File.WriteAllText($"{GetType().Name}.log", result.Output);
+#if NETSTANDARD2_0
+            File.WriteAllText(string.Format("{0}.log",GetType().Name) , result.Output);
+#endif
         }
 
     public abstract TResult BenchImplementation();
@@ -52,7 +61,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
 
         }
 
-        public virtual void Warmup(double aspect = 0.05)
+        public virtual void Warmup(double aspect)
         {
             Iterrations = (int)Math.Round(Iterrations * IterrationsRatio);
             var tmp = Iterrations ;
@@ -62,6 +71,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
         }
 
 
+#if NETSTANDARD2_0
         protected virtual BenchResult[] BenchInParallel<TBench, TBenchResult>(
             Func<TBench> buildFunc, Func<TBench, TBenchResult> benchFunc, 
             Action<TBenchResult, BenchResult> setBenchResultFunc)
@@ -84,10 +94,12 @@ namespace EntityFX.NetBenchmark.Core.Generic
             Task.WaitAll(tasks);
             return results;
         }
+#endif
 
         public virtual BenchResult PopulateResult(BenchResult benchResult, TResult dhrystoneResult)
         {
-            if (dhrystoneResult is BenchResult[] results)
+            var results = dhrystoneResult as BenchResult[];
+            if (results != null)
             {
                 return BuildParallelResult(benchResult, results);
             }

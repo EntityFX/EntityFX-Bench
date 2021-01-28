@@ -3,18 +3,19 @@ using System.IO;
 
 namespace EntityFX.NetBenchmark.Core
 {
-    public class Writer : IDisposable
+    public class Writer : IDisposable, EntityFX.NetBenchmark.Core.IWriter
     {
         private TextWriter writer = new StringWriter();
 
         private StreamWriter streamWriter;
 
-        public bool UseConsole { get; set; } = true;
+        public bool UseConsole { get; set; }
 
-        public bool UseFile { get; set; } = false;
-        public string FilePath { get; }
+        public bool UseFile { get; set; }
 
-        public Writer(string filePath = null)
+        public string FilePath { get; private set; }
+
+        public Writer(string filePath)
         {
             if (filePath != null)
             {
@@ -29,7 +30,11 @@ namespace EntityFX.NetBenchmark.Core
             }
         }
 
-        public string Output { get => writer.ToString();  }
+        public string Output {
+            get { 
+                return writer.ToString(); 
+            }
+        }
 
         public void WriteLine(string format, params object[] args)
         {
@@ -64,10 +69,14 @@ namespace EntityFX.NetBenchmark.Core
             writer.Write(format, args);
             if (UseConsole)
             {
+#if NETSTANDARD2_0
                 var tmpColor = Console.ForegroundColor;
                 Console.ForegroundColor = color;
+#endif
                 Console.Write(format, args);
+#if NETSTANDARD2_0
                 Console.ForegroundColor = tmpColor;
+#endif
             }
             if (UseFile)
             {

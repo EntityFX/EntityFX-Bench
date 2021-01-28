@@ -23,9 +23,12 @@ namespace EntityFX.NetBenchmark.Core.Generic
             artayOfBytes = strs.Select(str => Encoding.ASCII.GetBytes(str)).ToArray();
         }
 
+#if NETSTANDARD2_0
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
+#endif
         protected static byte[] DoHash(long i, ref byte[][] preparedBytes)
         {
+#if NETSTANDARD2_0
             using (var sha = new SHA1Managed())
             using (var sha256 = new SHA256Managed())
             {
@@ -33,6 +36,15 @@ namespace EntityFX.NetBenchmark.Core.Generic
                     .Concat(sha256.ComputeHash(preparedBytes[(i + 1) % 3]))
                     .ToArray();
             }
+#else
+            using (var sha = new SHA1Managed())
+            using (var md5 = new MD5CryptoServiceProvider())
+            {
+                return sha.ComputeHash(preparedBytes[i % 3])
+                    .Concat(md5.ComputeHash(preparedBytes[(i + 1) % 3]))
+                    .ToArray();
+            }
+#endif
         }
     }
 }

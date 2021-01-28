@@ -18,14 +18,15 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
         float Check;
         float[] results = new float[9];
 
-        Writer output = new Writer();
+        IWriter output;
 
-        public Whetstone(bool printToConsole = true)
+        public Whetstone(bool printToConsole, IWriter writer)
         {
+            output = writer;
             output.UseConsole = printToConsole;
         }
 
-        public WhetstoneResult Bench(bool getinput = true)
+        public WhetstoneResult Bench(bool getinput)
         {
             int count = 10, calibrate = 1;
             long xtra = 1;

@@ -4,7 +4,6 @@ using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace EntityFX.NetBenchmark.Core.Dhrystone
 {
@@ -39,20 +38,25 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
             public int EnumLoc;
         }
 
-        Writer output = new Writer();
+        private IWriter output;
 
-        public Dhrystone2(bool printToConsole = true)
+        public Dhrystone2(bool printToConsole, IWriter writer)
         {
+            output = writer;
             output.UseConsole = printToConsole;
         }
 
         private static bool IsOptimized(Assembly asm)
         {
+#if NETSTANDARD2_0
             var att = asm.GetCustomAttribute<DebuggableAttribute>();
             return att == null || att.IsJITOptimizerDisabled == false;
+#else
+            return false;
+#endif
         }
 
-        public DhrystoneResult Bench(int loops = LOOPS)
+        public DhrystoneResult Bench(int loops)
         {
             output.WriteLine("##########################################");
 
@@ -203,7 +207,7 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
             return result;
         }
 
-        private const int LOOPS = 20000000;
+        public const int LOOPS = 20000000;
 
         private int IntGlob = 0;
         private bool BoolGlob = false;

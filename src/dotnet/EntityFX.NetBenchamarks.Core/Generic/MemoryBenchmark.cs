@@ -3,6 +3,11 @@ namespace EntityFX.NetBenchmark.Core.Generic
 {
     public class MemoryBenchmark: MemoryBenchmarkBase<MemoryBenchmarkResult>
     {
+        public MemoryBenchmark(bool printToConsole, IWriter writer)
+            : base(printToConsole, writer)
+        {
+        }
+
         public override MemoryBenchmarkResult BenchImplementation() 
         {
             return BenchRandomMemory();

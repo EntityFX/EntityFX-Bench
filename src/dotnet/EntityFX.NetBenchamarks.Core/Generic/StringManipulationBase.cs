@@ -9,8 +9,9 @@ namespace EntityFX.NetBenchmark.Core.Generic
             Iterrations = 5000000;
             Ratio = 10;
         }
-
+#if NETSTANDARD2_0
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
+#endif
         protected static string DoStringManipilation(string str)
         {
             return (string.Join("/", str.Split(' ')).Replace("/", "_").ToUpper() + "AAA").ToLower().Replace("aaa", ".");

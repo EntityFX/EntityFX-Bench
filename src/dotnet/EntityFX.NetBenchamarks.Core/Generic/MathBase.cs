@@ -10,8 +10,9 @@ namespace EntityFX.NetBenchmark.Core.Generic
             Iterrations = 200000000;
             Ratio = 0.5;
         }
-
+#if NETSTANDARD2_0
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
+#endif
         protected static double DoMath(int i, double li)
         {
             double rev = 1.0 / (i + 1.0);

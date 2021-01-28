@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Diagnostics;
+using System.Collections.Generic;
 
 namespace EntityFX.NetBenchmark.Core.Generic
 {
@@ -8,19 +9,42 @@ namespace EntityFX.NetBenchmark.Core.Generic
     {
         private Random random;
 
-        Writer output = new Writer();
+        private IWriter output;
 
-        protected bool UseConsole { get => output.UseConsole; set => output.UseConsole = value; }
+        protected bool UseConsole { get { return output.UseConsole; } set { output.UseConsole = value; } }
 
-        public MemoryBenchmarkBase(bool printToConsole = true)
+#if PocketPC
+        private Dictionary<string, int> intMemTests = new Dictionary<string, int>
+            {
+                {"1k", 1024 / sizeof(int)}, {"16k", 64 * 1024 / sizeof(int)}, {"64k", 512 * 1024 / sizeof(int)}, {"512K", 1 * 1024 * 1024 / sizeof(int)}
+            };
+
+        private Dictionary<string, int> longMemTests = new Dictionary<string, int>
+            {
+                {"1k", 1024 / sizeof(long)}, {"16k", 64 * 1024 / sizeof(long)}, {"64k", 512 * 1024 / sizeof(long)}, {"512K", 1 * 1024 * 1024 / sizeof(long)}
+            };
+#else
+            Dictionary<string, int> intMemTests = new Dictionary<string, int>
+            {
+                {"4k", 1024}, {"512k", 131072}, {"8M", 2097152}, {"32M", 32 * 1024 * 1024 / sizeof(int)}
+            };
+
+            Dictionary<string, int> longMemTests = new Dictionary<string, int>
+            {
+                {"4k", 512}, {"512k", 65536}, {"8M", 1048576}, {"32M", 32 * 1024 * 1024 / sizeof(long)}
+            };
+#endif
+
+        public MemoryBenchmarkBase(bool printToConsole, IWriter writer)
         {
+            output = writer;
             Iterrations = 500000;
             Ratio = 1;
             random = new Random((int)DateTime.Now.Ticks);
             UseConsole = printToConsole;
         }
 
-        public override void Warmup(double aspect = 0.05)
+        public override void Warmup(double aspect)
         {
             UseConsole = false;
             base.Warmup(aspect);
@@ -29,26 +53,29 @@ namespace EntityFX.NetBenchmark.Core.Generic
 
         public MemoryBenchmarkResult BenchRandomMemory()
         {
-            var int4k = MeasureArrayRandomRead(1024);
-            output.WriteLine($"int 4k: {int4k.Item1.ToString("F2")} MB/s");
-            var int512k = MeasureArrayRandomRead(131072);
-            output.WriteLine($"int 512k: {int512k.Item1.ToString("F2")} MB/s");
-            var int8m = MeasureArrayRandomRead(2097152);
-            output.WriteLine($"int 8M: {int8m.Item1.ToString("F2")} MB/s");
-            var int32m = MeasureArrayRandomRead(32 * 1024 * 1024 / sizeof(int));
-            output.WriteLine($"int 32M: {int8m.Item1.ToString("F2")} MB/s");
+            double[] results = new double[intMemTests.Count + longMemTests.Count];
 
-            var long4k = MeasureArrayRandomLongRead(512);
-            output.WriteLine($"long 4k: {long4k.Item1.ToString("F2")} MB/s");
-            var long512k = MeasureArrayRandomLongRead(65536);
-            output.WriteLine($"long 512k: {long512k.Item1.ToString("F2")} MB/s");
-            var long8m = MeasureArrayRandomLongRead(1048576);
-            output.WriteLine($"long 8M: {long8m.Item1.ToString("F2")} MB/s");
-            var long32m = MeasureArrayRandomRead(32 * 1024 * 1024 / sizeof(long));
-            output.WriteLine($"long 32M: {int8m.Item1.ToString("F2")} MB/s");
+            int idx = 0;
+            foreach (var item in intMemTests)
+            {
+                var res = MeasureArrayRandomRead(item.Value);
+                results[idx] = res.Item1;
+                output.WriteLine(string.Format("int {0}: {1} MB/s", item.Key, res.Item1.ToString("F2")));
 
-            var avg = (new double[] { int4k.Item1, int512k.Item1, int8m.Item1, long4k.Item1, long512k.Item1, long8m.Item1 }).Average();
-            output.WriteLine($"Average: {avg.ToString("F2")} MB/s");
+                idx++;
+            }
+
+            foreach (var item in longMemTests)
+            {
+                var res = MeasureArrayRandomLongRead(item.Value);
+                results[idx] = res.Item1;
+                output.WriteLine(string.Format("long {0}: {1} MB/s", item.Key, res.Item1.ToString("F2")));
+
+                idx++;
+            }
+
+            var avg = results.Average();
+            output.WriteLine(string.Format("Average: {0} MB/s", avg.ToString("F2")));
 
             return new MemoryBenchmarkResult()
             {
@@ -57,7 +84,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
             };
         }
 
-        protected Tuple<double, int[]> MeasureArrayRandomRead(int size)
+        protected MemoryMeasureResult<double, int[]> MeasureArrayRandomRead(int size)
         {
             int blockSize = 16;
             int[] I = new int[blockSize];
@@ -114,10 +141,10 @@ namespace EntityFX.NetBenchmark.Core.Generic
             }
             sw.Stop();
 
-            return new Tuple<double, int[]>((long)iterInternal * array.Length * 4 / sw.Elapsed.TotalSeconds / 1024 / 1024, I);
+            return new MemoryMeasureResult<double, int[]>((long)iterInternal * array.Length * 4 / sw.Elapsed.TotalSeconds / 1024 / 1024, I);
         }
 
-        protected Tuple<double, long[]> MeasureArrayRandomLongRead(int size)
+        protected MemoryMeasureResult<double, long[]> MeasureArrayRandomLongRead(int size)
         {
             int blockSize = 8;
             long[] L = new long[blockSize];
@@ -155,7 +182,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
             }
             sw.Stop();
 
-            return new Tuple<double, long[]>((long)iterInternal * array.Length * 8 / sw.Elapsed.TotalSeconds / 1024 / 1024, L);
+            return new MemoryMeasureResult<double, long[]>((long)iterInternal * array.Length * 8 / sw.Elapsed.TotalSeconds / 1024 / 1024, L);
         }
     }
 }

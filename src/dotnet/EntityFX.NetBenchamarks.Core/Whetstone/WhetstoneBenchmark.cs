@@ -4,22 +4,21 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace EntityFX.NetBenchmark.Core.Whetstone
 {
     public class WhetstoneBenchmark : BenchmarkBase<WhetstoneResult>, IBenchamrk
     {
-        private readonly WhetstoneDouble whetstone = new WhetstoneDouble();
+        private readonly WhetstoneDouble whetstone;
 
-        public WhetstoneBenchmark()
+        public WhetstoneBenchmark(IWriter writer)
         {
-
+            whetstone = new WhetstoneDouble(writer);
         }
 
         public override WhetstoneResult BenchImplementation()
         {
-            return whetstone.Bench();
+            return whetstone.Bench(true);
         }
 
         public override BenchResult PopulateResult(BenchResult benchResult, WhetstoneResult dhrystoneResult)
@@ -31,7 +30,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
             return benchResult;
         }
 
-        public override void Warmup(double aspect = 0.05)
+        public override void Warmup(double aspect)
         {
 
         }

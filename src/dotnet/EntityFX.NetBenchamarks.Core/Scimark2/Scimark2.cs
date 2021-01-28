@@ -5,14 +5,15 @@ namespace EntityFX.NetBenchmark.Core.Scimark2
 
     public class Scimark2
     {
-        Writer output = new Writer();
+        IWriter output;
 
-        public Scimark2(bool printToConsole = true)
+        public Scimark2(bool printToConsole, IWriter writer)
         {
+            output = writer;
             output.UseConsole = printToConsole;
         }
 
-        public Scimark2Result Bench(double min_time = Constants.RESOLUTION_DEFAULT, bool isLarge = false)
+        public Scimark2Result Bench(double min_time, bool isLarge)
         {
             // default to the (small) cache-contained version
 

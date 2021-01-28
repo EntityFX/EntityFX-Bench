@@ -1,0 +1,207 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{312B2F2F-484A-469C-9774-D3F2CF243944}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EntityFX.NetBenchmark.Core</RootNamespace>
+    <AssemblyName>EntityFX.NetBenchmark.Core</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>4118C335-430C-497f-BE48-11C3316B135E</PlatformID>
+    <OSVersion>5.1</OSVersion>
+    <DeployDirSuffix>EntityFX.NetBenchmarks.Mobile</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 5.0 Pocket PC SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\BenchResult.cs">
+      <Link>BenchResult.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Dhrystone\Dhrystone2.cs">
+      <Link>Dhrystone\Dhrystone2.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Dhrystone\DhrystoneBenchmark.cs">
+      <Link>Dhrystone\DhrystoneBenchmark.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Dhrystone\DhrystoneResult.cs">
+      <Link>Dhrystone\DhrystoneResult.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Dhrystone\Record.cs">
+      <Link>Dhrystone\Record.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\ArithemticsBenchmark.cs">
+      <Link>Generic\ArithemticsBenchmark.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\ArithmeticsBase.cs">
+      <Link>Generic\ArithmeticsBase.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\BenchmarkBase.cs">
+      <Link>Generic\BenchmarkBase.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\CallBenchmark.cs">
+      <Link>Generic\CallBenchmark.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\CallBenchmarkBase.cs">
+      <Link>Generic\CallBenchmarkBase.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\HashBase.cs">
+      <Link>Generic\HashBase.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\HashBenchmark.cs">
+      <Link>Generic\HashBenchmark.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\IfElseBenchmark.cs">
+      <Link>Generic\IfElseBenchmark.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\LoopsBenchmark.cs">
+      <Link>Generic\LoopsBenchmark.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\MathBase.cs">
+      <Link>Generic\MathBase.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\MathBenchmark.cs">
+      <Link>Generic\MathBenchmark.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\MemoryBenchmark.cs">
+      <Link>Generic\MemoryBenchmark.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\MemoryBenchmarkBase.cs">
+      <Link>Generic\MemoryBenchmarkBase.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\RandomMemoryBenchmark.cs">
+      <Link>Generic\RandomMemoryBenchmark.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\RandomMemoryBenchmarkBase.cs">
+      <Link>Generic\RandomMemoryBenchmarkBase.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\RandomMemoryBenchmarkResult.cs">
+      <Link>Generic\RandomMemoryBenchmarkResult.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\StringManipulation.cs">
+      <Link>Generic\StringManipulation.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Generic\StringManipulationBase.cs">
+      <Link>Generic\StringManipulationBase.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\IBenchamrk.cs">
+      <Link>IBenchamrk.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\IWriter.cs">
+      <Link>IWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Linpack\Linpack.cs">
+      <Link>Linpack\Linpack.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Linpack\LinpackBenchmark.cs">
+      <Link>Linpack\LinpackBenchmark.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Linpack\LinpackResult.cs">
+      <Link>Linpack\LinpackResult.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Scimark2\Constants.cs">
+      <Link>Scimark2\Constants.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Scimark2\FFT.cs">
+      <Link>Scimark2\FFT.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Scimark2\Kernel.cs">
+      <Link>Scimark2\Kernel.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Scimark2\LU.cs">
+      <Link>Scimark2\LU.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Scimark2\MonteCarlo.cs">
+      <Link>Scimark2\MonteCarlo.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Scimark2\Random.cs">
+      <Link>Scimark2\Random.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Scimark2\Scimark2.cs">
+      <Link>Scimark2\Scimark2.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Scimark2\Scimark2Benchmark.cs">
+      <Link>Scimark2\Scimark2Benchmark.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Scimark2\Scimark2Result.cs">
+      <Link>Scimark2\Scimark2Result.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Scimark2\SOR.cs">
+      <Link>Scimark2\SOR.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Scimark2\SparseCompRow.cs">
+      <Link>Scimark2\SparseCompRow.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Whetstone\Whetstone.cs">
+      <Link>Whetstone\Whetstone.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Whetstone\WhetstoneBenchmark.cs">
+      <Link>Whetstone\WhetstoneBenchmark.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Whetstone\WhetstoneDouble.cs">
+      <Link>Whetstone\WhetstoneDouble.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Whetstone\WhetstoneResult.cs">
+      <Link>Whetstone\WhetstoneResult.cs</Link>
+    </Compile>
+    <Compile Include="..\EntityFX.NetBenchamarks.Core\Writer.cs">
+      <Link>Writer.cs</Link>
+    </Compile>
+    <Compile Include="ConsoleColor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

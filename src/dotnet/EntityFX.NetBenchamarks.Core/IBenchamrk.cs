@@ -8,6 +8,6 @@
 
         BenchResult Bench();
 
-        void Warmup(double aspect = 0.05);
+        void Warmup(double aspect);
     }
 }

@@ -4,22 +4,22 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace EntityFX.NetBenchmark.Core.Linpack
 {
     public class LinpackBenchmark : BenchmarkBase<LinpackResult>, IBenchamrk
     {
-        private readonly Linpack Linpack = new Linpack(true);
+        private readonly Linpack linpack;
 
-        public LinpackBenchmark()
+        public LinpackBenchmark(IWriter writer)
         {
+            linpack = new Linpack(true, writer);
             Ratio = 10;
         }
 
         public override LinpackResult BenchImplementation()
         {
-            return Linpack.Bench(2000);
+            return linpack.Bench(2000);
         }
 
         public override BenchResult PopulateResult(BenchResult benchResult, LinpackResult linpackResult)
@@ -31,7 +31,7 @@ namespace EntityFX.NetBenchmark.Core.Linpack
             return benchResult;
         }
 
-        public override void Warmup(double aspect = 0.05)
+        public override void Warmup(double aspect)
         {
 
         }
