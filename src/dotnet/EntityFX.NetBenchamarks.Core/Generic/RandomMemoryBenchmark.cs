@@ -8,6 +8,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
         public RandomMemoryBenchmark(bool printToConsole, IWriter writer)
             : base(printToConsole, writer)
         {
+            localWriter.UseConsole = UseConsole;
         }
 
         public override MemoryBenchmarkResult BenchImplementation() 
@@ -22,6 +23,13 @@ namespace EntityFX.NetBenchmark.Core.Generic
             benchResult.Units = "MB/s";
             benchResult.Output = result.Output;
             return benchResult;
+        }
+
+        public override void Warmup(double aspect)
+        {
+            localWriter.UseConsole = false;
+            base.Warmup(aspect);
+            localWriter.UseConsole = true;
         }
 
     }

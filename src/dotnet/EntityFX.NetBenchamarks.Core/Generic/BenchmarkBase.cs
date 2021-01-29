@@ -53,10 +53,6 @@ namespace EntityFX.NetBenchmark.Core.Generic
             if (result.Output == null) {
                 return;
             }
-            if (writer.UseConsole)
-            {
-                writer.Write(result.Output);
-            }
 #if NETSTANDARD2_0 || NET45
             File.WriteAllText(string.Format("{0}.log",GetType().Name) , result.Output);
 #else

@@ -16,7 +16,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
 
         public override BenchResult[] BenchImplementation()
         {
-            return BenchInParallel(() => new Whetstone(false, writer), a =>
+            return BenchInParallel(() => new WhetstoneDouble(false), a =>
             a.Bench(true), (a, r) => { 
                 r.Points = a.MWIPS;
                 r.Result = r.Points;

@@ -15,7 +15,7 @@ namespace EntityFX.NetBenchmark.Core.Scimark2
 
         public override BenchResult[] BenchImplementation()
         {
-            return BenchInParallel(() => new Scimark2(false, writer), a =>
+            return BenchInParallel(() => new Scimark2(false), a =>
             a.Bench(Constants.RESOLUTION_DEFAULT, false), (a, r) => {
                 r.Points = a.CompositeScore * Ratio;
                 r.Result = a.CompositeScore;

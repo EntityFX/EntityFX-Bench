@@ -8,6 +8,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
         public ParallelMemoryBenchmark(bool printToConsole, IWriter writer) : base(printToConsole, writer)
         {
             IsParallel = true;
+            localWriter.UseConsole = false;
         }
 
         public override BenchResult[] BenchImplementation()

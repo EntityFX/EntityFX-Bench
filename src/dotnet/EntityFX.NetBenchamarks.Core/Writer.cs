@@ -17,6 +17,7 @@ namespace EntityFX.NetBenchmark.Core
 
         public Writer(string filePath)
         {
+            UseConsole = true;
             if (filePath != null)
             {
                 FilePath = filePath;

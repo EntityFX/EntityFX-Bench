@@ -20,7 +20,7 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
 
         public override BenchResult[] BenchImplementation()
         {
-            return BenchInParallel(() => new Dhrystone2(false, _writer), a =>
+            return BenchInParallel(() => new Dhrystone2(false), a =>
             a.Bench(Dhrystone2.LOOPS), (a, r) => {
                 r.Points = a.VaxMips * Ratio;
                 r.Result = a.VaxMips;

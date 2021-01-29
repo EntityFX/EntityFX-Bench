@@ -19,7 +19,7 @@ namespace EntityFX.NetBenchmark.Core.Linpack
 
         public override BenchResult[] BenchImplementation()
         {
-            return BenchInParallel(() => new Linpack(false, writer), a =>
+            return BenchInParallel(() => new Linpack(false), a =>
             a.Bench(2000), (a, r) => {
                 r.Points = a.MFLOPS;
                 r.Result = r.Points;

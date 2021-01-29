@@ -9,6 +9,8 @@ namespace EntityFX.NetBenchmark.Core.Generic
     {
         private Random random;
 
+        protected IWriter localWriter = new Writer(null);
+
 #if PocketPC
         private Dictionary<string, int> intMemTests = new Dictionary<string, int>
             {
@@ -40,16 +42,8 @@ namespace EntityFX.NetBenchmark.Core.Generic
             UseConsole = printToConsole;
         }
 
-        public override void Warmup(double aspect)
-        {
-            UseConsole = false;
-            base.Warmup(aspect);
-            UseConsole = true;
-        }
-
         public MemoryBenchmarkResult BenchRandomMemory()
         {
-            var localWriter = new Writer(null);
             double[] results = new double[intMemTests.Count + longMemTests.Count];
 
             int idx = 0;
