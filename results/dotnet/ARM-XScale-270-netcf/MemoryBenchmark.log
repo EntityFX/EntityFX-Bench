@@ -1,0 +1,9 @@
+int 1k: 124,42 MB/s
+int 16k: 54,78 MB/s
+int 64k: 54,43 MB/s
+int 512K: 49,08 MB/s
+long 1k: 218,69 MB/s
+long 16k: 53,40 MB/s
+long 64k: 50,03 MB/s
+long 512K: 54,70 MB/s
+Average: 82,44 MB/s
