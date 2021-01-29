@@ -13,21 +13,50 @@ using EntityFX.NetBenchmark.Core.Dhrystone;
 using EntityFX.NetBenchmark.Core.Scimark2;
 using EntityFX.NetBenchmark.Core.Whetstone;
 using EntityFX.NetBenchmark.Core.Linpack;
+using System.Threading;
 
 namespace EntityFX.NetBenchmarks.Mobile
 {
     public partial class Form1 : Form
     {
-        private IWriter writer;
+        private AsyncWriter writer;
+        private delegate void SafeCallDelegate(string text);
 
         public Form1()
         {
             InitializeComponent();
-            writer = new TextBoxWriter(textBox1, "Output.log");
+            writer = new AsyncWriter("Output.log");
+            writer.OnWrite += new EventHandler<AsyncWriterEventArgs>(writer_OnWrite);
+            writer.OnWriteLine += new EventHandler(writer_OnWriteLine);
             BenchmarkBase.IterrationsRatio = BenchmarkBase.IterrationsRatio * 0.01;
 #if DEBUG
             BenchmarkBase.IterrationsRatio = BenchmarkBase.IterrationsRatio * 0.002;
 #endif
+        }
+
+        void writer_OnWriteLine(object sender, EventArgs e)
+        {
+            WriteTextSafe("\r\n");
+        }
+
+        void writer_OnWrite(object sender, AsyncWriterEventArgs e)
+        {
+            WriteTextSafe(e.Text);
+        }
+
+        private void WriteTextSafe(string text)
+        {
+            if (textBox1.InvokeRequired)
+            {
+                var d = new SafeCallDelegate(WriteTextSafe);
+                textBox1.Invoke(d, new object[] { text });
+            }
+            else
+            {
+                textBox1.Select(textBox1.TextLength + 1, 0);
+                textBox1.SelectedText = text;
+                textBox1.ScrollToCaret();
+            }
         }
 
         private void WriteResult(BenchResult benchResult)
@@ -42,7 +71,7 @@ namespace EntityFX.NetBenchmarks.Mobile
             writer.WriteLine();
         }
 
-        private void menuItem1_Click(object sender, EventArgs e)
+        private void BackgroundTask()
         {
             var benchMarks = new IBenchamrk[] 
             {
@@ -128,6 +157,16 @@ namespace EntityFX.NetBenchmarks.Mobile
             writer.WriteTitle("{0},{1},{2},{3}", Environment.OSVersion, Environment.Version, processors, workingSet);
             result.Where(r => !r.IsParallel).ToList().ForEach(r => writer.WriteValue(string.Format(",{0:F2}", r.Result)));
             writer.WriteTitle(",{0},{1}", string.Format("{0:F2}", totalPoints), string.Format("{0:F2}", total.TotalMilliseconds));
+        }
+
+        private void menuItem1_Click(object sender, EventArgs e)
+        {
+            menuItem1.Enabled = false;
+            var t = new Thread(BackgroundTask);
+            t.Name = "My Thread";
+            t.Priority = ThreadPriority.AboveNormal;
+            t.Start();
+            menuItem1.Enabled = true;
         }
 
         private void menuItem2_Click(object sender, EventArgs e)
