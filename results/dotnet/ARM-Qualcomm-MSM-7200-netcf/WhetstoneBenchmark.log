@@ -1,1 +1,27 @@
-EntityFX.NetBenchmark.Core.Writer
+Double Precision C# Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       2,27 Seconds          1   Passes (x 100)
+
+Use 43  passes (x 100)
+
+          Double Precision C# Whetstone Benchmark
+
+                  ??
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 doubleing point    -1,12441415430187000        1,167               0,707
+N2 doubleing point    -1,12239951147841000        1,106               5,225
+N3 if then else        1,00000000000000000                   5,941    0,749
+N4 fixed point        12,00000000000000000                   7,230    1,874
+N5 sin,cos etc.        0,49907428465355400                   0,092   38,875
+N6 doubleing point     0,99999988495278100        1,034              22,442
+N7 assignments         3,00000000000000000                   2,699    2,944
+N8 exp,sqrt etc.       0,75095530233257800                   0,065   24,451
+MWIPS                                              4,421             97,268
+
