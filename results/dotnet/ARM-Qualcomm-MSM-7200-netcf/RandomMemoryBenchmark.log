@@ -1,0 +1,14 @@
+Random int 1k: 23,62 MB/s
+Random int 32k: 15,40 MB/s
+Random int 256k: 7,12 MB/s
+Random long 1k: 32,88 MB/s
+Random long 32k: 27,23 MB/s
+Random long 256k: 11,11 MB/s
+Average: 19,56 MB/s
+Random int 1k: 31,75 MB/s
+Random int 32k: 15,13 MB/s
+Random int 256k: 7,14 MB/s
+Random long 1k: 57,01 MB/s
+Random long 32k: 24,76 MB/s
+Random long 256k: 11,01 MB/s
+Average: 24,47 MB/s
