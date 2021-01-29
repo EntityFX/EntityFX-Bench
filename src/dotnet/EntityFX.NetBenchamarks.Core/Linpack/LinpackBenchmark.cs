@@ -24,7 +24,7 @@ namespace EntityFX.NetBenchmark.Core.Linpack
 #if PocketPC
             size = 500;
 #endif
-            return linpack.Bench(2000);
+            return linpack.Bench(size);
         }
 
         public override BenchResult PopulateResult(BenchResult benchResult, LinpackResult linpackResult)

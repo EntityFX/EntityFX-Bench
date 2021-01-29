@@ -97,7 +97,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
 
             return new WhetstoneResult()
             {
-                Output = output.ToString(),
+                Output = output.Output,
                 MWIPS = mwips,
                 TimeUsed = TimeUsed
             };

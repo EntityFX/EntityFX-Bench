@@ -22,12 +22,12 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
             return whetstone.Bench(true);
         }
 
-        public override BenchResult PopulateResult(BenchResult benchResult, WhetstoneResult dhrystoneResult)
+        public override BenchResult PopulateResult(BenchResult benchResult, WhetstoneResult whetstoneResult)
         {
-            benchResult.Result = dhrystoneResult.MWIPS;
-            benchResult.Points = dhrystoneResult.MWIPS * Ratio;
+            benchResult.Result = whetstoneResult.MWIPS;
+            benchResult.Points = whetstoneResult.MWIPS * Ratio;
             benchResult.Units = "MWIPS";
-            benchResult.Output = dhrystoneResult.Output;
+            benchResult.Output = whetstoneResult.Output;
             return benchResult;
         }
 
