@@ -36,24 +36,24 @@ namespace EntityFX.NetBenchmark
 
             var benchMarks = new IBenchamrk[] 
             {
-             /*   new ArithemticsBenchmark(),
-                new ParallelArithemticsBenchmark(),
+                new ArithemticsBenchmark(writer),
+                new ParallelArithemticsBenchmark(writer),
 
-                new MathBenchmark(),
-                new ParallelMathBenchmark(),
+                new MathBenchmark(writer),
+                new ParallelMathBenchmark(writer),
 
-                new CallBenchmark(),
-                new ParallelCallBenchmark(),
+                new CallBenchmark(writer),
+                new ParallelCallBenchmark(writer),
 
-                new IfElseBenchmark(),
-                new ParallelIfElseBenchmark(),
+                new IfElseBenchmark(writer),
+                new ParallelIfElseBenchmark(writer),
 
-                new StringManipulation(),
-                new ParallelStringManipulation(),*/
+                new StringManipulation(writer),
+                new ParallelStringManipulation(writer),
 
                 new MemoryBenchmark(true, writer),
                 new ParallelMemoryBenchmark(true, writer),
-/*
+
                 new RandomMemoryBenchmark(true, writer),
                 new ParallelRandomMemoryBenchmark(true, writer),
 
@@ -67,7 +67,7 @@ namespace EntityFX.NetBenchmark
                 new ParallelWhetstoneBenchmark(writer),
 
                 new LinpackBenchmark(writer),
-                new ParallelLinpackBenchmark(writer),*/
+                new ParallelLinpackBenchmark(writer),
             };
 
             GCSettings.LatencyMode = GCLatencyMode.LowLatency;
