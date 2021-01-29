@@ -1,0 +1,9 @@
+Running Linpack 500x500 in C#
+Norma is 0,499993800108886
+Residual is 2,91863755386146E-13
+Normalised residual is 5,26
+Machine result.Eepsilon is 2,22044604925031E-16
+x[0]-1 is 2,77555756156289E-14
+x[n-1]-1 is 3,19744231092045E-14
+Time is 61,46
+MFLOPS: 1,364
