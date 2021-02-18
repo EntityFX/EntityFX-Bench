@@ -1,0 +1,9 @@
+Running Linpack 2000x2000 in C#
+Norma is 0.499999369189997
+Residual is 4.49598691609765E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.22044604925031E-16
+x[0]-1 is 4.44089209850063E-13
+x[n-1]-1 is -3.99746902246534E-12
+Time is 20
+MFLOPS: 267.067
