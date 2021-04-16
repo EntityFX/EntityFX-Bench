@@ -1,0 +1,32 @@
+Warmup
+..Elapsed No Call: 0Elapsed Call: 3000Call time: 3000...int 4k: 81.96 MB/sint 512k: 82.39 MB/sint 8M: 97.20 MB/sint 32M: 2441406.25 MB/slong 4k: 80.12 MB/slong 512k: 80.51 MB/slong 8M: 94.90 MB/slong 32M: 2790178.57 MB/sAverage: 654012.74 MB/sWarmup
+..Elapsed No Call: 0Elapsed Call: 3000Call time: 3000...int 4k: 81.96 MB/sint 512k: 82.39 MB/sint 8M: 97.20 MB/sint 32M: 2441406.25 MB/slong 4k: 80.12 MB/slong 512k: 80.51 MB/slong 8M: 94.90 MB/slong 32M: 2790178.57 MB/sAverage: 654012.74 MB/s.Random int 4k: 41.25 MB/sRandom int 512k: 34.70 MB/sRandom int 8M: 21.59 MB/sRandom long 4k: 47.00 MB/sRandom long 512k: 34.89 MB/sRandom long 8M: 21.18 MB/sAverage: 33.44 MB/s......
+Bench
+[1] ArithemticsBenchmark
+ArithemticsBenchmark                    15000 ms        60.00 pts     2000000.00 Iter/s
+Iterrations:        30000000, Ratio:        0.030000
+[2] MathBenchmark
+MathBenchmark                           54000 ms       185.19 pts      370370.37 Iter/s
+Iterrations:        20000000, Ratio:        0.500000
+[3] CallBenchmark
+Elapsed No Call: 14000
+Elapsed Call: 44000
+Call time: 30000
+CallBenchmark                           30000 ms        66.67 pts     6666666.67 Iter/s
+Iterrations:       200000000, Ratio:        0.010000
+[4] IfElseBenchmark
+IfElseBenchmark                         37000 ms        54.05 pts     5405405.41 Iter/s
+Iterrations:       200000000, Ratio:        0.010000
+[5] StringManipulation
+StringManipulation                       9000 ms       555.56 pts       55555.56 Iter/s
+Iterrations:          500000, Ratio:       10.000000
+[6] MemoryBenchmark
+int 4k: 81.67 MB/s
+int 512k: 80.40 MB/s
+int 8M: 80.97 MB/s
+int 32M: 80.96 MB/s
+long 4k: 80.06 MB/s
+long 512k: 78.40 MB/s
+long 8M: 78.98 MB/s
+long 32M: 77.67 MB/s
+Average: 79.89 MB/s
