@@ -3,7 +3,10 @@ from entityfx.writer import Writer
 from entityfx.benchmark_base import BenchmarkBase
 import time
 import multiprocessing
-from multiprocessing import Pool
+try:
+    mp = multiprocessing.get_context('fork')
+except (AttributeError, ValueError):
+    mp = multiprocessing
 
 class ParallelCallBenchmark(CallBenchmarkBase):
 
@@ -32,7 +35,7 @@ class ParallelCallBenchmark(CallBenchmarkBase):
 
 
     def bench_in_parallel(self, buildFunc, benchFunc, setBenchResultFunc):
-        cpu_count = multiprocessing.cpu_count()
+        cpu_count = mp.cpu_count()
         BenchmarkBase._parallelContext = [{
             "benchFunc" : self._doCallBench,
             "setBenchResultFunc" : setBenchResultFunc,
@@ -44,7 +47,7 @@ class ParallelCallBenchmark(CallBenchmarkBase):
             "buildData" : buildFunc()
         }, range(0, cpu_count)))
  
-        p = Pool(cpu_count)
+        p = mp.Pool(cpu_count)
         results = p.map(ParallelCallBenchmark._parallelContextCallFunc, benchs)
         p.close()
         return results
