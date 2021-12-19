@@ -46,7 +46,7 @@ function Whetstone:bench(getinput)
         xtra = 1
     end
     calibrate = 0
-    self:writeLine("\nUse %d  passes (x 100)", xtra)
+    self:writeLine("\nUse %.4f  passes (x 100)", xtra)
     self:writeLine("\n          %s Precision Lua Whetstone Benchmark", "Double")
     self:writeLine("\n                  %s", "")
     self:writeLine("\nLoop content                  Result              MFLOPS " .. "     MOPS   Seconds\n")
