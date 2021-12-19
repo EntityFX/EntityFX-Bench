@@ -3,7 +3,7 @@ package whetstone
 import (
 	"math"
 
-	"../utils"
+	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/utils"
 	//"strings"
 )
 

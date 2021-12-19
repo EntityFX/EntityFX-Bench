@@ -1,6 +1,6 @@
 package generic
 
-import "../utils"
+import "github.com/EntityFX/EntityFX-Bench/src/go/entityfx/utils"
 
 import "math"
 

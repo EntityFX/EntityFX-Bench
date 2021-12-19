@@ -53,11 +53,18 @@ java -jar EntityFXBench.jar
 
 ### JavaScript
 
-Web:
+#### Web
 
 http://laseroid.azurewebsites.net/js-bench/
 
-NodeJS: TODO
+#### NodeJS
+
+You must have nodejs installed
+
+```sh
+cd src/js
+node ./node_main.js
+```
 
 ### PHP
 
@@ -83,3 +90,15 @@ lua main.lua
 ## Build
 
 TODO
+
+### Go
+```sh
+cd src/go/entityfx
+go build
+```
+
+alternatively:
+```sh
+go get -u github.com/EntityFX/EntityFX-Bench/src/go/entityfx
+```
+

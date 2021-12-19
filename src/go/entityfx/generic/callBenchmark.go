@@ -3,7 +3,7 @@ package generic
 import (
 	"runtime"
 
-	"../utils"
+	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/utils"
 )
 
 type CallBenchmark struct {

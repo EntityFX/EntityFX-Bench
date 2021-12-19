@@ -21,6 +21,10 @@ require "whetstone/whetstoneBenchmark"
 require "linpack/linpackBenchmark"
 require "scimark2/scimark2Benchmark"
 
+if _ENV then
+	unpack = table.unpack
+end
+
 function writeResult(writer, benchResult)
     writer:writeTitle("%-30s", benchResult.benchmarkName)
     writer:writeValue("%15d ms", benchResult.elapsed)

@@ -1,7 +1,7 @@
 package linpack
 
 import (
-	"../utils"
+	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/utils"
 )
 
 type LinpackResult struct {
