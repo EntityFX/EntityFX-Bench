@@ -89,7 +89,11 @@ lua main.lua
 
 ## Build
 
-TODO
+### Dotnet
+```sh
+cd src/dotnet
+dotnet build EntityFX.NetBenchmark.sln --configuration Release
+```
 
 ### Go
 ```sh
