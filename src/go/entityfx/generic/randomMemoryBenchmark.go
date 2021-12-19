@@ -1,7 +1,7 @@
 package generic
 
 import (
-	"../utils"
+	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/utils"
 )
 
 type RandomMemoryBenchmark struct {

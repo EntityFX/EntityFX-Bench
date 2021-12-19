@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"../utils"
+	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/utils"
 )
 
 var IterrationsRatio float64 = 1.0

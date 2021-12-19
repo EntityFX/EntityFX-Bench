@@ -1,7 +1,7 @@
 package scimark2
 
 import (
-	"../utils"
+	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/utils"
 )
 
 type Scimark2Result struct {
