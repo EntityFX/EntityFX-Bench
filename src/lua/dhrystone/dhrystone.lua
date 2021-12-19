@@ -249,7 +249,7 @@ function Dhrystone2:Proc0(loops)
     local IntLoc2 = 0
     local IntLoc3 = 0
 
-    local start = os.time()
+    local start = os.clock()
 
     for i=0,loops - 1 do
         self:Proc5()
@@ -284,7 +284,7 @@ function Dhrystone2:Proc0(loops)
         IntLoc1 = self:Proc2(IntLoc1)
     end
 
-    local benchtime = (os.time() - start) * 1000
+    local benchtime = (os.clock() - start) * 1000
     local loopsPerBenchtime = 0
     if ((benchtime == 0)) then
         loopsPerBenchtime = 0;

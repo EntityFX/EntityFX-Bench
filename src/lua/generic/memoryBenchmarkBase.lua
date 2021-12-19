@@ -88,7 +88,7 @@ function MemoryBenchmarkBase:measureArrayRandomRead(size)
             I[15] = array[idx + 15]
         end
     end
-    local elapsed = os.clock() * 1000 - start
+    local elapsed = math.floor(os.clock() * 1000 - start)
     return { mbPerSec = (iterInternal * #array * 8.0 / (elapsed / 1000.0) / 1024 / 1024), res = I }
 end
 
@@ -128,6 +128,6 @@ function MemoryBenchmarkBase:measureArrayRandomLongRead(size)
             I[7] = array[idx + 7]
         end
     end
-    local elapsed = os.clock() * 1000 - start
+    local elapsed = math.floor(os.clock() * 1000 - start)
     return { mbPerSec = (iterInternal * #array * 8.0 / (elapsed / 1000.0) / 1024 / 1024), res = I }
 end
