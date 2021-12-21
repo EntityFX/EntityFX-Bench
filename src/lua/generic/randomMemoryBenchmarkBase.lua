@@ -54,6 +54,6 @@ function RandomMemoryBenchmarkBase:measureArrayRandomRead(size)
             I = array[idx]
         end
     end
-    local elapsed = os.clock() * 1000 - start
+    local elapsed = math.floor(os.clock() * 1000 - start)
     return { mbPerSec = (iterInternal * #array * 8.0 / (elapsed / 1000.0) / 1024 / 1024), res = I }
 end

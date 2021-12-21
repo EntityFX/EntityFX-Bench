@@ -11,7 +11,7 @@ function CallBenchmarBase:doCall(i, b)
 end
 
 function CallBenchmarBase:doCallBench()
-    local start = os.time()
+    local start = os.clock()
     local elapsed1 = 0
     local elapsed2 = 0
     local i = 0
@@ -23,18 +23,18 @@ function CallBenchmarBase:doCallBench()
         a = z + z1 + 0.5;
     end
 
-    elapsed1 = (os.time() - start) * 1000
+    elapsed1 = (os.clock() - start) * 1000
     a = 0.0;
     i = 0;
-    start = os.time()
+    start = os.clock()
     for i=1,self.iterrations do
         a = self:doCall(a, 0.01)
     end
-    elapsed2 = (os.time() - start) * 1000
+    elapsed2 = (os.clock() - start) * 1000
 
-    self.output:write("Elapsed No Call: %d", elapsed1)
+    self.output:write("Elapsed No Call: %d", math.floor(elapsed1))
     self.output:writeLine()
-    self.output:write("Elapsed Call: %d", elapsed2)
+    self.output:write("Elapsed Call: %d", math.floor(elapsed2))
     self.output:writeLine()
     local callTime = 0
 
@@ -43,6 +43,6 @@ function CallBenchmarBase:doCallBench()
     else
         callTime = elapsed2 - elapsed1
     end
-    self.output:writeLine("Call time: %d", callTime)
+    self.output:writeLine("Call time: %d", math.floor(callTime))
     return { callTime = callTime / 1000, a = a }
 end
