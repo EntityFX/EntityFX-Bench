@@ -1,0 +1,320 @@
+Double Precision C# Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.01 Seconds          5   Passes (x 100)
+       0.06 Seconds         25   Passes (x 100)
+       0.28 Seconds        125   Passes (x 100)
+       1.41 Seconds        625   Passes (x 100)
+       7.03 Seconds       3125   Passes (x 100)
+
+Use 44455  passes (x 100)
+
+          Double Precision C# Whetstone Benchmark
+
+                  ??
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 doubleing point    -1.12441415430186997      883.150               0.966
+N2 doubleing point    -1.12239951147841022      810.458               7.372
+N3 if then else        1.00000000000000000                2092.919    2.198
+N4 fixed point        12.00000000000000000                2301.986    6.083
+N5 sin,cos etc.        0.49907428465340209                 201.263   18.377
+N6 doubleing point     0.99999988495278092      581.223              41.256
+N7 assignments         3.00000000000000000                1084.162    7.578
+N8 exp,sqrt etc.       0.75095530233199426                 100.174   16.509
+MWIPS                                           4430.452            100.340
+
+Double Precision C# Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.02 Seconds          5   Passes (x 100)
+       0.06 Seconds         25   Passes (x 100)
+       0.27 Seconds        125   Passes (x 100)
+       1.42 Seconds        625   Passes (x 100)
+       7.02 Seconds       3125   Passes (x 100)
+
+Use 44489  passes (x 100)
+
+          Double Precision C# Whetstone Benchmark
+
+                  ??
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 doubleing point    -1.12441415430186997      892.951               0.957
+N2 doubleing point    -1.12239951147841022      811.235               7.371
+N3 if then else        1.00000000000000000                2061.018    2.234
+N4 fixed point        12.00000000000000000                2335.034    6.002
+N5 sin,cos etc.        0.49907428465340209                 201.058   18.410
+N6 doubleing point     0.99999988495278092      579.928              41.380
+N7 assignments         3.00000000000000000                1086.311    7.568
+N8 exp,sqrt etc.       0.75095530233199426                 100.121   16.530
+MWIPS                                           4428.919            100.451
+
+Double Precision C# Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.01 Seconds          5   Passes (x 100)
+       0.07 Seconds         25   Passes (x 100)
+       0.28 Seconds        125   Passes (x 100)
+       1.38 Seconds        625   Passes (x 100)
+       7.04 Seconds       3125   Passes (x 100)
+
+Use 44386  passes (x 100)
+
+          Double Precision C# Whetstone Benchmark
+
+                  ??
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 doubleing point    -1.12441415430186997      891.310               0.956
+N2 doubleing point    -1.12239951147841022      811.289               7.353
+N3 if then else        1.00000000000000000                2044.470    2.247
+N4 fixed point        12.00000000000000000                2314.048    6.042
+N5 sin,cos etc.        0.49907428465340209                 201.691   18.310
+N6 doubleing point     0.99999988495278092      581.532              41.170
+N7 assignments         3.00000000000000000                1089.151    7.531
+N8 exp,sqrt etc.       0.75095530233199426                 100.006   16.511
+MWIPS                                           4433.276            100.120
+
+Double Precision C# Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.01 Seconds          5   Passes (x 100)
+       0.06 Seconds         25   Passes (x 100)
+       0.29 Seconds        125   Passes (x 100)
+       1.43 Seconds        625   Passes (x 100)
+       7.06 Seconds       3125   Passes (x 100)
+
+Use 44286  passes (x 100)
+
+          Double Precision C# Whetstone Benchmark
+
+                  ??
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 doubleing point    -1.12441415430186997      886.600               0.959
+N2 doubleing point    -1.12239951147841022      806.972               7.376
+N3 if then else        1.00000000000000000                2060.489    2.225
+N4 fixed point        12.00000000000000000                2321.657    6.009
+N5 sin,cos etc.        0.49907428465340209                 201.994   18.241
+N6 doubleing point     0.99999988495278092      580.123              41.177
+N7 assignments         3.00000000000000000                1088.733    7.517
+N8 exp,sqrt etc.       0.75095530233199426                 100.015   16.472
+MWIPS                                           4429.691             99.975
+
+Double Precision C# Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.01 Seconds          5   Passes (x 100)
+       0.06 Seconds         25   Passes (x 100)
+       0.29 Seconds        125   Passes (x 100)
+       1.39 Seconds        625   Passes (x 100)
+       7.04 Seconds       3125   Passes (x 100)
+
+Use 44374  passes (x 100)
+
+          Double Precision C# Whetstone Benchmark
+
+                  ??
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 doubleing point    -1.12441415430186997      887.070               0.960
+N2 doubleing point    -1.12239951147841022      812.626               7.339
+N3 if then else        1.00000000000000000                2074.799    2.214
+N4 fixed point        12.00000000000000000                2303.843    6.067
+N5 sin,cos etc.        0.49907428465340209                 201.408   18.331
+N6 doubleing point     0.99999988495278092      579.063              41.335
+N7 assignments         3.00000000000000000                1082.561    7.575
+N8 exp,sqrt etc.       0.75095530233199426                 100.154   16.482
+MWIPS                                           4424.043            100.302
+
+Double Precision C# Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.01 Seconds          5   Passes (x 100)
+       0.06 Seconds         25   Passes (x 100)
+       0.28 Seconds        125   Passes (x 100)
+       1.45 Seconds        625   Passes (x 100)
+       7.07 Seconds       3125   Passes (x 100)
+
+Use 44231  passes (x 100)
+
+          Double Precision C# Whetstone Benchmark
+
+                  ??
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 doubleing point    -1.12441415430186997      894.785               0.949
+N2 doubleing point    -1.12239951147841022      812.158               7.320
+N3 if then else        1.00000000000000000                2073.148    2.208
+N4 fixed point        12.00000000000000000                2304.616    6.046
+N5 sin,cos etc.        0.49907428465340209                 201.308   18.281
+N6 doubleing point     0.99999988495278092      581.961              40.996
+N7 assignments         3.00000000000000000                1087.162    7.519
+N8 exp,sqrt etc.       0.75095530233199426                  99.882   16.473
+MWIPS                                           4432.360             99.791
+
+Double Precision C# Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.01 Seconds          5   Passes (x 100)
+       0.06 Seconds         25   Passes (x 100)
+       0.28 Seconds        125   Passes (x 100)
+       1.41 Seconds        625   Passes (x 100)
+       7.05 Seconds       3125   Passes (x 100)
+
+Use 44309  passes (x 100)
+
+          Double Precision C# Whetstone Benchmark
+
+                  ??
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 doubleing point    -1.12441415430186997      891.305               0.954
+N2 doubleing point    -1.12239951147841022      816.245               7.296
+N3 if then else        1.00000000000000000                2049.540    2.238
+N4 fixed point        12.00000000000000000                2321.080    6.013
+N5 sin,cos etc.        0.49907428465340209                 201.228   18.320
+N6 doubleing point     0.99999988495278092      581.031              41.134
+N7 assignments         3.00000000000000000                1085.330    7.545
+N8 exp,sqrt etc.       0.75095530233199426                  99.627   16.545
+MWIPS                                           4428.926            100.045
+
+Double Precision C# Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.01 Seconds          5   Passes (x 100)
+       0.06 Seconds         25   Passes (x 100)
+       0.28 Seconds        125   Passes (x 100)
+       1.39 Seconds        625   Passes (x 100)
+       7.03 Seconds       3125   Passes (x 100)
+
+Use 44440  passes (x 100)
+
+          Double Precision C# Whetstone Benchmark
+
+                  ??
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 doubleing point    -1.12441415430186997      889.647               0.959
+N2 doubleing point    -1.12239951147841022      809.876               7.375
+N3 if then else        1.00000000000000000                2088.501    2.202
+N4 fixed point        12.00000000000000000                2324.252    6.023
+N5 sin,cos etc.        0.49907428465340209                 202.019   18.302
+N6 doubleing point     0.99999988495278092      580.553              41.290
+N7 assignments         3.00000000000000000                1087.277    7.553
+N8 exp,sqrt etc.       0.75095530233199426                  99.878   16.552
+MWIPS                                           4432.636            100.256
+
+Double Precision C# Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.01 Seconds          5   Passes (x 100)
+       0.06 Seconds         25   Passes (x 100)
+       0.29 Seconds        125   Passes (x 100)
+       1.43 Seconds        625   Passes (x 100)
+       7.11 Seconds       3125   Passes (x 100)
+
+Use 43961  passes (x 100)
+
+          Double Precision C# Whetstone Benchmark
+
+                  ??
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 doubleing point    -1.12441415430186997      888.996               0.949
+N2 doubleing point    -1.12239951147841022      809.341               7.300
+N3 if then else        1.00000000000000000                2085.630    2.182
+N4 fixed point        12.00000000000000000                2324.513    5.957
+N5 sin,cos etc.        0.49907428465340209                 200.890   18.207
+N6 doubleing point     0.99999988495278092      581.110              40.806
+N7 assignments         3.00000000000000000                1079.549    7.525
+N8 exp,sqrt etc.       0.75095530233199426                  99.820   16.383
+MWIPS                                           4426.677             99.309
+
+Double Precision C# Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.01 Seconds          5   Passes (x 100)
+       0.05 Seconds         25   Passes (x 100)
+       0.28 Seconds        125   Passes (x 100)
+       1.42 Seconds        625   Passes (x 100)
+       7.05 Seconds       3125   Passes (x 100)
+
+Use 44340  passes (x 100)
+
+          Double Precision C# Whetstone Benchmark
+
+                  ??
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 doubleing point    -1.12441415430186997      893.895               0.952
+N2 doubleing point    -1.12239951147841022      811.900               7.340
+N3 if then else        1.00000000000000000                2068.294    2.219
+N4 fixed point        12.00000000000000000                2324.373    6.009
+N5 sin,cos etc.        0.49907428465340209                 202.502   18.218
+N6 doubleing point     0.99999988495278092      580.209              41.221
+N7 assignments         3.00000000000000000                1086.768    7.540
+N8 exp,sqrt etc.       0.75095530233199426                  99.712   16.542
+MWIPS                                           4432.184            100.041
+
