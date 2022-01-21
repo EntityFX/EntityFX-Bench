@@ -4,7 +4,7 @@ import (
 	"math"
 	"math/rand"
 	"time"
-	"../utils"
+	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/utils"
 )
 
 func measureFFT(N int, mintime float64) float64 {

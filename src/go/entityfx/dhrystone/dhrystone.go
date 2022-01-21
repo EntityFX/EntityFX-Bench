@@ -3,7 +3,7 @@ package dhrystone
 import (
 	"strings"
 
-	"../utils"
+	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/utils"
 )
 
 const (

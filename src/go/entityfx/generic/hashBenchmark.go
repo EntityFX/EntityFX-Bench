@@ -4,7 +4,7 @@ import (
 	"crypto/sha1"
 	"crypto/sha256"
 
-	"../utils"
+	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/utils"
 )
 
 type HashBenchmark struct {

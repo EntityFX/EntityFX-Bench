@@ -3,8 +3,8 @@ package whetstone
 import (
 	"reflect"
 
-	g "../generic"
-	"../utils"
+	g "github.com/EntityFX/EntityFX-Bench/src/go/entityfx/generic"
+	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/utils"
 )
 
 type WhetstoneBenchmark struct {

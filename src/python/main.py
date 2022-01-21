@@ -25,11 +25,14 @@ from entityfx.hash_benchmark import HashBenchmark
 from entityfx.parallel_hash_benchmark import ParallelHashBenchmark
 from entityfx.writer import Writer
 
-import time
 import platform
 import multiprocessing
 import sys
 
+try:
+    mp = multiprocessing.get_context('fork')
+except (AttributeError, ValueError):
+    mp = multiprocessing
 
 writer = Writer("Output.log")
 
@@ -136,7 +139,7 @@ for r in filter(isNotParallel, result):
 
 writer.write_title(header_totals)
 writer.write_line()
-writer.write_title("{0},{1} {2},{3},{4}", platform.platform(), platform.python_implementation(), platform.python_version(), multiprocessing.cpu_count(), 0)
+writer.write_title("{0},{1} {2},{3},{4}", platform.platform(), platform.python_implementation(), platform.python_version(), mp.cpu_count(), 0)
 
 for r in filter(isNotParallel, result):
     writer.write_value(",{0:1.2f}", r["Points"])
@@ -154,7 +157,7 @@ for r in filter(isNotParallel, result):
 
 writer.write_title(header_totals)
 writer.write_line()
-writer.write_title("{0},{1} {2},{3},{4}", platform.platform(), platform.python_implementation(), platform.python_version(), multiprocessing.cpu_count(), 0)
+writer.write_title("{0},{1} {2},{3},{4}", platform.platform(), platform.python_implementation(), platform.python_version(), mp.cpu_count(), 0)
 
 for r in filter(isNotParallel, result):
     writer.write_value(",{0:1.2f}", r["Result"])
@@ -171,7 +174,7 @@ for r in result:
 
 writer.write_title(header_totals)
 writer.write_line()
-writer.write_title("{0},{1} {2},{3},{4}", platform.platform(), platform.python_implementation(), platform.python_version(), multiprocessing.cpu_count(), 0)
+writer.write_title("{0},{1} {2},{3},{4}", platform.platform(), platform.python_implementation(), platform.python_version(), mp.cpu_count(), 0)
 
 for r in result:
     writer.write_value(",{0:1.2f}", r["Points"])
@@ -189,7 +192,7 @@ for r in result:
 
 writer.write_title(header_totals)
 writer.write_line()
-writer.write_title("{0},{1} {2},{3},{4}", platform.platform(), platform.python_implementation(), platform.python_version(), multiprocessing.cpu_count(), 0)
+writer.write_title("{0},{1} {2},{3},{4}", platform.platform(), platform.python_implementation(), platform.python_version(), mp.cpu_count(), 0)
 
 for r in result:
     writer.write_value(",{0:1.2f}", r["Result"])

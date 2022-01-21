@@ -6,8 +6,11 @@ from entityfx.writer import Writer
 import threading
 from concurrent.futures.thread import ThreadPoolExecutor
 from concurrent.futures import ALL_COMPLETED, thread, wait
-from multiprocessing import Pool
 import multiprocessing
+try:
+    mp = multiprocessing.get_context('fork')
+except (AttributeError, ValueError):
+    mp = multiprocessing
 
 class BenchmarkBase(Benchamrk):
 
@@ -93,7 +96,7 @@ class BenchmarkBase(Benchamrk):
 
     def bench_in_parallel(self, buildFunc, benchFunc, setBenchResultFunc):
         self._use_console(False)
-        cpu_count = multiprocessing.cpu_count()
+        cpu_count = mp.cpu_count()
         BenchmarkBase._parallelContext = [{
             "benchFunc" : benchFunc,
             "setBenchResultFunc" : setBenchResultFunc,
@@ -105,7 +108,7 @@ class BenchmarkBase(Benchamrk):
             "buildData" : buildFunc()
         }, range(0, cpu_count)))
  
-        p = Pool(cpu_count)
+        p = mp.Pool(cpu_count)
         results = p.map(BenchmarkBase._parallelContextFunc, benchs)
         p.close()
         self._use_console(True)
