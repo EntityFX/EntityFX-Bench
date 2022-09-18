@@ -1,0 +1,63 @@
+
+SciMark 2.0a
+
+Composite Score:            96.47
+FFT             Mflops:     46.54    (N=1024)
+SOR             Mflops:    160.46    (100 x 100)
+Monte Carlo     Mflops:     67.92
+Sparse matmult  Mflops:     81.97    (N=1000, nz=5000)
+LU              Mflops:    125.47    (100x100)
+
+SciMark 2.0a
+
+Composite Score:           100.11
+FFT             Mflops:     48.12    (N=1024)
+SOR             Mflops:    168.94    (100 x 100)
+Monte Carlo     Mflops:     68.66
+Sparse matmult  Mflops:     82.70    (N=1000, nz=5000)
+LU              Mflops:    132.13    (100x100)
+
+SciMark 2.0a
+
+Composite Score:            97.25
+FFT             Mflops:     46.47    (N=1024)
+SOR             Mflops:    164.01    (100 x 100)
+Monte Carlo     Mflops:     67.00
+Sparse matmult  Mflops:     81.82    (N=1000, nz=5000)
+LU              Mflops:    126.93    (100x100)
+
+SciMark 2.0a
+
+Composite Score:            97.68
+FFT             Mflops:     46.31    (N=1024)
+SOR             Mflops:    163.92    (100 x 100)
+Monte Carlo     Mflops:     69.69
+Sparse matmult  Mflops:     81.03    (N=1000, nz=5000)
+LU              Mflops:    127.45    (100x100)
+
+SciMark 2.0a
+
+Composite Score:           217.85
+FFT             Mflops:    126.40    (N=1024)
+SOR             Mflops:    361.59    (100 x 100)
+Monte Carlo     Mflops:     92.64
+Sparse matmult  Mflops:    227.94    (N=1000, nz=5000)
+LU              Mflops:    280.65    (100x100)
+
+SciMark 2.0a
+
+Composite Score:           212.11
+FFT             Mflops:    124.82    (N=1024)
+SOR             Mflops:    350.85    (100 x 100)
+Monte Carlo     Mflops:     88.84
+Sparse matmult  Mflops:    226.27    (N=1000, nz=5000)
+LU              Mflops:    269.76    (100x100)
+
+SciMark 2.0a
+
+Composite Score:           100.03
+FFT             Mflops:     52.60    (N=1024)
+SOR             Mflops:    166.68    (100 x 100)
+Monte Carlo     Mflops:     72.50
+Sparse matmult  Mflops:     81.12    (N=1000, nz=5000)
+LU              Mflops:    127.27    (100x100)

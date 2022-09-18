@@ -1,0 +1,210 @@
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: PHP)
+
+Optimization 0
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  
+Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  
+Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  500010
+Ptr_Glob->              Ptr_Comp:       *    1
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    1 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  
+Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1262.69
+Dhrystones per Second:         791959
+VAX  MIPS rating =             450.75
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: PHP)
+
+Optimization 0
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  
+Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  
+Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  500010
+Ptr_Glob->              Ptr_Comp:       *    1
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    1 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  
+Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1227.08
+Dhrystones per Second:         814945
+VAX  MIPS rating =             463.83
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: PHP)
+
+Optimization 0
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  
+Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  
+Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  500010
+Ptr_Glob->              Ptr_Comp:       *    1
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    1 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  
+Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1285.33
+Dhrystones per Second:         778011
+VAX  MIPS rating =             442.81
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: PHP)
+
+Optimization 0
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  
+Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  
+Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  500010
+Ptr_Glob->              Ptr_Comp:       *    1
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    1 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  
+Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1257.90
+Dhrystones per Second:         794973
+VAX  MIPS rating =             452.46
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: PHP)
+
+Optimization 0
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  
+Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  
+Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  500010
+Ptr_Glob->              Ptr_Comp:       *    1
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    1 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  
+Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 631.66
+Dhrystones per Second:         1583120
+VAX  MIPS rating =             901.04
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: PHP)
+
+Optimization 0
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  
+Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  
+Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  500010
+Ptr_Glob->              Ptr_Comp:       *    1
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    1 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  
+Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 667.17
+Dhrystones per Second:         1498869
+VAX  MIPS rating =             853.08
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: PHP)
+
+Optimization 0
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  
+Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  
+Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  500010
+Ptr_Glob->              Ptr_Comp:       *    1
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    1 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  
+Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1100.96
+Dhrystones per Second:         908299
+VAX  MIPS rating =             516.96
+

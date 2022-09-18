@@ -1,0 +1,216 @@
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.6
+MFLOPS: 186.747
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.36
+MFLOPS: 188.314
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.48
+MFLOPS: 187.553
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.9
+MFLOPS: 184.834
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.34
+MFLOPS: 188.447
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.87
+MFLOPS: 185.026
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.11
+MFLOPS: 190.009
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.54
+MFLOPS: 187.133
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.88
+MFLOPS: 184.924
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.43
+MFLOPS: 187.877
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.98
+MFLOPS: 184.311
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.93
+MFLOPS: 184.649
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.7
+MFLOPS: 186.09
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.88
+MFLOPS: 184.981
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.78
+MFLOPS: 185.573
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.7
+MFLOPS: 186.096
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.86
+MFLOPS: 185.084
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.76
+MFLOPS: 185.727
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.23
+MFLOPS: 189.181
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.91
+MFLOPS: 184.783
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.31
+MFLOPS: 188.666
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.17
+MFLOPS: 189.617
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 28.64
+MFLOPS: 186.506
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 29.01
+MFLOPS: 184.152
