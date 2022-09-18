@@ -1,0 +1,31 @@
+Double Precision C# Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.02 Seconds          5   Passes (x 100)
+       0.10 Seconds         25   Passes (x 100)
+       0.51 Seconds        125   Passes (x 100)
+       2.27 Seconds        625   Passes (x 100)
+
+Use 27503  passes (x 100)
+
+          Double Precision C# Whetstone Benchmark
+
+                  ??
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 doubleing point    -1.12441415430186997      745.722               0.708
+N2 doubleing point    -1.12239951147841022      613.370               6.026
+N3 if then else        1.00000000000000000               25119.134    0.113
+N4 fixed point        12.00000000000000000                2021.887    4.285
+N5 sin,cos etc.        0.49907428465336595                  82.751   27.652
+N6 doubleing point     0.99999988495278092      395.342              37.525
+N7 assignments         3.00000000000000000                1577.995    3.221
+N8 exp,sqrt etc.       0.75095530233199426                  78.902   12.967
+MWIPS                                           2973.382             92.497
+
