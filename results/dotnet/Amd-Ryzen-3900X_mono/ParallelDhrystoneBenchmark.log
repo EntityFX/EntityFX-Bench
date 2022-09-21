@@ -1,0 +1,648 @@
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1683.50168350168
+Dhrystones per Second:         594000
+VAX  MIPS rating =             338.076266363119
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1692.04737732657
+Dhrystones per Second:         591000
+VAX  MIPS rating =             336.368810472396
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1675.0418760469
+Dhrystones per Second:         597000
+VAX  MIPS rating =             339.783722253842
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1663.89351081531
+Dhrystones per Second:         601000
+VAX  MIPS rating =             342.060330108139
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1567.39811912226
+Dhrystones per Second:         638000
+VAX  MIPS rating =             363.118952760387
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1607.71704180064
+Dhrystones per Second:         622000
+VAX  MIPS rating =             354.012521343199
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1663.89351081531
+Dhrystones per Second:         601000
+VAX  MIPS rating =             342.060330108139
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1694.91525423729
+Dhrystones per Second:         590000
+VAX  MIPS rating =             335.799658508822
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1661.12956810631
+Dhrystones per Second:         602000
+VAX  MIPS rating =             342.629482071713
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1658.37479270315
+Dhrystones per Second:         603000
+VAX  MIPS rating =             343.198634035287
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1647.44645799012
+Dhrystones per Second:         607000
+VAX  MIPS rating =             345.475241889585
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1677.85234899329
+Dhrystones per Second:         596000
+VAX  MIPS rating =             339.214570290267
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1683.50168350168
+Dhrystones per Second:         594000
+VAX  MIPS rating =             338.076266363119
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1661.12956810631
+Dhrystones per Second:         602000
+VAX  MIPS rating =             342.629482071713
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1642.03612479475
+Dhrystones per Second:         609000
+VAX  MIPS rating =             346.613545816733
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1652.89256198347
+Dhrystones per Second:         605000
+VAX  MIPS rating =             344.336937962436
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1663.89351081531
+Dhrystones per Second:         601000
+VAX  MIPS rating =             342.060330108139
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1669.449081803
+Dhrystones per Second:         599000
+VAX  MIPS rating =             340.92202618099
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1677.85234899329
+Dhrystones per Second:         596000
+VAX  MIPS rating =             339.214570290267
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1655.62913907285
+Dhrystones per Second:         604000
+VAX  MIPS rating =             343.767785998862
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1652.89256198347
+Dhrystones per Second:         605000
+VAX  MIPS rating =             344.336937962436
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1650.16501650165
+Dhrystones per Second:         606000
+VAX  MIPS rating =             344.90608992601
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1626.0162601626
+Dhrystones per Second:         615000
+VAX  MIPS rating =             350.028457598179
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 1652.89256198347
+Dhrystones per Second:         605000
+VAX  MIPS rating =             344.336937962436
+

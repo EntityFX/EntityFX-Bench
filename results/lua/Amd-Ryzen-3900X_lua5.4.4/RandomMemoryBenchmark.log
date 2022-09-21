@@ -1,0 +1,42 @@
+Warmup
+..Elapsed No Call: 101Elapsed Call: 422Call time: 321...int 4k: 849.18 MB/sint 512k: 887.78 MB/sint 8M: 1027.96 MB/sint 32M: inf MB/slong 4k: 723.38 MB/slong 512k: 751.20 MB/slong 8M: 887.78 MB/slong 32M: inf MB/sAverage: inf MB/s.Random int 4k: 382.97 MB/sRandom int 512k: 263.94 MB/sRandom int 8M: 126.01 MB/sRandom long 4k: 368.51 MB/sRandom long 512k: 271.27 MB/sRandom long 8M: 122.07 MB/sAverage: 255.79 MB/sWarmup
+..Elapsed No Call: 101Elapsed Call: 422Call time: 321...int 4k: 849.18 MB/sint 512k: 887.78 MB/sint 8M: 1027.96 MB/sint 32M: inf MB/slong 4k: 723.38 MB/slong 512k: 751.20 MB/slong 8M: 887.78 MB/slong 32M: inf MB/sAverage: inf MB/s.Random int 4k: 382.97 MB/sRandom int 512k: 263.94 MB/sRandom int 8M: 126.01 MB/sRandom long 4k: 368.51 MB/sRandom long 512k: 271.27 MB/sRandom long 8M: 122.07 MB/sAverage: 255.79 MB/s......
+Bench
+[1] ArithemticsBenchmark
+ArithemticsBenchmark                     2479 ms       363.05 pts    12101653.89 Iter/s
+Iterrations:        30000000, Ratio:        0.030000
+[2] MathBenchmark
+MathBenchmark                            6643 ms      1505.34 pts     3010687.94 Iter/s
+Iterrations:        20000000, Ratio:        0.500000
+[3] CallBenchmark
+Elapsed No Call: 1980
+Elapsed Call: 8328
+Call time: 6348
+CallBenchmark                           16980 ms       117.79 pts    11778563.02 Iter/s
+Iterrations:       200000000, Ratio:        0.010000
+[4] IfElseBenchmark
+IfElseBenchmark                          3457 ms       578.54 pts    57853630.32 Iter/s
+Iterrations:       200000000, Ratio:        0.010000
+[5] StringManipulation
+StringManipulation                       1814 ms      2756.34 pts      275633.96 Iter/s
+Iterrations:          500000, Ratio:       10.000000
+[6] MemoryBenchmark
+int 4k: 813.80 MB/s
+int 512k: 817.21 MB/s
+int 8M: 831.12 MB/s
+int 32M: 862.31 MB/s
+long 4k: 720.71 MB/s
+long 512k: 693.83 MB/s
+long 8M: 701.30 MB/s
+long 32M: 698.79 MB/s
+Average: 767.38 MB/s
+MemoryBenchmark                          5214 ms       767.38 pts         767.38 MB/s
+Iterrations:           50000, Ratio:        1.000000
+[7] RandomMemoryBenchmark
+Random int 4k: 364.39 MB/s
+Random int 512k: 259.55 MB/s
+Random int 8M: 98.69 MB/s
+Random long 4k: 364.39 MB/s
+Random long 512k: 263.94 MB/s
+Random long 8M: 97.19 MB/s
+Average: 241.36 MB/s

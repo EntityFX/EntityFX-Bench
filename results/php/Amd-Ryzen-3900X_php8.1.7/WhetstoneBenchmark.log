@@ -1,0 +1,156 @@
+Double Precision PHP Whetstone Benchmark
+                 PHP version: 8.0.8
+No run time input data
+
+Calibrate
+          0 Seconds          1   Passes (x 100)
+          0 Seconds          5   Passes (x 100)
+          0 Seconds         25   Passes (x 100)
+          2 Seconds        125   Passes (x 100)
+Use 5847  passes (x 100)
+          Double Precision PHP Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 floating point      -1.12398255667391900      167.177               0.672
+N2 floating point      -1.12398255667391900      147.030               5.345
+N3 if then else         1.00000000000000000                 258.665    2.340
+N4 fixed point         12.00000000000000000                 327.139    5.630
+N5 sin,cos etc.         0.49902937281518261                 124.208    3.917
+N6 floating point       0.99999987890802811       61.145              51.580
+N7 assignments          3.00000000000000000                  44.257   24.415
+N8 exp,sqrt etc.        0.75100163018458665                  64.586    3.368
+MWIPS                                            601.139              97.265
+Double Precision PHP Whetstone Benchmark
+                 PHP version: 8.0.8
+No run time input data
+
+Calibrate
+          0 Seconds          1   Passes (x 100)
+          0 Seconds          5   Passes (x 100)
+          0 Seconds         25   Passes (x 100)
+          2 Seconds        125   Passes (x 100)
+Use 5948  passes (x 100)
+          Double Precision PHP Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 floating point      -1.12398255667391900      172.148               0.663
+N2 floating point      -1.12398255667391900      150.927               5.297
+N3 if then else         1.00000000000000000                 251.694    2.446
+N4 fixed point         12.00000000000000000                 331.067    5.659
+N5 sin,cos etc.         0.49902937281518261                 124.103    3.988
+N6 floating point       0.99999987890802811       59.036              54.346
+N7 assignments          3.00000000000000000                  44.415   24.748
+N8 exp,sqrt etc.        0.75100163018458665                  67.161    3.295
+MWIPS                                            592.186             100.441
+Double Precision PHP Whetstone Benchmark
+                 PHP version: 8.0.8
+No run time input data
+
+Calibrate
+          0 Seconds          1   Passes (x 100)
+          0 Seconds          5   Passes (x 100)
+          0 Seconds         25   Passes (x 100)
+          2 Seconds        125   Passes (x 100)
+Use 5750  passes (x 100)
+          Double Precision PHP Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 floating point      -1.12398255667391900      166.144               0.664
+N2 floating point      -1.12398255667391900      147.959               5.223
+N3 if then else         1.00000000000000000                 252.356    2.358
+N4 fixed point         12.00000000000000000                 323.285    5.603
+N5 sin,cos etc.         0.49902937281518261                 122.719    3.898
+N6 floating point       0.99999987890802811       60.094              51.612
+N7 assignments          3.00000000000000000                  43.548   24.401
+N8 exp,sqrt etc.        0.75100163018458665                  67.193    3.183
+MWIPS                                            593.135              96.942
+Double Precision PHP Whetstone Benchmark
+                 PHP version: 8.0.8
+No run time input data
+
+Calibrate
+          0 Seconds          1   Passes (x 100)
+          0 Seconds          5   Passes (x 100)
+          0 Seconds         25   Passes (x 100)
+          2 Seconds        125   Passes (x 100)
+Use 5601  passes (x 100)
+          Double Precision PHP Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 floating point      -1.12398255667391900      167.037               0.644
+N2 floating point      -1.12398255667391900      127.565               5.901
+N3 if then else         1.00000000000000000                 248.493    2.333
+N4 fixed point         12.00000000000000000                 322.785    5.466
+N5 sin,cos etc.         0.49902937281518261                 119.843    3.888
+N6 floating point       0.99999987890802811       59.132              51.092
+N7 assignments          3.00000000000000000                  43.602   23.739
+N8 exp,sqrt etc.        0.75100163018458665                  66.936    3.113
+MWIPS                                            582.367              96.176
+Double Precision PHP Whetstone Benchmark
+                 PHP version: 8.0.8
+No run time input data
+
+Calibrate
+          0 Seconds          1   Passes (x 100)
+          0 Seconds          5   Passes (x 100)
+          0 Seconds         25   Passes (x 100)
+          1 Seconds        125   Passes (x 100)
+          5 Seconds        625   Passes (x 100)
+Use 11521  passes (x 100)
+          Double Precision PHP Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 floating point      -1.12398255667391900      332.950               0.664
+N2 floating point      -1.12398255667391900      265.375               5.835
+N3 if then else         1.00000000000000000                1399.092    0.852
+N4 fixed point         12.00000000000000000                5750.232    0.631
+N5 sin,cos etc.         0.49902937281518261                 127.144    7.539
+N6 floating point       0.99999987890802811      122.908              50.562
+N7 assignments          3.00000000000000000                  70.297   30.287
+N8 exp,sqrt etc.        0.75100163018458665                  69.527    6.164
+MWIPS                                           1123.623             102.534
+Double Precision PHP Whetstone Benchmark
+                 PHP version: 8.0.8
+No run time input data
+
+Calibrate
+          0 Seconds          1   Passes (x 100)
+          0 Seconds          5   Passes (x 100)
+          0 Seconds         25   Passes (x 100)
+          1 Seconds        125   Passes (x 100)
+          5 Seconds        625   Passes (x 100)
+Use 11104  passes (x 100)
+          Double Precision PHP Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 floating point      -1.12398255667391900      328.370               0.649
+N2 floating point      -1.12398255667391900      269.527               5.537
+N3 if then else         1.00000000000000000                1442.940    0.796
+N4 fixed point         12.00000000000000000                5963.958    0.586
+N5 sin,cos etc.         0.49902937281518261                 126.561    7.300
+N6 floating point       0.99999987890802811      123.576              48.468
+N7 assignments          3.00000000000000000                  71.786   28.585
+N8 exp,sqrt etc.        0.75100163018458665                  72.200    5.721
+MWIPS                                           1137.199              97.643
+Double Precision PHP Whetstone Benchmark
+                 PHP version: 8.1.7-1ubuntu3
+No run time input data
+
+Calibrate
+          0 Seconds          1   Passes (x 100)
+          0 Seconds          5   Passes (x 100)
+          0 Seconds         25   Passes (x 100)
+          2 Seconds        125   Passes (x 100)
+Use 5903  passes (x 100)
+          Double Precision PHP Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+N1 floating point      -1.12398255667391900      173.252               0.654
+N2 floating point      -1.12398255667391900      153.572               5.166
+N3 if then else         1.00000000000000000                 224.937    2.716
+N4 fixed point         12.00000000000000000                 319.442    5.821
+N5 sin,cos etc.         0.49902937281518261                 127.058    3.865
+N6 floating point       0.99999987890802811       58.780              54.170
+N7 assignments          3.00000000000000000                  47.086   23.168
+N8 exp,sqrt etc.        0.75100163018458665                  70.696    3.106
+MWIPS                                            598.281              98.666

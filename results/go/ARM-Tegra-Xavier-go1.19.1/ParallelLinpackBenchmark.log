@@ -1,0 +1,88 @@
+Running Linpack 2000x2000 in Go
+Norma is 0.49999936918999666
+Residual is 3.863717160415341e-12
+Normalised residual is 17.405657116614268
+Machine result.Eepsilon is 2.220446049250313e-16
+x[0]-1 is 6.206146707654625e-13
+x[n-1]-1 is -3.229971845541968e-12
+Time is 5.447000
+MFLOPS: 981.502415
+
+
+Running Linpack 2000x2000 in Go
+Norma is 0.49999936918999666
+Residual is 3.863717160415341e-12
+Normalised residual is 17.405657116614268
+Machine result.Eepsilon is 2.220446049250313e-16
+x[0]-1 is 6.206146707654625e-13
+x[n-1]-1 is -3.229971845541968e-12
+Time is 5.513000
+MFLOPS: 969.741459
+
+
+Running Linpack 2000x2000 in Go
+Norma is 0.49999936918999666
+Residual is 3.863717160415341e-12
+Normalised residual is 17.405657116614268
+Machine result.Eepsilon is 2.220446049250313e-16
+x[0]-1 is 6.206146707654625e-13
+x[n-1]-1 is -3.229971845541968e-12
+Time is 5.518000
+MFLOPS: 968.861977
+
+
+Running Linpack 2000x2000 in Go
+Norma is 0.49999936918999666
+Residual is 3.863717160415341e-12
+Normalised residual is 17.405657116614268
+Machine result.Eepsilon is 2.220446049250313e-16
+x[0]-1 is 6.206146707654625e-13
+x[n-1]-1 is -3.229971845541968e-12
+Time is 5.452000
+MFLOPS: 980.601438
+
+
+Running Linpack 2000x2000 in Go
+Norma is 0.49999936918999666
+Residual is 3.863717160415341e-12
+Normalised residual is 17.405657116614268
+Machine result.Eepsilon is 2.220446049250313e-16
+x[0]-1 is 6.206146707654625e-13
+x[n-1]-1 is -3.229971845541968e-12
+Time is 5.506000
+MFLOPS: 970.975445
+
+
+Running Linpack 2000x2000 in Go
+Norma is 0.49999936918999666
+Residual is 3.863717160415341e-12
+Normalised residual is 17.405657116614268
+Machine result.Eepsilon is 2.220446049250313e-16
+x[0]-1 is 6.206146707654625e-13
+x[n-1]-1 is -3.229971845541968e-12
+Time is 5.428000
+MFLOPS: 984.941210
+
+
+Running Linpack 2000x2000 in Go
+Norma is 0.49999936918999666
+Residual is 3.863717160415341e-12
+Normalised residual is 17.405657116614268
+Machine result.Eepsilon is 2.220446049250313e-16
+x[0]-1 is 6.206146707654625e-13
+x[n-1]-1 is -3.229971845541968e-12
+Time is 5.470000
+MFLOPS: 977.371665
+
+
+Running Linpack 2000x2000 in Go
+Norma is 0.49999936918999666
+Residual is 3.863717160415341e-12
+Normalised residual is 17.405657116614268
+Machine result.Eepsilon is 2.220446049250313e-16
+x[0]-1 is 6.206146707654625e-13
+x[n-1]-1 is -3.229971845541968e-12
+Time is 5.481000
+MFLOPS: 975.408328
+
+

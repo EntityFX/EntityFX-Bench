@@ -1,0 +1,63 @@
+Running Linpack 2000x2000 in PHP
+Norma is 0.49999936919
+Residual is 4.4959869160976E-12
+normalised residual is 20.25
+Machine result.Eepsilon is 2.2204460492503E-16
+x[0]-1 is 4.4408920985006E-13
+x[n-1]-1 is -3.9974690224653E-12
+Time is 53.22
+MFLOPS: 100.36
+Running Linpack 2000x2000 in PHP
+Norma is 0.49999936919
+Residual is 4.4959869160976E-12
+normalised residual is 20.25
+Machine result.Eepsilon is 2.2204460492503E-16
+x[0]-1 is 4.4408920985006E-13
+x[n-1]-1 is -3.9974690224653E-12
+Time is 53.76
+MFLOPS: 99.347
+Running Linpack 2000x2000 in PHP
+Norma is 0.49999936919
+Residual is 4.4959869160976E-12
+normalised residual is 20.25
+Machine result.Eepsilon is 2.2204460492503E-16
+x[0]-1 is 4.4408920985006E-13
+x[n-1]-1 is -3.9974690224653E-12
+Time is 54.18
+MFLOPS: 98.586
+Running Linpack 2000x2000 in PHP
+Norma is 0.49999936919
+Residual is 4.4959869160976E-12
+normalised residual is 20.25
+Machine result.Eepsilon is 2.2204460492503E-16
+x[0]-1 is 4.4408920985006E-13
+x[n-1]-1 is -3.9974690224653E-12
+Time is 54.52
+MFLOPS: 97.964
+Running Linpack 2000x2000 in PHP
+Norma is 0.49999936919
+Residual is 4.4959869160976E-12
+normalised residual is 20.25
+Machine result.Eepsilon is 2.2204460492503E-16
+x[0]-1 is 4.4408920985006E-13
+x[n-1]-1 is -3.9974690224653E-12
+Time is 21.43
+MFLOPS: 249.248
+Running Linpack 2000x2000 in PHP
+Norma is 0.49999936919
+Residual is 4.4959869160976E-12
+normalised residual is 20.25
+Machine result.Eepsilon is 2.2204460492503E-16
+x[0]-1 is 4.4408920985006E-13
+x[n-1]-1 is -3.9974690224653E-12
+Time is 21.37
+MFLOPS: 249.901
+Running Linpack 2000x2000 in PHP
+Norma is 0.49999936919
+Residual is 4.4959869160976E-12
+normalised residual is 20.25
+Machine result.Eepsilon is 2.2204460492503E-16
+x[0]-1 is 4.4408920985006E-13
+x[n-1]-1 is -3.9974690224653E-12
+Time is 46.44
+MFLOPS: 115.014
