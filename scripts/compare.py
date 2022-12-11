@@ -27,6 +27,7 @@ def read_and_parse_csv(f) -> dict[str, int]:
 
 def parse():
     print(f'Will compare {args.new} against {args.baseline}')
+    print(f'baseline: {args.baseline}\nnew: {args.new}')
     with open(args.baseline[0] + '/' + OUTPUT_LOG, 'r') as f:
         baseline = read_and_parse_csv(f)
 

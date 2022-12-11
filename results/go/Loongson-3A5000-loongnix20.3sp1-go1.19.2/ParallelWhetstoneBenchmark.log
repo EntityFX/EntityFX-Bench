@@ -1,0 +1,116 @@
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.02 Seconds          1   Passes (x 100)
+       0.09 Seconds          5   Passes (x 100)
+       0.44 Seconds         25   Passes (x 100)
+       2.18 Seconds        125   Passes (x 100)
+
+Use 5737  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      532.900               0.207
+N2 floating point      -1.12187079889284425      201.372               3.829
+N3 if then else         1.00000000000000000                 140.540    4.225
+N4 fixed point         12.00000000000000000                 326.969    5.527
+N5 sin,cos etc.         0.49902937281505760                  38.500   12.398
+N6 floating point       0.97464153175604484      151.426              20.436
+N7 assignments          3.00000000000000000                  48.850   21.703
+N8 exp,sqrt etc.        0.75100163018458110                   6.997   30.499
+MWIPS                                            580.529              98.824
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.02 Seconds          1   Passes (x 100)
+       0.09 Seconds          5   Passes (x 100)
+       0.44 Seconds         25   Passes (x 100)
+       2.18 Seconds        125   Passes (x 100)
+
+Use 5735  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      532.972               0.207
+N2 floating point      -1.12187079889284425      201.354               3.828
+N3 if then else         1.00000000000000000                 140.524    4.224
+N4 fixed point         12.00000000000000000                 326.914    5.526
+N5 sin,cos etc.         0.49902937281505760                  38.499   12.394
+N6 floating point       0.97464153175604484      151.425              20.429
+N7 assignments          3.00000000000000000                  48.847   21.697
+N8 exp,sqrt etc.        0.75100163018458110                   6.997   30.490
+MWIPS                                            580.497              98.795
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.02 Seconds          1   Passes (x 100)
+       0.09 Seconds          5   Passes (x 100)
+       0.44 Seconds         25   Passes (x 100)
+       2.17 Seconds        125   Passes (x 100)
+
+Use 5748  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      532.633               0.207
+N2 floating point      -1.12187079889284425      201.337               3.837
+N3 if then else         1.00000000000000000                 140.443    4.236
+N4 fixed point         12.00000000000000000                 326.768    5.541
+N5 sin,cos etc.         0.49902937281505760                  38.514   12.417
+N6 floating point       0.97464153175604484      151.132              20.515
+N7 assignments          3.00000000000000000                  48.719   21.803
+N8 exp,sqrt etc.        0.75100163018458110                   6.970   30.677
+MWIPS                                            579.242              99.233
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.05 Seconds          1   Passes (x 100)
+       0.09 Seconds          5   Passes (x 100)
+       0.44 Seconds         25   Passes (x 100)
+       2.18 Seconds        125   Passes (x 100)
+
+Use 5737  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      528.299               0.209
+N2 floating point      -1.12187079889284425      199.910               3.857
+N3 if then else         1.00000000000000000                 139.319    4.262
+N4 fixed point         12.00000000000000000                 324.270    5.573
+N5 sin,cos etc.         0.49902937281505760                  38.216   12.490
+N6 floating point       0.97464153175604484      150.586              20.550
+N7 assignments          3.00000000000000000                  48.606   21.812
+N8 exp,sqrt etc.        0.75100163018458110                   6.973   30.607
+MWIPS                                            577.398              99.359
+
+

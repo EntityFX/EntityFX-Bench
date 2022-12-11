@@ -1,0 +1,8 @@
+Lua SciMark 2010-12-10 based on SciMark 2.0a. Copyright (C) 2006-2010 Mike Pall.
+
+Composite Score: 421.67
+FFT (1024): 359.67
+SOR (100x100):   742.11
+Monte Carlo : 201.20
+Sparse matmult (N=1000, nz=5000): 117.16
+LU (100x100): 688.21
