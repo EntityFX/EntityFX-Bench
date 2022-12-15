@@ -1,0 +1,120 @@
+[1;36mWarmup[0m
+[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m[1;30m.[0m
+[1;36m[1] ArithemticsBenchmark[0m
+[1;37mArithemticsBenchmark          [0m[1;32m           8606 ms[0m[1;32m      1045.78 pts[0m[1;32m    34859400.42 Iters/s[0m
+[1;32mIterrations:       300000000, Ratio:           0.030[0m
+[1;36m[2] MathBenchmark[0m
+[1;37mMathBenchmark                 [0m[1;32m          93680 ms[0m[1;32m      1067.46 pts[0m[1;32m     2134927.41 Iters/s[0m
+[1;32mIterrations:       200000000, Ratio:           0.500[0m
+[1;36m[3] CallBenchmark[0m
+[1;37mCallBenchmark                 [0m[1;32m           3207 ms[0m[1;32m      6236.36 pts[0m[1;32m   623635796.69 Iters/s[0m
+[1;32mIterrations:      2000000000, Ratio:           0.010[0m
+[1;36m[4] IfElseBenchmark[0m
+[1;37mIfElseBenchmark               [0m[1;32m           8008 ms[0m[1;32m      2497.50 pts[0m[1;32m   249750249.75 Iters/s[0m
+[1;32mIterrations:      2000000000, Ratio:           0.010[0m
+[1;36m[5] StringManipulation[0m
+[1;37mStringManipulation            [0m[1;32m          15386 ms[0m[1;32m      3249.71 pts[0m[1;32m      324970.75 Iters/s[0m
+[1;32mIterrations:         5000000, Ratio:          10.000[0m
+[1;36m[6] MemoryBenchmark[0m
+[1;30mint 4k: 3373.27 MB/s[0m
+[1;30mint 512k: 3162.75 MB/s[0m
+[1;30mint 8M: 3529.84 MB/s[0m
+[1;30mint 32M: 3342.47 MB/s[0m
+[1;30mlong 4k: 3763.25 MB/s[0m
+[1;30mlong 512k: 3432.34 MB/s[0m
+[1;30mlong 8M: 3374.24 MB/s[0m
+[1;30mlong 32M: 3125.70 MB/s[0m
+[1;30mAverage: 3387.98 MB/s[0m
+[1;37mMemoryBenchmark               [0m[1;32m           8864 ms[0m[1;32m      3387.98 pts[0m[1;32m        3387.98 MB/s[0m
+[1;32mIterrations:          500000, Ratio:           1.000[0m
+[1;36m[7] RandomMemoryBenchmark[0m
+[1;30mRandom int 4k: 328.81 MB/s[0m
+[1;30mRandom int 512k: 327.30 MB/s[0m
+[1;30mRandom int 8M: 327.43 MB/s[0m
+[1;30mRandom long 4k: 328.98 MB/s[0m
+[1;30mRandom long 512k: 327.88 MB/s[0m
+[1;30mRandom long 8M: 327.96 MB/s[0m
+[1;30mAverage: 328.06 MB/s[0m
+[1;37mRandomMemoryBenchmark         [0m[1;32m          65558 ms[0m[1;32m       656.12 pts[0m[1;32m         328.06 MB/s[0m
+[1;32mIterrations:          500000, Ratio:           2.000[0m
+[1;36m[8] Scimark2Benchmark[0m
+
+[1;30mSciMark 2.0a[0m
+[1;30mComposite Score:           526.37[0m
+[1;30mFFT             Mflops:    566.31    (N=1024)[0m
+[1;30mSOR             Mflops:    570.78    (100 x 100)[0m
+[1;30mMonte Carlo     Mflops:    110.60[0m
+[1;30mSparse matmult  Mflops:    377.29    (N=1000, nz=5000)[0m
+[1;30mLU              Mflops:   1006.88    (100x100): [0m
+[1;37mScimark2Benchmark             [0m[1;32m          30258 ms[0m[1;32m      5263.75 pts[0m[1;32m         526.37 CompositeScore[0m
+[1;32mIterrations:               1, Ratio:          10.000[0m
+[1;36m[9] DhrystoneBenchmark[0m
+[1;30m##########################################[0m
+
+[1;30mDhrystone Benchmark, Version 2.1 (Language: JavaScript)[0m
+
+[1;30mOptimization Non-optimised[0m
+
+[1;30mFinal values (* implementation-dependent):
+[0m
+
+[1;30mInt_Glob:      [0m[1;30mO.K.  [0m[1;30m5  [0m[1;30mBool_Glob:     [0m[1;30mO.K.  [0m[1;30mtrue[0m
+[1;30mCh_1_Glob:     [0m[1;30mO.K.  [0m[1;30mA  [0m[1;30mCh_2_Glob:     [0m[1;30mO.K.  [0m[1;30mB[0m
+[1;30mArr_1_Glob[8]: [0m[1;30mO.K.  [0m[1;30m7  [0m[1;30mArr_2_Glob8/7: [0m[1;30mO.K.  [0m[1;30m20000010[0m
+[1;30mPtr_Glob->            [0m[1;30m  Ptr_Comp:       *    true[0m
+[1;30m  Discr:       [0m[1;30mO.K.  [0m[1;30m0  [0m[1;30mEnum_Comp:     [0m[1;30mO.K.  [0m[1;30m2[0m
+[1;30m  Int_Comp:    [0m[1;30mO.K.  [0m[1;30m17 [0m[1;30mStr_Comp:      [0m[1;30mO.K.  [0m[1;30mDHRYSTONE PROGRAM, SOME STRING[0m
+[1;30mNext_Ptr_Glob->       [0m[1;30m  Ptr_Comp:       *    true[0m[1;30m same as above[0m
+[1;30m  Discr:       [0m[1;30mO.K.  [0m[1;30m0  [0m[1;30mEnum_Comp:     [0m[1;30mO.K.  [0m[1;30m1[0m
+[1;30m  Int_Comp:    [0m[1;30mO.K.  [0m[1;30m18 [0m[1;30mStr_Comp:      [0m[1;30mO.K.  [0m[1;30mDHRYSTONE PROGRAM, SOME STRING[0m
+[1;30mInt_1_Loc:     [0m[1;30mO.K.  [0m[1;30m5  [0m[1;30mInt_2_Loc:     [0m[1;30mO.K.  [0m[1;30m13[0m
+[1;30mInt_3_Loc:     [0m[1;30mO.K.  [0m[1;30m7  [0m
+[1;30mEnum_Loc:      [0m[1;30mO.K.  [0m[1;30m1  [0m
+[1;30mStr_1_Loc:                             [0m[1;30mO.K.  [0m[1;30mDHRYSTONE PROGRAM, 1'ST STRING[0m
+[1;30mStr_2_Loc:                             [0m[1;30mO.K.  [0m[1;30mDHRYSTONE PROGRAM, 2'ND STRING[0m
+
+[1;30mNanoseconds one Dhrystone run: 444[0m
+[1;30mDhrystones per Second:         2254029[0m
+[1;30mVAX  MIPS rating =             1282[0m
+
+[1;37mDhrystoneBenchmark            [0m[1;32m           8876 ms[0m[1;32m      5131.54 pts[0m[1;32m        1282.89 DMIPS[0m
+[1;32mIterrations:               1, Ratio:           4.000[0m
+[1;36m[10] WhetstoneBenchmark[0m
+[1;30m     Whetstone Benchmark JavaScript Version, Mon, 12 Dec 2022 22:40:46 GMT[0m
+[1;30m                                                       1 Pass[0m
+[1;30m  Test                  Result       MFLOPS     MOPS  millisecs[0m
+[1;30m  N1 floating point[0m[1;30m  -1.123980363[0m[1;30m    524.88         [0m[1;30m    0.0366[0m
+[1;30m  N2 floating point[0m[1;30m  -1.131195156[0m[1;30m    406.29         [0m[1;30m    0.3308[0m
+[1;30m  N3 if then else  [0m[1;30m   1.000000000[0m[1;30m             440.43[0m[1;30m    0.2350[0m
+[1;30m  N4 fixed point   [0m[1;30m  12.000000000[0m[1;30m             782.03[0m[1;30m    0.4028[0m
+[1;30m  N5 sin,cos etc.  [0m[1;30m   0.499029132[0m[1;30m             103.77[0m[1;30m    0.8018[0m
+[1;30m  N6 floating point[0m[1;30m   0.999998881[0m[1;30m     86.33         [0m[1;30m    6.2480[0m
+[1;30m  N7 assignments   [0m[1;30m   3.000000000[0m[1;30m             373.03[0m[1;30m    0.4954[0m
+[1;30m  N8 exp,sqrt etc. [0m[1;30m   0.835383055[0m[1;30m              34.41[0m[1;30m    1.0810[0m
+[1;30m  MWIPS          [0m[1;30m                   1038.27[0m[1;30m             9.6314[0m
+[1;37mWhetstoneBenchmark            [0m[1;32m          21573 ms[0m[1;32m      1038.27 pts[0m[1;32m        1038.27 MWIPS[0m
+[1;32mIterrations:               1, Ratio:           1.000[0m
+[1;36m[11] LinpackBenchmark[0m
+[1;30mRunning Linpack 2000x2000 in JavaScript[0m
+[1;30mNorma is 0.49999936918999666[0m
+[1;30mResidual is 4.4959869160976496e-12[0m
+[1;30mNormalised residual is 20.25[0m
+[1;30mMachine result.Eepsilon is 2.220446049250313e-16[0m
+[1;30mx[0]-1 is 4.440892098500626e-13[0m
+[1;30mx[n-1]-1 is -3.997469022465339e-12[0m
+[1;30mTime is 11.02[0m
+[1;30mMFLOPS: 484.826[0m
+[1;37mLinpackBenchmark              [0m[1;32m          12402 ms[0m[1;32m      4848.26 pts[0m[1;32m         484.83 MFLOPS[0m
+[1;32mIterrations:               1, Ratio:          10.000[0m
+[1;36m[12] HashBenchmark[0m
+[1;37mHashBenchmark                 [0m[1;32m          62231 ms[0m[1;32m       321.38 pts[0m[1;32m       32138.32 Iters/s[0m
+[1;32mIterrations:         2000000, Ratio:          10.000[0m
+
+[1;37mTotal:                        [0m[1;32m         338649 ms[0m[1;32m     34744.12 pts[0m
+[1;36mSingle-thread results[0m
+[1;37mOperating System,Runtime,Threads Count,Memory Used,[0m[1;37mArithemticsBenchmark,MathBenchmark,CallBenchmark,IfElseBenchmark,StringManipulation,MemoryBenchmark,RandomMemoryBenchmark,Scimark2Benchmark,DhrystoneBenchmark,WhetstoneBenchmark,LinpackBenchmark,HashBenchmark[0m[1;37m,Total Points,Total Time (ms)[0m
+[1;37mv14.16.1,linux loong64,0,87867392,[0m[1;32m1045.78,1067.46,6236.36,2497.50,3249.71,3387.98,656.12,5263.75,5131.54,1038.27,4848.26,321.38[0m[1;37m,34744.12,338649[0m
+
+[1;36mSingle-thread Units results[0m
+[1;37mOperating System,Runtime,Threads Count,Memory Used,[0m[1;37mArithemticsBenchmark,MathBenchmark,CallBenchmark,IfElseBenchmark,StringManipulation,MemoryBenchmark,RandomMemoryBenchmark,Scimark2Benchmark,DhrystoneBenchmark,WhetstoneBenchmark,LinpackBenchmark,HashBenchmark[0m[1;37m,Total Points,Total Time (ms)[0m
+[1;37mv14.16.1,linux loong64,0,87867392,[0m[1;32m34859400.42,2134927.41,623635796.69,249750249.75,324970.75,3387.98,328.06,526.37,1282.89,1038.27,484.83,32138.32[0m[1;37m,34744.12,338649[0m
