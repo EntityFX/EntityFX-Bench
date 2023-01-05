@@ -4,7 +4,8 @@ import (
 	"math"
 	"math/rand"
 	"time"
-	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/utils"
+
+	"github.com/EntityFX/EntityFX-Bench/utils"
 )
 
 func measureFFT(N int, mintime float64) float64 {
@@ -13,7 +14,7 @@ func measureFFT(N int, mintime float64) float64 {
 	var cycles int64 = 1
 	elapsed := 0.0
 	for true {
-		start := (float64(utils.MakeTimestamp()) / 1000.0) 
+		start := (float64(utils.MakeTimestamp()) / 1000.0)
 		var i int64 = 0
 		for ; i < cycles; i++ {
 			fft_transform(x)
@@ -26,7 +27,7 @@ func measureFFT(N int, mintime float64) float64 {
 		cycles *= 2
 	}
 	var EPS float64 = 1.0e-10
-	if fft_test(x) / float64(N) > EPS {
+	if fft_test(x)/float64(N) > EPS {
 		return .0
 	}
 	return fft_num_flops(N) * float64(cycles) / elapsed * 1.0e-6
@@ -37,7 +38,7 @@ func measureSOR(N int, min_time float64) float64 {
 	elapsed := 0.0
 	cycles := 1
 	for true {
-		start := (float64(utils.MakeTimestamp()) / 1000.0) 
+		start := (float64(utils.MakeTimestamp()) / 1000.0)
 		sor_execute(1.25, G, cycles)
 		elapsed = (float64(utils.MakeTimestamp()) / 1000.0) - start
 		if elapsed >= min_time {
@@ -51,9 +52,9 @@ func measureSOR(N int, min_time float64) float64 {
 func measureMonteCarlo(min_time float64) float64 {
 	elapsed := 0.0
 	cycles := 1
-	for (true) {
-		start := (float64(utils.MakeTimestamp()) / 1000.0) 
-		mc_integrate(cycles);
+	for true {
+		start := (float64(utils.MakeTimestamp()) / 1000.0)
+		mc_integrate(cycles)
 		elapsed = (float64(utils.MakeTimestamp()) / 1000.0) - start
 		if elapsed >= min_time {
 			break
@@ -70,23 +71,23 @@ func measureSparseMatmult(N int, nz int, min_time float64) float64 {
 	anz := nr * N
 	val := randomVector(anz)
 	col := make([]int, anz)
-	row := make([]int, N + 1)
+	row := make([]int, N+1)
 	row[0] = 0
 	for r := 0; r < N; r++ {
 		rowr := row[r]
-		row[r + 1] = rowr + nr
+		row[r+1] = rowr + nr
 		step := r / nr
 		if step < 1 {
 			step = 1
 		}
 		for i := 0; i < nr; i++ {
-			col[rowr + i] = i * step
+			col[rowr+i] = i * step
 		}
 	}
 	elapsed := 0.0
 	cycles := 1
 	for true {
-		start := (float64(utils.MakeTimestamp()) / 1000.0) 
+		start := (float64(utils.MakeTimestamp()) / 1000.0)
 		sparse_cr_matmult(y, val, row, col, x, cycles)
 		elapsed = (float64(utils.MakeTimestamp()) / 1000.0) - start
 		if elapsed >= min_time {
@@ -107,7 +108,7 @@ func measureLU(N int, min_time float64) float64 {
 	elapsed := 0.0
 	cycles := 1
 	for true {
-		start := (float64(utils.MakeTimestamp()) / 1000.0) 
+		start := (float64(utils.MakeTimestamp()) / 1000.0)
 		for i := 0; i < cycles; i++ {
 			copyMatrix(lu, A)
 			lu_factor(lu, pivot)
@@ -128,7 +129,7 @@ func measureLU(N int, min_time float64) float64 {
 	return lu_num_flops(N) * float64(cycles) / elapsed * 1.0e-6
 }
 
-func newVectorCopy(x []float64) []float64{
+func newVectorCopy(x []float64) []float64 {
 	N := len(x)
 	y := make([]float64, N)
 	for i := 0; i < N; i++ {
@@ -150,7 +151,7 @@ func normabs(x []float64, y []float64) float64 {
 	for i := 0; i < N; i++ {
 		sum += math.Abs(x[i] - y[i])
 	}
-	return sum;
+	return sum
 }
 
 func copyMatrix(B [][]float64, A [][]float64) {
@@ -165,9 +166,9 @@ func copyMatrix(B [][]float64, A [][]float64) {
 		}
 		for j := remainder; j < N; j += 4 {
 			bi[j] = ai[j]
-			bi[j + 1] = ai[j + 1]
-			bi[j + 2] = ai[j + 2]
-			bi[j + 3] = ai[j + 3]
+			bi[j+1] = ai[j+1]
+			bi[j+2] = ai[j+2]
+			bi[j+3] = ai[j+3]
 		}
 	}
 }
@@ -183,7 +184,7 @@ func randomMatrix(M int, N int) [][]float64 {
 	return A
 }
 
-func randomVector(N int) []float64{
+func randomVector(N int) []float64 {
 	rand.Seed(time.Now().Unix())
 	A := make([]float64, N)
 	for i := 0; i < N; i++ {
@@ -203,7 +204,7 @@ func matvec_n(A [][]float64, x []float64, y []float64) {
 	M := len(A)
 	N := len(A[0])
 	for i := 0; i < M; i++ {
-		sum := .0;
+		sum := .0
 		ai := A[i]
 		for j := 0; j < N; j++ {
 			sum += (ai[j] * x[j])

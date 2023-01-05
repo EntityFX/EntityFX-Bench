@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/dhrystone"
-	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/generic"
-	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/linpack"
-	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/scimark2"
-	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/utils"
-	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/whetstone"
+	"github.com/EntityFX/EntityFX-Bench/dhrystone"
+	"github.com/EntityFX/EntityFX-Bench/generic"
+	"github.com/EntityFX/EntityFX-Bench/linpack"
+	"github.com/EntityFX/EntityFX-Bench/scimark2"
+	"github.com/EntityFX/EntityFX-Bench/utils"
+	"github.com/EntityFX/EntityFX-Bench/whetstone"
 )
 
 func writeResult(writer utils.WriterType, benchResult *generic.BenchResult) {

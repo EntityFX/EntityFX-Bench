@@ -3,8 +3,8 @@ package linpack
 import (
 	"reflect"
 
-	g "github.com/EntityFX/EntityFX-Bench/src/go/entityfx/generic"
-	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/utils"
+	g "github.com/EntityFX/EntityFX-Bench/generic"
+	"github.com/EntityFX/EntityFX-Bench/utils"
 )
 
 type LinpackBenchmark struct {

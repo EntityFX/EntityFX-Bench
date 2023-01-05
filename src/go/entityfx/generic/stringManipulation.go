@@ -1,8 +1,10 @@
 package generic
 
-import "github.com/EntityFX/EntityFX-Bench/src/go/entityfx/utils"
+import (
+	"strings"
 
-import "strings"
+	"github.com/EntityFX/EntityFX-Bench/utils"
+)
 
 type StringManipulation struct {
 	*BenchmarkBaseBase
@@ -57,9 +59,9 @@ func (b *StringManipulation) BenchImplementation() interface{} {
 }
 
 func (b *ParallelStringManipulation) BenchImplementation() interface{} {
-	return b.BenchmarkBaseBase.BenchInParallel(func () interface{}  {
+	return b.BenchmarkBaseBase.BenchInParallel(func() interface{} {
 		return 0
-	}, func (interface{}) interface{}  {
+	}, func(interface{}) interface{} {
 		str := "the quick brown fox jumps over the lazy dog"
 		str1 := ""
 		var i int64
@@ -67,7 +69,7 @@ func (b *ParallelStringManipulation) BenchImplementation() interface{} {
 			str1 = doStringManipilation(str)
 		}
 		return str1
-	}, func (result interface{}, benchResult *BenchResult)  {
+	}, func(result interface{}, benchResult *BenchResult) {
 
 	})
 }

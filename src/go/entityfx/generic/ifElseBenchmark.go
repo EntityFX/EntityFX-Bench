@@ -1,7 +1,7 @@
 package generic
 
 import (
-	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/utils"
+	"github.com/EntityFX/EntityFX-Bench/utils"
 )
 
 type IfElseBenchmark struct {
@@ -60,9 +60,9 @@ func (b *IfElseBenchmark) BenchImplementation() interface{} {
 }
 
 func (b *ParallelIfElseBenchmark) BenchImplementation() interface{} {
-	return b.BenchmarkBaseBase.BenchInParallel(func () interface{}  {
+	return b.BenchmarkBaseBase.BenchInParallel(func() interface{} {
 		return 0
-	}, func (interface{}) interface{}  {
+	}, func(interface{}) interface{} {
 		d := 0
 		c := -1
 		var i int64 = 0
@@ -70,7 +70,7 @@ func (b *ParallelIfElseBenchmark) BenchImplementation() interface{} {
 			if c == -4 {
 				c = -1
 			}
-	
+
 			if i == -1 {
 				d = 3
 			} else if i == -2 {
@@ -82,7 +82,7 @@ func (b *ParallelIfElseBenchmark) BenchImplementation() interface{} {
 			c--
 		}
 		return d
-	}, func (result interface{}, benchResult *BenchResult)  {
+	}, func(result interface{}, benchResult *BenchResult) {
 
 	})
 }

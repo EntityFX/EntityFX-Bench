@@ -1,7 +1,7 @@
 package generic
 
 import (
-	"github.com/EntityFX/EntityFX-Bench/src/go/entityfx/utils"
+	"github.com/EntityFX/EntityFX-Bench/utils"
 )
 
 type ArithmeticsBenchmark struct {
@@ -60,17 +60,17 @@ func (b *ArithmeticsBenchmark) BenchImplementation() interface{} {
 }
 
 func (b *ParallelArithemticsBenchmark) BenchImplementation() interface{} {
-	return b.BenchmarkBaseBase.BenchInParallel(func () interface{}  {
+	return b.BenchmarkBaseBase.BenchInParallel(func() interface{} {
 		return 0
-	}, func (interface{}) interface{}  {
+	}, func(interface{}) interface{} {
 		R := float32(0.0)
 		var i int64
 		for ; i < b.GetIterrations(); i++ {
 			R += doArithmetics(i)
 		}
-	
+
 		return R
-	}, func (result interface{}, benchResult *BenchResult)  {
+	}, func(result interface{}, benchResult *BenchResult) {
 
 	})
 }
