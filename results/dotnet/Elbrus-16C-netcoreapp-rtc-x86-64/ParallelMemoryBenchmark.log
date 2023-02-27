@@ -1,0 +1,4310 @@
+int 4k: 3231.24 MB/sint 4k: 3222.48 MB/s
+int 4k: 3160.79 MB/s
+int 4k: 3231.22 MB/s
+int 4k: 3218.75 MB/s
+int 4k: 3230.91 MB/s
+int 4k: 3229.81 MB/sint 4k: 3227.95 MB/s
+int 4k: 3230.88 MB/s
+int 4k: 3230.29 MB/s
+int 4k: 3228.91 MB/s
+int 4k: 3230.77 MB/sint 4k: 3230.99 MB/sint 4k: 3228.17 MB/s
+
+
+int 4k: 3230.06 MB/s
+
+int 4k: 3229.15 MB/s
+int 512k: 2565.29 MB/s
+int 512k: 2043.41 MB/s
+int 512k: 1938.42 MB/s
+int 512k: 2354.31 MB/s
+int 512k: 2040.28 MB/s
+int 512k: 1991.15 MB/s
+int 512k: 1682.44 MB/s
+int 512k: 1984.48 MB/s
+int 512k: 1856.45 MB/s
+int 512k: 1697.10 MB/s
+int 512k: 1717.89 MB/s
+int 512k: 1675.15 MB/s
+int 512k: 1629.33 MB/s
+int 512k: 1445.77 MB/s
+int 512k: 1374.10 MB/s
+int 512k: 1209.09 MB/s
+int 8M: 1404.79 MB/s
+int 8M: 1114.41 MB/s
+int 8M: 1044.55 MB/s
+int 8M: 1351.61 MB/s
+int 8M: 1368.90 MB/s
+int 8M: 1305.63 MB/s
+int 8M: 1315.10 MB/s
+int 8M: 1233.35 MB/s
+int 8M: 1270.62 MB/s
+int 8M: 1127.81 MB/s
+int 8M: 1046.41 MB/s
+int 8M: 762.34 MB/s
+int 8M: 639.03 MB/s
+int 8M: 626.53 MB/s
+int 8M: 606.31 MB/s
+int 8M: 737.65 MB/s
+int 32M: 682.44 MB/s
+long 4k: 1552.12 MB/s
+long 512k: 4746.43 MB/s
+int 32M: 557.54 MB/s
+long 4k: 8731.24 MB/s
+int 32M: 461.04 MB/s
+int 32M: 471.00 MB/s
+long 4k: 8707.34 MB/s
+long 4k: 7425.20 MB/s
+long 512k: 4402.54 MB/s
+int 32M: 522.51 MB/s
+long 4k: 8720.01 MB/s
+long 512k: 4542.39 MB/s
+long 512k: 4516.64 MB/s
+long 512k: 4671.84 MB/s
+int 32M: 446.92 MB/s
+long 4k: 8737.41 MB/s
+int 32M: 417.59 MB/s
+long 4k: 8621.01 MB/s
+int 32M: 451.18 MB/s
+long 4k: 8716.74 MB/s
+long 512k: 4481.87 MB/s
+long 512k: 4326.90 MB/s
+int 32M: 444.64 MB/s
+long 4k: 8735.45 MB/s
+int 32M: 442.26 MB/s
+long 4k: 8621.77 MB/s
+long 512k: 4484.41 MB/s
+int 32M: 447.74 MB/s
+long 4k: 1211.25 MB/s
+long 512k: 2508.78 MB/s
+int 32M: 455.39 MB/s
+long 512k: 3798.27 MB/s
+long 4k: 7019.52 MB/s
+long 512k: 4516.02 MB/s
+long 512k: 4491.97 MB/s
+int 32M: 466.04 MB/s
+long 4k: 8660.85 MB/s
+int 32M: 470.34 MB/s
+long 4k: 8603.09 MB/s
+long 512k: 4697.31 MB/s
+int 32M: 476.84 MB/s
+long 4k: 8719.00 MB/s
+long 512k: 4372.51 MB/s
+int 32M: 529.78 MB/s
+long 4k: 8606.05 MB/s
+long 512k: 4557.18 MB/s
+long 512k: 4746.28 MB/s
+long 8M: 1741.68 MB/s
+long 8M: 1721.81 MB/s
+long 8M: 1694.97 MB/s
+long 8M: 1695.15 MB/s
+long 8M: 1751.57 MB/s
+long 8M: 1819.26 MB/s
+long 8M: 1813.73 MB/s
+long 8M: 1787.56 MB/s
+long 8M: 1685.25 MB/s
+long 8M: 1754.52 MB/s
+long 8M: 1623.72 MB/s
+long 8M: 1785.20 MB/s
+long 8M: 1815.15 MB/s
+long 8M: 1739.38 MB/s
+long 8M: 1691.36 MB/s
+long 8M: 1753.02 MB/s
+long 32M: 788.65 MB/s
+Average: 2768.30 MB/s
+long 32M: 509.73 MB/s
+Average: 2779.78 MB/s
+long 32M: 480.46 MB/s
+Average: 2746.51 MB/s
+long 32M: 494.07 MB/s
+Average: 1886.54 MB/s
+long 32M: 511.65 MB/s
+Average: 2705.27 MB/s
+long 32M: 503.04 MB/s
+Average: 1817.22 MB/s
+long 32M: 472.52 MB/s
+Average: 2522.48 MB/s
+long 32M: 487.34 MB/s
+Average: 2860.98 MB/s
+long 32M: 482.88 MB/s
+Average: 2709.71 MB/s
+long 32M: 470.75 MB/s
+Average: 2696.99 MB/s
+long 32M: 469.95 MB/s
+Average: 2715.67 MB/s
+long 32M: 478.91 MB/s
+Average: 2779.98 MB/s
+long 32M: 482.49 MB/s
+Average: 2598.05 MB/s
+long 32M: 492.47 MB/s
+Average: 2482.89 MB/s
+long 32M: 504.66 MB/s
+Average: 2825.25 MB/s
+long 32M: 510.68 MB/s
+Average: 2699.17 MB/s
+int 4k: 3229.43 MB/s
+
+int 4k: 3229.72 MB/s
+int 4k: 3229.93 MB/s
+int 4k: 3230.06 MB/s
+int 4k: 3216.94 MB/s
+int 4k: 3191.14 MB/s
+int 4k: 3162.89 MB/s
+int 4k: 3156.12 MB/s
+
+int 4k: 3151.91 MB/s
+int 4k: 3157.53 MB/s
+int 4k: 3157.12 MB/s
+int 4k: 3151.18 MB/s
+int 4k: 3143.33 MB/s
+int 4k: 2501.07 MB/s
+int 512k: 2714.30 MB/s
+int 512k: 2606.45 MB/s
+int 512k: 2409.34 MB/s
+int 512k: 2521.95 MB/s
+int 512k: 2476.51 MB/s
+int 512k: 2394.54 MB/s
+int 512k: 2377.40 MB/s
+int 512k: 2366.54 MB/s
+int 512k: 2253.46 MB/s
+int 512k: 2259.99 MB/s
+int 512k: 2217.18 MB/s
+int 512k: 2189.74 MB/s
+int 512k: 2107.69 MB/s
+int 512k: 2085.68 MB/s
+int 512k: 1943.85 MB/s
+int 8M: 506.05 MB/s
+int 8M: 509.82 MB/s
+int 8M: 433.33 MB/s
+int 8M: 407.30 MB/s
+int 8M: 404.70 MB/s
+int 8M: 406.84 MB/s
+int 8M: 412.96 MB/s
+int 8M: 408.74 MB/s
+int 8M: 408.87 MB/s
+int 8M: 411.36 MB/s
+int 8M: 406.57 MB/s
+int 8M: 405.76 MB/s
+int 8M: 398.62 MB/s
+int 8M: 399.59 MB/s
+int 8M: 395.52 MB/s
+int 8M: 395.80 MB/s
+int 32M: 451.06 MB/s
+int 32M: 472.02 MB/s
+long 4k: 8744.71 MB/s
+long 4k: 8681.03 MB/s
+long 512k: 4717.39 MB/s
+long 512k: 4778.02 MB/s
+int 32M: 655.74 MB/s
+long 4k: 8725.13 MB/s
+long 8M: 1721.52 MB/s
+long 8M: 1719.09 MB/s
+long 512k: 4738.02 MB/s
+int 32M: 454.29 MB/s
+long 4k: 8570.98 MB/s
+int 32M: 414.55 MB/s
+long 4k: 8696.55 MB/s
+long 512k: 4268.20 MB/s
+int 32M: 413.40 MB/s
+int 32M: 407.00 MB/s
+int 32M: 416.65 MB/s
+long 4k: 8710.16 MB/s
+long 4k: 8440.09 MB/s
+int 32M: 411.20 MB/s
+int 32M: 414.13 MB/s
+int 32M: 415.96 MB/s
+int 32M: 403.23 MB/s
+long 4k: 8608.34 MB/s
+int 32M: 397.28 MB/s
+int 32M: 416.07 MB/s
+int 32M: 414.38 MB/s
+long 4k: 8472.34 MB/s
+long 4k: 8610.57 MB/s
+long 4k: 8387.95 MB/s
+long 4k: 8513.71 MB/s
+long 4k: 8339.75 MB/s
+int 32M: 397.64 MB/s
+long 4k: 8461.17 MB/s
+long 4k: 8258.16 MB/s
+long 512k: 4351.15 MB/s
+long 4k: 8583.49 MB/s
+long 512k: 4493.85 MB/s
+long 512k: 4453.90 MB/s
+long 512k: 4518.98 MB/s
+long 512k: 4515.52 MB/s
+long 512k: 4500.29 MB/s
+long 512k: 4509.70 MB/s
+long 512k: 4493.76 MB/s
+long 512k: 4505.25 MB/s
+long 512k: 4493.05 MB/s
+long 512k: 4465.68 MB/s
+long 512k: 4490.77 MB/s
+long 8M: 489.94 MB/s
+long 32M: 438.65 MB/s
+Average: 2815.47 MB/s
+long 32M: 437.86 MB/s
+Average: 2811.44 MB/s
+long 8M: 504.93 MB/s
+long 8M: 465.46 MB/s
+long 8M: 448.44 MB/s
+long 8M: 452.35 MB/s
+long 8M: 456.74 MB/s
+long 8M: 458.18 MB/s
+long 8M: 455.35 MB/s
+long 8M: 448.23 MB/s
+long 8M: 454.59 MB/s
+long 8M: 453.53 MB/s
+long 8M: 448.20 MB/s
+long 8M: 445.31 MB/s
+long 8M: 447.83 MB/s
+long 32M: 462.87 MB/s
+Average: 2613.80 MB/s
+long 32M: 490.00 MB/s
+Average: 2528.50 MB/s
+long 32M: 488.75 MB/s
+Average: 2582.45 MB/s
+long 32M: 470.04 MB/s
+Average: 2534.04 MB/s
+long 32M: 474.97 MB/s
+Average: 2383.98 MB/s
+long 32M: 474.78 MB/s
+Average: 2573.56 MB/s
+long 32M: 475.65 MB/s
+Average: 2500.14 MB/s
+long 32M: 468.18 MB/s
+Average: 2547.86 MB/s
+long 32M: 461.61 MB/s
+Average: 2544.61 MB/s
+long 32M: 470.47 MB/s
+Average: 2541.80 MB/s
+long 32M: 468.04 MB/s
+Average: 2492.80 MB/s
+long 32M: 462.61 MB/s
+Average: 2478.66 MB/s
+long 32M: 463.85 MB/s
+Average: 2528.28 MB/s
+long 32M: 457.21 MB/s
+Average: 2529.57 MB/s
+int 4k: 3231.24 MB/sint 4k: 3222.48 MB/s
+int 4k: 3160.79 MB/s
+int 4k: 3231.22 MB/s
+int 4k: 3218.75 MB/s
+int 4k: 3230.91 MB/s
+int 4k: 3229.81 MB/sint 4k: 3227.95 MB/s
+int 4k: 3230.88 MB/s
+int 4k: 3230.29 MB/s
+int 4k: 3228.91 MB/s
+int 4k: 3230.77 MB/sint 4k: 3230.99 MB/sint 4k: 3228.17 MB/s
+
+
+int 4k: 3230.06 MB/s
+
+int 4k: 3229.15 MB/s
+int 512k: 2565.29 MB/s
+int 512k: 2043.41 MB/s
+int 512k: 1938.42 MB/s
+int 512k: 2354.31 MB/s
+int 512k: 2040.28 MB/s
+int 512k: 1991.15 MB/s
+int 512k: 1682.44 MB/s
+int 512k: 1984.48 MB/s
+int 512k: 1856.45 MB/s
+int 512k: 1697.10 MB/s
+int 512k: 1717.89 MB/s
+int 512k: 1675.15 MB/s
+int 512k: 1629.33 MB/s
+int 512k: 1445.77 MB/s
+int 512k: 1374.10 MB/s
+int 512k: 1209.09 MB/s
+int 8M: 1404.79 MB/s
+int 8M: 1114.41 MB/s
+int 8M: 1044.55 MB/s
+int 8M: 1351.61 MB/s
+int 8M: 1368.90 MB/s
+int 8M: 1305.63 MB/s
+int 8M: 1315.10 MB/s
+int 8M: 1233.35 MB/s
+int 8M: 1270.62 MB/s
+int 8M: 1127.81 MB/s
+int 8M: 1046.41 MB/s
+int 8M: 762.34 MB/s
+int 8M: 639.03 MB/s
+int 8M: 626.53 MB/s
+int 8M: 606.31 MB/s
+int 8M: 737.65 MB/s
+int 32M: 682.44 MB/s
+long 4k: 1552.12 MB/s
+long 512k: 4746.43 MB/s
+int 32M: 557.54 MB/s
+long 4k: 8731.24 MB/s
+int 32M: 461.04 MB/s
+int 32M: 471.00 MB/s
+long 4k: 8707.34 MB/s
+long 4k: 7425.20 MB/s
+long 512k: 4402.54 MB/s
+int 32M: 522.51 MB/s
+long 4k: 8720.01 MB/s
+long 512k: 4542.39 MB/s
+long 512k: 4516.64 MB/s
+long 512k: 4671.84 MB/s
+int 32M: 446.92 MB/s
+long 4k: 8737.41 MB/s
+int 32M: 417.59 MB/s
+long 4k: 8621.01 MB/s
+int 32M: 451.18 MB/s
+long 4k: 8716.74 MB/s
+long 512k: 4481.87 MB/s
+long 512k: 4326.90 MB/s
+int 32M: 444.64 MB/s
+long 4k: 8735.45 MB/s
+int 32M: 442.26 MB/s
+long 4k: 8621.77 MB/s
+long 512k: 4484.41 MB/s
+int 32M: 447.74 MB/s
+long 4k: 1211.25 MB/s
+long 512k: 2508.78 MB/s
+int 32M: 455.39 MB/s
+long 512k: 3798.27 MB/s
+long 4k: 7019.52 MB/s
+long 512k: 4516.02 MB/s
+long 512k: 4491.97 MB/s
+int 32M: 466.04 MB/s
+long 4k: 8660.85 MB/s
+int 32M: 470.34 MB/s
+long 4k: 8603.09 MB/s
+long 512k: 4697.31 MB/s
+int 32M: 476.84 MB/s
+long 4k: 8719.00 MB/s
+long 512k: 4372.51 MB/s
+int 32M: 529.78 MB/s
+long 4k: 8606.05 MB/s
+long 512k: 4557.18 MB/s
+long 512k: 4746.28 MB/s
+long 8M: 1741.68 MB/s
+long 8M: 1721.81 MB/s
+long 8M: 1694.97 MB/s
+long 8M: 1695.15 MB/s
+long 8M: 1751.57 MB/s
+long 8M: 1819.26 MB/s
+long 8M: 1813.73 MB/s
+long 8M: 1787.56 MB/s
+long 8M: 1685.25 MB/s
+long 8M: 1754.52 MB/s
+long 8M: 1623.72 MB/s
+long 8M: 1785.20 MB/s
+long 8M: 1815.15 MB/s
+long 8M: 1739.38 MB/s
+long 8M: 1691.36 MB/s
+long 8M: 1753.02 MB/s
+long 32M: 788.65 MB/s
+Average: 2768.30 MB/s
+long 32M: 509.73 MB/s
+Average: 2779.78 MB/s
+long 32M: 480.46 MB/s
+Average: 2746.51 MB/s
+long 32M: 494.07 MB/s
+Average: 1886.54 MB/s
+long 32M: 511.65 MB/s
+Average: 2705.27 MB/s
+long 32M: 503.04 MB/s
+Average: 1817.22 MB/s
+long 32M: 472.52 MB/s
+Average: 2522.48 MB/s
+long 32M: 487.34 MB/s
+Average: 2860.98 MB/s
+long 32M: 482.88 MB/s
+Average: 2709.71 MB/s
+long 32M: 470.75 MB/s
+Average: 2696.99 MB/s
+long 32M: 469.95 MB/s
+Average: 2715.67 MB/s
+long 32M: 478.91 MB/s
+Average: 2779.98 MB/s
+long 32M: 482.49 MB/s
+Average: 2598.05 MB/s
+long 32M: 492.47 MB/s
+Average: 2482.89 MB/s
+long 32M: 504.66 MB/s
+Average: 2825.25 MB/s
+long 32M: 510.68 MB/s
+Average: 2699.17 MB/s
+int 4k: 3229.43 MB/s
+
+int 4k: 3229.72 MB/s
+int 4k: 3229.93 MB/s
+int 4k: 3230.06 MB/s
+int 4k: 3216.94 MB/s
+int 4k: 3191.14 MB/s
+int 4k: 3162.89 MB/s
+int 4k: 3156.12 MB/s
+
+int 4k: 3151.91 MB/s
+int 4k: 3157.53 MB/s
+int 4k: 3157.12 MB/s
+int 4k: 3151.18 MB/s
+int 4k: 3143.33 MB/s
+int 4k: 2501.07 MB/s
+int 512k: 2714.30 MB/s
+int 512k: 2606.45 MB/s
+int 512k: 2409.34 MB/s
+int 512k: 2521.95 MB/s
+int 512k: 2476.51 MB/s
+int 512k: 2394.54 MB/s
+int 512k: 2377.40 MB/s
+int 512k: 2366.54 MB/s
+int 512k: 2253.46 MB/s
+int 512k: 2259.99 MB/s
+int 512k: 2217.18 MB/s
+int 512k: 2189.74 MB/s
+int 512k: 2107.69 MB/s
+int 512k: 2085.68 MB/s
+int 512k: 1943.85 MB/s
+int 8M: 506.05 MB/s
+int 8M: 509.82 MB/s
+int 8M: 433.33 MB/s
+int 8M: 407.30 MB/s
+int 8M: 404.70 MB/s
+int 8M: 406.84 MB/s
+int 8M: 412.96 MB/s
+int 8M: 408.74 MB/s
+int 8M: 408.87 MB/s
+int 8M: 411.36 MB/s
+int 8M: 406.57 MB/s
+int 8M: 405.76 MB/s
+int 8M: 398.62 MB/s
+int 8M: 399.59 MB/s
+int 8M: 395.52 MB/s
+int 8M: 395.80 MB/s
+int 32M: 451.06 MB/s
+int 32M: 472.02 MB/s
+long 4k: 8744.71 MB/s
+long 4k: 8681.03 MB/s
+long 512k: 4717.39 MB/s
+long 512k: 4778.02 MB/s
+int 32M: 655.74 MB/s
+long 4k: 8725.13 MB/s
+long 8M: 1721.52 MB/s
+long 8M: 1719.09 MB/s
+long 512k: 4738.02 MB/s
+int 32M: 454.29 MB/s
+long 4k: 8570.98 MB/s
+int 32M: 414.55 MB/s
+long 4k: 8696.55 MB/s
+long 512k: 4268.20 MB/s
+int 32M: 413.40 MB/s
+int 32M: 407.00 MB/s
+int 32M: 416.65 MB/s
+long 4k: 8710.16 MB/s
+long 4k: 8440.09 MB/s
+int 32M: 411.20 MB/s
+int 32M: 414.13 MB/s
+int 32M: 415.96 MB/s
+int 32M: 403.23 MB/s
+long 4k: 8608.34 MB/s
+int 32M: 397.28 MB/s
+int 32M: 416.07 MB/s
+int 32M: 414.38 MB/s
+long 4k: 8472.34 MB/s
+long 4k: 8610.57 MB/s
+long 4k: 8387.95 MB/s
+long 4k: 8513.71 MB/s
+long 4k: 8339.75 MB/s
+int 32M: 397.64 MB/s
+long 4k: 8461.17 MB/s
+long 4k: 8258.16 MB/s
+long 512k: 4351.15 MB/s
+long 4k: 8583.49 MB/s
+long 512k: 4493.85 MB/s
+long 512k: 4453.90 MB/s
+long 512k: 4518.98 MB/s
+long 512k: 4515.52 MB/s
+long 512k: 4500.29 MB/s
+long 512k: 4509.70 MB/s
+long 512k: 4493.76 MB/s
+long 512k: 4505.25 MB/s
+long 512k: 4493.05 MB/s
+long 512k: 4465.68 MB/s
+long 512k: 4490.77 MB/s
+long 8M: 489.94 MB/s
+long 32M: 438.65 MB/s
+Average: 2815.47 MB/s
+long 32M: 437.86 MB/s
+Average: 2811.44 MB/s
+long 8M: 504.93 MB/s
+long 8M: 465.46 MB/s
+long 8M: 448.44 MB/s
+long 8M: 452.35 MB/s
+long 8M: 456.74 MB/s
+long 8M: 458.18 MB/s
+long 8M: 455.35 MB/s
+long 8M: 448.23 MB/s
+long 8M: 454.59 MB/s
+long 8M: 453.53 MB/s
+long 8M: 448.20 MB/s
+long 8M: 445.31 MB/s
+long 8M: 447.83 MB/s
+long 32M: 462.87 MB/s
+Average: 2613.80 MB/s
+long 32M: 490.00 MB/s
+Average: 2528.50 MB/s
+long 32M: 488.75 MB/s
+Average: 2582.45 MB/s
+int 4k: 3231.24 MB/sint 4k: 3222.48 MB/s
+int 4k: 3160.79 MB/s
+int 4k: 3231.22 MB/s
+int 4k: 3218.75 MB/s
+int 4k: 3230.91 MB/s
+int 4k: 3229.81 MB/sint 4k: 3227.95 MB/s
+int 4k: 3230.88 MB/s
+int 4k: 3230.29 MB/s
+int 4k: 3228.91 MB/s
+int 4k: 3230.77 MB/sint 4k: 3230.99 MB/sint 4k: 3228.17 MB/s
+
+
+int 4k: 3230.06 MB/s
+
+int 4k: 3229.15 MB/s
+int 512k: 2565.29 MB/s
+int 512k: 2043.41 MB/s
+int 512k: 1938.42 MB/s
+int 512k: 2354.31 MB/s
+int 512k: 2040.28 MB/s
+int 512k: 1991.15 MB/s
+int 512k: 1682.44 MB/s
+int 512k: 1984.48 MB/s
+int 512k: 1856.45 MB/s
+int 512k: 1697.10 MB/s
+int 512k: 1717.89 MB/s
+int 512k: 1675.15 MB/s
+int 512k: 1629.33 MB/s
+int 512k: 1445.77 MB/s
+int 512k: 1374.10 MB/s
+int 512k: 1209.09 MB/s
+int 8M: 1404.79 MB/s
+int 8M: 1114.41 MB/s
+int 8M: 1044.55 MB/s
+int 8M: 1351.61 MB/s
+int 8M: 1368.90 MB/s
+int 8M: 1305.63 MB/s
+int 8M: 1315.10 MB/s
+int 8M: 1233.35 MB/s
+int 8M: 1270.62 MB/s
+int 8M: 1127.81 MB/s
+int 8M: 1046.41 MB/s
+int 8M: 762.34 MB/s
+int 8M: 639.03 MB/s
+int 8M: 626.53 MB/s
+int 8M: 606.31 MB/s
+int 8M: 737.65 MB/s
+int 32M: 682.44 MB/s
+long 4k: 1552.12 MB/s
+long 512k: 4746.43 MB/s
+int 32M: 557.54 MB/s
+long 4k: 8731.24 MB/s
+int 32M: 461.04 MB/s
+int 32M: 471.00 MB/s
+long 4k: 8707.34 MB/s
+long 4k: 7425.20 MB/s
+long 512k: 4402.54 MB/s
+int 32M: 522.51 MB/s
+long 4k: 8720.01 MB/s
+long 512k: 4542.39 MB/s
+long 512k: 4516.64 MB/s
+long 512k: 4671.84 MB/s
+int 32M: 446.92 MB/s
+long 4k: 8737.41 MB/s
+int 32M: 417.59 MB/s
+long 4k: 8621.01 MB/s
+int 32M: 451.18 MB/s
+long 4k: 8716.74 MB/s
+long 512k: 4481.87 MB/s
+long 512k: 4326.90 MB/s
+int 32M: 444.64 MB/s
+long 4k: 8735.45 MB/s
+int 32M: 442.26 MB/s
+long 4k: 8621.77 MB/s
+long 512k: 4484.41 MB/s
+int 32M: 447.74 MB/s
+long 4k: 1211.25 MB/s
+long 512k: 2508.78 MB/s
+int 32M: 455.39 MB/s
+long 512k: 3798.27 MB/s
+long 4k: 7019.52 MB/s
+long 512k: 4516.02 MB/s
+long 512k: 4491.97 MB/s
+int 32M: 466.04 MB/s
+long 4k: 8660.85 MB/s
+int 32M: 470.34 MB/s
+long 4k: 8603.09 MB/s
+long 512k: 4697.31 MB/s
+int 32M: 476.84 MB/s
+long 4k: 8719.00 MB/s
+long 512k: 4372.51 MB/s
+int 32M: 529.78 MB/s
+long 4k: 8606.05 MB/s
+long 512k: 4557.18 MB/s
+long 512k: 4746.28 MB/s
+long 8M: 1741.68 MB/s
+long 8M: 1721.81 MB/s
+long 8M: 1694.97 MB/s
+long 8M: 1695.15 MB/s
+long 8M: 1751.57 MB/s
+long 8M: 1819.26 MB/s
+long 8M: 1813.73 MB/s
+long 8M: 1787.56 MB/s
+long 8M: 1685.25 MB/s
+long 8M: 1754.52 MB/s
+long 8M: 1623.72 MB/s
+long 8M: 1785.20 MB/s
+long 8M: 1815.15 MB/s
+long 8M: 1739.38 MB/s
+long 8M: 1691.36 MB/s
+long 8M: 1753.02 MB/s
+long 32M: 788.65 MB/s
+Average: 2768.30 MB/s
+long 32M: 509.73 MB/s
+Average: 2779.78 MB/s
+long 32M: 480.46 MB/s
+Average: 2746.51 MB/s
+long 32M: 494.07 MB/s
+Average: 1886.54 MB/s
+long 32M: 511.65 MB/s
+Average: 2705.27 MB/s
+long 32M: 503.04 MB/s
+Average: 1817.22 MB/s
+long 32M: 472.52 MB/s
+Average: 2522.48 MB/s
+long 32M: 487.34 MB/s
+Average: 2860.98 MB/s
+long 32M: 482.88 MB/s
+Average: 2709.71 MB/s
+long 32M: 470.75 MB/s
+Average: 2696.99 MB/s
+long 32M: 469.95 MB/s
+Average: 2715.67 MB/s
+long 32M: 478.91 MB/s
+Average: 2779.98 MB/s
+long 32M: 482.49 MB/s
+Average: 2598.05 MB/s
+long 32M: 492.47 MB/s
+Average: 2482.89 MB/s
+long 32M: 504.66 MB/s
+Average: 2825.25 MB/s
+long 32M: 510.68 MB/s
+Average: 2699.17 MB/s
+int 4k: 3229.43 MB/s
+
+int 4k: 3229.72 MB/s
+int 4k: 3229.93 MB/s
+int 4k: 3230.06 MB/s
+int 4k: 3216.94 MB/s
+int 4k: 3191.14 MB/s
+int 4k: 3162.89 MB/s
+int 4k: 3156.12 MB/s
+
+int 4k: 3151.91 MB/s
+int 4k: 3157.53 MB/s
+int 4k: 3157.12 MB/s
+int 4k: 3151.18 MB/s
+int 4k: 3143.33 MB/s
+int 4k: 2501.07 MB/s
+int 512k: 2714.30 MB/s
+int 512k: 2606.45 MB/s
+int 512k: 2409.34 MB/s
+int 512k: 2521.95 MB/s
+int 512k: 2476.51 MB/s
+int 512k: 2394.54 MB/s
+int 512k: 2377.40 MB/s
+int 512k: 2366.54 MB/s
+int 512k: 2253.46 MB/s
+int 512k: 2259.99 MB/s
+int 512k: 2217.18 MB/s
+int 512k: 2189.74 MB/s
+int 512k: 2107.69 MB/s
+int 512k: 2085.68 MB/s
+int 512k: 1943.85 MB/s
+int 8M: 506.05 MB/s
+int 8M: 509.82 MB/s
+int 8M: 433.33 MB/s
+int 8M: 407.30 MB/s
+int 8M: 404.70 MB/s
+int 8M: 406.84 MB/s
+int 8M: 412.96 MB/s
+int 8M: 408.74 MB/s
+int 8M: 408.87 MB/s
+int 8M: 411.36 MB/s
+int 8M: 406.57 MB/s
+int 8M: 405.76 MB/s
+int 8M: 398.62 MB/s
+int 8M: 399.59 MB/s
+int 8M: 395.52 MB/s
+int 8M: 395.80 MB/s
+int 32M: 451.06 MB/s
+int 32M: 472.02 MB/s
+long 4k: 8744.71 MB/s
+long 4k: 8681.03 MB/s
+long 512k: 4717.39 MB/s
+long 512k: 4778.02 MB/s
+int 32M: 655.74 MB/s
+long 4k: 8725.13 MB/s
+long 8M: 1721.52 MB/s
+long 8M: 1719.09 MB/s
+long 512k: 4738.02 MB/s
+int 32M: 454.29 MB/s
+long 4k: 8570.98 MB/s
+int 32M: 414.55 MB/s
+long 4k: 8696.55 MB/s
+long 512k: 4268.20 MB/s
+int 32M: 413.40 MB/s
+int 32M: 407.00 MB/s
+int 32M: 416.65 MB/s
+long 4k: 8710.16 MB/s
+long 4k: 8440.09 MB/s
+int 32M: 411.20 MB/s
+int 32M: 414.13 MB/s
+int 32M: 415.96 MB/s
+int 32M: 403.23 MB/s
+long 4k: 8608.34 MB/s
+int 32M: 397.28 MB/s
+int 32M: 416.07 MB/s
+int 32M: 414.38 MB/s
+long 4k: 8472.34 MB/s
+long 4k: 8610.57 MB/s
+long 4k: 8387.95 MB/s
+long 4k: 8513.71 MB/s
+long 4k: 8339.75 MB/s
+int 32M: 397.64 MB/s
+long 4k: 8461.17 MB/s
+long 4k: 8258.16 MB/s
+long 512k: 4351.15 MB/s
+long 4k: 8583.49 MB/s
+long 512k: 4493.85 MB/s
+long 512k: 4453.90 MB/s
+long 512k: 4518.98 MB/s
+long 512k: 4515.52 MB/s
+long 512k: 4500.29 MB/s
+long 512k: 4509.70 MB/s
+long 512k: 4493.76 MB/s
+long 512k: 4505.25 MB/s
+long 512k: 4493.05 MB/s
+long 512k: 4465.68 MB/s
+long 512k: 4490.77 MB/s
+long 8M: 489.94 MB/s
+long 32M: 438.65 MB/s
+Average: 2815.47 MB/s
+long 32M: 437.86 MB/s
+Average: 2811.44 MB/s
+long 8M: 504.93 MB/s
+long 8M: 465.46 MB/s
+long 8M: 448.44 MB/s
+long 8M: 452.35 MB/s
+long 8M: 456.74 MB/s
+long 8M: 458.18 MB/s
+long 8M: 455.35 MB/s
+long 8M: 448.23 MB/s
+long 8M: 454.59 MB/s
+long 8M: 453.53 MB/s
+long 8M: 448.20 MB/s
+long 8M: 445.31 MB/s
+long 8M: 447.83 MB/s
+long 32M: 462.87 MB/s
+Average: 2613.80 MB/s
+long 32M: 490.00 MB/s
+Average: 2528.50 MB/s
+long 32M: 488.75 MB/s
+Average: 2582.45 MB/s
+long 32M: 470.04 MB/s
+Average: 2534.04 MB/s
+long 32M: 474.97 MB/s
+Average: 2383.98 MB/s
+long 32M: 474.78 MB/s
+Average: 2573.56 MB/s
+long 32M: 475.65 MB/s
+Average: 2500.14 MB/s
+long 32M: 468.18 MB/s
+Average: 2547.86 MB/s
+long 32M: 461.61 MB/s
+Average: 2544.61 MB/s
+long 32M: 470.47 MB/s
+Average: 2541.80 MB/s
+long 32M: 468.04 MB/s
+Average: 2492.80 MB/s
+int 4k: 3231.24 MB/sint 4k: 3222.48 MB/s
+int 4k: 3160.79 MB/s
+int 4k: 3231.22 MB/s
+int 4k: 3218.75 MB/s
+int 4k: 3230.91 MB/s
+int 4k: 3229.81 MB/sint 4k: 3227.95 MB/s
+int 4k: 3230.88 MB/s
+int 4k: 3230.29 MB/s
+int 4k: 3228.91 MB/s
+int 4k: 3230.77 MB/sint 4k: 3230.99 MB/sint 4k: 3228.17 MB/s
+
+
+int 4k: 3230.06 MB/s
+
+int 4k: 3229.15 MB/s
+int 512k: 2565.29 MB/s
+int 512k: 2043.41 MB/s
+int 512k: 1938.42 MB/s
+int 512k: 2354.31 MB/s
+int 512k: 2040.28 MB/s
+int 512k: 1991.15 MB/s
+int 512k: 1682.44 MB/s
+int 512k: 1984.48 MB/s
+int 512k: 1856.45 MB/s
+int 512k: 1697.10 MB/s
+int 512k: 1717.89 MB/s
+int 512k: 1675.15 MB/s
+int 512k: 1629.33 MB/s
+int 512k: 1445.77 MB/s
+int 512k: 1374.10 MB/s
+int 512k: 1209.09 MB/s
+int 8M: 1404.79 MB/s
+int 8M: 1114.41 MB/s
+int 8M: 1044.55 MB/s
+int 8M: 1351.61 MB/s
+int 8M: 1368.90 MB/s
+int 8M: 1305.63 MB/s
+int 8M: 1315.10 MB/s
+int 8M: 1233.35 MB/s
+int 8M: 1270.62 MB/s
+int 8M: 1127.81 MB/s
+int 8M: 1046.41 MB/s
+int 8M: 762.34 MB/s
+int 8M: 639.03 MB/s
+int 8M: 626.53 MB/s
+int 8M: 606.31 MB/s
+int 8M: 737.65 MB/s
+int 32M: 682.44 MB/s
+long 4k: 1552.12 MB/s
+long 512k: 4746.43 MB/s
+int 32M: 557.54 MB/s
+long 4k: 8731.24 MB/s
+int 32M: 461.04 MB/s
+int 32M: 471.00 MB/s
+long 4k: 8707.34 MB/s
+long 4k: 7425.20 MB/s
+long 512k: 4402.54 MB/s
+int 32M: 522.51 MB/s
+long 4k: 8720.01 MB/s
+long 512k: 4542.39 MB/s
+long 512k: 4516.64 MB/s
+long 512k: 4671.84 MB/s
+int 32M: 446.92 MB/s
+long 4k: 8737.41 MB/s
+int 32M: 417.59 MB/s
+long 4k: 8621.01 MB/s
+int 32M: 451.18 MB/s
+long 4k: 8716.74 MB/s
+long 512k: 4481.87 MB/s
+long 512k: 4326.90 MB/s
+int 32M: 444.64 MB/s
+long 4k: 8735.45 MB/s
+int 32M: 442.26 MB/s
+long 4k: 8621.77 MB/s
+long 512k: 4484.41 MB/s
+int 32M: 447.74 MB/s
+long 4k: 1211.25 MB/s
+long 512k: 2508.78 MB/s
+int 32M: 455.39 MB/s
+long 512k: 3798.27 MB/s
+long 4k: 7019.52 MB/s
+long 512k: 4516.02 MB/s
+long 512k: 4491.97 MB/s
+int 32M: 466.04 MB/s
+long 4k: 8660.85 MB/s
+int 32M: 470.34 MB/s
+long 4k: 8603.09 MB/s
+long 512k: 4697.31 MB/s
+int 32M: 476.84 MB/s
+long 4k: 8719.00 MB/s
+long 512k: 4372.51 MB/s
+int 32M: 529.78 MB/s
+long 4k: 8606.05 MB/s
+long 512k: 4557.18 MB/s
+long 512k: 4746.28 MB/s
+long 8M: 1741.68 MB/s
+long 8M: 1721.81 MB/s
+long 8M: 1694.97 MB/s
+long 8M: 1695.15 MB/s
+long 8M: 1751.57 MB/s
+long 8M: 1819.26 MB/s
+long 8M: 1813.73 MB/s
+long 8M: 1787.56 MB/s
+long 8M: 1685.25 MB/s
+long 8M: 1754.52 MB/s
+long 8M: 1623.72 MB/s
+long 8M: 1785.20 MB/s
+long 8M: 1815.15 MB/s
+long 8M: 1739.38 MB/s
+long 8M: 1691.36 MB/s
+long 8M: 1753.02 MB/s
+long 32M: 788.65 MB/s
+Average: 2768.30 MB/s
+long 32M: 509.73 MB/s
+Average: 2779.78 MB/s
+long 32M: 480.46 MB/s
+Average: 2746.51 MB/s
+long 32M: 494.07 MB/s
+Average: 1886.54 MB/s
+long 32M: 511.65 MB/s
+Average: 2705.27 MB/s
+long 32M: 503.04 MB/s
+Average: 1817.22 MB/s
+long 32M: 472.52 MB/s
+Average: 2522.48 MB/s
+long 32M: 487.34 MB/s
+Average: 2860.98 MB/s
+long 32M: 482.88 MB/s
+Average: 2709.71 MB/s
+long 32M: 470.75 MB/s
+Average: 2696.99 MB/s
+long 32M: 469.95 MB/s
+Average: 2715.67 MB/s
+long 32M: 478.91 MB/s
+Average: 2779.98 MB/s
+long 32M: 482.49 MB/s
+Average: 2598.05 MB/s
+long 32M: 492.47 MB/s
+Average: 2482.89 MB/s
+long 32M: 504.66 MB/s
+Average: 2825.25 MB/s
+long 32M: 510.68 MB/s
+Average: 2699.17 MB/s
+int 4k: 3229.43 MB/s
+
+int 4k: 3229.72 MB/s
+int 4k: 3229.93 MB/s
+int 4k: 3230.06 MB/s
+int 4k: 3216.94 MB/s
+int 4k: 3191.14 MB/s
+int 4k: 3162.89 MB/s
+int 4k: 3156.12 MB/s
+
+int 4k: 3151.91 MB/s
+int 4k: 3157.53 MB/s
+int 4k: 3157.12 MB/s
+int 4k: 3151.18 MB/s
+int 4k: 3143.33 MB/s
+int 4k: 2501.07 MB/s
+int 512k: 2714.30 MB/s
+int 512k: 2606.45 MB/s
+int 512k: 2409.34 MB/s
+int 512k: 2521.95 MB/s
+int 512k: 2476.51 MB/s
+int 512k: 2394.54 MB/s
+int 512k: 2377.40 MB/s
+int 512k: 2366.54 MB/s
+int 512k: 2253.46 MB/s
+int 512k: 2259.99 MB/s
+int 512k: 2217.18 MB/s
+int 512k: 2189.74 MB/s
+int 512k: 2107.69 MB/s
+int 512k: 2085.68 MB/s
+int 512k: 1943.85 MB/s
+int 8M: 506.05 MB/s
+int 8M: 509.82 MB/s
+int 8M: 433.33 MB/s
+int 8M: 407.30 MB/s
+int 8M: 404.70 MB/s
+int 8M: 406.84 MB/s
+int 8M: 412.96 MB/s
+int 8M: 408.74 MB/s
+int 8M: 408.87 MB/s
+int 8M: 411.36 MB/s
+int 8M: 406.57 MB/s
+int 8M: 405.76 MB/s
+int 8M: 398.62 MB/s
+int 8M: 399.59 MB/s
+int 8M: 395.52 MB/s
+int 8M: 395.80 MB/s
+int 32M: 451.06 MB/s
+int 32M: 472.02 MB/s
+long 4k: 8744.71 MB/s
+long 4k: 8681.03 MB/s
+long 512k: 4717.39 MB/s
+long 512k: 4778.02 MB/s
+int 32M: 655.74 MB/s
+long 4k: 8725.13 MB/s
+long 8M: 1721.52 MB/s
+long 8M: 1719.09 MB/s
+long 512k: 4738.02 MB/s
+int 32M: 454.29 MB/s
+long 4k: 8570.98 MB/s
+int 32M: 414.55 MB/s
+long 4k: 8696.55 MB/s
+long 512k: 4268.20 MB/s
+int 32M: 413.40 MB/s
+int 32M: 407.00 MB/s
+int 32M: 416.65 MB/s
+long 4k: 8710.16 MB/s
+long 4k: 8440.09 MB/s
+int 32M: 411.20 MB/s
+int 32M: 414.13 MB/s
+int 32M: 415.96 MB/s
+int 32M: 403.23 MB/s
+long 4k: 8608.34 MB/s
+int 32M: 397.28 MB/s
+int 32M: 416.07 MB/s
+int 32M: 414.38 MB/s
+long 4k: 8472.34 MB/s
+long 4k: 8610.57 MB/s
+long 4k: 8387.95 MB/s
+long 4k: 8513.71 MB/s
+long 4k: 8339.75 MB/s
+int 32M: 397.64 MB/s
+long 4k: 8461.17 MB/s
+long 4k: 8258.16 MB/s
+long 512k: 4351.15 MB/s
+long 4k: 8583.49 MB/s
+long 512k: 4493.85 MB/s
+long 512k: 4453.90 MB/s
+long 512k: 4518.98 MB/s
+long 512k: 4515.52 MB/s
+long 512k: 4500.29 MB/s
+long 512k: 4509.70 MB/s
+long 512k: 4493.76 MB/s
+long 512k: 4505.25 MB/s
+long 512k: 4493.05 MB/s
+long 512k: 4465.68 MB/s
+long 512k: 4490.77 MB/s
+long 8M: 489.94 MB/s
+long 32M: 438.65 MB/s
+Average: 2815.47 MB/s
+int 4k: 3231.24 MB/sint 4k: 3222.48 MB/s
+int 4k: 3160.79 MB/s
+int 4k: 3231.22 MB/s
+int 4k: 3218.75 MB/s
+int 4k: 3230.91 MB/s
+int 4k: 3229.81 MB/sint 4k: 3227.95 MB/s
+int 4k: 3230.88 MB/s
+int 4k: 3230.29 MB/s
+int 4k: 3228.91 MB/s
+int 4k: 3230.77 MB/sint 4k: 3230.99 MB/sint 4k: 3228.17 MB/s
+
+
+int 4k: 3230.06 MB/s
+
+int 4k: 3229.15 MB/s
+int 512k: 2565.29 MB/s
+int 512k: 2043.41 MB/s
+int 512k: 1938.42 MB/s
+int 512k: 2354.31 MB/s
+int 512k: 2040.28 MB/s
+int 512k: 1991.15 MB/s
+int 512k: 1682.44 MB/s
+int 512k: 1984.48 MB/s
+int 512k: 1856.45 MB/s
+int 512k: 1697.10 MB/s
+int 512k: 1717.89 MB/s
+int 512k: 1675.15 MB/s
+int 512k: 1629.33 MB/s
+int 512k: 1445.77 MB/s
+int 512k: 1374.10 MB/s
+int 512k: 1209.09 MB/s
+int 8M: 1404.79 MB/s
+int 8M: 1114.41 MB/s
+int 8M: 1044.55 MB/s
+int 8M: 1351.61 MB/s
+int 8M: 1368.90 MB/s
+int 8M: 1305.63 MB/s
+int 8M: 1315.10 MB/s
+int 8M: 1233.35 MB/s
+int 8M: 1270.62 MB/s
+int 8M: 1127.81 MB/s
+int 8M: 1046.41 MB/s
+int 8M: 762.34 MB/s
+int 8M: 639.03 MB/s
+int 8M: 626.53 MB/s
+int 8M: 606.31 MB/s
+int 8M: 737.65 MB/s
+int 32M: 682.44 MB/s
+long 4k: 1552.12 MB/s
+long 512k: 4746.43 MB/s
+int 32M: 557.54 MB/s
+long 4k: 8731.24 MB/s
+int 32M: 461.04 MB/s
+int 32M: 471.00 MB/s
+long 4k: 8707.34 MB/s
+long 4k: 7425.20 MB/s
+long 512k: 4402.54 MB/s
+int 32M: 522.51 MB/s
+long 4k: 8720.01 MB/s
+long 512k: 4542.39 MB/s
+long 512k: 4516.64 MB/s
+long 512k: 4671.84 MB/s
+int 32M: 446.92 MB/s
+long 4k: 8737.41 MB/s
+int 32M: 417.59 MB/s
+long 4k: 8621.01 MB/s
+int 32M: 451.18 MB/s
+long 4k: 8716.74 MB/s
+long 512k: 4481.87 MB/s
+long 512k: 4326.90 MB/s
+int 32M: 444.64 MB/s
+long 4k: 8735.45 MB/s
+int 32M: 442.26 MB/s
+long 4k: 8621.77 MB/s
+long 512k: 4484.41 MB/s
+int 32M: 447.74 MB/s
+long 4k: 1211.25 MB/s
+long 512k: 2508.78 MB/s
+int 32M: 455.39 MB/s
+long 512k: 3798.27 MB/s
+long 4k: 7019.52 MB/s
+long 512k: 4516.02 MB/s
+long 512k: 4491.97 MB/s
+int 32M: 466.04 MB/s
+long 4k: 8660.85 MB/s
+int 32M: 470.34 MB/s
+long 4k: 8603.09 MB/s
+long 512k: 4697.31 MB/s
+int 32M: 476.84 MB/s
+long 4k: 8719.00 MB/s
+long 512k: 4372.51 MB/s
+int 32M: 529.78 MB/s
+long 4k: 8606.05 MB/s
+long 512k: 4557.18 MB/s
+long 512k: 4746.28 MB/s
+long 8M: 1741.68 MB/s
+long 8M: 1721.81 MB/s
+long 8M: 1694.97 MB/s
+long 8M: 1695.15 MB/s
+long 8M: 1751.57 MB/s
+long 8M: 1819.26 MB/s
+long 8M: 1813.73 MB/s
+long 8M: 1787.56 MB/s
+long 8M: 1685.25 MB/s
+long 8M: 1754.52 MB/s
+long 8M: 1623.72 MB/s
+long 8M: 1785.20 MB/s
+long 8M: 1815.15 MB/s
+long 8M: 1739.38 MB/s
+long 8M: 1691.36 MB/s
+long 8M: 1753.02 MB/s
+long 32M: 788.65 MB/s
+Average: 2768.30 MB/s
+long 32M: 509.73 MB/s
+Average: 2779.78 MB/s
+long 32M: 480.46 MB/s
+Average: 2746.51 MB/s
+long 32M: 494.07 MB/s
+Average: 1886.54 MB/s
+long 32M: 511.65 MB/s
+Average: 2705.27 MB/s
+long 32M: 503.04 MB/s
+Average: 1817.22 MB/s
+long 32M: 472.52 MB/s
+Average: 2522.48 MB/s
+long 32M: 487.34 MB/s
+Average: 2860.98 MB/s
+long 32M: 482.88 MB/s
+Average: 2709.71 MB/s
+long 32M: 470.75 MB/s
+Average: 2696.99 MB/s
+long 32M: 469.95 MB/s
+Average: 2715.67 MB/s
+long 32M: 478.91 MB/s
+Average: 2779.98 MB/s
+long 32M: 482.49 MB/s
+Average: 2598.05 MB/s
+long 32M: 492.47 MB/s
+Average: 2482.89 MB/s
+long 32M: 504.66 MB/s
+Average: 2825.25 MB/s
+long 32M: 510.68 MB/s
+Average: 2699.17 MB/s
+int 4k: 3229.43 MB/s
+
+int 4k: 3229.72 MB/s
+int 4k: 3229.93 MB/s
+int 4k: 3230.06 MB/s
+int 4k: 3216.94 MB/s
+int 4k: 3191.14 MB/s
+int 4k: 3162.89 MB/s
+int 4k: 3156.12 MB/s
+
+int 4k: 3151.91 MB/s
+int 4k: 3157.53 MB/s
+int 4k: 3157.12 MB/s
+int 4k: 3151.18 MB/s
+int 4k: 3143.33 MB/s
+int 4k: 2501.07 MB/s
+int 512k: 2714.30 MB/s
+int 512k: 2606.45 MB/s
+int 512k: 2409.34 MB/s
+int 512k: 2521.95 MB/s
+int 512k: 2476.51 MB/s
+int 512k: 2394.54 MB/s
+int 512k: 2377.40 MB/s
+int 512k: 2366.54 MB/s
+int 512k: 2253.46 MB/s
+int 512k: 2259.99 MB/s
+int 512k: 2217.18 MB/s
+int 512k: 2189.74 MB/s
+int 512k: 2107.69 MB/s
+int 512k: 2085.68 MB/s
+int 512k: 1943.85 MB/s
+int 8M: 506.05 MB/s
+int 8M: 509.82 MB/s
+int 8M: 433.33 MB/s
+int 8M: 407.30 MB/s
+int 8M: 404.70 MB/s
+int 8M: 406.84 MB/s
+int 8M: 412.96 MB/s
+int 8M: 408.74 MB/s
+int 8M: 408.87 MB/s
+int 8M: 411.36 MB/s
+int 8M: 406.57 MB/s
+int 8M: 405.76 MB/s
+int 8M: 398.62 MB/s
+int 8M: 399.59 MB/s
+int 8M: 395.52 MB/s
+int 8M: 395.80 MB/s
+int 32M: 451.06 MB/s
+int 32M: 472.02 MB/s
+long 4k: 8744.71 MB/s
+long 4k: 8681.03 MB/s
+long 512k: 4717.39 MB/s
+long 512k: 4778.02 MB/s
+int 32M: 655.74 MB/s
+long 4k: 8725.13 MB/s
+long 8M: 1721.52 MB/s
+long 8M: 1719.09 MB/s
+long 512k: 4738.02 MB/s
+int 32M: 454.29 MB/s
+long 4k: 8570.98 MB/s
+int 32M: 414.55 MB/s
+long 4k: 8696.55 MB/s
+long 512k: 4268.20 MB/s
+int 32M: 413.40 MB/s
+int 32M: 407.00 MB/s
+int 32M: 416.65 MB/s
+long 4k: 8710.16 MB/s
+long 4k: 8440.09 MB/s
+int 32M: 411.20 MB/s
+int 32M: 414.13 MB/s
+int 32M: 415.96 MB/s
+int 32M: 403.23 MB/s
+long 4k: 8608.34 MB/s
+int 32M: 397.28 MB/s
+int 32M: 416.07 MB/s
+int 32M: 414.38 MB/s
+long 4k: 8472.34 MB/s
+long 4k: 8610.57 MB/s
+long 4k: 8387.95 MB/s
+long 4k: 8513.71 MB/s
+long 4k: 8339.75 MB/s
+int 32M: 397.64 MB/s
+long 4k: 8461.17 MB/s
+long 4k: 8258.16 MB/s
+long 512k: 4351.15 MB/s
+long 4k: 8583.49 MB/s
+long 512k: 4493.85 MB/s
+long 512k: 4453.90 MB/s
+long 512k: 4518.98 MB/s
+long 512k: 4515.52 MB/s
+long 512k: 4500.29 MB/s
+long 512k: 4509.70 MB/s
+long 512k: 4493.76 MB/s
+long 512k: 4505.25 MB/s
+long 512k: 4493.05 MB/s
+long 512k: 4465.68 MB/s
+long 512k: 4490.77 MB/s
+long 8M: 489.94 MB/s
+long 32M: 438.65 MB/s
+Average: 2815.47 MB/s
+long 32M: 437.86 MB/s
+Average: 2811.44 MB/s
+long 8M: 504.93 MB/s
+long 8M: 465.46 MB/s
+long 8M: 448.44 MB/s
+long 8M: 452.35 MB/s
+long 8M: 456.74 MB/s
+long 8M: 458.18 MB/s
+long 8M: 455.35 MB/s
+long 8M: 448.23 MB/s
+long 8M: 454.59 MB/s
+long 8M: 453.53 MB/s
+long 8M: 448.20 MB/s
+long 8M: 445.31 MB/s
+long 8M: 447.83 MB/s
+long 32M: 462.87 MB/s
+Average: 2613.80 MB/s
+long 32M: 490.00 MB/s
+Average: 2528.50 MB/s
+int 4k: 3231.24 MB/sint 4k: 3222.48 MB/s
+int 4k: 3160.79 MB/s
+int 4k: 3231.22 MB/s
+int 4k: 3218.75 MB/s
+int 4k: 3230.91 MB/s
+int 4k: 3229.81 MB/sint 4k: 3227.95 MB/s
+int 4k: 3230.88 MB/s
+int 4k: 3230.29 MB/s
+int 4k: 3228.91 MB/s
+int 4k: 3230.77 MB/sint 4k: 3230.99 MB/sint 4k: 3228.17 MB/s
+
+
+int 4k: 3230.06 MB/s
+
+int 4k: 3229.15 MB/s
+int 512k: 2565.29 MB/s
+int 512k: 2043.41 MB/s
+int 512k: 1938.42 MB/s
+int 512k: 2354.31 MB/s
+int 512k: 2040.28 MB/s
+int 512k: 1991.15 MB/s
+int 512k: 1682.44 MB/s
+int 512k: 1984.48 MB/s
+int 512k: 1856.45 MB/s
+int 512k: 1697.10 MB/s
+int 512k: 1717.89 MB/s
+int 512k: 1675.15 MB/s
+int 512k: 1629.33 MB/s
+int 512k: 1445.77 MB/s
+int 512k: 1374.10 MB/s
+int 512k: 1209.09 MB/s
+int 8M: 1404.79 MB/s
+int 8M: 1114.41 MB/s
+int 8M: 1044.55 MB/s
+int 8M: 1351.61 MB/s
+int 8M: 1368.90 MB/s
+int 8M: 1305.63 MB/s
+int 8M: 1315.10 MB/s
+int 8M: 1233.35 MB/s
+int 8M: 1270.62 MB/s
+int 8M: 1127.81 MB/s
+int 8M: 1046.41 MB/s
+int 8M: 762.34 MB/s
+int 8M: 639.03 MB/s
+int 8M: 626.53 MB/s
+int 8M: 606.31 MB/s
+int 8M: 737.65 MB/s
+int 32M: 682.44 MB/s
+long 4k: 1552.12 MB/s
+long 512k: 4746.43 MB/s
+int 32M: 557.54 MB/s
+long 4k: 8731.24 MB/s
+int 32M: 461.04 MB/s
+int 32M: 471.00 MB/s
+long 4k: 8707.34 MB/s
+long 4k: 7425.20 MB/s
+long 512k: 4402.54 MB/s
+int 32M: 522.51 MB/s
+long 4k: 8720.01 MB/s
+long 512k: 4542.39 MB/s
+long 512k: 4516.64 MB/s
+long 512k: 4671.84 MB/s
+int 32M: 446.92 MB/s
+long 4k: 8737.41 MB/s
+int 32M: 417.59 MB/s
+long 4k: 8621.01 MB/s
+int 32M: 451.18 MB/s
+long 4k: 8716.74 MB/s
+long 512k: 4481.87 MB/s
+long 512k: 4326.90 MB/s
+int 32M: 444.64 MB/s
+long 4k: 8735.45 MB/s
+int 32M: 442.26 MB/s
+long 4k: 8621.77 MB/s
+long 512k: 4484.41 MB/s
+int 32M: 447.74 MB/s
+long 4k: 1211.25 MB/s
+long 512k: 2508.78 MB/s
+int 32M: 455.39 MB/s
+long 512k: 3798.27 MB/s
+long 4k: 7019.52 MB/s
+long 512k: 4516.02 MB/s
+long 512k: 4491.97 MB/s
+int 32M: 466.04 MB/s
+long 4k: 8660.85 MB/s
+int 32M: 470.34 MB/s
+long 4k: 8603.09 MB/s
+long 512k: 4697.31 MB/s
+int 32M: 476.84 MB/s
+long 4k: 8719.00 MB/s
+long 512k: 4372.51 MB/s
+int 32M: 529.78 MB/s
+long 4k: 8606.05 MB/s
+long 512k: 4557.18 MB/s
+long 512k: 4746.28 MB/s
+long 8M: 1741.68 MB/s
+long 8M: 1721.81 MB/s
+long 8M: 1694.97 MB/s
+long 8M: 1695.15 MB/s
+long 8M: 1751.57 MB/s
+long 8M: 1819.26 MB/s
+long 8M: 1813.73 MB/s
+long 8M: 1787.56 MB/s
+long 8M: 1685.25 MB/s
+long 8M: 1754.52 MB/s
+long 8M: 1623.72 MB/s
+long 8M: 1785.20 MB/s
+long 8M: 1815.15 MB/s
+long 8M: 1739.38 MB/s
+long 8M: 1691.36 MB/s
+long 8M: 1753.02 MB/s
+long 32M: 788.65 MB/s
+Average: 2768.30 MB/s
+long 32M: 509.73 MB/s
+Average: 2779.78 MB/s
+long 32M: 480.46 MB/s
+Average: 2746.51 MB/s
+long 32M: 494.07 MB/s
+Average: 1886.54 MB/s
+long 32M: 511.65 MB/s
+Average: 2705.27 MB/s
+long 32M: 503.04 MB/s
+Average: 1817.22 MB/s
+long 32M: 472.52 MB/s
+Average: 2522.48 MB/s
+long 32M: 487.34 MB/s
+Average: 2860.98 MB/s
+long 32M: 482.88 MB/s
+Average: 2709.71 MB/s
+long 32M: 470.75 MB/s
+Average: 2696.99 MB/s
+long 32M: 469.95 MB/s
+Average: 2715.67 MB/s
+long 32M: 478.91 MB/s
+Average: 2779.98 MB/s
+long 32M: 482.49 MB/s
+Average: 2598.05 MB/s
+long 32M: 492.47 MB/s
+Average: 2482.89 MB/s
+long 32M: 504.66 MB/s
+Average: 2825.25 MB/s
+long 32M: 510.68 MB/s
+Average: 2699.17 MB/s
+int 4k: 3229.43 MB/s
+
+int 4k: 3229.72 MB/s
+int 4k: 3229.93 MB/s
+int 4k: 3230.06 MB/s
+int 4k: 3216.94 MB/s
+int 4k: 3191.14 MB/s
+int 4k: 3162.89 MB/s
+int 4k: 3156.12 MB/s
+
+int 4k: 3151.91 MB/s
+int 4k: 3157.53 MB/s
+int 4k: 3157.12 MB/s
+int 4k: 3151.18 MB/s
+int 4k: 3143.33 MB/s
+int 4k: 2501.07 MB/s
+int 512k: 2714.30 MB/s
+int 512k: 2606.45 MB/s
+int 512k: 2409.34 MB/s
+int 512k: 2521.95 MB/s
+int 512k: 2476.51 MB/s
+int 512k: 2394.54 MB/s
+int 512k: 2377.40 MB/s
+int 512k: 2366.54 MB/s
+int 512k: 2253.46 MB/s
+int 512k: 2259.99 MB/s
+int 512k: 2217.18 MB/s
+int 512k: 2189.74 MB/s
+int 512k: 2107.69 MB/s
+int 512k: 2085.68 MB/s
+int 512k: 1943.85 MB/s
+int 8M: 506.05 MB/s
+int 8M: 509.82 MB/s
+int 8M: 433.33 MB/s
+int 8M: 407.30 MB/s
+int 8M: 404.70 MB/s
+int 8M: 406.84 MB/s
+int 8M: 412.96 MB/s
+int 8M: 408.74 MB/s
+int 8M: 408.87 MB/s
+int 8M: 411.36 MB/s
+int 8M: 406.57 MB/s
+int 8M: 405.76 MB/s
+int 8M: 398.62 MB/s
+int 8M: 399.59 MB/s
+int 8M: 395.52 MB/s
+int 8M: 395.80 MB/s
+int 32M: 451.06 MB/s
+int 32M: 472.02 MB/s
+long 4k: 8744.71 MB/s
+long 4k: 8681.03 MB/s
+long 512k: 4717.39 MB/s
+long 512k: 4778.02 MB/s
+int 32M: 655.74 MB/s
+long 4k: 8725.13 MB/s
+long 8M: 1721.52 MB/s
+long 8M: 1719.09 MB/s
+long 512k: 4738.02 MB/s
+int 32M: 454.29 MB/s
+long 4k: 8570.98 MB/s
+int 32M: 414.55 MB/s
+long 4k: 8696.55 MB/s
+long 512k: 4268.20 MB/s
+int 32M: 413.40 MB/s
+int 32M: 407.00 MB/s
+int 32M: 416.65 MB/s
+long 4k: 8710.16 MB/s
+long 4k: 8440.09 MB/s
+int 32M: 411.20 MB/s
+int 32M: 414.13 MB/s
+int 32M: 415.96 MB/s
+int 32M: 403.23 MB/s
+long 4k: 8608.34 MB/s
+int 32M: 397.28 MB/s
+int 32M: 416.07 MB/s
+int 32M: 414.38 MB/s
+long 4k: 8472.34 MB/s
+long 4k: 8610.57 MB/s
+long 4k: 8387.95 MB/s
+long 4k: 8513.71 MB/s
+long 4k: 8339.75 MB/s
+int 32M: 397.64 MB/s
+long 4k: 8461.17 MB/s
+long 4k: 8258.16 MB/s
+long 512k: 4351.15 MB/s
+long 4k: 8583.49 MB/s
+long 512k: 4493.85 MB/s
+long 512k: 4453.90 MB/s
+long 512k: 4518.98 MB/s
+long 512k: 4515.52 MB/s
+long 512k: 4500.29 MB/s
+long 512k: 4509.70 MB/s
+long 512k: 4493.76 MB/s
+long 512k: 4505.25 MB/s
+long 512k: 4493.05 MB/s
+long 512k: 4465.68 MB/s
+long 512k: 4490.77 MB/s
+long 8M: 489.94 MB/s
+long 32M: 438.65 MB/s
+Average: 2815.47 MB/s
+long 32M: 437.86 MB/s
+Average: 2811.44 MB/s
+long 8M: 504.93 MB/s
+long 8M: 465.46 MB/s
+long 8M: 448.44 MB/s
+long 8M: 452.35 MB/s
+long 8M: 456.74 MB/s
+long 8M: 458.18 MB/s
+long 8M: 455.35 MB/s
+long 8M: 448.23 MB/s
+long 8M: 454.59 MB/s
+long 8M: 453.53 MB/s
+long 8M: 448.20 MB/s
+long 8M: 445.31 MB/s
+long 8M: 447.83 MB/s
+long 32M: 462.87 MB/s
+Average: 2613.80 MB/s
+long 32M: 490.00 MB/s
+Average: 2528.50 MB/s
+long 32M: 488.75 MB/s
+Average: 2582.45 MB/s
+long 32M: 470.04 MB/s
+Average: 2534.04 MB/s
+long 32M: 474.97 MB/s
+Average: 2383.98 MB/s
+long 32M: 474.78 MB/s
+Average: 2573.56 MB/s
+long 32M: 475.65 MB/s
+Average: 2500.14 MB/s
+long 32M: 468.18 MB/s
+Average: 2547.86 MB/s
+long 32M: 461.61 MB/s
+Average: 2544.61 MB/s
+int 4k: 3231.24 MB/sint 4k: 3222.48 MB/s
+int 4k: 3160.79 MB/s
+int 4k: 3231.22 MB/s
+int 4k: 3218.75 MB/s
+int 4k: 3230.91 MB/s
+int 4k: 3229.81 MB/sint 4k: 3227.95 MB/s
+int 4k: 3230.88 MB/s
+int 4k: 3230.29 MB/s
+int 4k: 3228.91 MB/s
+int 4k: 3230.77 MB/sint 4k: 3230.99 MB/sint 4k: 3228.17 MB/s
+
+
+int 4k: 3230.06 MB/s
+
+int 4k: 3229.15 MB/s
+int 512k: 2565.29 MB/s
+int 512k: 2043.41 MB/s
+int 512k: 1938.42 MB/s
+int 512k: 2354.31 MB/s
+int 512k: 2040.28 MB/s
+int 512k: 1991.15 MB/s
+int 512k: 1682.44 MB/s
+int 512k: 1984.48 MB/s
+int 512k: 1856.45 MB/s
+int 512k: 1697.10 MB/s
+int 512k: 1717.89 MB/s
+int 512k: 1675.15 MB/s
+int 512k: 1629.33 MB/s
+int 512k: 1445.77 MB/s
+int 512k: 1374.10 MB/s
+int 512k: 1209.09 MB/s
+int 8M: 1404.79 MB/s
+int 8M: 1114.41 MB/s
+int 8M: 1044.55 MB/s
+int 8M: 1351.61 MB/s
+int 8M: 1368.90 MB/s
+int 8M: 1305.63 MB/s
+int 8M: 1315.10 MB/s
+int 8M: 1233.35 MB/s
+int 8M: 1270.62 MB/s
+int 8M: 1127.81 MB/s
+int 8M: 1046.41 MB/s
+int 8M: 762.34 MB/s
+int 8M: 639.03 MB/s
+int 8M: 626.53 MB/s
+int 8M: 606.31 MB/s
+int 8M: 737.65 MB/s
+int 32M: 682.44 MB/s
+long 4k: 1552.12 MB/s
+long 512k: 4746.43 MB/s
+int 32M: 557.54 MB/s
+long 4k: 8731.24 MB/s
+int 32M: 461.04 MB/s
+int 32M: 471.00 MB/s
+long 4k: 8707.34 MB/s
+long 4k: 7425.20 MB/s
+long 512k: 4402.54 MB/s
+int 32M: 522.51 MB/s
+long 4k: 8720.01 MB/s
+long 512k: 4542.39 MB/s
+long 512k: 4516.64 MB/s
+long 512k: 4671.84 MB/s
+int 32M: 446.92 MB/s
+long 4k: 8737.41 MB/s
+int 32M: 417.59 MB/s
+long 4k: 8621.01 MB/s
+int 32M: 451.18 MB/s
+long 4k: 8716.74 MB/s
+long 512k: 4481.87 MB/s
+long 512k: 4326.90 MB/s
+int 32M: 444.64 MB/s
+long 4k: 8735.45 MB/s
+int 32M: 442.26 MB/s
+long 4k: 8621.77 MB/s
+long 512k: 4484.41 MB/s
+int 32M: 447.74 MB/s
+long 4k: 1211.25 MB/s
+long 512k: 2508.78 MB/s
+int 32M: 455.39 MB/s
+long 512k: 3798.27 MB/s
+long 4k: 7019.52 MB/s
+long 512k: 4516.02 MB/s
+long 512k: 4491.97 MB/s
+int 32M: 466.04 MB/s
+long 4k: 8660.85 MB/s
+int 32M: 470.34 MB/s
+long 4k: 8603.09 MB/s
+long 512k: 4697.31 MB/s
+int 32M: 476.84 MB/s
+long 4k: 8719.00 MB/s
+long 512k: 4372.51 MB/s
+int 32M: 529.78 MB/s
+long 4k: 8606.05 MB/s
+long 512k: 4557.18 MB/s
+long 512k: 4746.28 MB/s
+long 8M: 1741.68 MB/s
+long 8M: 1721.81 MB/s
+long 8M: 1694.97 MB/s
+long 8M: 1695.15 MB/s
+long 8M: 1751.57 MB/s
+long 8M: 1819.26 MB/s
+long 8M: 1813.73 MB/s
+long 8M: 1787.56 MB/s
+long 8M: 1685.25 MB/s
+long 8M: 1754.52 MB/s
+long 8M: 1623.72 MB/s
+long 8M: 1785.20 MB/s
+long 8M: 1815.15 MB/s
+long 8M: 1739.38 MB/s
+long 8M: 1691.36 MB/s
+long 8M: 1753.02 MB/s
+long 32M: 788.65 MB/s
+Average: 2768.30 MB/s
+long 32M: 509.73 MB/s
+Average: 2779.78 MB/s
+long 32M: 480.46 MB/s
+Average: 2746.51 MB/s
+long 32M: 494.07 MB/s
+Average: 1886.54 MB/s
+long 32M: 511.65 MB/s
+Average: 2705.27 MB/s
+long 32M: 503.04 MB/s
+Average: 1817.22 MB/s
+long 32M: 472.52 MB/s
+Average: 2522.48 MB/s
+long 32M: 487.34 MB/s
+Average: 2860.98 MB/s
+long 32M: 482.88 MB/s
+Average: 2709.71 MB/s
+long 32M: 470.75 MB/s
+Average: 2696.99 MB/s
+long 32M: 469.95 MB/s
+Average: 2715.67 MB/s
+long 32M: 478.91 MB/s
+Average: 2779.98 MB/s
+long 32M: 482.49 MB/s
+Average: 2598.05 MB/s
+long 32M: 492.47 MB/s
+Average: 2482.89 MB/s
+long 32M: 504.66 MB/s
+Average: 2825.25 MB/s
+long 32M: 510.68 MB/s
+Average: 2699.17 MB/s
+int 4k: 3229.43 MB/s
+
+int 4k: 3229.72 MB/s
+int 4k: 3229.93 MB/s
+int 4k: 3230.06 MB/s
+int 4k: 3216.94 MB/s
+int 4k: 3191.14 MB/s
+int 4k: 3162.89 MB/s
+int 4k: 3156.12 MB/s
+
+int 4k: 3151.91 MB/s
+int 4k: 3157.53 MB/s
+int 4k: 3157.12 MB/s
+int 4k: 3151.18 MB/s
+int 4k: 3143.33 MB/s
+int 4k: 2501.07 MB/s
+int 512k: 2714.30 MB/s
+int 512k: 2606.45 MB/s
+int 512k: 2409.34 MB/s
+int 512k: 2521.95 MB/s
+int 512k: 2476.51 MB/s
+int 512k: 2394.54 MB/s
+int 512k: 2377.40 MB/s
+int 512k: 2366.54 MB/s
+int 512k: 2253.46 MB/s
+int 512k: 2259.99 MB/s
+int 512k: 2217.18 MB/s
+int 512k: 2189.74 MB/s
+int 512k: 2107.69 MB/s
+int 512k: 2085.68 MB/s
+int 512k: 1943.85 MB/s
+int 8M: 506.05 MB/s
+int 8M: 509.82 MB/s
+int 8M: 433.33 MB/s
+int 8M: 407.30 MB/s
+int 8M: 404.70 MB/s
+int 8M: 406.84 MB/s
+int 8M: 412.96 MB/s
+int 8M: 408.74 MB/s
+int 8M: 408.87 MB/s
+int 8M: 411.36 MB/s
+int 8M: 406.57 MB/s
+int 8M: 405.76 MB/s
+int 8M: 398.62 MB/s
+int 8M: 399.59 MB/s
+int 8M: 395.52 MB/s
+int 8M: 395.80 MB/s
+int 32M: 451.06 MB/s
+int 32M: 472.02 MB/s
+long 4k: 8744.71 MB/s
+long 4k: 8681.03 MB/s
+long 512k: 4717.39 MB/s
+long 512k: 4778.02 MB/s
+int 32M: 655.74 MB/s
+long 4k: 8725.13 MB/s
+long 8M: 1721.52 MB/s
+long 8M: 1719.09 MB/s
+long 512k: 4738.02 MB/s
+int 32M: 454.29 MB/s
+long 4k: 8570.98 MB/s
+int 32M: 414.55 MB/s
+long 4k: 8696.55 MB/s
+long 512k: 4268.20 MB/s
+int 32M: 413.40 MB/s
+int 32M: 407.00 MB/s
+int 32M: 416.65 MB/s
+long 4k: 8710.16 MB/s
+long 4k: 8440.09 MB/s
+int 32M: 411.20 MB/s
+int 32M: 414.13 MB/s
+int 32M: 415.96 MB/s
+int 32M: 403.23 MB/s
+long 4k: 8608.34 MB/s
+int 32M: 397.28 MB/s
+int 32M: 416.07 MB/s
+int 32M: 414.38 MB/s
+long 4k: 8472.34 MB/s
+long 4k: 8610.57 MB/s
+long 4k: 8387.95 MB/s
+long 4k: 8513.71 MB/s
+long 4k: 8339.75 MB/s
+int 32M: 397.64 MB/s
+long 4k: 8461.17 MB/s
+long 4k: 8258.16 MB/s
+long 512k: 4351.15 MB/s
+long 4k: 8583.49 MB/s
+long 512k: 4493.85 MB/s
+long 512k: 4453.90 MB/s
+long 512k: 4518.98 MB/s
+long 512k: 4515.52 MB/s
+long 512k: 4500.29 MB/s
+long 512k: 4509.70 MB/s
+long 512k: 4493.76 MB/s
+long 512k: 4505.25 MB/s
+long 512k: 4493.05 MB/s
+long 512k: 4465.68 MB/s
+long 512k: 4490.77 MB/s
+long 8M: 489.94 MB/s
+long 32M: 438.65 MB/s
+Average: 2815.47 MB/s
+long 32M: 437.86 MB/s
+Average: 2811.44 MB/s
+int 4k: 3231.24 MB/sint 4k: 3222.48 MB/s
+int 4k: 3160.79 MB/s
+int 4k: 3231.22 MB/s
+int 4k: 3218.75 MB/s
+int 4k: 3230.91 MB/s
+int 4k: 3229.81 MB/sint 4k: 3227.95 MB/s
+int 4k: 3230.88 MB/s
+int 4k: 3230.29 MB/s
+int 4k: 3228.91 MB/s
+int 4k: 3230.77 MB/sint 4k: 3230.99 MB/sint 4k: 3228.17 MB/s
+
+
+int 4k: 3230.06 MB/s
+
+int 4k: 3229.15 MB/s
+int 512k: 2565.29 MB/s
+int 512k: 2043.41 MB/s
+int 512k: 1938.42 MB/s
+int 512k: 2354.31 MB/s
+int 512k: 2040.28 MB/s
+int 512k: 1991.15 MB/s
+int 512k: 1682.44 MB/s
+int 512k: 1984.48 MB/s
+int 512k: 1856.45 MB/s
+int 512k: 1697.10 MB/s
+int 512k: 1717.89 MB/s
+int 512k: 1675.15 MB/s
+int 512k: 1629.33 MB/s
+int 512k: 1445.77 MB/s
+int 512k: 1374.10 MB/s
+int 512k: 1209.09 MB/s
+int 8M: 1404.79 MB/s
+int 8M: 1114.41 MB/s
+int 8M: 1044.55 MB/s
+int 8M: 1351.61 MB/s
+int 8M: 1368.90 MB/s
+int 8M: 1305.63 MB/s
+int 8M: 1315.10 MB/s
+int 8M: 1233.35 MB/s
+int 8M: 1270.62 MB/s
+int 8M: 1127.81 MB/s
+int 8M: 1046.41 MB/s
+int 8M: 762.34 MB/s
+int 8M: 639.03 MB/s
+int 8M: 626.53 MB/s
+int 8M: 606.31 MB/s
+int 8M: 737.65 MB/s
+int 32M: 682.44 MB/s
+long 4k: 1552.12 MB/s
+long 512k: 4746.43 MB/s
+int 32M: 557.54 MB/s
+long 4k: 8731.24 MB/s
+int 32M: 461.04 MB/s
+int 32M: 471.00 MB/s
+long 4k: 8707.34 MB/s
+long 4k: 7425.20 MB/s
+long 512k: 4402.54 MB/s
+int 32M: 522.51 MB/s
+long 4k: 8720.01 MB/s
+long 512k: 4542.39 MB/s
+long 512k: 4516.64 MB/s
+long 512k: 4671.84 MB/s
+int 32M: 446.92 MB/s
+long 4k: 8737.41 MB/s
+int 32M: 417.59 MB/s
+long 4k: 8621.01 MB/s
+int 32M: 451.18 MB/s
+long 4k: 8716.74 MB/s
+long 512k: 4481.87 MB/s
+long 512k: 4326.90 MB/s
+int 32M: 444.64 MB/s
+long 4k: 8735.45 MB/s
+int 32M: 442.26 MB/s
+long 4k: 8621.77 MB/s
+long 512k: 4484.41 MB/s
+int 32M: 447.74 MB/s
+long 4k: 1211.25 MB/s
+long 512k: 2508.78 MB/s
+int 32M: 455.39 MB/s
+long 512k: 3798.27 MB/s
+long 4k: 7019.52 MB/s
+long 512k: 4516.02 MB/s
+long 512k: 4491.97 MB/s
+int 32M: 466.04 MB/s
+long 4k: 8660.85 MB/s
+int 32M: 470.34 MB/s
+long 4k: 8603.09 MB/s
+long 512k: 4697.31 MB/s
+int 32M: 476.84 MB/s
+long 4k: 8719.00 MB/s
+long 512k: 4372.51 MB/s
+int 32M: 529.78 MB/s
+long 4k: 8606.05 MB/s
+long 512k: 4557.18 MB/s
+long 512k: 4746.28 MB/s
+long 8M: 1741.68 MB/s
+long 8M: 1721.81 MB/s
+long 8M: 1694.97 MB/s
+long 8M: 1695.15 MB/s
+long 8M: 1751.57 MB/s
+long 8M: 1819.26 MB/s
+long 8M: 1813.73 MB/s
+long 8M: 1787.56 MB/s
+long 8M: 1685.25 MB/s
+long 8M: 1754.52 MB/s
+long 8M: 1623.72 MB/s
+long 8M: 1785.20 MB/s
+long 8M: 1815.15 MB/s
+long 8M: 1739.38 MB/s
+long 8M: 1691.36 MB/s
+long 8M: 1753.02 MB/s
+long 32M: 788.65 MB/s
+Average: 2768.30 MB/s
+long 32M: 509.73 MB/s
+Average: 2779.78 MB/s
+long 32M: 480.46 MB/s
+Average: 2746.51 MB/s
+long 32M: 494.07 MB/s
+Average: 1886.54 MB/s
+long 32M: 511.65 MB/s
+Average: 2705.27 MB/s
+long 32M: 503.04 MB/s
+Average: 1817.22 MB/s
+long 32M: 472.52 MB/s
+Average: 2522.48 MB/s
+long 32M: 487.34 MB/s
+Average: 2860.98 MB/s
+long 32M: 482.88 MB/s
+Average: 2709.71 MB/s
+long 32M: 470.75 MB/s
+Average: 2696.99 MB/s
+long 32M: 469.95 MB/s
+Average: 2715.67 MB/s
+long 32M: 478.91 MB/s
+Average: 2779.98 MB/s
+long 32M: 482.49 MB/s
+Average: 2598.05 MB/s
+long 32M: 492.47 MB/s
+Average: 2482.89 MB/s
+long 32M: 504.66 MB/s
+Average: 2825.25 MB/s
+long 32M: 510.68 MB/s
+Average: 2699.17 MB/s
+int 4k: 3229.43 MB/s
+
+int 4k: 3229.72 MB/s
+int 4k: 3229.93 MB/s
+int 4k: 3230.06 MB/s
+int 4k: 3216.94 MB/s
+int 4k: 3191.14 MB/s
+int 4k: 3162.89 MB/s
+int 4k: 3156.12 MB/s
+
+int 4k: 3151.91 MB/s
+int 4k: 3157.53 MB/s
+int 4k: 3157.12 MB/s
+int 4k: 3151.18 MB/s
+int 4k: 3143.33 MB/s
+int 4k: 2501.07 MB/s
+int 512k: 2714.30 MB/s
+int 512k: 2606.45 MB/s
+int 512k: 2409.34 MB/s
+int 512k: 2521.95 MB/s
+int 512k: 2476.51 MB/s
+int 512k: 2394.54 MB/s
+int 512k: 2377.40 MB/s
+int 512k: 2366.54 MB/s
+int 512k: 2253.46 MB/s
+int 512k: 2259.99 MB/s
+int 512k: 2217.18 MB/s
+int 512k: 2189.74 MB/s
+int 512k: 2107.69 MB/s
+int 512k: 2085.68 MB/s
+int 512k: 1943.85 MB/s
+int 8M: 506.05 MB/s
+int 8M: 509.82 MB/s
+int 8M: 433.33 MB/s
+int 8M: 407.30 MB/s
+int 8M: 404.70 MB/s
+int 8M: 406.84 MB/s
+int 8M: 412.96 MB/s
+int 8M: 408.74 MB/s
+int 8M: 408.87 MB/s
+int 8M: 411.36 MB/s
+int 8M: 406.57 MB/s
+int 8M: 405.76 MB/s
+int 8M: 398.62 MB/s
+int 8M: 399.59 MB/s
+int 8M: 395.52 MB/s
+int 8M: 395.80 MB/s
+int 32M: 451.06 MB/s
+int 32M: 472.02 MB/s
+long 4k: 8744.71 MB/s
+long 4k: 8681.03 MB/s
+long 512k: 4717.39 MB/s
+long 512k: 4778.02 MB/s
+int 32M: 655.74 MB/s
+long 4k: 8725.13 MB/s
+long 8M: 1721.52 MB/s
+long 8M: 1719.09 MB/s
+long 512k: 4738.02 MB/s
+int 32M: 454.29 MB/s
+long 4k: 8570.98 MB/s
+int 32M: 414.55 MB/s
+long 4k: 8696.55 MB/s
+long 512k: 4268.20 MB/s
+int 32M: 413.40 MB/s
+int 32M: 407.00 MB/s
+int 32M: 416.65 MB/s
+long 4k: 8710.16 MB/s
+long 4k: 8440.09 MB/s
+int 32M: 411.20 MB/s
+int 32M: 414.13 MB/s
+int 32M: 415.96 MB/s
+int 32M: 403.23 MB/s
+long 4k: 8608.34 MB/s
+int 32M: 397.28 MB/s
+int 32M: 416.07 MB/s
+int 32M: 414.38 MB/s
+long 4k: 8472.34 MB/s
+long 4k: 8610.57 MB/s
+long 4k: 8387.95 MB/s
+long 4k: 8513.71 MB/s
+long 4k: 8339.75 MB/s
+int 32M: 397.64 MB/s
+long 4k: 8461.17 MB/s
+long 4k: 8258.16 MB/s
+long 512k: 4351.15 MB/s
+long 4k: 8583.49 MB/s
+long 512k: 4493.85 MB/s
+long 512k: 4453.90 MB/s
+long 512k: 4518.98 MB/s
+long 512k: 4515.52 MB/s
+long 512k: 4500.29 MB/s
+long 512k: 4509.70 MB/s
+long 512k: 4493.76 MB/s
+long 512k: 4505.25 MB/s
+long 512k: 4493.05 MB/s
+long 512k: 4465.68 MB/s
+long 512k: 4490.77 MB/s
+long 8M: 489.94 MB/s
+long 32M: 438.65 MB/s
+Average: 2815.47 MB/s
+long 32M: 437.86 MB/s
+Average: 2811.44 MB/s
+long 8M: 504.93 MB/s
+long 8M: 465.46 MB/s
+long 8M: 448.44 MB/s
+long 8M: 452.35 MB/s
+long 8M: 456.74 MB/s
+long 8M: 458.18 MB/s
+long 8M: 455.35 MB/s
+long 8M: 448.23 MB/s
+long 8M: 454.59 MB/s
+long 8M: 453.53 MB/s
+long 8M: 448.20 MB/s
+long 8M: 445.31 MB/s
+long 8M: 447.83 MB/s
+long 32M: 462.87 MB/s
+Average: 2613.80 MB/s
+long 32M: 490.00 MB/s
+Average: 2528.50 MB/s
+long 32M: 488.75 MB/s
+Average: 2582.45 MB/s
+long 32M: 470.04 MB/s
+Average: 2534.04 MB/s
+long 32M: 474.97 MB/s
+Average: 2383.98 MB/s
+long 32M: 474.78 MB/s
+Average: 2573.56 MB/s
+int 4k: 3231.24 MB/sint 4k: 3222.48 MB/s
+int 4k: 3160.79 MB/s
+int 4k: 3231.22 MB/s
+int 4k: 3218.75 MB/s
+int 4k: 3230.91 MB/s
+int 4k: 3229.81 MB/sint 4k: 3227.95 MB/s
+int 4k: 3230.88 MB/s
+int 4k: 3230.29 MB/s
+int 4k: 3228.91 MB/s
+int 4k: 3230.77 MB/sint 4k: 3230.99 MB/sint 4k: 3228.17 MB/s
+
+
+int 4k: 3230.06 MB/s
+
+int 4k: 3229.15 MB/s
+int 512k: 2565.29 MB/s
+int 512k: 2043.41 MB/s
+int 512k: 1938.42 MB/s
+int 512k: 2354.31 MB/s
+int 512k: 2040.28 MB/s
+int 512k: 1991.15 MB/s
+int 512k: 1682.44 MB/s
+int 512k: 1984.48 MB/s
+int 512k: 1856.45 MB/s
+int 512k: 1697.10 MB/s
+int 512k: 1717.89 MB/s
+int 512k: 1675.15 MB/s
+int 512k: 1629.33 MB/s
+int 512k: 1445.77 MB/s
+int 512k: 1374.10 MB/s
+int 512k: 1209.09 MB/s
+int 8M: 1404.79 MB/s
+int 8M: 1114.41 MB/s
+int 8M: 1044.55 MB/s
+int 8M: 1351.61 MB/s
+int 8M: 1368.90 MB/s
+int 8M: 1305.63 MB/s
+int 8M: 1315.10 MB/s
+int 8M: 1233.35 MB/s
+int 8M: 1270.62 MB/s
+int 8M: 1127.81 MB/s
+int 8M: 1046.41 MB/s
+int 8M: 762.34 MB/s
+int 8M: 639.03 MB/s
+int 8M: 626.53 MB/s
+int 8M: 606.31 MB/s
+int 8M: 737.65 MB/s
+int 32M: 682.44 MB/s
+long 4k: 1552.12 MB/s
+long 512k: 4746.43 MB/s
+int 32M: 557.54 MB/s
+long 4k: 8731.24 MB/s
+int 32M: 461.04 MB/s
+int 32M: 471.00 MB/s
+long 4k: 8707.34 MB/s
+long 4k: 7425.20 MB/s
+long 512k: 4402.54 MB/s
+int 32M: 522.51 MB/s
+long 4k: 8720.01 MB/s
+long 512k: 4542.39 MB/s
+long 512k: 4516.64 MB/s
+long 512k: 4671.84 MB/s
+int 32M: 446.92 MB/s
+long 4k: 8737.41 MB/s
+int 32M: 417.59 MB/s
+long 4k: 8621.01 MB/s
+int 32M: 451.18 MB/s
+long 4k: 8716.74 MB/s
+long 512k: 4481.87 MB/s
+long 512k: 4326.90 MB/s
+int 32M: 444.64 MB/s
+long 4k: 8735.45 MB/s
+int 32M: 442.26 MB/s
+long 4k: 8621.77 MB/s
+long 512k: 4484.41 MB/s
+int 32M: 447.74 MB/s
+long 4k: 1211.25 MB/s
+long 512k: 2508.78 MB/s
+int 32M: 455.39 MB/s
+long 512k: 3798.27 MB/s
+long 4k: 7019.52 MB/s
+long 512k: 4516.02 MB/s
+long 512k: 4491.97 MB/s
+int 32M: 466.04 MB/s
+long 4k: 8660.85 MB/s
+int 32M: 470.34 MB/s
+long 4k: 8603.09 MB/s
+long 512k: 4697.31 MB/s
+int 32M: 476.84 MB/s
+long 4k: 8719.00 MB/s
+long 512k: 4372.51 MB/s
+int 32M: 529.78 MB/s
+long 4k: 8606.05 MB/s
+long 512k: 4557.18 MB/s
+long 512k: 4746.28 MB/s
+long 8M: 1741.68 MB/s
+long 8M: 1721.81 MB/s
+long 8M: 1694.97 MB/s
+long 8M: 1695.15 MB/s
+long 8M: 1751.57 MB/s
+long 8M: 1819.26 MB/s
+long 8M: 1813.73 MB/s
+long 8M: 1787.56 MB/s
+long 8M: 1685.25 MB/s
+long 8M: 1754.52 MB/s
+long 8M: 1623.72 MB/s
+long 8M: 1785.20 MB/s
+long 8M: 1815.15 MB/s
+long 8M: 1739.38 MB/s
+long 8M: 1691.36 MB/s
+long 8M: 1753.02 MB/s
+long 32M: 788.65 MB/s
+Average: 2768.30 MB/s
+long 32M: 509.73 MB/s
+Average: 2779.78 MB/s
+long 32M: 480.46 MB/s
+Average: 2746.51 MB/s
+long 32M: 494.07 MB/s
+Average: 1886.54 MB/s
+long 32M: 511.65 MB/s
+Average: 2705.27 MB/s
+long 32M: 503.04 MB/s
+Average: 1817.22 MB/s
+long 32M: 472.52 MB/s
+Average: 2522.48 MB/s
+long 32M: 487.34 MB/s
+Average: 2860.98 MB/s
+long 32M: 482.88 MB/s
+Average: 2709.71 MB/s
+long 32M: 470.75 MB/s
+Average: 2696.99 MB/s
+long 32M: 469.95 MB/s
+Average: 2715.67 MB/s
+long 32M: 478.91 MB/s
+Average: 2779.98 MB/s
+long 32M: 482.49 MB/s
+Average: 2598.05 MB/s
+long 32M: 492.47 MB/s
+Average: 2482.89 MB/s
+long 32M: 504.66 MB/s
+Average: 2825.25 MB/s
+long 32M: 510.68 MB/s
+Average: 2699.17 MB/s
+int 4k: 3229.43 MB/s
+
+int 4k: 3229.72 MB/s
+int 4k: 3229.93 MB/s
+int 4k: 3230.06 MB/s
+int 4k: 3216.94 MB/s
+int 4k: 3191.14 MB/s
+int 4k: 3162.89 MB/s
+int 4k: 3156.12 MB/s
+
+int 4k: 3151.91 MB/s
+int 4k: 3157.53 MB/s
+int 4k: 3157.12 MB/s
+int 4k: 3151.18 MB/s
+int 4k: 3143.33 MB/s
+int 4k: 2501.07 MB/s
+int 512k: 2714.30 MB/s
+int 512k: 2606.45 MB/s
+int 512k: 2409.34 MB/s
+int 512k: 2521.95 MB/s
+int 512k: 2476.51 MB/s
+int 512k: 2394.54 MB/s
+int 512k: 2377.40 MB/s
+int 512k: 2366.54 MB/s
+int 512k: 2253.46 MB/s
+int 512k: 2259.99 MB/s
+int 512k: 2217.18 MB/s
+int 512k: 2189.74 MB/s
+int 512k: 2107.69 MB/s
+int 512k: 2085.68 MB/s
+int 512k: 1943.85 MB/s
+int 8M: 506.05 MB/s
+int 8M: 509.82 MB/s
+int 8M: 433.33 MB/s
+int 8M: 407.30 MB/s
+int 8M: 404.70 MB/s
+int 8M: 406.84 MB/s
+int 8M: 412.96 MB/s
+int 8M: 408.74 MB/s
+int 8M: 408.87 MB/s
+int 8M: 411.36 MB/s
+int 8M: 406.57 MB/s
+int 8M: 405.76 MB/s
+int 8M: 398.62 MB/s
+int 8M: 399.59 MB/s
+int 8M: 395.52 MB/s
+int 8M: 395.80 MB/s
+int 32M: 451.06 MB/s
+int 32M: 472.02 MB/s
+long 4k: 8744.71 MB/s
+long 4k: 8681.03 MB/s
+long 512k: 4717.39 MB/s
+long 512k: 4778.02 MB/s
+int 32M: 655.74 MB/s
+long 4k: 8725.13 MB/s
+long 8M: 1721.52 MB/s
+long 8M: 1719.09 MB/s
+long 512k: 4738.02 MB/s
+int 32M: 454.29 MB/s
+long 4k: 8570.98 MB/s
+int 32M: 414.55 MB/s
+long 4k: 8696.55 MB/s
+long 512k: 4268.20 MB/s
+int 32M: 413.40 MB/s
+int 32M: 407.00 MB/s
+int 32M: 416.65 MB/s
+long 4k: 8710.16 MB/s
+long 4k: 8440.09 MB/s
+int 32M: 411.20 MB/s
+int 32M: 414.13 MB/s
+int 32M: 415.96 MB/s
+int 32M: 403.23 MB/s
+long 4k: 8608.34 MB/s
+int 32M: 397.28 MB/s
+int 32M: 416.07 MB/s
+int 32M: 414.38 MB/s
+long 4k: 8472.34 MB/s
+long 4k: 8610.57 MB/s
+long 4k: 8387.95 MB/s
+long 4k: 8513.71 MB/s
+long 4k: 8339.75 MB/s
+int 32M: 397.64 MB/s
+long 4k: 8461.17 MB/s
+long 4k: 8258.16 MB/s
+long 512k: 4351.15 MB/s
+long 4k: 8583.49 MB/s
+long 512k: 4493.85 MB/s
+long 512k: 4453.90 MB/s
+long 512k: 4518.98 MB/s
+long 512k: 4515.52 MB/s
+long 512k: 4500.29 MB/s
+long 512k: 4509.70 MB/s
+long 512k: 4493.76 MB/s
+long 512k: 4505.25 MB/s
+long 512k: 4493.05 MB/s
+long 512k: 4465.68 MB/s
+long 512k: 4490.77 MB/s
+long 8M: 489.94 MB/s
+long 32M: 438.65 MB/s
+Average: 2815.47 MB/s
+long 32M: 437.86 MB/s
+Average: 2811.44 MB/s
+long 8M: 504.93 MB/s
+long 8M: 465.46 MB/s
+long 8M: 448.44 MB/s
+long 8M: 452.35 MB/s
+long 8M: 456.74 MB/s
+long 8M: 458.18 MB/s
+long 8M: 455.35 MB/s
+long 8M: 448.23 MB/s
+long 8M: 454.59 MB/s
+long 8M: 453.53 MB/s
+long 8M: 448.20 MB/s
+long 8M: 445.31 MB/s
+long 8M: 447.83 MB/s
+long 32M: 462.87 MB/s
+Average: 2613.80 MB/s
+long 32M: 490.00 MB/s
+Average: 2528.50 MB/s
+long 32M: 488.75 MB/s
+Average: 2582.45 MB/s
+long 32M: 470.04 MB/s
+Average: 2534.04 MB/s
+long 32M: 474.97 MB/s
+Average: 2383.98 MB/s
+int 4k: 3231.24 MB/sint 4k: 3222.48 MB/s
+int 4k: 3160.79 MB/s
+int 4k: 3231.22 MB/s
+int 4k: 3218.75 MB/s
+int 4k: 3230.91 MB/s
+int 4k: 3229.81 MB/sint 4k: 3227.95 MB/s
+int 4k: 3230.88 MB/s
+int 4k: 3230.29 MB/s
+int 4k: 3228.91 MB/s
+int 4k: 3230.77 MB/sint 4k: 3230.99 MB/sint 4k: 3228.17 MB/s
+
+
+int 4k: 3230.06 MB/s
+
+int 4k: 3229.15 MB/s
+int 512k: 2565.29 MB/s
+int 512k: 2043.41 MB/s
+int 512k: 1938.42 MB/s
+int 512k: 2354.31 MB/s
+int 512k: 2040.28 MB/s
+int 512k: 1991.15 MB/s
+int 512k: 1682.44 MB/s
+int 512k: 1984.48 MB/s
+int 512k: 1856.45 MB/s
+int 512k: 1697.10 MB/s
+int 512k: 1717.89 MB/s
+int 512k: 1675.15 MB/s
+int 512k: 1629.33 MB/s
+int 512k: 1445.77 MB/s
+int 512k: 1374.10 MB/s
+int 512k: 1209.09 MB/s
+int 8M: 1404.79 MB/s
+int 8M: 1114.41 MB/s
+int 8M: 1044.55 MB/s
+int 8M: 1351.61 MB/s
+int 8M: 1368.90 MB/s
+int 8M: 1305.63 MB/s
+int 8M: 1315.10 MB/s
+int 8M: 1233.35 MB/s
+int 8M: 1270.62 MB/s
+int 8M: 1127.81 MB/s
+int 8M: 1046.41 MB/s
+int 8M: 762.34 MB/s
+int 8M: 639.03 MB/s
+int 8M: 626.53 MB/s
+int 8M: 606.31 MB/s
+int 8M: 737.65 MB/s
+int 32M: 682.44 MB/s
+long 4k: 1552.12 MB/s
+long 512k: 4746.43 MB/s
+int 32M: 557.54 MB/s
+long 4k: 8731.24 MB/s
+int 32M: 461.04 MB/s
+int 32M: 471.00 MB/s
+long 4k: 8707.34 MB/s
+long 4k: 7425.20 MB/s
+long 512k: 4402.54 MB/s
+int 32M: 522.51 MB/s
+long 4k: 8720.01 MB/s
+long 512k: 4542.39 MB/s
+long 512k: 4516.64 MB/s
+long 512k: 4671.84 MB/s
+int 32M: 446.92 MB/s
+long 4k: 8737.41 MB/s
+int 32M: 417.59 MB/s
+long 4k: 8621.01 MB/s
+int 32M: 451.18 MB/s
+long 4k: 8716.74 MB/s
+long 512k: 4481.87 MB/s
+long 512k: 4326.90 MB/s
+int 32M: 444.64 MB/s
+long 4k: 8735.45 MB/s
+int 32M: 442.26 MB/s
+long 4k: 8621.77 MB/s
+long 512k: 4484.41 MB/s
+int 32M: 447.74 MB/s
+long 4k: 1211.25 MB/s
+long 512k: 2508.78 MB/s
+int 32M: 455.39 MB/s
+long 512k: 3798.27 MB/s
+long 4k: 7019.52 MB/s
+long 512k: 4516.02 MB/s
+long 512k: 4491.97 MB/s
+int 32M: 466.04 MB/s
+long 4k: 8660.85 MB/s
+int 32M: 470.34 MB/s
+long 4k: 8603.09 MB/s
+long 512k: 4697.31 MB/s
+int 32M: 476.84 MB/s
+long 4k: 8719.00 MB/s
+long 512k: 4372.51 MB/s
+int 32M: 529.78 MB/s
+long 4k: 8606.05 MB/s
+long 512k: 4557.18 MB/s
+long 512k: 4746.28 MB/s
+long 8M: 1741.68 MB/s
+long 8M: 1721.81 MB/s
+long 8M: 1694.97 MB/s
+long 8M: 1695.15 MB/s
+long 8M: 1751.57 MB/s
+long 8M: 1819.26 MB/s
+long 8M: 1813.73 MB/s
+long 8M: 1787.56 MB/s
+long 8M: 1685.25 MB/s
+long 8M: 1754.52 MB/s
+long 8M: 1623.72 MB/s
+long 8M: 1785.20 MB/s
+long 8M: 1815.15 MB/s
+long 8M: 1739.38 MB/s
+long 8M: 1691.36 MB/s
+long 8M: 1753.02 MB/s
+long 32M: 788.65 MB/s
+Average: 2768.30 MB/s
+long 32M: 509.73 MB/s
+Average: 2779.78 MB/s
+long 32M: 480.46 MB/s
+Average: 2746.51 MB/s
+long 32M: 494.07 MB/s
+Average: 1886.54 MB/s
+long 32M: 511.65 MB/s
+Average: 2705.27 MB/s
+long 32M: 503.04 MB/s
+Average: 1817.22 MB/s
+long 32M: 472.52 MB/s
+Average: 2522.48 MB/s
+long 32M: 487.34 MB/s
+Average: 2860.98 MB/s
+long 32M: 482.88 MB/s
+Average: 2709.71 MB/s
+long 32M: 470.75 MB/s
+Average: 2696.99 MB/s
+long 32M: 469.95 MB/s
+Average: 2715.67 MB/s
+long 32M: 478.91 MB/s
+Average: 2779.98 MB/s
+long 32M: 482.49 MB/s
+Average: 2598.05 MB/s
+long 32M: 492.47 MB/s
+Average: 2482.89 MB/s
+long 32M: 504.66 MB/s
+Average: 2825.25 MB/s
+long 32M: 510.68 MB/s
+Average: 2699.17 MB/s
+int 4k: 3229.43 MB/s
+
+int 4k: 3229.72 MB/s
+int 4k: 3229.93 MB/s
+int 4k: 3230.06 MB/s
+int 4k: 3216.94 MB/s
+int 4k: 3191.14 MB/s
+int 4k: 3162.89 MB/s
+int 4k: 3156.12 MB/s
+
+int 4k: 3151.91 MB/s
+int 4k: 3157.53 MB/s
+int 4k: 3157.12 MB/s
+int 4k: 3151.18 MB/s
+int 4k: 3143.33 MB/s
+int 4k: 2501.07 MB/s
+int 512k: 2714.30 MB/s
+int 512k: 2606.45 MB/s
+int 512k: 2409.34 MB/s
+int 512k: 2521.95 MB/s
+int 512k: 2476.51 MB/s
+int 512k: 2394.54 MB/s
+int 512k: 2377.40 MB/s
+int 512k: 2366.54 MB/s
+int 512k: 2253.46 MB/s
+int 512k: 2259.99 MB/s
+int 512k: 2217.18 MB/s
+int 512k: 2189.74 MB/s
+int 512k: 2107.69 MB/s
+int 512k: 2085.68 MB/s
+int 512k: 1943.85 MB/s
+int 8M: 506.05 MB/s
+int 8M: 509.82 MB/s
+int 8M: 433.33 MB/s
+int 8M: 407.30 MB/s
+int 8M: 404.70 MB/s
+int 8M: 406.84 MB/s
+int 8M: 412.96 MB/s
+int 8M: 408.74 MB/s
+int 8M: 408.87 MB/s
+int 8M: 411.36 MB/s
+int 8M: 406.57 MB/s
+int 8M: 405.76 MB/s
+int 8M: 398.62 MB/s
+int 8M: 399.59 MB/s
+int 8M: 395.52 MB/s
+int 8M: 395.80 MB/s
+int 32M: 451.06 MB/s
+int 32M: 472.02 MB/s
+long 4k: 8744.71 MB/s
+long 4k: 8681.03 MB/s
+long 512k: 4717.39 MB/s
+long 512k: 4778.02 MB/s
+int 32M: 655.74 MB/s
+long 4k: 8725.13 MB/s
+long 8M: 1721.52 MB/s
+long 8M: 1719.09 MB/s
+long 512k: 4738.02 MB/s
+int 32M: 454.29 MB/s
+long 4k: 8570.98 MB/s
+int 32M: 414.55 MB/s
+long 4k: 8696.55 MB/s
+long 512k: 4268.20 MB/s
+int 32M: 413.40 MB/s
+int 32M: 407.00 MB/s
+int 32M: 416.65 MB/s
+long 4k: 8710.16 MB/s
+long 4k: 8440.09 MB/s
+int 32M: 411.20 MB/s
+int 32M: 414.13 MB/s
+int 32M: 415.96 MB/s
+int 32M: 403.23 MB/s
+long 4k: 8608.34 MB/s
+int 32M: 397.28 MB/s
+int 32M: 416.07 MB/s
+int 32M: 414.38 MB/s
+long 4k: 8472.34 MB/s
+long 4k: 8610.57 MB/s
+long 4k: 8387.95 MB/s
+long 4k: 8513.71 MB/s
+long 4k: 8339.75 MB/s
+int 32M: 397.64 MB/s
+long 4k: 8461.17 MB/s
+long 4k: 8258.16 MB/s
+long 512k: 4351.15 MB/s
+long 4k: 8583.49 MB/s
+long 512k: 4493.85 MB/s
+long 512k: 4453.90 MB/s
+long 512k: 4518.98 MB/s
+long 512k: 4515.52 MB/s
+long 512k: 4500.29 MB/s
+long 512k: 4509.70 MB/s
+long 512k: 4493.76 MB/s
+long 512k: 4505.25 MB/s
+long 512k: 4493.05 MB/s
+long 512k: 4465.68 MB/s
+long 512k: 4490.77 MB/s
+long 8M: 489.94 MB/s
+long 32M: 438.65 MB/s
+Average: 2815.47 MB/s
+long 32M: 437.86 MB/s
+Average: 2811.44 MB/s
+long 8M: 504.93 MB/s
+long 8M: 465.46 MB/s
+long 8M: 448.44 MB/s
+long 8M: 452.35 MB/s
+long 8M: 456.74 MB/s
+long 8M: 458.18 MB/s
+long 8M: 455.35 MB/s
+long 8M: 448.23 MB/s
+long 8M: 454.59 MB/s
+long 8M: 453.53 MB/s
+long 8M: 448.20 MB/s
+long 8M: 445.31 MB/s
+long 8M: 447.83 MB/s
+long 32M: 462.87 MB/s
+Average: 2613.80 MB/s
+long 32M: 490.00 MB/s
+Average: 2528.50 MB/s
+long 32M: 488.75 MB/s
+Average: 2582.45 MB/s
+long 32M: 470.04 MB/s
+Average: 2534.04 MB/s
+long 32M: 474.97 MB/s
+Average: 2383.98 MB/s
+long 32M: 474.78 MB/s
+Average: 2573.56 MB/s
+long 32M: 475.65 MB/s
+Average: 2500.14 MB/s
+long 32M: 468.18 MB/s
+Average: 2547.86 MB/s
+long 32M: 461.61 MB/s
+Average: 2544.61 MB/s
+long 32M: 470.47 MB/s
+Average: 2541.80 MB/s
+int 4k: 3231.24 MB/sint 4k: 3222.48 MB/s
+int 4k: 3160.79 MB/s
+int 4k: 3231.22 MB/s
+int 4k: 3218.75 MB/s
+int 4k: 3230.91 MB/s
+int 4k: 3229.81 MB/sint 4k: 3227.95 MB/s
+int 4k: 3230.88 MB/s
+int 4k: 3230.29 MB/s
+int 4k: 3228.91 MB/s
+int 4k: 3230.77 MB/sint 4k: 3230.99 MB/sint 4k: 3228.17 MB/s
+
+
+int 4k: 3230.06 MB/s
+
+int 4k: 3229.15 MB/s
+int 512k: 2565.29 MB/s
+int 512k: 2043.41 MB/s
+int 512k: 1938.42 MB/s
+int 512k: 2354.31 MB/s
+int 512k: 2040.28 MB/s
+int 512k: 1991.15 MB/s
+int 512k: 1682.44 MB/s
+int 512k: 1984.48 MB/s
+int 512k: 1856.45 MB/s
+int 512k: 1697.10 MB/s
+int 512k: 1717.89 MB/s
+int 512k: 1675.15 MB/s
+int 512k: 1629.33 MB/s
+int 512k: 1445.77 MB/s
+int 512k: 1374.10 MB/s
+int 512k: 1209.09 MB/s
+int 8M: 1404.79 MB/s
+int 8M: 1114.41 MB/s
+int 8M: 1044.55 MB/s
+int 8M: 1351.61 MB/s
+int 8M: 1368.90 MB/s
+int 8M: 1305.63 MB/s
+int 8M: 1315.10 MB/s
+int 8M: 1233.35 MB/s
+int 8M: 1270.62 MB/s
+int 8M: 1127.81 MB/s
+int 8M: 1046.41 MB/s
+int 8M: 762.34 MB/s
+int 8M: 639.03 MB/s
+int 8M: 626.53 MB/s
+int 8M: 606.31 MB/s
+int 8M: 737.65 MB/s
+int 32M: 682.44 MB/s
+long 4k: 1552.12 MB/s
+long 512k: 4746.43 MB/s
+int 32M: 557.54 MB/s
+long 4k: 8731.24 MB/s
+int 32M: 461.04 MB/s
+int 32M: 471.00 MB/s
+long 4k: 8707.34 MB/s
+long 4k: 7425.20 MB/s
+long 512k: 4402.54 MB/s
+int 32M: 522.51 MB/s
+long 4k: 8720.01 MB/s
+long 512k: 4542.39 MB/s
+long 512k: 4516.64 MB/s
+long 512k: 4671.84 MB/s
+int 32M: 446.92 MB/s
+long 4k: 8737.41 MB/s
+int 32M: 417.59 MB/s
+long 4k: 8621.01 MB/s
+int 32M: 451.18 MB/s
+long 4k: 8716.74 MB/s
+long 512k: 4481.87 MB/s
+long 512k: 4326.90 MB/s
+int 32M: 444.64 MB/s
+long 4k: 8735.45 MB/s
+int 32M: 442.26 MB/s
+long 4k: 8621.77 MB/s
+long 512k: 4484.41 MB/s
+int 32M: 447.74 MB/s
+long 4k: 1211.25 MB/s
+long 512k: 2508.78 MB/s
+int 32M: 455.39 MB/s
+long 512k: 3798.27 MB/s
+long 4k: 7019.52 MB/s
+long 512k: 4516.02 MB/s
+long 512k: 4491.97 MB/s
+int 32M: 466.04 MB/s
+long 4k: 8660.85 MB/s
+int 32M: 470.34 MB/s
+long 4k: 8603.09 MB/s
+long 512k: 4697.31 MB/s
+int 32M: 476.84 MB/s
+long 4k: 8719.00 MB/s
+long 512k: 4372.51 MB/s
+int 32M: 529.78 MB/s
+long 4k: 8606.05 MB/s
+long 512k: 4557.18 MB/s
+long 512k: 4746.28 MB/s
+long 8M: 1741.68 MB/s
+long 8M: 1721.81 MB/s
+long 8M: 1694.97 MB/s
+long 8M: 1695.15 MB/s
+long 8M: 1751.57 MB/s
+long 8M: 1819.26 MB/s
+long 8M: 1813.73 MB/s
+long 8M: 1787.56 MB/s
+long 8M: 1685.25 MB/s
+long 8M: 1754.52 MB/s
+long 8M: 1623.72 MB/s
+long 8M: 1785.20 MB/s
+long 8M: 1815.15 MB/s
+long 8M: 1739.38 MB/s
+long 8M: 1691.36 MB/s
+long 8M: 1753.02 MB/s
+long 32M: 788.65 MB/s
+Average: 2768.30 MB/s
+long 32M: 509.73 MB/s
+Average: 2779.78 MB/s
+long 32M: 480.46 MB/s
+Average: 2746.51 MB/s
+long 32M: 494.07 MB/s
+Average: 1886.54 MB/s
+long 32M: 511.65 MB/s
+Average: 2705.27 MB/s
+long 32M: 503.04 MB/s
+Average: 1817.22 MB/s
+long 32M: 472.52 MB/s
+Average: 2522.48 MB/s
+long 32M: 487.34 MB/s
+Average: 2860.98 MB/s
+long 32M: 482.88 MB/s
+Average: 2709.71 MB/s
+long 32M: 470.75 MB/s
+Average: 2696.99 MB/s
+long 32M: 469.95 MB/s
+Average: 2715.67 MB/s
+long 32M: 478.91 MB/s
+Average: 2779.98 MB/s
+long 32M: 482.49 MB/s
+Average: 2598.05 MB/s
+long 32M: 492.47 MB/s
+Average: 2482.89 MB/s
+long 32M: 504.66 MB/s
+Average: 2825.25 MB/s
+long 32M: 510.68 MB/s
+Average: 2699.17 MB/s
+int 4k: 3229.43 MB/s
+
+int 4k: 3229.72 MB/s
+int 4k: 3229.93 MB/s
+int 4k: 3230.06 MB/s
+int 4k: 3216.94 MB/s
+int 4k: 3191.14 MB/s
+int 4k: 3162.89 MB/s
+int 4k: 3156.12 MB/s
+
+int 4k: 3151.91 MB/s
+int 4k: 3157.53 MB/s
+int 4k: 3157.12 MB/s
+int 4k: 3151.18 MB/s
+int 4k: 3143.33 MB/s
+int 4k: 2501.07 MB/s
+int 512k: 2714.30 MB/s
+int 512k: 2606.45 MB/s
+int 512k: 2409.34 MB/s
+int 512k: 2521.95 MB/s
+int 512k: 2476.51 MB/s
+int 512k: 2394.54 MB/s
+int 512k: 2377.40 MB/s
+int 512k: 2366.54 MB/s
+int 512k: 2253.46 MB/s
+int 512k: 2259.99 MB/s
+int 512k: 2217.18 MB/s
+int 512k: 2189.74 MB/s
+int 512k: 2107.69 MB/s
+int 512k: 2085.68 MB/s
+int 512k: 1943.85 MB/s
+int 8M: 506.05 MB/s
+int 8M: 509.82 MB/s
+int 8M: 433.33 MB/s
+int 8M: 407.30 MB/s
+int 8M: 404.70 MB/s
+int 8M: 406.84 MB/s
+int 8M: 412.96 MB/s
+int 8M: 408.74 MB/s
+int 8M: 408.87 MB/s
+int 8M: 411.36 MB/s
+int 8M: 406.57 MB/s
+int 8M: 405.76 MB/s
+int 8M: 398.62 MB/s
+int 8M: 399.59 MB/s
+int 8M: 395.52 MB/s
+int 8M: 395.80 MB/s
+int 32M: 451.06 MB/s
+int 32M: 472.02 MB/s
+long 4k: 8744.71 MB/s
+long 4k: 8681.03 MB/s
+long 512k: 4717.39 MB/s
+long 512k: 4778.02 MB/s
+int 32M: 655.74 MB/s
+long 4k: 8725.13 MB/s
+long 8M: 1721.52 MB/s
+long 8M: 1719.09 MB/s
+long 512k: 4738.02 MB/s
+int 32M: 454.29 MB/s
+long 4k: 8570.98 MB/s
+int 32M: 414.55 MB/s
+long 4k: 8696.55 MB/s
+long 512k: 4268.20 MB/s
+int 32M: 413.40 MB/s
+int 32M: 407.00 MB/s
+int 32M: 416.65 MB/s
+long 4k: 8710.16 MB/s
+long 4k: 8440.09 MB/s
+int 32M: 411.20 MB/s
+int 32M: 414.13 MB/s
+int 32M: 415.96 MB/s
+int 32M: 403.23 MB/s
+long 4k: 8608.34 MB/s
+int 32M: 397.28 MB/s
+int 32M: 416.07 MB/s
+int 32M: 414.38 MB/s
+long 4k: 8472.34 MB/s
+long 4k: 8610.57 MB/s
+long 4k: 8387.95 MB/s
+long 4k: 8513.71 MB/s
+long 4k: 8339.75 MB/s
+int 32M: 397.64 MB/s
+long 4k: 8461.17 MB/s
+long 4k: 8258.16 MB/s
+long 512k: 4351.15 MB/s
+long 4k: 8583.49 MB/s
+long 512k: 4493.85 MB/s
+long 512k: 4453.90 MB/s
+long 512k: 4518.98 MB/s
+long 512k: 4515.52 MB/s
+long 512k: 4500.29 MB/s
+long 512k: 4509.70 MB/s
+long 512k: 4493.76 MB/s
+long 512k: 4505.25 MB/s
+long 512k: 4493.05 MB/s
+long 512k: 4465.68 MB/s
+long 512k: 4490.77 MB/s
+long 8M: 489.94 MB/s
+long 32M: 438.65 MB/s
+Average: 2815.47 MB/s
+long 32M: 437.86 MB/s
+Average: 2811.44 MB/s
+long 8M: 504.93 MB/s
+long 8M: 465.46 MB/s
+long 8M: 448.44 MB/s
+long 8M: 452.35 MB/s
+long 8M: 456.74 MB/s
+long 8M: 458.18 MB/s
+long 8M: 455.35 MB/s
+long 8M: 448.23 MB/s
+long 8M: 454.59 MB/s
+long 8M: 453.53 MB/s
+long 8M: 448.20 MB/s
+long 8M: 445.31 MB/s
+long 8M: 447.83 MB/s
+long 32M: 462.87 MB/s
+Average: 2613.80 MB/s
+long 32M: 490.00 MB/s
+Average: 2528.50 MB/s
+long 32M: 488.75 MB/s
+Average: 2582.45 MB/s
+long 32M: 470.04 MB/s
+Average: 2534.04 MB/s
+long 32M: 474.97 MB/s
+Average: 2383.98 MB/s
+long 32M: 474.78 MB/s
+Average: 2573.56 MB/s
+long 32M: 475.65 MB/s
+Average: 2500.14 MB/s
+long 32M: 468.18 MB/s
+Average: 2547.86 MB/s
+long 32M: 461.61 MB/s
+Average: 2544.61 MB/s
+long 32M: 470.47 MB/s
+Average: 2541.80 MB/s
+long 32M: 468.04 MB/s
+Average: 2492.80 MB/s
+long 32M: 462.61 MB/s
+Average: 2478.66 MB/s
+int 4k: 3231.24 MB/sint 4k: 3222.48 MB/s
+int 4k: 3160.79 MB/s
+int 4k: 3231.22 MB/s
+int 4k: 3218.75 MB/s
+int 4k: 3230.91 MB/s
+int 4k: 3229.81 MB/sint 4k: 3227.95 MB/s
+int 4k: 3230.88 MB/s
+int 4k: 3230.29 MB/s
+int 4k: 3228.91 MB/s
+int 4k: 3230.77 MB/sint 4k: 3230.99 MB/sint 4k: 3228.17 MB/s
+
+
+int 4k: 3230.06 MB/s
+
+int 4k: 3229.15 MB/s
+int 512k: 2565.29 MB/s
+int 512k: 2043.41 MB/s
+int 512k: 1938.42 MB/s
+int 512k: 2354.31 MB/s
+int 512k: 2040.28 MB/s
+int 512k: 1991.15 MB/s
+int 512k: 1682.44 MB/s
+int 512k: 1984.48 MB/s
+int 512k: 1856.45 MB/s
+int 512k: 1697.10 MB/s
+int 512k: 1717.89 MB/s
+int 512k: 1675.15 MB/s
+int 512k: 1629.33 MB/s
+int 512k: 1445.77 MB/s
+int 512k: 1374.10 MB/s
+int 512k: 1209.09 MB/s
+int 8M: 1404.79 MB/s
+int 8M: 1114.41 MB/s
+int 8M: 1044.55 MB/s
+int 8M: 1351.61 MB/s
+int 8M: 1368.90 MB/s
+int 8M: 1305.63 MB/s
+int 8M: 1315.10 MB/s
+int 8M: 1233.35 MB/s
+int 8M: 1270.62 MB/s
+int 8M: 1127.81 MB/s
+int 8M: 1046.41 MB/s
+int 8M: 762.34 MB/s
+int 8M: 639.03 MB/s
+int 8M: 626.53 MB/s
+int 8M: 606.31 MB/s
+int 8M: 737.65 MB/s
+int 32M: 682.44 MB/s
+long 4k: 1552.12 MB/s
+long 512k: 4746.43 MB/s
+int 32M: 557.54 MB/s
+long 4k: 8731.24 MB/s
+int 32M: 461.04 MB/s
+int 32M: 471.00 MB/s
+long 4k: 8707.34 MB/s
+long 4k: 7425.20 MB/s
+long 512k: 4402.54 MB/s
+int 32M: 522.51 MB/s
+long 4k: 8720.01 MB/s
+long 512k: 4542.39 MB/s
+long 512k: 4516.64 MB/s
+long 512k: 4671.84 MB/s
+int 32M: 446.92 MB/s
+long 4k: 8737.41 MB/s
+int 32M: 417.59 MB/s
+long 4k: 8621.01 MB/s
+int 32M: 451.18 MB/s
+long 4k: 8716.74 MB/s
+long 512k: 4481.87 MB/s
+long 512k: 4326.90 MB/s
+int 32M: 444.64 MB/s
+long 4k: 8735.45 MB/s
+int 32M: 442.26 MB/s
+long 4k: 8621.77 MB/s
+long 512k: 4484.41 MB/s
+int 32M: 447.74 MB/s
+long 4k: 1211.25 MB/s
+long 512k: 2508.78 MB/s
+int 32M: 455.39 MB/s
+long 512k: 3798.27 MB/s
+long 4k: 7019.52 MB/s
+long 512k: 4516.02 MB/s
+long 512k: 4491.97 MB/s
+int 32M: 466.04 MB/s
+long 4k: 8660.85 MB/s
+int 32M: 470.34 MB/s
+long 4k: 8603.09 MB/s
+long 512k: 4697.31 MB/s
+int 32M: 476.84 MB/s
+long 4k: 8719.00 MB/s
+long 512k: 4372.51 MB/s
+int 32M: 529.78 MB/s
+long 4k: 8606.05 MB/s
+long 512k: 4557.18 MB/s
+long 512k: 4746.28 MB/s
+long 8M: 1741.68 MB/s
+long 8M: 1721.81 MB/s
+long 8M: 1694.97 MB/s
+long 8M: 1695.15 MB/s
+long 8M: 1751.57 MB/s
+long 8M: 1819.26 MB/s
+long 8M: 1813.73 MB/s
+long 8M: 1787.56 MB/s
+long 8M: 1685.25 MB/s
+long 8M: 1754.52 MB/s
+long 8M: 1623.72 MB/s
+long 8M: 1785.20 MB/s
+long 8M: 1815.15 MB/s
+long 8M: 1739.38 MB/s
+long 8M: 1691.36 MB/s
+long 8M: 1753.02 MB/s
+long 32M: 788.65 MB/s
+Average: 2768.30 MB/s
+long 32M: 509.73 MB/s
+Average: 2779.78 MB/s
+long 32M: 480.46 MB/s
+Average: 2746.51 MB/s
+long 32M: 494.07 MB/s
+Average: 1886.54 MB/s
+long 32M: 511.65 MB/s
+Average: 2705.27 MB/s
+long 32M: 503.04 MB/s
+Average: 1817.22 MB/s
+long 32M: 472.52 MB/s
+Average: 2522.48 MB/s
+long 32M: 487.34 MB/s
+Average: 2860.98 MB/s
+long 32M: 482.88 MB/s
+Average: 2709.71 MB/s
+long 32M: 470.75 MB/s
+Average: 2696.99 MB/s
+long 32M: 469.95 MB/s
+Average: 2715.67 MB/s
+long 32M: 478.91 MB/s
+Average: 2779.98 MB/s
+long 32M: 482.49 MB/s
+Average: 2598.05 MB/s
+long 32M: 492.47 MB/s
+Average: 2482.89 MB/s
+long 32M: 504.66 MB/s
+Average: 2825.25 MB/s
+long 32M: 510.68 MB/s
+Average: 2699.17 MB/s
+int 4k: 3229.43 MB/s
+
+int 4k: 3229.72 MB/s
+int 4k: 3229.93 MB/s
+int 4k: 3230.06 MB/s
+int 4k: 3216.94 MB/s
+int 4k: 3191.14 MB/s
+int 4k: 3162.89 MB/s
+int 4k: 3156.12 MB/s
+
+int 4k: 3151.91 MB/s
+int 4k: 3157.53 MB/s
+int 4k: 3157.12 MB/s
+int 4k: 3151.18 MB/s
+int 4k: 3143.33 MB/s
+int 4k: 2501.07 MB/s
+int 512k: 2714.30 MB/s
+int 512k: 2606.45 MB/s
+int 512k: 2409.34 MB/s
+int 512k: 2521.95 MB/s
+int 512k: 2476.51 MB/s
+int 512k: 2394.54 MB/s
+int 512k: 2377.40 MB/s
+int 512k: 2366.54 MB/s
+int 512k: 2253.46 MB/s
+int 512k: 2259.99 MB/s
+int 512k: 2217.18 MB/s
+int 512k: 2189.74 MB/s
+int 512k: 2107.69 MB/s
+int 512k: 2085.68 MB/s
+int 512k: 1943.85 MB/s
+int 8M: 506.05 MB/s
+int 8M: 509.82 MB/s
+int 8M: 433.33 MB/s
+int 8M: 407.30 MB/s
+int 8M: 404.70 MB/s
+int 8M: 406.84 MB/s
+int 8M: 412.96 MB/s
+int 8M: 408.74 MB/s
+int 8M: 408.87 MB/s
+int 8M: 411.36 MB/s
+int 8M: 406.57 MB/s
+int 8M: 405.76 MB/s
+int 8M: 398.62 MB/s
+int 8M: 399.59 MB/s
+int 8M: 395.52 MB/s
+int 8M: 395.80 MB/s
+int 32M: 451.06 MB/s
+int 32M: 472.02 MB/s
+long 4k: 8744.71 MB/s
+long 4k: 8681.03 MB/s
+long 512k: 4717.39 MB/s
+long 512k: 4778.02 MB/s
+int 32M: 655.74 MB/s
+long 4k: 8725.13 MB/s
+long 8M: 1721.52 MB/s
+long 8M: 1719.09 MB/s
+long 512k: 4738.02 MB/s
+int 32M: 454.29 MB/s
+long 4k: 8570.98 MB/s
+int 32M: 414.55 MB/s
+long 4k: 8696.55 MB/s
+long 512k: 4268.20 MB/s
+int 32M: 413.40 MB/s
+int 32M: 407.00 MB/s
+int 32M: 416.65 MB/s
+long 4k: 8710.16 MB/s
+long 4k: 8440.09 MB/s
+int 32M: 411.20 MB/s
+int 32M: 414.13 MB/s
+int 32M: 415.96 MB/s
+int 32M: 403.23 MB/s
+long 4k: 8608.34 MB/s
+int 32M: 397.28 MB/s
+int 32M: 416.07 MB/s
+int 32M: 414.38 MB/s
+long 4k: 8472.34 MB/s
+long 4k: 8610.57 MB/s
+long 4k: 8387.95 MB/s
+long 4k: 8513.71 MB/s
+long 4k: 8339.75 MB/s
+int 32M: 397.64 MB/s
+long 4k: 8461.17 MB/s
+long 4k: 8258.16 MB/s
+long 512k: 4351.15 MB/s
+long 4k: 8583.49 MB/s
+long 512k: 4493.85 MB/s
+long 512k: 4453.90 MB/s
+long 512k: 4518.98 MB/s
+long 512k: 4515.52 MB/s
+long 512k: 4500.29 MB/s
+long 512k: 4509.70 MB/s
+long 512k: 4493.76 MB/s
+long 512k: 4505.25 MB/s
+long 512k: 4493.05 MB/s
+long 512k: 4465.68 MB/s
+long 512k: 4490.77 MB/s
+long 8M: 489.94 MB/s
+long 32M: 438.65 MB/s
+Average: 2815.47 MB/s
+long 32M: 437.86 MB/s
+Average: 2811.44 MB/s
+long 8M: 504.93 MB/s
+long 8M: 465.46 MB/s
+long 8M: 448.44 MB/s
+long 8M: 452.35 MB/s
+long 8M: 456.74 MB/s
+long 8M: 458.18 MB/s
+long 8M: 455.35 MB/s
+long 8M: 448.23 MB/s
+long 8M: 454.59 MB/s
+long 8M: 453.53 MB/s
+long 8M: 448.20 MB/s
+long 8M: 445.31 MB/s
+long 8M: 447.83 MB/s
+long 32M: 462.87 MB/s
+Average: 2613.80 MB/s
+int 4k: 3231.24 MB/sint 4k: 3222.48 MB/s
+int 4k: 3160.79 MB/s
+int 4k: 3231.22 MB/s
+int 4k: 3218.75 MB/s
+int 4k: 3230.91 MB/s
+int 4k: 3229.81 MB/sint 4k: 3227.95 MB/s
+int 4k: 3230.88 MB/s
+int 4k: 3230.29 MB/s
+int 4k: 3228.91 MB/s
+int 4k: 3230.77 MB/sint 4k: 3230.99 MB/sint 4k: 3228.17 MB/s
+
+
+int 4k: 3230.06 MB/s
+
+int 4k: 3229.15 MB/s
+int 512k: 2565.29 MB/s
+int 512k: 2043.41 MB/s
+int 512k: 1938.42 MB/s
+int 512k: 2354.31 MB/s
+int 512k: 2040.28 MB/s
+int 512k: 1991.15 MB/s
+int 512k: 1682.44 MB/s
+int 512k: 1984.48 MB/s
+int 512k: 1856.45 MB/s
+int 512k: 1697.10 MB/s
+int 512k: 1717.89 MB/s
+int 512k: 1675.15 MB/s
+int 512k: 1629.33 MB/s
+int 512k: 1445.77 MB/s
+int 512k: 1374.10 MB/s
+int 512k: 1209.09 MB/s
+int 8M: 1404.79 MB/s
+int 8M: 1114.41 MB/s
+int 8M: 1044.55 MB/s
+int 8M: 1351.61 MB/s
+int 8M: 1368.90 MB/s
+int 8M: 1305.63 MB/s
+int 8M: 1315.10 MB/s
+int 8M: 1233.35 MB/s
+int 8M: 1270.62 MB/s
+int 8M: 1127.81 MB/s
+int 8M: 1046.41 MB/s
+int 8M: 762.34 MB/s
+int 8M: 639.03 MB/s
+int 8M: 626.53 MB/s
+int 8M: 606.31 MB/s
+int 8M: 737.65 MB/s
+int 32M: 682.44 MB/s
+long 4k: 1552.12 MB/s
+long 512k: 4746.43 MB/s
+int 32M: 557.54 MB/s
+long 4k: 8731.24 MB/s
+int 32M: 461.04 MB/s
+int 32M: 471.00 MB/s
+long 4k: 8707.34 MB/s
+long 4k: 7425.20 MB/s
+long 512k: 4402.54 MB/s
+int 32M: 522.51 MB/s
+long 4k: 8720.01 MB/s
+long 512k: 4542.39 MB/s
+long 512k: 4516.64 MB/s
+long 512k: 4671.84 MB/s
+int 32M: 446.92 MB/s
+long 4k: 8737.41 MB/s
+int 32M: 417.59 MB/s
+long 4k: 8621.01 MB/s
+int 32M: 451.18 MB/s
+long 4k: 8716.74 MB/s
+long 512k: 4481.87 MB/s
+long 512k: 4326.90 MB/s
+int 32M: 444.64 MB/s
+long 4k: 8735.45 MB/s
+int 32M: 442.26 MB/s
+long 4k: 8621.77 MB/s
+long 512k: 4484.41 MB/s
+int 32M: 447.74 MB/s
+long 4k: 1211.25 MB/s
+long 512k: 2508.78 MB/s
+int 32M: 455.39 MB/s
+long 512k: 3798.27 MB/s
+long 4k: 7019.52 MB/s
+long 512k: 4516.02 MB/s
+long 512k: 4491.97 MB/s
+int 32M: 466.04 MB/s
+long 4k: 8660.85 MB/s
+int 32M: 470.34 MB/s
+long 4k: 8603.09 MB/s
+long 512k: 4697.31 MB/s
+int 32M: 476.84 MB/s
+long 4k: 8719.00 MB/s
+long 512k: 4372.51 MB/s
+int 32M: 529.78 MB/s
+long 4k: 8606.05 MB/s
+long 512k: 4557.18 MB/s
+long 512k: 4746.28 MB/s
+long 8M: 1741.68 MB/s
+long 8M: 1721.81 MB/s
+long 8M: 1694.97 MB/s
+long 8M: 1695.15 MB/s
+long 8M: 1751.57 MB/s
+long 8M: 1819.26 MB/s
+long 8M: 1813.73 MB/s
+long 8M: 1787.56 MB/s
+long 8M: 1685.25 MB/s
+long 8M: 1754.52 MB/s
+long 8M: 1623.72 MB/s
+long 8M: 1785.20 MB/s
+long 8M: 1815.15 MB/s
+long 8M: 1739.38 MB/s
+long 8M: 1691.36 MB/s
+long 8M: 1753.02 MB/s
+long 32M: 788.65 MB/s
+Average: 2768.30 MB/s
+long 32M: 509.73 MB/s
+Average: 2779.78 MB/s
+long 32M: 480.46 MB/s
+Average: 2746.51 MB/s
+long 32M: 494.07 MB/s
+Average: 1886.54 MB/s
+long 32M: 511.65 MB/s
+Average: 2705.27 MB/s
+long 32M: 503.04 MB/s
+Average: 1817.22 MB/s
+long 32M: 472.52 MB/s
+Average: 2522.48 MB/s
+long 32M: 487.34 MB/s
+Average: 2860.98 MB/s
+long 32M: 482.88 MB/s
+Average: 2709.71 MB/s
+long 32M: 470.75 MB/s
+Average: 2696.99 MB/s
+long 32M: 469.95 MB/s
+Average: 2715.67 MB/s
+long 32M: 478.91 MB/s
+Average: 2779.98 MB/s
+long 32M: 482.49 MB/s
+Average: 2598.05 MB/s
+long 32M: 492.47 MB/s
+Average: 2482.89 MB/s
+long 32M: 504.66 MB/s
+Average: 2825.25 MB/s
+long 32M: 510.68 MB/s
+Average: 2699.17 MB/s
+int 4k: 3229.43 MB/s
+
+int 4k: 3229.72 MB/s
+int 4k: 3229.93 MB/s
+int 4k: 3230.06 MB/s
+int 4k: 3216.94 MB/s
+int 4k: 3191.14 MB/s
+int 4k: 3162.89 MB/s
+int 4k: 3156.12 MB/s
+
+int 4k: 3151.91 MB/s
+int 4k: 3157.53 MB/s
+int 4k: 3157.12 MB/s
+int 4k: 3151.18 MB/s
+int 4k: 3143.33 MB/s
+int 4k: 2501.07 MB/s
+int 512k: 2714.30 MB/s
+int 512k: 2606.45 MB/s
+int 512k: 2409.34 MB/s
+int 512k: 2521.95 MB/s
+int 512k: 2476.51 MB/s
+int 512k: 2394.54 MB/s
+int 512k: 2377.40 MB/s
+int 512k: 2366.54 MB/s
+int 512k: 2253.46 MB/s
+int 512k: 2259.99 MB/s
+int 512k: 2217.18 MB/s
+int 512k: 2189.74 MB/s
+int 512k: 2107.69 MB/s
+int 512k: 2085.68 MB/s
+int 512k: 1943.85 MB/s
+int 8M: 506.05 MB/s
+int 8M: 509.82 MB/s
+int 8M: 433.33 MB/s
+int 8M: 407.30 MB/s
+int 8M: 404.70 MB/s
+int 8M: 406.84 MB/s
+int 8M: 412.96 MB/s
+int 8M: 408.74 MB/s
+int 8M: 408.87 MB/s
+int 8M: 411.36 MB/s
+int 8M: 406.57 MB/s
+int 8M: 405.76 MB/s
+int 8M: 398.62 MB/s
+int 8M: 399.59 MB/s
+int 8M: 395.52 MB/s
+int 8M: 395.80 MB/s
+int 32M: 451.06 MB/s
+int 32M: 472.02 MB/s
+long 4k: 8744.71 MB/s
+long 4k: 8681.03 MB/s
+long 512k: 4717.39 MB/s
+long 512k: 4778.02 MB/s
+int 32M: 655.74 MB/s
+long 4k: 8725.13 MB/s
+long 8M: 1721.52 MB/s
+long 8M: 1719.09 MB/s
+long 512k: 4738.02 MB/s
+int 32M: 454.29 MB/s
+long 4k: 8570.98 MB/s
+int 32M: 414.55 MB/s
+long 4k: 8696.55 MB/s
+long 512k: 4268.20 MB/s
+int 32M: 413.40 MB/s
+int 32M: 407.00 MB/s
+int 32M: 416.65 MB/s
+long 4k: 8710.16 MB/s
+long 4k: 8440.09 MB/s
+int 32M: 411.20 MB/s
+int 32M: 414.13 MB/s
+int 32M: 415.96 MB/s
+int 32M: 403.23 MB/s
+long 4k: 8608.34 MB/s
+int 32M: 397.28 MB/s
+int 32M: 416.07 MB/s
+int 32M: 414.38 MB/s
+long 4k: 8472.34 MB/s
+long 4k: 8610.57 MB/s
+long 4k: 8387.95 MB/s
+long 4k: 8513.71 MB/s
+long 4k: 8339.75 MB/s
+int 32M: 397.64 MB/s
+long 4k: 8461.17 MB/s
+long 4k: 8258.16 MB/s
+long 512k: 4351.15 MB/s
+long 4k: 8583.49 MB/s
+long 512k: 4493.85 MB/s
+long 512k: 4453.90 MB/s
+long 512k: 4518.98 MB/s
+long 512k: 4515.52 MB/s
+long 512k: 4500.29 MB/s
+long 512k: 4509.70 MB/s
+long 512k: 4493.76 MB/s
+long 512k: 4505.25 MB/s
+long 512k: 4493.05 MB/s
+long 512k: 4465.68 MB/s
+long 512k: 4490.77 MB/s
+long 8M: 489.94 MB/s
+long 32M: 438.65 MB/s
+Average: 2815.47 MB/s
+long 32M: 437.86 MB/s
+Average: 2811.44 MB/s
+long 8M: 504.93 MB/s
+long 8M: 465.46 MB/s
+long 8M: 448.44 MB/s
+long 8M: 452.35 MB/s
+long 8M: 456.74 MB/s
+long 8M: 458.18 MB/s
+long 8M: 455.35 MB/s
+long 8M: 448.23 MB/s
+long 8M: 454.59 MB/s
+long 8M: 453.53 MB/s
+long 8M: 448.20 MB/s
+long 8M: 445.31 MB/s
+long 8M: 447.83 MB/s
+long 32M: 462.87 MB/s
+Average: 2613.80 MB/s
+long 32M: 490.00 MB/s
+Average: 2528.50 MB/s
+long 32M: 488.75 MB/s
+Average: 2582.45 MB/s
+long 32M: 470.04 MB/s
+Average: 2534.04 MB/s
+long 32M: 474.97 MB/s
+Average: 2383.98 MB/s
+long 32M: 474.78 MB/s
+Average: 2573.56 MB/s
+long 32M: 475.65 MB/s
+Average: 2500.14 MB/s
+long 32M: 468.18 MB/s
+Average: 2547.86 MB/s
+int 4k: 3231.24 MB/sint 4k: 3222.48 MB/s
+int 4k: 3160.79 MB/s
+int 4k: 3231.22 MB/s
+int 4k: 3218.75 MB/s
+int 4k: 3230.91 MB/s
+int 4k: 3229.81 MB/sint 4k: 3227.95 MB/s
+int 4k: 3230.88 MB/s
+int 4k: 3230.29 MB/s
+int 4k: 3228.91 MB/s
+int 4k: 3230.77 MB/sint 4k: 3230.99 MB/sint 4k: 3228.17 MB/s
+
+
+int 4k: 3230.06 MB/s
+
+int 4k: 3229.15 MB/s
+int 512k: 2565.29 MB/s
+int 512k: 2043.41 MB/s
+int 512k: 1938.42 MB/s
+int 512k: 2354.31 MB/s
+int 512k: 2040.28 MB/s
+int 512k: 1991.15 MB/s
+int 512k: 1682.44 MB/s
+int 512k: 1984.48 MB/s
+int 512k: 1856.45 MB/s
+int 512k: 1697.10 MB/s
+int 512k: 1717.89 MB/s
+int 512k: 1675.15 MB/s
+int 512k: 1629.33 MB/s
+int 512k: 1445.77 MB/s
+int 512k: 1374.10 MB/s
+int 512k: 1209.09 MB/s
+int 8M: 1404.79 MB/s
+int 8M: 1114.41 MB/s
+int 8M: 1044.55 MB/s
+int 8M: 1351.61 MB/s
+int 8M: 1368.90 MB/s
+int 8M: 1305.63 MB/s
+int 8M: 1315.10 MB/s
+int 8M: 1233.35 MB/s
+int 8M: 1270.62 MB/s
+int 8M: 1127.81 MB/s
+int 8M: 1046.41 MB/s
+int 8M: 762.34 MB/s
+int 8M: 639.03 MB/s
+int 8M: 626.53 MB/s
+int 8M: 606.31 MB/s
+int 8M: 737.65 MB/s
+int 32M: 682.44 MB/s
+long 4k: 1552.12 MB/s
+long 512k: 4746.43 MB/s
+int 32M: 557.54 MB/s
+long 4k: 8731.24 MB/s
+int 32M: 461.04 MB/s
+int 32M: 471.00 MB/s
+long 4k: 8707.34 MB/s
+long 4k: 7425.20 MB/s
+long 512k: 4402.54 MB/s
+int 32M: 522.51 MB/s
+long 4k: 8720.01 MB/s
+long 512k: 4542.39 MB/s
+long 512k: 4516.64 MB/s
+long 512k: 4671.84 MB/s
+int 32M: 446.92 MB/s
+long 4k: 8737.41 MB/s
+int 32M: 417.59 MB/s
+long 4k: 8621.01 MB/s
+int 32M: 451.18 MB/s
+long 4k: 8716.74 MB/s
+long 512k: 4481.87 MB/s
+long 512k: 4326.90 MB/s
+int 32M: 444.64 MB/s
+long 4k: 8735.45 MB/s
+int 32M: 442.26 MB/s
+long 4k: 8621.77 MB/s
+long 512k: 4484.41 MB/s
+int 32M: 447.74 MB/s
+long 4k: 1211.25 MB/s
+long 512k: 2508.78 MB/s
+int 32M: 455.39 MB/s
+long 512k: 3798.27 MB/s
+long 4k: 7019.52 MB/s
+long 512k: 4516.02 MB/s
+long 512k: 4491.97 MB/s
+int 32M: 466.04 MB/s
+long 4k: 8660.85 MB/s
+int 32M: 470.34 MB/s
+long 4k: 8603.09 MB/s
+long 512k: 4697.31 MB/s
+int 32M: 476.84 MB/s
+long 4k: 8719.00 MB/s
+long 512k: 4372.51 MB/s
+int 32M: 529.78 MB/s
+long 4k: 8606.05 MB/s
+long 512k: 4557.18 MB/s
+long 512k: 4746.28 MB/s
+long 8M: 1741.68 MB/s
+long 8M: 1721.81 MB/s
+long 8M: 1694.97 MB/s
+long 8M: 1695.15 MB/s
+long 8M: 1751.57 MB/s
+long 8M: 1819.26 MB/s
+long 8M: 1813.73 MB/s
+long 8M: 1787.56 MB/s
+long 8M: 1685.25 MB/s
+long 8M: 1754.52 MB/s
+long 8M: 1623.72 MB/s
+long 8M: 1785.20 MB/s
+long 8M: 1815.15 MB/s
+long 8M: 1739.38 MB/s
+long 8M: 1691.36 MB/s
+long 8M: 1753.02 MB/s
+long 32M: 788.65 MB/s
+Average: 2768.30 MB/s
+long 32M: 509.73 MB/s
+Average: 2779.78 MB/s
+long 32M: 480.46 MB/s
+Average: 2746.51 MB/s
+long 32M: 494.07 MB/s
+Average: 1886.54 MB/s
+long 32M: 511.65 MB/s
+Average: 2705.27 MB/s
+long 32M: 503.04 MB/s
+Average: 1817.22 MB/s
+long 32M: 472.52 MB/s
+Average: 2522.48 MB/s
+long 32M: 487.34 MB/s
+Average: 2860.98 MB/s
+long 32M: 482.88 MB/s
+Average: 2709.71 MB/s
+long 32M: 470.75 MB/s
+Average: 2696.99 MB/s
+long 32M: 469.95 MB/s
+Average: 2715.67 MB/s
+long 32M: 478.91 MB/s
+Average: 2779.98 MB/s
+long 32M: 482.49 MB/s
+Average: 2598.05 MB/s
+long 32M: 492.47 MB/s
+Average: 2482.89 MB/s
+long 32M: 504.66 MB/s
+Average: 2825.25 MB/s
+long 32M: 510.68 MB/s
+Average: 2699.17 MB/s
+int 4k: 3229.43 MB/s
+
+int 4k: 3229.72 MB/s
+int 4k: 3229.93 MB/s
+int 4k: 3230.06 MB/s
+int 4k: 3216.94 MB/s
+int 4k: 3191.14 MB/s
+int 4k: 3162.89 MB/s
+int 4k: 3156.12 MB/s
+
+int 4k: 3151.91 MB/s
+int 4k: 3157.53 MB/s
+int 4k: 3157.12 MB/s
+int 4k: 3151.18 MB/s
+int 4k: 3143.33 MB/s
+int 4k: 2501.07 MB/s
+int 512k: 2714.30 MB/s
+int 512k: 2606.45 MB/s
+int 512k: 2409.34 MB/s
+int 512k: 2521.95 MB/s
+int 512k: 2476.51 MB/s
+int 512k: 2394.54 MB/s
+int 512k: 2377.40 MB/s
+int 512k: 2366.54 MB/s
+int 512k: 2253.46 MB/s
+int 512k: 2259.99 MB/s
+int 512k: 2217.18 MB/s
+int 512k: 2189.74 MB/s
+int 512k: 2107.69 MB/s
+int 512k: 2085.68 MB/s
+int 512k: 1943.85 MB/s
+int 8M: 506.05 MB/s
+int 8M: 509.82 MB/s
+int 8M: 433.33 MB/s
+int 8M: 407.30 MB/s
+int 8M: 404.70 MB/s
+int 8M: 406.84 MB/s
+int 8M: 412.96 MB/s
+int 8M: 408.74 MB/s
+int 8M: 408.87 MB/s
+int 8M: 411.36 MB/s
+int 8M: 406.57 MB/s
+int 8M: 405.76 MB/s
+int 8M: 398.62 MB/s
+int 8M: 399.59 MB/s
+int 8M: 395.52 MB/s
+int 8M: 395.80 MB/s
+int 32M: 451.06 MB/s
+int 32M: 472.02 MB/s
+long 4k: 8744.71 MB/s
+long 4k: 8681.03 MB/s
+long 512k: 4717.39 MB/s
+long 512k: 4778.02 MB/s
+int 32M: 655.74 MB/s
+long 4k: 8725.13 MB/s
+long 8M: 1721.52 MB/s
+long 8M: 1719.09 MB/s
+long 512k: 4738.02 MB/s
+int 32M: 454.29 MB/s
+long 4k: 8570.98 MB/s
+int 32M: 414.55 MB/s
+long 4k: 8696.55 MB/s
+long 512k: 4268.20 MB/s
+int 32M: 413.40 MB/s
+int 32M: 407.00 MB/s
+int 32M: 416.65 MB/s
+long 4k: 8710.16 MB/s
+long 4k: 8440.09 MB/s
+int 32M: 411.20 MB/s
+int 32M: 414.13 MB/s
+int 32M: 415.96 MB/s
+int 32M: 403.23 MB/s
+long 4k: 8608.34 MB/s
+int 32M: 397.28 MB/s
+int 32M: 416.07 MB/s
+int 32M: 414.38 MB/s
+long 4k: 8472.34 MB/s
+long 4k: 8610.57 MB/s
+long 4k: 8387.95 MB/s
+long 4k: 8513.71 MB/s
+long 4k: 8339.75 MB/s
+int 32M: 397.64 MB/s
+long 4k: 8461.17 MB/s
+long 4k: 8258.16 MB/s
+long 512k: 4351.15 MB/s
+long 4k: 8583.49 MB/s
+long 512k: 4493.85 MB/s
+long 512k: 4453.90 MB/s
+long 512k: 4518.98 MB/s
+long 512k: 4515.52 MB/s
+long 512k: 4500.29 MB/s
+long 512k: 4509.70 MB/s
+long 512k: 4493.76 MB/s
+long 512k: 4505.25 MB/s
+long 512k: 4493.05 MB/s
+long 512k: 4465.68 MB/s
+long 512k: 4490.77 MB/s
+long 8M: 489.94 MB/s
+long 32M: 438.65 MB/s
+Average: 2815.47 MB/s
+long 32M: 437.86 MB/s
+Average: 2811.44 MB/s
+long 8M: 504.93 MB/s
+long 8M: 465.46 MB/s
+long 8M: 448.44 MB/s
+long 8M: 452.35 MB/s
+long 8M: 456.74 MB/s
+long 8M: 458.18 MB/s
+long 8M: 455.35 MB/s
+long 8M: 448.23 MB/s
+long 8M: 454.59 MB/s
+long 8M: 453.53 MB/s
+long 8M: 448.20 MB/s
+long 8M: 445.31 MB/s
+long 8M: 447.83 MB/s
+long 32M: 462.87 MB/s
+Average: 2613.80 MB/s
+long 32M: 490.00 MB/s
+Average: 2528.50 MB/s
+long 32M: 488.75 MB/s
+Average: 2582.45 MB/s
+long 32M: 470.04 MB/s
+Average: 2534.04 MB/s
+int 4k: 3231.24 MB/sint 4k: 3222.48 MB/s
+int 4k: 3160.79 MB/s
+int 4k: 3231.22 MB/s
+int 4k: 3218.75 MB/s
+int 4k: 3230.91 MB/s
+int 4k: 3229.81 MB/sint 4k: 3227.95 MB/s
+int 4k: 3230.88 MB/s
+int 4k: 3230.29 MB/s
+int 4k: 3228.91 MB/s
+int 4k: 3230.77 MB/sint 4k: 3230.99 MB/sint 4k: 3228.17 MB/s
+
+
+int 4k: 3230.06 MB/s
+
+int 4k: 3229.15 MB/s
+int 512k: 2565.29 MB/s
+int 512k: 2043.41 MB/s
+int 512k: 1938.42 MB/s
+int 512k: 2354.31 MB/s
+int 512k: 2040.28 MB/s
+int 512k: 1991.15 MB/s
+int 512k: 1682.44 MB/s
+int 512k: 1984.48 MB/s
+int 512k: 1856.45 MB/s
+int 512k: 1697.10 MB/s
+int 512k: 1717.89 MB/s
+int 512k: 1675.15 MB/s
+int 512k: 1629.33 MB/s
+int 512k: 1445.77 MB/s
+int 512k: 1374.10 MB/s
+int 512k: 1209.09 MB/s
+int 8M: 1404.79 MB/s
+int 8M: 1114.41 MB/s
+int 8M: 1044.55 MB/s
+int 8M: 1351.61 MB/s
+int 8M: 1368.90 MB/s
+int 8M: 1305.63 MB/s
+int 8M: 1315.10 MB/s
+int 8M: 1233.35 MB/s
+int 8M: 1270.62 MB/s
+int 8M: 1127.81 MB/s
+int 8M: 1046.41 MB/s
+int 8M: 762.34 MB/s
+int 8M: 639.03 MB/s
+int 8M: 626.53 MB/s
+int 8M: 606.31 MB/s
+int 8M: 737.65 MB/s
+int 32M: 682.44 MB/s
+long 4k: 1552.12 MB/s
+long 512k: 4746.43 MB/s
+int 32M: 557.54 MB/s
+long 4k: 8731.24 MB/s
+int 32M: 461.04 MB/s
+int 32M: 471.00 MB/s
+long 4k: 8707.34 MB/s
+long 4k: 7425.20 MB/s
+long 512k: 4402.54 MB/s
+int 32M: 522.51 MB/s
+long 4k: 8720.01 MB/s
+long 512k: 4542.39 MB/s
+long 512k: 4516.64 MB/s
+long 512k: 4671.84 MB/s
+int 32M: 446.92 MB/s
+long 4k: 8737.41 MB/s
+int 32M: 417.59 MB/s
+long 4k: 8621.01 MB/s
+int 32M: 451.18 MB/s
+long 4k: 8716.74 MB/s
+long 512k: 4481.87 MB/s
+long 512k: 4326.90 MB/s
+int 32M: 444.64 MB/s
+long 4k: 8735.45 MB/s
+int 32M: 442.26 MB/s
+long 4k: 8621.77 MB/s
+long 512k: 4484.41 MB/s
+int 32M: 447.74 MB/s
+long 4k: 1211.25 MB/s
+long 512k: 2508.78 MB/s
+int 32M: 455.39 MB/s
+long 512k: 3798.27 MB/s
+long 4k: 7019.52 MB/s
+long 512k: 4516.02 MB/s
+long 512k: 4491.97 MB/s
+int 32M: 466.04 MB/s
+long 4k: 8660.85 MB/s
+int 32M: 470.34 MB/s
+long 4k: 8603.09 MB/s
+long 512k: 4697.31 MB/s
+int 32M: 476.84 MB/s
+long 4k: 8719.00 MB/s
+long 512k: 4372.51 MB/s
+int 32M: 529.78 MB/s
+long 4k: 8606.05 MB/s
+long 512k: 4557.18 MB/s
+long 512k: 4746.28 MB/s
+long 8M: 1741.68 MB/s
+long 8M: 1721.81 MB/s
+long 8M: 1694.97 MB/s
+long 8M: 1695.15 MB/s
+long 8M: 1751.57 MB/s
+long 8M: 1819.26 MB/s
+long 8M: 1813.73 MB/s
+long 8M: 1787.56 MB/s
+long 8M: 1685.25 MB/s
+long 8M: 1754.52 MB/s
+long 8M: 1623.72 MB/s
+long 8M: 1785.20 MB/s
+long 8M: 1815.15 MB/s
+long 8M: 1739.38 MB/s
+long 8M: 1691.36 MB/s
+long 8M: 1753.02 MB/s
+long 32M: 788.65 MB/s
+Average: 2768.30 MB/s
+long 32M: 509.73 MB/s
+Average: 2779.78 MB/s
+long 32M: 480.46 MB/s
+Average: 2746.51 MB/s
+long 32M: 494.07 MB/s
+Average: 1886.54 MB/s
+long 32M: 511.65 MB/s
+Average: 2705.27 MB/s
+long 32M: 503.04 MB/s
+Average: 1817.22 MB/s
+long 32M: 472.52 MB/s
+Average: 2522.48 MB/s
+long 32M: 487.34 MB/s
+Average: 2860.98 MB/s
+long 32M: 482.88 MB/s
+Average: 2709.71 MB/s
+long 32M: 470.75 MB/s
+Average: 2696.99 MB/s
+long 32M: 469.95 MB/s
+Average: 2715.67 MB/s
+long 32M: 478.91 MB/s
+Average: 2779.98 MB/s
+long 32M: 482.49 MB/s
+Average: 2598.05 MB/s
+long 32M: 492.47 MB/s
+Average: 2482.89 MB/s
+long 32M: 504.66 MB/s
+Average: 2825.25 MB/s
+long 32M: 510.68 MB/s
+Average: 2699.17 MB/s
+int 4k: 3229.43 MB/s
+
+int 4k: 3229.72 MB/s
+int 4k: 3229.93 MB/s
+int 4k: 3230.06 MB/s
+int 4k: 3216.94 MB/s
+int 4k: 3191.14 MB/s
+int 4k: 3162.89 MB/s
+int 4k: 3156.12 MB/s
+
+int 4k: 3151.91 MB/s
+int 4k: 3157.53 MB/s
+int 4k: 3157.12 MB/s
+int 4k: 3151.18 MB/s
+int 4k: 3143.33 MB/s
+int 4k: 2501.07 MB/s
+int 512k: 2714.30 MB/s
+int 512k: 2606.45 MB/s
+int 512k: 2409.34 MB/s
+int 512k: 2521.95 MB/s
+int 512k: 2476.51 MB/s
+int 512k: 2394.54 MB/s
+int 512k: 2377.40 MB/s
+int 512k: 2366.54 MB/s
+int 512k: 2253.46 MB/s
+int 512k: 2259.99 MB/s
+int 512k: 2217.18 MB/s
+int 512k: 2189.74 MB/s
+int 512k: 2107.69 MB/s
+int 512k: 2085.68 MB/s
+int 512k: 1943.85 MB/s
+int 8M: 506.05 MB/s
+int 8M: 509.82 MB/s
+int 8M: 433.33 MB/s
+int 8M: 407.30 MB/s
+int 8M: 404.70 MB/s
+int 8M: 406.84 MB/s
+int 8M: 412.96 MB/s
+int 8M: 408.74 MB/s
+int 8M: 408.87 MB/s
+int 8M: 411.36 MB/s
+int 8M: 406.57 MB/s
+int 8M: 405.76 MB/s
+int 8M: 398.62 MB/s
+int 8M: 399.59 MB/s
+int 8M: 395.52 MB/s
+int 8M: 395.80 MB/s
+int 32M: 451.06 MB/s
+int 32M: 472.02 MB/s
+long 4k: 8744.71 MB/s
+long 4k: 8681.03 MB/s
+long 512k: 4717.39 MB/s
+long 512k: 4778.02 MB/s
+int 32M: 655.74 MB/s
+long 4k: 8725.13 MB/s
+long 8M: 1721.52 MB/s
+long 8M: 1719.09 MB/s
+long 512k: 4738.02 MB/s
+int 32M: 454.29 MB/s
+long 4k: 8570.98 MB/s
+int 32M: 414.55 MB/s
+long 4k: 8696.55 MB/s
+long 512k: 4268.20 MB/s
+int 32M: 413.40 MB/s
+int 32M: 407.00 MB/s
+int 32M: 416.65 MB/s
+long 4k: 8710.16 MB/s
+long 4k: 8440.09 MB/s
+int 32M: 411.20 MB/s
+int 32M: 414.13 MB/s
+int 32M: 415.96 MB/s
+int 32M: 403.23 MB/s
+long 4k: 8608.34 MB/s
+int 32M: 397.28 MB/s
+int 32M: 416.07 MB/s
+int 32M: 414.38 MB/s
+long 4k: 8472.34 MB/s
+long 4k: 8610.57 MB/s
+long 4k: 8387.95 MB/s
+long 4k: 8513.71 MB/s
+long 4k: 8339.75 MB/s
+int 32M: 397.64 MB/s
+long 4k: 8461.17 MB/s
+long 4k: 8258.16 MB/s
+long 512k: 4351.15 MB/s
+long 4k: 8583.49 MB/s
+long 512k: 4493.85 MB/s
+long 512k: 4453.90 MB/s
+long 512k: 4518.98 MB/s
+long 512k: 4515.52 MB/s
+long 512k: 4500.29 MB/s
+long 512k: 4509.70 MB/s
+long 512k: 4493.76 MB/s
+long 512k: 4505.25 MB/s
+long 512k: 4493.05 MB/s
+long 512k: 4465.68 MB/s
+long 512k: 4490.77 MB/s
+long 8M: 489.94 MB/s
+long 32M: 438.65 MB/s
+Average: 2815.47 MB/s
+long 32M: 437.86 MB/s
+Average: 2811.44 MB/s
+long 8M: 504.93 MB/s
+long 8M: 465.46 MB/s
+long 8M: 448.44 MB/s
+long 8M: 452.35 MB/s
+long 8M: 456.74 MB/s
+long 8M: 458.18 MB/s
+long 8M: 455.35 MB/s
+long 8M: 448.23 MB/s
+long 8M: 454.59 MB/s
+long 8M: 453.53 MB/s
+long 8M: 448.20 MB/s
+long 8M: 445.31 MB/s
+long 8M: 447.83 MB/s
+long 32M: 462.87 MB/s
+Average: 2613.80 MB/s
+long 32M: 490.00 MB/s
+Average: 2528.50 MB/s
+long 32M: 488.75 MB/s
+Average: 2582.45 MB/s
+long 32M: 470.04 MB/s
+Average: 2534.04 MB/s
+long 32M: 474.97 MB/s
+Average: 2383.98 MB/s
+long 32M: 474.78 MB/s
+Average: 2573.56 MB/s
+long 32M: 475.65 MB/s
+Average: 2500.14 MB/s
+int 4k: 3231.24 MB/sint 4k: 3222.48 MB/s
+int 4k: 3160.79 MB/s
+int 4k: 3231.22 MB/s
+int 4k: 3218.75 MB/s
+int 4k: 3230.91 MB/s
+int 4k: 3229.81 MB/sint 4k: 3227.95 MB/s
+int 4k: 3230.88 MB/s
+int 4k: 3230.29 MB/s
+int 4k: 3228.91 MB/s
+int 4k: 3230.77 MB/sint 4k: 3230.99 MB/sint 4k: 3228.17 MB/s
+
+
+int 4k: 3230.06 MB/s
+
+int 4k: 3229.15 MB/s
+int 512k: 2565.29 MB/s
+int 512k: 2043.41 MB/s
+int 512k: 1938.42 MB/s
+int 512k: 2354.31 MB/s
+int 512k: 2040.28 MB/s
+int 512k: 1991.15 MB/s
+int 512k: 1682.44 MB/s
+int 512k: 1984.48 MB/s
+int 512k: 1856.45 MB/s
+int 512k: 1697.10 MB/s
+int 512k: 1717.89 MB/s
+int 512k: 1675.15 MB/s
+int 512k: 1629.33 MB/s
+int 512k: 1445.77 MB/s
+int 512k: 1374.10 MB/s
+int 512k: 1209.09 MB/s
+int 8M: 1404.79 MB/s
+int 8M: 1114.41 MB/s
+int 8M: 1044.55 MB/s
+int 8M: 1351.61 MB/s
+int 8M: 1368.90 MB/s
+int 8M: 1305.63 MB/s
+int 8M: 1315.10 MB/s
+int 8M: 1233.35 MB/s
+int 8M: 1270.62 MB/s
+int 8M: 1127.81 MB/s
+int 8M: 1046.41 MB/s
+int 8M: 762.34 MB/s
+int 8M: 639.03 MB/s
+int 8M: 626.53 MB/s
+int 8M: 606.31 MB/s
+int 8M: 737.65 MB/s
+int 32M: 682.44 MB/s
+long 4k: 1552.12 MB/s
+long 512k: 4746.43 MB/s
+int 32M: 557.54 MB/s
+long 4k: 8731.24 MB/s
+int 32M: 461.04 MB/s
+int 32M: 471.00 MB/s
+long 4k: 8707.34 MB/s
+long 4k: 7425.20 MB/s
+long 512k: 4402.54 MB/s
+int 32M: 522.51 MB/s
+long 4k: 8720.01 MB/s
+long 512k: 4542.39 MB/s
+long 512k: 4516.64 MB/s
+long 512k: 4671.84 MB/s
+int 32M: 446.92 MB/s
+long 4k: 8737.41 MB/s
+int 32M: 417.59 MB/s
+long 4k: 8621.01 MB/s
+int 32M: 451.18 MB/s
+long 4k: 8716.74 MB/s
+long 512k: 4481.87 MB/s
+long 512k: 4326.90 MB/s
+int 32M: 444.64 MB/s
+long 4k: 8735.45 MB/s
+int 32M: 442.26 MB/s
+long 4k: 8621.77 MB/s
+long 512k: 4484.41 MB/s
+int 32M: 447.74 MB/s
+long 4k: 1211.25 MB/s
+long 512k: 2508.78 MB/s
+int 32M: 455.39 MB/s
+long 512k: 3798.27 MB/s
+long 4k: 7019.52 MB/s
+long 512k: 4516.02 MB/s
+long 512k: 4491.97 MB/s
+int 32M: 466.04 MB/s
+long 4k: 8660.85 MB/s
+int 32M: 470.34 MB/s
+long 4k: 8603.09 MB/s
+long 512k: 4697.31 MB/s
+int 32M: 476.84 MB/s
+long 4k: 8719.00 MB/s
+long 512k: 4372.51 MB/s
+int 32M: 529.78 MB/s
+long 4k: 8606.05 MB/s
+long 512k: 4557.18 MB/s
+long 512k: 4746.28 MB/s
+long 8M: 1741.68 MB/s
+long 8M: 1721.81 MB/s
+long 8M: 1694.97 MB/s
+long 8M: 1695.15 MB/s
+long 8M: 1751.57 MB/s
+long 8M: 1819.26 MB/s
+long 8M: 1813.73 MB/s
+long 8M: 1787.56 MB/s
+long 8M: 1685.25 MB/s
+long 8M: 1754.52 MB/s
+long 8M: 1623.72 MB/s
+long 8M: 1785.20 MB/s
+long 8M: 1815.15 MB/s
+long 8M: 1739.38 MB/s
+long 8M: 1691.36 MB/s
+long 8M: 1753.02 MB/s
+long 32M: 788.65 MB/s
+Average: 2768.30 MB/s
+long 32M: 509.73 MB/s
+Average: 2779.78 MB/s
+long 32M: 480.46 MB/s
+Average: 2746.51 MB/s
+long 32M: 494.07 MB/s
+Average: 1886.54 MB/s
+long 32M: 511.65 MB/s
+Average: 2705.27 MB/s
+long 32M: 503.04 MB/s
+Average: 1817.22 MB/s
+long 32M: 472.52 MB/s
+Average: 2522.48 MB/s
+long 32M: 487.34 MB/s
+Average: 2860.98 MB/s
+long 32M: 482.88 MB/s
+Average: 2709.71 MB/s
+long 32M: 470.75 MB/s
+Average: 2696.99 MB/s
+long 32M: 469.95 MB/s
+Average: 2715.67 MB/s
+long 32M: 478.91 MB/s
+Average: 2779.98 MB/s
+long 32M: 482.49 MB/s
+Average: 2598.05 MB/s
+long 32M: 492.47 MB/s
+Average: 2482.89 MB/s
+long 32M: 504.66 MB/s
+Average: 2825.25 MB/s
+long 32M: 510.68 MB/s
+Average: 2699.17 MB/s
+int 4k: 3229.43 MB/s
+
+int 4k: 3229.72 MB/s
+int 4k: 3229.93 MB/s
+int 4k: 3230.06 MB/s
+int 4k: 3216.94 MB/s
+int 4k: 3191.14 MB/s
+int 4k: 3162.89 MB/s
+int 4k: 3156.12 MB/s
+
+int 4k: 3151.91 MB/s
+int 4k: 3157.53 MB/s
+int 4k: 3157.12 MB/s
+int 4k: 3151.18 MB/s
+int 4k: 3143.33 MB/s
+int 4k: 2501.07 MB/s
+int 512k: 2714.30 MB/s
+int 512k: 2606.45 MB/s
+int 512k: 2409.34 MB/s
+int 512k: 2521.95 MB/s
+int 512k: 2476.51 MB/s
+int 512k: 2394.54 MB/s
+int 512k: 2377.40 MB/s
+int 512k: 2366.54 MB/s
+int 512k: 2253.46 MB/s
+int 512k: 2259.99 MB/s
+int 512k: 2217.18 MB/s
+int 512k: 2189.74 MB/s
+int 512k: 2107.69 MB/s
+int 512k: 2085.68 MB/s
+int 512k: 1943.85 MB/s
+int 8M: 506.05 MB/s
+int 8M: 509.82 MB/s
+int 8M: 433.33 MB/s
+int 8M: 407.30 MB/s
+int 8M: 404.70 MB/s
+int 8M: 406.84 MB/s
+int 8M: 412.96 MB/s
+int 8M: 408.74 MB/s
+int 8M: 408.87 MB/s
+int 8M: 411.36 MB/s
+int 8M: 406.57 MB/s
+int 8M: 405.76 MB/s
+int 8M: 398.62 MB/s
+int 8M: 399.59 MB/s
+int 8M: 395.52 MB/s
+int 8M: 395.80 MB/s
+int 32M: 451.06 MB/s
+int 32M: 472.02 MB/s
+long 4k: 8744.71 MB/s
+long 4k: 8681.03 MB/s
+long 512k: 4717.39 MB/s
+long 512k: 4778.02 MB/s
+int 32M: 655.74 MB/s
+long 4k: 8725.13 MB/s
+long 8M: 1721.52 MB/s
+long 8M: 1719.09 MB/s
+long 512k: 4738.02 MB/s
+int 32M: 454.29 MB/s
+long 4k: 8570.98 MB/s
+int 32M: 414.55 MB/s
+long 4k: 8696.55 MB/s
+long 512k: 4268.20 MB/s
+int 32M: 413.40 MB/s
+int 32M: 407.00 MB/s
+int 32M: 416.65 MB/s
+long 4k: 8710.16 MB/s
+long 4k: 8440.09 MB/s
+int 32M: 411.20 MB/s
+int 32M: 414.13 MB/s
+int 32M: 415.96 MB/s
+int 32M: 403.23 MB/s
+long 4k: 8608.34 MB/s
+int 32M: 397.28 MB/s
+int 32M: 416.07 MB/s
+int 32M: 414.38 MB/s
+long 4k: 8472.34 MB/s
+long 4k: 8610.57 MB/s
+long 4k: 8387.95 MB/s
+long 4k: 8513.71 MB/s
+long 4k: 8339.75 MB/s
+int 32M: 397.64 MB/s
+long 4k: 8461.17 MB/s
+long 4k: 8258.16 MB/s
+long 512k: 4351.15 MB/s
+long 4k: 8583.49 MB/s
+long 512k: 4493.85 MB/s
+long 512k: 4453.90 MB/s
+long 512k: 4518.98 MB/s
+long 512k: 4515.52 MB/s
+long 512k: 4500.29 MB/s
+long 512k: 4509.70 MB/s
+long 512k: 4493.76 MB/s
+long 512k: 4505.25 MB/s
+long 512k: 4493.05 MB/s
+long 512k: 4465.68 MB/s
+long 512k: 4490.77 MB/s
+long 8M: 489.94 MB/s
+long 32M: 438.65 MB/s
+Average: 2815.47 MB/s
+long 32M: 437.86 MB/s
+Average: 2811.44 MB/s
+long 8M: 504.93 MB/s
+long 8M: 465.46 MB/s
+long 8M: 448.44 MB/s
+long 8M: 452.35 MB/s
+long 8M: 456.74 MB/s
+long 8M: 458.18 MB/s
+long 8M: 455.35 MB/s
+long 8M: 448.23 MB/s
+long 8M: 454.59 MB/s
+long 8M: 453.53 MB/s
+long 8M: 448.20 MB/s
+long 8M: 445.31 MB/s
+long 8M: 447.83 MB/s
+long 32M: 462.87 MB/s
+Average: 2613.80 MB/s
+long 32M: 490.00 MB/s
+Average: 2528.50 MB/s
+long 32M: 488.75 MB/s
+Average: 2582.45 MB/s
+long 32M: 470.04 MB/s
+Average: 2534.04 MB/s
+long 32M: 474.97 MB/s
+Average: 2383.98 MB/s
+long 32M: 474.78 MB/s
+Average: 2573.56 MB/s
+long 32M: 475.65 MB/s
+Average: 2500.14 MB/s
+long 32M: 468.18 MB/s
+Average: 2547.86 MB/s
+long 32M: 461.61 MB/s
+Average: 2544.61 MB/s
+long 32M: 470.47 MB/s
+Average: 2541.80 MB/s
+long 32M: 468.04 MB/s
+Average: 2492.80 MB/s
+long 32M: 462.61 MB/s
+Average: 2478.66 MB/s
+long 32M: 463.85 MB/s
+Average: 2528.28 MB/s

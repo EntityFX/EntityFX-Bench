@@ -1,0 +1,164 @@
+Warmup
+........................
+Bench
+[1] ArithemticsBenchmark
+ArithemticsBenchmark                  1703.09 ms        5284.49 pts   176151329.49 Iter/s
+Iterrations:       300000000, Ratio:            0.03
+[2] ParallelArithemticsBenchmark
+ParallelArithemticsBenchmark          3236.95 ms       44999.44 pts    92679889.04 Iter/s
+Iterrations:       300000000, Ratio:            0.03
+[3] MathBenchmark
+MathBenchmark                       100243.57 ms         997.57 pts     1995140.75 Iter/s
+Iterrations:       200000000, Ratio:             0.5
+[4] ParallelMathBenchmark
+ParallelMathBenchmark               100962.18 ms       16019.32 pts     1980939.89 Iter/s
+Iterrations:       200000000, Ratio:             0.5
+[5] CallBenchmark
+CallBenchmark                        12084.00 ms         696.99 pts    69699070.88 Iter/s
+Iterrations:      2000000000, Ratio:            0.01
+[6] ParallelCallBenchmark
+ParallelCallBenchmark                29025.46 ms       11140.85 pts    68905022.91 Iter/s
+Iterrations:      2000000000, Ratio:            0.01
+[7] IfElseBenchmark
+IfElseBenchmark                       3538.65 ms        5651.87 pts   565190020.13 Iter/s
+Iterrations:      2000000000, Ratio:            0.01
+[8] ParallelIfElseBenchmark
+ParallelIfElseBenchmark               3566.74 ms       90614.93 pts   560735788.53 Iter/s
+Iterrations:      2000000000, Ratio:            0.01
+[9] StringManipulation
+StringManipulation                   25108.21 ms        1991.38 pts      199138.32 Iter/s
+Iterrations:         5000000, Ratio:              10
+[10] ParallelStringManipulation
+ParallelStringManipulation          476195.29 ms        1685.93 pts       10499.89 Iter/s
+Iterrations:         5000000, Ratio:              10
+[11] MemoryBenchmark
+int 4k: 3232.47 MB/s
+int 512k: 2196.09 MB/s
+int 8M: 1456.42 MB/s
+int 32M: 1150.89 MB/s
+long 4k: 7339.87 MB/s
+long 512k: 4770.45 MB/s
+long 8M: 1873.55 MB/s
+long 32M: 1655.90 MB/s
+Average: 2959.46 MB/s
+MemoryBenchmark                      11575.99 ms        2959.46 pts        2959.46 MB/s
+Iterrations:          500000, Ratio:               1
+[12] ParallelMemoryBenchmark
+ParallelMemoryBenchmark              51891.02 ms       41006.96 pts       41006.96 MB/s
+Iterrations:          500000, Ratio:               1
+[13] RandomMemoryBenchmark
+Random int 4k: 3102.54 MB/s
+Random int 512k: 1132.70 MB/s
+Random int 8M: 364.34 MB/s
+Random long 4k: 5709.10 MB/s
+Random long 512k: 2400.49 MB/s
+Random long 8M: 728.98 MB/s
+Average: 2239.69 MB/s
+RandomMemoryBenchmark                15960.27 ms        4479.38 pts        2239.69 MB/s
+Iterrations:          500000, Ratio:               2
+[14] ParallelRandomMemoryBenchmark
+ParallelRandomMemoryBenchmark        20112.25 ms       91618.84 pts       45809.42 MB/s
+Iterrations:          500000, Ratio:               2
+[15] Scimark2Benchmark
+
+SciMark 2.0a
+
+Composite Score: 219.65810346666666
+FFT (1024): 218.03008
+SOR (100x100):   240.869376
+Monte Carlo : 134.217728
+Sparse matmult (N=1000, nz=5000): 163.84
+LU (100x100): 341.3333333333333
+Scimark2Benchmark                    12118.45 ms        2196.58 pts         219.66 CompositeScore
+Iterrations:               0, Ratio:              10
+[16] ParallelScimark2Benchmark
+ParallelScimark2Benchmark            13420.78 ms       33713.64 pts        3371.36 CompositeScore
+Iterrations:               0, Ratio:              10
+[17] DhrystoneBenchmark
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C#)
+
+Optimization Optimised
+
+Final values (* implementation-dependent):
+
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  True
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.  20000010
+Ptr_Glob->              Ptr_Comp:       *    True
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    True same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Nanoseconds one Dhrystone run: 308.35646006783844
+Dhrystones per Second:         3243000
+VAX  MIPS rating =             1845.7598178713718
+
+DhrystoneBenchmark                    6231.34 ms        7383.04 pts        1845.76 DMIPS
+Iterrations:               0, Ratio:               4
+[18] ParallelDhrystoneBenchmark
+ParallelDhrystoneBenchmark            7905.62 ms       95009.68 pts       23752.42 DMIPS
+Iterrations:               0, Ratio:               4
+[19] WhetstoneBenchmark
+Double Precision C# Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.03 Seconds          1   Passes (x 100)
+       0.07 Seconds          5   Passes (x 100)
+       0.27 Seconds         25   Passes (x 100)
+       0.84 Seconds        125   Passes (x 100)
+       3.41 Seconds        625   Passes (x 100)
+
+Use 18326  passes (x 100)
+
+          Double Precision C# Whetstone Benchmark
+
+                  ??
+
+
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 doubleing point    -1.12441415430186997      609.633               0.577
+N2 doubleing point    -1.12239951147841022      442.113               5.571
+N3 if then else        1.00000000000000000                2383.366    0.796
+N4 fixed point        12.00000000000000000                1240.241    4.654
+N5 sin,cos etc.        0.49907428465336617                  41.620   36.634
+N6 doubleing point     0.99999988495278092      330.849              29.878
+N7 assignments         3.00000000000000000                 982.888    3.446
+N8 exp,sqrt etc.       0.75095530233199315                  31.948   21.338
+MWIPS                                           1781.044            102.895
+
+WhetstoneBenchmark                  113022.00 ms        1781.04 pts        1781.04 MWIPS
+Iterrations:               0, Ratio:               1
+[20] ParallelWhetstoneBenchmark
+ParallelWhetstoneBenchmark          114676.65 ms       28771.59 pts       28771.59 MWIPS
+Iterrations:               0, Ratio:               1
+[21] LinpackBenchmark
+Running Linpack 2000x2000 in C#
+Norma is 0.49999936918999666
+Residual is 4.4959869160976496E-12
+Normalised residual is 20.25
+Machine result.Eepsilon is 2.220446049250313E-16
+x[0]-1 is 4.440892098500626E-13
+x[n-1]-1 is -3.997469022465339E-12
+Time is 22.21
+MFLOPS: 240.471
+LinpackBenchmark                     23591.74 ms        2404.71 pts         240.47 MFLOPS
+Iterrations:               0, Ratio:              10
+[22] ParallelLinpackBenchmark
+ParallelLinpackBenchmark             63251.88 ms        1446.72 pts        1446.72 MFLOPS
+Iterrations:               0, Ratio:              10
+[23] HashBenchmark
+HashBenchmark                        16522.65 ms        1210.46 pts      121046.49 Iter/s
+Iterrations:         2000000, Ratio:              10
