@@ -1,0 +1,480 @@
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.02 Seconds          1   Passes (x 100)
+       0.06 Seconds          5   Passes (x 100)
+       0.33 Seconds         25   Passes (x 100)
+       1.65 Seconds        125   Passes (x 100)
+       8.24 Seconds        625   Passes (x 100)
+
+Use 7581  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      838.452               0.174
+N2 floating point      -1.12187079889284425      339.403               3.002
+N3 if then else         1.00000000000000000                 211.093    3.717
+N4 fixed point         12.00000000000000000                 453.995    5.260
+N5 sin,cos etc.         0.49902937281505760                  47.339   13.324
+N6 floating point       0.97464153175604484      196.652              20.794
+N7 assignments          3.00000000000000000                  61.875   22.642
+N8 exp,sqrt etc.        0.75100163018460031                   9.103   30.980
+MWIPS                                            758.915              99.893
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.02 Seconds          1   Passes (x 100)
+       0.06 Seconds          5   Passes (x 100)
+       0.33 Seconds         25   Passes (x 100)
+       1.64 Seconds        125   Passes (x 100)
+       8.26 Seconds        625   Passes (x 100)
+
+Use 7570  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      838.684               0.173
+N2 floating point      -1.12187079889284425      339.362               2.998
+N3 if then else         1.00000000000000000                 211.071    3.712
+N4 fixed point         12.00000000000000000                 453.941    5.253
+N5 sin,cos etc.         0.49902937281505760                  46.911   13.426
+N6 floating point       0.97464153175604484      195.045              20.935
+N7 assignments          3.00000000000000000                  61.265   22.834
+N8 exp,sqrt etc.        0.75100163018460031                   9.085   30.995
+MWIPS                                            754.538             100.326
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.07 Seconds          5   Passes (x 100)
+       0.33 Seconds         25   Passes (x 100)
+       1.65 Seconds        125   Passes (x 100)
+       8.26 Seconds        625   Passes (x 100)
+
+Use 7568  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      838.463               0.173
+N2 floating point      -1.12187079889284425      338.933               3.001
+N3 if then else         1.00000000000000000                 210.845    3.715
+N4 fixed point         12.00000000000000000                 453.734    5.254
+N5 sin,cos etc.         0.49902937281505760                  47.382   13.289
+N6 floating point       0.97464153175604484      196.211              20.805
+N7 assignments          3.00000000000000000                  61.619   22.697
+N8 exp,sqrt etc.        0.75100163018460031                   9.100   30.938
+MWIPS                                            757.768              99.872
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.02 Seconds          1   Passes (x 100)
+       0.07 Seconds          5   Passes (x 100)
+       0.33 Seconds         25   Passes (x 100)
+       1.64 Seconds        125   Passes (x 100)
+       8.25 Seconds        625   Passes (x 100)
+
+Use 7575  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      838.271               0.173
+N2 floating point      -1.12187079889284425      339.360               3.000
+N3 if then else         1.00000000000000000                 210.983    3.716
+N4 fixed point         12.00000000000000000                 453.722    5.259
+N5 sin,cos etc.         0.49902937281505760                  47.135   13.371
+N6 floating point       0.97464153175604484      196.167              20.829
+N7 assignments          3.00000000000000000                  61.990   22.582
+N8 exp,sqrt etc.        0.75100163018460031                   9.166   30.742
+MWIPS                                            759.989              99.672
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.02 Seconds          1   Passes (x 100)
+       0.06 Seconds          5   Passes (x 100)
+       0.33 Seconds         25   Passes (x 100)
+       1.64 Seconds        125   Passes (x 100)
+       8.23 Seconds        625   Passes (x 100)
+
+Use 7590  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      838.481               0.174
+N2 floating point      -1.12187079889284425      339.466               3.005
+N3 if then else         1.00000000000000000                 211.117    3.721
+N4 fixed point         12.00000000000000000                 454.189    5.264
+N5 sin,cos etc.         0.49902937281505760                  47.310   13.348
+N6 floating point       0.97464153175604484      196.829              20.800
+N7 assignments          3.00000000000000000                  62.259   22.529
+N8 exp,sqrt etc.        0.75100163018460031                   9.191   30.721
+MWIPS                                            762.341              99.562
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.07 Seconds          5   Passes (x 100)
+       0.33 Seconds         25   Passes (x 100)
+       1.64 Seconds        125   Passes (x 100)
+       8.23 Seconds        625   Passes (x 100)
+
+Use 7592  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      838.220               0.174
+N2 floating point      -1.12187079889284425      339.443               3.006
+N3 if then else         1.00000000000000000                 211.059    3.723
+N4 fixed point         12.00000000000000000                 453.877    5.269
+N5 sin,cos etc.         0.49902937281505760                  47.258   13.366
+N6 floating point       0.97464153175604484      195.155              20.984
+N7 assignments          3.00000000000000000                  61.331   22.876
+N8 exp,sqrt etc.        0.75100163018460031                   9.092   31.064
+MWIPS                                            755.709             100.462
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.08 Seconds          5   Passes (x 100)
+       0.33 Seconds         25   Passes (x 100)
+       1.66 Seconds        125   Passes (x 100)
+       8.24 Seconds        625   Passes (x 100)
+
+Use 7588  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      838.260               0.174
+N2 floating point      -1.12187079889284425      339.377               3.005
+N3 if then else         1.00000000000000000                 211.061    3.721
+N4 fixed point         12.00000000000000000                 454.069    5.264
+N5 sin,cos etc.         0.49902937281505760                  47.283   13.352
+N6 floating point       0.97464153175604484      194.413              21.053
+N7 assignments          3.00000000000000000                  61.095   22.952
+N8 exp,sqrt etc.        0.75100163018460031                   9.066   31.135
+MWIPS                                            753.856             100.656
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.07 Seconds          5   Passes (x 100)
+       0.33 Seconds         25   Passes (x 100)
+       1.65 Seconds        125   Passes (x 100)
+       8.23 Seconds        625   Passes (x 100)
+
+Use 7590  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      837.999               0.174
+N2 floating point      -1.12187079889284425      339.353               3.006
+N3 if then else         1.00000000000000000                 211.060    3.722
+N4 fixed point         12.00000000000000000                 453.844    5.268
+N5 sin,cos etc.         0.49902937281505760                  47.306   13.349
+N6 floating point       0.97464153175604484      194.704              21.027
+N7 assignments          3.00000000000000000                  61.232   22.907
+N8 exp,sqrt etc.        0.75100163018460031                   9.082   31.090
+MWIPS                                            754.902             100.543
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.07 Seconds          5   Passes (x 100)
+       0.33 Seconds         25   Passes (x 100)
+       1.64 Seconds        125   Passes (x 100)
+       8.24 Seconds        625   Passes (x 100)
+
+Use 7581  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      837.969               0.174
+N2 floating point      -1.12187079889284425      339.403               3.002
+N3 if then else         1.00000000000000000                 211.093    3.717
+N4 fixed point         12.00000000000000000                 453.995    5.260
+N5 sin,cos etc.         0.49902937281505760                  47.300   13.335
+N6 floating point       0.97464153175604484      195.833              20.881
+N7 assignments          3.00000000000000000                  61.503   22.779
+N8 exp,sqrt etc.        0.75100163018460031                   9.110   30.955
+MWIPS                                            757.322             100.103
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.08 Seconds          5   Passes (x 100)
+       0.33 Seconds         25   Passes (x 100)
+       1.65 Seconds        125   Passes (x 100)
+       8.26 Seconds        625   Passes (x 100)
+
+Use 7568  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      837.496               0.173
+N2 floating point      -1.12187079889284425      339.159               2.999
+N3 if then else         1.00000000000000000                 210.958    3.713
+N4 fixed point         12.00000000000000000                 453.734    5.254
+N5 sin,cos etc.         0.49902937281505760                  47.053   13.382
+N6 floating point       0.97464153175604484      194.742              20.962
+N7 assignments          3.00000000000000000                  61.257   22.831
+N8 exp,sqrt etc.        0.75100163018460031                   9.084   30.991
+MWIPS                                            754.495             100.305
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.08 Seconds          5   Passes (x 100)
+       0.33 Seconds         25   Passes (x 100)
+       1.65 Seconds        125   Passes (x 100)
+       8.24 Seconds        625   Passes (x 100)
+
+Use 7589  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      838.370               0.174
+N2 floating point      -1.12187079889284425      339.534               3.004
+N3 if then else         1.00000000000000000                 211.089    3.721
+N4 fixed point         12.00000000000000000                 453.957    5.266
+N5 sin,cos etc.         0.49902937281505760                  47.325   13.342
+N6 floating point       0.97464153175604484      196.294              20.854
+N7 assignments          3.00000000000000000                  61.597   22.768
+N8 exp,sqrt etc.        0.75100163018460031                   9.123   30.946
+MWIPS                                            758.333             100.075
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.02 Seconds          1   Passes (x 100)
+       0.06 Seconds          5   Passes (x 100)
+       0.33 Seconds         25   Passes (x 100)
+       1.65 Seconds        125   Passes (x 100)
+       8.27 Seconds        625   Passes (x 100)
+
+Use 7560  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      837.576               0.173
+N2 floating point      -1.12187079889284425      339.253               2.995
+N3 if then else         1.00000000000000000                 210.963    3.709
+N4 fixed point         12.00000000000000000                 453.773    5.248
+N5 sin,cos etc.         0.49902937281505760                  47.193   13.328
+N6 floating point       0.97464153175604484      190.822              21.370
+N7 assignments          3.00000000000000000                  60.624   23.045
+N8 exp,sqrt etc.        0.75100163018460031                   9.017   31.190
+MWIPS                                            748.083             101.058
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.07 Seconds          5   Passes (x 100)
+       0.33 Seconds         25   Passes (x 100)
+       1.65 Seconds        125   Passes (x 100)
+       8.25 Seconds        625   Passes (x 100)
+
+Use 7580  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      838.341               0.174
+N2 floating point      -1.12187079889284425      339.471               3.001
+N3 if then else         1.00000000000000000                 211.065    3.717
+N4 fixed point         12.00000000000000000                 454.022    5.259
+N5 sin,cos etc.         0.49902937281505760                  47.418   13.300
+N6 floating point       0.97464153175604484      196.080              20.852
+N7 assignments          3.00000000000000000                  61.532   22.765
+N8 exp,sqrt etc.        0.75100163018460031                   9.114   30.940
+MWIPS                                            757.942             100.008
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.07 Seconds          5   Passes (x 100)
+       0.33 Seconds         25   Passes (x 100)
+       1.66 Seconds        125   Passes (x 100)
+       8.26 Seconds        625   Passes (x 100)
+
+Use 7569  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      838.090               0.173
+N2 floating point      -1.12187079889284425      339.431               2.997
+N3 if then else         1.00000000000000000                 211.100    3.711
+N4 fixed point         12.00000000000000000                 453.967    5.252
+N5 sin,cos etc.         0.49902937281505760                  47.069   13.379
+N6 floating point       0.97464153175604484      193.265              21.125
+N7 assignments          3.00000000000000000                  61.041   22.915
+N8 exp,sqrt etc.        0.75100163018460031                   9.023   31.205
+MWIPS                                            751.210             100.757
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.02 Seconds          1   Passes (x 100)
+       0.08 Seconds          5   Passes (x 100)
+       0.33 Seconds         25   Passes (x 100)
+       1.65 Seconds        125   Passes (x 100)
+       8.24 Seconds        625   Passes (x 100)
+
+Use 7586  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      838.039               0.174
+N2 floating point      -1.12187079889284425      339.400               3.004
+N3 if then else         1.00000000000000000                 211.119    3.719
+N4 fixed point         12.00000000000000000                 454.036    5.263
+N5 sin,cos etc.         0.49902937281505760                  47.214   13.368
+N6 floating point       0.97464153175604484      192.180              21.292
+N7 assignments          3.00000000000000000                  60.762   23.072
+N8 exp,sqrt etc.        0.75100163018460031                   8.952   31.522
+MWIPS                                            748.024             101.414
+
+
+Double Precision Go Whetstone Benchmark
+
+With run time input data
+
+Calibrate
+       0.03 Seconds          1   Passes (x 100)
+       0.07 Seconds          5   Passes (x 100)
+       0.33 Seconds         25   Passes (x 100)
+       1.65 Seconds        125   Passes (x 100)
+       8.24 Seconds        625   Passes (x 100)
+
+Use 7584  passes (x 100)
+
+          Double Precision Go Whetstone Benchmark
+
+                  
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12398255667391900      837.818               0.174
+N2 floating point      -1.12187079889284425      339.311               3.004
+N3 if then else         1.00000000000000000                 211.006    3.720
+N4 fixed point         12.00000000000000000                 454.002    5.262
+N5 sin,cos etc.         0.49902937281505760                  47.336   13.330
+N6 floating point       0.97464153175604484      193.492              21.142
+N7 assignments          3.00000000000000000                  60.949   22.995
+N8 exp,sqrt etc.        0.75100163018460031                   9.047   31.183
+MWIPS                                            752.308             100.810
+
+
