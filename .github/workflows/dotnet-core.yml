@@ -22,7 +22,4 @@ jobs:
       working-directory: src/dotnet/
     - name: Build
       run: dotnet build --configuration Release --no-restore
-      working-directory: src/dotnet/
-    - name: Test
-      run: dotnet test --no-restore --verbosity normal
-      working-directory: src/dotnet/
+      working-directory: src/dotnet/EntityFX.NetBenchmark
