@@ -9,7 +9,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
     {
         private Random random;
 
-        protected IWriter localWriter = new Writer(null);
+        protected IWriter localWriter = WriterFactory.Build();
 
 #if PocketPC
         private Dictionary<string, int> intMemTests = new Dictionary<string, int>

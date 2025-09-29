@@ -1,0 +1,180 @@
+﻿@page "/"
+
+<h1>EntityFX Benchmark</h1>
+
+<button class="btn btn-primary" @onclick="@(async () => await Start())">Start Benchmark</button>
+
+<pre>@InputValue</pre>
+
+@code {
+
+    private BlazorWriter writer = new BlazorWriter();
+
+    private IBenchamrk[] benchMarks;
+
+    private double singleThreadTotalPoints = 0;
+
+    private double totalPoints = 0;
+
+    private string InputValue = string.Empty;
+
+    private TimeSpan singleThreadTotal = TimeSpan.Zero;
+    private TimeSpan total = TimeSpan.Zero;
+
+    private void TextWrite(object sender, string text)
+    {
+        InputValue += text;
+        InvokeAsync(StateHasChanged);
+    }
+
+    protected override void OnInitialized()
+    {
+        WriterFactory.Builder = () => new BlazorWriter();
+
+        writer.TextWrite += TextWrite;
+
+        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+
+        BenchmarkBase.IterrationsRatio = 0.1;
+
+#if DEBUG
+    BenchmarkBase.IterrationsRatio = BenchmarkBase.IterrationsRatio * 0.1;
+#endif
+
+        benchMarks = new IBenchamrk[]
+        {
+            new ArithemticsBenchmark(writer),
+
+            new MathBenchmark(writer),
+
+            new CallBenchmark(writer),
+
+            new IfElseBenchmark(writer),
+
+            new StringManipulation(writer),
+
+            new MemoryBenchmark(true, writer),
+
+            new RandomMemoryBenchmark(true, writer),
+
+            new Scimark2Benchmark(writer),
+
+            new DhrystoneBenchmark(writer),
+
+            new WhetstoneBenchmark(writer),
+
+            new LinpackBenchmark(writer),
+
+            //new HashBenchmark(writer)
+                };
+
+    }
+
+    private async Task Start()
+    {
+        await this.InvokeAsync(() => Bench());
+    }
+
+    private void Bench()
+    {
+        singleThreadTotal = TimeSpan.Zero;
+        total = TimeSpan.Zero;
+
+        singleThreadTotalPoints = 0;
+        totalPoints = 0;
+
+        List<BenchResult> result = new List<BenchResult>();
+
+
+        writer.WriteHeader("Warmup");
+        foreach (var bench in benchMarks)
+        {
+            bench.Warmup(0.05);
+            writer.Write(".");
+            StateHasChanged();
+        }
+
+        writer.WriteLine();
+        writer.WriteHeader("Bench");
+        StateHasChanged();
+        Task.Delay(1000);
+        int i = 1;
+        foreach (var bench in benchMarks)
+        {
+            writer.WriteHeader($"[{i}] {bench.Name}");
+            var r = bench.Bench();
+            if (!bench.IsParallel)
+            {
+                singleThreadTotal += r.Elapsed;
+                singleThreadTotalPoints += r.Points;
+            }
+            total += r.Elapsed;
+            totalPoints += r.Points;
+            WriteResult(r);
+            result.Add(r);
+            i++;
+            StateHasChanged();
+        }
+
+        writer.WriteLine();
+        writer.WriteTitle("{0,-30}", $"Total:");
+        writer.WriteValue("{0,15} ms", string.Format("{0:F2}", total.TotalMilliseconds));
+        writer.WriteValue("{0,15} pts", string.Format("{0:F2}", totalPoints));
+        writer.WriteLine();
+
+        var headerCommon = "Operating System,Runtime,Threads Count,Memory Used";
+        var headerTotals = ",Total Points,Total Time (ms)";
+
+        writer.WriteLine();
+        writer.WriteHeader("Single-thread results");
+        writer.WriteTitle(headerCommon);
+        result.Where(r => !r.IsParallel).ToList().ForEach(r => writer.WriteTitle($",{r.BenchmarkName}"));
+        writer.WriteTitle(headerTotals);
+        writer.WriteLine();
+        writer.WriteTitle($"{Environment.OSVersion},{Environment.Version},{Environment.ProcessorCount},{Environment.WorkingSet}");
+        result.Where(r => !r.IsParallel).ToList().ForEach(r => writer.WriteValue(string.Format(",{0:F2}", r.Points)));
+        writer.WriteTitle($",{string.Format("{0:F2}", totalPoints)},{string.Format("{0:F2}", total.TotalMilliseconds)}");
+
+        writer.WriteLine();
+        writer.WriteHeader("All results");
+        writer.WriteTitle(headerCommon);
+        result.ToList().ForEach(r => writer.WriteTitle($",{r.BenchmarkName}"));
+        writer.WriteTitle(headerTotals);
+        writer.WriteLine();
+        writer.WriteTitle($"{Environment.OSVersion};{Environment.Version};{Environment.ProcessorCount},{Environment.WorkingSet}");
+        result.ForEach(r => writer.WriteValue(string.Format(",{0:F2}", r.Points)));
+        writer.WriteTitle($",{string.Format("{0:F2}", totalPoints)},{string.Format("{0:F2}", total.TotalMilliseconds)}");
+
+        writer.WriteLine();
+        writer.WriteHeader("Single-thread  Units results");
+        writer.WriteTitle(headerCommon);
+        result.Where(r => !r.IsParallel).ToList().ForEach(r => writer.WriteTitle($",{r.BenchmarkName}"));
+        writer.WriteTitle(headerTotals);
+        writer.WriteLine();
+        writer.WriteTitle($"{Environment.OSVersion},{Environment.Version};{Environment.ProcessorCount},{Environment.WorkingSet}");
+        result.Where(r => !r.IsParallel).ToList().ForEach(r => writer.WriteValue(string.Format(",{0:F2}", r.Result)));
+        writer.WriteTitle($",{string.Format("{0:F2}", totalPoints)},{string.Format("{0:F2}", total.TotalMilliseconds)}");
+
+        writer.WriteLine();
+        writer.WriteHeader("Units results");
+        writer.WriteTitle(headerCommon);
+        result.ToList().ForEach(r => writer.WriteTitle($",{r.BenchmarkName}"));
+        writer.WriteTitle(headerTotals);
+        writer.WriteLine();
+        writer.WriteTitle($"{Environment.OSVersion},{Environment.Version},{Environment.ProcessorCount},{Environment.WorkingSet}");
+        result.ForEach(r => writer.WriteValue(string.Format(",{0:F2}", r.Result)));
+        writer.WriteTitle($",{string.Format("{0:F2}", totalPoints)},{string.Format("{0:F2}", total.TotalMilliseconds)}");
+    }
+
+    private void WriteResult(BenchResult benchResult)
+    {
+        writer.WriteTitle("{0,-30}", benchResult.BenchmarkName);
+        writer.WriteValue("{0,15} ms", string.Format("{0:F2}", benchResult.Elapsed.TotalMilliseconds));
+        writer.WriteValue("{0,15} pts", string.Format("{0:F2}", benchResult.Points));
+        writer.WriteValue("{0,15} {1}", string.Format("{0:F2}", benchResult.Result), benchResult.Units);
+        writer.WriteLine();
+        writer.WriteValue("Iterrations: {0,15}, Ratio: {1,15}", benchResult.Iterrations, benchResult.Ratio);
+
+        writer.WriteLine();
+    }
+}

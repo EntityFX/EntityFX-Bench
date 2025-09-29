@@ -33,7 +33,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
 
         private Random random;
 
-        protected IWriter localWriter = new Writer(null);
+        protected IWriter localWriter = WriterFactory.Build();
 
         public RandomMemoryBenchmarkBase(bool printToConsole, IWriter writer)
             :base(writer)

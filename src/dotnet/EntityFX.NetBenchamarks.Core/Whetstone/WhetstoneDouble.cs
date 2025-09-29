@@ -22,7 +22,7 @@ namespace EntityFX.NetBenchmark.Core.Whetstone
 
         public WhetstoneDouble(bool printToConsole)
         {
-            output = new Writer(null);
+            output = WriterFactory.Build();
             output.UseConsole = printToConsole;
         }
 

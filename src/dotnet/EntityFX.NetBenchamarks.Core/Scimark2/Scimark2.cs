@@ -9,7 +9,7 @@ namespace EntityFX.NetBenchmark.Core.Scimark2
 
         public Scimark2(bool printToConsole)
         {
-            output = new Writer(null);
+            output = WriterFactory.Build();
             output.UseConsole = printToConsole;
         }
 

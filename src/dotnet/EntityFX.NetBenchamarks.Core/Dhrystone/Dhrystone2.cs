@@ -42,7 +42,7 @@ namespace EntityFX.NetBenchmark.Core.Dhrystone
 
         public Dhrystone2(bool printToConsole)
         {
-            output = new Writer(null);
+            output = WriterFactory.Build();
             output.UseConsole = printToConsole;
         }
 

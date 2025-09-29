@@ -13,7 +13,7 @@ namespace EntityFX.NetBenchmark.Core.Linpack
 
         public Linpack(bool printToConsole)
         {
-            output = new Writer(null);
+            output = WriterFactory.Build();
             this.output.UseConsole = printToConsole;
         }
 
