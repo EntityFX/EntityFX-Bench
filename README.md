@@ -10,6 +10,7 @@
 * Java
 * Python
 * Lua
+* Golang
 
 ## Benchmarks
 

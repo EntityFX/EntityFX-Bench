@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 
-#if NETSTANDARD2_0 || NET45
+#if NETSTANDARD2_0 || NET45 || NETCOREAPP
 using System.Threading.Tasks;
 #endif
 
@@ -53,7 +53,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
             if (result.Output == null) {
                 return;
             }
-#if NETSTANDARD2_0 || NET45
+#if NETSTANDARD2_0 || NET45 || NETCOREAPP
             File.WriteAllText(string.Format("{0}.log",GetType().Name) , result.Output);
 #else
             using (var sw = new StreamWriter(string.Format("{0}.log", GetType().Name)))
@@ -87,7 +87,7 @@ namespace EntityFX.NetBenchmark.Core.Generic
         }
 
 
-#if NETSTANDARD2_0 || NET45
+#if NETSTANDARD2_0 || NET45 || NETCOREAPP
 
         protected virtual BenchResult[] BenchInParallel<TBench, TBenchResult>(
             Func<TBench> buildFunc, Func<TBench, TBenchResult> benchFunc, 
