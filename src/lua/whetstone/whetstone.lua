@@ -9,9 +9,16 @@ Whetstone = class(function(w, printToConsole)
     w.headings = {}
     w.check = 0.0
     w.results = {}
+    w.timea = 0
+    w.timee = 0
+    w.timeb = 0
 end)
 
 function Whetstone:bench(getinput)
+    self.timea = 0
+    self.timee = 0
+    self.timeb = 0
+
     local count = 10
     local calibrate = 1
     local xtra = 1
@@ -108,10 +115,12 @@ function Whetstone:whetstones(xtra, x100, calibrate)
     e1[1] = -1.0
     e1[2] = -1.0
     e1[3] = -1.0
-    local start = os.clock()
+
+    local timee = 0
+    local timeDiff = 0
     xtra1 = xtra - 1
 
-    timea = start
+    self.timea = clockSeconds()
     for ix = 0, xtra1 do 
         for i = 0, (n1 * n1mult) - 1  do
             e1[0] = (((e1[0] + e1[1] + e1[2]) - e1[3])) * t
@@ -122,10 +131,11 @@ function Whetstone:whetstones(xtra, x100, calibrate)
         t = 1.0 - t
     end
     t = t0
-    timeb = (os.clock() - timea) / n1mult
-    self:pout("N1 floating point", n1 * 16 * xtra, 1, e1[3], timeb, calibrate, 1)
+    self.timee = clockSeconds()
+    self.timeb = self:getTimeb(self.timea, self.timee, n1mult)
+    self:pout("N1 floating point", n1 * 16 * xtra, 1, e1[3], self.timeb, calibrate, 1)
     
-    timea = start
+    self.timea = clockSeconds()
     for ix = 0, xtra1 do
         for i = 0, n2 - 1 do
            e1 = self:pa(e1, t, t2)
@@ -133,11 +143,12 @@ function Whetstone:whetstones(xtra, x100, calibrate)
         t = 1.0 - t
     end
     t = t0
-    timeb = os.clock() - timea
-    self:pout("N2 floating point", n2 * 96 * xtra, 1, e1[3], timeb, calibrate, 2)
+    self.timee = clockSeconds()
+    self.timeb = self:getTimeb(self.timea, self.timee, 1)
+    self:pout("N2 floating point", n2 * 96 * xtra, 1, e1[3], self.timeb, calibrate, 2)
 
     j = 1
-    timea = start
+    self.timea = clockSeconds()
     for ix = 0, xtra1 do
         for i = 0, n3 - 1 do
             if j == 1 then
@@ -157,13 +168,14 @@ function Whetstone:whetstones(xtra, x100, calibrate)
             end
         end
     end
-    timeb = os.clock() - timea
-    self:pout("N3 if then else  ", n3 * 3 * xtra, 2, j, timeb, calibrate,3)
+    self.timee = clockSeconds()
+    self.timeb = self:getTimeb(self.timea, self.timee, 1)
+    self:pout("N3 if then else  ", n3 * 3 * xtra, 2, j, self.timeb, calibrate,3)
 
     j = 1
     k = 2
     l = 3
-    timea = start
+    self.timea = clockSeconds()
     for ix = 0, xtra1 do
         for i = 0,  n4 - 1 do
             j = j * ((k - j)) * ((l - k))
@@ -173,13 +185,14 @@ function Whetstone:whetstones(xtra, x100, calibrate)
             e1[k - 2] =  j * k * l
         end
     end
-    timeb = os.clock() - timea
+    self.timee = clockSeconds()
+    self.timeb = self:getTimeb(self.timea, self.timee, 1)
     x = e1[0] + e1[1]
-    self:pout("N4 fixed point   ", n4 * 15 * xtra, 2, x, timeb, calibrate, 4)
+    self:pout("N4 fixed point   ", n4 * 15 * xtra, 2, x, self.timeb, calibrate, 4)
    
     x = .5
     y = .5
-    timea = start
+    self.timea = clockSeconds()
     for ix = 0, xtra1 do
         for i = 1, n5 - 1 do
             x =  (((t) * math.atan(((t2) * math.sin(x) * math.cos(x))
@@ -190,13 +203,14 @@ function Whetstone:whetstones(xtra, x100, calibrate)
         t = 1.0 - t
     end
     t = t0
-    timeb = os.clock() - timea
-    self:pout("N5 sin,cos etc.  ", n5 * 26 * xtra, 2, y, timeb, calibrate, 5)
+    self.timee = clockSeconds()
+    self.timeb = self:getTimeb(self.timea, self.timee, 1)
+    self:pout("N5 sin,cos etc.  ", n5 * 26 * xtra, 2, y, self.timeb, calibrate, 5)
 
     x = 1.0
     y = 1.0
     z = 1.0
-    timea = start
+    self.timea = clockSeconds()
     for ix = 0, xtra1 do
         for i = 0, n6 - 1 do
             wrapx2 = x
@@ -223,8 +237,9 @@ function Whetstone:whetstones(xtra, x100, calibrate)
             end
         end
     end
-    timeb = os.clock() - timea
-    self:pout("N6 floating point", n6 * 6 * xtra, 1, z, timeb, calibrate, 6)
+    self.timee = clockSeconds()
+    self.timeb = self:getTimeb(self.timea, self.timee, 1)
+    self:pout("N6 floating point", n6 * 6 * xtra, 1, z, self.timeb, calibrate, 6)
     
     j = 0
     k = 1
@@ -232,24 +247,26 @@ function Whetstone:whetstones(xtra, x100, calibrate)
     e1[0] = 1.0
     e1[1] = 2.0
     e1[2] = 3.0
-    timea = start
+    self.timea = clockSeconds()
     for ix = 0, xtra1 do
         for i = 0, n7 - 1 do
             el = self:po(e1, j, k, l)
         end
     end
-    timeb = os.clock() - timea
-    self:pout("N7 assignments   ", n7 * 3 * xtra, 2, e1[2], timeb, calibrate, 7)
+    self.timee = clockSeconds()
+    self.timeb = self:getTimeb(self.timea, self.timee, 1)
+    self:pout("N7 assignments   ", n7 * 3 * xtra, 2, e1[2], self.timeb, calibrate, 7)
     
     x = 0.75
-    timea = start
+    self.timea = clockSeconds()
     for ix = 0, xtra1 do
         for i = 0, n8 - 1 do
             x =  math.sqrt(math.exp(math.log(x) / (t1)))
         end
     end
-    timeb = os.clock() - timea
-    self:pout("N8 exp,sqrt etc. ", n8 * 4 * xtra, 2, x, timeb, calibrate, 8)
+    self.timee = clockSeconds()
+    self.timeb = self:getTimeb(self.timea, self.timee, 1)
+    self:pout("N8 exp,sqrt etc. ", n8 * 4 * xtra, 2, x, self.timeb, calibrate, 8)
 end
 
 function Whetstone:pa(e, t, t2)
@@ -320,4 +337,20 @@ end
 
 function Whetstone:write(text, ...)
     self.output:write(text, ...)
+end
+
+function Whetstone:getTimeb(timea, timee, q)
+    local timeDiff = timee - timea
+    local timeb = 0
+    if (timeDiff == 0) then
+        timeDiff = 1
+    end
+
+    if (q == 0) then
+        return 0
+    end
+
+    timeb = timeDiff / q
+
+    return timeb
 end

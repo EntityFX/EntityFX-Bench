@@ -2,16 +2,23 @@ MemoryBenchmarkBase = class(BenchmarkBase, function(a, writer, printToConsole)
     BenchmarkBase.init(a, writer, printToConsole)
     a.iterrations = 500000
     a.ratio = 1
+    a.beforeClockMemory = 0
+    a.afterClockMemory = 0
+    a.elapsedClockMemory = 0
 end)
 
-function MemoryBenchmarkBase:benchRandomMemory()
-    local int4k = self:measureArrayRandomRead(1024)
+function MemoryBenchmarkBase:benchMemory()
+    self.beforeClockMemory = 0
+    self.afterClockMemory = 0
+    self.elapsedClockMemory = 0
+
+    local int4k = self:measureArrayRead(1024)
     self.output:writeLine("int 4k: %.2f MB/s", int4k.mbPerSec)
-    local int512k = self:measureArrayRandomRead(131072)
+    local int512k = self:measureArrayRead(131072)
     self.output:writeLine("int 512k: %.2f MB/s", int512k.mbPerSec)
-    local int8m = self:measureArrayRandomRead(2097152)
+    local int8m = self:measureArrayRead(2097152)
     self.output:writeLine("int 8M: %.2f MB/s", int8m.mbPerSec)
-    local int32m = self:measureArrayRandomRead(32 * 1024 * 1024 / 4)
+    local int32m = self:measureArrayRead(32 * 1024 * 1024 / 4)
     self.output:writeLine("int 32M: %.2f MB/s", int32m.mbPerSec)
 
     local long4k = self:measureArrayRandomLongRead(1024)
@@ -36,7 +43,7 @@ function MemoryBenchmarkBase:benchRandomMemory()
     }
 end
 
-function MemoryBenchmarkBase:measureArrayRandomRead(size)
+function MemoryBenchmarkBase:measureArrayRead(size)
     local blockSize = 16
     local I = {}
 
@@ -49,6 +56,7 @@ function MemoryBenchmarkBase:measureArrayRandomRead(size)
     if k0 == 0 then k1 = 1 else k1 = k0 end
     local iterInternal = self.iterrations / k1
     if iterInternal == 0 then iterInternal = 1 end
+
     for idx=0,endA,blockSize do
         I[0] = array[idx]
         I[1] = array[idx + 1]
@@ -67,7 +75,8 @@ function MemoryBenchmarkBase:measureArrayRandomRead(size)
         I[14] = array[idx + 14]
         I[15] = array[idx + 15]
     end
-    local start = os.clock() * 1000
+
+    self.beforeClockMemory = clock()
     for i=0,iterInternal-1 do
         for idx=0,endA,blockSize do
             I[0] = array[idx]
@@ -88,7 +97,13 @@ function MemoryBenchmarkBase:measureArrayRandomRead(size)
             I[15] = array[idx + 15]
         end
     end
-    local elapsed = math.floor(os.clock() * 1000 - start)
+    self.afterClockMemory = clock()
+    self.elapsedClockMemory = self.afterClockMemory - self.beforeClockMemory
+    if (self.elapsedClockMemory == 0) then
+        self.elapsedClockMemory = 1
+    end
+
+    local elapsed = math.floor(self.elapsedClockMemory)
     return { mbPerSec = (iterInternal * #array * 8.0 / (elapsed / 1000.0) / 1024 / 1024), res = I }
 end
 
@@ -115,7 +130,8 @@ function MemoryBenchmarkBase:measureArrayRandomLongRead(size)
         I[6] = array[idx + 6]
         I[7] = array[idx + 7]
     end
-    local start = os.clock() * 1000
+
+    self.beforeClockMemory = clock()
     for i=0,iterInternal-1 do
         for idx=0,endA,blockSize do
             I[0] = array[idx]
@@ -128,6 +144,12 @@ function MemoryBenchmarkBase:measureArrayRandomLongRead(size)
             I[7] = array[idx + 7]
         end
     end
-    local elapsed = math.floor(os.clock() * 1000 - start)
+    self.afterClockMemory = clock()
+    self.elapsedClockMemory = self.afterClockMemory - self.beforeClockMemory
+    if (self.elapsedClockMemory == 0) then
+        self.elapsedClockMemory = 1
+    end
+
+    local elapsed = math.floor(self.elapsedClockMemory)
     return { mbPerSec = (iterInternal * #array * 8.0 / (elapsed / 1000.0) / 1024 / 1024), res = I }
 end

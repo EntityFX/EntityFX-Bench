@@ -99,15 +99,28 @@ end
 -- Returns the sum of a sequence of values
 function sum(x)
    local s = 0
-   for _, v in ipairs(x) do s = s + v end
+   for _, v in ipairs(x) do
+      s = s + v 
+   end
    return s
+end
+
+function clock()
+   local clk = os.clock() * 1000
+   return clk
+end
+
+function clockSeconds()
+   return clock() / 1000.0
 end
  
 -- Calculates the arithmetic mean of a set of values
 -- x       : an array of values
 -- returns : the arithmetic mean
 function arithmetic_mean(x)
-   return (sum(x) / #x)
+   local s = sum(x)
+   local len = #x
+   return (s / len)
 end
 
 function compareTo(str1, str2)

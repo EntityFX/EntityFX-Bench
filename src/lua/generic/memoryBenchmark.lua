@@ -4,7 +4,7 @@ MemoryBenchmark = class(MemoryBenchmarkBase, function(a, writer, printToConsole)
 end)
 
 function MemoryBenchmark:benchImplementation()
-    return self:benchRandomMemory()
+    return self:benchMemory()
 end
 
 function MemoryBenchmark:populateResult(benchResult, memoryBenchmarkResult)

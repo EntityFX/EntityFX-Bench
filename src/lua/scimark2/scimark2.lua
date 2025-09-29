@@ -91,13 +91,22 @@ function Scimark2:bench(isLarge)
 end
 
 function Scimark2:measure(min_time, name, ...)
+    local clockBefore = 0
+    local clockAfter = 0
+    local tm = 0
     math.randomseed( os.time() )
     local run = Kernel[name](...)
     local cycles = 1
     repeat
-        local tm = os.clock()
+        clockBefore = clock() / 1000.0
         local flops = run(cycles, ...)
-        tm = os.clock() - tm
+        clockAfter = clock() / 1000.0
+        tm = clockAfter - clockBefore
+
+        if (tm == 0) then
+            tm = 1
+        end
+
         if tm >= min_time then
             local res = flops / tm * 1.0e-6
             local p1, p2 = ...

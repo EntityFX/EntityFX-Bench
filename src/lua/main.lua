@@ -40,18 +40,18 @@ local writer = Writer("Output.log")
 BenchmarkBase.IterrationsRatio = 0.1
 
 benchmarks = {
-    ArithemticsBenchmark(writer, true),
-    MathBenchmark(writer, true),
-    CallBenchmark(writer, true),
-    IfElseBenchmark(writer, true),
-    StringManipulation(writer, true),
-    MemoryBenchmark(writer, true),
-    RandomMemoryBenchmark(writer, true),
-    Scimark2Benchmark(writer, true),
+    -- ArithemticsBenchmark(writer, true),
+    -- MathBenchmark(writer, true),
+    -- CallBenchmark(writer, true),
+    -- IfElseBenchmark(writer, true),
+    -- StringManipulation(writer, true),
+    -- MemoryBenchmark(writer, true),
+    -- RandomMemoryBenchmark(writer, true),
+    -- Scimark2Benchmark(writer, true),
     DhrystoneBenchmark(writer, true),
-    WhetstoneBenchmark(writer, true),
-    LinpackBenchmark(writer, true),
-    HashBenchmark(writer, true)
+    -- WhetstoneBenchmark(writer, true),
+    -- LinpackBenchmark(writer, true),
+    -- HashBenchmark(writer, true)
 }
 
 writer:writeHeader("Warmup")

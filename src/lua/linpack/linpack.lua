@@ -17,9 +17,9 @@ end
 
 function Linpack:second()
     if self.second_orig == -1 then
-        self.second_orig = os.clock()
+        self.second_orig = clock() / 1000.0
     end
-    return os.clock()
+    return clock() / 1000.0
 end
 
 function Linpack:run_benchmark(array_size)

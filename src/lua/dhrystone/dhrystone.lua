@@ -10,6 +10,10 @@ Dhrystone2 = class(function(d, printToConsole)
     d.Char2Glob = "\\"
     d.Array1Glob = {}
     d.Array2Glob = {}
+
+    d.elapsed = 0
+    d.startClock = 0
+    d.endClock = 0
 end)
 
 Dhrystone2.LOOPS = 20000000
@@ -32,6 +36,10 @@ function Dhrystone2:bench(loops)
     if loops == nil then
         loops = Dhrystone2.LOOPS 
     end
+
+    self.startClock = 0
+    self.endClock = 0
+    self.elapsed = 0
 
     self.output:writeLine("##########################################")
     self.output:writeLine("")
@@ -249,7 +257,7 @@ function Dhrystone2:Proc0(loops)
     local IntLoc2 = 0
     local IntLoc3 = 0
 
-    local start = os.clock()
+    self.startClock = clock()
 
     for i=0,loops - 1 do
         self:Proc5()
@@ -284,7 +292,10 @@ function Dhrystone2:Proc0(loops)
         IntLoc1 = self:Proc2(IntLoc1)
     end
 
-    local benchtime = (os.clock() - start) * 1000
+    self.endClock = clock()
+    self.elapsed =  (self.endClock - self.startClock)
+
+    local benchtime = self.elapsed
     local loopsPerBenchtime = 0
     if ((benchtime == 0)) then
         loopsPerBenchtime = 0;

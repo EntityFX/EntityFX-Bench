@@ -5,14 +5,24 @@ BenchmarkBase = class(function(b, writer, printToConsole)
     b.ratio = 1.0
     b.name = "BenchmarkBase"
     b.output = writer
+    b.clockBefore = 0
+    b.clockAfter = 0
+    b.clockDiff = 0
+    b.elapsed = 0
 end)
 
 BenchmarkBase.IterrationsRatio = 1;
 
 function BenchmarkBase:bench()
+    self.clockBefore = 0
+    self.clockAfter = 0
+    self.clockDiff = 0
     self:beforeBench()
-    local start = os.clock()
+    self.clockBefore = clock()
     local res = self:benchImplementation()
+    self.clockAfter = clock()
+    self.elapsed = math.floor(self.clockAfter - self.clockBefore)
+
     local result = self:populateResult(self:buildResult(start), res)
     self:doOutput(result)
     self:afterBench(result)
@@ -53,13 +63,12 @@ function BenchmarkBase:benchImplementation()
 end
 
 function BenchmarkBase:buildResult(start)
-    local elapsed = math.floor((os.clock() - start) * 1000)
     local tElapsed = 0
 
-    if elapsed == 0 then
+    if self.elapsed == 0 then
         tElapsed = 1000
     else
-        tElapsed = elapsed
+        tElapsed = self.elapsed
     end
 
     local elapsedSeconds = tElapsed / 1000
