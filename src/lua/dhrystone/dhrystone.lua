@@ -45,7 +45,10 @@ function Dhrystone2:bench(loops)
     self.output:writeLine("")
     self.output:writeLine("Dhrystone Benchmark, Version 2.1 (Language: Lua)")
     self.output:writeLine("")
-    self.output:writeLine("Optimization %s", "Optimised")
+
+    local optimization = getVersion() .. ((jit and jit.status() == true) and " Optimised" or " Not optimised")
+
+    self.output:writeLine("Optimization: %s", optimization)
 
     local result = self:Proc0(loops)
 

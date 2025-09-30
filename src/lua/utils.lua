@@ -1,3 +1,5 @@
+useTimeForClock = false
+
 function class(base, init)
     local c = {}    -- a new class instance
     if not init and type(base) == 'function' then
@@ -106,12 +108,26 @@ function sum(x)
 end
 
 function clock()
-   local clk = os.clock() * 1000
+   local clk = 0
+   if (useTimeForClock) then
+      clk = os.time() * 1000
+   else
+      clk = os.clock() * 1000
+   end
+
    return clk
 end
 
 function clockSeconds()
-   return clock() / 1000.0
+   local clk = 0
+   
+   if (useTimeForClock) then
+      clk = os.time()
+   else
+      clk = os.clock()
+   end
+
+   return clk
 end
  
 -- Calculates the arithmetic mean of a set of values
@@ -204,4 +220,29 @@ function getOS()
 		end
 	end
 	return os_name, arch_name
+end
+
+function getVersion()
+   if jit then
+      if jit.version then
+         return jit.version
+      else 
+         return _VERSION .. " JIT"
+      end
+   else
+      return _VERSION
+   end
+end
+
+function dump(o)
+   if type(o) == 'table' then
+      local s = '{ '
+      for k,v in pairs(o) do
+         if type(k) ~= 'number' then k = '"'..k..'"' end
+         s = s .. '['..k..'] = ' .. dump(v) .. ','
+      end
+      return s .. '} '
+   else
+      return tostring(o)
+   end
 end

@@ -21,18 +21,20 @@ function Whetstone:bench(getinput)
 
     local count = 10
     local calibrate = 1
-    local xtra = 1
+    local xtra = 125
     local endit = 0
     local section = 0
     local x100 = 100
     local duration = 100
     local general = {}
     self:writeLine("%s Precision Lua Whetstone Benchmark\n", "Double")
+
     if not getinput then
         self:writeLine("No run time input data\n")
     else
         self:writeLine("With run time input data\n")
     end
+    
     self:writeLine("Calibrate")
     repeat
         self.timeUsed = 0.0

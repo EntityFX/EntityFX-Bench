@@ -25,6 +25,13 @@ if _ENV then
 	unpack = table.unpack
 end
 
+if #arg > 0 then
+    if arg[1] == "1" then
+        useTimeForClock = true
+    end
+end
+print("useTimeForClock=", useTimeForClock)
+
 function writeResult(writer, benchResult)
     writer:writeTitle("%-30s", benchResult.benchmarkName)
     writer:writeValue("%15d ms", benchResult.elapsed)
@@ -40,18 +47,18 @@ local writer = Writer("Output.log")
 BenchmarkBase.IterrationsRatio = 0.1
 
 benchmarks = {
-    -- ArithemticsBenchmark(writer, true),
-    -- MathBenchmark(writer, true),
-    -- CallBenchmark(writer, true),
-    -- IfElseBenchmark(writer, true),
-    -- StringManipulation(writer, true),
-    -- MemoryBenchmark(writer, true),
-    -- RandomMemoryBenchmark(writer, true),
-    -- Scimark2Benchmark(writer, true),
+    ArithemticsBenchmark(writer, true),
+    MathBenchmark(writer, true),
+    CallBenchmark(writer, true),
+    IfElseBenchmark(writer, true),
+    StringManipulation(writer, true),
+    MemoryBenchmark(writer, true),
+    RandomMemoryBenchmark(writer, true),
+    Scimark2Benchmark(writer, true),
     DhrystoneBenchmark(writer, true),
-    -- WhetstoneBenchmark(writer, true),
-    -- LinpackBenchmark(writer, true),
-    -- HashBenchmark(writer, true)
+    WhetstoneBenchmark(writer, true),
+    LinpackBenchmark(writer, true),
+    HashBenchmark(writer, true)
 }
 
 writer:writeHeader("Warmup")
@@ -89,6 +96,7 @@ writer:writeLine()
 
 local os, arch = getOS()
 local osVersion = os .. ' ' .. arch
+local runtime = getVersion()
 
 local headerCommon = "Operating System,Runtime,Threads Count,Memory Used"
 local headerTotals = ",Total Points,Total Time (ms)"
@@ -101,7 +109,7 @@ for i,benchmark in ipairs(benchmarks) do
 end
 writer:writeTitle(headerTotals)
 writer:writeLine()
-writer:writeTitle("%s,%s,%d,%d", osVersion, _VERSION, 1, 0)
+writer:writeTitle("%s,%s,%d,%d", osVersion, runtime, 1, 0)
 for i,point in ipairs(points) do
     writer:writeTitle(",%.2f", point)
 end
@@ -116,7 +124,7 @@ for i,benchmark in ipairs(benchmarks) do
 end
 writer:writeTitle(headerTotals)
 writer:writeLine()
-writer:writeTitle("%s,%s,%d,%d", osVersion, _VERSION, 1, 0)
+writer:writeTitle("%s,%s,%d,%d", osVersion, runtime, 1, 0)
 for i,result in ipairs(results) do
     writer:writeTitle(",%.2f", result)
 end
